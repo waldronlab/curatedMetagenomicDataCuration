@@ -1,0 +1,7 @@
+Qin dataset of 237 chinese people 
+about hepathic cyrrhosis
+
+nothing to declare in specific,
+
+status: good
+missings: probably there iwill some error in the indexes, 

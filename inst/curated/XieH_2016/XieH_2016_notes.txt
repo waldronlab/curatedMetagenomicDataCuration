@@ -1,0 +1,24 @@
+
+
+Xie H 2016 is a study about 250 english twin women:
+
+they are healty, no antibiotics, no lactating and no pregnant
+
+peculiarities: all women, all twins, healthy.
+
+BODYSITE = GUT
+
+.
+
+This is usefull information, HOWEVER:
+
+IT IS MISSING STILL the mst intersting information: which sample is twin of which.
+
+In case, it would be ideal to add this on dedicated column,
+somegthing like in Heintz-Buschart is indicated in the family column 
+the relative among samples.
+
+metadata status: acceptable
+
+missing things: they are something like 125 twin couples and we don't know 
+who'is twin to who.

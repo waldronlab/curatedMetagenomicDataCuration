@@ -1,0 +1,8 @@
+
+
+FengQ is a dataset about 156 Austrian samples 
+The main disease of this dataset is CRC.
+There are a couple of other diseases (secondary), like fattyliver and hypertension
+
+metadata status: good
+missing things: none in particular 

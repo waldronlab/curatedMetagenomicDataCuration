@@ -1,0 +1,13 @@
+RaymondF 2016 is a dataset about 24 Canandian people
+sampled 3 times:
+
+they are healty and the study is about giving a Cephalosporins
+to healthy individuals.
+
+MULTIPLE TIME POINTS study:
+any subjects is present at tp 0 (no ABX) 
+and after 7 and 90 days from the somministration
+
+metadata status: good
+missing things: none in particular
+

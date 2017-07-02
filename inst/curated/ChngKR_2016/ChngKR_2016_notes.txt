@@ -1,0 +1,12 @@
+ChngKR_2016 is a dataset about 39 individuals sampled
+2 times each. 
+
+Apparently it's not a mutliple time points study.
+They just seem to be sampled twice.
+
+BODYSITE: SKIN
+DISEASE: Atopic Dermatitis (AD)
+COUNTRY: CHINA; SINGAPORE; MALESYA; BRUNEI
+
+metadata status: good
+missing things: nothing so bad to be missing

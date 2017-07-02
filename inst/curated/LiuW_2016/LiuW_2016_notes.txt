@@ -1,0 +1,19 @@
+
+
+LiuW 2016
+
+dataset of 110 Mongolians, healthy and 
+a subsection of Agrarians.
+
+metadata status: many principal fields missing (gender, age), present fe usefull information 
+    mainly for the fact that some of them are Agrarians, 
+
+    and so we have agrarians from Africa (dataset: Rampelli), Fiji (Brito), South-America (Obregon-Tito) and Asia (this one)
+
+
+
+missing things:  the annotation of Agrarians has been taken by a NCBI file recording which of them
+come from Ulan Bator and TUW province (and so they are Urban). The others have been inserted as AGRARIANS
+
+but some of thm might come from another city which was not indicated in the file but was indicated on the paper
+Therefore some of the Agrarians might not be effectively agrarians.

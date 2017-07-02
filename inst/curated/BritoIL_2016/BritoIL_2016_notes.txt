@@ -1,0 +1,13 @@
+
+
+BritoIL is a dataset about Fiji agrarians 
+ORAL and GUT samples
+sampled regardless if they are healthy or subjected to antibiotics treatment;
+
+for this reason they are present two columns with all Na. 
+
+This dataset most import characteristic is that they are Agrarians.
+There is no specific disease for such a dataset.
+
+metadata status: good 
+missing things: none in particular

@@ -1,0 +1,14 @@
+
+
+CAstro-Nallar E 2015 
+
+dataset about 32 individuals, about half of them 
+have SCHIZOPHRENIA,
+
+the main disease of this study.
+
+Country: USA
+Bodysite: ORAL CAVITY
+
+metadata status: good
+missing things: none in particular 

@@ -1,0 +1,14 @@
+
+
+
+Heintz-BuschartA 2016 is a dataset of 53 samples coming from 20 individuals
+these subjects belong to 4 families 
+and they are basically (with few missing) sampled 3 times
+
+MULTIPLE TIME POINTS study: s suaul the days from the 0 tp are indicated
+in the time_point column.
+
+The DISEASE of this STUDY IF TD1: Type-1 diabetes
+
+metadata status: optimal 
+missing things: none in particular

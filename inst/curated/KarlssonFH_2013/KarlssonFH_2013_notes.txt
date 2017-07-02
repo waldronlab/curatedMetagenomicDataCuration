@@ -1,0 +1,22 @@
+
+Karlsson FH 2013
+
+145 subjects (and samples) dataset about Type-2 diabetes 
+with large metadata. 
+
+COUNTRY: Sweden
+bodysite: GUT
+
+all women, quite old. No abx.
+
+metadata status: good
+missing things:  Here and in others the main problem will be 
+  		to assess as much as possible the current state of the present measurements:
+
+ 		e.g.: I tried briefly to uniform the measurements (all should be either mmol/ml or mg/dl)
+                meaning that the same measure (e.g. C-peptide should be present in all the dataset (when available))
+                in just one fo the standard measure units: tthere can be howver errors, like 
+
+		ldl and hdl in mg/dl and cholesterol in mmol/l. 
+
+

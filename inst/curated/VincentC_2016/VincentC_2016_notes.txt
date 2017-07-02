@@ -1,0 +1,33 @@
+Vincent C 2016
+
+dataset of 98 subjects and 229 samples
+
+MULTIPLE TP study (partially):
+
+not regular: few subjects have more than 10 samples
+
+many have just one samples
+
+however, for sake of precision, the day-gap of multiple tps 
+from the tp 0 is taken and recorded.
+
+BODYSITE = GUT
+COUNTRY: CANADA (Montreal)
+Disease : CDI (Clostridium difficle infection: basically this infection is frequently taken in
+hospitals and they wanted to investigate this fact: only few subject have contracted CDI)
+
+
+metadata status: not so bad
+
+missing things: A LOT::
+
+1)	information about CDI infected samples have been taken by me in Fig 1 of the paper and are unprecise
+2)	same for antibiotics: it is clearly written that basically all the subjects have been subjected to ABX
+
+	however: only for the CDI infected was possible to detect this information.
+   	it WOULD BE NICE TO HAVE THE INFO ABOUT ABX EVEN FOR THE OTHERS.
+
+	THE ABX I've recorded are someway unprecise and probably some ABX is missing by my List.
+
+
+Last peculiarity: this dataset is about very old people. (VERY OLD PEOPLE) 
