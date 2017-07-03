@@ -1,0 +1,90 @@
+---
+title: "Checking curation for curatedMetagenomicData"
+abstract: >
+    This vignette checks every file under inst/curated that ends in `_metadata.txt`
+    against the template file `inst/extdata/template.csv`, and shows problems found.
+output:
+    BiocStyle::html_document
+vignette: >
+    %\VignetteIndexEntry{curatedMetagenomicDataCuration}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=FALSE)
+library(curatedMetagenomicDataCuration)
+```
+
+If TRUE, only show results from the first dataset. This is just a temporary measure to shorten the output until we have template issues resolved.
+```{r}
+firstonly <- TRUE
+```
+
+```{r template, echo=FALSE}
+template <- read.csv(system.file("extdata/template.csv",
+                       package = "curatedMetagenomicDataCuration"))
+templatelist <- lapply(1:nrow(template), function(i){
+  output <- t(template[i, ])
+  output <- paste0("* *", rownames(output), "*: ", output[, 1])
+  return( output )
+})
+names(templatelist) <- template$col.name
+```
+
+```{r dochecks, echo=FALSE, warning=FALSE}
+allfiles <- dir(
+  system.file("curated", package = "curatedMetagenomicDataCuration"),
+  recursive = TRUE,
+  pattern = "_metadata.txt$",
+  full.names = TRUE
+)
+checks <- lapply(allfiles, function(fname){
+  dat <- read.delim(fname, sep = "\t", stringsAsFactors = FALSE)
+  return( checkCuration(dat) )
+})
+names(checks) <- basename(allfiles)
+```
+
+```{r, results='asis', echo=FALSE}
+ivec <- seq_along(allfiles)
+if(firstonly) ivec <- 1
+
+for (i in ivec) {
+  datasetname <- names(checks)[i]
+  cat("# ", datasetname, "\n")
+  cat("\n")
+  if(identical(checks[[i]], list(colnames = NULL, values = NULL))){
+    cat("All checks OK. \n")
+    next
+  }
+  if(!is.null(checks[[i]]$colnames)){
+    cat("## Column name errors \n")
+    cat(checks[[i]]$colnames, "\n")
+  }
+  cat("\n")
+  if(!is.null(checks[[i]]$values)){
+    cat("## Entry errors \n")
+    cat("\n")
+    for (j in seq_along(checks[[i]]$values)){
+      if(!any(grepl("!!!", checks[[i]]$values[, j]))) next
+      cat("\n")
+      problemvariable <- colnames(checks[[i]]$values)[j]
+      cat("### ", problemvariable, "\n")
+      cat("\n")
+      cat("**Template definition** \n")
+      cat("\n")
+      for (k in 2:6)
+        cat(templatelist[[problemvariable]][k], "  \n ")
+      cat("\n")
+      cat("**Errors** \n")
+      cat("\n")
+      output <- paste0(checks[[i]]$values$sampleID, "   :   ", checks[[i]]$values[, j])
+      for (k in seq_along(output))
+        if(grepl("!!!", output[k]))
+          cat(k, ". ", gsub("!!!", "", output[k]), " \n ")
+    }
+  }
+  cat("\n")
+}
+```

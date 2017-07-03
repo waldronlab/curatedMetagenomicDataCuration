@@ -1,7 +1,6 @@
 context("checkCuration")
 
 test_that("datasets pass checkCuration()", {
-  library(curatedMetagenomicDataCuration)
   allfiles <- dir(
       system.file("curated", package = "curatedMetagenomicDataCuration"),
       recursive = TRUE,

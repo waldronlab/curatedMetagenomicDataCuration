@@ -16,5 +16,5 @@ BuildType: Package
 PackageUseDevtools: Yes
 PackageInstallArgs: --no-multiarch --with-keep.source
 PackageBuildArgs: --keep-empty-dirs --no-resave-data
-PackageCheckArgs: --no-vignettes --timings
+PackageCheckArgs: --timings
 PackageRoxygenize: rd,collate,namespace
