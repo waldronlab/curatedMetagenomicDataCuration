@@ -1,0 +1,31 @@
+Package: curatedMetagenomicDataCuration
+Type: Package
+Title: Curated Metagenomic Data of the Human Microbiome
+Version: 0.99
+Author:
+    Paolo Manghi <paolomanghi1974@gmail.com>,
+    Lucas Schiffer <schiffer.lucas@gmail.com>,
+    Nicola Segata <nicola.segata@gmail.com>,
+    Levi Waldron <lwaldron.research@gmail.com>,
+Maintainer: Levi Waldron <lwaldron.research@gmail.com>
+Description:
+    Syntax checking for curatedMetagenomicData
+URL: https://github.com/waldronlab/curatedMetagenomicDataCuration
+BugReports: https://github.com/waldronlab/curatedMetagenomicDataCuration/issues
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.4.0),
+Imports:
+    utils,
+    tidyr,
+    magrittr,
+    methods,
+    S4Vectors
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
