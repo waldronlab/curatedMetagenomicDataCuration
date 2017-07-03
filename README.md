@@ -1,4 +1,4 @@
-[![Travis-CI Build Status](https://travis-ci.org/waldronlab/curatedMetagenomicData.svg?branch=master)](https://travis-ci.org/waldronlab/curatedMetagenomicData)
+[![Travis-CI Build Status](https://travis-ci.org/waldronlab/curatedMetagenomicDataCuration.svg?branch=master)](https://travis-ci.org/waldronlab/curatedMetagenomicDataCuration)
 
 # curatedMetagenomicDataCuration
 
@@ -14,5 +14,7 @@ This package checks metadata curation for curatedMetagenomicData. It's simple to
 BiocInstaller::biocLite("waldronlab/curatedMetagenomicDataCuration")
 browseVignettes("curatedMetagenomicDataCuration")
 ```
+
+There is an example vignette output at http://rpubs.com/lwaldron/curatedMetagenomicDataCuration.
 
 For more information on contributing to `curatedMetagenomicData` please see https://waldronlab.github.io/curatedMetagenomicData/ and [CONTRIBUTING.md](https://github.com/waldronlab/curatedMetagenomicData/blob/master/CONTRIBUTING.md).
