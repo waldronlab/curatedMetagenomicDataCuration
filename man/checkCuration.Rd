@@ -29,17 +29,3 @@ The template has five columns:
 5. "allowedvalues": a regex defining allowable values for the column
 6. "description": a free-form description of the variable
 }
-\examples{
-allfiles <- dir(
-  system.file("curated", package = "curatedMetagenomicDataCuration"),
-              recursive = TRUE,
-              pattern = "_metadata.txt$",
-              full.names = TRUE)
-for (i in seq_along(allfiles)) {
-  dsname <- allfiles[i]
-  dat <- read.delim(allfiles[i], sep = "\\t", stringsAsFactors = FALSE)
-  res <- checkCuration(dat)
-  if(!identical(res, list(missingcols = NULL, invalidcols = NULL, values = NULL)))
-    warning(paste0("Curation problems in ", allfiles[i]))
-}
-}
