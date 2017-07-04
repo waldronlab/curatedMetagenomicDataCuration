@@ -19,21 +19,13 @@ a list with two elements, [["colnames"]] and [["values]]
 Title Check the curation of per-participant metadata against a template.
 }
 \details{
-See Examples for the template used for curatedMetagenomicData. The template data.frame must have five columns:
+See Examples for the template used for curatedMetagenomicData. 
+The template has five columns:
 
 1. "col.name" specifies the name of the column in the curated data.frame.
-
-2. "var.class": the class the variable must be, e.g. character, numeric, integer
-
+2. "multiplevalues": multiple semicolon-separated values are allowed
 3. "uniqueness": unique means each value must be unique, non-unique means repeated values are allowed
-
 4. "requiredness": if "required", there must be no missing (NA) values. If "optional", missing values are allowed.
-
-5. "allowedvalues" can be a regex or one of the following shorthands:
-\describe{
-  \item{decimal}{"^[0-9]+\\.?[0-9]*$" (there *may* be a decimal)}
-  \item{decimalonly}{"^[0-9]+\\.{1}[0-9]*$" (there *must* be a decimal)}
-  \item{integer}{"^[0-9]+$" (integer only, no decimals allowed)}
-  \item{*}{"." (anything is allowed)}
-}
+5. "allowedvalues": a regex defining allowable values for the column
+6. "description": a free-form description of the variable
 }

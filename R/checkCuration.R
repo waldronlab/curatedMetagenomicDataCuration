@@ -1,5 +1,3 @@
-
-
 #' Title Check the curation of per-participant metadata against a template.
 #'
 #' @param curated a data.frame containing the curated per-participant metadata to be checked
@@ -7,36 +5,26 @@
 #'
 #' @return a list with two elements, [["colnames"]] and [["values]]
 #' @export checkCuration
-#' @details See Examples for the template used for curatedMetagenomicData. The template data.frame must have five columns:
+#' @details See Examples for the template used for curatedMetagenomicData. 
+#' The template has five columns:
 #'
 #' 1. "col.name" specifies the name of the column in the curated data.frame.
-#'
-#' 2. "var.class": the class the variable must be, e.g. character, numeric, integer
-#'
+#' 2. "multiplevalues": multiple semicolon-separated values are allowed
 #' 3. "uniqueness": unique means each value must be unique, non-unique means repeated values are allowed
-#'
 #' 4. "requiredness": if "required", there must be no missing (NA) values. If "optional", missing values are allowed.
-#'
-#' 5. "allowedvalues" can be a regex or one of the following shorthands:
-#' \describe{
-#'   \item{decimal}{"^[0-9]+\\.?[0-9]*$" (there *may* be a decimal)}
-#'   \item{decimalonly}{"^[0-9]+\\.{1}[0-9]*$" (there *must* be a decimal)}
-#'   \item{integer}{"^[0-9]+$" (integer only, no decimals allowed)}
-#'   \item{*}{"." (anything is allowed)}
-#' }
-#'
+#' 5. "allowedvalues": a regex defining allowable values for the column
+#' 6. "description": a free-form description of the variable
 checkCuration <- function(curated,
-                          template = read.csv(system.file("extdata/template.csv",
-                                                          package = "curatedMetagenomicDataCuration"),
-                                              as.is = TRUE)) {
-  problems <- list(missingols = NULL, invalidcols = NULL, values = NULL)
+      template = read.csv(system.file("extdata/template.csv", package = "curatedMetagenomicDataCuration"),
+                          as.is = TRUE)) {
+  problems <- list(missingcols = NULL, invalidcols = NULL, values = NULL)
   ##-------------------------------------------------
   ##check that the column names match the template
   ##-------------------------------------------------
   requiredcols <- template[template$requiredness=="required", "col.name"]
   missingcols <- requiredcols[!requiredcols %in% colnames(curated)]
   if (length(missingcols) > 0)
-    problems$missingols <- missingcols
+    problems$missingcols <- missingcols
   invalidcols <- colnames(curated)[!colnames(curated) %in% template$col.name]
   if (length(invalidcols) > 0)
     problems$invalidcols <- invalidcols
@@ -46,9 +34,14 @@ checkCuration <- function(curated,
   template <- template[template$col.name %in% colnames(curated), , drop=FALSE]
   curated <- curated[, match(template$col.name, colnames(curated)), drop=FALSE]
   regexes <- template$allowedvalues
+  regexes[template$multiplevalues] <- 
+    paste0(regexes[template$multiplevalues],
+           "(;",
+           regexes[template$multiplevalues],
+           ")*")
   regexes <- paste("^", regexes, "$", sep = "")
-  regexes <- gsub("|", "$|^", regexes, fixed = TRUE)
-  regexes[grepl("^*$", regexes, fixed = TRUE)] <- "."
+  regexes[!template$multiplevalues] <- 
+    gsub("|", "$|^", regexes[!template$multiplevalues], fixed = TRUE)
   names(regexes) <- template$col.name
   ##-------------------------------------------------
   ##Check the data entries in each column for regex
@@ -58,7 +51,7 @@ checkCuration <- function(curated,
   for (j in seq_along(colnames(curated))) {
     doesmatch <- grepl(regexes[j], curated[, j])
     if (template[j, "requiredness"] == "optional") {
-      doesmatch[is.na(curated[, j])] <- FALSE
+      doesmatch[is.na(curated[, j])] <- TRUE
     }
     ## if field must be unique, add non-unique values to doesnotmatch
     if (template[j, "uniqueness"] == "unique") {
@@ -69,7 +62,7 @@ checkCuration <- function(curated,
   }
   if(!all.ok)
     problems$values <- curated
-  if(!identical(problems, list(missingols = NULL, invalidcols = NULL, values = NULL)))
+  if(!identical(problems, list(missingcols = NULL, invalidcols = NULL, values = NULL)))
     warning("Curation problems found")
   return(problems)
 }

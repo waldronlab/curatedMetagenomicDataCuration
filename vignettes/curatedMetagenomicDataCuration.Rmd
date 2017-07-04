@@ -40,7 +40,7 @@ allfiles <- dir(
   full.names = TRUE
 )
 checks <- lapply(allfiles, function(fname){
-  dat <- read.delim(fname, sep = "\t", stringsAsFactors = FALSE)
+  dat <- read.delim(fname, sep = "\t", stringsAsFactors = FALSE, na.strings = c("na", "NA"))
   return( checkCuration(dat) )
 })
 names(checks) <- basename(allfiles)
@@ -54,13 +54,19 @@ for (i in ivec) {
   datasetname <- names(checks)[i]
   cat("# ", datasetname, "\n")
   cat("\n")
-  if(identical(checks[[i]], list(colnames = NULL, values = NULL))){
+  if(identical(checks[[i]], list(missingcols = NULL, invalidcols = NULL, values = NULL))){
     cat("All checks OK. \n")
+    cat("\n")
     next
   }
-  if(!is.null(checks[[i]]$colnames)){
+  if(!is.null(checks[[i]]$missingcols)){
+    cat("## Required columns that are missing \n")
+    cat(checks[[i]]$missingcols, "\n")
+    cat("\n")
+  }
+  if(!is.null(checks[[i]]$invalidcols)){
     cat("## Column name errors \n")
-    cat(checks[[i]]$colnames, "\n")
+    cat(checks[[i]]$invalidcols, "\n")
   }
   cat("\n")
   if(!is.null(checks[[i]]$values)){
@@ -82,7 +88,7 @@ for (i in ivec) {
       output <- paste0(checks[[i]]$values$sampleID, "   :   ", checks[[i]]$values[, j])
       for (k in seq_along(output))
         if(grepl("!!!", output[k]))
-          cat(k, ". ", gsub("!!!", "", output[k]), " \n ")
+          cat(k, ". ", gsub("!!!", "\"", output[k]), " \n ")
     }
   }
   cat("\n")
