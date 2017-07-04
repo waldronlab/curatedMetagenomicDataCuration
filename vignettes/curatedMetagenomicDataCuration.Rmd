@@ -3,7 +3,9 @@ title: "Checking curation for curatedMetagenomicData"
 abstract: >
     This vignette checks every file under inst/curated that ends in `_metadata.txt`
     against the template file `inst/extdata/template.csv`, and shows problems found.
-output: html_document
+output: 
+  html_document:
+    toc: true
 vignette: >
     %\VignetteIndexEntry{curatedMetagenomicDataCuration}
     %\VignetteEngine{knitr::rmarkdown}
