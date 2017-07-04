@@ -11,9 +11,10 @@ test_that("datasets pass checkCuration()", {
     dsname <- allfiles[i]
     dat <- read.delim(allfiles[i], sep = "\t", stringsAsFactors = FALSE)
     res <- checkCuration(dat)
-    expect_true(is.null(res$missingcols), info=allfiles[i])
-    expect_true(is.null(res$invalidcols), info=allfiles[i])
-    expect_true(is.null(res$values), info=allfiles[i])
-    res
+    if(!identical(res, list(missingcols = NULL, invalidcols = NULL, values = NULL)))
+      warning(paste0("Curation problems in ", allfiles[i]))
+    # expect_true(is.null(res$missingcols), info=allfiles[i])
+    # expect_true(is.null(res$invalidcols), info=allfiles[i])
+    # expect_true(is.null(res$values), info=allfiles[i])
   }
 })

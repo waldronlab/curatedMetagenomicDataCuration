@@ -9,7 +9,7 @@ Author:
     Levi Waldron <lwaldron.research@gmail.com>,
 Maintainer: Levi Waldron <lwaldron.research@gmail.com>
 Description:
-    Syntax checking for curatedMetagenomicData
+    Syntax checking for curatedMetagenomicData.
 URL: https://github.com/waldronlab/curatedMetagenomicDataCuration
 BugReports: https://github.com/waldronlab/curatedMetagenomicDataCuration/issues
 License: Artistic-2.0

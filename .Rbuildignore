@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^.*rpubs.*$
 ^.*rsconnect.*$
+.push_gh_pages.sh
+.travis.yml
