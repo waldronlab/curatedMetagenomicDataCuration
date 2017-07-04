@@ -1,5 +1,9 @@
 language: r
-cache: packages
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/packrat/src
+    - $TRAVIS_BUILD_DIR/packrat/lib
+  packages: true
 sudo: false
 warnings_are_errors: false
 r_packages: devtools

@@ -16,13 +16,7 @@ License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
 Depends:
-    R (>= 3.4.0),
-Imports:
-    utils,
-    tidyr,
-    magrittr,
-    methods,
-    S4Vectors
+    R (>= 3.3.0)
 Suggests:
     testthat,
     knitr,
