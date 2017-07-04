@@ -55,7 +55,7 @@ checkCuration <- function(curated,
     }
     ## if field must be unique, add non-unique values to doesnotmatch
     if (template[j, "uniqueness"] == "unique") {
-      doesmatch[!Biobase::isUnique( curated[, j] )] <- FALSE
+      doesmatch[!isUnique( curated[, j] )] <- FALSE
     }
     curated[!doesmatch, j] <- paste("!!!", curated[!doesmatch, j], "!!!", sep = "")
     if(!all(doesmatch)) all.ok <- FALSE
@@ -65,4 +65,15 @@ checkCuration <- function(curated,
   if(!identical(problems, list(missingcols = NULL, invalidcols = NULL, values = NULL)))
     warning("Curation problems found")
   return(problems)
+}
+
+isUnique <- function (x) {
+  rv = rep(TRUE, length(x))
+  if (length(x) >= 2) {
+    ord = order(x)
+    ox = x[ord]
+    neq = (ox[-length(ox)] != ox[-1])
+    rv[ord] = c(neq, TRUE) & c(TRUE, neq)
+  }
+  return(rv)
 }
