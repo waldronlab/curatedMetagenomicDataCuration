@@ -15,8 +15,8 @@ cd out
 git init
 git config user.name "lwaldron-travis"
 git config user.email "travis"
-cp ../curatedMetagenomicDataCuration/inst/doc/curatedMetagenomicDataCuration.html docs/index.html
+cp ../curatedMetagenomicDataCuration/inst/doc/curatedMetagenomicDataCuration.html index.html
 
 git add .
 git commit -m "deployed vignette to github pages"
-git push --force --quiet $FULL_REPO master
+git push --force --quiet $FULL_REPO master:gh-pages
