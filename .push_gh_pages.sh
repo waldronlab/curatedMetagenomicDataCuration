@@ -15,7 +15,7 @@ cd out
 git init
 git config user.name "lwaldron-travis"
 git config user.email "travis"
-cp ../curatedMetagenomicDataCuration/inst/doc/curatedMetagenomicDataCuration.html index.html
+cp ../curatedMetagenomicDataCuration/inst/doc/curatedMetagenomicDataCuration.html .
 
 git add .
 git commit -m "deployed vignette to github pages"
