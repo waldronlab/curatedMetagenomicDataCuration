@@ -9,7 +9,7 @@ request.  Or if you don't like git, use Github.com's ["Upload Files" button](htt
 If you don't want to wait for travisCI to finish checking, you can check on your own computer:
 
 ```
-BiocInstaller::biocLite("waldronlab/curatedMetagenomicDataCuration")
+BiocInstaller::biocLite("waldronlab/curatedMetagenomicDataCuration", build_vignettes=TRUE)
 browseVignettes("curatedMetagenomicDataCuration")
 ```
 
