@@ -67,7 +67,10 @@ for (i in ivec) {
   }
   if(!is.null(checks[[i]]$invalidcols)){
     cat("## Column name errors \n")
-    cat(checks[[i]]$invalidcols, "\n")
+    for (j in seq_along(checks[[i]]$invalidcols)){
+      cat(paste0("* \"", checks[[i]]$invalidcols[j], "\"", " is not defined in the template. \n"))
+      cat("\n")
+    }
   }
   cat("\n")
   if(!is.null(checks[[i]]$values)){
