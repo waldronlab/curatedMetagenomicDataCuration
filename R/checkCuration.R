@@ -4,6 +4,7 @@
 #' @param template a data.frame defining valid syntax
 #'
 #' @return a list with two elements, [["colnames"]] and [["values]]
+#' @importFrom utils read.csv
 #' @export checkCuration
 #' @details See Examples for the template used for curatedMetagenomicData. 
 #' The template has five columns:

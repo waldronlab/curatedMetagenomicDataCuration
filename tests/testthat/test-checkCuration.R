@@ -4,7 +4,7 @@ test_that("datasets pass checkCuration()", {
   allfiles <- dir(
       system.file("curated", package = "curatedMetagenomicDataCuration"),
       recursive = TRUE,
-      pattern = "_metadata.txt$",
+      pattern = "_metadata.tsv$",
       full.names = TRUE
     )
   for (i in seq_along(allfiles)) {
