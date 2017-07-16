@@ -3,5 +3,4 @@
 ^.*rpubs.*$
 ^.*rsconnect.*$
 .pre_script_build.sh
-.push_gh_pages.sh
 .travis.yml
