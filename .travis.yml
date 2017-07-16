@@ -14,5 +14,5 @@ before_install:
   - chmod 755 ./.push_gh_pages.sh ./.pre_script_build.sh
 before_script:
   - ./.pre_script_build.sh
-after_script:
+after_success:
   - ./.push_gh_pages.sh
