@@ -24,7 +24,8 @@ firstonly <- FALSE
 
 ```{r template, echo=FALSE}
 template <- read.csv(system.file("extdata/template.csv",
-                       package = "curatedMetagenomicDataCuration"))
+                       package = "curatedMetagenomicDataCuration"),
+                     check.names=FALSE)
 templatelist <- lapply(1:nrow(template), function(i){
   output <- t(template[i, ])
   output <- paste0("* *", rownames(output), "*: ", output[, 1])
@@ -41,7 +42,11 @@ allfiles <- dir(
   full.names = TRUE
 )
 checks <- lapply(allfiles, function(fname){
-  dat <- read.delim(fname, sep = "\t", stringsAsFactors = FALSE, na.strings = c("NA"))
+  dat <- read.delim(fname, 
+                    sep = "\t", 
+                    stringsAsFactors = FALSE, 
+                    na.strings = c("NA"),
+                    check.names=FALSE)
   return( checkCuration(dat) )
 })
 names(checks) <- basename(allfiles)
