@@ -43,7 +43,7 @@ stool_texture,non-unique,optional,FALSE,smooth|watery|bloody,Texture of the stoo
 insulin(cat),non-unique,optional,FALSE,yes|no,Insulin intake as a boolean.
 inr,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,International normalized ratio.
 protein_intake,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Indication about the protein intake in the Mongolians diet.
-flg-genotype,non-unique,optional,FALSE,[0-9]+,Any term for filaggrin-protein genotype.
+flg_genotype,non-unique,optional,FALSE,wt|s1515x|e2422x|e2422x/3321dela,Any term for filaggrin-protein genotype.
 momeducat,non-unique,optional,FALSE,[0-9]+,Years of education of the mother of the subject.
 hitchip_probe_class,non-unique,optional,FALSE,lpc|hpc,High/Low species content onthe HIT-chip probe.
 hitchip_probe_number,non-unique,optional,FALSE,[0-9]+,HIT-chip probe score.
@@ -63,13 +63,13 @@ ldl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
 adiponectin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
 fasting_insulin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-units/ml.
 hba1c,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use %.
-c-peptide,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use ng/ml.
-glp-1,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pmol/l.
+c_peptide,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use ng/ml.
+glp_1,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pmol/l.
 cd163,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use ng/ml.
-il-1,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
+il_1,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
 leptin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micrograms/l.
 glucose,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
-fgf-19,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
+fgf_19,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
 glutamate_decarboxylase_2_antibody,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Glutamic acid decarboxylase (GAD65) antibody assay.
 creatinine,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
 creatine,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
