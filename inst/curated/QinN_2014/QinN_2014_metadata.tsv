@@ -1,7 +1,7 @@
 sampleID	subjectID	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	alcohol	prothrombin_time	creatine	inr	ctp	albumine	bilubirin	NCBI_accession
 HD-1	HD-1	stool	no	none	control	none	40	adult	female	20.03	CHN	no	IlluminaHiSeq	NA	25079328	60726168	6072616800	100	100	no	NA	53	NA	NA	49.4	NA	ERR528329;ERR528329;ERR526291
 HD-2	HD-2	stool	no	none	control	none	46	adult	female	20.83	CHN	no	IlluminaHiSeq	NA	25079328	29340068	2934006800	100	100	no	NA	60	NA	NA	43.9	NA  ERR527062
-HD-3	HD-3	stool	no	none	control	none	45	adult	male	19.58	CHN	no	IlluminaHiSeq	NA	25079328	38246256	3824625600	100	100	no	NA  66	NA	NA	50.9	2.98	ERR527075;ERR527074
+HD-3	HD-3	stool	no	none	control	none	45	adult	male	19.58	CHN	no	IlluminaHiSeq	NA	25079328	38246256	3824625600	100	100	no	NA  66	NA	NA	50.9	2.98  ERR527075;ERR527074
 HD-4	HD-4	stool	no	none	control	none	38	adult	male	20.05	CHN	no	IlluminaHiSeq	NA	25079328	51629990	5162999000	100	100	no	NA	53	NA	NA	45.9	2.68	ERR527088
 HD-5	HD-5	stool	no	none	control	none	43	adult	female	22.38	CHN	no	IlluminaHiSeq	NA	25079328	31658258	3165825800	100	100	no	NA	45	NA	NA	50.3	2.94	ERR527104
 HD-6	HD-6	stool	no	none	control	none	38	adult	female	21.48	CHN	no	IlluminaHiSeq	NA	25079328	71449782	7144978200	100	100	no	NA	50	NA	NA	46.3	2.71	ERR527120;ERR527119
