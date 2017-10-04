@@ -40,7 +40,7 @@ days_after_onset,non-unique,optional,FALSE,[0-9]+,Days from the onset of the dis
 stec_count,non-unique,optional,FALSE,high|low|moderate,Amount of STEC colonies detected.
 shigatoxin_2_elisa,non-unique,optional,FALSE,positive|negative,Enzyme-linked immunosorbent assay for Shiga-toxigenic E.coli.
 stool_texture,non-unique,optional,FALSE,smooth|watery|bloody,Texture of the stool at sampling time.
-insulin(cat),non-unique,optional,FALSE,yes|no,Insulin intake as a boolean.
+insulin_cat,non-unique,optional,FALSE,yes|no,Insulin intake (yes/no)
 inr,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,International normalized ratio.
 protein_intake,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Indication about the protein intake in the Mongolians diet.
 flg_genotype,non-unique,optional,FALSE,wt|s1515x|e2422x|e2422x/3321dela,Any term for filaggrin-protein genotype.
