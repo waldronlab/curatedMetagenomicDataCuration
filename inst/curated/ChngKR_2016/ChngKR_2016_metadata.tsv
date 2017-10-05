@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	alcohol	flg-genotype	NCBI_accession
+sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	alcohol	flg_genotype	NCBI_accession
 WBE005	Sub1	skin	NA	control	none	30	adult	male	NA	IDN	no	IlluminaHiSeq	Qiagen	27562258	17092902	1709290200	99	100.0	no	wt	SRR1950713
 WBE006	Sub1	skin	NA	control	none	30	adult	male	NA	IDN	no	IlluminaHiSeq	Qiagen	27562258	21505086	2150508600	99	100.0	no	wt	SRR1950714
 WBE007	Sub2	skin	NA	control	none	29	adult	female	NA	SGP	no	IlluminaHiSeq	Qiagen	27562258	17849002	1784900200	99	100.0	no	wt	SRR1950715
