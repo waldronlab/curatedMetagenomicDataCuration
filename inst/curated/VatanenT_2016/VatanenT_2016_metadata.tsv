@@ -416,7 +416,7 @@ G78494	E033156	stool	no	none	control	healthy	3	NA	child	male	NA	FIN	1105	no	Illu
 G78837	E033156	stool	no	none	control	healthy	0	259.0	newborn	male	NA	FIN	259	no	IlluminaHiSeq	Qiagen	27259157	11511778	1129813354	65	101	NA	NA	5.0	NA	SRR4305337
 G78836	E033156	stool	no	none	control	healthy	0	320.0	newborn	male	NA	FIN	320	no	IlluminaHiSeq	Qiagen	27259157	10563486	1029331670	68	101	NA	NA	5.0	NA	SRR4305336
 G80562	E005804	stool	yes	penicillins	otitis	otitis	0	291.0	newborn	male	NA	FIN	0	no	IlluminaHiSeq	Qiagen	27259157	5750356	557577942	63	100	401.0	3.0	5.0	NA	SRR4408155
-G78827	E005804	stool	yes	sulphoNAmides	pneumonia	pneumonia	1	NA	newborn	male	NA	FIN	609	no	IlluminaHiSeq	Qiagen	27259157	8994946	876657222	79	101	401.0	3.0	5.0	NA	SRR4305326
+G78827	E005804	stool	yes	sulphonamides	pneumonia	pneumonia	1	NA	newborn	male	NA	FIN	609	no	IlluminaHiSeq	Qiagen	27259157	8994946	876657222	79	101	401.0	3.0	5.0	NA	SRR4305326
 G80343	T012312	stool	no	none	control	healthy	2	NA	child	male	NA	EST	861	no	IlluminaHiSeq	Qiagen	27259157	34027498	3306263122	60	101	401.0	3.0	5.0	NA	SRR4408154
 G80509	T012312	stool	no	none	control	healthy	0	120.0	newborn	male	NA	EST	0	no	IlluminaHiSeq	Qiagen	27259157	32789058	3163309509	60	100	401.0	3.0	5.0	NA	SRR4408095
 G78602	T012312	stool	no	none	control	healthy	1	NA	newborn	male	NA	EST	680	no	IlluminaHiSeq	Qiagen	27259157	19415588	1890069448	60	101	401.0	3.0	5.0	NA	SRR4305131
@@ -439,9 +439,9 @@ G80556	E025830	stool	no	none	control	healthy	0	136.0	newborn	male	NA	FIN	0	no	Il
 G80555	E020808	stool	no	none	control	healthy	0	40.0	newborn	female	NA	FIN	0	no	IlluminaHiSeq	Qiagen	27259157	18166820	1761795111	61	100	NA	NA	5.0	NA	SRR4408148
 G80518	E020808	stool	yes	cephalosporins;penicillins	otitis	otitis	1	NA	newborn	female	NA	FIN	689	no	IlluminaHiSeq	Qiagen	27259157	23403874	2256432609	60	99	NA	NA	5.0	NA	SRR4408105
 G80320	E020808	stool	yes	cephalosporins;penicillins	otitis	otitis	1	NA	newborn	female	NA	FIN	563	no	IlluminaHiSeq	Qiagen	27259157	21947882	2132292370	60	101	NA	NA	5.0	NA	SRR4408002
-G80284	E020808	stool	yes	penicillins;sulphoNAmides	otitis	otitis	1	NA	newborn	female	NA	FIN	382	no	IlluminaHiSeq	Qiagen	27259157	28113758	2731318005	60	100	NA	NA	5.0	NA	SRR4305443
+G80284	E020808	stool	yes	penicillins;sulphonamides	otitis	otitis	1	NA	newborn	female	NA	FIN	382	no	IlluminaHiSeq	Qiagen	27259157	28113758	2731318005	60	100	NA	NA	5.0	NA	SRR4305443
 G78859	E020808	stool	yes	penicillins;macrolides;beta_lactamase_inhibitors	otitis	otitis	2	NA	child	female	NA	FIN	844	no	IlluminaHiSeq	Qiagen	27259157	18786356	1825981406	60	100	NA	NA	5.0	NA	SRR4305358
-G69172	E020808	stool	yes	penicillins;sulphoNAmides	otitis	otitis	1	NA	newborn	female	NA	FIN	479	no	IlluminaHiSeq	Qiagen	27259157	33189972	3302763022	62	101	NA	NA	5.0	NA	SRR4305166
+G69172	E020808	stool	yes	penicillins;sulphonamides	otitis	otitis	1	NA	newborn	female	NA	FIN	479	no	IlluminaHiSeq	Qiagen	27259157	33189972	3302763022	62	101	NA	NA	5.0	NA	SRR4305166
 G80552	E008437	stool	no	none	control	healthy	0	209.0	newborn	female	NA	FIN	209	no	IlluminaHiSeq	Qiagen	27259157	28450054	2763904551	61	101	NA	3.0	5.0	NA	SRR4408145
 G80496	E008437	stool	yes	macrolides	otitis	otitis	0	118.0	newborn	female	NA	FIN	0	no	IlluminaHiSeq	Qiagen	27259157	7206492	667144425	60	101	NA	3.0	5.0	NA	SRR4408082
 G78533	E008437	stool	no	none	control	healthy	1	NA	newborn	female	NA	FIN	669	no	IlluminaHiSeq	Qiagen	27259157	12183310	1182622393	60	100	NA	3.0	5.0	NA	SRR4305062
@@ -465,7 +465,7 @@ G80536	T009275	stool	no	none	control	healthy	0	33.0	newborn	female	NA	EST	0	no	I
 G80531	T009275	stool	yes	penicillins	bronchitis	bronchitis	0	301.0	newborn	female	NA	EST	301	no	IlluminaHiSeq	Qiagen	27259157	28410714	2737645942	60	99	NA	NA	5.0	NA	SRR4408126
 G80535	E006871	stool	no	none	control	healthy	0	113.0	newborn	female	NA	FIN	113	no	IlluminaHiSeq	Qiagen	27259157	17268872	1612955925	60	101	NA	NA	NA	404.0	SRR4408130
 G80530	E006871	stool	no	none	control	healthy	0	52.0	newborn	female	NA	FIN	0	no	IlluminaHiSeq	Qiagen	27259157	35302212	3410006731	60	100	NA	NA	NA	404.0	SRR4408125
-G80446	E006871	stool	yes	penicillins;sulphoNAmides	otitis	otitis	0	296.0	newborn	female	NA	FIN	296	no	IlluminaHiSeq	Qiagen	27259157	28299546	2777949491	60	101	NA	NA	NA	404.0	SRR4408029
+G80446	E006871	stool	yes	penicillins;sulphonamides	otitis	otitis	0	296.0	newborn	female	NA	FIN	296	no	IlluminaHiSeq	Qiagen	27259157	28299546	2777949491	60	101	NA	NA	NA	404.0	SRR4408029
 G80534	P009291	stool	no	none	control	healthy	2	NA	child	male	NA	RUS	784	no	IlluminaHiSeq	Qiagen	27259157	21520178	2072990862	60	99	401.0	3.0	5.0	NA	SRR4408129
 G69234	P009291	stool	yes	penicillins	tonsillitis	tonsillitis	1	NA	newborn	male	NA	RUS	494	no	IlluminaHiSeq	Qiagen	27259157	29548072	2927713582	62	101	401.0	3.0	5.0	NA	SRR4305514
 G69221	P009291	stool	no	none	control	healthy	0	359.0	newborn	male	NA	RUS	359	no	IlluminaHiSeq	Qiagen	27259157	14557232	1458567819	68	101	401.0	3.0	5.0	NA	SRR4305499
@@ -478,7 +478,7 @@ G78650	P009291	stool	yes	penicillins	tonsillitis	tonsillitis	1	NA	newborn	male	N
 G80533	E002825	stool	yes	sulphoNAmides	otitis	otitis	0	312.0	newborn	male	NA	FIN	0	no	IlluminaHiSeq	Qiagen	27259157	32920882	3172253031	60	99	401.0	3.0	5.0	NA	SRR4408128
 G80529	T007748	stool	no	none	control	healthy	0	309.0	newborn	male	NA	EST	309	no	IlluminaHiSeq	Qiagen	27259157	28456168	2743957756	60	100	NA	NA	NA	401.0	SRR4408124
 G80497	T007748	stool	no	none	control	healthy	0	226.0	newborn	male	NA	EST	226	no	IlluminaHiSeq	Qiagen	27259157	7108878	651479852	60	100	NA	NA	NA	401.0	SRR4408083
-G80472	T007748	stool	yes	cephalosporins;penicillins;sulphoNAmides	pyelonephritis	pyelonephritis	0	44.0	newborn	male	NA	EST	0	no	IlluminaHiSeq	Qiagen	27259157	7951736	727535388	60	101	NA	NA	NA	401.0	SRR4408056
+G80472	T007748	stool	yes	cephalosporins;penicillins;sulphonamides	pyelonephritis	pyelonephritis	0	44.0	newborn	male	NA	EST	0	no	IlluminaHiSeq	Qiagen	27259157	7951736	727535388	60	101	NA	NA	NA	401.0	SRR4408056
 G80340	T016812	stool	no	none	control	healthy	1	NA	newborn	female	NA	EST	589	no	IlluminaHiSeq	Qiagen	27259157	40865336	3977799778	60	101	NA	NA	NA	404.0	SRR4408121
 G69184	T016812	stool	no	none	control	healthy	1	NA	newborn	female	NA	EST	0	no	IlluminaHiSeq	Qiagen	27259157	32814898	3249556687	62	101	NA	NA	NA	404.0	SRR4305300
 G69176	T016812	stool	no	none	control	healthy	1	NA	newborn	female	NA	EST	675	no	IlluminaHiSeq	Qiagen	27259157	11812208	1183721017	62	101	NA	NA	NA	404.0	SRR4305210
