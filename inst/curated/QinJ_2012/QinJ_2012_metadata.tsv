@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	cholesterol	dyastolic_p	systolic_p	c-peptide	NCBI_accession
+sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	cholesterol	dyastolic_p	systolic_p	c_peptide	NCBI_accession
 DLF001	DLF001	stool	NA	T2D	T2D	59	adult	female	19.83	CHN	no	IlluminaHiSeq	NA	23023125	33230154	2459031396	73	74.0	225.0580032	90.0	150.0	NA	SRR341581
 DLF002	DLF002	stool	NA	T2D	T2D	43	adult	female	17.58	CHN	no	IlluminaHiSeq	NA	23023125	20447208	1513093392	73	74.0	188.70842879999998	80.0	110.0	NA	SRR341582
 DLF003	DLF003	stool	NA	T2D	T2D	46	adult	female	20.31	CHN	no	IlluminaHiSeq	NA	23023125	26964088	1995342512	73	74.0	192.9621024	70.0	110.0	NA	SRR341583

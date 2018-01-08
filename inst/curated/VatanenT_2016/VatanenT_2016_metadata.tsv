@@ -402,8 +402,13 @@ G78805	E019793	stool	no	none	control	healthy	3	NA	child	male	NA	FIN	1097	no	Illu
 G78715	E019793	stool	no	none	control	healthy	1	NA	newborn	male	NA	FIN	670	no	IlluminaHiSeq	Qiagen	27259157	15077504	1469942044	70	101	NA	201.0	5.0	NA	SRR4305235
 G80567	E009667	stool	no	none	control	healthy	0	213.0	newborn	female	NA	FIN	0	no	IlluminaHiSeq	Qiagen	27259157	16105314	1559457190	60	100	NA	201.0	5.0	NA	SRR4408160
 G69225	E009667	stool	no	none	control	healthy	2	NA	child	female	NA	FIN	888	no	IlluminaHiSeq	Qiagen	27259157	18038498	1792388971	60	101	NA	201.0	5.0	NA	SRR4305504
+<<<<<<< HEAD
 G69174	E009667	stool	yes	penicillins;sulphonamides	otitis	otitis	1	NA	newborn	female	NA	FIN	565	no	IlluminaHiSeq	Qiagen	27259157	15147530	1510415797	67	101	NA	201.0	5.0	NA	SRR4305188
 G69173	E009667	stool	yes	penicillins;sulphonamides	otitis	otitis	1	NA	newborn	female	NA	FIN	682	no	IlluminaHiSeq	Qiagen	27259157	10712986	1066883681	66	101	NA	201.0	5.0	NA	SRR4305177
+=======
+G69174	E009667	stool	yes	penicillins;sﬁulphoNAmides	otitis	otitis	1	NA	newborn	female	NA	FIN	565	no	IlluminaHiSeq	Qiagen	27259157	15147530	1510415797	67	101	NA	201.0	5.0	NA	SRR4305188
+G69173	E009667	stool	yes	penicillins;sulphoNAmides	otitis	otitis	1	NA	newborn	female	NA	FIN	682	no	IlluminaHiSeq	Qiagen	27259157	10712986	1066883681	66	101	NA	201.0	5.0	NA	SRR4305177
+>>>>>>> bdc1f3031fb02844e266882cb0eb09a21a62bb43
 G80566	E024646	stool	no	none	control	healthy	0	47.0	newborn	male	NA	FIN	0	no	IlluminaHiSeq	Qiagen	27259157	42259984	4154731398	62	101	NA	3.0	3.0	401.0	SRR4408159
 G80430	E024646	stool	yes	penicillins;beta_lactamase_inhibitors	otitis	otitis	0	293.0	newborn	male	NA	FIN	293	no	IlluminaHiSeq	Qiagen	27259157	26197522	2565031918	60	101	NA	3.0	3.0	401.0	SRR4408013
 G78617	E024646	stool	yes	cephalosporins;macrolides	otitis	otitis	1	NA	newborn	male	NA	FIN	525	no	IlluminaHiSeq	Qiagen	27259157	18943184	1842292396	60	101	NA	3.0	3.0	401.0	SRR4305149
