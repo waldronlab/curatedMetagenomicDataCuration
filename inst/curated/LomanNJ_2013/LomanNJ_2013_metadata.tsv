@@ -1,44 +1,44 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	days_after_onset	stec_count	shigatoxin_2_elisa	stool_texture	NCBI_accession
-OBK1122	OBK1122	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	464060	464060	150	150.0	NA	NA	NA	NA	ERR262939;ERR262938
-OBK1196	OBK1196	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	30181380	30181380	150	150.0	NA	NA	NA	NA	ERR262941;ERR262940
-OBK1253	OBK1253	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	65704818	65704818	150	150.0	NA	NA	NA	NA	ERR262942;ERR260476
-OBK2535	OBK2535	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	43597736	43597736	150	150.0	3	moderate	positive	smooth	ERR260478;ERR260477
-OBK2638	OBK2638	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	1105492	1105492	150	150.0	5	high	positive	bloody	ERR262943;ERR260480
-OBK2661	OBK2661	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	16760944	16760944	150	150.0	7	low	negative	watery	ERR260481
-OBK2668	OBK2668	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	575056	575056	150	150.0	8	low	positive	watery	ERR262944
-OBK2723	OBK2723	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	3017764	3017764	150	150.0	3	high	positive	bloody	ERR262946;ERR262945
-OBK2741	OBK2741	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	5741694	5741694	150	150.0	7	moderate	negative	smooth	ERR262947
-OBK2752	OBK2752	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	6882096	6882096	150	150.0	7	high	positive	smooth	ERR260482
-OBK2758	OBK2758	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	6658542	6658542	150	150.0	1	low	negative	smooth	ERR260483
-OBK2764	OBK2764	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	7913916	7913916	151	151.0	8	high	positive	smooth	ERR260484
-OBK2772	OBK2772	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	197454	197454	150	150.0	1	high	positive	watery	ERR260485
-OBK2828	OBK2828	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	5884524	5884524	150	150.0	6	high	positive	NA	ERR260486
-OBK2840	OBK2840	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	6469242	6469242	150	150.0	5	high	positive	watery	ERR260487
-OBK2848	OBK2848	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	6829710	6829710	150	150.0	4	low	negative	smooth	ERR260488
-OBK2849	OBK2849	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	7512120	7512120	150	150.0	5	moderate	negative	smooth	ERR262948
-OBK2878	OBK2878	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	8526408	8526408	150	150.0	2	high	positive	watery	ERR260489
-OBK2880	OBK2880	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	623932	623932	150	150.0	1	high	negative	bloody	ERR260490
-OBK2896	OBK2896	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	1418814	1418814	150	150.0	2	high	positive	bloody	ERR260491
-OBK2971	OBK2971	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	4813984	4813984	150	150.0	1	high	positive	bloody	ERR260492
-OBK3014	OBK3014	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	1311862	1311862	150	150.0	1	high	positive	NA	ERR262949
-OBK3132	OBK3132	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	13922176	13922176	150	150.0	6	low	negative	smooth	ERR260493
-OBK3134	OBK3134	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	11083554	11083554	150	150.0	10	low	positive	smooth	ERR260494
-OBK3135	OBK3135	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	12739976	12739976	150	150.0	3	high	positive	smooth	ERR260495
-OBK3185	OBK3185	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	9532966	9532966	150	150.0	10	high	positive	bloody	ERR262951
-OBK3303	OBK3303	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	338244	338244	150	150.0	3	high	positive	bloody	ERR260496
-OBK3549	OBK3549	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	11389690	11389690	150	150.0	14	low	negative	watery	ERR260497
-OBK3587	OBK3587	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	11879448	11879448	150	150.0	10	low	negative	watery	ERR262952
-OBK3646	OBK3646	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	10510576	10510576	150	150.0	6	low	negative	smooth	ERR260498
-OBK3751	OBK3751	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	8750678	8750678	150	150.0	19	high	positive	smooth	ERR260499
-OBK3852	OBK3852	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	216334	216334	150	150.0	1	low	positive	watery	ERR260500
-OBK3958	OBK3958	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	5109908	5109908	150	150.0	12	low	positive	smooth	ERR262953
-OBK4096	OBK4096	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	5012374	5012374	150	150.0	NA	NA	NA	NA	ERR262955;ERR262954
-OBK4112	OBK4112	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	6178336	6178336	150	150.0	14	low	positive	smooth	ERR262956
-OBK4141	OBK4141	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	8941948	8941948	150	150.0	5	moderate	positive	watery	ERR260501
-OBK4168	OBK4168	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	223914	223914	150	150.0	8	moderate	positive	watery	ERR262957
-OBK4198	OBK4198	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	9235874	9235874	150	150.0	6	low	positive	smooth	ERR260502
-OBK4328	OBK4328	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	6689140	6689140	150	150.0	20	low	positive	smooth	ERR262958;ERR260503
-OBK4508	OBK4508	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	5767340	5767340	150	150.0	26	high	negative	smooth	ERR260504
-OBK4961	OBK4961	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	1563982	1563982	150	150.0	NA	NA	NA	NA	ERR262959;ERR260505
-OBK5066	OBK5066	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	528896	528896	150	150.0	3	low	positive	watery	ERR260506
-OBK2535b	OBK2535b	stool	NA	STEC	STEC	NA	adult	NA	DEU	no	IlluminaHiSeq	Qiagen	23571589	22253314	22253314	150	150.0	NA	NA	NA	NA	ERR260479
+sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	days_after_onset	stec_count	shigatoxin_2_elisa	stool_texture	curator	NCBI_accession
+OBK1122	OBK1122	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	464060	69609000	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262939;ERR262938
+OBK1196	OBK1196	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	30181380	4527207000	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262941;ERR262940
+OBK1253	OBK1253	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	65704818	9855722700	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262942;ERR260476
+OBK2535	OBK2535	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	43597736	6539660400	150	150	3.0	moderate	positive	smooth	Paolo_Manghi	ERR260478;ERR260477
+OBK2535b	OBK2535b	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	22253314	3337997100	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR260479
+OBK2638	OBK2638	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	1105492	165823800	150	150	5.0	high	positive	bloody	Paolo_Manghi	ERR262943;ERR260480
+OBK2661	OBK2661	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	16760944	2514141600	150	150	7.0	low	negative	watery	Paolo_Manghi	ERR260481
+OBK2668	OBK2668	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	575056	86258400	150	150	8.0	low	positive	watery	Paolo_Manghi	ERR262944
+OBK2723	OBK2723	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	3017764	452664600	150	150	3.0	high	positive	bloody	Paolo_Manghi	ERR262946;ERR262945
+OBK2741	OBK2741	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	5741694	861254100	150	150	7.0	moderate	negative	smooth	Paolo_Manghi	ERR262947
+OBK2752	OBK2752	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	6882096	1032314400	150	150	7.0	high	positive	smooth	Paolo_Manghi	ERR260482
+OBK2758	OBK2758	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	6658542	998781300	150	150	1.0	low	negative	smooth	Paolo_Manghi	ERR260483
+OBK2764	OBK2764	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	7913916	1195001316	151	151	8.0	high	positive	smooth	Paolo_Manghi	ERR260484
+OBK2772	OBK2772	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	197454	29618100	150	150	1.0	high	positive	watery	Paolo_Manghi	ERR260485
+OBK2828	OBK2828	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	5884524	882678600	150	150	6.0	high	positive	NA	Paolo_Manghi	ERR260486
+OBK2840	OBK2840	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	6469242	970386300	150	150	5.0	high	positive	watery	Paolo_Manghi	ERR260487
+OBK2848	OBK2848	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	6829710	1024456500	150	150	4.0	low	negative	smooth	Paolo_Manghi	ERR260488
+OBK2849	OBK2849	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	7512120	1126818000	150	150	5.0	moderate	negative	smooth	Paolo_Manghi	ERR262948
+OBK2878	OBK2878	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	8526408	1278961200	150	150	2.0	high	positive	watery	Paolo_Manghi	ERR260489
+OBK2880	OBK2880	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	623932	93589800	150	150	1.0	high	negative	bloody	Paolo_Manghi	ERR260490
+OBK2896	OBK2896	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	1418814	212822100	150	150	2.0	high	positive	bloody	Paolo_Manghi	ERR260491
+OBK2971	OBK2971	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	4813984	722097600	150	150	1.0	high	positive	bloody	Paolo_Manghi	ERR260492
+OBK3014	OBK3014	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	1311862	196779300	150	150	1.0	high	positive	NA	Paolo_Manghi	ERR262949
+OBK3132	OBK3132	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	13922176	2088326400	150	150	6.0	low	negative	smooth	Paolo_Manghi	ERR260493
+OBK3134	OBK3134	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	11083554	1662533100	150	150	10.0	low	positive	smooth	Paolo_Manghi	ERR260494
+OBK3135	OBK3135	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	12739976	1910996400	150	150	3.0	high	positive	smooth	Paolo_Manghi	ERR260495
+OBK3185	OBK3185	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	9532966	1429944900	150	150	10.0	high	positive	bloody	Paolo_Manghi	ERR262951
+OBK3303	OBK3303	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	338244	50736600	150	150	3.0	high	positive	bloody	Paolo_Manghi	ERR260496
+OBK3549	OBK3549	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	11389690	1708453500	150	150	14.0	low	negative	watery	Paolo_Manghi	ERR260497
+OBK3587	OBK3587	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	11879448	1781917200	150	150	10.0	low	negative	watery	Paolo_Manghi	ERR262952
+OBK3646	OBK3646	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	10510576	1576586400	150	150	6.0	low	negative	smooth	Paolo_Manghi	ERR260498
+OBK3751	OBK3751	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	8750678	1312601700	150	150	19.0	high	positive	smooth	Paolo_Manghi	ERR260499
+OBK3852	OBK3852	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	216334	32450100	150	150	1.0	low	positive	watery	Paolo_Manghi	ERR260500
+OBK3958	OBK3958	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	5109908	766486200	150	150	12.0	low	positive	smooth	Paolo_Manghi	ERR262953
+OBK4096	OBK4096	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	5012374	751856100	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262955;ERR262954
+OBK4112	OBK4112	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	6178336	926750400	150	150	14.0	low	positive	smooth	Paolo_Manghi	ERR262956
+OBK4141	OBK4141	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	8941948	1341292200	150	150	5.0	moderate	positive	watery	Paolo_Manghi	ERR260501
+OBK4168	OBK4168	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	223914	33587100	150	150	8.0	moderate	positive	watery	Paolo_Manghi	ERR262957
+OBK4198	OBK4198	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	9235874	1385381100	150	150	6.0	low	positive	smooth	Paolo_Manghi	ERR260502
+OBK4328	OBK4328	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	6689140	1003371000	150	150	20.0	low	positive	smooth	Paolo_Manghi	ERR262958;ERR260503
+OBK4508	OBK4508	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	5767340	865101000	150	150	26.0	high	negative	smooth	Paolo_Manghi	ERR260504
+OBK4961	OBK4961	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	1563982	234597300	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262959;ERR260505
+OBK5066	OBK5066	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	528896	79334400	150	150	3.0	low	positive	watery	Paolo_Manghi	ERR260506
