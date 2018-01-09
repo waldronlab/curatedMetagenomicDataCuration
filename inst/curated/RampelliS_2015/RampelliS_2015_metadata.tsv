@@ -1,39 +1,39 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession
-H1	H1	stool	NA	control	none	43	adult	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	29669622	2830033596	60	100.0	SRR1927149
-H2	H2	stool	NA	control	none	37	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	9826206	988220006	60	101.0	SRR1930133
-H3	H3	stool	NA	control	none	22	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	33390282	3146096300	60	100.0	SRR1930145
-H4	H4	stool	NA	control	none	24	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	26594484	2491288184	60	100.0	SRR1930149
-H5	H5	stool	NA	control	none	70	senior	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	10487900	883278160	60	84.0	SRR1930176
-H6	H6	stool	NA	control	none	30	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	11074784	1054071176	60	100.0	SRR1930177
-H7	H7	stool	NA	control	none	38	adult	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	10494336	980998249	60	100.0	SRR1930179
-H8	H8	stool	NA	control	none	20	adult	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	8083202	760298006	60	100.0	SRR1930187
-H9	H9	stool	NA	control	none	47	adult	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	16013402	1527874314	60	100.0	SRR1930244
-H10	H10	stool	NA	control	none	40	adult	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	63686272	6142112280	60	100.0	SRR1929408
-H11	H11	stool	NA	control	none	29	adult	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	16543096	1565359457	60	100.0	SRR1929484
-H12	H12	stool	NA	control	none	8	child	female	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	9489634	899601344	60	100.0	SRR1929485
-H13	H13	stool	NA	control	none	34	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	28163582	2661816112	60	100.0	SRR1929563
-H14	H14	stool	NA	control	none	30	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	71290650	6826446232	60	100.0	SRR1930121
-H15	H15	stool	NA	control	none	16	schoolage	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	20862744	1980997308	60	100.0	SRR1929574
-H16	H16	stool	NA	control	none	21	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	30793236	2927039121	60	100.0	SRR1930122
-H17	H17	stool	NA	control	none	23	adult	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	77841428	7485242731	60	100.0	SRR1930123
-H18	H18	stool	NA	control	none	17	schoolage	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	30667466	2936595311	60	100.0	SRR1930128
-H19	H19	stool	NA	control	none	15	schoolage	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	9733720	945575362	60	100.0	SRR1930132
-H20	H20	stool	NA	control	none	13	schoolage	male	NA	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	22627484	2149085736	60	100.0	SRR1930134
-H21	H21	stool	NA	control	none	43	adult	male	NA	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	26781422	2304894660	60	86.0	SRR1930136
-H22	H22	stool	NA	control	none	38	adult	male	NA	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	9859974	923724588	60	100.0	SRR1930138
-H23	H23	stool	NA	control	none	24	adult	male	NA	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	16899772	1621608653	60	100.0	SRR1930140
-H24	H24	stool	NA	control	none	65	adult	male	NA	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	64739338	6257726926	60	100.0	SRR1930141
-H25	H25	stool	NA	control	none	40	adult	male	NA	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	10542544	1060433847	60	101.0	SRR1930142
-H26	H26	stool	NA	control	none	48	adult	male	NA	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	13207948	1223269784	60	100.0	SRR1930143
-H27	H27	stool	NA	control	none	29	adult	female	NA	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	10111438	941269421	60	100.0	SRR1930144
-IT1	IT1	stool	NA	control	none	38	adult	male	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	3880926	364905143	60	100.0	SRR1930247
-IT2	IT2	stool	NA	control	none	34	adult	female	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	19948528	1901675879	60	100.0	SRR1930253
-IT3	IT3	stool	NA	control	none	29	adult	female	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	14373500	1395564313	60	100.0	SRR1930255
-IT4	IT4	stool	NA	control	none	27	adult	male	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	6270148	536193207	60	85.0	SRR1930777
-IT5	IT5	stool	NA	control	none	30	adult	male	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	33488222	3213390403	60	100.0	SRR1931170
-IT6	IT6	stool	NA	control	none	32	adult	female	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	47834618	4634472140	60	100.0	SRR1931173
-IT7	IT7	stool	NA	control	none	25	adult	female	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	6461412	548261188	60	84.0	SRR1931177
-IT8	IT8	stool	NA	control	none	34	adult	male	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	7602042	643724175	60	84.0	SRR1931178
-IT11	IT11	stool	NA	control	none	40	adult	female	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	9662144	817884269	60	84.0	SRR1930248
-IT13	IT13	stool	NA	control	none	30	adult	female	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	4809534	449518356	60	100.0	SRR1930251
-IT14	IT14	stool	NA	control	none	21	adult	female	NA	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	3740248	316537176	60	84.0	SRR1930250
+sampleID	subjectID	body_site	antibiotics_current_use	study_condition	age	age_category	gender	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+H1	H1	stool	NA	control	43	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	29669622	2830033596	60	100	Paolo_Manghi	SRR1927149
+H10	H10	stool	NA	control	40	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	63686272	6142112280	60	100	Paolo_Manghi	SRR1929408
+H11	H11	stool	NA	control	29	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	16543096	1565359457	60	100	Paolo_Manghi	SRR1929484
+H12	H12	stool	NA	control	8	child	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	9489634	899601344	60	100	Paolo_Manghi	SRR1929485
+H13	H13	stool	NA	control	34	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	28163582	2661816112	60	100	Paolo_Manghi	SRR1929563
+H14	H14	stool	NA	control	30	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	71290650	6826446232	60	100	Paolo_Manghi	SRR1930121
+H15	H15	stool	NA	control	16	schoolage	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	20862744	1980997308	60	100	Paolo_Manghi	SRR1929574
+H16	H16	stool	NA	control	21	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	30793236	2927039121	60	100	Paolo_Manghi	SRR1930122
+H17	H17	stool	NA	control	23	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	77841428	7485242731	60	100	Paolo_Manghi	SRR1930123
+H18	H18	stool	NA	control	17	schoolage	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	30667466	2936595311	60	100	Paolo_Manghi	SRR1930128
+H19	H19	stool	NA	control	15	schoolage	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	9733720	945575362	60	100	Paolo_Manghi	SRR1930132
+H2	H2	stool	NA	control	37	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	9826206	988220006	60	101	Paolo_Manghi	SRR1930133
+H20	H20	stool	NA	control	13	schoolage	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	22627484	2149085736	60	100	Paolo_Manghi	SRR1930134
+H21	H21	stool	NA	control	43	adult	male	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	26781422	2304894660	60	86	Paolo_Manghi	SRR1930136
+H22	H22	stool	NA	control	38	adult	male	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	9859974	923724588	60	100	Paolo_Manghi	SRR1930138
+H23	H23	stool	NA	control	24	adult	male	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	16899772	1621608653	60	100	Paolo_Manghi	SRR1930140
+H24	H24	stool	NA	control	65	adult	male	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	64739338	6257726926	60	100	Paolo_Manghi	SRR1930141
+H25	H25	stool	NA	control	40	adult	male	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	10542544	1060433847	60	101	Paolo_Manghi	SRR1930142
+H26	H26	stool	NA	control	48	adult	male	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	13207948	1223269784	60	100	Paolo_Manghi	SRR1930143
+H27	H27	stool	NA	control	29	adult	female	TZA	Sengele	yes	IlluminaHiSeq	Qiagen	25981789	10111438	941269421	60	100	Paolo_Manghi	SRR1930144
+H3	H3	stool	NA	control	22	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	33390282	3146096300	60	100	Paolo_Manghi	SRR1930145
+H4	H4	stool	NA	control	24	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	26594484	2491288184	60	100	Paolo_Manghi	SRR1930149
+H5	H5	stool	NA	control	70	senior	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	10487900	883278160	60	84	Paolo_Manghi	SRR1930176
+H6	H6	stool	NA	control	30	adult	male	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	11074784	1054071176	60	100	Paolo_Manghi	SRR1930177
+H7	H7	stool	NA	control	38	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	10494336	980998249	60	100	Paolo_Manghi	SRR1930179
+H8	H8	stool	NA	control	20	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	8083202	760298006	60	100	Paolo_Manghi	SRR1930187
+H9	H9	stool	NA	control	47	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	16013402	1527874314	60	100	Paolo_Manghi	SRR1930244
+IT1	IT1	stool	NA	control	38	adult	male	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	3880926	364905143	60	100	Paolo_Manghi	SRR1930247
+IT11	IT11	stool	NA	control	40	adult	female	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	9662144	817884269	60	84	Paolo_Manghi	SRR1930248
+IT13	IT13	stool	NA	control	30	adult	female	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	4809534	449518356	60	100	Paolo_Manghi	SRR1930251
+IT14	IT14	stool	NA	control	21	adult	female	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	3740248	316537176	60	84	Paolo_Manghi	SRR1930250
+IT2	IT2	stool	NA	control	34	adult	female	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	19948528	1901675879	60	100	Paolo_Manghi	SRR1930253
+IT3	IT3	stool	NA	control	29	adult	female	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	14373500	1395564313	60	100	Paolo_Manghi	SRR1930255
+IT4	IT4	stool	NA	control	27	adult	male	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	6270148	536193207	60	85	Paolo_Manghi	SRR1930777
+IT5	IT5	stool	NA	control	30	adult	male	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	33488222	3213390403	60	100	Paolo_Manghi	SRR1931170
+IT6	IT6	stool	NA	control	32	adult	female	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	47834618	4634472140	60	100	Paolo_Manghi	SRR1931173
+IT7	IT7	stool	NA	control	25	adult	female	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	6461412	548261188	60	84	Paolo_Manghi	SRR1931177
+IT8	IT8	stool	NA	control	34	adult	male	ITA	Bologna	no	IlluminaHiSeq	Qiagen	25981789	7602042	643724175	60	84	Paolo_Manghi	SRR1931178
