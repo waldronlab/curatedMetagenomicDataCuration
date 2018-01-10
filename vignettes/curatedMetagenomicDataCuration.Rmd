@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE, cache=FALSE)
 library(curatedMetagenomicDataCuration)
 ```
 
+This vignette was built on `r Sys.time()` based on `curatedMetagenomicDataCuration` version `r sessionInfo()$otherPkgs$curatedMetagenomicDataCuration$Version`.
+
 Define base GitHub URLs for viewing / editing in place:
 ```{r}
 baseurl <- "https://github.com/waldronlab/curatedMetagenomicDataCuration"
