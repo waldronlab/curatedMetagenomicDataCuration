@@ -22,7 +22,7 @@ sequencing_platform,non-unique,required,FALSE,IlluminaHiSeq|IlluminaMiSeq|Illumi
 DNA_extraction_kit,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|other,DNA extraction kit.
 PMID,non-unique,required,FALSE,[0-9]{8}|unpublished,Identifier of the main publication in PubMed.
 number_reads,non-unique,required,FALSE,[0-9]+,Number of final reads - calculated from raw data.
-number_bases,non-unique,required,FALSE,[0-9]+,Total number of bases sequenced in the sample.
+number_bases,non-unique,required,FALSE,[0-9]+,Total number of bases sequenced in the sample - calculated from raw data.
 minimum_read_length,non-unique,required,FALSE,[0-9]+,Minimum read length - calculated from raw data.
 median_read_length,non-unique,required,FALSE,[0-9]+,Median read length - calculated from raw data.
 NCBI_accession,unique,optional,TRUE,[ES]R[SR][0-9]+,Semicolon-separated vector of NCBI accessions.
@@ -82,4 +82,5 @@ hscrp,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,High-sensitivity C-reactive prot
 ferm_milk_prod_consumer,non-unique,optional,FALSE,dfmp,Dfmp means yes (defined milk product).
 family,non-unique,optional,FALSE,[0-9]+,A number identifying the family subjects belong; not corrected for meta-analyses.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
-curator,non-unique,required,FALSE,[a-zA-Z]\S+,Curator name.
+flg-genotype,non-unique,optional,FALSE,[0-9]+,Flg genotype.
+curator,non-unique,required,FALSE,Paolo_Manghi,Curator name.
