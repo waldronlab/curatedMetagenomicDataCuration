@@ -81,6 +81,6 @@ systolic_p,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Measured in mm/Hg.
 hscrp,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,High-sensitivity C-reactive protein test result.
 ferm_milk_prod_consumer,non-unique,optional,FALSE,dfmp,Dfmp means yes (defined milk product).
 family,non-unique,optional,FALSE,[0-9]+,A number identifying the family subjects belong; not corrected for meta-analyses.
-uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
 flg-genotype,non-unique,optional,FALSE,[0-9]+,Flg genotype.
 curator,non-unique,required,FALSE,Paolo_Manghi,Curator name.
+uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
