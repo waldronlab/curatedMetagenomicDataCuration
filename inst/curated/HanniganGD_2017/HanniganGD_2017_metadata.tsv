@@ -1,83 +1,83 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
-MG100208	A29	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6133350	763336051	75	126	Paolo_Manghi	SRR5665080
-MG100207	A28	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	9320348	1161633690	75	126	Paolo_Manghi	SRR5665075
-MG100206	A27	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6342570	787897159	75	126	Paolo_Manghi	SRR5665074
-MG100205	A26	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	12551662	1562374319	75	126	Paolo_Manghi	SRR5665073
-MG100204	A25	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	15176232	1883682219	75	126	Paolo_Manghi	SRR5665072
-MG100203	A24	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	8180768	1017721164	75	126	Paolo_Manghi	SRR5665079
-MG100202	A23	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5502292	682604286	75	126	Paolo_Manghi	SRR5665078
-MG100201	A22	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	7447616	925042865	75	126	Paolo_Manghi	SRR5665077
-MG100200	A21	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2673274	331955334	75	125	Paolo_Manghi	SRR5665076
-MG100199	A20	stool	unknown	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	4172300	520248981	75	126	Paolo_Manghi	SRR5665134
-MG100198	A19	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4192976	523220008	75	126	Paolo_Manghi	SRR5665135
-MG100197	A18	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	17378	2095914	75	125	Paolo_Manghi	SRR5665138
-MG100196	A17	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	3756000	468458028	75	126	Paolo_Manghi	SRR5665139
-MG100195	A16	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5210030	649073139	75	126	Paolo_Manghi	SRR5665136
-MG100194	A15	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4399222	547643145	75	126	Paolo_Manghi	SRR5665137
-MG100193	A14	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	3985802	496849984	75	126	Paolo_Manghi	SRR5665142
-MG100192	A13	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4364706	543771467	75	126	Paolo_Manghi	SRR5665143
-MG100191	A12	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4139714	516167997	75	126	Paolo_Manghi	SRR5665140
-MG100190	A11	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2645556	330262785	75	126	Paolo_Manghi	SRR5665141
-MG100189	A10	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2704534	336788760	75	126	Paolo_Manghi	SRR5665115
-MG100188	A09	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2025988	252696214	75	126	Paolo_Manghi	SRR5665114
-MG100187	A07	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	52356	6483099	75	126	Paolo_Manghi	SRR5665117
-MG100186	A06	stool	unknown	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	2460376	306706766	75	126	Paolo_Manghi	SRR5665116
-MG100185	A05	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2668328	331095421	75	126	Paolo_Manghi	SRR5665119
-MG100184	A04	stool	unknown	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5033926	627883959	75	126	Paolo_Manghi	SRR5665118
-MG100182	A02	stool	unknown	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	12140204	1510153677	75	126	Paolo_Manghi	SRR5665120
-MG100181	A01	stool	unknown	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10102332	1253480545	75	126	Paolo_Manghi	SRR5665123
-MG100180	H30	stool	unknown	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	21182166	2636134209	75	126	Paolo_Manghi	SRR5665122
-MG100179	H29	stool	unknown	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	10855718	1349678317	75	126	Paolo_Manghi	SRR5665186
-MG100178	H28	stool	unknown	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	18102008	2256749848	75	126	Paolo_Manghi	SRR5665187
-MG100177	H26	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4072828	506367839	75	126	Paolo_Manghi	SRR5665178
-MG100176	H25	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5679008	705484441	75	126	Paolo_Manghi	SRR5665179
-MG100175	H24	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	11241278	1399435776	75	126	Paolo_Manghi	SRR5665180
-MG100174	H23	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7801592	971871839	75	126	Paolo_Manghi	SRR5665181
-MG100173	H22	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	11886888	1475010313	75	126	Paolo_Manghi	SRR5665182
-MG100172	H21	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5352832	667010718	75	126	Paolo_Manghi	SRR5665183
-MG100171	H20	stool	unknown	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	9336134	1162883767	75	126	Paolo_Manghi	SRR5665184
-MG100170	H19	stool	unknown	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5920646	736381301	75	126	Paolo_Manghi	SRR5665185
-MG100169	H17	stool	unknown	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	3029258	377191200	75	126	Paolo_Manghi	SRR5665156
-MG100168	H16	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7524086	935525057	75	126	Paolo_Manghi	SRR5665155
-MG100167	H15	stool	unknown	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	6041774	752036731	75	126	Paolo_Manghi	SRR5665164
-MG100166	H14	stool	unknown	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	8698664	1082359356	75	126	Paolo_Manghi	SRR5665163
-MG100165	H13	stool	unknown	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	11712932	1460009052	75	126	Paolo_Manghi	SRR5665162
-MG100164	H12	stool	unknown	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	2521950	314344000	75	126	Paolo_Manghi	SRR5665161
-MG100163	H11	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	330750	41203287	75	126	Paolo_Manghi	SRR5665160
-MG100162	H10	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	2294514	285954703	75	126	Paolo_Manghi	SRR5665159
-MG100161	H09	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5793618	719074030	75	126	Paolo_Manghi	SRR5665158
-MG100160	H08	stool	unknown	control	healthy	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2959348	368712290	75	126	Paolo_Manghi	SRR5665157
-MG100159	H07	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	9031080	1122607451	75	126	Paolo_Manghi	SRR5665049
-MG100158	H06	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7233984	899865279	75	126	Paolo_Manghi	SRR5665050
-MG100157	H05	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6078718	756831578	75	126	Paolo_Manghi	SRR5665047
-MG100156	H04	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5064770	629428694	75	126	Paolo_Manghi	SRR5665048
-MG100155	H03	stool	unknown	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	3659936	456010285	75	126	Paolo_Manghi	SRR5665045
-MG100154	H02	stool	unknown	control	healthy	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10295240	1281380024	75	126	Paolo_Manghi	SRR5665046
-MG100153	H01	stool	unknown	control	healthy	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10217384	1267666004	75	126	Paolo_Manghi	SRR5665043
-MG100152	C30	stool	unknown	CRC	CRC	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6964066	866112898	75	126	Paolo_Manghi	SRR5665044
-MG100151	C29	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	7611462	946733673	75	126	Paolo_Manghi	SRR5665041
-MG100150	C28	stool	unknown	CRC	CRC	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5317176	661376565	75	126	Paolo_Manghi	SRR5665042
-MG100149	C27	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	4678900	581571081	75	126	Paolo_Manghi	SRR5665033
-MG100148	C26	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	3292898	409314397	75	126	Paolo_Manghi	SRR5665032
-MG100147	C25	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6285516	780091878	75	126	Paolo_Manghi	SRR5665029
-MG100146	C24	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6928748	860991653	75	126	Paolo_Manghi	SRR5665028
-MG100145	C23	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	9724858	1211600787	75	126	Paolo_Manghi	SRR5665031
-MG100144	C22	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	9621882	1193404715	75	126	Paolo_Manghi	SRR5665030
-MG100143	C20	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4836288	602503697	75	126	Paolo_Manghi	SRR5665025
-MG100142	C19	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	17146	2086283	75	125	Paolo_Manghi	SRR5665024
-MG100141	C18	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	7718414	958957029	75	126	Paolo_Manghi	SRR5665027
-MG100140	C17	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4833608	602192124	75	126	Paolo_Manghi	SRR5665026
-MG100139	C16	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6661922	830453874	75	126	Paolo_Manghi	SRR5665103
-MG100138	C15	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5941034	739942965	75	126	Paolo_Manghi	SRR5665053
-MG100137	C14	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	4370134	541601310	75	126	Paolo_Manghi	SRR5665058
-MG100136	C13	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6787334	845085642	75	126	Paolo_Manghi	SRR5665059
-MG100134	C11	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6105000	758910268	75	126	Paolo_Manghi	SRR5665061
-MG100133	C10	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	9707904	1208505568	75	126	Paolo_Manghi	SRR5665054
-MG100132	C09	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	14630940	1816500218	75	126	Paolo_Manghi	SRR5665055
-MG100131	C08	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5569662	693577210	75	126	Paolo_Manghi	SRR5665056
-MG100130	C06	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5011214	623336859	75	126	Paolo_Manghi	SRR5665057
-MG100129	C05	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7180402	891959475	75	126	Paolo_Manghi	SRR5665052
-MG100128	C04	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6329070	787577657	75	126	Paolo_Manghi	SRR5665051
-MG100127	C03	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4969190	618186207	75	126	Paolo_Manghi	SRR5665035
-MG100126	C02	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	5023590	624867363	75	126	Paolo_Manghi	SRR5665034
-MG100125	C01	stool	unknown	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5090156	634385981	75	126	Paolo_Manghi	SRR5665144
+sampleID	subjectID	body_site	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+MG100208	A29	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6133350	763336051	75	126	Paolo_Manghi	SRR5665080
+MG100207	A28	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	9320348	1161633690	75	126	Paolo_Manghi	SRR5665075
+MG100206	A27	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6342570	787897159	75	126	Paolo_Manghi	SRR5665074
+MG100205	A26	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	12551662	1562374319	75	126	Paolo_Manghi	SRR5665073
+MG100204	A25	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	15176232	1883682219	75	126	Paolo_Manghi	SRR5665072
+MG100203	A24	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	8180768	1017721164	75	126	Paolo_Manghi	SRR5665079
+MG100202	A23	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5502292	682604286	75	126	Paolo_Manghi	SRR5665078
+MG100201	A22	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	7447616	925042865	75	126	Paolo_Manghi	SRR5665077
+MG100200	A21	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2673274	331955334	75	125	Paolo_Manghi	SRR5665076
+MG100199	A20	stool	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	4172300	520248981	75	126	Paolo_Manghi	SRR5665134
+MG100198	A19	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4192976	523220008	75	126	Paolo_Manghi	SRR5665135
+MG100197	A18	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	17378	2095914	75	125	Paolo_Manghi	SRR5665138
+MG100196	A17	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	3756000	468458028	75	126	Paolo_Manghi	SRR5665139
+MG100195	A16	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5210030	649073139	75	126	Paolo_Manghi	SRR5665136
+MG100194	A15	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4399222	547643145	75	126	Paolo_Manghi	SRR5665137
+MG100193	A14	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	3985802	496849984	75	126	Paolo_Manghi	SRR5665142
+MG100192	A13	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4364706	543771467	75	126	Paolo_Manghi	SRR5665143
+MG100191	A12	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4139714	516167997	75	126	Paolo_Manghi	SRR5665140
+MG100190	A11	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2645556	330262785	75	126	Paolo_Manghi	SRR5665141
+MG100189	A10	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2704534	336788760	75	126	Paolo_Manghi	SRR5665115
+MG100188	A09	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2025988	252696214	75	126	Paolo_Manghi	SRR5665114
+MG100187	A07	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	52356	6483099	75	126	Paolo_Manghi	SRR5665117
+MG100186	A06	stool	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	2460376	306706766	75	126	Paolo_Manghi	SRR5665116
+MG100185	A05	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2668328	331095421	75	126	Paolo_Manghi	SRR5665119
+MG100184	A04	stool	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5033926	627883959	75	126	Paolo_Manghi	SRR5665118
+MG100182	A02	stool	adenoma	adenoma	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	12140204	1510153677	75	126	Paolo_Manghi	SRR5665120
+MG100181	A01	stool	adenoma	adenoma	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10102332	1253480545	75	126	Paolo_Manghi	SRR5665123
+MG100180	H30	stool	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	21182166	2636134209	75	126	Paolo_Manghi	SRR5665122
+MG100179	H29	stool	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	10855718	1349678317	75	126	Paolo_Manghi	SRR5665186
+MG100178	H28	stool	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	18102008	2256749848	75	126	Paolo_Manghi	SRR5665187
+MG100177	H26	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4072828	506367839	75	126	Paolo_Manghi	SRR5665178
+MG100176	H25	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5679008	705484441	75	126	Paolo_Manghi	SRR5665179
+MG100175	H24	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	11241278	1399435776	75	126	Paolo_Manghi	SRR5665180
+MG100174	H23	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7801592	971871839	75	126	Paolo_Manghi	SRR5665181
+MG100173	H22	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	11886888	1475010313	75	126	Paolo_Manghi	SRR5665182
+MG100172	H21	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5352832	667010718	75	126	Paolo_Manghi	SRR5665183
+MG100171	H20	stool	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	9336134	1162883767	75	126	Paolo_Manghi	SRR5665184
+MG100170	H19	stool	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5920646	736381301	75	126	Paolo_Manghi	SRR5665185
+MG100169	H17	stool	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	3029258	377191200	75	126	Paolo_Manghi	SRR5665156
+MG100168	H16	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7524086	935525057	75	126	Paolo_Manghi	SRR5665155
+MG100167	H15	stool	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	6041774	752036731	75	126	Paolo_Manghi	SRR5665164
+MG100166	H14	stool	control	healthy	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	8698664	1082359356	75	126	Paolo_Manghi	SRR5665163
+MG100165	H13	stool	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	11712932	1460009052	75	126	Paolo_Manghi	SRR5665162
+MG100164	H12	stool	control	healthy	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	2521950	314344000	75	126	Paolo_Manghi	SRR5665161
+MG100163	H11	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	330750	41203287	75	126	Paolo_Manghi	SRR5665160
+MG100162	H10	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	2294514	285954703	75	126	Paolo_Manghi	SRR5665159
+MG100161	H09	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5793618	719074030	75	126	Paolo_Manghi	SRR5665158
+MG100160	H08	stool	control	healthy	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2959348	368712290	75	126	Paolo_Manghi	SRR5665157
+MG100159	H07	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	9031080	1122607451	75	126	Paolo_Manghi	SRR5665049
+MG100158	H06	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7233984	899865279	75	126	Paolo_Manghi	SRR5665050
+MG100157	H05	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6078718	756831578	75	126	Paolo_Manghi	SRR5665047
+MG100156	H04	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5064770	629428694	75	126	Paolo_Manghi	SRR5665048
+MG100155	H03	stool	control	healthy	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	3659936	456010285	75	126	Paolo_Manghi	SRR5665045
+MG100154	H02	stool	control	healthy	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10295240	1281380024	75	126	Paolo_Manghi	SRR5665046
+MG100153	H01	stool	control	healthy	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10217384	1267666004	75	126	Paolo_Manghi	SRR5665043
+MG100152	C30	stool	CRC	CRC	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6964066	866112898	75	126	Paolo_Manghi	SRR5665044
+MG100151	C29	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	7611462	946733673	75	126	Paolo_Manghi	SRR5665041
+MG100150	C28	stool	CRC	CRC	unknown	adult	unknown	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5317176	661376565	75	126	Paolo_Manghi	SRR5665042
+MG100149	C27	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	4678900	581571081	75	126	Paolo_Manghi	SRR5665033
+MG100148	C26	stool	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	3292898	409314397	75	126	Paolo_Manghi	SRR5665032
+MG100147	C25	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6285516	780091878	75	126	Paolo_Manghi	SRR5665029
+MG100146	C24	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6928748	860991653	75	126	Paolo_Manghi	SRR5665028
+MG100145	C23	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	9724858	1211600787	75	126	Paolo_Manghi	SRR5665031
+MG100144	C22	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	9621882	1193404715	75	126	Paolo_Manghi	SRR5665030
+MG100143	C20	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4836288	602503697	75	126	Paolo_Manghi	SRR5665025
+MG100142	C19	stool	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	17146	2086283	75	125	Paolo_Manghi	SRR5665024
+MG100141	C18	stool	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	7718414	958957029	75	126	Paolo_Manghi	SRR5665027
+MG100140	C17	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4833608	602192124	75	126	Paolo_Manghi	SRR5665026
+MG100139	C16	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6661922	830453874	75	126	Paolo_Manghi	SRR5665103
+MG100138	C15	stool	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5941034	739942965	75	126	Paolo_Manghi	SRR5665053
+MG100137	C14	stool	CRC	CRC	unknown	adult	unknown	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	4370134	541601310	75	126	Paolo_Manghi	SRR5665058
+MG100136	C13	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6787334	845085642	75	126	Paolo_Manghi	SRR5665059
+MG100134	C11	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6105000	758910268	75	126	Paolo_Manghi	SRR5665061
+MG100133	C10	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	9707904	1208505568	75	126	Paolo_Manghi	SRR5665054
+MG100132	C09	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	14630940	1816500218	75	126	Paolo_Manghi	SRR5665055
+MG100131	C08	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5569662	693577210	75	126	Paolo_Manghi	SRR5665056
+MG100130	C06	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5011214	623336859	75	126	Paolo_Manghi	SRR5665057
+MG100129	C05	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7180402	891959475	75	126	Paolo_Manghi	SRR5665052
+MG100128	C04	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6329070	787577657	75	126	Paolo_Manghi	SRR5665051
+MG100127	C03	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4969190	618186207	75	126	Paolo_Manghi	SRR5665035
+MG100126	C02	stool	CRC	CRC	unknown	adult	unknown	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	5023590	624867363	75	126	Paolo_Manghi	SRR5665034
+MG100125	C01	stool	CRC	CRC	unknown	adult	unknown	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5090156	634385981	75	126	Paolo_Manghi	SRR5665144
