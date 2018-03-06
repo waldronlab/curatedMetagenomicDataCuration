@@ -1,7 +1,7 @@
 col.name,uniqueness,requiredness,multiplevalues,allowedvalues,description
 sampleID,unique,required,FALSE,[a-zA-Z]\S+,Sample identifier.
 subjectID,non-unique,required,FALSE,[a-zA-Z]\S+,Subject identifier.
-body_site,non-unique,required,FALSE,stool|skin|vagina|oralcavity|nasalcavity|lung|milk,Bodysite of acquisition.
+body_site,non-unique,required,FALSE,stool|skin|vagina|oralcavity|nasalcavity|lung|milk|rectal_swab,Bodysite of acquisition.
 body_subsite,non-unique,optional,FALSE,anterior_nares|hard_palate|keratinized_gingiva|l_retroauricular_crease|r_retroauricular_crease|mid_vagina|palatine_tonsils|saliva|stool|supragingival_plaque|subgingival_plaque|throat|vaginal_introitus|posterior_fornix|tongue_dorsum|sputum|buccal_mucosa|left_elbow|right_ear|left_ear|right_elbow,Subsite of body site of acquisition.
 antibiotics_current_use,non-unique,optional,FALSE,yes|no,Subject is currently taking antibiotics.
 antibiotics_family,non-unique,optional,TRUE,dopamine_antagonists|phenylpiperidines|thienobenzodiazepines|blood_pressure_medication|diabetes_oral_medication|anti_retrovirals|beta_blockers|reverse_transcriptase_inhibitors|anti_virals|cephalosporins|penicillins|macrolides|beta_lactamase_inhibitors|nitrofurans|sulphonamides|aminoglycosides|carbapenems|fluoroquinolones|laxatives|none,Family of antibiotics currently used; Semicolon-separated.
@@ -14,7 +14,7 @@ age_category,non-unique,optional,FALSE,newborn|child|schoolage|adult|senior,Age 
 gender,non-unique,optional,FALSE,female|male|other,Subject gender.
 visit_number,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repeated visits.
 BMI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,non-unique,required,FALSE,CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|ISL|BRN|IDN|MYS|HUN|SVK|SGP,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+country,non-unique,required,FALSE,CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,non-unique,optional,FALSE,.+,Free-form additional location information.
 non_westernized,non-unique,optional,FALSE,yes|no,Subject belongs to a non-westernized community.
 days_from_first_collection,non-unique,optional,FALSE,[0-9]+,Used for time series studies.
