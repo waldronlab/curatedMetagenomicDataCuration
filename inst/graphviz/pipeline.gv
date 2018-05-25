@@ -1,0 +1,56 @@
+digraph {
+  node [fixedsize=true height=1 width=2]
+  
+  node [fillcolor=lightyellow shape=diamond style=filled]
+  //D1001 [label="Decision"]
+  
+  node [fillcolor=paleturquoise shape=parallelogram style=filled]
+  //I1001 [label="Input/Output"]
+  I1001 [label="PubMed \n Metadata"]
+  I1002 [label="BioProject \n Metadata"]
+  I1003 [label="Supplementary \n Metadata"]
+  I1004 [label="genefamilies_relab"]
+  I1005 [label="marker_abundance"]
+  I1006 [label="marker_presence"]
+  I1007 [label="metaphlan_bugs_list"]
+  I1008 [label="pathabundance_relab"]
+  I1009 [label="pathcoverage"]
+  
+  node [fillcolor=pink shape=invtrapezium style=filled]
+  //M1001 [label="Manual Process"]
+  
+  node [fillcolor=lightblue height=1 shape=rectangle style=filled]
+  //P1001 [label="Process"]
+  P1001 [label="Magic"]
+  P1002 [label="Magic"]
+  P1003 [label="Magic"]
+  P1004 [label="Magic"]
+  P1005 [label="Magic"]
+  P1006 [label="Magic"]
+  P1007 [label="Magic"]
+  P1008 [label="Magic"]
+  P1009 [label="Magic"]
+  
+  node [fillcolor=lightgray shape=cylinder style=filled]
+  //S1001 [label="Storage"]
+  
+  node [fillcolor=lightpink shape=rectangle style="filled,rounded"]
+  //T1001 [label="Terminator"]
+  T1001 [label="Pipeline"]
+  
+  node [fillcolor=palegreen shape=rectangle style="filled,rounded"]
+  //T2001 [label="Terminator"]
+  T2001 [label="Package"]
+  
+  T1001 -> {I1001 I1002 I1003 I1004 I1005 I1006 I1007 I1008 I1009}
+  I1001 -> P1001
+  I1002 -> P1002
+  I1003 -> P1003
+  I1004 -> P1004
+  I1005 -> P1005
+  I1006 -> P1006
+  I1007 -> P1007
+  I1008 -> P1008
+  I1009 -> P1009
+  {P1001 P1002 P1003 P1004 P1005 P1006 P1007 P1008 P1009} -> T2001
+}

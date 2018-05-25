@@ -1,0 +1,45 @@
+digraph {
+  node [fixedsize=true height=1 width=2]
+  
+  node [fillcolor=lightyellow shape=diamond style=filled]
+  //D1001 [label="Decision"]
+  
+  node [fillcolor=paleturquoise shape=parallelogram style=filled]
+  //I1001 [label="Input/Output"]
+  I1001 [label="PubMed \n ID"]
+  I1002 [label="BioProject \n Accession"]
+  I1003 [label="Supplementary \n File"]
+  I1004 [label="PubMed \n Metadata"]
+  I1005 [label="BioProject \n Metadata"]
+  I1006 [label="Supplementary \n Metadata"]
+  
+  node [fillcolor=pink shape=invtrapezium style=filled]
+  //M1001 [label="Manual Process"]
+  M1001 [label="Curation"]
+  
+  node [fillcolor=lightblue height=1 shape=rectangle style=filled]
+  //P1001 [label="Process"]
+  P1001 [label="RISmed"]
+  P1002 [label="SRAdbV2"]
+  
+  
+  node [fillcolor=lightgray shape=cylinder style=filled]
+  //S1001 [label="Storage"]
+  
+  node [fillcolor=lightpink shape=rectangle style="filled,rounded"]
+  //T1001 [label="Terminator"]
+  T1001 [label="Curation"]
+  
+  node [fillcolor=palegreen shape=rectangle style="filled,rounded"]
+  //T2001 [label="Terminator"]
+  T2001 [label="HighLoad"]
+  
+  T1001 -> {I1001 I1002 I1003}
+  I1001 -> P1001
+  I1002 -> P1002
+  I1003 -> M1001
+  P1001 -> I1004
+  P1002 -> I1005
+  M1001 -> I1006
+  I1005 -> T2001
+}
