@@ -1,49 +1,50 @@
 digraph {
   node [fixedsize=true height=1 width=2]
   
-  node [fillcolor=lightyellow shape=diamond style=filled]
-  //D1001 [label="Decision"]
-  
   node [fillcolor=paleturquoise shape=parallelogram style=filled]
-  //I1001 [label="Input/Output"]
   I1001 [label="BioProject \n Metadata"]
   I1002 [label="Sequence \n Data"]
-  
-  I1003 [label="genefamilies_relab"]
-  I1004 [label="marker_abundance"]
-  I1005 [label="marker_presence"]
-  I1006 [label="metaphlan_bugs_list"]
-  I1007 [label="pathabundance_relab"]
-  I1008 [label="pathcoverage"]
-  
-  
-  node [fillcolor=pink shape=invtrapezium style=filled]
-  //M1001 [label="Manual Process"]
+  I1003 [label="Gene \n Family \n Abundance"]
+  I1004 [label="Pathway \n Abundance"]
+  I1005 [label="Path \n Coverage"]
+  I1006 [label="Marker \n Abundance"]
+  I1007 [label="Marker \n Presence"]
+  I1008 [label="Relative \n Abundance"]
   
   node [fillcolor=lightblue height=1 shape=rectangle style=filled]
-  //P1001 [label="Process"]
   P1001 [label="Read \n SRA \n Accession"]
   P1002 [label="Download \n Sequence \n Data"]
   P1003 [label="HUMAnN"]
   P1004 [label="MetaPhlAn"]
   
-  node [fillcolor=lightgray shape=cylinder style=filled]
-  //S1001 [label="Storage"]
-  
   node [fillcolor=lightpink shape=rectangle style="filled,rounded"]
-  //T1001 [label="Terminator"]
   T1001 [label="HighLoad"]
   
   node [fillcolor=palegreen shape=rectangle style="filled,rounded"]
-  //T2001 [label="Terminator"]
   T2001 [label="Pipeline"]
+  T2002 [label="Pipeline"]
+  T2003 [label="Pipeline"]
+  T2004 [label="Pipeline"]
+  T2005 [label="Pipeline"]
+  T2006 [label="Pipeline"]
   
   T1001 -> I1001
+  
   I1001 -> P1001
+  
   P1001 -> P1002
+  
   P1002 -> I1002
+  
   I1002 -> {P1003 P1004}
+  
   P1003 -> {I1003 I1004 I1005}
   P1004 -> {I1006 I1007 I1008}
-  {I1003 I1004 I1005 I1006 I1007 I1008} -> T2001
+  
+  I1003 -> T2001
+  I1004 -> T2002
+  I1005 -> T2003
+  I1006 -> T2004
+  I1007 -> T2005
+  I1008 -> T2006
 }

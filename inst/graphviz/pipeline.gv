@@ -1,56 +1,94 @@
 digraph {
   node [fixedsize=true height=1 width=2]
   
-  node [fillcolor=lightyellow shape=diamond style=filled]
-  //D1001 [label="Decision"]
-  
   node [fillcolor=paleturquoise shape=parallelogram style=filled]
-  //I1001 [label="Input/Output"]
   I1001 [label="PubMed \n Metadata"]
   I1002 [label="BioProject \n Metadata"]
   I1003 [label="Supplementary \n Metadata"]
-  I1004 [label="genefamilies_relab"]
-  I1005 [label="marker_abundance"]
-  I1006 [label="marker_presence"]
-  I1007 [label="metaphlan_bugs_list"]
-  I1008 [label="pathabundance_relab"]
-  I1009 [label="pathcoverage"]
+  I1004 [label="Gene \n Family \n Abundance"]
+  I1005 [label="Pathway \n Abundance"]
+  I1006 [label="Path \n Coverage"]
+  I1007 [label="Marker \n Abundance"]
+  I1008 [label="Marker \n Presence"]
+  I1009 [label="Relative \n Abundance"]
+  I1010 [label="Study \n Metadata"]
+  I1011 [label="Sample \n Metadata"]
   
-  node [fillcolor=pink shape=invtrapezium style=filled]
-  //M1001 [label="Manual Process"]
+  I1012 [label="Gene \n Family \n Abundance"]
+  I1013 [label="Pathway \n Abundance"]
+  I1014 [label="Path \n Coverage"]
+  I1015 [label="Marker \n Abundance"]
+  I1016 [label="Marker \n Presence"]
+  I1017 [label="Relative \n Abundance"]
   
   node [fillcolor=lightblue height=1 shape=rectangle style=filled]
-  //P1001 [label="Process"]
-  P1001 [label="Magic"]
-  P1002 [label="Magic"]
-  P1003 [label="Magic"]
-  P1004 [label="Magic"]
-  P1005 [label="Magic"]
-  P1006 [label="Magic"]
-  P1007 [label="Magic"]
-  P1008 [label="Magic"]
-  P1009 [label="Magic"]
-  
+  P1001 [label="Processing"]
+  P1002 [label="Processing"]
+  P1003 [label="Processing"]
+  P1004 [label="Processing"]
+  P1005 [label="Processing"]
+  P1006 [label="Processing"]
+  P1007 [label="Processing"]
+  P1008 [label="Processing"]
+
   node [fillcolor=lightgray shape=cylinder style=filled]
-  //S1001 [label="Storage"]
+  S1001 [label="ExperimentHub"]
+  S1002 [label="ExperimentHub"]
+  S1003 [label="ExperimentHub"]
+  S1004 [label="ExperimentHub"]
+  S1005 [label="ExperimentHub"]
+  S1006 [label="ExperimentHub"]
+  S1007 [label="ExperimentHub"]
+  S1008 [label="ExperimentHub"]
   
   node [fillcolor=lightpink shape=rectangle style="filled,rounded"]
-  //T1001 [label="Terminator"]
   T1001 [label="Pipeline"]
   
   node [fillcolor=palegreen shape=rectangle style="filled,rounded"]
-  //T2001 [label="Terminator"]
   T2001 [label="Package"]
+  T2002 [label="Package"]
+  T2003 [label="Package"]
+  T2004 [label="Package"]
+  T2005 [label="Package"]
+  T2006 [label="Package"]
+  T2007 [label="Package"]
+  T2008 [label="Package"]
   
   T1001 -> {I1001 I1002 I1003 I1004 I1005 I1006 I1007 I1008 I1009}
+  
   I1001 -> P1001
-  I1002 -> P1002
-  I1003 -> P1003
-  I1004 -> P1004
-  I1005 -> P1005
-  I1006 -> P1006
-  I1007 -> P1007
-  I1008 -> P1008
-  I1009 -> P1009
-  {P1001 P1002 P1003 P1004 P1005 P1006 P1007 P1008 P1009} -> T2001
+  {I1002 I1003} -> P1002
+  I1004 -> P1003
+  I1005 -> P1004
+  I1006 -> P1005
+  I1007 -> P1006
+  I1008 -> P1007
+  I1009 -> P1008
+  
+  P1001 -> I1010
+  P1002 -> I1011
+  P1003 -> I1012
+  P1004 -> I1013
+  P1005 -> I1014
+  P1006 -> I1015
+  P1007 -> I1016
+  P1008 -> I1017
+  
+  I1010 -> S1001
+  I1011 -> S1002
+  I1012 -> S1003
+  I1013 -> S1004
+  I1014 -> S1005
+  I1015 -> S1006
+  I1016 -> S1007
+  I1017 -> S1008
+  
+  S1001 -> T2001
+  S1002 -> T2002
+  S1003 -> T2003
+  S1004 -> T2004
+  S1005 -> T2005
+  S1006 -> T2006
+  S1007 -> T2007
+  S1008 -> T2008
 }
