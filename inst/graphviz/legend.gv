@@ -1,0 +1,24 @@
+digraph {
+  node [fixedsize=true height=1 width=2]
+  
+  //node [fillcolor=lightyellow shape=diamond style=filled]
+  //D1001 [label="Decision"]
+  
+  node [fillcolor=paleturquoise shape=parallelogram style=filled]
+  I1001 [label="Input/Output"]
+  
+  node [fillcolor=pink shape=invtrapezium style=filled]
+  M1001 [label="Manual Process"]
+  
+  node [fillcolor=lightblue height=1 shape=rectangle style=filled]
+  P1001 [label="Process"]
+  
+  node [fillcolor=lightgray shape=cylinder style=filled]
+  S1001 [label="Storage"]
+  
+  node [fillcolor=lightpink shape=rectangle style="filled,rounded"]
+  T1001 [label="Terminator"]
+  
+  node [fillcolor=palegreen shape=rectangle style="filled,rounded"]
+  T2001 [label="Terminator"]
+}
