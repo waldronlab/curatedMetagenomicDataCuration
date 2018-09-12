@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	disease_subtype	age	gender	BMI	country	non_westernized	PMID	number_reads	number_bases	minimum_read_length	median_read_length	sequencint_platform	curator	NCBI_accession
+sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	disease_subtype	age	gender	BMI	country	non_westernized	PMID	number_reads	number_bases	minimum_read_length	median_read_length	sequencing_platform	curator	NCBI_accession
 AS2raw	AS2raw	stool	NA	AS	RA	AS	45	male	20.5	CHN	no	28750650	44359698	4435969800	100	100	IlluminaHiSeq	Paolo_Manghi	SRR5279282
 AS3raw	AS3raw	stool	NA	AS	RA	AS	36	male	23.71	CHN	no	28750650	39261442	3926144200	100	100	IlluminaHiSeq	Paolo_Manghi	SRR5279276
 AS4raw	AS4raw	stool	NA	AS	RA	AS	40	female	23.4	CHN	no	28750650	43521564	4352156400	100	100	IlluminaHiSeq	Paolo_Manghi	SRR5279270
