@@ -16,7 +16,7 @@ visit_number,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repe
 BMI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
 country,non-unique,required,FALSE,CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,non-unique,optional,FALSE,.+,Free-form additional location information.
-travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 non_westernized,non-unique,optional,FALSE,yes|no,Subject belongs to a non-westernized community.
 days_from_first_collection,non-unique,optional,FALSE,[0-9]+,Used for time series studies.
 sequencing_platform,non-unique,required,FALSE,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq,This will be modified as new sequencing platforms are added to the database.
