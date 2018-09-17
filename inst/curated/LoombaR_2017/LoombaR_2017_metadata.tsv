@@ -59,10 +59,10 @@ SID5464_cib	loombaSUB_subject-5464	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_1	adult	U
 SID5468_vbl	loombaSUB_subject-5468	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_2	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	48319330	6039916250	125	125	Paolo_Manghi	SRR5275427
 SID5473_irg	loombaSUB_subject-5473	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_2	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	70125880	8765735000	125	125	Paolo_Manghi	SRR5275426
 SID5486_yds	loombaSUB_subject-5486	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_1	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	23118330	2889791250	125	125	Paolo_Manghi	SRR5275425
-SID5488_wmq	loombaSUB_ subject-5488	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_1	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	60846928	7605866000	125	125	Paolo_Manghi	SRR5275424
-SID5489_bgj	loombaSUB_ subject-5489	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_0	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	29693716	3711714500	125	125	Paolo_Manghi	SRR5275423
-SID5490_ggo	loombaSUB_ subject-5490	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_2	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	35536920	4442115000	125	125	Paolo_Manghi	SRR5275422
-SID5495_pls	loombaSUB_ subject-5495	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_4	senior	USA	no	IlluminaHiSeq	Qiagen	28467925	73959548	9244943500	125	125	Paolo_Manghi	SRR5275421
+SID5488_wmq	loombaSUB_subject-5488	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_1	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	60846928	7605866000	125	125	Paolo_Manghi	SRR5275424
+SID5489_bgj	loombaSUB_subject-5489	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_0	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	29693716	3711714500	125	125	Paolo_Manghi	SRR5275423
+SID5490_ggo	loombaSUB_subject-5490	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_2	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	35536920	4442115000	125	125	Paolo_Manghi	SRR5275422
+SID5495_pls	loombaSUB_subject-5495	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_4	senior	USA	no	IlluminaHiSeq	Qiagen	28467925	73959548	9244943500	125	125	Paolo_Manghi	SRR5275421
 SID5501_aaq	loombaSUB_subject-5501	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_0	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	39241820	4905227500	125	125	Paolo_Manghi	SRR5275415
 SID5561_vwa	loombaSUB_subject-5561	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_4	senior	USA	no	IlluminaHiSeq	Qiagen	28467925	78718356	9839794500	125	125	Paolo_Manghi	SRR5275414
 SID5564_meq	loombaSUB_subject-5564	stool	NA	NAFLD	NAFLD	NA	NAFLD_stage_1	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	78805898	9850737250	125	125	Paolo_Manghi	SRR5275413
