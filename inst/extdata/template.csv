@@ -86,5 +86,7 @@ family_role,non-unique,optional,FALSE,child|mother,Role in the family when multi
 born_method,non-unique,optional,FALSE,c_section|vaginal,C-section vs vaginal birth.
 feeding_practice,non-unique,optional,FALSE,exclusively_breastfeeding|no_breastfeeding||mixed_feeding|any_breastfeeding|exclusively_formula_feeding,Feeding practice.
 ESR, non-unique, optional, FALSE, [0-9]+\.?[0-9]*, erythrocyte sedimentation rate (ESR) in mm/Hr
+HLA, non-unique, optional, TRUE, [0-9]+\.?[0-9]*, HLA DR-DQ alleles conferring risk of Typ-1-Diabetes (T1D)
+autoantibody_positive, non-unique, optional, TRUE [0-9]+\.?[0-9]*, tested positive for AAB
 curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
