@@ -91,7 +91,7 @@ autoantibody_positive,non-unique,optional,TRUE,[0-9]+\.?[0-9]*,tested positive f
 age_seroconversion,non-unique,optional,FALSE,[0-9]+,age (in days) at seroconvention was detected
 age_T1D_diagnosis,non-unique, optional,FALSE,[0-9]+,age (in days) at which T1D was diagnosed
 disease_stage,non-unique,optional,FALSE,[0-9]+,stage information for diseases which can be divided in stages.
-disease_location,non_unique,optional,TRUE,.+, can be used for diseases which occur on different body parts like CD.
+disease_location,non-unique,optional,TRUE,.+, can be used for diseases which occur on different body parts like CD.
 calprotectin,non-unique,optional,FALSE,[0-9]+, higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
 curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
