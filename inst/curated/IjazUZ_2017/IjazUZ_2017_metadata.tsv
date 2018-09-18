@@ -73,7 +73,7 @@ S57_a_WGS	subIJ_10	stool	GBR	no	IBD	IBD	CD	"EEN;5-ASA;folate;forceval;methotrexa
 S58_a_WGS	subIJ_10	stool	GBR	no	IBD	IBD	CD	"EEN;5-ASA;folate;forceval;methotrexate"	14	schoolage	NA	no	30	IlluminaHiSeq	28222161	8101969	2269686423	72	302	20767	10	child	L3L4	no	Paolo_Manghi	ERR1776172
 S59_a_WGS	subIJ_10	stool	GBR	no	IBD	IBD	CD	"5-ASA;folate;forceval;methotrexate"	14	schoolage	NA	no	>30	IlluminaHiSeq	28222161	3025428	837056671	72	302	22983	10	child	L3L4	no	Paolo_Manghi	ERR1776173
 S5_a_WGS	subIJ_1	stool	GBR	no	IBD	IBD	CD	Lactulose	8	child	NA	no	>30	IlluminaHiSeq	28222161	4030164	1149250529	72	302	20546	1	child	NA	NA	Paolo_Manghi	ERR1776174
-S60_a_WGS	subIJ_10	stool	GBR	no	IBD	IBD	CD  "5-ASA;folate;forceval;methotrexate"	14	schoolage	NA	no	>30	IlluminaHiSeq	28222161	6269227	1731639391	72	302	21695	10	child	L3L4	NA	Paolo_Manghi	ERR1776175
+S60_a_WGS	subIJ_10	stool	GBR	no	IBD	IBD	CD	"5-ASA;folate;forceval;methotrexate"	14	schoolage	NA	no	>30	IlluminaHiSeq	28222161	6269227	1731639391	72	302	21695	10	child	L3L4	NA	Paolo_Manghi	ERR1776175
 S61_a_WGS	subIJ_10R	stool	GBR	no	control	healthy	NA	no	46	adult	female	no	NA	IlluminaHiSeq	28222161	3196	700734	72	225	12453	10	mother	NA	NA	Paolo_Manghi	ERR1776176
 S62_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	"aza;iron"	12	schoolage	NA	no	0	IlluminaHiSeq	28222161	3581667	982055866	72	302	24387	11	child	L2L4	yes	Paolo_Manghi	ERR1776177
 S63_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	"aza;iron;EEN"	12	schoolage	NA	no	15	IlluminaHiSeq	28222161	1411175	318036556	72	245	22216	11	child	L2L4	yes	Paolo_Manghi	ERR1776178
