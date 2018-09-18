@@ -82,7 +82,7 @@ systolic_p,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Measured in mm/Hg.
 hscrp,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,High-sensitivity C-reactive protein test result.
 ferm_milk_prod_consumer,non-unique,optional,FALSE,dfmp,Dfmp means yes (defined milk product).
 family,non-unique,optional,FALSE,[0-9]+,A number identifying the family subjects belong; not corrected for meta-analyses.
-family_role,non-unique,optional,FALSE,child|mother,Role in the family when multiple samples come from the same family but different persons.
+family_role,non-unique,optional,FALSE,child|mother|father,Role in the family when multiple samples come from the same family but different persons.
 born_method,non-unique,optional,FALSE,c_section|vaginal,C-section vs vaginal birth.
 feeding_practice,non-unique,optional,FALSE,exclusively_breastfeeding|no_breastfeeding||mixed_feeding|any_breastfeeding|exclusively_formula_feeding,Feeding practice.
 ESR,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,erythrocyte sedimentation rate (ESR) in mm/Hr
