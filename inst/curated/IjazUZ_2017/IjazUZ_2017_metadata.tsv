@@ -79,19 +79,19 @@ S62_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	"aza;iron"	12	schoolage	NA	no	0	Illum
 S63_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	"aza;iron;EEN"	12	schoolage	NA	no	15	IlluminaHiSeq	28222161	1411175	318036556	72	245	22216	11	child	L2L4	yes	Paolo_Manghi	ERR1776178
 S64_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	"aza;iron;EEN"	13	schoolage	NA	no	30	IlluminaHiSeq	28222161	5006780	1397307113	72	302	20005	11	child	L2L4	yes	Paolo_Manghi	ERR1776179
 S65_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	"aza;iron"	13	schoolage	NA	no	>30	IlluminaHiSeq	28222161	1868922	520118652	72	302	17235	11	child	L2L4	yes	Paolo_Manghi	ERR1776180
-S66_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	5-ASA,aza	13	schoolage	NA	no	>30	IlluminaHiSeq	28222161	5961266	1651282454	72	302	23277	11	child	L2L4	NA	Paolo_Manghi	ERR1776181
-S67_a_WGS	subIJ_11R	stool	GBR	no	control	healthy	NA		43	adult	male	no	NA	IlluminaHiSeq	28222161	3531316	989123101	72	302	950	11	father	NA	NA	Paolo_Manghi	ERR1776182
-S68_a_WGS	subIJ_12	stool	GBR	no	IBD	IBD	CD		13	schoolage	NA	no	0	IlluminaHiSeq	28222161	1227785	343202790	72	302	2389689	12	child	L2L4	no	Paolo_Manghi	ERR1776183
+S66_a_WGS	subIJ_11	stool	GBR	no	IBD	IBD	CD	5-ASA;aza	13	schoolage	NA	no	>30	IlluminaHiSeq	28222161	5961266	1651282454	72	302	23277	11	child	L2L4	NA	Paolo_Manghi	ERR1776181
+S67_a_WGS	subIJ_11R	stool	GBR	no	control	healthy	NA	no	43	adult	male	no	NA	IlluminaHiSeq	28222161	3531316	989123101	72	302	950	11	father	NA	NA	Paolo_Manghi	ERR1776182
+S68_a_WGS	subIJ_12	stool	GBR	no	IBD	IBD	CD	no	13	schoolage	NA	no	0	IlluminaHiSeq	28222161	1227785	343202790	72	302	2389689	12	child	L2L4	no	Paolo_Manghi	ERR1776183
 S69_a_WGS	subIJ_12	stool	GBR	no	IBD	IBD	CD	EEN	13	schoolage	NA	no	15	IlluminaHiSeq	28222161	191602	53153953	72	302	314869	12	child	L2L4	no	Paolo_Manghi	ERR1776184
-S6_a_WGS	subIJ_1R	stool	GBR	no	control	healthy	NA		45	adult	female	no	NA	IlluminaHiSeq	28222161	10443417	2879015607	72	302	362	1	mother	NA	NA	Paolo_Manghi	ERR1776185
+S6_a_WGS	subIJ_1R	stool	GBR	no	control	healthy	NA	no	45	adult	female	no	NA	IlluminaHiSeq	28222161	10443417	2879015607	72	302	362	1	mother	NA	NA	Paolo_Manghi	ERR1776185
 S70_a_WGS	subIJ_12	stool	GBR	no	IBD	IBD	CD	EEN	13	schoolage	NA	no	30	IlluminaHiSeq	28222161	143112	37299793	72	302	2716992	12	child	L2L4	no	Paolo_Manghi	ERR1776186
 S71_a_WGS	subIJ_12	stool	GBR	no	IBD	IBD	CD	aza	13	schoolage	NA	no	>30	IlluminaHiSeq	28222161	8248360	2289355218	72	302	1681517	12	child	L2L4	NA	Paolo_Manghi	ERR1776187
-S72_a_WGS	subIJ_12R	stool	GBR	no	control	healthy	NA		45	adult	male	no	NA	IlluminaHiSeq	28222161	4285750	1206869602	72	302	202622	12	father	NA	NA	Paolo_Manghi	ERR1776188
-S73_a_WGS	subIJ_13	stool	GBR	no	control	healthy	NA		10	child	NA	no	NA	IlluminaHiSeq	28222161	6064725	1704268178	72	302	50	13	NA	NA	NA	Paolo_Manghi	ERR1776189
-S79_a_WGS	subIJ_14R	stool	GBR	no	control	healthy	NA		51	adult	male	no	NA	IlluminaHiSeq	28222161	5393460	1497789398	72	302	224085	14	father	NA	NA	Paolo_Manghi	ERR1776190
-S80_a_WGS	subIJ_15	stool	GBR	no	IBD	IBD	CD		11	child	NA	no	0	IlluminaHiSeq	28222161	6168464	1731815490	72	302	2088509	15	child	L2L4	yes	Paolo_Manghi	ERR1776191
+S72_a_WGS	subIJ_12R	stool	GBR	no	control	healthy	NA	no	45	adult	male	no	NA	IlluminaHiSeq	28222161	4285750	1206869602	72	302	202622	12	father	NA	NA	Paolo_Manghi	ERR1776188
+S73_a_WGS	subIJ_13	stool	GBR	no	control	healthy	NA	no	10	child	NA	no	NA	IlluminaHiSeq	28222161	6064725	1704268178	72	302	50	13	NA	NA	NA	Paolo_Manghi	ERR1776189
+S79_a_WGS	subIJ_14R	stool	GBR	no	control	healthy	NA	no	51	adult	male	no	NA	IlluminaHiSeq	28222161	5393460	1497789398	72	302	224085	14	father	NA	NA	Paolo_Manghi	ERR1776190
+S80_a_WGS	subIJ_15	stool	GBR	no	IBD	IBD	CD	no	11	child	NA	no	0	IlluminaHiSeq	28222161	6168464	1731815490	72	302	2088509	15	child	L2L4	yes	Paolo_Manghi	ERR1776191
 S81_a_WGS	subIJ_15	stool	GBR	no	IBD	IBD	CD	EEN	11	child	NA	no	30	IlluminaHiSeq	28222161	1707964	473294242	72	302	296393	15	child	L2L4	yes	Paolo_Manghi	ERR1776192
-S82_a_WGS	subIJ_15	stool	GBR	no	IBD	IBD	CD		11	child	NA	no	>30	IlluminaHiSeq	28222161	1718379	479825834	72	302	7,7121	15	child	L2L4	yes	Paolo_Manghi	ERR1776193
-S83_a_WGS	subIJ_15	stool	GBR	no	IBD	IBD	CD		11	child	NA	no	>30	IlluminaHiSeq	28222161	8206387	2275394483	72	302	241817	15	child	L2L4	NA	Paolo_Manghi	ERR1776194
-S84_a_WGS	subIJ_15R	stool	GBR	no	control	healthy	NA		42	adult	female	no	NA	IlluminaHiSeq	28222161	882620	244360465	72	302	79391	15	mother	L2L4	NA	Paolo_Manghi	ERR1776195
-S87_a_WGS	subIJ_16R	stool	GBR	no	control	healthy	NA		45	adult	male	no	NA	IlluminaHiSeq	28222161	3999646	1107378881	72	302	52338	16	father	NA	NA	Paolo_Manghi	ERR1776196
+S82_a_WGS	subIJ_15	stool	GBR	no	IBD	IBD	CD	no	11	child	NA	no	>30	IlluminaHiSeq	28222161	1718379	479825834	72	302	7,7121	15	child	L2L4	yes	Paolo_Manghi	ERR1776193
+S83_a_WGS	subIJ_15	stool	GBR	no	IBD	IBD	CD	no	11	child	NA	no	>30	IlluminaHiSeq	28222161	8206387	2275394483	72	302	241817	15	child	L2L4	NA	Paolo_Manghi	ERR1776194
+S84_a_WGS	subIJ_15R	stool	GBR	no	control	healthy	NA	no	42	adult	female	no	NA	IlluminaHiSeq	28222161	882620	244360465	72	302	79391	15	mother	L2L4	NA	Paolo_Manghi	ERR1776195
+S87_a_WGS	subIJ_16R	stool	GBR	no	control	healthy	NA	no	45	adult	male	no	NA	IlluminaHiSeq	28222161	3999646	1107378881	72	302	52338	16	father	NA	NA	Paolo_Manghi	ERR1776196
