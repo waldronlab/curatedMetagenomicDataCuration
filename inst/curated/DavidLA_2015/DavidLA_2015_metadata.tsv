@@ -97,4 +97,4 @@ LD-Run1-05	LD-Run1-05	stool	stool	NA	control	NA	healthy	healthy	adult	BGD	no	Ill
 LD-Run1-04	LD-Run1-04	stool	stool	NA	infectiousgastroenteritis	NA	infectiousgastroenteritis	cholera	child	BGD	no	IlluminaHiSeq	26350522	2635052200	100	100	25991682	Paolo_Manghi,Marisa_Metzger	ERR866564
 LD-Run1-03	LD-Run1-03	stool	stool	NA	infectiousgastroenteritis	NA	infectiousgastroenteritis	cholera	child	BGD	no	IlluminaHiSeq	15442110	1544211000	100	100	25991682	Paolo_Manghi,Marisa_Metzger	ERR866563
 LD-Run1-02	LD-Run1-02	stool	stool	NA	infectiousgastroenteritis	NA	infectiousgastroenteritis	cholera	child	BGD	no	IlluminaHiSeq	27013310	2701331000	100	100	25991682	Paolo_Manghi,Marisa_Metzger	ERR866562
-LD-Run1-01	LD-Run1-01	stool	stool	NA	infectiousgastroenteritis	NA	infectiousgastroenteritis	cholera	child	BGD	no	IlluminaHiSeq	15870606	1587060600	100	100	25991682	Paolo_Manghi	ERR866561
+LD-Run1-01	LD-Run1-01	stool	stool	NA	infectiousgastroenteritis	NA	infectiousgastroenteritis	cholera	child	BGD	no	IlluminaHiSeq	15870606	1587060600	100	100	25991682	Paolo_Manghi,Marisa_Metzger	ERR866561
