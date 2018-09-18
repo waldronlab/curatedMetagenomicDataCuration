@@ -88,8 +88,8 @@ feeding_practice,non-unique,optional,FALSE,exclusively_breastfeeding|no_breastfe
 ESR,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,erythrocyte sedimentation rate (ESR) in mm/Hr
 HLA,non-unique,optional,TRUE,.*,HLA DR-DQ alleles conferring risk of Typ-1-Diabetes (T1D)
 autoantibody_positive,non-unique,optional,TRUE,.*,tested positive for AAB
-age_seroconversion,non-unique,optional,FALSE,[0-9]+,age (in days) at seroconvention was detected
-age_T1D_diagnosis,non-unique, optional,FALSE,[0-9]+,age (in days) at which T1D was diagnosed
+age_seroconversion,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,age (in days) at seroconvention was detected
+age_T1D_diagnosis,non-unique, optional,FALSE,[0-9]+\.?[0-9]*,age (in days) at which T1D was diagnosed
 disease_stage,non-unique,optional,FALSE,[0-9]+,stage information for diseases which can be divided in stages.
 disease_location,non-unique,optional,TRUE,.+, can be used for diseases which occur on different body parts like CD.
 calprotectin,non-unique,optional,FALSE,[0-9]+, higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
