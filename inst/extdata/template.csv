@@ -94,5 +94,6 @@ disease_stage,non-unique,optional,FALSE,[0-9]+,stage information for diseases wh
 disease_location,non-unique,optional,TRUE,.+, can be used for diseases which occur on different body parts like CD.
 calprotectin,non-unique,optional,FALSE,[0-9]+, higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
 treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic,medications or treatments against the diseases.
+remission,non-unique,optional,FALSE,no|yes,remission of the disease.
 curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
