@@ -71,7 +71,7 @@ LILT_VF263_T016	VF263	stool	no	control	NA	NA	81	senior	female	28.0	ITA	no	Illumi
 LILT_VF265_T016	VF265	stool	no	control	hypercholesterolemia	NA	64	adult	male	25.0	ITA	no	Illumina_HiSeq	Qiagen	36753696	3644716602	75	100	no	no	no	Paolo_Manghi	NA
 LILT_VF279_T016	VF279	stool	no	control	NA	NA	61	adult	male	22.0	ITA	no	Illumina_HiSeq	Qiagen	159113906	15817515118	75	100	no	no	no	Paolo_Manghi	NA
 LILT_VF300_T016	VF300	stool	no	CRC	CRC;hypertension	adenocarcinoma	57	adult	male	30.0	ITA	no	Illumina_HiSeq	Qiagen	170791788	16969685870	75	100	no	no	no	Paolo_Manghi	NA
-LILT_VF301_T016	VF301	stool	no	adenoma	adenoma	adenoma	67	senior	male	unknown	ITA	no	Illumina_HiSeq	Qiagen	47891658	4755821364	75	100	NA  NA  NA  Paolo_Manghi	NA
+LILT_VF301_T016	VF301	stool	no	adenoma	adenoma	adenoma	67	senior	male	unknown	ITA	no	Illumina_HiSeq	Qiagen	47891658	4755821364	75	100	NA	NA	NA	Paolo_Manghi	NA
 LILT_VF10_T016	VF10	stool	no	control	NA	NA	60	adult	female	20.0	ITA	no	Illumina_HiSeq	Qiagen	60515600	6006120776	75	100	no	no	no	Paolo_Manghi	NA
 LILT_VF140_T016	VF140	stool	no	control	NA	NA	67	senior	female	24.0	ITA	no	Illumina_HiSeq	Qiagen	45553940	4516925822	75	100	no	no	no	Paolo_Manghi	NA
 LILT_VF171_T016	VF171	stool	no	control	NA	NA	77	senior	female	unknown	ITA	no	Illumina_HiSeq	Qiagen	268665478	26692365132	75	100	NA	NA	NA	Paolo_Manghi	NA
