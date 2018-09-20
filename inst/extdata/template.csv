@@ -95,5 +95,16 @@ disease_location,non-unique,optional,TRUE,.+, can be used for diseases which occ
 calprotectin,non-unique,optional,FALSE,[0-9]+, higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
 treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic,medications or treatments against the diseases.
 remission,non-unique,optional,FALSE,no|yes,remission of the disease.
+wbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,white blood cells count; curators must use *1000counts/µL
+rbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,red blood cells count; curators must use *million_counts/µL
+blood_platelet,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curators must use *1000counts/µl
+hemoglobinometry,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,hemoglobin concentration in blood; curators must use g/dl
+ast,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,aspartate transaminase; curator must use U/l
+alt,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,alanine aminotransferase; curator must use U/l
+globulin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curator must use g/l
+urea_nitrogen,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curator must use mmol/l
+ASO,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,antistreptolysin O; curator must use IU/ml
+anti_ccp_antibody,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curator must use U/ml
+rheumatoid_factor,non-unique,optional,False,[0-9]+\.?[0-9]*,curator must use IU/ml
 curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
