@@ -14,7 +14,7 @@ age_category,non-unique,optional,FALSE,newborn|child|schoolage|adult|senior,Age 
 gender,non-unique,optional,FALSE,female|male|other,Subject gender.
 visit_number,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repeated visits.
 BMI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,non-unique,required,FALSE,CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|NA,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+country,non-unique,required,FALSE,CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,non-unique,optional,FALSE,.+,Free-form additional location information.
 travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 non_westernized,non-unique,optional,FALSE,yes|no,Subject belongs to a non-westernized community.
@@ -89,7 +89,7 @@ ESR,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,erythrocyte sedimentation rate (ES
 HLA,non-unique,optional,TRUE,.+,HLA DR-DQ alleles conferring risk of Typ-1-Diabetes (T1D)
 autoantibody_positive,non-unique,optional,TRUE,.+,tested positive for AAB
 age_seroconversion,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,age (in days) at seroconvention was detected
-age_T1D_diagnosis,non-unique, optional,FALSE,[0-9]+\.?[0-9]*|NA,age (in days) at which T1D was diagnosed
+age_T1D_diagnosis,non-unique, optional,FALSE,[0-9]+\.?[0-9]*,age (in days) at which T1D was diagnosed
 disease_stage,non-unique,optional,FALSE,[0-9]+,stage information for diseases which can be divided in stages.
 disease_location,non-unique,optional,TRUE,.+, can be used for diseases which occur on different body parts like CD.
 calprotectin,non-unique,optional,FALSE,[0-9]+, higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
