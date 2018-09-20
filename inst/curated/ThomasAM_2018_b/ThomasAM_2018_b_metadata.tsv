@@ -1,5 +1,5 @@
-sampleID	subjectID PMID  body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
-CRC_MR_SBJ57H_17  SBJ57H  NA  stool no	control	healthy	NA	adult	ITA	no	IlluminaHiSeq	Gnome	87780234	8708299870	75	100	Paolo_Manghi;Marisa_Metzger	NA
+sampleID	subjectID	PMID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+CRC_MR_SBJ57H_17	SBJ57H	NA	stool no	control	healthy	NA	adult	ITA	no	IlluminaHiSeq	Gnome	87780234	8708299870	75	100	Paolo_Manghi;Marisa_Metzger	NA
 CRC_MR_SBJ52C_17	SBJ52C	NA	stool	no	CRC	CRC	NA	adult	ITA	no	IlluminaHiSeq	Gnome	63692342	6316133916	75	100	Paolo_Manghi;Marisa_Metzger	NA
 CRC_MR_SBJ50C_17	SBJ50C	NA	stool	no	CRC	CRC	NA	adult	ITA	no	IlluminaHiSeq	Gnome	112363490	11146806610	75	100	Paolo_Manghi;Marisa_Metzger	NA
 CRC_MR_SBJ16H_17	SBJ16H	NA	stool	no	control	healthy	NA	adult	ITA	no	IlluminaHiSeq	Gnome	88521036	8797349244	75	100	Paolo_Manghi;Marisa_Metzger	NA
