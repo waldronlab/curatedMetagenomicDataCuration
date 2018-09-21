@@ -14,7 +14,7 @@ age_category,non-unique,optional,FALSE,newborn|child|schoolage|adult|senior,Age 
 gender,non-unique,optional,FALSE,female|male|other,Subject gender.
 visit_number,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repeated visits.
 BMI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,non-unique,required,FALSE,CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|MDG,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+country,non-unique,required,FALSE,CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,non-unique,optional,FALSE,.+,Free-form additional location information.
 travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 non_westernized,non-unique,optional,FALSE,yes|no,Subject belongs to a non-westernized community.
@@ -85,7 +85,7 @@ family,non-unique,optional,FALSE,[0-9]+,A number identifying the family subjects
 family_role,non-unique,optional,FALSE,child|mother|father,Role in the family when multiple samples come from the same family but different persons.
 born_method,non-unique,optional,FALSE,c_section|vaginal,C-section vs vaginal birth.
 premature,non-unique,optional,FALSE,yes|no, 
-birth_order,non-unique,optinal,FALSE,[0-9]+,can be used for multiple birth
+birth_order,non-unique,optional,FALSE,[0-9]+,can be used for multiple birth
 age_twins_started_to_live_apart,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,
 feeding_practice,non-unique,optional,FALSE,exclusively_breastfeeding|no_breastfeeding||mixed_feeding|any_breastfeeding|exclusively_formula_feeding,Feeding practice.
 ESR,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,erythrocyte sedimentation rate (ESR) in mm/Hr
