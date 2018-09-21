@@ -108,6 +108,6 @@ globulin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curator must use g/l
 urea_nitrogen,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curator must use mmol/l
 ASO,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,antistreptolysin O; curator must use IU/ml
 anti_ccp_antibody,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curator must use U/ml
-rheumatoid_factor,non-unique,optional,False,[0-9]+\.?[0-9]*,curator must use IU/ml
+rheumatoid_factor,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curator must use IU/ml
 curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
