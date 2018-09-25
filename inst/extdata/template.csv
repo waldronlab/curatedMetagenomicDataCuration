@@ -57,10 +57,10 @@ hla_dbq12,non-unique,optional,FALSE,[0-9]+,Hla_dbq12 allele.
 hla_dbq11,non-unique,optional,FALSE,[0-9]+,Hla_dbq11 allele.
 ctp,non-unique,optional,FALSE,[0-9]+,Cytidine triphosphate level.
 start_solidfood,non-unique,optional,FALSE,[0-9]+,First day of solid food introduction (newborns).
-triglycerides,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
+triglycerides,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
 cholesterol,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
-hdl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
-ldl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
+hdl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+ldl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
 adiponectin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
 fasting_insulin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-units/ml.
 hba1c,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use %.
