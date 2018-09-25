@@ -63,7 +63,7 @@ AS120raw	AS120raw	stool	no	AS	RA	AS	37	adult	female	1845	CHN	no	730	10	4.1	21	26
 AS121raw	AS121raw	stool	no	AS	RA	AS	35	adult	female	1867	CHN	no	730	21	3.12	23	34	58	41	3.671	45.32	no	3.3	0.2	28750650	48525330	4852533000	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279300
 AS122raw	AS122raw	stool	no	AS	RA	AS	45	adult	male	1965	CHN	no	1460	20	3.5	19	24	34.7	28.6	6.41	38.4	no	4.2	0	28750650	47958562	4795856200	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279299
 AS123raw	AS123raw	stool	no	AS	RA	AS	48	adult	male	1933	CHN	no	2555	32	5	57	38	50.4	35.6	3.8	45	no	3.9	1	28750650	39515860	3951586000	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279298
-AS127raw	AS127raw	stool	no	AS	RA	AS	35	adult	female	2147	CHN	no	1277.5	18	4.9	41	32	56	43	4.671	56.2	no	6.8	2.5	28750650	38376298	3837629800	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279297
+AS127raw	AS127raw	stool	no	AS	RA	AS	35	adult	female	2147	CHN	no	1278	18	4.9	41	32	56	43	4.671	56.2	no	6.8	2.5	28750650	38376298	3837629800	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279297
 AS128raw	AS128raw	stool	no	AS	RA	AS	34	adult	female	2007	CHN	no	548	54	31	22	30	34.51	28.6	2.8	45.7	NSAID	5.8	2.4	28750650	40012620	4001262000	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279296
 AS131raw	AS131raw	stool	no	AS	RA	AS	24	adult	female	1832	CHN	no	1095	7	3.24	27	20	47	23	4.1	43.2	NSAID	1.7	1	28750650	44447700	4444770000	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279295
 AS132raw	AS132raw	stool	no	AS	RA	AS	32	adult	female	1901	CHN	no	1460	4.1	12	20	24	50	34	4	66	no	1.4	0	28750650	45559120	4555912000	100	100	IlluminaHiSeq	"Paolo_Manghi;Marisa_Metzger"	SRR5279294
