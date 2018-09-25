@@ -57,7 +57,7 @@ hla_dbq12,non-unique,optional,FALSE,[0-9]+,Hla_dbq12 allele.
 hla_dbq11,non-unique,optional,FALSE,[0-9]+,Hla_dbq11 allele.
 ctp,non-unique,optional,FALSE,[0-9]+,Cytidine triphosphate level.
 start_solidfood,non-unique,optional,FALSE,[0-9]+,First day of solid food introduction (newborns).
-triglycerides,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
+triglycerides_test,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
 cholesterol,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
 hdl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
 ldl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
