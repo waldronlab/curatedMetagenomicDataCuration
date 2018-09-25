@@ -96,7 +96,7 @@ age_T1D_diagnosis,non-unique, optional,FALSE,[0-9]+\.?[0-9]*,Age at which T1D wa
 disease_stage,non-unique,optional,FALSE,[0-9]+,Stage information for diseases that can be divided into multiple stages.
 disease_location,non-unique,optional,TRUE,.+,Can be used for diseases which occur on different body parts like CD.
 calprotectin,non-unique,optional,FALSE,[0-9]+,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
-treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic,medications or treatments against the diseases.
+treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID,medications or treatments against the diseases.
 remission,non-unique,optional,FALSE,no|yes,Remission of the disease.
 wbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,White blood cells count; curators must use *1000counts/µL
 rbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Red blood cells count; curators must use *million_counts/µL
