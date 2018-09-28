@@ -115,5 +115,6 @@ menopausal_status,non-unique,optional,FALSE,pre|going_through|post,Menopausal st
 BASDAI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Bath Ankylosing Spondylitis Disease Activity Index
 BASFI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Bath Ankylosing Spondylitis Functional Index
 birth_weight,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curators must use gramms 
+gestational_age,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,duration time of pregnancy;curatos must use weeks
 curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
