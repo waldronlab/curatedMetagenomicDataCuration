@@ -1,3 +1,5 @@
+# Quick Start
+
 This package checks metadata curation for curatedMetagenomicData. To use it:
 
 1. Look at the [template](https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv) and [already curated files](https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated) to see what curated files should look like.
@@ -15,4 +17,6 @@ browseVignettes("curatedMetagenomicDataCuration")
 
 *Note:* the package gets built twice as a work-around to [this Travis-CI for R issue](https://github.com/travis-ci/travis-ci/issues/8038). If this issue is resolved, the build can be made a little faster by reverting to the .travis.yml and .push_gh_pages.sh of [this version](https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/114e245308fa872a35b8eb96908f8ff61e041c8a).
 
-For more information on contributing to [curatedMetagenomicData](https://waldronlab.github.io/curatedMetagenomicData), see [CONTRIBUTING.md](https://github.com/waldronlab/curatedMetagenomicData/blob/master/CONTRIBUTING.md).
+# More complete introduction
+
+The complete reference for curators is provided at this page's [wiki](https://github.com/waldronlab/curatedMetagenomicDataCuration/wiki).
