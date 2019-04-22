@@ -24,7 +24,6 @@ CA_C10005IS2066FE_t1M15	C10005	stool	stool	NA	control	healthy	0	1	newborn	NA	ITA
 CA_C10005IS2070SA_t2M15	C10005	oralcavity	tongue_dorsum	NA	control	healthy	0	3	newborn	NA	ITA	no	IlluminaHiSeq	30001516	4709002	447078807	20	100	child	5	exclusively_breastfeeding	Pamela_Ferretti	NA
 CA_C10005IS2069FE_t2M15	C10005	stool	stool	NA	control	healthy	0	3	newborn	NA	ITA	no	IlluminaHiSeq	30001516	32428563	3143189768	20	100	child	5	exclusively_breastfeeding	Pamela_Ferretti	NA
 CA_C10005IS2077FE_t4M15	C10005	stool	stool	NA	control	healthy	0	30	newborn	NA	ITA	no	IlluminaHiSeq	30001516	43150414	3974006810	20	100	child	5	exclusively_breastfeeding	Pamela_Ferretti	NA
-CA_C10005IS2077FE_t5M15	C10005	stool	stool	NA	control	healthy	0	120	newborn	NA	ITA	no	IlluminaHiSeq	30001516	47232181	4676422179	20	100	child	5	exclusively_breastfeeding	Pamela_Ferretti	NA
 CA_C10006MS2079SA_t0M15	C10006_mo	oralcavity	tongue_dorsum	NA	control	healthy	34	NA	adult	22.9	ITA	no	IlluminaHiSeq	30001516	42080251	4119759303	20	100	mother	6	NA	Pamela_Ferretti	NA
 CA_C10006MS2082SK_t0M15	C10006_mo	skin	chest	NA	control	healthy	34	NA	adult	22.9	ITA	no	IlluminaHiSeq	30001516	8566649	751661480	20	100	mother	6	NA	Pamela_Ferretti	NA
 CA_C10006IS2084FE_t1M15	C10006	stool	stool	NA	control	healthy	0	1	newborn	NA	ITA	no	IlluminaHiSeq	30001516	38787590	3460226011	20	100	child	6	exclusively_breastfeeding	Pamela_Ferretti	NA
