@@ -65,9 +65,9 @@ SID240104	SID24_1	stool	control	56	NA	adult	female	SLV	rural_village	yes	372	Ill
 SID240102	SID24_1	stool	control	55	NA	adult	female	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	9628782	1358127976	36	142	Giacomo_DAmato	SRR2938484;SRR2938199
 SID210204	SID21_2	stool	control	76	NA	senior	male	SLV	rural_village	yes	372	IlluminaHiSeq	27172044	8841421	1246061607	36	142	Giacomo_DAmato	SRR2938483;SRR2938198
 SID240101	SID24_1	stool	control	55	NA	adult	female	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	13864100	1957387374	36	142	Giacomo_DAmato	SRR2938482;SRR2938197
-SID210404	SID21_4	stool	control	1.25	440	child	male	SLV	rural_village	yes	372	IlluminaHiSeq	27172044	8233549	1160656441	36	142	Giacomo_DAmato	SRR2938481;SRR2937625
-SID210402	SID21_4	stool	control	0.25	75	newborn	male	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	13955304	1957951809	36	142	Giacomo_DAmato	SRR2938480;SRR2937624
-SID210401	SID21_4	stool	control	0.25	75	newborn	male	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	22315698	3131330889	36	142	Giacomo_DAmato	SRR2938479;SRR2937623
+SID210404	SID21_4	stool	control	1	440	child	male	SLV	rural_village	yes	372	IlluminaHiSeq	27172044	8233549	1160656441	36	142	Giacomo_DAmato	SRR2938481;SRR2937625
+SID210402	SID21_4	stool	control	0	75	newborn	male	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	13955304	1957951809	36	142	Giacomo_DAmato	SRR2938480;SRR2937624
+SID210401	SID21_4	stool	control	0	75	newborn	male	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	22315698	3131330889	36	142	Giacomo_DAmato	SRR2938479;SRR2937623
 SID210304	SID21_3	stool	control	27	NA	adult	female	SLV	rural_village	yes	372	IlluminaHiSeq	27172044	12842964	1806999928	36	142	Giacomo_DAmato	SRR2938478;SRR2937622
 SID210302	SID21_3	stool	control	26	NA	adult	female	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	8590296	1210038298	36	142	Giacomo_DAmato	SRR2938477;SRR2937621
 SID210301	SID21_3	stool	control	26	NA	adult	female	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	15732297	2216895270	36	142	Giacomo_DAmato	SRR2938476;SRR2937620
@@ -83,8 +83,8 @@ SID140301	SID14_3	stool	control	26	NA	adult	male	SLV	rural_village	yes	0	Illumin
 SID140202	SID14_2	stool	control	24	NA	adult	female	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	7937377	1116257591	36	142	Giacomo_DAmato	SRR2938466;SRR2938188
 SID140201	SID14_2	stool	control	24	NA	adult	female	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	6129429	863659892	36	142	Giacomo_DAmato	SRR2938465;SRR2938187
 SID140104	SID14_1	stool	control	2	NA	child	NA	SLV	rural_village	yes	372	IlluminaHiSeq	27172044	6002316	845982176	36	142	Giacomo_DAmato	SRR2938464;SRR2938186
-SID140102	SID14_1	stool	control	1.25	440	child	NA	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	8944481	1258442861	36	142	Giacomo_DAmato	SRR2938463;SRR2938185
-SID140101	SID14_1	stool	control	1.25	440	child	NA	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	9441007	1327407027	36	142	Giacomo_DAmato	SRR2938462;SRR2938184
+SID140102	SID14_1	stool	control	1	440	child	NA	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	8944481	1258442861	36	142	Giacomo_DAmato	SRR2938463;SRR2938185
+SID140101	SID14_1	stool	control	1	440	child	NA	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	9441007	1327407027	36	142	Giacomo_DAmato	SRR2938462;SRR2938184
 SID100404	SID10_4	stool	control	6	NA	child	female	SLV	rural_village	yes	372	IlluminaHiSeq	27172044	14489885	2044630718	36	142	Giacomo_DAmato	SRR2938461;SRR2938183
 SID100402	SID10_4	stool	control	5	NA	child	female	SLV	rural_village	yes	7	IlluminaHiSeq	27172044	9497077	1338190554	36	142	Giacomo_DAmato	SRR2938460;SRR2938182
 SID100401	SID10_4	stool	control	5	NA	child	female	SLV	rural_village	yes	0	IlluminaHiSeq	27172044	10973004	1548886811	36	142	Giacomo_DAmato	SRR2938459;SRR2938181
