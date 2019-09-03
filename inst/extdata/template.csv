@@ -14,7 +14,7 @@ age_category,non-unique,optional,FALSE,newborn|child|schoolage|adult|senior,Age 
 gender,non-unique,optional,FALSE,female|male|other,Subject gender.
 visit_number,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repeated visits.
 BMI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,non-unique,required,FALSE,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+country,non-unique,required,FALSE,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,non-unique,optional,FALSE,.+,Free-form additional location information.
 population,non-uniqze,optional,FALSE,[a-zA-Z]\S+,can describe the belonging to a specific population
 travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
