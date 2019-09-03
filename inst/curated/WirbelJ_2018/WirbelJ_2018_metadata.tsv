@@ -66,7 +66,7 @@ CCMD31134579ST-11-0	CCMD31134579ST-11-0	stool	NA	control	healthy	75	senior	male	
 CCMD32288175ST-11-0	CCMD32288175ST-11-0	stool	NA	control	healthy	57	adult	female	22.2	DEU	no	IlluminaHiSeq	Gnome	30703808	3820804468	45	140	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD32965613ST-11-0	CCMD32965613ST-11-0	stool	NA	control	healthy	64	adult	male	27.6	DEU	no	IlluminaHiSeq	Gnome	45280497	5663096176	45	139	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD35081859ST-11-0	CCMD35081859ST-11-0	stool	NA	control	healthy	60	adult	female	25.8	DEU	no	IlluminaHiSeq	Gnome	39906903	4960369607	45	139	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
-CCMD35633353ST-11-0	CCMD35633353ST-11-0	stool	NA	CRC	healthy	61	adult	male	25.2	DEU	no	IlluminaHiSeq	Gnome	81443541	8156827787	45	112	iv	t4an2bm1b	Jacob_Wirbel;Paolo_Manghi	NA
+CCMD35633353ST-11-0	CCMD35633353ST-11-0	stool	NA	CRC	healthy	61	adult	male	25.2	DEU	no	IlluminaHiSeq	Gnome	81443541	8156827787	45	112	iv	t4n2m1	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD35801800ST-11-0	CCMD35801800ST-11-0	stool	NA	control	healthy	29	adult	female	30.5	DEU	no	IlluminaHiSeq	Gnome	42324579	5191026043	45	138	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD37575804ST-11-0	CCMD37575804ST-11-0	stool	NA	control	healthy	44	adult	male	25.1	DEU	no	IlluminaHiSeq	Gnome	42726833	5239016935	45	138	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD38158721ST-11-0	CCMD38158721ST-11-0	stool	NA	control	healthy	76	senior	male	29.5	DEU	no	IlluminaHiSeq	Gnome	26218660	3159908625	45	139	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
@@ -87,7 +87,7 @@ CCMD50538120ST-11-0	CCMD50538120ST-11-0	stool	NA	control	healthy	75	senior	male	
 CCMD51154251ST-11-0	CCMD51154251ST-11-0	stool	NA	control	healthy	50	adult	male	22.6	DEU	no	IlluminaHiSeq	Gnome	35921835	4433617601	45	138	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD51228890ST-11-0	CCMD51228890ST-11-0	stool	NA	control	healthy	65	adult	male	32.7	DEU	no	IlluminaHiSeq	Gnome	32351866	3935858548	45	139	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD52117727ST-11-0	CCMD52117727ST-11-0	stool	NA	CRC	healthy	79	senior	male	22.4	DEU	no	IlluminaHiSeq	Gnome	89774389	9269088380	45	114	ii	t3n0m0	Jacob_Wirbel;Paolo_Manghi	NA
-CCMD52145360ST-11-0	CCMD52145360ST-11-0	stool	NA	CRC	healthy	81	senior	male	24.0	DEU	no	IlluminaHiSeq	Gnome	84722998	8721310850	45	114	iii	t3n2am0	Jacob_Wirbel;Paolo_Manghi	NA
+CCMD52145360ST-11-0	CCMD52145360ST-11-0	stool	NA	CRC	healthy	81	senior	male	24.0	DEU	no	IlluminaHiSeq	Gnome	84722998	8721310850	45	114	iii	t3n2m0	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD53508245ST-11-0	CCMD53508245ST-11-0	stool	NA	control	healthy	61	adult	male	27.0	DEU	no	IlluminaHiSeq	Gnome	46280212	5716884869	45	139	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD53522274ST-11-0	CCMD53522274ST-11-0	stool	NA	control	healthy	75	senior	female	19.3	DEU	no	IlluminaHiSeq	Gnome	32649355	3988980619	45	138	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
 CCMD54057834ST-11-0	CCMD54057834ST-11-0	stool	NA	control	healthy	57	adult	female	21.2	DEU	no	IlluminaHiSeq	Gnome	26324082	3111604953	45	135	NA	NA	Jacob_Wirbel;Paolo_Manghi	NA
