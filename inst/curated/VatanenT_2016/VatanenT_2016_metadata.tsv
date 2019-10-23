@@ -685,7 +685,7 @@ G80509	T012312	stool	no	NA	control	healthy	0	120	newborn	male	EST	no	0	IlluminaH
 G80510	T016811	stool	no	NA	control	healthy	1	NA	newborn	male	EST	no	678	IlluminaHiSeq	Qiagen	27259157	30051772	2899925418	60	100	NA	NA	5	NA	Paolo_Manghi	SRR4408096
 G80511	T000094	stool	yes	penicillins	pyelonephritis	pyelonephritis	0	216	newborn	female	EST	no	0	IlluminaHiSeq	Qiagen	27259157	35161950	3306455160	50	99	404	3	5	NA	Paolo_Manghi	SRR4408097
 G80512	E007303	stool	yes	penicillins	bronchitis	bronchitis	0	197	newborn	male	FIN	no	197	IlluminaHiSeq	Qiagen	27259157	38029380	3674231244	60	100	NA	5	3	NA	Paolo_Manghi	SRR4408098
-G80513	E002338	stool	yes	"cephalosporins;penicillins;sulphonamides"	pyelonefritis	pyelonefritis	1	NA	newborn	female	FIN	no	399	IlluminaHiSeq	Qiagen	27259157	28329568	2729012573	60	99	NA	NA	5	NA	Paolo_Manghi	SRR4408099
+G80513	E002338	stool	yes	"cephalosporins;penicillins;sulphonamides"	pyelonephritis	pyelonephritis	1	NA	newborn	female	FIN	no	399	IlluminaHiSeq	Qiagen	27259157	28329568	2729012573	60	99	NA	NA	5	NA	Paolo_Manghi	SRR4408099
 G80514	E004934	stool	no	NA	control	healthy	0	70	newborn	female	FIN	no	0	IlluminaHiSeq	Qiagen	27259157	17175582	1623475838	60	101	NA	5	5	NA	Paolo_Manghi	SRR4408100
 G80515	T009909	stool	no	NA	control	healthy	0	215	newborn	male	EST	no	0	IlluminaHiSeq	Qiagen	27259157	10949402	1031888778	60	101	NA	NA	5	NA	Paolo_Manghi	SRR4408101
 G80516	T019021	stool	no	NA	control	healthy	0	44	newborn	female	EST	no	0	IlluminaHiSeq	Qiagen	27259157	25434616	2443280317	62	98	401	3	5	NA	Paolo_Manghi	SRR4408103
@@ -708,7 +708,7 @@ G80533	E002825	stool	yes	sulphonamides	otitis	otitis	0	312	newborn	male	FIN	no	0
 G80534	P009291	stool	no	NA	control	healthy	2	NA	child	male	RUS	no	784	IlluminaHiSeq	Qiagen	27259157	21520178	2072990862	60	99	401	3	5	NA	Paolo_Manghi	SRR4408129
 G80535	E006871	stool	no	NA	control	healthy	0	113	newborn	female	FIN	no	113	IlluminaHiSeq	Qiagen	27259157	17268872	1612955925	60	101	NA	NA	NA	404	Paolo_Manghi	SRR4408130
 G80536	T009275	stool	no	NA	control	healthy	0	33	newborn	female	EST	no	0	IlluminaHiSeq	Qiagen	27259157	18805890	1819727335	62	100	NA	NA	5	NA	Paolo_Manghi	SRR4408131
-G80537	E002338	stool	yes	"cephalosporins;penicillins;sulphonamides"	pyelonefritis	pyelonefritis	1	NA	newborn	female	FIN	no	493	IlluminaHiSeq	Qiagen	27259157	29507946	2847987575	60	100	NA	NA	5	NA	Paolo_Manghi	SRR4408133
+G80537	E002338	stool	yes	"cephalosporins;penicillins;sulphonamides"	pyelonephritis	pyelonephritis	1	NA	newborn	female	FIN	no	493	IlluminaHiSeq	Qiagen	27259157	29507946	2847987575	60	100	NA	NA	5	NA	Paolo_Manghi	SRR4408133
 G80538	E002338	stool	no	NA	control	healthy	0	122	newborn	female	FIN	no	122	IlluminaHiSeq	Qiagen	27259157	38925796	3760339672	60	100	NA	NA	5	NA	Paolo_Manghi	SRR4408134
 G80539	E017049	stool	yes	"beta_lactamase_inhibitors;penicillins"	otitis	otitis	0	208	newborn	male	FIN	no	208	IlluminaHiSeq	Qiagen	27259157	34008884	3290486595	60	100	401	3	5	NA	Paolo_Manghi	SRR4408135
 G80540	T014575	stool	no	NA	control	healthy	0	201	newborn	male	EST	no	0	IlluminaHiSeq	Qiagen	27259157	20244942	1947411132	60	99	NA	5	5	NA	Paolo_Manghi	SRR4408136
