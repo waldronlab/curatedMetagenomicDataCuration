@@ -206,7 +206,7 @@ SID377_4M	SID377	stool	no	control	healthy	0	123	newborn	female	SWE	no	120	Illumi
 SID377_12M	SID377	stool	no	control	healthy	1	372	child	female	SWE	no	369	IlluminaHiSeq	25974306	51054204	5095473960	80	100	vaginal	BackhedF_2015_55	child	any_breastfeeding	no	Valentina_Giunchiglia	ERR525876
 SID377_M	SID377_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	49686804	4956570570	80	100	NA	BackhedF_2015_55	mother	NA	yes	Valentina_Giunchiglia	ERR525879
 SID38_B	SID38	stool	no	control	healthy	0	2	newborn	female	SWE	no	0	IlluminaHiSeq	25974306	45857952	4576404890	80	100	vaginal	BackhedF_2015_56	child	NA	no	Valentina_Giunchiglia	ERR525894
-SID38_4M	SID38	stool	yes	control	healthy	0	130	newborn	female	SWE	no	128	IlluminaHiSeq	25974306	37124660	3695792200	80	100	vaginal	BackhedF_2015_56	child	exclusively formula feeding	no	Valentina_Giunchiglia	ERR525885
+SID38_4M	SID38	stool	yes	control	healthy	0	130	newborn	female	SWE	no	128	IlluminaHiSeq	25974306	37124660	3695792200	80	100	vaginal	BackhedF_2015_56	child	exclusively_formula_feeding	no	Valentina_Giunchiglia	ERR525885
 SID38_12M	SID38	stool	yes	control	healthy	1	380	child	female	SWE	no	378	IlluminaHiSeq	25974306	41077966	4093542910	80	100	vaginal	BackhedF_2015_56	child	no_breastfeeding	no	Valentina_Giunchiglia	ERR525880
 SID38_M	SID38_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	44785138	4465154900	80	100	NA	BackhedF_2015_56	mother	NA	yes	Valentina_Giunchiglia	ERR525895
 SID39_B	SID39	stool	no	control	healthy	0	7	newborn	male	SWE	no	0	IlluminaHiSeq	25974306	32837964	3268018410	80	100	vaginal	BackhedF_2015_57	child	exclusively_breastfeeding	no	Valentina_Giunchiglia	ERR525902
@@ -218,7 +218,7 @@ SID397_4M	SID397	stool	no	control	healthy	0	118	newborn	female	SWE	no	108	Illumi
 SID397_12M	SID397	stool	no	control	healthy	1	370	child	female	SWE	no	360	IlluminaHiSeq	25974306	51248116	5115794210	80	100	vaginal	BackhedF_2015_58	child	no_breastfeeding	no	Valentina_Giunchiglia	ERR525898
 SID397_M	SID397_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	46564814	4646122780	80	100	NA	BackhedF_2015_58	mother	NA	yes	Valentina_Giunchiglia	ERR525901
 SID503_B	SID503	stool	no	control	healthy	0	3	newborn	male	SWE	no	0	IlluminaHiSeq	25974306	16190006	1614533850	80	100	vaginal	BackhedF_2015_59	child	mixed_feeding	no	Valentina_Giunchiglia	ERR525914
-SID503_4M	SID503	stool	no	control	healthy	0	124	newborn	male	SWE	no	121	IlluminaHiSeq	25974306	42822874	4270187860	80	100	vaginal	BackhedF_2015_59	child	exclusively formula feeding	no	Valentina_Giunchiglia	ERR525913
+SID503_4M	SID503	stool	no	control	healthy	0	124	newborn	male	SWE	no	121	IlluminaHiSeq	25974306	42822874	4270187860	80	100	vaginal	BackhedF_2015_59	child	exclusively_formula_feeding	no	Valentina_Giunchiglia	ERR525913
 SID503_12M	SID503	stool	no	control	healthy	1	371	child	male	SWE	no	368	IlluminaHiSeq	25974306	51149768	5103893390	80	100	vaginal	BackhedF_2015_59	child	no_breastfeeding	no	Valentina_Giunchiglia	ERR525912
 SID503_M	SID503_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	59475128	5936790060	80	100	NA	BackhedF_2015_59	mother	NA	yes	Valentina_Giunchiglia	ERR525915
 SID507_B	SID507	stool	no	control	healthy	0	8	newborn	male	SWE	no	0	IlluminaHiSeq	25974306	39397746	3924928770	80	100	c_section	BackhedF_2015_60	child	exclusively_breastfeeding	no	Valentina_Giunchiglia	ERR525922
@@ -247,7 +247,7 @@ SID546_12M	SID546	stool	yes	control	healthy	0	358	newborn	male	SWE	no	355	Illumi
 SID546_M	SID546_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	44943100	4482520460	80	100	NA	BackhedF_2015_65	mother	NA	yes	Valentina_Giunchiglia	ERR525963
 SID560_B	SID560	stool	no	control	healthy	0	4	newborn	female	SWE	no	0	IlluminaHiSeq	25974306	53378800	5329560490	80	100	c_section	BackhedF_2015_66	child	mixed_feeding	no	Valentina_Giunchiglia	ERR525970
 SID560_4M	SID560	stool	no	control	healthy	0	131	newborn	female	SWE	no	127	IlluminaHiSeq	25974306	33244676	3303868440	80	100	c_section	BackhedF_2015_66	child	exclusively_breastfeeding	no	Valentina_Giunchiglia	ERR525969
-SID560_12M	SID560	stool	no	control	healthy	0	360	newborn	female	SWE	no	356	IlluminaHiSeq	25974306	48267320	4814972870	80	100	c_section	BackhedF_2015_66	child	any _breastfeeding	no	Valentina_Giunchiglia	ERR525968
+SID560_12M	SID560	stool	no	control	healthy	0	360	newborn	female	SWE	no	356	IlluminaHiSeq	25974306	48267320	4814972870	80	100	c_section	BackhedF_2015_66	child	any_breastfeeding	no	Valentina_Giunchiglia	ERR525968
 SID560_M	SID560_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	42578444	4243728400	80	100	NA	BackhedF_2015_66	mother	NA	yes	Valentina_Giunchiglia	ERR525971
 SID565_B	SID565	stool	no	control	healthy	0	3	newborn	male	SWE	no	0	IlluminaHiSeq	25974306	36697796	3657729090	80	100	vaginal	BackhedF_2015_67	child	exclusively_breastfeeding	no	Valentina_Giunchiglia	ERR525974
 SID565_4M	SID565	stool	no	control	healthy	0	127	newborn	male	SWE	no	124	IlluminaHiSeq	25974306	40196932	4005926220	80	100	vaginal	BackhedF_2015_67	child	exclusively_breastfeeding	no	Valentina_Giunchiglia	ERR525973
@@ -375,7 +375,7 @@ SID640_M	SID640_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	Illumin
 SID7_B	SID7	stool	no	control	healthy	0	2	newborn	female	SWE	no	0	IlluminaHiSeq	25974306	32494830	3237050750	80	100	vaginal	BackhedF_2015_100	child	exclusively_breastfeeding	no	Valentina_Giunchiglia	ERR526074
 SID7_4M	SID7	stool	no	control	healthy	0	115	newborn	female	SWE	no	113	IlluminaHiSeq	25974306	29034366	2887616600	80	100	vaginal	BackhedF_2015_100	child	exclusively_formula_feeding	no	Valentina_Giunchiglia	ERR526069
 SID7_12M	SID7	stool	no	control	healthy	0	359	newborn	female	SWE	no	357	IlluminaHiSeq	25974306	35836968	3575499280	80	100	vaginal	BackhedF_2015_100	child	no_breastfeeding	no	Valentina_Giunchiglia	ERR526068
-SID7_M	SID7_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	37238406	3712067790	80	100	na	BackhedF_2015_100	mother	NA	yes	Valentina_Giunchiglia	ERR526075
+SID7_M	SID7_mo	stool	NA	control	healthy	NA	NA	adult	female	SWE	no	NA	IlluminaHiSeq	25974306	37238406	3712067790	80	100	NA	BackhedF_2015_100	mother	NA	yes	Valentina_Giunchiglia	ERR526075
 SID180_12M	SID180	stool	NA	control	healthy	1	365	child	female	SWE	no	NA	IlluminaHiSeq	25974306	42024258	4192529340	80	100	NA	NA	NA	NA	NA	Paolo_Manghi	ERR525738
 SID637_4M	SID637	stool	NA	control	healthy	0	120	newborn	NA	SWE	no	NA	IlluminaHiSeq	25974306	41561500	4143299910	80	100	NA	NA	NA	NA	NA	Paolo_Manghi	ERR526057
 SID635_B	SID635	stool	NA	control	healthy	NA	NA	newborn	NA	SWE	no	NA	IlluminaHiSeq	25974306	8477416	845340220	80	100	NA	NA	NA	NA	NA	Paolo_Manghi	ERR526054
