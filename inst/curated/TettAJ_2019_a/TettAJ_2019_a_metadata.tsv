@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_member	family	curator	NCBI_accession
+sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	curator	NCBI_accession
 C16-20002-TZ	C16-10012-TZ_M	stool	NA	control	healthy	24	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	30294666	3048809379	75	101	mother	TettAJ_2019_a_1	Paolo_Manghi	SRR8803178
 C16-20003-TZ	C16-10012-TZ_F	stool	NA	control	healthy	25	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	81883537	8162246855	75	101	father	TettAJ_2019_a_1	Paolo_Manghi	SRR8803179
 C16-20005-TZ	C16-10012-TZ_U1	stool	NA	control	healthy	20	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	25418232	2556515726	75	101	other	TettAJ_2019_a_1	Paolo_Manghi	SRR8803176
