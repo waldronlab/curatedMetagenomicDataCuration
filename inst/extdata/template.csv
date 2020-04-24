@@ -14,12 +14,12 @@ age_category,non-unique,optional,False,newborn|child|schoolage|adult|senior,Age 
 gender,non-unique,optional,False,female|male|other,Subject gender.
 visit_number,non-unique,optional,False,[0-9]+,Visit number for studies with repeated visits.
 BMI,non-unique,optional,False,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,non-unique,required,False,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+country,non-unique,required,False,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,non-unique,optional,False,.+,Free-form additional location information.
 population,non-uniqze,optional,False,[a-zA-Z]\S+,can describe the belonging to a specific population
 travel_destination,non-unique,optional,False,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 non_westernized,non-unique,optional,False,yes|no,Subject belongs to a non-westernized community.
-lifestyle,non-unique,optiona,False,Hunter-gatherer|Agriculturalist,to descripe the lifestyle of non-westernized people
+lifestyle,non-unique,optiona,False,Hunter-gatherer|Agriculturalist|Fisher,to descripe the lifestyle of non-westernized people
 days_from_first_collection,non-unique,optional,False,[0-9]+,Used for time series studies.
 sequencing_platform,non-unique,required,False,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq,This will be modified as new sequencing platforms are added to the database.
 DNA_extraction_kit,non-unique,optional,False,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|other|PowerSoilPro,DNA extraction kit.
