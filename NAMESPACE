@@ -2,13 +2,11 @@
 
 export(PubMed)
 export(checkCuration)
-<<<<<<< HEAD
 export(get_metadata)
 importFrom(RISmed,EUtilsGet)
 importFrom(RISmed,EUtilsSummary)
 importFrom(curl,curl)
 importFrom(jsonlite,fromJSON)
-=======
 export(metadata_long_form)
 export(study_long_form)
 importFrom(dplyr,"%>%")
@@ -17,5 +15,4 @@ importFrom(dplyr,bind_cols)
 importFrom(dplyr,bind_rows)
 importFrom(dplyr,select_if)
 importFrom(tidyr,pivot_longer)
->>>>>>> c840881af4135fde07755cfcbeb37bf6bc69c129
 importFrom(utils,read.csv)
