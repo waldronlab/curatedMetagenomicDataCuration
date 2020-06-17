@@ -10,19 +10,18 @@ get_metadata(srp)
 \item{srp}{An SRP as a string beginning with the prefix "SRP"}
 }
 \value{
-a data.frame with two elements, [["colnames"]] and [["values]]
+a data.frame with sampleID, sequencing_platform, number_reads, and avg_read_length
 }
 \description{
 Get relevant metadata for each SRR using SRP
 }
 \details{
 See Examples for the template used for curatedMetagenomicData. 
-The template has five columns:
+The data.frame has five columns:
 
-1. "col.name" specifies the name of the column in the curated data.frame.
-2. "multiplevalues": multiple semicolon-separated values are allowed
-3. "uniqueness": unique means each value must be unique, non-unique means repeated values are allowed
-4. "requiredness": if "required", there must be no missing (NA) values. If "optional", missing values are allowed.
-5. "allowedvalues": a regex defining allowable values for the column
-6. "description": a free-form description of the variable
+1. "sampleID" Sample ID.
+2. "sequencing_platform": Sequencing platform used.
+3. "number_reads": Number of reads. If there are multiple SRRs, the mean number_reads is used.
+4. "avg_read_length": Average read length If there are multiple SRRs, the mean avg_read_length  is used.
+5. "SRRs": A list of SRRs associated with the sample ID.
 }
