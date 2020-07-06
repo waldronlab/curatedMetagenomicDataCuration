@@ -21,7 +21,7 @@ The data.frame has five columns:
 
 1. "sampleID" Sample ID.
 2. "sequencing_platform": Sequencing platform used.
-3. "number_reads": Number of reads. If there are multiple SRRs, the mean number_reads is used.
+3. "number_reads": Number of reads. If there are multiple SRRs, the sum of number_reads is used.
 4. "avg_read_length": Average read length If there are multiple SRRs, the mean avg_read_length  is used.
 5. "SRRs": A list of SRRs associated with the sample ID.
 }
