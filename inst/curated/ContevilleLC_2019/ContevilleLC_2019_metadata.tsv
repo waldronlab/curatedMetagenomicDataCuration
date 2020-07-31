@@ -1,0 +1,16 @@
+sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	lifestyle	curator	NCBI_accession
+Y1	Y1	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	10854444	2724604317	60	261	Hunter-gatherer	Aitor_Blanco	SRR8732220
+Y2	Y2	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	5569888	1836490636	60	383	Hunter-gatherer	Aitor_Blanco	SRR8732219
+Y3	Y3	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	4860926	1218444004	60	261	Hunter-gatherer	Aitor_Blanco	SRR8732222
+Y4	Y4	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	9632282	2360358022	60	261	Hunter-gatherer	Aitor_Blanco	SRR8732221
+Y5	Y5	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	1331239	314372001	60	208	Hunter-gatherer	Aitor_Blanco	SRR8732224
+Y6	Y6	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	6217861	1315241876	60	199	Hunter-gatherer	Aitor_Blanco	SRR8732223
+Y7	Y7	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	1574807	343104600	60	196	Hunter-gatherer	Aitor_Blanco	SRR8732226
+Y8	Y8	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	18269558	2912943109	60	171	Hunter-gatherer	Aitor_Blanco	SRR8732225
+Y9	Y9	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	278524	77226438	63	283	Hunter-gatherer	Aitor_Blanco	SRR8732218
+Y10	Y10	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	9743579	3628705142	60	390	Hunter-gatherer	Aitor_Blanco	SRR8732217
+Y11	Y11	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	7816539	1940390794	60	261	Hunter-gatherer	Aitor_Blanco	SRR8732230
+Y12	Y12	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	979624	269583220	60	283	Hunter-gatherer	Aitor_Blanco	SRR8732229
+Y13	Y13	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	499959	137095564	60	283	Hunter-gatherer	Aitor_Blanco	SRR8732228
+Y14	Y14	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	5618205	1917107544	60	385	Hunter-gatherer	Aitor_Blanco	SRR8732227
+Y15	Y15	stool	no	control	healthy	NA	adult	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	10098531	2565008153	60	261	Hunter-gatherer	Aitor_Blanco	SRR8732231
