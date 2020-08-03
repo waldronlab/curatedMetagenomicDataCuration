@@ -6,7 +6,7 @@ HCO11	HCO11	stool	NA	control	healthy	36	adult	male	23.05	PER	Tunapuco	yes	Illumi
 HCO12	HCO12	stool	NA	control	healthy	35	adult	female	27.01	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	10022998	1233129724	19	151	Paolo_Manghi	SRR1761668;SRR1761726
 HCO53	HCO53	stool	NA	control	healthy	44	adult	female	29.52	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	8800389	1081842592	18	151	Paolo_Manghi	SRR1761669;SRR1761727
 HCO61	HCO61	stool	NA	control	healthy	20	adult	female	NA	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	12979000	1588810371	17	151	Paolo_Manghi	SRR1761670;SRR1761728
-HCO64	HCO64	stool	NA	control	healthy	NA	NA	female	NA	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	14039987	1821700162	18	151	Paolo_Manghi	SRR1761729;SRR1761671
+HCO64	HCO64	stool	NA	control	healthy	NA	adult	female	NA	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	14039987	1821700162	18	151	Paolo_Manghi	SRR1761729;SRR1761671
 HCO67	HCO67	stool	NA	control	healthy	26	adult	female	19.53	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	12032442	1508164591	16	151	Paolo_Manghi	SRR1761730;SRR1761672
 HCO70	HCO70	stool	NA	control	healthy	40	adult	female	NA	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	14155690	1825823931	17	151	Paolo_Manghi	SRR1761731;SRR1761673
 HCO72	HCO72	stool	NA	control	healthy	5	child	female	20.36	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	10208875	1312087253	18	151	Paolo_Manghi	SRR1761732;SRR1761674

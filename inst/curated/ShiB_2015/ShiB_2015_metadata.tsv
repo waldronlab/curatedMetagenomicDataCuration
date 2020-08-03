@@ -1,49 +1,49 @@
-sampleID	subjectID	body_site	body_subsite	antibiotics_current_use	study_condition	age	disease	country	days_from_first_collection	number_reads	number_bases	minimum_read_length	median_read_length	ever_smoker	smoker	dental_sample_type	sequencing_platform	PMID	curator	NCBI_accession
-S01-01-D	S01	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	61557421	5794329769	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781914
-S01-02-D	S01	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	43402442	4041845567	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781969
-S01-05-R	S01	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	9946077	939139011	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781970
-S01-06-R	S01	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	59197592	5567332395	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781983
-S03-01-D	S03	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	13343534	1273692559	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779468
-S03-03-R	S03	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	18652384	1761322406	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779479
-S04-01-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	14514962	1378842336	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779482
-S04-02-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	42962525	4044579555	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779488
-S04-03-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	25206982	2359086524	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779492
-S04-04-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	7476252	698681158	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779495
-S04-05-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	54380651	5040986540	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779497
-S04-06-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	61553733	5769488561	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779502
-S04-07-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	28068756	2638377601	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779506
-S04-08-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	7300042	701844673	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779511
-S07-01-D	S07	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	53554336	4812714019	60	97	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779378
-S07-03-R	S07	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	73294688	6808471092	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779403
-S12-01-D	S12	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	42259425	4075499243	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783028
-S12-02-D	S12	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	23003234	2228264566	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783032
-S12-03-R	S12	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	59111933	5722600905	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783079
-S12-04-R	S12	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	33347032	3168303798	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783718
-S13-01-D	S13	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	17923703	1734961396	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783722
-S13-02-D	S13	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	46627980	4521811885	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783724
-S13-03-R	S13	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	51849704	4991376068	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783757
-S13-04-R	S13	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	75543201	7328272053	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783758
-S14-01-D	S14	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	97408364	9271763470	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794083
-S14-02-D	S14	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	94810257	8794207128	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794618
-S14-03-R	S14	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	13278621	1065070031	60	69	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794621
-S14-04-R	S14	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	35537891	3218966329	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794623
-S17-01-D	S17	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	26829668	2597362884	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783760
-S17-02-D	S17	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	15701887	1521676706	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783763
-S17-03-R	S17	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	70301613	6834644754	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783767
-S17-04-R	S17	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	14027864	1309530473	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783768
-S20-01-D	S20	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	48208772	4642599535	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783769
-S20-02-D	S20	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	23739277	2281883760	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783771
-S20-03-R	S20	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	63969765	6180443966	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783774
-S20-04-R	S20	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	44676221	4271526474	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783775
-S21-01-D	S21	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	23236538	1945357329	60	92	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794794
-S21-02-D	S21	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	69583455	6232563854	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795007
-S21-03-R	S21	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	59313716	5595029746	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795008
-S21-04-R	S21	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	72020009	6848098169	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795009
-S27-01-D	S27	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	18141573	1606644861	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795012
-S27-02-D	S27	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	36885484	3348757491	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795016
-S27-03-R	S27	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	26869452	2418074450	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795017
-S27-04-R	S27	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	74934291	6917270433	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795018
-S31-01-D	S31	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	58910214	5335468831	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795019
-S31-02-D	S31	oralcavity	subgingival_plaque	no	periodontitis	NA	periodontitis	USA	0	42013320	3955813069	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795020
-S31-03-R	S31	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	67372743	6333533695	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795229
-S31-04-R	S31	oralcavity	subgingival_plaque	no	SRP	NA	periodontitis	USA	60	69040088	6313169406	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795230
+sampleID	subjectID	body_site	body_subsite	antibiotics_current_use	study_condition	age	age_category	disease	country	days_from_first_collection	number_reads	number_bases	minimum_read_length	median_read_length	ever_smoker	smoker	dental_sample_type	sequencing_platform	PMID	curator	NCBI_accession
+S01-01-D	S01	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	61557421	5794329769	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781914
+S01-02-D	S01	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	43402442	4041845567	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781969
+S01-05-R	S01	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	9946077	939139011	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781970
+S01-06-R	S01	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	59197592	5567332395	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781983
+S03-01-D	S03	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	13343534	1273692559	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779468
+S03-03-R	S03	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	18652384	1761322406	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779479
+S04-01-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	14514962	1378842336	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779482
+S04-02-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	42962525	4044579555	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779488
+S04-03-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	25206982	2359086524	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779492
+S04-04-D	S04	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	7476252	698681158	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779495
+S04-05-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	54380651	5040986540	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779497
+S04-06-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	61553733	5769488561	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779502
+S04-07-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	28068756	2638377601	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779506
+S04-08-R	S04	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	7300042	701844673	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779511
+S07-01-D	S07	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	53554336	4812714019	60	97	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779378
+S07-03-R	S07	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	73294688	6808471092	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1779403
+S12-01-D	S12	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	42259425	4075499243	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783028
+S12-02-D	S12	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	23003234	2228264566	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783032
+S12-03-R	S12	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	59111933	5722600905	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783079
+S12-04-R	S12	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	33347032	3168303798	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783718
+S13-01-D	S13	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	17923703	1734961396	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783722
+S13-02-D	S13	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	46627980	4521811885	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783724
+S13-03-R	S13	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	51849704	4991376068	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783757
+S13-04-R	S13	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	75543201	7328272053	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783758
+S14-01-D	S14	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	97408364	9271763470	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794083
+S14-02-D	S14	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	94810257	8794207128	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794618
+S14-03-R	S14	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	13278621	1065070031	60	69	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794621
+S14-04-R	S14	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	35537891	3218966329	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794623
+S17-01-D	S17	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	26829668	2597362884	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783760
+S17-02-D	S17	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	15701887	1521676706	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783763
+S17-03-R	S17	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	70301613	6834644754	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783767
+S17-04-R	S17	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	14027864	1309530473	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783768
+S20-01-D	S20	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	48208772	4642599535	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783769
+S20-02-D	S20	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	23739277	2281883760	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783771
+S20-03-R	S20	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	63969765	6180443966	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783774
+S20-04-R	S20	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	44676221	4271526474	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1783775
+S21-01-D	S21	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	23236538	1945357329	60	92	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1794794
+S21-02-D	S21	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	69583455	6232563854	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795007
+S21-03-R	S21	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	59313716	5595029746	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795008
+S21-04-R	S21	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	72020009	6848098169	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795009
+S27-01-D	S27	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	18141573	1606644861	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795012
+S27-02-D	S27	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	36885484	3348757491	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795016
+S27-03-R	S27	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	26869452	2418074450	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795017
+S27-04-R	S27	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	74934291	6917270433	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795018
+S31-01-D	S31	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	58910214	5335468831	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795019
+S31-02-D	S31	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	0	42013320	3955813069	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795020
+S31-03-R	S31	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	67372743	6333533695	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795229
+S31-04-R	S31	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	60	69040088	6313169406	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1795230

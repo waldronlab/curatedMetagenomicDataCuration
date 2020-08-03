@@ -8,7 +8,7 @@ GupDM_JK	GupDM_JK	stool	no	CRC	CRC	adenocarcinoma	66	senior	female	18.73	IND	Bho
 GupDM_JI	GupDM_JI	stool	no	CRC	CRC	adenocarcinoma	54	adult	male	18.96	IND	Bhopal	no	IlluminaNextSeq	Qiagen	31719139	11460622	1547957943	60	150.0	yes	t2n0m0	1.0	colon	Arianna_Bonetti;Paolo_Manghi	SRR8865579
 GupDM_A7	GupDM_A7	stool	no	CRC	CRC	adenocarcinoma	59	adult	male	19.1	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	7268266	939363261	60	150.0	yes	t4n2m0	3.0	sigmoid colon	Arianna_Bonetti;Paolo_Manghi	SRR8865586
 GupDM_A2	GupDM_A2	stool	no	CRC	CRC	adenocarcinoma	55	adult	male	19.14	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	7916638	1100929747	60	150.0	yes	t3n2m0	3.0	sigmoid colon	Arianna_Bonetti;Paolo_Manghi	SRR8865597
-GupDM_A11	GupDM_A11	stool	no	CRC	CRC	adenocarcinoma	41	adult	female	19.22	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	6227234	883347281	60	151.0	yes	t2m0n0	1.0	rectum	Arianna_Bonetti;Paolo_Manghi	SRR8865600
+GupDM_A_11	GupDM_A11	stool	no	CRC	CRC	adenocarcinoma	41	adult	female	19.22	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	6227234	883347281	60	151.0	yes	t2m0n0	1.0	rectum	Arianna_Bonetti;Paolo_Manghi	SRR8865600
 GupDM_JC	GupDM_JC	stool	no	CRC	CRC	adenocarcinoma	61	adult	male	19.47	IND	Bhopal	no	IlluminaNextSeq	Qiagen	31719139	7854080	1057890138	60	150.0	yes	t3n2m0	3.0	colon	Arianna_Bonetti;Paolo_Manghi	SRR8865591
 GupDM_JN	GupDM_JN	stool	no	CRC	CRC	adenocarcinoma	58	adult	male	19.92	IND	Bhopal	no	IlluminaNextSeq	Qiagen	31719139	9789278	1347588954	60	150.0	yes	t2n0m0	1.0	rectum	Arianna_Bonetti;Paolo_Manghi	SRR8865574
 GupDM_JJ	GupDM_JJ	stool	no	CRC	CRC	adenocarcinoma	62	adult	female	20.03	IND	Bhopal	no	IlluminaNextSeq	Qiagen	31719139	8350184	1151783466	60	150.0	yes	t2n0m1	4.0	colon	Arianna_Bonetti;Paolo_Manghi	SRR8865578
@@ -22,7 +22,7 @@ GupDM_A8	GupDM_A8	stool	no	CRC	CRC	adenocarcinoma	66	senior	female	20.5	IND	Kera
 GupDM_A3	GupDM_A3	stool	no	CRC	CRC	adenocarcinoma	49	adult	male	20.83	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	3283982	456791391	60	150.0	yes	t4n1m0	3.0	colon	Arianna_Bonetti;Paolo_Manghi	SRR8865592
 GupDM_A10	GupDM_A10	stool	no	CRC	CRC	adenocarcinoma	65	adult	female	21.01	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	8468208	1174245166	60	150.0	yes	t3n2m0	3.0	colon	Arianna_Bonetti;Paolo_Manghi	SRR8865599
 GupDM_A5	GupDM_A5	stool	no	CRC	CRC	adenocarcinoma	75	senior	female	21.21	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	7220182	997921511	60	150.0	yes	t3n2m0	3.0	rectum	Arianna_Bonetti;Paolo_Manghi	SRR8865584
-GupDM_A15	GupDM_A15	stool	no	CRC	CRC	adenocarcinoma	59	adult	male	21.4	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	9884266	1384530792	60	150.0	yes	t2n0m0	1.0	rectum	Arianna_Bonetti;Paolo_Manghi	SRR8865596
+GupDM_A_15	GupDM_A15	stool	no	CRC	CRC	adenocarcinoma	59	adult	male	21.4	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	9884266	1384530792	60	150.0	yes	t2n0m0	1.0	rectum	Arianna_Bonetti;Paolo_Manghi	SRR8865596
 GupDM_JH	GupDM_JH	stool	no	CRC	CRC	adenocarcinoma	58	adult	female	21.49	IND	Bhopal	no	IlluminaNextSeq	Qiagen	31719139	12994616	1753239492	60	150.0	yes	t4n1m0	3.0	sigmoid colon	Arianna_Bonetti;Paolo_Manghi	SRR8865576
 GupDM_JD	GupDM_JD	stool	no	CRC	CRC	adenocarcinoma	57	adult	male	21.7	IND	Bhopal	no	IlluminaNextSeq	Qiagen	31719139	5660024	780426560	60	150.0	yes	t1n0m0	1.0	colon	Arianna_Bonetti;Paolo_Manghi	SRR8865582
 GupDM_A9	GupDM_A9	stool	no	CRC	CRC	adenocarcinoma	56	adult	female	22.22	IND	Kerala	no	IlluminaNextSeq	Qiagen	31719139	4665104	661492622	60	151.0	yes	t4n1m0	3.0	rectum	Arianna_Bonetti;Paolo_Manghi	SRR8865588
