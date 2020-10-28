@@ -569,7 +569,7 @@ G78788	P022222	stool	no	NA	control	healthy	0	217.0	newborn	female	RUS	no	0.0	Ill
 G78789	P022222	stool	no	NA	control	healthy	0	276.0	newborn	female	RUS	no	59.0	IlluminaHiSeq	Qiagen	27259157	5564646	537299358	60	100	NA	NA	5.0	NA	Paolo_Manghi	SRR4305291
 G78802	P022222	stool	no	NA	control	healthy	0	339.0	newborn	female	RUS	no	122.0	IlluminaHiSeq	Qiagen	27259157	8448428	819155291	60	100	NA	NA	5.0	NA	Paolo_Manghi	SRR4305304
 G80389	P022222	stool	no	NA	control	healthy	1	NA	child	female	RUS	no	683.0	IlluminaHiSeq	Qiagen	27259157	21462920	2092761498	60	101	NA	NA	5.0	NA	Paolo_Manghi	SRR4408259
-G78640	P022222	stool	no	NA	control	healthy	1	NA	newborn	female	RUS	no	566.0	IlluminaHiSeq	Qiagen	27259157	13958086	1348865624	60	100	NA	NA	5.0	NA	Paolo_Manghi	SRR4305171
+G78640	P022222	stool	no	NA	control	healthy	1	NA	child	female	RUS	no	566.0	IlluminaHiSeq	Qiagen	27259157	13958086	1348865624	60	100	NA	NA	5.0	NA	Paolo_Manghi	SRR4305171
 G78572	P022384	stool	no	NA	control	healthy	1	NA	child	male	RUS	no	0.0	IlluminaHiSeq	Qiagen	27259157	18704388	1814689204	60	100	NA	201.0	5.0	NA	Paolo_Manghi	SRR4305100
 G78553	P022384	stool	no	NA	control	healthy	1	NA	child	male	RUS	no	427.0	IlluminaHiSeq	Qiagen	27259157	20414488	1995799799	60	101	NA	201.0	5.0	NA	Paolo_Manghi	SRR4305082
 G69199	P022384	stool	no	NA	control	healthy	1	NA	child	male	RUS	no	489.0	IlluminaHiSeq	Qiagen	27259157	6747600	671023263	68	101	NA	201.0	5.0	NA	Paolo_Manghi	SRR4305468
@@ -672,7 +672,7 @@ G78667	T012138	stool	no	NA	control	healthy	1	NA	child	male	EST	no	0.0	IlluminaHi
 G78668	T012138	stool	no	NA	control	healthy	1	NA	child	male	EST	no	501.0	IlluminaHiSeq	Qiagen	27259157	35320744	3456107221	65	101	NA	201.0	5.0	NA	Paolo_Manghi	SRR4305197
 G80353	T012138	stool	no	NA	control	healthy	2	NA	child	male	EST	no	863.0	IlluminaHiSeq	Qiagen	27259157	34080130	3314663772	60	101	NA	201.0	5.0	NA	Paolo_Manghi	SRR4408220
 G80509	T012312	stool	no	NA	control	healthy	0	120.0	newborn	male	EST	no	0.0	IlluminaHiSeq	Qiagen	27259157	32789058	3163309509	60	100	401.0	3.0	5.0	NA	Paolo_Manghi	SRR4408095
-G78602	T012312	stool	no	NA	control	healthy	1	NA	newborn	male	EST	no	680.0	IlluminaHiSeq	Qiagen	27259157	19415588	1890069448	60	101	401.0	3.0	5.0	NA	Paolo_Manghi	SRR4305131
+G78602	T012312	stool	no	NA	control	healthy	1	NA	child	male	EST	no	680.0	IlluminaHiSeq	Qiagen	27259157	19415588	1890069448	60	101	401.0	3.0	5.0	NA	Paolo_Manghi	SRR4305131
 G80343	T012312	stool	no	NA	control	healthy	2	NA	child	male	EST	no	861.0	IlluminaHiSeq	Qiagen	27259157	34027498	3306263122	60	101	401.0	3.0	5.0	NA	Paolo_Manghi	SRR4408154
 G78595	T012374	stool	no	NA	control	healthy	1	NA	child	male	EST	no	0.0	IlluminaHiSeq	Qiagen	27259157	7273642	704700350	60	100	NA	201.0	5.0	NA	Paolo_Manghi	SRR4305124
 G78514	T012374	stool	yes	penicillins	otitis	otitis	1	NA	child	male	EST	no	0.0	IlluminaHiSeq	Qiagen	27259157	5764144	560461844	60	100	NA	201.0	5.0	NA	Paolo_Manghi	SRR4305041

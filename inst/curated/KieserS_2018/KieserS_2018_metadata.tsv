@@ -1,28 +1,28 @@
-sampleID	subjectID	body_site	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	uncurated_metadata	curator	NCBI_accession
-DY.401.D01	DY.401.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	35707450	4454039399	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298222
-DY.404.D01	DY.404.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	32923690	4111472080	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298221
-DY.405.D01	DY.405.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	39932422	4944963602	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298220
-DY.406.D01	DY.406.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	31373228	3913176277	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298219
-DY.407.D01	DY.407.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	42979860	5385471227	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298218
-DY.408.D01	DY.408.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	33266874	4163853188	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298217
-DY.409.D01	DY.409.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	40033442	4975133762	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298216
-DY.411.D01	DY.411.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	32805710	4102894469	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298215
-DY.419.D01	DY.419.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	33067780	4144445651	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298214
-DY.501.D01	DY.501.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	41957906	5254059061	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298213
-DY.502.D01	DY.502.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	34588336	4318195545	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298212
-DY.503.D01	DY.503.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	38971950	4715245286	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298211
-DY.504.D01	DY.504.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	43243872	5377365390	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298210
-DY.505.D01	DY.505.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	24081086	3015858762	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298209
-DY.506.D01	DY.506.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	37412028	4680434902	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298208
-DY.507.D01	DY.507.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	44998924	5631956100	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298207
-DY.508.D01	DY.508.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	35783056	4473675942	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298206
-DY.509.D01	DY.509.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	47093516	5876072482	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298205
-DY.510.D01	DY.510.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	29225618	3657472473	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298204
-DY.511.D01	DY.511.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	29931650	3747181938	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298203
-DY.512.D01	DY.512.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	34467284	4311069513	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298202
-DY.513.D01	DY.513.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	44529550	5575021461	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298201
-DY.514.D01	DY.514.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	46039196	5756219308	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298200
-DY.515.D01	DY.515.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	51455282	6438079472	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298199
-DY.516.D01	DY.516.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	45727732	5725190622	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298198
-DY.517.D01	DY.517.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	44902982	5611572353	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298197
-DY.518.D01	DY.518.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	39399604	4933079016	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298196
+sampleID	subjectID	body_site	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	uncurated_metadata	curator	NCBI_accession	age
+DY.401.D01	DY.401.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	35707450	4454039399	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298222	NA
+DY.404.D01	DY.404.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	32923690	4111472080	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298221	NA
+DY.405.D01	DY.405.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	39932422	4944963602	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298220	NA
+DY.406.D01	DY.406.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	31373228	3913176277	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298219	NA
+DY.407.D01	DY.407.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	42979860	5385471227	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298218	NA
+DY.408.D01	DY.408.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	33266874	4163853188	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298217	NA
+DY.409.D01	DY.409.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	40033442	4975133762	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298216	NA
+DY.411.D01	DY.411.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	32805710	4102894469	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298215	NA
+DY.419.D01	DY.419.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	33067780	4144445651	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298214	NA
+DY.501.D01	DY.501.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	41957906	5254059061	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298213	NA
+DY.502.D01	DY.502.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	34588336	4318195545	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298212	NA
+DY.503.D01	DY.503.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	38971950	4715245286	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298211	NA
+DY.504.D01	DY.504.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	43243872	5377365390	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298210	NA
+DY.505.D01	DY.505.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	24081086	3015858762	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298209	NA
+DY.506.D01	DY.506.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	37412028	4680434902	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298208	NA
+DY.507.D01	DY.507.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	44998924	5631956100	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298207	NA
+DY.508.D01	DY.508.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	35783056	4473675942	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298206	NA
+DY.509.D01	DY.509.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	47093516	5876072482	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298205	NA
+DY.510.D01	DY.510.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	29225618	3657472473	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298204	NA
+DY.511.D01	DY.511.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	29931650	3747181938	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298203	NA
+DY.512.D01	DY.512.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	34467284	4311069513	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298202	NA
+DY.513.D01	DY.513.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	44529550	5575021461	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298201	NA
+DY.514.D01	DY.514.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	46039196	5756219308	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298200	NA
+DY.515.D01	DY.515.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	51455282	6438079472	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298199	NA
+DY.516.D01	DY.516.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	45727732	5725190622	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298198	NA
+DY.517.D01	DY.517.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	44902982	5611572353	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298197	NA
+DY.518.D01	DY.518.D01	stool	acute_diarrhoea	acute_diarrhoea	child	BGD	no	IlluminaHiSeq	MoBio	29786169	39399604	4933079016	35	126	Dhaka	malnourished	Giacomo_DAmato	SRR5298196	NA
