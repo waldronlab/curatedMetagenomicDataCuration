@@ -117,10 +117,10 @@ SID5480-2	SID5480	stool	no	control	healthy	32	adult	female	26.99100225	DNK	no	Il
 SID5480-3	SID5480	stool	no	control	healthy	32	adult	female	28.62736548	DNK	no	IlluminaHiSeq	30425247	90073842	9007384200	100	100	Copenhagen	106.0	high_gluten_diet	Giacomo_DAmato	SRR7989909
 SID5480-4	SID5480	stool	no	control	healthy	32	adult	female	27.96203098	DNK	no	IlluminaHiSeq	30425247	94891280	9489128000	100	100	Copenhagen	169.0	high_gluten_diet	Giacomo_DAmato	SRR7989910
 SID5481-1	SID5481	stool	no	control	healthy	46	adult	male	30.18901729	DNK	no	IlluminaHiSeq	30425247	91828594	9182859400	100	100	Copenhagen	0.0	high_gluten_diet	Giacomo_DAmato	SRR7989911
-SID5481-2	SID5481	stool	no	control	healthy	46	adult	male	30.368180600000002	DNK	no	IlluminaHiSeq	30425247	94835676	9483567600	100	100	Copenhagen	56.0	high_gluten_diet	Giacomo_DAmato	SRR7989912
+SID5481-2	SID5481	stool	no	control	healthy	46	adult	male	30.3681806	DNK	no	IlluminaHiSeq	30425247	94835676	9483567600	100	100	Copenhagen	56.0	high_gluten_diet	Giacomo_DAmato	SRR7989912
 SID5481-3	SID5481	stool	no	control	healthy	46	adult	male	30.60706501	DNK	no	IlluminaHiSeq	30425247	60296704	6029670400	100	100	Copenhagen	126.0	low_gluten_diet	Giacomo_DAmato	SRR7989913
 SID5481-4	SID5481	stool	no	control	healthy	46	adult	male	30.24873839	DNK	no	IlluminaHiSeq	30425247	99118334	9911833400	100	100	Copenhagen	182.0	low_gluten_diet	Giacomo_DAmato	SRR7989914
-SID5412-2	SID5412	stool	no	control	healthy	50	adult	male	30.073776799999997	DNK	no	IlluminaHiSeq	30425247	63272720	6327272000	100	100	Copenhagen	60.0	high_gluten_diet	Giacomo_DAmato	SRR7989915
+SID5412-2	SID5412	stool	no	control	healthy	50	adult	male	30.0737768	DNK	no	IlluminaHiSeq	30425247	63272720	6327272000	100	100	Copenhagen	60.0	high_gluten_diet	Giacomo_DAmato	SRR7989915
 SID5444-1	SID5444	stool	no	control	healthy	27	adult	male	28.71817801	DNK	no	IlluminaHiSeq	30425247	72762624	7276262400	100	100	Copenhagen	0.0	low_gluten_diet	Giacomo_DAmato	SRR7989916
 SID5413-3	SID5413	stool	no	control	healthy	59	adult	male	25.21487212	DNK	no	IlluminaHiSeq	30425247	64317182	6431718200	100	100	Copenhagen	98.0	low_gluten_diet	Giacomo_DAmato	SRR7989917
 SID5413-4	SID5413	stool	no	control	healthy	59	adult	male	25.03831986	DNK	no	IlluminaHiSeq	30425247	41597792	4159779200	100	100	Copenhagen	154.0	low_gluten_diet	Giacomo_DAmato	SRR7989918
@@ -172,7 +172,7 @@ SID5417-1	SID5417	stool	no	control	healthy	46	adult	female	33.90625	DNK	no	Illum
 SID5466-2	SID5466	stool	no	control	healthy	61	adult	male	28.78031402	DNK	no	IlluminaHiSeq	30425247	56182928	5618292800	100	100	Copenhagen	56.0	low_gluten_diet	Giacomo_DAmato	SRR7989964
 SID5411-3	SID5411	stool	no	control	healthy	59	adult	male	30.93043808	DNK	no	IlluminaHiSeq	30425247	42646086	4264608600	100	100	Copenhagen	107.0	high_gluten_diet	Giacomo_DAmato	SRR7989965
 SID5416-2	SID5416	stool	no	control	healthy	40	adult	male	27.87161535	DNK	no	IlluminaHiSeq	30425247	67914776	6791477600	100	100	Copenhagen	56.0	low_gluten_diet	Giacomo_DAmato	SRR7989966
-SID5411-4	SID5411	stool	no	control	healthy	59	adult	male	30.851533899999996	DNK	no	IlluminaHiSeq	30425247	86629592	8662959200	100	100	Copenhagen	162.0	high_gluten_diet	Giacomo_DAmato	SRR7989967
+SID5411-4	SID5411	stool	no	control	healthy	59	adult	male	30.8515339	DNK	no	IlluminaHiSeq	30425247	86629592	8662959200	100	100	Copenhagen	162.0	high_gluten_diet	Giacomo_DAmato	SRR7989967
 SID5454-1	SID5454	stool	no	control	healthy	54	adult	female	30.86442154	DNK	no	IlluminaHiSeq	30425247	102196666	10219666600	100	100	Copenhagen	0.0	high_gluten_diet	Giacomo_DAmato	SRR7989968
 SID5454-2	SID5454	stool	no	control	healthy	54	adult	female	31.19102918	DNK	no	IlluminaHiSeq	30425247	85154226	8515422600	100	100	Copenhagen	66.0	high_gluten_diet	Giacomo_DAmato	SRR7989969
 SID5445-1	SID5445	stool	no	control	healthy	43	adult	male	31.76670904	DNK	no	IlluminaHiSeq	30425247	78522176	7852217600	100	100	Copenhagen	0.0	high_gluten_diet	Giacomo_DAmato	SRR7989970

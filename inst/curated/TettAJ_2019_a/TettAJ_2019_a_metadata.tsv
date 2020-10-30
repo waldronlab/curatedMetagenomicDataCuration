@@ -17,7 +17,7 @@ C16-20197-TZ	C16-10086-TZ_F	stool	NA	control	healthy	31	adult	TZA	NA	yes	Illumin
 C16-20198-TZ	C16-10086-TZ_M	stool	NA	control	healthy	18	schoolage	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	41358999	4164408112	75	101	mother	TettAJ_2019_a_5	Paolo_Manghi	SRR8803195
 C16-20211-TZ	C16-10093-TZ_M	stool	NA	control	healthy	20	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	53174765	5350339644	75	101	mother	TettAJ_2019_a_6	Paolo_Manghi	SRR8803192
 C16-20212-TZ	C16-10093-TZ_F	stool	NA	control	healthy	22	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	77590347	7811231231	75	101	father	TettAJ_2019_a_6	Paolo_Manghi	SRR8803193
-C16-20215-TZ	C16-10093-TZ_GM1	stool	NA	control	healthy	61	senior	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	48710424	4899958959	75	101	NA	TettAJ_2019_a_6	Paolo_Manghi	SRR8803198
+C16-20215-TZ	C16-10093-TZ_GM1	stool	NA	control	healthy	61	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	48710424	4899958959	75	101	NA	TettAJ_2019_a_6	Paolo_Manghi	SRR8803198
 C16-20237-TZ	C16-10110-TZ_U1	stool	NA	control	healthy	36	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	70837175	7128578525	75	101	NA	TettAJ_2019_a_7	Paolo_Manghi	SRR8803199
 C16-20238-TZ	C16-10110-TZ_GM1	stool	NA	control	healthy	45	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	49738186	5005003326	75	101	NA	TettAJ_2019_a_7	Paolo_Manghi	SRR8803225
 C16-20246-TZ	C16-10110-TZ_F	stool	NA	control	healthy	30	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	49538856	4988633179	75	101	father	TettAJ_2019_a_7	Paolo_Manghi	SRR8803224
@@ -35,7 +35,7 @@ C16-20374-TZ	C16-10177-TZ_S3	stool	NA	control	healthy	12	schoolage	TZA	NA	yes	Il
 C16-20415-TZ	C16-10214-TZ_F	stool	NA	control	healthy	31	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	35239109	3524366237	75	101	father	TettAJ_2019_a_11	Paolo_Manghi	SRR8803187
 C16-20416-TZ	C16-10214-TZ_M	stool	NA	control	healthy	25	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	39498710	3947800530	75	101	mother	TettAJ_2019_a_11	Paolo_Manghi	SRR8803234
 C16-20417-TZ	C16-10214-TZ_S1	stool	NA	control	healthy	5	child	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	8935133	894009356	75	101	child	TettAJ_2019_a_11	Paolo_Manghi	SRR8803238
-C16-20437-TZ	C16-10245-TZ_F	stool	NA	control	healthy	47	senior	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	31247549	3142358591	75	101	father	TettAJ_2019_a_12	Paolo_Manghi	SRR8803239
+C16-20437-TZ	C16-10245-TZ_F	stool	NA	control	healthy	47	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	31247549	3142358591	75	101	father	TettAJ_2019_a_12	Paolo_Manghi	SRR8803239
 C16-20438-TZ	C16-10245-TZ_M	stool	NA	control	healthy	33	adult	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	44015598	4418683629	75	101	mother	TettAJ_2019_a_12	Paolo_Manghi	SRR8803240
 C16-20439-TZ	C16-10245-TZ_S2	stool	NA	control	healthy	9	child	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	44646147	4473035146	75	101	child	TettAJ_2019_a_12	Paolo_Manghi	SRR8803200
 C16-20440-TZ	C16-10245-TZ_S1	stool	NA	control	healthy	9	child	TZA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	46747113	4690174909	75	101	child	TettAJ_2019_a_12	Paolo_Manghi	SRR8803201
