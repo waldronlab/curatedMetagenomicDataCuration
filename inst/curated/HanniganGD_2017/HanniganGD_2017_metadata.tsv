@@ -1,83 +1,83 @@
-sampleID	subjectID	body_site	study_condition	disease	age_category	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
-MG100208	HanniganGD_2017_A29	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6133350	763336051	75	126	Paolo_Manghi	SRR5665080	NA
-MG100207	HanniganGD_2017_A28	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	9320348	1161633690	75	126	Paolo_Manghi	SRR5665075	NA
-MG100206	HanniganGD_2017_A27	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6342570	787897159	75	126	Paolo_Manghi	SRR5665074	NA
-MG100205	HanniganGD_2017_A26	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	12551662	1562374319	75	126	Paolo_Manghi	SRR5665073	NA
-MG100204	HanniganGD_2017_A25	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	15176232	1883682219	75	126	Paolo_Manghi	SRR5665072	NA
-MG100203	HanniganGD_2017_A24	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	8180768	1017721164	75	126	Paolo_Manghi	SRR5665079	NA
-MG100202	HanniganGD_2017_A23	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5502292	682604286	75	126	Paolo_Manghi	SRR5665078	NA
-MG100201	HanniganGD_2017_A22	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	7447616	925042865	75	126	Paolo_Manghi	SRR5665077	NA
-MG100200	HanniganGD_2017_A21	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2673274	331955334	75	125	Paolo_Manghi	SRR5665076	NA
-MG100199	HanniganGD_2017_A20	stool	adenoma	adenoma	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	4172300	520248981	75	126	Paolo_Manghi	SRR5665134	NA
-MG100198	HanniganGD_2017_A19	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4192976	523220008	75	126	Paolo_Manghi	SRR5665135	NA
-MG100197	HanniganGD_2017_A18	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	17378	2095914	75	125	Paolo_Manghi	SRR5665138	NA
-MG100196	HanniganGD_2017_A17	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	3756000	468458028	75	126	Paolo_Manghi	SRR5665139	NA
-MG100195	HanniganGD_2017_A16	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5210030	649073139	75	126	Paolo_Manghi	SRR5665136	NA
-MG100194	HanniganGD_2017_A15	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4399222	547643145	75	126	Paolo_Manghi	SRR5665137	NA
-MG100193	HanniganGD_2017_A14	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	3985802	496849984	75	126	Paolo_Manghi	SRR5665142	NA
-MG100192	HanniganGD_2017_A13	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4364706	543771467	75	126	Paolo_Manghi	SRR5665143	NA
-MG100191	HanniganGD_2017_A12	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	4139714	516167997	75	126	Paolo_Manghi	SRR5665140	NA
-MG100190	HanniganGD_2017_A11	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2645556	330262785	75	126	Paolo_Manghi	SRR5665141	NA
-MG100189	HanniganGD_2017_A10	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2704534	336788760	75	126	Paolo_Manghi	SRR5665115	NA
-MG100188	HanniganGD_2017_A09	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2025988	252696214	75	126	Paolo_Manghi	SRR5665114	NA
-MG100187	HanniganGD_2017_A07	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	52356	6483099	75	126	Paolo_Manghi	SRR5665117	NA
-MG100186	HanniganGD_2017_A06	stool	adenoma	adenoma	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	2460376	306706766	75	126	Paolo_Manghi	SRR5665116	NA
-MG100185	HanniganGD_2017_A05	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2668328	331095421	75	126	Paolo_Manghi	SRR5665119	NA
-MG100184	HanniganGD_2017_A04	stool	adenoma	adenoma	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5033926	627883959	75	126	Paolo_Manghi	SRR5665118	NA
-MG100182	HanniganGD_2017_A02	stool	adenoma	adenoma	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	12140204	1510153677	75	126	Paolo_Manghi	SRR5665120	NA
-MG100181	HanniganGD_2017_A01	stool	adenoma	adenoma	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10102332	1253480545	75	126	Paolo_Manghi	SRR5665123	NA
-MG100180	HanniganGD_2017_H30	stool	control	healthy	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	21182166	2636134209	75	126	Paolo_Manghi	SRR5665122	NA
-MG100179	HanniganGD_2017_H29	stool	control	healthy	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	10855718	1349678317	75	126	Paolo_Manghi	SRR5665186	NA
-MG100178	HanniganGD_2017_H28	stool	control	healthy	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	18102008	2256749848	75	126	Paolo_Manghi	SRR5665187	NA
-MG100177	HanniganGD_2017_H26	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4072828	506367839	75	126	Paolo_Manghi	SRR5665178	NA
-MG100176	HanniganGD_2017_H25	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5679008	705484441	75	126	Paolo_Manghi	SRR5665179	NA
-MG100175	HanniganGD_2017_H24	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	11241278	1399435776	75	126	Paolo_Manghi	SRR5665180	NA
-MG100174	HanniganGD_2017_H23	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7801592	971871839	75	126	Paolo_Manghi	SRR5665181	NA
-MG100173	HanniganGD_2017_H22	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	11886888	1475010313	75	126	Paolo_Manghi	SRR5665182	NA
-MG100172	HanniganGD_2017_H21	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5352832	667010718	75	126	Paolo_Manghi	SRR5665183	NA
-MG100171	HanniganGD_2017_H20	stool	control	healthy	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	9336134	1162883767	75	126	Paolo_Manghi	SRR5665184	NA
-MG100170	HanniganGD_2017_H19	stool	control	healthy	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5920646	736381301	75	126	Paolo_Manghi	SRR5665185	NA
-MG100169	HanniganGD_2017_H17	stool	control	healthy	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	3029258	377191200	75	126	Paolo_Manghi	SRR5665156	NA
-MG100168	HanniganGD_2017_H16	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7524086	935525057	75	126	Paolo_Manghi	SRR5665155	NA
-MG100167	HanniganGD_2017_H15	stool	control	healthy	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	6041774	752036731	75	126	Paolo_Manghi	SRR5665164	NA
-MG100166	HanniganGD_2017_H14	stool	control	healthy	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	8698664	1082359356	75	126	Paolo_Manghi	SRR5665163	NA
-MG100165	HanniganGD_2017_H13	stool	control	healthy	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	11712932	1460009052	75	126	Paolo_Manghi	SRR5665162	NA
-MG100164	HanniganGD_2017_H12	stool	control	healthy	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	2521950	314344000	75	126	Paolo_Manghi	SRR5665161	NA
-MG100163	HanniganGD_2017_H11	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	330750	41203287	75	126	Paolo_Manghi	SRR5665160	NA
-MG100162	HanniganGD_2017_H10	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	2294514	285954703	75	126	Paolo_Manghi	SRR5665159	NA
-MG100161	HanniganGD_2017_H09	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5793618	719074030	75	126	Paolo_Manghi	SRR5665158	NA
-MG100160	HanniganGD_2017_H08	stool	control	healthy	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	2959348	368712290	75	126	Paolo_Manghi	SRR5665157	NA
-MG100159	HanniganGD_2017_H07	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	9031080	1122607451	75	126	Paolo_Manghi	SRR5665049	NA
-MG100158	HanniganGD_2017_H06	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7233984	899865279	75	126	Paolo_Manghi	SRR5665050	NA
-MG100157	HanniganGD_2017_H05	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6078718	756831578	75	126	Paolo_Manghi	SRR5665047	NA
-MG100156	HanniganGD_2017_H04	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5064770	629428694	75	126	Paolo_Manghi	SRR5665048	NA
-MG100155	HanniganGD_2017_H03	stool	control	healthy	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	3659936	456010285	75	126	Paolo_Manghi	SRR5665045	NA
-MG100154	HanniganGD_2017_H02	stool	control	healthy	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10295240	1281380024	75	126	Paolo_Manghi	SRR5665046	NA
-MG100153	HanniganGD_2017_H01	stool	control	healthy	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	10217384	1267666004	75	126	Paolo_Manghi	SRR5665043	NA
-MG100152	HanniganGD_2017_C30	stool	CRC	CRC	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	6964066	866112898	75	126	Paolo_Manghi	SRR5665044	NA
-MG100151	HanniganGD_2017_C29	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	7611462	946733673	75	126	Paolo_Manghi	SRR5665041	NA
-MG100150	HanniganGD_2017_C28	stool	CRC	CRC	adult	CAN	Toronto	no	IlluminaHiSeq	MoBio	unpublished	5317176	661376565	75	126	Paolo_Manghi	SRR5665042	NA
-MG100149	HanniganGD_2017_C27	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	4678900	581571081	75	126	Paolo_Manghi	SRR5665033	NA
-MG100148	HanniganGD_2017_C26	stool	CRC	CRC	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	3292898	409314397	75	126	Paolo_Manghi	SRR5665032	NA
-MG100147	HanniganGD_2017_C25	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6285516	780091878	75	126	Paolo_Manghi	SRR5665029	NA
-MG100146	HanniganGD_2017_C24	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6928748	860991653	75	126	Paolo_Manghi	SRR5665028	NA
-MG100145	HanniganGD_2017_C23	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	9724858	1211600787	75	126	Paolo_Manghi	SRR5665031	NA
-MG100144	HanniganGD_2017_C22	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	9621882	1193404715	75	126	Paolo_Manghi	SRR5665030	NA
-MG100143	HanniganGD_2017_C20	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4836288	602503697	75	126	Paolo_Manghi	SRR5665025	NA
-MG100142	HanniganGD_2017_C19	stool	CRC	CRC	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	17146	2086283	75	125	Paolo_Manghi	SRR5665024	NA
-MG100141	HanniganGD_2017_C18	stool	CRC	CRC	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	7718414	958957029	75	126	Paolo_Manghi	SRR5665027	NA
-MG100140	HanniganGD_2017_C17	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4833608	602192124	75	126	Paolo_Manghi	SRR5665026	NA
-MG100139	HanniganGD_2017_C16	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6661922	830453874	75	126	Paolo_Manghi	SRR5665103	NA
-MG100138	HanniganGD_2017_C15	stool	CRC	CRC	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	5941034	739942965	75	126	Paolo_Manghi	SRR5665053	NA
-MG100137	HanniganGD_2017_C14	stool	CRC	CRC	adult	USA	AnnArbor	no	IlluminaHiSeq	MoBio	unpublished	4370134	541601310	75	126	Paolo_Manghi	SRR5665058	NA
-MG100136	HanniganGD_2017_C13	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6787334	845085642	75	126	Paolo_Manghi	SRR5665059	NA
-MG100134	HanniganGD_2017_C11	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	6105000	758910268	75	126	Paolo_Manghi	SRR5665061	NA
-MG100133	HanniganGD_2017_C10	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	9707904	1208505568	75	126	Paolo_Manghi	SRR5665054	NA
-MG100132	HanniganGD_2017_C09	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	14630940	1816500218	75	126	Paolo_Manghi	SRR5665055	NA
-MG100131	HanniganGD_2017_C08	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5569662	693577210	75	126	Paolo_Manghi	SRR5665056	NA
-MG100130	HanniganGD_2017_C06	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5011214	623336859	75	126	Paolo_Manghi	SRR5665057	NA
-MG100129	HanniganGD_2017_C05	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	7180402	891959475	75	126	Paolo_Manghi	SRR5665052	NA
-MG100128	HanniganGD_2017_C04	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	6329070	787577657	75	126	Paolo_Manghi	SRR5665051	NA
-MG100127	HanniganGD_2017_C03	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	4969190	618186207	75	126	Paolo_Manghi	SRR5665035	NA
-MG100126	HanniganGD_2017_C02	stool	CRC	CRC	adult	USA	Boston	no	IlluminaHiSeq	MoBio	unpublished	5023590	624867363	75	126	Paolo_Manghi	SRR5665034	NA
-MG100125	HanniganGD_2017_C01	stool	CRC	CRC	adult	USA	Houston	no	IlluminaHiSeq	MoBio	unpublished	5090156	634385981	75	126	Paolo_Manghi	SRR5665144	NA
+sampleID	subjectID	body_site	study_condition	disease	age	age_category	gender	country	location	antibiotics_current_use	BMI	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	fobt	curator	NCBI_accession
+MG100208	HanniganGD_2017_A29	stool	adenoma	adenoma	45	adult	female	CAN	Toronto	no	31.62627648	IlluminaHiSeq	MoBio	unpublished	6133350	763336051	75	126	negative	Paolo_Manghi	SRR5665080
+MG100207	HanniganGD_2017_A28	stool	adenoma	adenoma	50	adult	male	CAN	Toronto	no	31.67346939	IlluminaHiSeq	MoBio	unpublished	9320348	1161633690	75	126	negative	Paolo_Manghi	SRR5665075
+MG100206	HanniganGD_2017_A27	stool	adenoma	adenoma	68	adult	male	CAN	Toronto	no	25.21625331	IlluminaHiSeq	MoBio	unpublished	6342570	787897159	75	126	negative	Paolo_Manghi	SRR5665074
+MG100205	HanniganGD_2017_A26	stool	adenoma	adenoma	80	adult	female	CAN	Toronto	no	28.71972318	IlluminaHiSeq	MoBio	unpublished	12551662	1562374319	75	126	negative	Paolo_Manghi	SRR5665073
+MG100204	HanniganGD_2017_A25	stool	adenoma	adenoma	63	adult	female	CAN	Toronto	no	27.33564014	IlluminaHiSeq	MoBio	unpublished	15176232	1883682219	75	126	negative	Paolo_Manghi	SRR5665072
+MG100203	HanniganGD_2017_A24	stool	adenoma	adenoma	67	adult	female	CAN	Toronto	no	25.5588462	IlluminaHiSeq	MoBio	unpublished	8180768	1017721164	75	126	negative	Paolo_Manghi	SRR5665079
+MG100202	HanniganGD_2017_A23	stool	adenoma	adenoma	64	adult	male	CAN	Toronto	no	25.05736022	IlluminaHiSeq	MoBio	unpublished	5502292	682604286	75	126	negative	Paolo_Manghi	SRR5665078
+MG100201	HanniganGD_2017_A22	stool	adenoma	adenoma	68	adult	female	CAN	Toronto	no	31.58861341	IlluminaHiSeq	MoBio	unpublished	7447616	925042865	75	126	negative	Paolo_Manghi	SRR5665077
+MG100200	HanniganGD_2017_A21	stool	adenoma	adenoma	50	adult	female	CAN	Toronto	no	23.828125	IlluminaHiSeq	MoBio	unpublished	2673274	331955334	75	125	negative	Paolo_Manghi	SRR5665076
+MG100199	HanniganGD_2017_A20	stool	adenoma	adenoma	47	adult	female	USA	AnnArbor	no	24.22145329	IlluminaHiSeq	MoBio	unpublished	4172300	520248981	75	126	negative	Paolo_Manghi	SRR5665134
+MG100198	HanniganGD_2017_A19	stool	adenoma	adenoma	61	adult	female	CAN	Toronto	no	21.33821064	IlluminaHiSeq	MoBio	unpublished	4192976	523220008	75	126	negative	Paolo_Manghi	SRR5665135
+MG100197	HanniganGD_2017_A18	stool	adenoma	adenoma	56	adult	male	CAN	Toronto	no	30.43671557	IlluminaHiSeq	MoBio	unpublished	17378	2095914	75	125	negative	Paolo_Manghi	SRR5665138
+MG100196	HanniganGD_2017_A17	stool	adenoma	adenoma	53	adult	male	CAN	Toronto	no	28.73467206	IlluminaHiSeq	MoBio	unpublished	3756000	468458028	75	126	negative	Paolo_Manghi	SRR5665139
+MG100195	HanniganGD_2017_A16	stool	adenoma	adenoma	47	adult	male	CAN	Toronto	no	27.82931354	IlluminaHiSeq	MoBio	unpublished	5210030	649073139	75	126	positive	Paolo_Manghi	SRR5665136
+MG100194	HanniganGD_2017_A15	stool	adenoma	adenoma	64	adult	male	CAN	Toronto	no	27.76979795	IlluminaHiSeq	MoBio	unpublished	4399222	547643145	75	126	negative	Paolo_Manghi	SRR5665137
+MG100193	HanniganGD_2017_A14	stool	adenoma	adenoma	72	adult	female	CAN	Toronto	no	21.1552942	IlluminaHiSeq	MoBio	unpublished	3985802	496849984	75	126	negative	Paolo_Manghi	SRR5665142
+MG100192	HanniganGD_2017_A13	stool	adenoma	adenoma	62	adult	male	CAN	Toronto	no	28.40909091	IlluminaHiSeq	MoBio	unpublished	4364706	543771467	75	126	negative	Paolo_Manghi	SRR5665143
+MG100191	HanniganGD_2017_A12	stool	adenoma	adenoma	82	adult	male	CAN	Toronto	no	35.79604579	IlluminaHiSeq	MoBio	unpublished	4139714	516167997	75	126	negative	Paolo_Manghi	SRR5665140
+MG100190	HanniganGD_2017_A11	stool	adenoma	adenoma	65	adult	female	CAN	Toronto	no	20.82093992	IlluminaHiSeq	MoBio	unpublished	2645556	330262785	75	126	positive	Paolo_Manghi	SRR5665141
+MG100189	HanniganGD_2017_A10	stool	adenoma	adenoma	37	adult	male	CAN	Toronto	no	24.38271605	IlluminaHiSeq	MoBio	unpublished	2704534	336788760	75	126	negative	Paolo_Manghi	SRR5665115
+MG100188	HanniganGD_2017_A09	stool	adenoma	adenoma	73	adult	male	CAN	Toronto	no	25.60553633	IlluminaHiSeq	MoBio	unpublished	2025988	252696214	75	126	positive	Paolo_Manghi	SRR5665114
+MG100187	HanniganGD_2017_A07	stool	adenoma	adenoma	71	adult	male	CAN	Toronto	no	29.06574394	IlluminaHiSeq	MoBio	unpublished	52356	6483099	75	126	negative	Paolo_Manghi	SRR5665117
+MG100186	HanniganGD_2017_A06	stool	adenoma	adenoma	58	adult	male	USA	AnnArbor	no	39.50617284	IlluminaHiSeq	MoBio	unpublished	2460376	306706766	75	126	positive	Paolo_Manghi	SRR5665116
+MG100185	HanniganGD_2017_A05	stool	adenoma	adenoma	63	adult	male	CAN	Toronto	no	32.41003709	IlluminaHiSeq	MoBio	unpublished	2668328	331095421	75	126	negative	Paolo_Manghi	SRR5665119
+MG100184	HanniganGD_2017_A04	stool	adenoma	adenoma	64	adult	male	USA	AnnArbor	no	21.60493827	IlluminaHiSeq	MoBio	unpublished	5033926	627883959	75	126	negative	Paolo_Manghi	SRR5665118
+MG100182	HanniganGD_2017_A02	stool	adenoma	adenoma	61	adult	female	USA	AnnArbor	no	26.12244898	IlluminaHiSeq	MoBio	unpublished	12140204	1510153677	75	126	negative	Paolo_Manghi	SRR5665120
+MG100181	HanniganGD_2017_A01	stool	adenoma	adenoma	76	adult	male	CAN	Toronto	no	22.98190175	IlluminaHiSeq	MoBio	unpublished	10102332	1253480545	75	126	negative	Paolo_Manghi	SRR5665123
+MG100180	HanniganGD_2017_H30	stool	control	healthy	63	adult	female	USA	Boston	no	32.8125	IlluminaHiSeq	MoBio	unpublished	21182166	2636134209	75	126	negative	Paolo_Manghi	SRR5665122
+MG100179	HanniganGD_2017_H29	stool	control	healthy	51	adult	female	USA	Boston	no	29.721079100000004	IlluminaHiSeq	MoBio	unpublished	10855718	1349678317	75	126	negative	Paolo_Manghi	SRR5665186
+MG100178	HanniganGD_2017_H28	stool	control	healthy	46	adult	female	USA	Boston	no	21.33821064	IlluminaHiSeq	MoBio	unpublished	18102008	2256749848	75	126	negative	Paolo_Manghi	SRR5665187
+MG100177	HanniganGD_2017_H26	stool	control	healthy	49	adult	male	USA	Houston	no	24.93074792	IlluminaHiSeq	MoBio	unpublished	4072828	506367839	75	126	negative	Paolo_Manghi	SRR5665178
+MG100176	HanniganGD_2017_H25	stool	control	healthy	42	adult	male	USA	Houston	no	27.71768524	IlluminaHiSeq	MoBio	unpublished	5679008	705484441	75	126	negative	Paolo_Manghi	SRR5665179
+MG100175	HanniganGD_2017_H24	stool	control	healthy	51	adult	male	USA	Houston	no	21.10726644	IlluminaHiSeq	MoBio	unpublished	11241278	1399435776	75	126	negative	Paolo_Manghi	SRR5665180
+MG100174	HanniganGD_2017_H23	stool	control	healthy	56	adult	female	USA	Houston	no	21.1552942	IlluminaHiSeq	MoBio	unpublished	7801592	971871839	75	126	negative	Paolo_Manghi	SRR5665181
+MG100173	HanniganGD_2017_H22	stool	control	healthy	58	adult	male	USA	Houston	no	29.04657027	IlluminaHiSeq	MoBio	unpublished	11886888	1475010313	75	126	negative	Paolo_Manghi	SRR5665182
+MG100172	HanniganGD_2017_H21	stool	control	healthy	61	adult	male	USA	Houston	no	24.81632653	IlluminaHiSeq	MoBio	unpublished	5352832	667010718	75	126	negative	Paolo_Manghi	SRR5665183
+MG100171	HanniganGD_2017_H20	stool	control	healthy	75	adult	female	USA	AnnArbor	no	23.52941176	IlluminaHiSeq	MoBio	unpublished	9336134	1162883767	75	126	negative	Paolo_Manghi	SRR5665184
+MG100170	HanniganGD_2017_H19	stool	control	healthy	54	adult	female	USA	AnnArbor	no	33.56401384	IlluminaHiSeq	MoBio	unpublished	5920646	736381301	75	126	negative	Paolo_Manghi	SRR5665185
+MG100169	HanniganGD_2017_H17	stool	control	healthy	65	adult	male	USA	AnnArbor	no	33.05785124	IlluminaHiSeq	MoBio	unpublished	3029258	377191200	75	126	negative	Paolo_Manghi	SRR5665156
+MG100168	HanniganGD_2017_H16	stool	control	healthy	57	adult	female	USA	Houston	no	23.80540166	IlluminaHiSeq	MoBio	unpublished	7524086	935525057	75	126	negative	Paolo_Manghi	SRR5665155
+MG100167	HanniganGD_2017_H15	stool	control	healthy	51	adult	female	USA	AnnArbor	no	21.33821064	IlluminaHiSeq	MoBio	unpublished	6041774	752036731	75	126	negative	Paolo_Manghi	SRR5665164
+MG100166	HanniganGD_2017_H14	stool	control	healthy	61	adult	female	USA	Boston	no	20.74755019	IlluminaHiSeq	MoBio	unpublished	8698664	1082359356	75	126	negative	Paolo_Manghi	SRR5665163
+MG100165	HanniganGD_2017_H13	stool	control	healthy	45	adult	female	USA	AnnArbor	no	33.15043439	IlluminaHiSeq	MoBio	unpublished	11712932	1460009052	75	126	negative	Paolo_Manghi	SRR5665162
+MG100164	HanniganGD_2017_H12	stool	control	healthy	51	adult	female	USA	AnnArbor	no	30.42184965	IlluminaHiSeq	MoBio	unpublished	2521950	314344000	75	126	negative	Paolo_Manghi	SRR5665161
+MG100163	HanniganGD_2017_H11	stool	control	healthy	55	adult	female	USA	Houston	no	37.78272346	IlluminaHiSeq	MoBio	unpublished	330750	41203287	75	126	negative	Paolo_Manghi	SRR5665160
+MG100162	HanniganGD_2017_H10	stool	control	healthy	51	adult	male	USA	Houston	no	25.0995016	IlluminaHiSeq	MoBio	unpublished	2294514	285954703	75	126	negative	Paolo_Manghi	SRR5665159
+MG100161	HanniganGD_2017_H09	stool	control	healthy	35	adult	female	USA	Houston	no	35.49786654	IlluminaHiSeq	MoBio	unpublished	5793618	719074030	75	126	negative	Paolo_Manghi	SRR5665158
+MG100160	HanniganGD_2017_H08	stool	control	healthy	65	adult	male	CAN	Toronto	no	26.56683975	IlluminaHiSeq	MoBio	unpublished	2959348	368712290	75	126	negative	Paolo_Manghi	SRR5665157
+MG100159	HanniganGD_2017_H07	stool	control	healthy	52	adult	male	USA	Houston	no	24.76756592	IlluminaHiSeq	MoBio	unpublished	9031080	1122607451	75	126	negative	Paolo_Manghi	SRR5665049
+MG100158	HanniganGD_2017_H06	stool	control	healthy	75	adult	male	USA	Houston	no	25.25951557	IlluminaHiSeq	MoBio	unpublished	7233984	899865279	75	126	negative	Paolo_Manghi	SRR5665050
+MG100157	HanniganGD_2017_H05	stool	control	healthy	52	adult	female	USA	Houston	no	20.56932966	IlluminaHiSeq	MoBio	unpublished	6078718	756831578	75	126	negative	Paolo_Manghi	SRR5665047
+MG100156	HanniganGD_2017_H04	stool	control	healthy	44	adult	female	USA	Houston	no	25.96952909	IlluminaHiSeq	MoBio	unpublished	5064770	629428694	75	126	negative	Paolo_Manghi	SRR5665048
+MG100155	HanniganGD_2017_H03	stool	control	healthy	54	adult	male	USA	Houston	no	31.60011491	IlluminaHiSeq	MoBio	unpublished	3659936	456010285	75	126	negative	Paolo_Manghi	SRR5665045
+MG100154	HanniganGD_2017_H02	stool	control	healthy	69	adult	female	CAN	Toronto	no	18.66201469	IlluminaHiSeq	MoBio	unpublished	10295240	1281380024	75	126	negative	Paolo_Manghi	SRR5665046
+MG100153	HanniganGD_2017_H01	stool	control	healthy	65	adult	female	CAN	Toronto	no	21.51385851	IlluminaHiSeq	MoBio	unpublished	10217384	1267666004	75	126	negative	Paolo_Manghi	SRR5665043
+MG100152	HanniganGD_2017_C30	stool	CRC	CRC	57	adult	male	CAN	Toronto	no	34.47772096	IlluminaHiSeq	MoBio	unpublished	6964066	866112898	75	126	positive	Paolo_Manghi	SRR5665044
+MG100151	HanniganGD_2017_C29	stool	CRC	CRC	59	adult	male	USA	Boston	no	23.082542	IlluminaHiSeq	MoBio	unpublished	7611462	946733673	75	126	positive	Paolo_Manghi	SRR5665041
+MG100150	HanniganGD_2017_C28	stool	CRC	CRC	73	adult	female	CAN	Toronto	no	21.62064772	IlluminaHiSeq	MoBio	unpublished	5317176	661376565	75	126	negative	Paolo_Manghi	SRR5665042
+MG100149	HanniganGD_2017_C27	stool	CRC	CRC	59	adult	female	USA	Boston	no	29.75206612	IlluminaHiSeq	MoBio	unpublished	4678900	581571081	75	126	positive	Paolo_Manghi	SRR5665033
+MG100148	HanniganGD_2017_C26	stool	CRC	CRC	43	adult	male	USA	AnnArbor	no	46.36734694	IlluminaHiSeq	MoBio	unpublished	3292898	409314397	75	126	negative	Paolo_Manghi	SRR5665032
+MG100147	HanniganGD_2017_C25	stool	CRC	CRC	60	adult	female	USA	Houston	no	27.82931354	IlluminaHiSeq	MoBio	unpublished	6285516	780091878	75	126	negative	Paolo_Manghi	SRR5665029
+MG100146	HanniganGD_2017_C24	stool	CRC	CRC	48	adult	male	USA	Boston	no	32.90665379	IlluminaHiSeq	MoBio	unpublished	6928748	860991653	75	126	positive	Paolo_Manghi	SRR5665028
+MG100145	HanniganGD_2017_C23	stool	CRC	CRC	64	adult	female	USA	Houston	no	24.38237298	IlluminaHiSeq	MoBio	unpublished	9724858	1211600787	75	126	negative	Paolo_Manghi	SRR5665031
+MG100144	HanniganGD_2017_C22	stool	CRC	CRC	51	adult	female	USA	Boston	no	23.66143862	IlluminaHiSeq	MoBio	unpublished	9621882	1193404715	75	126	negative	Paolo_Manghi	SRR5665030
+MG100143	HanniganGD_2017_C20	stool	CRC	CRC	58	adult	male	USA	Houston	no	29.68495643	IlluminaHiSeq	MoBio	unpublished	4836288	602503697	75	126	negative	Paolo_Manghi	SRR5665025
+MG100142	HanniganGD_2017_C19	stool	CRC	CRC	71	adult	male	USA	AnnArbor	no	32.32323232	IlluminaHiSeq	MoBio	unpublished	17146	2086283	75	125	positive	Paolo_Manghi	SRR5665024
+MG100141	HanniganGD_2017_C18	stool	CRC	CRC	52	adult	male	USA	AnnArbor	no	28.7037037	IlluminaHiSeq	MoBio	unpublished	7718414	958957029	75	126	negative	Paolo_Manghi	SRR5665027
+MG100140	HanniganGD_2017_C17	stool	CRC	CRC	43	adult	male	USA	Houston	no	23.87543253	IlluminaHiSeq	MoBio	unpublished	4833608	602192124	75	126	negative	Paolo_Manghi	SRR5665026
+MG100139	HanniganGD_2017_C16	stool	CRC	CRC	63	adult	male	USA	Houston	no	30.83653053	IlluminaHiSeq	MoBio	unpublished	6661922	830453874	75	126	positive	Paolo_Manghi	SRR5665103
+MG100138	HanniganGD_2017_C15	stool	CRC	CRC	61	adult	male	USA	AnnArbor	no	34.90026578	IlluminaHiSeq	MoBio	unpublished	5941034	739942965	75	126	positive	Paolo_Manghi	SRR5665053
+MG100137	HanniganGD_2017_C14	stool	CRC	CRC	49	adult	male	USA	AnnArbor	no	NA	IlluminaHiSeq	MoBio	unpublished	4370134	541601310	75	126	positive	Paolo_Manghi	SRR5665058
+MG100136	HanniganGD_2017_C13	stool	CRC	CRC	55	adult	male	USA	Boston	no	57.46349378	IlluminaHiSeq	MoBio	unpublished	6787334	845085642	75	126	negative	Paolo_Manghi	SRR5665059
+MG100134	HanniganGD_2017_C11	stool	CRC	CRC	47	adult	female	USA	Boston	no	26.37023814	IlluminaHiSeq	MoBio	unpublished	6105000	758910268	75	126	negative	Paolo_Manghi	SRR5665061
+MG100133	HanniganGD_2017_C10	stool	CRC	CRC	69	adult	male	USA	Boston	no	26.70362358	IlluminaHiSeq	MoBio	unpublished	9707904	1208505568	75	126	negative	Paolo_Manghi	SRR5665054
+MG100132	HanniganGD_2017_C09	stool	CRC	CRC	51	adult	female	USA	Houston	no	35.49786654	IlluminaHiSeq	MoBio	unpublished	14630940	1816500218	75	126	negative	Paolo_Manghi	SRR5665055
+MG100131	HanniganGD_2017_C08	stool	CRC	CRC	56	adult	male	USA	Houston	no	32.65306122	IlluminaHiSeq	MoBio	unpublished	5569662	693577210	75	126	positive	Paolo_Manghi	SRR5665056
+MG100130	HanniganGD_2017_C06	stool	CRC	CRC	69	adult	male	USA	Houston	no	26.2345679	IlluminaHiSeq	MoBio	unpublished	5011214	623336859	75	126	negative	Paolo_Manghi	SRR5665057
+MG100129	HanniganGD_2017_C05	stool	CRC	CRC	37	adult	male	USA	Houston	no	35.11123879	IlluminaHiSeq	MoBio	unpublished	7180402	891959475	75	126	positive	Paolo_Manghi	SRR5665052
+MG100128	HanniganGD_2017_C04	stool	CRC	CRC	88	adult	male	USA	Houston	no	26.29656684	IlluminaHiSeq	MoBio	unpublished	6329070	787577657	75	126	negative	Paolo_Manghi	SRR5665051
+MG100127	HanniganGD_2017_C03	stool	CRC	CRC	69	adult	male	USA	Houston	no	27.75748722	IlluminaHiSeq	MoBio	unpublished	4969190	618186207	75	126	negative	Paolo_Manghi	SRR5665035
+MG100126	HanniganGD_2017_C02	stool	CRC	CRC	59	adult	male	USA	Boston	no	28.73469388	IlluminaHiSeq	MoBio	unpublished	5023590	624867363	75	126	negative	Paolo_Manghi	SRR5665034
+MG100125	HanniganGD_2017_C01	stool	CRC	CRC	70	adult	male	USA	Houston	no	23.30668005	IlluminaHiSeq	MoBio	unpublished	5090156	634385981	75	126	negative	Paolo_Manghi	SRR5665144
