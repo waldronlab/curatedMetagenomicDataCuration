@@ -96,7 +96,7 @@ ESR,non-unique,optional,False,[0-9]+\.?[0-9]*,Erythrocyte sedimentation rate (ES
 HLA,non-unique,optional,True,.+,HLA DR-DQ alleles conferring risk of Typ-1-Diabetes (T1D)
 autoantibody_positive,non-unique,optional,True,.+,Tested positive for AAB.
 age_seroconversion,non-unique,optional,False,[0-9]+\.?[0-9]*,Age at seroconvention was detected (days).
-age_T1D_diagnosis,non-unique, optional,False,[0-9]+\.?[0-9]*,Age at which T1D was diagnosed (days).
+age_T1D_diagnosis,non-unique,optional,False,[0-9]+\.?[0-9]*,Age at which T1D was diagnosed (days).
 disease_stage,non-unique,optional,False,[0-9]+,Stage information for diseases that can be divided into multiple stages.
 disease_location,non-unique,optional,True,.+,Can be used for diseases which occur on different body parts like CD.
 calprotectin,non-unique,optional,False,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
