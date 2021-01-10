@@ -19,7 +19,8 @@ location,non-unique,optional,False,.+,Free-form additional location information.
 population,non-uniqze,optional,False,[a-zA-Z]\S+,can describe the belonging to a specific population
 travel_destination,non-unique,optional,False,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 non_westernized,non-unique,optional,False,yes|no,Subject belongs to a non-westernized community.
-lifestyle,non-unique,optiona,False,Hunter-gatherer|Agriculturalist|Fisher,to descripe the lifestyle of non-westernized people
+lifestyle,non-unique,optiona,False,Hunter-gatherer|Agriculturalist|Fisher,to describe the lifestyle of non-westernized people
+brinkman_index,non-unique,optional,False,[0-9]+\.?[0-9]*,The Brinkman index if provided
 days_from_first_collection,non-unique,optional,False,[0-9]+,Used for time series studies.
 sequencing_platform,non-unique,required,False,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq,This will be modified as new sequencing platforms are added to the database.
 DNA_extraction_kit,non-unique,optional,False,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro,DNA extraction kit.
@@ -35,6 +36,7 @@ birth_control_pil,non-unique,optional,False,yes|no,Use of the birth-control-pils
 smoker,non-unique,optional,False,yes|no,Currently a smoker at sampling.
 ever_smoker,non-unique,optional,False,yes|no,Ever been a smoker.
 alcohol,non-unique,optional,False,yes|no,Subject is reported as a drinker.
+alcohol_numeric,non-unique,optional,False,[0-9]+\.?[0-9]*,Alcohol consumption reported as a float. 
 mumps,non-unique,optional,False,yes|no,Subject has been through mumps in life.
 ajcc,non-unique,optional,False,0|i|ii|iii|iv,AJCC staging for colorectal-cancer.
 fobt,non-unique,optional,False,yes|no,Fecal occult blood test.
