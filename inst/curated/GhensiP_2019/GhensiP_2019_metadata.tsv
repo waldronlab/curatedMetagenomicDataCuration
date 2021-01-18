@@ -111,4 +111,4 @@ SP_322SPI_T016	sub_322	oralcavity	subgingival_plaque	NA	peri-implantitis	peri-im
 SP_343SPT_T016_R	sub_343	oralcavity	subgingival_plaque	NA	control	healthy	NA	adult	ITA	no	750036	74226524	75	100	teeth	no	no	no	4	0	4	0	Paolo_Manghi	SRR9217426	33127901	IlluminaHiSeq
 SP_602SPI_T016	sub_602	oralcavity	subgingival_plaque	NA	mucositis	mucositis	NA	adult	ITA	no	29682457	2944067114	75	100	implant	yes	yes	yes	3	2	4	2	Paolo_Manghi	SRR9217453	33127901	IlluminaHiSeq
 SP_361SPT_T016	sub_361	oralcavity	subgingival_plaque	NA	control	healthy	NA	adult	ITA	no	795419	78708391	75	100	teeth	no	no	no	3	2	3	2	Paolo_Manghi	SRR9217432	33127901	IlluminaHiSeq
-SP_122SPT_T016	sub_122	oralcavity	subginigval_plaque	NA	control	healthy	NA	adult	ITA	no	1664670	164488685	75	100	teeth	no	no	no	3	2	3	2	Paolo_Manghi	SRR9217439	33127901	IlluminaHiSeq
+SP_122SPT_T016	sub_122	oralcavity	subgingival_plaque	NA	control	healthy	NA	adult	ITA	no	1664670	164488685	75	100	teeth	no	no	no	3	2	3	2	Paolo_Manghi	SRR9217439	33127901	IlluminaHiSeq
