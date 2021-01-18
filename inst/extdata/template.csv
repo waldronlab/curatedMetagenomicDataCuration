@@ -102,7 +102,7 @@ age_T1D_diagnosis,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at which T1D was
 disease_stage,non-unique,optional,FALSE,[0-9]+,Stage information for diseases that can be divided into multiple stages.
 disease_location,non-unique,optional,TRUE,.+,Can be used for diseases which occur on different body parts like CD.
 calprotectin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
-treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole,medications or treatments against the diseases.
+treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin,medications or treatments against the diseases.
 remission,non-unique,optional,FALSE,no|yes,Remission of the disease.
 wbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,White blood cells count; curators must use *1000counts/µL
 rbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Red blood cells count; curators must use *million_counts/µL
@@ -125,5 +125,5 @@ SCCAI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,simple clinical colitis activity
 birth_weight,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curators must use gramms 
 gestational_age,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,duration time of pregnancy;curatos must use weeks
 diet,non-unique,optional,FALSE,omnivore|vegan|vegetarian,type of diet
-curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti,Curator name.
+curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco;Paolo_Manghi,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
