@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-18 16:33:27 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-18 16:36:19 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -127,435 +127,7 @@
 <h1 class="hasAnchor">
 <a href="#brooksb_2017_metadata-tsv" class="anchor"></a>BrooksB_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/BrooksB_2017/BrooksB_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/BrooksB_2017/BrooksB_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
-<div id="disease" class="section level3">
-<h3 class="hasAnchor">
-<a href="#disease" class="anchor"></a>disease</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
-</li>
-<li>
-<em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . N2_031_008G1 : “premature_born”<br>
-2 . N2_031_010G1 : “premature_born”<br>
-3 . N2_031_012G1 : “premature_born”<br>
-4 . N2_031_014G1 : “premature_born”<br>
-5 . N2_031_016G1 : “premature_born”<br>
-6 . N2_031_018G1 : “premature_born”<br>
-7 . N2_031_020G1 : “premature_born”<br>
-8 . N2_031_021G1 : “premature_born”<br>
-9 . N2_031_023G1 : “premature_born”<br>
-10 . N2_031_027G1 : “premature_born”<br>
-11 . N2_031_033G1 : “premature_born”<br>
-12 . N2_031_040G1 : “premature_born”<br>
-13 . N2_031_055G1 : “premature_born”<br>
-14 . N2_035_010G1 : “premature_born”<br>
-15 . N2_035_012G1 : “premature_born”<br>
-16 . N2_035_014G1 : “premature_born”<br>
-17 . N2_035_016G1 : “premature_born”<br>
-18 . N2_035_018G1 : “premature_born”<br>
-19 . N2_035_020G1 : “premature_born”<br>
-20 . N2_035_022G1 : “premature_born”<br>
-21 . N2_035_025G1 : “premature_born”<br>
-22 . N2_035_027G1 : “premature_born”<br>
-23 . N2_035_032G1 : “premature_born”<br>
-24 . N2_035_039G1 : “premature_born”<br>
-25 . N2_035_046G1 : “premature_born”<br>
-26 . N2_035_053G1 : “premature_born”<br>
-27 . N2_038_009G1 : “premature_born”<br>
-28 . N2_038_011G1 : “premature_born”<br>
-29 . N2_038_013G1 : “premature_born”<br>
-30 . N2_038_015G1 : “premature_born”<br>
-31 . N2_038_018G1 : “premature_born”<br>
-32 . N2_038_020G1 : “premature_born”<br>
-33 . N2_038_026G1 : “premature_born”<br>
-34 . N2_038_030G1 : “premature_born”<br>
-35 . N2_038_036G1 : “premature_born”<br>
-36 . N2_038_039G1 : “premature_born”<br>
-37 . N2_038_044G1 : “premature_born”<br>
-38 . N2_039_008G1 : “premature_born”<br>
-39 . N2_039_011G1 : “premature_born”<br>
-40 . N2_039_013G1 : “premature_born”<br>
-41 . N2_039_015G1 : “premature_born”<br>
-42 . N2_039_018G1 : “premature_born”<br>
-43 . N2_039_020G1 : “premature_born”<br>
-44 . N2_039_021G1 : “premature_born”<br>
-45 . N2_039_035G1 : “premature_born”<br>
-46 . N2_039_037G1 : “premature_born”<br>
-47 . N2_039_044G1 : “premature_born”<br>
-48 . N2_060_008G1 : “premature_born”<br>
-49 . N2_060_009G1 : “premature_born”<br>
-50 . N2_060_011G1 : “premature_born”<br>
-51 . N2_060_013G1 : “premature_born”<br>
-52 . N2_060_015G1 : “premature_born”<br>
-53 . N2_060_016G1 : “premature_born”<br>
-54 . N2_060_019G1 : “premature_born”<br>
-55 . N2_060_020G1 : “premature_born”<br>
-56 . N2_060_021G1 : “premature_born”<br>
-57 . N2_061_007G1 : “premature_born”<br>
-58 . N2_061_008G1 : “premature_born”<br>
-59 . N2_061_015G1 : “premature_born”<br>
-60 . N2_061_019G1 : “premature_born”<br>
-61 . N2_061_021G1 : “premature_born”<br>
-62 . N2_061_025G1 : “premature_born”<br>
-63 . N2_061_082G1 : “premature_born”<br>
-64 . N2_064_009G1 : “premature_born”<br>
-65 . N2_064_011G1 : “premature_born”<br>
-66 . N2_064_013G1 : “premature_born”<br>
-67 . N2_064_016G1 : “premature_born”<br>
-68 . N2_064_017G1 : “premature_born”<br>
-69 . N2_064_020G1 : “premature_born”<br>
-70 . N2_064_025G1 : “premature_born”<br>
-71 . N2_064_027G1 : “premature_born”<br>
-72 . N2_064_031G1 : “premature_born”<br>
-73 . N2_064_036G1 : “premature_born”<br>
-74 . N2_064_043G1 : “premature_born”<br>
-75 . N2_065_008G1 : “premature_born”<br>
-76 . N2_065_009G1 : “premature_born”<br>
-77 . N2_065_011G1 : “premature_born”<br>
-78 . N2_065_014G1 : “premature_born”<br>
-79 . N2_065_017G1 : “premature_born”<br>
-80 . N2_065_019G1 : “premature_born”<br>
-81 . N2_065_022G1 : “premature_born”<br>
-82 . N2_065_024G1 : “premature_born”<br>
-83 . N2_065_026G1 : “premature_born”<br>
-84 . N2_065_029G1 : “premature_born”<br>
-85 . N2_065_038G1 : “premature_born”<br>
-86 . N2_065_046G1 : “premature_born”<br>
-87 . N2_065_052G1 : “premature_born”<br>
-88 . N2_065_059G1 : “premature_born”<br>
-89 . N2_066_009G1 : “premature_born”<br>
-90 . N2_066_011G1 : “premature_born”<br>
-91 . N2_066_013G1 : “premature_born”<br>
-92 . N2_066_015G1 : “premature_born”<br>
-93 . N2_066_017G1 : “premature_born”<br>
-94 . N2_066_019G1 : “premature_born”<br>
-95 . N2_066_021G1 : “premature_born”<br>
-96 . N2_066_024G1 : “premature_born”<br>
-97 . N2_066_031G1 : “premature_born”<br>
-98 . N2_066_033G1 : “premature_born”<br>
-99 . N2_066_037G1 : “premature_born”<br>
-100 . N2_066_048G1 : “premature_born”<br>
-101 . N2_066_050G1 : “premature_born”<br>
-102 . N2_066_060G1 : “premature_born”<br>
-103 . N2_066_064G1 : “premature_born”<br>
-104 . N2_069_014G1 : “premature_born”<br>
-105 . N2_069_015G1 : “premature_born”<br>
-106 . N2_069_017G1 : “premature_born”<br>
-107 . N2_069_018G1 : “premature_born”<br>
-108 . N2_069_019G1 : “premature_born”<br>
-109 . N2_069_021G1 : “premature_born”<br>
-110 . N2_069_024G1 : “premature_born”<br>
-111 . N2_069_027G1 : “premature_born”<br>
-112 . N2_069_028G1 : “premature_born”<br>
-113 . N2_069_029G1 : “premature_born”<br>
-114 . N2_070_016G1 : “premature_born”<br>
-115 . N2_070_019G1 : “premature_born”<br>
-116 . N2_070_020G1 : “premature_born”<br>
-117 . N2_070_024G1 : “premature_born”<br>
-118 . N2_070_027G1 : “premature_born”<br>
-119 . N2_070_030G1 : “premature_born”<br>
-120 . N2_070_036G1 : “premature_born”<br>
-121 . N2_070_042G1 : “premature_born”<br>
-122 . N2_070_057G1 : “premature_born”<br>
-123 . N2_070_060G1 : “premature_born”<br>
-124 . N2_071_007G1 : “premature_born”<br>
-125 . N2_071_008G1 : “premature_born”<br>
-126 . N2_071_010G1 : “premature_born”<br>
-127 . N2_071_013G1 : “premature_born”<br>
-128 . N2_071_015G1 : “premature_born”<br>
-129 . N2_071_017G1 : “premature_born”<br>
-130 . N2_071_019G1 : “premature_born”<br>
-131 . N2_071_021G1 : “premature_born”<br>
-132 . N2_071_023G1 : “premature_born”<br>
-133 . N2_071_025G1 : “premature_born”<br>
-134 . N2_071_027G1 : “premature_born”<br>
-135 . N2_071_029G1 : “premature_born”<br>
-136 . N2_071_030G1 : “premature_born”<br>
-137 . N2_088_008G1 : “premature_born”<br>
-138 . N2_088_010G1 : “premature_born”<br>
-139 . N2_088_013G1 : “premature_born”<br>
-140 . N2_088_015G1 : “premature_born”<br>
-141 . N2_088_018G1 : “premature_born”<br>
-142 . N2_088_022G1 : “premature_born”<br>
-143 . N2_088_027G1 : “premature_born”<br>
-144 . N2_088_034G1 : “premature_born”<br>
-145 . N2_088_042G1 : “premature_born”<br>
-146 . N2_093_007G1 : “premature_born”<br>
-147 . N2_093_008G1 : “premature_born”<br>
-148 . N2_093_008G2 : “premature_born”<br>
-149 . N2_093_009G1 : “premature_born”<br>
-150 . N2_093_010G1 : “premature_born”<br>
-151 . S2_002_005G1 : “premature_born”<br>
-152 . S2_002_007G1 : “premature_born”<br>
-153 . S2_002_010G1 : “premature_born”<br>
-154 . S2_002_011G1 : “premature_born”<br>
-155 . S2_002_012G1 : “premature_born”<br>
-156 . S2_002_013G1 : “premature_born”<br>
-157 . S2_002_014G1 : “premature_born”<br>
-158 . S2_002_015G1 : “premature_born”<br>
-159 . S2_002_016G1 : “premature_born”<br>
-160 . S2_002_017G1 : “premature_born”<br>
-161 . S2_002_018G1 : “premature_born”<br>
-162 . S2_002_019G1 : “premature_born”<br>
-163 . S2_002_020G1 : “premature_born”<br>
-164 . S2_002_022G1 : “premature_born”<br>
-165 . S2_002_023G1 : “premature_born”<br>
-166 . S2_002_024G1 : “premature_born”<br>
-167 . S2_002_026G1 : “premature_born”<br>
-168 . S2_002_027G1 : “premature_born”<br>
-169 . S2_002_028G1 : “premature_born”<br>
-170 . S2_003_005G1 : “premature_born”<br>
-171 . S2_003_007G1 : “premature_born”<br>
-172 . S2_003_008G1 : “premature_born”<br>
-173 . S2_003_009G1 : “premature_born”<br>
-174 . S2_003_010G1 : “premature_born”<br>
-175 . S2_003_011G1 : “premature_born”<br>
-176 . S2_003_012G1 : “premature_born”<br>
-177 . S2_003_013G1 : “premature_born”<br>
-178 . S2_003_014G1 : “premature_born”<br>
-179 . S2_003_015G1 : “premature_born”<br>
-180 . S2_003_016G1 : “premature_born”<br>
-181 . S2_003_017G1 : “premature_born”<br>
-182 . S2_003_018G1 : “premature_born”<br>
-183 . S2_003_019G1 : “premature_born”<br>
-184 . S2_003_020G1 : “premature_born”<br>
-185 . S2_003_021G1 : “premature_born”<br>
-186 . S2_004_006G1 : “premature_born”<br>
-187 . S2_004_007G1 : “premature_born”<br>
-188 . S2_004_008G1 : “premature_born”<br>
-189 . S2_004_009G1 : “premature_born”<br>
-190 . S2_004_010G1 : “premature_born”<br>
-191 . S2_004_011G1 : “premature_born”<br>
-192 . S2_004_012G1 : “premature_born”<br>
-193 . S2_004_013G1 : “premature_born”<br>
-194 . S2_004_014G1 : “premature_born”<br>
-195 . S2_004_015G1 : “premature_born”<br>
-196 . S2_004_016G1 : “premature_born”<br>
-197 . S2_004_017G1 : “premature_born”<br>
-198 . S2_004_018G1 : “premature_born”<br>
-199 . S2_004_019G1 : “premature_born”<br>
-200 . S2_004_020G1 : “premature_born”<br>
-201 . S2_004_021G1 : “premature_born”<br>
-202 . S2_004_023G1 : “premature_born”<br>
-203 . S2_004_025G1 : “premature_born”<br>
-204 . S2_004_026G1 : “premature_born”<br>
-205 . S2_004_027G1 : “premature_born”<br>
-206 . S2_004_028G1 : “premature_born”<br>
-207 . S2_005_000G1 : “premature_born”<br>
-208 . S2_006_005G1 : “premature_born”<br>
-209 . S2_006_006G1 : “premature_born”<br>
-210 . S2_006_007G1 : “premature_born”<br>
-211 . S2_006_008G1 : “premature_born”<br>
-212 . S2_006_009G1 : “premature_born”<br>
-213 . S2_006_010G1 : “premature_born”<br>
-214 . S2_006_011G1 : “premature_born”<br>
-215 . S2_006_012G1 : “premature_born”<br>
-216 . S2_006_013G1 : “premature_born”<br>
-217 . S2_006_014G1 : “premature_born”<br>
-218 . S2_006_015G1 : “premature_born”<br>
-219 . S2_006_016G1 : “premature_born”<br>
-220 . S2_006_018G1 : “premature_born”<br>
-221 . S2_006_019G1 : “premature_born”<br>
-222 . S2_006_020G1 : “premature_born”<br>
-223 . S2_006_021G1 : “premature_born”<br>
-224 . S2_006_022G1 : “premature_born”<br>
-225 . S2_006_023G1 : “premature_born”<br>
-226 . S2_006_026G1 : “premature_born”<br>
-227 . S2_006_027G1 : “premature_born”<br>
-228 . S2_008_007G1 : “premature_born”<br>
-229 . S2_008_008G1 : “premature_born”<br>
-230 . S2_008_010G1 : “premature_born”<br>
-231 . S2_008_011G1 : “premature_born”<br>
-232 . S2_008_012G1 : “premature_born”<br>
-233 . S2_008_014G1 : “premature_born”<br>
-234 . S2_008_015G1 : “premature_born”<br>
-235 . S2_008_017G1 : “premature_born”<br>
-236 . S2_008_020G1 : “premature_born”<br>
-237 . S2_008_021G1 : “premature_born”<br>
-238 . S2_008_023G1 : “premature_born”<br>
-239 . S2_008_024G1 : “premature_born”<br>
-240 . S2_008_026G1 : “premature_born”<br>
-241 . S2_008_027G1 : “premature_born”<br>
-242 . S2_009_005G1 : “premature_born”<br>
-243 . S2_009_008G1 : “premature_born”<br>
-244 . S2_009_009G1 : “premature_born”<br>
-245 . S2_009_010G1 : “premature_born”<br>
-246 . S2_009_011G1 : “premature_born”<br>
-247 . S2_009_012G1 : “premature_born”<br>
-248 . S2_009_013G1 : “premature_born”<br>
-249 . S2_009_014G1 : “premature_born”<br>
-250 . S2_009_015G1 : “premature_born”<br>
-251 . S2_009_016G1 : “premature_born”<br>
-252 . S2_009_017G1 : “premature_born”<br>
-253 . S2_009_018G1 : “premature_born”<br>
-254 . S2_009_019G1 : “premature_born”<br>
-255 . S2_009_020G1 : “premature_born”<br>
-256 . S2_009_021G1 : “premature_born”<br>
-257 . S2_009_022G1 : “premature_born”<br>
-258 . S2_009_023G1 : “premature_born”<br>
-259 . S2_009_024G1 : “premature_born”<br>
-260 . S2_009_025G1 : “premature_born”<br>
-261 . S2_009_026G1 : “premature_born”<br>
-262 . S2_009_027G1 : “premature_born”<br>
-263 . S2_009_028G1 : “premature_born”<br>
-264 . S2_010_005G1 : “premature_born”<br>
-265 . S2_010_006G1 : “premature_born”<br>
-266 . S2_010_007G1 : “premature_born”<br>
-267 . S2_010_008G1 : “premature_born”<br>
-268 . S2_010_016G1 : “premature_born”<br>
-269 . S2_010_017G1 : “premature_born”<br>
-270 . S2_010_018G1 : “premature_born”<br>
-271 . S2_010_019G1 : “premature_born”<br>
-272 . S2_010_021G1 : “premature_born”<br>
-273 . S2_010_022G1 : “premature_born”<br>
-274 . S2_010_023G1 : “premature_born”<br>
-275 . S2_010_024G1 : “premature_born”<br>
-276 . S2_010_026G1 : “premature_born”<br>
-277 . S2_010_030G1 : “premature_born”<br>
-278 . S2_011_007G1 : “premature_born”<br>
-279 . S2_011_008G1 : “premature_born”<br>
-280 . S2_011_009G1 : “premature_born”<br>
-281 . S2_011_010G1 : “premature_born”<br>
-282 . S2_011_011G1 : “premature_born”<br>
-283 . S2_011_012G1 : “premature_born”<br>
-284 . S2_011_013G1 : “premature_born”<br>
-285 . S2_011_014G1 : “premature_born”<br>
-286 . S2_011_015G1 : “premature_born”<br>
-287 . S2_011_016G1 : “premature_born”<br>
-288 . S2_011_017G1 : “premature_born”<br>
-289 . S2_011_018G1 : “premature_born”<br>
-290 . S2_011_019G1 : “premature_born”<br>
-291 . S2_011_020G1 : “premature_born”<br>
-292 . S2_011_021G1 : “premature_born”<br>
-293 . S2_011_022G1 : “premature_born”<br>
-294 . S2_011_023G1 : “premature_born”<br>
-295 . S2_011_024G1 : “premature_born”<br>
-296 . S2_011_025G1 : “premature_born”<br>
-297 . S2_011_026G1 : “premature_born”<br>
-298 . S2_011_028G1 : “premature_born”<br>
-299 . S2_012_005G1 : “premature_born”<br>
-300 . S2_012_007G1 : “premature_born”<br>
-301 . S2_012_008G1 : “premature_born”<br>
-302 . S2_012_009G1 : “premature_born”<br>
-303 . S2_012_010G1 : “premature_born”<br>
-304 . S2_012_011G1 : “premature_born”<br>
-305 . S2_012_012G1 : “premature_born”<br>
-306 . S2_012_013G1 : “premature_born”<br>
-307 . S2_012_014G1 : “premature_born”<br>
-308 . S2_012_015G1 : “premature_born”<br>
-309 . S2_012_016G1 : “premature_born”<br>
-310 . S2_012_017G1 : “premature_born”<br>
-311 . S2_012_018G1 : “premature_born”<br>
-312 . S2_012_019G1 : “premature_born”<br>
-313 . S2_012_020G1 : “premature_born”<br>
-314 . S2_012_021G1 : “premature_born”<br>
-315 . S2_012_022G1 : “premature_born”<br>
-316 . S2_012_023G1 : “premature_born”<br>
-317 . S2_012_024G1 : “premature_born”<br>
-318 . S2_012_025G1 : “premature_born”<br>
-319 . S2_012_026G1 : “premature_born”<br>
-320 . S2_012_027G1 : “premature_born”<br>
-321 . S2_014_007G1 : “premature_born”<br>
-322 . S2_014_009G1 : “premature_born”<br>
-323 . S2_014_010G1 : “premature_born”<br>
-324 . S2_014_011G1 : “premature_born”<br>
-325 . S2_014_013G1 : “premature_born”<br>
-326 . S2_014_015G1 : “premature_born”<br>
-327 . S2_014_016G1 : “premature_born”<br>
-328 . S2_014_017G1 : “premature_born”<br>
-329 . S2_014_018G1 : “premature_born”<br>
-330 . S2_014_019G1 : “premature_born”<br>
-331 . S2_014_020G1 : “premature_born”<br>
-332 . S2_014_021G1 : “premature_born”<br>
-333 . S2_014_023G1 : “premature_born”<br>
-334 . S2_014_024G1 : “premature_born”<br>
-335 . S2_014_025G1 : “premature_born”<br>
-336 . S2_014_026G1 : “premature_born”<br>
-337 . S2_014_028G1 : “premature_born”<br>
-338 . S2_015_005G1 : “premature_born”<br>
-339 . S2_015_006G1 : “premature_born”<br>
-340 . S2_015_009G1 : “premature_born”<br>
-341 . S2_015_010G1 : “premature_born”<br>
-342 . S2_015_011G1 : “premature_born”<br>
-343 . S2_015_012G1 : “premature_born”<br>
-344 . S2_015_013G1 : “premature_born”<br>
-345 . S2_016_007G1 : “premature_born”<br>
-346 . S2_016_008G1 : “premature_born”<br>
-347 . S2_016_009G1 : “premature_born”<br>
-348 . S2_016_010G1 : “premature_born”<br>
-349 . S2_016_011G1 : “premature_born”<br>
-350 . S2_016_013G1 : “premature_born”<br>
-351 . S2_016_014G1 : “premature_born”<br>
-352 . S2_016_015G1 : “premature_born”<br>
-353 . S2_016_016G1 : “premature_born”<br>
-354 . S2_016_017G1 : “premature_born”<br>
-355 . S2_016_018G1 : “premature_born”<br>
-356 . S2_016_019G1 : “premature_born”<br>
-357 . S2_016_021G1 : “premature_born”<br>
-358 . S2_016_023G1 : “premature_born”<br>
-359 . S2_016_024G1 : “premature_born”<br>
-360 . S2_016_025G1 : “premature_born”<br>
-361 . S2_016_026G1 : “premature_born”<br>
-362 . S2_016_027G1 : “premature_born”<br>
-363 . S2_016_028G1 : “premature_born”<br>
-364 . S2_017_006G1 : “premature_born”<br>
-365 . S2_017_007G1 : “premature_born”<br>
-366 . S2_017_008G1 : “premature_born”<br>
-367 . S2_017_009G1 : “premature_born”<br>
-368 . S2_017_010G1 : “premature_born”<br>
-369 . S2_017_011G1 : “premature_born”<br>
-370 . S2_017_012G1 : “premature_born”<br>
-371 . S2_017_013G1 : “premature_born”<br>
-372 . S2_017_014G1 : “premature_born”<br>
-373 . S2_017_015G1 : “premature_born”<br>
-374 . S2_017_017G1 : “premature_born”<br>
-375 . S2_017_018G1 : “premature_born”<br>
-376 . S2_017_019G1 : “premature_born”<br>
-377 . S2_017_020G1 : “premature_born”<br>
-378 . S2_017_021G1 : “premature_born”<br>
-379 . S2_017_022G1 : “premature_born”<br>
-380 . S2_017_023G1 : “premature_born”<br>
-381 . S2_017_024G1 : “premature_born”<br>
-382 . S2_017_025G1 : “premature_born”<br>
-383 . S2_017_026G1 : “premature_born”<br>
-384 . S2_017_027G1 : “premature_born”<br>
-385 . S2_017_028G1 : “premature_born”<br>
-386 . S2_018_006G1 : “premature_born”<br>
-387 . S2_018_007G1 : “premature_born”<br>
-388 . S2_018_008G1 : “premature_born”<br>
-389 . S2_018_009G1 : “premature_born”<br>
-390 . S2_018_010G1 : “premature_born”<br>
-391 . S2_018_011G1 : “premature_born”<br>
-392 . S2_018_012G1 : “premature_born”<br>
-393 . S2_018_013G1 : “premature_born”<br>
-394 . S2_018_014G1 : “premature_born”<br>
-395 . S2_018_015G1 : “premature_born”<br>
-396 . S2_018_016G1 : “premature_born”<br>
-397 . S2_018_017G1 : “premature_born”<br>
-398 . S2_018_018G1 : “premature_born”<br>
-399 . S2_018_019G1 : “premature_born”<br>
-400 . S2_018_020G1 : “premature_born”<br>
-401 . S2_018_021G1 : “premature_born”<br>
-402 . S2_018_022G1 : “premature_born”<br>
-403 . S2_018_023G1 : “premature_born”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="castro-nallare_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -585,9 +157,9 @@
 <h1 class="hasAnchor">
 <a href="#contevillelc_2019_metadata-tsv" class="anchor"></a>ContevilleLC_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-1" class="section level2">
+<div id="entry-errors" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
 <div id="curator" class="section level3">
 <h3 class="hasAnchor">
 <a href="#curator" class="anchor"></a>curator</h3>
@@ -678,9 +250,9 @@
 <li><p>“PPD_L” is not defined in the template.</p></li>
 </ul>
 </div>
-<div id="entry-errors-2" class="section level2">
+<div id="entry-errors-1" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
 <div id="body_subsite" class="section level3">
 <h3 class="hasAnchor">
 <a href="#body_subsite" class="anchor"></a>body_subsite</h3>
@@ -704,9 +276,9 @@
 <p><strong>Errors</strong></p>
 <p>113 . SP_122SPT_T016 : “subginigval_plaque”</p>
 </div>
-<div id="disease-1" class="section level3">
+<div id="disease" class="section level3">
 <h3 class="hasAnchor">
-<a href="#disease-1" class="anchor"></a>disease</h3>
+<a href="#disease" class="anchor"></a>disease</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -719,7 +291,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|premature_born|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -889,9 +461,9 @@
 <h1 class="hasAnchor">
 <a href="#hannigangd_2017_metadata-tsv" class="anchor"></a>HanniganGD_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-3" class="section level2">
+<div id="entry-errors-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
 <div id="fobt" class="section level3">
 <h3 class="hasAnchor">
 <a href="#fobt" class="anchor"></a>fobt</h3>
@@ -1026,9 +598,9 @@
 <h1 class="hasAnchor">
 <a href="#hmp_2019_t2d_metadata-tsv" class="anchor"></a>HMP_2019_t2d_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-4" class="section level2">
+<div id="entry-errors-3" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
 <div id="bilubirin" class="section level3">
 <h3 class="hasAnchor">
 <a href="#bilubirin" class="anchor"></a>bilubirin</h3>
@@ -1150,9 +722,9 @@
 <h1 class="hasAnchor">
 <a href="#kaurk_2020_metadata-tsv" class="anchor"></a>KaurK_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-5" class="section level2">
+<div id="entry-errors-4" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-5" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
 <div id="dna_extraction_kit" class="section level3">
 <h3 class="hasAnchor">
 <a href="#dna_extraction_kit" class="anchor"></a>DNA_extraction_kit</h3>
@@ -1255,292 +827,6 @@
 <li>“fasting_glucose” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-6" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-6" class="anchor"></a>Entry errors</h2>
-<div id="curator-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#curator-1" class="anchor"></a>curator</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Mireia_VallesColomer<br>
-</li>
-<li>
-<em>description</em>: Curator name.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . DLF005-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-2 . DLM006-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-3 . DOM005-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-4 . DOM017-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-5 . MH0192 : “Aitor_Blanco;Paolo_Manghi”<br>
-6 . MH0221 : “Aitor_Blanco;Paolo_Manghi”<br>
-7 . MH0222 : “Aitor_Blanco;Paolo_Manghi”<br>
-8 . MH0234 : “Aitor_Blanco;Paolo_Manghi”<br>
-9 . MH0238 : “Aitor_Blanco;Paolo_Manghi”<br>
-10 . MH0245 : “Aitor_Blanco;Paolo_Manghi”<br>
-11 . MH0246 : “Aitor_Blanco;Paolo_Manghi”<br>
-12 . MH0252 : “Aitor_Blanco;Paolo_Manghi”<br>
-13 . MH0259 : “Aitor_Blanco;Paolo_Manghi”<br>
-14 . MH0260 : “Aitor_Blanco;Paolo_Manghi”<br>
-15 . MH0261 : “Aitor_Blanco;Paolo_Manghi”<br>
-16 . MH0262 : “Aitor_Blanco;Paolo_Manghi”<br>
-17 . MH0264 : “Aitor_Blanco;Paolo_Manghi”<br>
-18 . MH0265 : “Aitor_Blanco;Paolo_Manghi”<br>
-19 . MH0266 : “Aitor_Blanco;Paolo_Manghi”<br>
-20 . MH0268 : “Aitor_Blanco;Paolo_Manghi”<br>
-21 . MH0270 : “Aitor_Blanco;Paolo_Manghi”<br>
-22 . MH0271 : “Aitor_Blanco;Paolo_Manghi”<br>
-23 . MH0280 : “Aitor_Blanco;Paolo_Manghi”<br>
-24 . MH0281 : “Aitor_Blanco;Paolo_Manghi”<br>
-25 . MH0283 : “Aitor_Blanco;Paolo_Manghi”<br>
-26 . MH0284 : “Aitor_Blanco;Paolo_Manghi”<br>
-27 . MH0290 : “Aitor_Blanco;Paolo_Manghi”<br>
-28 . MH0293 : “Aitor_Blanco;Paolo_Manghi”<br>
-29 . MH0297 : “Aitor_Blanco;Paolo_Manghi”<br>
-30 . MH0298 : “Aitor_Blanco;Paolo_Manghi”<br>
-31 . MH0299 : “Aitor_Blanco;Paolo_Manghi”<br>
-32 . MH0301 : “Aitor_Blanco;Paolo_Manghi”<br>
-33 . MH0303 : “Aitor_Blanco;Paolo_Manghi”<br>
-34 . MH0308 : “Aitor_Blanco;Paolo_Manghi”<br>
-35 . MH0309 : “Aitor_Blanco;Paolo_Manghi”<br>
-36 . MH0310 : “Aitor_Blanco;Paolo_Manghi”<br>
-37 . MH0311 : “Aitor_Blanco;Paolo_Manghi”<br>
-38 . MH0314 : “Aitor_Blanco;Paolo_Manghi”<br>
-39 . MH0315 : “Aitor_Blanco;Paolo_Manghi”<br>
-40 . MH0319 : “Aitor_Blanco;Paolo_Manghi”<br>
-41 . MH0323 : “Aitor_Blanco;Paolo_Manghi”<br>
-42 . MH0325 : “Aitor_Blanco;Paolo_Manghi”<br>
-43 . MH0326 : “Aitor_Blanco;Paolo_Manghi”<br>
-44 . MH0327 : “Aitor_Blanco;Paolo_Manghi”<br>
-45 . MH0328 : “Aitor_Blanco;Paolo_Manghi”<br>
-46 . MH0329 : “Aitor_Blanco;Paolo_Manghi”<br>
-47 . MH0330 : “Aitor_Blanco;Paolo_Manghi”<br>
-48 . MH0332 : “Aitor_Blanco;Paolo_Manghi”<br>
-49 . MH0334 : “Aitor_Blanco;Paolo_Manghi”<br>
-50 . MH0335 : “Aitor_Blanco;Paolo_Manghi”<br>
-51 . MH0336 : “Aitor_Blanco;Paolo_Manghi”<br>
-52 . MH0337 : “Aitor_Blanco;Paolo_Manghi”<br>
-53 . MH0338 : “Aitor_Blanco;Paolo_Manghi”<br>
-54 . MH0339 : “Aitor_Blanco;Paolo_Manghi”<br>
-55 . MH0340 : “Aitor_Blanco;Paolo_Manghi”<br>
-56 . MH0341 : “Aitor_Blanco;Paolo_Manghi”<br>
-57 . MH0342 : “Aitor_Blanco;Paolo_Manghi”<br>
-58 . MH0343 : “Aitor_Blanco;Paolo_Manghi”<br>
-59 . MH0345 : “Aitor_Blanco;Paolo_Manghi”<br>
-60 . MH0346 : “Aitor_Blanco;Paolo_Manghi”<br>
-61 . MH0347 : “Aitor_Blanco;Paolo_Manghi”<br>
-62 . MH0348 : “Aitor_Blanco;Paolo_Manghi”<br>
-63 . MH0349 : “Aitor_Blanco;Paolo_Manghi”<br>
-64 . MH0350 : “Aitor_Blanco;Paolo_Manghi”<br>
-65 . MH0351 : “Aitor_Blanco;Paolo_Manghi”<br>
-66 . MH0354 : “Aitor_Blanco;Paolo_Manghi”<br>
-67 . MH0355 : “Aitor_Blanco;Paolo_Manghi”<br>
-68 . MH0356 : “Aitor_Blanco;Paolo_Manghi”<br>
-69 . MH0357 : “Aitor_Blanco;Paolo_Manghi”<br>
-70 . MH0358 : “Aitor_Blanco;Paolo_Manghi”<br>
-71 . MH0359 : “Aitor_Blanco;Paolo_Manghi”<br>
-72 . MH0360 : “Aitor_Blanco;Paolo_Manghi”<br>
-73 . MH0361 : “Aitor_Blanco;Paolo_Manghi”<br>
-74 . MH0362 : “Aitor_Blanco;Paolo_Manghi”<br>
-75 . MH0363 : “Aitor_Blanco;Paolo_Manghi”<br>
-76 . MH0364 : “Aitor_Blanco;Paolo_Manghi”<br>
-77 . MH0365 : “Aitor_Blanco;Paolo_Manghi”<br>
-78 . MH0366 : “Aitor_Blanco;Paolo_Manghi”<br>
-79 . MH0367 : “Aitor_Blanco;Paolo_Manghi”<br>
-80 . MH0368 : “Aitor_Blanco;Paolo_Manghi”<br>
-81 . MH0369 : “Aitor_Blanco;Paolo_Manghi”<br>
-82 . MH0370 : “Aitor_Blanco;Paolo_Manghi”<br>
-83 . MH0371 : “Aitor_Blanco;Paolo_Manghi”<br>
-84 . MH0372 : “Aitor_Blanco;Paolo_Manghi”<br>
-85 . MH0373 : “Aitor_Blanco;Paolo_Manghi”<br>
-86 . MH0374 : “Aitor_Blanco;Paolo_Manghi”<br>
-87 . MH0375 : “Aitor_Blanco;Paolo_Manghi”<br>
-88 . MH0376 : “Aitor_Blanco;Paolo_Manghi”<br>
-89 . MH0377 : “Aitor_Blanco;Paolo_Manghi”<br>
-90 . MH0378 : “Aitor_Blanco;Paolo_Manghi”<br>
-91 . MH0379 : “Aitor_Blanco;Paolo_Manghi”<br>
-92 . MH0381 : “Aitor_Blanco;Paolo_Manghi”<br>
-93 . MH0382 : “Aitor_Blanco;Paolo_Manghi”<br>
-94 . MH0383 : “Aitor_Blanco;Paolo_Manghi”<br>
-95 . MH0384 : “Aitor_Blanco;Paolo_Manghi”<br>
-96 . MH0385 : “Aitor_Blanco;Paolo_Manghi”<br>
-97 . MH0386 : “Aitor_Blanco;Paolo_Manghi”<br>
-98 . MH0387 : “Aitor_Blanco;Paolo_Manghi”<br>
-99 . MH0388 : “Aitor_Blanco;Paolo_Manghi”<br>
-100 . MH0389 : “Aitor_Blanco;Paolo_Manghi”<br>
-101 . MH0390 : “Aitor_Blanco;Paolo_Manghi”<br>
-102 . MH0391 : “Aitor_Blanco;Paolo_Manghi”<br>
-103 . MH0392 : “Aitor_Blanco;Paolo_Manghi”<br>
-104 . MH0393 : “Aitor_Blanco;Paolo_Manghi”<br>
-105 . MH0394 : “Aitor_Blanco;Paolo_Manghi”<br>
-106 . MH0395 : “Aitor_Blanco;Paolo_Manghi”<br>
-107 . MH0396 : “Aitor_Blanco;Paolo_Manghi”<br>
-108 . MH0397 : “Aitor_Blanco;Paolo_Manghi”<br>
-109 . MH0398 : “Aitor_Blanco;Paolo_Manghi”<br>
-110 . MH0399 : “Aitor_Blanco;Paolo_Manghi”<br>
-111 . MH0400 : “Aitor_Blanco;Paolo_Manghi”<br>
-112 . MH0401 : “Aitor_Blanco;Paolo_Manghi”<br>
-113 . MH0402 : “Aitor_Blanco;Paolo_Manghi”<br>
-114 . NLF002-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-115 . NLF009-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-116 . NLM009-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-117 . NLM025-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-118 . NOF002-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-119 . NOF007-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-120 . NOF013-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-121 . O2.CD1-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-122 . O2.CD1-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-123 . O2.CD2-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-124 . O2.CD2-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-125 . O2.CD3-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-126 . O2.UC1-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-127 . O2.UC11-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-128 . O2.UC12-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-129 . O2.UC13-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-130 . O2.UC14-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-131 . O2.UC15-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-132 . O2.UC15-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-133 . O2.UC15-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-134 . O2.UC16-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-135 . O2.UC17-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-136 . O2.UC18-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-137 . O2.UC19-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-138 . O2.UC20-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-139 . O2.UC2-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-140 . O2.UC21-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-141 . O2.UC22-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-142 . O2.UC23-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-143 . O2.UC24-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-144 . O2.UC26-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-145 . O2.UC27-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-146 . O2.UC28-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-147 . O2.UC28-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-148 . O2.UC28-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-149 . O2.UC29-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-150 . O2.UC30-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-151 . O2.UC3-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-152 . O2.UC31-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-153 . O2.UC32-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-154 . O2.UC35-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-155 . O2.UC36-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-156 . O2.UC36-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-157 . O2.UC37-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-158 . O2.UC38-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-159 . O2.UC40-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-160 . O2.UC4-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-161 . O2.UC41-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-162 . O2.UC43-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-163 . O2.UC44-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-164 . O2.UC46-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-165 . O2.UC47-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-166 . O2.UC48-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-167 . O2.UC5-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-168 . O2.UC6-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-169 . O2.UC6-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-170 . O2.UC6-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-171 . O2.UC7-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-172 . O2.UC7-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-173 . O2.UC8-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-174 . O2.UC8-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-175 . O2.UC8-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-176 . O2.UC9-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-177 . V1.CD1-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-178 . V1.CD1-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-179 . V1.CD12-3 : “Aitor_Blanco;Paolo_Manghi”<br>
-180 . V1.CD1-3-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-181 . V1.CD20-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-182 . V1.CD2-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-183 . V1.CD2-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-184 . V1.CD3-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-185 . V1.CD3-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-186 . V1.CD32-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-187 . V1.CD32-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-188 . V1.CD3-3-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-189 . V1.CD37-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-190 . V1.CD40-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-191 . V1.CD4-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-192 . V1.CD4-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-193 . V1.CD43-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-194 . V1.CD44-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-195 . V1.CD44-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-196 . V1.CD45-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-197 . V1.CD46-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-198 . V1.CD48-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-199 . V1.CD49-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-200 . V1.CD50-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-201 . V1.CD5-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-202 . V1.CD51-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-203 . V1.CD52-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-204 . V1.CD53-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-205 . V1.CD54-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-206 . V1.CD55-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-207 . V1.CD6-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-208 . V1.CD6-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-209 . V1.CD7-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-210 . V1.CD8-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-211 . V1.FI01 : “Aitor_Blanco;Paolo_Manghi”<br>
-212 . V1.FI02 : “Aitor_Blanco;Paolo_Manghi”<br>
-213 . V1.FI03 : “Aitor_Blanco;Paolo_Manghi”<br>
-214 . V1.FI04 : “Aitor_Blanco;Paolo_Manghi”<br>
-215 . V1.FI05 : “Aitor_Blanco;Paolo_Manghi”<br>
-216 . V1.FI06 : “Aitor_Blanco;Paolo_Manghi”<br>
-217 . V1.FI07 : “Aitor_Blanco;Paolo_Manghi”<br>
-218 . V1.FI08 : “Aitor_Blanco;Paolo_Manghi”<br>
-219 . V1.FI09 : “Aitor_Blanco;Paolo_Manghi”<br>
-220 . V1.FI10 : “Aitor_Blanco;Paolo_Manghi”<br>
-221 . V1.FI11 : “Aitor_Blanco;Paolo_Manghi”<br>
-222 . V1.FI12 : “Aitor_Blanco;Paolo_Manghi”<br>
-223 . V1.FI13 : “Aitor_Blanco;Paolo_Manghi”<br>
-224 . V1.FI14 : “Aitor_Blanco;Paolo_Manghi”<br>
-225 . V1.FI15 : “Aitor_Blanco;Paolo_Manghi”<br>
-226 . V1.FI16 : “Aitor_Blanco;Paolo_Manghi”<br>
-227 . V1.FI17 : “Aitor_Blanco;Paolo_Manghi”<br>
-228 . V1.FI18 : “Aitor_Blanco;Paolo_Manghi”<br>
-229 . V1.FI19 : “Aitor_Blanco;Paolo_Manghi”<br>
-230 . V1.FI20 : “Aitor_Blanco;Paolo_Manghi”<br>
-231 . V1.FI21 : “Aitor_Blanco;Paolo_Manghi”<br>
-232 . V1.FI22 : “Aitor_Blanco;Paolo_Manghi”<br>
-233 . V1.FI23 : “Aitor_Blanco;Paolo_Manghi”<br>
-234 . V1.FI24 : “Aitor_Blanco;Paolo_Manghi”<br>
-235 . V1.FI25 : “Aitor_Blanco;Paolo_Manghi”<br>
-236 . V1.FI26 : “Aitor_Blanco;Paolo_Manghi”<br>
-237 . V1.FI27 : “Aitor_Blanco;Paolo_Manghi”<br>
-238 . V1.FI28 : “Aitor_Blanco;Paolo_Manghi”<br>
-239 . V1.FI29 : “Aitor_Blanco;Paolo_Manghi”<br>
-240 . V1.FI30 : “Aitor_Blanco;Paolo_Manghi”<br>
-241 . V1.FI31 : “Aitor_Blanco;Paolo_Manghi”<br>
-242 . V1.FI32 : “Aitor_Blanco;Paolo_Manghi”<br>
-243 . V1.FI33 : “Aitor_Blanco;Paolo_Manghi”<br>
-244 . V1.FI34 : “Aitor_Blanco;Paolo_Manghi”<br>
-245 . V1.FI35 : “Aitor_Blanco;Paolo_Manghi”<br>
-246 . V1.FI36 : “Aitor_Blanco;Paolo_Manghi”<br>
-247 . V1.FI37 : “Aitor_Blanco;Paolo_Manghi”<br>
-248 . V1.UC22-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-249 . V1.UC38-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-250 . V1.UC39-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-251 . V1.UC40-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-252 . V1.UC47-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-253 . V1.UC54-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-254 . V1.UC56-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-255 . V1.UC58-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-256 . V1.UC59-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-257 . V1.UC59-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-258 . V1.UC60-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-259 . V1.UC63-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-260 . V1.UC64-0 : “Aitor_Blanco;Paolo_Manghi”</p>
-</div>
-</div>
 </div>
 <div id="lij_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -1576,9 +862,9 @@
 <h1 class="hasAnchor">
 <a href="#loombar_2017_metadata-tsv" class="anchor"></a>LoombaR_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-7" class="section level2">
+<div id="entry-errors-5" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-5" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype" class="anchor"></a>disease_subtype</h3>
@@ -1688,9 +974,9 @@
 <h1 class="hasAnchor">
 <a href="#qinn_2014_metadata-tsv" class="anchor"></a>QinN_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-8" class="section level2">
+<div id="entry-errors-6" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-6" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-1" class="anchor"></a>disease_subtype</h3>
@@ -1854,12 +1140,12 @@
 <h1 class="hasAnchor">
 <a href="#rosaba_2018_metadata-tsv" class="anchor"></a>RosaBA_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-9" class="section level2">
+<div id="entry-errors-7" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
-<div id="disease-2" class="section level3">
+<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
+<div id="disease-1" class="section level3">
 <h3 class="hasAnchor">
-<a href="#disease-2" class="anchor"></a>disease</h3>
+<a href="#disease-1" class="anchor"></a>disease</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -1872,7 +1158,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|premature_born|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -1936,12 +1222,12 @@
 <h1 class="hasAnchor">
 <a href="#rubelma_2020_metadata-tsv" class="anchor"></a>RubelMA_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-10" class="section level2">
+<div id="entry-errors-8" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
-<div id="disease-3" class="section level3">
+<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<div id="disease-2" class="section level3">
 <h3 class="hasAnchor">
-<a href="#disease-3" class="anchor"></a>disease</h3>
+<a href="#disease-2" class="anchor"></a>disease</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -1954,7 +1240,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|premature_born|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -2266,9 +1552,9 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-11" class="section level2">
+<div id="entry-errors-9" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
 <div id="sequencing_platform" class="section level3">
 <h3 class="hasAnchor">
 <a href="#sequencing_platform" class="anchor"></a>sequencing_platform</h3>
@@ -2315,9 +1601,9 @@
 <h1 class="hasAnchor">
 <a href="#yachidas_2019_metadata-tsv" class="anchor"></a>YachidaS_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-12" class="section level2">
+<div id="entry-errors-10" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
 <div id="ajcc" class="section level3">
 <h3 class="hasAnchor">
 <a href="#ajcc" class="anchor"></a>ajcc</h3>
@@ -2365,9 +1651,9 @@
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-13" class="section level2">
+<div id="entry-errors-11" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
 <div id="tnm" class="section level3">
 <h3 class="hasAnchor">
 <a href="#tnm" class="anchor"></a>tnm</h3>
@@ -2410,9 +1696,9 @@
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-14" class="section level2">
+<div id="entry-errors-12" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-4" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-4" class="anchor"></a>disease_subtype</h3>
