@@ -19,7 +19,7 @@ location,non-unique,optional,FALSE,.+,Free-form additional location information.
 population,non-uniqze,optional,FALSE,[a-zA-Z]\S+,can describe the belonging to a specific population
 travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 non_westernized,non-unique,optional,FALSE,yes|no,Subject belongs to a non-westernized community.
-lifestyle,non-unique,optiona,FALSE,Hunter-gatherer|Agriculturalist|Fisher,to describe the lifestyle of non-westernized people
+lifestyle,non-unique,optional,FALSE,Hunter-gatherer|Agriculturalist|Agropastoralist|Pastoralist|Fisher,to describe the lifestyle of non-westernized people
 brinkman_index,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,The Brinkman index if provided
 days_from_first_collection,non-unique,optional,FALSE,[0-9]+,Used for time series studies.
 sequencing_platform,non-unique,required,FALSE,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq|IlluminaNovaSeq,This will be modified as new sequencing platforms are added to the database.
