@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-18 16:11:04 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-18 16:11:33 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -1563,7 +1563,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -1675,7 +1675,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -1882,7 +1882,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -2034,7 +2034,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -2058,8 +2058,6 @@
 25 . CM.17_WGS : “ascaris_lumbricoides;trichuris_trichiura”<br>
 26 . CM.172_WGS : “microfilaria_loa_loa”<br>
 27 . CM.175_WGS : “ascaris_lumbricoides;microfilaria_spp”<br>
-28 . CM.176_WGS : “microfilaria_spp”<br>
-31 . CM.179_WGS : “microfilaria_spp”<br>
 33 . CM.186_WGS : “plasmodium_falciparum”<br>
 34 . CM.187_WGS : “plasmodium_falciparum”<br>
 35 . CM.19_WGS : “ascaris_lumbricoides;hookworm;trichuris_trichiura”<br>
@@ -2084,18 +2082,15 @@
 59 . CM.234_WGS : “ascaris_lumbricoides;microfilaria_spp;trichuris_trichiura”<br>
 61 . CM.237_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 62 . CM.239_WGS : “microfilaria_loa_loa”<br>
-64 . CM.247_WGS : “microfilaria_spp”<br>
 65 . CM.249_WGS : “microfilaria_loa_loa;plasmodium_falciparum”<br>
 66 . CM.25_WGS : “ascaris_lumbricoides;microfilaria_loa_loa”<br>
 68 . CM.253_WGS : “ascaris_lumbricoides;microfilaria_spp;trichuris_trichiura”<br>
 69 . CM.254_WGS : “hookworm;microfilaria_spp;plasmodium_falciparum;trichuris_trichiura”<br>
-70 . CM.255_WGS : “microfilaria_spp”<br>
 71 . CM.257_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 72 . CM.259_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 73 . CM.260_WGS : “microfilaria_loa_loa”<br>
 74 . CM.261_WGS : “ascaris_lumbricoides;microfilaria_spp”<br>
 75 . CM.268_WGS : “ascaris_lumbricoides;hookworm;plasmodium_falciparum”<br>
-76 . CM.270_WGS : “microfilaria_spp”<br>
 77 . CM.271_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 78 . CM.273_WGS : “plasmodium_falciparum”<br>
 90 . CM.31_WGS : “ascaris_lumbricoides;trichuris_trichiura”<br>
@@ -2119,203 +2114,6 @@
 173 . CM.90_WGS : “ascaris_lumbricoides;entamoeba_histolytica;plasmodium_falciparum”<br>
 174 . CM.94_WGS : “ascaris_lumbricoides;microfilaria_spp”<br>
 175 . CM.97_WGS : “hookworm;trichuris_trichiura”</p>
-</div>
-<div id="lifestyle" class="section level3">
-<h3 class="hasAnchor">
-<a href="#lifestyle" class="anchor"></a>lifestyle</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optiona<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Hunter-gatherer|Agriculturalist|Fisher<br>
-</li>
-<li>
-<em>description</em>: to describe the lifestyle of non-westernized people</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . CM.102_WGS : “Hunter-Gatherer”<br>
-2 . CM.103_WGS : “Hunter-Gatherer”<br>
-3 . CM.105_WGS : “Hunter-Gatherer”<br>
-4 . CM.107_WGS : “Hunter-Gatherer”<br>
-5 . CM.109_WGS : “Hunter-Gatherer”<br>
-6 . CM.111_WGS : “Hunter-Gatherer”<br>
-7 . CM.118_WGS : “Hunter-Gatherer”<br>
-8 . CM.126_WGS : “Hunter-Gatherer”<br>
-9 . CM.129_WGS : “Hunter-Gatherer”<br>
-10 . CM.13_WGS : “Agropastoralist”<br>
-11 . CM.131_WGS : “Hunter-Gatherer”<br>
-12 . CM.132_WGS : “Hunter-Gatherer”<br>
-13 . CM.138_WGS : “Agropastoralist”<br>
-14 . CM.139_WGS : “Agropastoralist”<br>
-15 . CM.146_WGS : “Agropastoralist”<br>
-16 . CM.147_WGS : “Agropastoralist”<br>
-17 . CM.152_WGS : “Agropastoralist”<br>
-18 . CM.157_WGS : “Agropastoralist”<br>
-19 . CM.16_WGS : “Hunter-Gatherer”<br>
-20 . CM.160_WGS : “Agropastoralist”<br>
-21 . CM.162_WGS : “Agropastoralist”<br>
-22 . CM.164_WGS : “Agropastoralist”<br>
-23 . CM.165_WGS : “Agropastoralist”<br>
-24 . CM.168_WGS : “Agropastoralist”<br>
-25 . CM.17_WGS : “Hunter-Gatherer”<br>
-26 . CM.172_WGS : “Agropastoralist”<br>
-27 . CM.175_WGS : “Agropastoralist”<br>
-28 . CM.176_WGS : “Agropastoralist”<br>
-29 . CM.177_WGS : “Agropastoralist”<br>
-30 . CM.178_WGS : “Agropastoralist”<br>
-31 . CM.179_WGS : “Agropastoralist”<br>
-32 . CM.18_WGS : “Hunter-Gatherer”<br>
-33 . CM.186_WGS : “Agropastoralist”<br>
-34 . CM.187_WGS : “Agropastoralist”<br>
-35 . CM.19_WGS : “Hunter-Gatherer”<br>
-36 . CM.194_WGS : “Agropastoralist”<br>
-37 . CM.195_WGS : “Agropastoralist”<br>
-38 . CM.199_WGS : “Agropastoralist”<br>
-39 . CM.20_WGS : “Agropastoralist”<br>
-40 . CM.203_WGS : “Hunter-Gatherer”<br>
-41 . CM.206_WGS : “Agropastoralist”<br>
-42 . CM.208_WGS : “Agropastoralist”<br>
-43 . CM.210_WGS : “Hunter-Gatherer”<br>
-44 . CM.211_WGS : “Hunter-Gatherer”<br>
-45 . CM.212_WGS : “Hunter-Gatherer”<br>
-46 . CM.215_WGS : “Agropastoralist”<br>
-47 . CM.219_WGS : “Hunter-Gatherer”<br>
-48 . CM.220_WGS : “Hunter-Gatherer”<br>
-49 . CM.221_WGS : “Hunter-Gatherer”<br>
-50 . CM.222_WGS : “Hunter-Gatherer”<br>
-51 . CM.223_WGS : “Hunter-Gatherer”<br>
-52 . CM.224_WGS : “Hunter-Gatherer”<br>
-53 . CM.226_WGS : “Hunter-Gatherer”<br>
-54 . CM.227_WGS : “Hunter-Gatherer”<br>
-55 . CM.228_WGS : “Agropastoralist”<br>
-56 . CM.231_WGS : “Hunter-Gatherer”<br>
-57 . CM.232_WGS : “Hunter-Gatherer”<br>
-58 . CM.233_WGS : “Hunter-Gatherer”<br>
-59 . CM.234_WGS : “Hunter-Gatherer”<br>
-60 . CM.235_WGS : “Agropastoralist”<br>
-61 . CM.237_WGS : “Agropastoralist”<br>
-62 . CM.239_WGS : “Agropastoralist”<br>
-63 . CM.24_WGS : “Agropastoralist”<br>
-64 . CM.247_WGS : “Hunter-Gatherer”<br>
-65 . CM.249_WGS : “Agropastoralist”<br>
-66 . CM.25_WGS : “Hunter-Gatherer”<br>
-67 . CM.251_WGS : “Hunter-Gatherer”<br>
-68 . CM.253_WGS : “Agropastoralist”<br>
-69 . CM.254_WGS : “Hunter-Gatherer”<br>
-70 . CM.255_WGS : “Hunter-Gatherer”<br>
-71 . CM.257_WGS : “Hunter-Gatherer”<br>
-72 . CM.259_WGS : “Agropastoralist”<br>
-73 . CM.260_WGS : “Agropastoralist”<br>
-74 . CM.261_WGS : “Agropastoralist”<br>
-75 . CM.268_WGS : “Hunter-Gatherer”<br>
-76 . CM.270_WGS : “Agropastoralist”<br>
-77 . CM.271_WGS : “Agropastoralist”<br>
-78 . CM.273_WGS : “Agropastoralist”<br>
-79 . CM.275_WGS : “Agropastoralist”<br>
-80 . CM.278_WGS : “Agropastoralist”<br>
-81 . CM.283_WGS : “Agropastoralist”<br>
-82 . CM.284_WGS : “Agropastoralist”<br>
-83 . CM.285_WGS : “Agropastoralist”<br>
-84 . CM.289_WGS : “Agropastoralist”<br>
-85 . CM.29_WGS : “Agropastoralist”<br>
-86 . CM.291_WGS : “Agropastoralist”<br>
-87 . CM.294_WGS : “Agropastoralist”<br>
-88 . CM.30_WGS : “Hunter-Gatherer”<br>
-89 . CM.308_WGS : “Agropastoralist”<br>
-90 . CM.31_WGS : “Agropastoralist”<br>
-91 . CM.310_WGS : “Agropastoralist”<br>
-92 . CM.315_WGS : “Pastoralist”<br>
-93 . CM.316_WGS : “Pastoralist”<br>
-94 . CM.317_WGS : “Agropastoralist”<br>
-95 . CM.32_WGS : “Hunter-Gatherer”<br>
-96 . CM.328_WGS : “Pastoralist”<br>
-97 . CM.335_WGS : “Pastoralist”<br>
-98 . CM.339_WGS : “Agropastoralist”<br>
-99 . CM.340_WGS : “Agropastoralist”<br>
-100 . CM.342_WGS : “Pastoralist”<br>
-101 . CM.343_WGS : “Pastoralist”<br>
-102 . CM.345_WGS : “Pastoralist”<br>
-103 . CM.347_WGS : “Pastoralist”<br>
-104 . CM.358_WGS : “Agropastoralist”<br>
-105 . CM.361_WGS : “Agropastoralist”<br>
-106 . CM.364_WGS : “Agropastoralist”<br>
-107 . CM.366_WGS : “Agropastoralist”<br>
-108 . CM.367_WGS : “Agropastoralist”<br>
-109 . CM.369_WGS : “Agropastoralist”<br>
-110 . CM.370_WGS : “Agropastoralist”<br>
-111 . CM.373_WGS : “Agropastoralist”<br>
-112 . CM.375_WGS : “Agropastoralist”<br>
-113 . CM.376_WGS : “Agropastoralist”<br>
-114 . CM.378_WGS : “Agropastoralist”<br>
-115 . CM.382_WGS : “Agropastoralist”<br>
-116 . CM.389_WGS : “Agropastoralist”<br>
-117 . CM.390_WGS : “Pastoralist”<br>
-118 . CM.392_WGS : “Pastoralist”<br>
-119 . CM.395_WGS : “Agropastoralist”<br>
-120 . CM.397_WGS : “Agropastoralist”<br>
-121 . CM.401_WGS : “Agropastoralist”<br>
-122 . CM.402_WGS : “Agropastoralist”<br>
-123 . CM.403_WGS : “Agropastoralist”<br>
-124 . CM.408_WGS : “Agropastoralist”<br>
-125 . CM.409_WGS : “Agropastoralist”<br>
-126 . CM.41_WGS : “Hunter-Gatherer”<br>
-127 . CM.410_WGS : “Agropastoralist”<br>
-128 . CM.412_WGS : “Agropastoralist”<br>
-129 . CM.413_WGS : “Agropastoralist”<br>
-130 . CM.418_WGS : “Agropastoralist”<br>
-131 . CM.425_WGS : “Agropastoralist”<br>
-132 . CM.432_WGS : “Agropastoralist”<br>
-133 . CM.437_WGS : “Agropastoralist”<br>
-134 . CM.438_WGS : “Pastoralist”<br>
-135 . CM.439_WGS : “Agropastoralist”<br>
-136 . CM.44_WGS : “Hunter-Gatherer”<br>
-137 . CM.443_WGS : “Agropastoralist”<br>
-138 . CM.445_WGS : “Agropastoralist”<br>
-139 . CM.454_WGS : “Agropastoralist”<br>
-140 . CM.46_WGS : “Hunter-Gatherer”<br>
-141 . CM.466_WGS : “Agropastoralist”<br>
-142 . CM.47_WGS : “Agropastoralist”<br>
-143 . CM.486_WGS : “Agropastoralist”<br>
-144 . CM.490_WGS : “Agropastoralist”<br>
-145 . CM.506_WGS : “Hunter-Gatherer”<br>
-146 . CM.507_WGS : “Hunter-Gatherer”<br>
-147 . CM.511_WGS : “Hunter-Gatherer”<br>
-148 . CM.512_WGS : “Agropastoralist”<br>
-149 . CM.514_WGS : “Agropastoralist”<br>
-150 . CM.520_WGS : “Pastoralist”<br>
-151 . CM.521_WGS : “Pastoralist”<br>
-152 . CM.525_WGS : “Pastoralist”<br>
-153 . CM.528_WGS : “Pastoralist”<br>
-154 . CM.530_WGS : “Pastoralist”<br>
-155 . CM.532_WGS : “Pastoralist”<br>
-156 . CM.536_WGS : “Pastoralist”<br>
-157 . CM.55_WGS : “Hunter-Gatherer”<br>
-158 . CM.553_WGS : “Pastoralist”<br>
-159 . CM.555_WGS : “Pastoralist”<br>
-160 . CM.57_WGS : “Hunter-Gatherer”<br>
-161 . CM.574_WGS : “Pastoralist”<br>
-162 . CM.580_WGS : “Pastoralist”<br>
-163 . CM.64_WGS : “Hunter-Gatherer”<br>
-164 . CM.65_WGS : “Hunter-Gatherer”<br>
-165 . CM.67_WGS : “Agropastoralist”<br>
-166 . CM.7_WGS : “Agropastoralist”<br>
-167 . CM.70_WGS : “Hunter-Gatherer”<br>
-168 . CM.75_WGS : “Hunter-Gatherer”<br>
-169 . CM.79_WGS : “Hunter-Gatherer”<br>
-170 . CM.80_WGS : “Hunter-Gatherer”<br>
-171 . CM.82_WGS : “Hunter-Gatherer”<br>
-172 . CM.86_WGS : “Hunter-Gatherer”<br>
-173 . CM.90_WGS : “Hunter-Gatherer”<br>
-174 . CM.94_WGS : “Hunter-Gatherer”<br>
-175 . CM.97_WGS : “Hunter-Gatherer”</p>
 </div>
 <div id="curator-1" class="section level3">
 <h3 class="hasAnchor">
@@ -3518,7 +3316,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
