@@ -80,12 +80,11 @@
 <li>Place a tab-separated file ending in "_metadata.tsv" in a directory under inst/curation. Commit and create a pull request. Or if you don’t like git, use Github.com’s <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated">“Upload Files” button</a> to upload to create a pull request without the need to use git.</li>
 <li>Does the new dataset pass all checks? It takes 3-4 minutes for the check to be completed here:   <a href="https://travis-ci.org/waldronlab/curatedMetagenomicDataCuration"><img src="https://travis-ci.org/waldronlab/curatedMetagenomicDataCuration.svg?branch=master" alt="Travis-CI Build Status"></a>
 </li>
-<li>See the <a href="https://waldronlab.github.io/curatedMetagenomicDataCuration">detailed syntax-checking report</a>.</li>
+<li>See the <a href="https://waldronlab.io/curatedMetagenomicDataCuration/articles/curatedMetagenomicDataCuration.html">detailed syntax-checking report</a>.</li>
 </ol>
-<p>If you don’t want to wait for travisCI to finish checking, you can check on your own computer:</p>
+<p>If you don’t want to wait for GitHub Actions to finish checking, you can check on your own computer:</p>
 <pre><code>BiocInstaller::biocLite("waldronlab/curatedMetagenomicDataCuration", build_vignettes=TRUE)
 browseVignettes("curatedMetagenomicDataCuration")</code></pre>
-<p><em>Note:</em> the package gets built twice as a work-around to <a href="https://github.com/travis-ci/travis-ci/issues/8038">this Travis-CI for R issue</a>. If this issue is resolved, the build can be made a little faster by reverting to the .travis.yml and .push_gh_pages.sh of <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/114e245308fa872a35b8eb96908f8ff61e041c8a">this version</a>.</p>
 </div>
 <div id="more-complete-introduction" class="section level1">
 <h1 class="hasAnchor">
