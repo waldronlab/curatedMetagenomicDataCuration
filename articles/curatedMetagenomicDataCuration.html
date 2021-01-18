@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-18 16:31:17 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-18 16:32:35 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -145,7 +145,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -561,83 +561,7 @@
 <h1 class="hasAnchor">
 <a href="#castro-nallare_2015_metadata-tsv" class="anchor"></a>Castro-NallarE_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Castro-NallarE_2015/Castro-NallarE_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Castro-NallarE_2015/Castro-NallarE_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
-<div id="study_condition" class="section level3">
-<h3 class="hasAnchor">
-<a href="#study_condition" class="anchor"></a>study_condition</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: ACVD|acute_diarrhoea|carcinoma_surgery_history|cellulitis|melanoma|mucositis|gangrene|osteoarthritis|control|NK|peri-implantitis|pyelonefritis|salmonellosis|sepsis|skininf|suspinf|arthritis|STEC|CRC|adenoma|fatty_liver|hypertension|pre-hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|cephalosporins|AS|RA|metabolic_syndrome|FMT|premature_born|periodontitis|SRP|STH|BD|chorioamnionitis|pre-eclampsia|carcinoma_surgery_history<br>
-</li>
-<li>
-<em>description</em>: The main disease or condition under study; control for controls;STEC=Shiga-toxigenic E.coli;CDI=Clostridium difficile infection;IBD=Inflammatory bowel disease;T2D= Type-2 diabetes;T1D=Type-1 diabetes;AD=Atopic dermatitis;AR=Allergic rhinitis;IGT=Impaired glucose tolerance;AS=Ankylosing spondylitis;RA=rheumatic arthritis;FMT=fecal microbiota transplantaion;SRP=Scaling and root planing;CMV=Cytomegalovirus;HBV_HDV_HEV= Hepatitis viruses;BD= Bechet-disease;ACVD= Artheriosclerotic Cardiovalscular Disease</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . ES_001 : “schizofrenia”<br>
-2 . ES_007 : “schizofrenia”<br>
-3 . ES_010 : “schizofrenia”<br>
-4 . ES_014 : “schizofrenia”<br>
-5 . ES_017 : “schizofrenia”<br>
-6 . ES_019 : “schizofrenia”<br>
-7 . ES_024 : “schizofrenia”<br>
-8 . ES_043 : “schizofrenia”<br>
-9 . ES_046 : “schizofrenia”<br>
-10 . ES_048 : “schizofrenia”<br>
-12 . ES_080 : “schizofrenia”<br>
-20 . ES_108 : “schizofrenia”<br>
-23 . ES_116 : “schizofrenia”<br>
-24 . ES_132 : “schizofrenia”<br>
-25 . ES_137 : “schizofrenia”<br>
-26 . ES_147 : “schizofrenia”</p>
-</div>
-<div id="disease-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#disease-1" class="anchor"></a>disease</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
-</li>
-<li>
-<em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . ES_001 : “schizofrenia”<br>
-2 . ES_007 : “schizofrenia”<br>
-4 . ES_014 : “schizofrenia”<br>
-5 . ES_017 : “schizofrenia”<br>
-6 . ES_019 : “schizofrenia”<br>
-7 . ES_024 : “schizofrenia”<br>
-8 . ES_043 : “schizofrenia”<br>
-9 . ES_046 : “schizofrenia”<br>
-10 . ES_048 : “schizofrenia”<br>
-20 . ES_108 : “schizofrenia”<br>
-23 . ES_116 : “schizofrenia”<br>
-24 . ES_132 : “schizofrenia”<br>
-26 . ES_147 : “CD;schizofrenia”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="chengpingw_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -661,9 +585,9 @@
 <h1 class="hasAnchor">
 <a href="#contevillelc_2019_metadata-tsv" class="anchor"></a>ContevilleLC_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-2" class="section level2">
+<div id="entry-errors-1" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
 <div id="curator" class="section level3">
 <h3 class="hasAnchor">
 <a href="#curator" class="anchor"></a>curator</h3>
@@ -754,9 +678,9 @@
 <li><p>“PPD_L” is not defined in the template.</p></li>
 </ul>
 </div>
-<div id="entry-errors-3" class="section level2">
+<div id="entry-errors-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
 <div id="body_subsite" class="section level3">
 <h3 class="hasAnchor">
 <a href="#body_subsite" class="anchor"></a>body_subsite</h3>
@@ -780,9 +704,9 @@
 <p><strong>Errors</strong></p>
 <p>113 . SP_122SPT_T016 : “subginigval_plaque”</p>
 </div>
-<div id="disease-2" class="section level3">
+<div id="disease-1" class="section level3">
 <h3 class="hasAnchor">
-<a href="#disease-2" class="anchor"></a>disease</h3>
+<a href="#disease-1" class="anchor"></a>disease</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -795,7 +719,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -965,9 +889,9 @@
 <h1 class="hasAnchor">
 <a href="#hannigangd_2017_metadata-tsv" class="anchor"></a>HanniganGD_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-4" class="section level2">
+<div id="entry-errors-3" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
 <div id="fobt" class="section level3">
 <h3 class="hasAnchor">
 <a href="#fobt" class="anchor"></a>fobt</h3>
@@ -1102,9 +1026,9 @@
 <h1 class="hasAnchor">
 <a href="#hmp_2019_t2d_metadata-tsv" class="anchor"></a>HMP_2019_t2d_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-5" class="section level2">
+<div id="entry-errors-4" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-5" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
 <div id="bilubirin" class="section level3">
 <h3 class="hasAnchor">
 <a href="#bilubirin" class="anchor"></a>bilubirin</h3>
@@ -1226,9 +1150,9 @@
 <h1 class="hasAnchor">
 <a href="#kaurk_2020_metadata-tsv" class="anchor"></a>KaurK_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-6" class="section level2">
+<div id="entry-errors-5" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-6" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-5" class="anchor"></a>Entry errors</h2>
 <div id="dna_extraction_kit" class="section level3">
 <h3 class="hasAnchor">
 <a href="#dna_extraction_kit" class="anchor"></a>DNA_extraction_kit</h3>
@@ -1331,292 +1255,6 @@
 <li>“fasting_glucose” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-7" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
-<div id="curator-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#curator-1" class="anchor"></a>curator</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Mireia_VallesColomer<br>
-</li>
-<li>
-<em>description</em>: Curator name.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . DLF005-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-2 . DLM006-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-3 . DOM005-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-4 . DOM017-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-5 . MH0192 : “Aitor_Blanco;Paolo_Manghi”<br>
-6 . MH0221 : “Aitor_Blanco;Paolo_Manghi”<br>
-7 . MH0222 : “Aitor_Blanco;Paolo_Manghi”<br>
-8 . MH0234 : “Aitor_Blanco;Paolo_Manghi”<br>
-9 . MH0238 : “Aitor_Blanco;Paolo_Manghi”<br>
-10 . MH0245 : “Aitor_Blanco;Paolo_Manghi”<br>
-11 . MH0246 : “Aitor_Blanco;Paolo_Manghi”<br>
-12 . MH0252 : “Aitor_Blanco;Paolo_Manghi”<br>
-13 . MH0259 : “Aitor_Blanco;Paolo_Manghi”<br>
-14 . MH0260 : “Aitor_Blanco;Paolo_Manghi”<br>
-15 . MH0261 : “Aitor_Blanco;Paolo_Manghi”<br>
-16 . MH0262 : “Aitor_Blanco;Paolo_Manghi”<br>
-17 . MH0264 : “Aitor_Blanco;Paolo_Manghi”<br>
-18 . MH0265 : “Aitor_Blanco;Paolo_Manghi”<br>
-19 . MH0266 : “Aitor_Blanco;Paolo_Manghi”<br>
-20 . MH0268 : “Aitor_Blanco;Paolo_Manghi”<br>
-21 . MH0270 : “Aitor_Blanco;Paolo_Manghi”<br>
-22 . MH0271 : “Aitor_Blanco;Paolo_Manghi”<br>
-23 . MH0280 : “Aitor_Blanco;Paolo_Manghi”<br>
-24 . MH0281 : “Aitor_Blanco;Paolo_Manghi”<br>
-25 . MH0283 : “Aitor_Blanco;Paolo_Manghi”<br>
-26 . MH0284 : “Aitor_Blanco;Paolo_Manghi”<br>
-27 . MH0290 : “Aitor_Blanco;Paolo_Manghi”<br>
-28 . MH0293 : “Aitor_Blanco;Paolo_Manghi”<br>
-29 . MH0297 : “Aitor_Blanco;Paolo_Manghi”<br>
-30 . MH0298 : “Aitor_Blanco;Paolo_Manghi”<br>
-31 . MH0299 : “Aitor_Blanco;Paolo_Manghi”<br>
-32 . MH0301 : “Aitor_Blanco;Paolo_Manghi”<br>
-33 . MH0303 : “Aitor_Blanco;Paolo_Manghi”<br>
-34 . MH0308 : “Aitor_Blanco;Paolo_Manghi”<br>
-35 . MH0309 : “Aitor_Blanco;Paolo_Manghi”<br>
-36 . MH0310 : “Aitor_Blanco;Paolo_Manghi”<br>
-37 . MH0311 : “Aitor_Blanco;Paolo_Manghi”<br>
-38 . MH0314 : “Aitor_Blanco;Paolo_Manghi”<br>
-39 . MH0315 : “Aitor_Blanco;Paolo_Manghi”<br>
-40 . MH0319 : “Aitor_Blanco;Paolo_Manghi”<br>
-41 . MH0323 : “Aitor_Blanco;Paolo_Manghi”<br>
-42 . MH0325 : “Aitor_Blanco;Paolo_Manghi”<br>
-43 . MH0326 : “Aitor_Blanco;Paolo_Manghi”<br>
-44 . MH0327 : “Aitor_Blanco;Paolo_Manghi”<br>
-45 . MH0328 : “Aitor_Blanco;Paolo_Manghi”<br>
-46 . MH0329 : “Aitor_Blanco;Paolo_Manghi”<br>
-47 . MH0330 : “Aitor_Blanco;Paolo_Manghi”<br>
-48 . MH0332 : “Aitor_Blanco;Paolo_Manghi”<br>
-49 . MH0334 : “Aitor_Blanco;Paolo_Manghi”<br>
-50 . MH0335 : “Aitor_Blanco;Paolo_Manghi”<br>
-51 . MH0336 : “Aitor_Blanco;Paolo_Manghi”<br>
-52 . MH0337 : “Aitor_Blanco;Paolo_Manghi”<br>
-53 . MH0338 : “Aitor_Blanco;Paolo_Manghi”<br>
-54 . MH0339 : “Aitor_Blanco;Paolo_Manghi”<br>
-55 . MH0340 : “Aitor_Blanco;Paolo_Manghi”<br>
-56 . MH0341 : “Aitor_Blanco;Paolo_Manghi”<br>
-57 . MH0342 : “Aitor_Blanco;Paolo_Manghi”<br>
-58 . MH0343 : “Aitor_Blanco;Paolo_Manghi”<br>
-59 . MH0345 : “Aitor_Blanco;Paolo_Manghi”<br>
-60 . MH0346 : “Aitor_Blanco;Paolo_Manghi”<br>
-61 . MH0347 : “Aitor_Blanco;Paolo_Manghi”<br>
-62 . MH0348 : “Aitor_Blanco;Paolo_Manghi”<br>
-63 . MH0349 : “Aitor_Blanco;Paolo_Manghi”<br>
-64 . MH0350 : “Aitor_Blanco;Paolo_Manghi”<br>
-65 . MH0351 : “Aitor_Blanco;Paolo_Manghi”<br>
-66 . MH0354 : “Aitor_Blanco;Paolo_Manghi”<br>
-67 . MH0355 : “Aitor_Blanco;Paolo_Manghi”<br>
-68 . MH0356 : “Aitor_Blanco;Paolo_Manghi”<br>
-69 . MH0357 : “Aitor_Blanco;Paolo_Manghi”<br>
-70 . MH0358 : “Aitor_Blanco;Paolo_Manghi”<br>
-71 . MH0359 : “Aitor_Blanco;Paolo_Manghi”<br>
-72 . MH0360 : “Aitor_Blanco;Paolo_Manghi”<br>
-73 . MH0361 : “Aitor_Blanco;Paolo_Manghi”<br>
-74 . MH0362 : “Aitor_Blanco;Paolo_Manghi”<br>
-75 . MH0363 : “Aitor_Blanco;Paolo_Manghi”<br>
-76 . MH0364 : “Aitor_Blanco;Paolo_Manghi”<br>
-77 . MH0365 : “Aitor_Blanco;Paolo_Manghi”<br>
-78 . MH0366 : “Aitor_Blanco;Paolo_Manghi”<br>
-79 . MH0367 : “Aitor_Blanco;Paolo_Manghi”<br>
-80 . MH0368 : “Aitor_Blanco;Paolo_Manghi”<br>
-81 . MH0369 : “Aitor_Blanco;Paolo_Manghi”<br>
-82 . MH0370 : “Aitor_Blanco;Paolo_Manghi”<br>
-83 . MH0371 : “Aitor_Blanco;Paolo_Manghi”<br>
-84 . MH0372 : “Aitor_Blanco;Paolo_Manghi”<br>
-85 . MH0373 : “Aitor_Blanco;Paolo_Manghi”<br>
-86 . MH0374 : “Aitor_Blanco;Paolo_Manghi”<br>
-87 . MH0375 : “Aitor_Blanco;Paolo_Manghi”<br>
-88 . MH0376 : “Aitor_Blanco;Paolo_Manghi”<br>
-89 . MH0377 : “Aitor_Blanco;Paolo_Manghi”<br>
-90 . MH0378 : “Aitor_Blanco;Paolo_Manghi”<br>
-91 . MH0379 : “Aitor_Blanco;Paolo_Manghi”<br>
-92 . MH0381 : “Aitor_Blanco;Paolo_Manghi”<br>
-93 . MH0382 : “Aitor_Blanco;Paolo_Manghi”<br>
-94 . MH0383 : “Aitor_Blanco;Paolo_Manghi”<br>
-95 . MH0384 : “Aitor_Blanco;Paolo_Manghi”<br>
-96 . MH0385 : “Aitor_Blanco;Paolo_Manghi”<br>
-97 . MH0386 : “Aitor_Blanco;Paolo_Manghi”<br>
-98 . MH0387 : “Aitor_Blanco;Paolo_Manghi”<br>
-99 . MH0388 : “Aitor_Blanco;Paolo_Manghi”<br>
-100 . MH0389 : “Aitor_Blanco;Paolo_Manghi”<br>
-101 . MH0390 : “Aitor_Blanco;Paolo_Manghi”<br>
-102 . MH0391 : “Aitor_Blanco;Paolo_Manghi”<br>
-103 . MH0392 : “Aitor_Blanco;Paolo_Manghi”<br>
-104 . MH0393 : “Aitor_Blanco;Paolo_Manghi”<br>
-105 . MH0394 : “Aitor_Blanco;Paolo_Manghi”<br>
-106 . MH0395 : “Aitor_Blanco;Paolo_Manghi”<br>
-107 . MH0396 : “Aitor_Blanco;Paolo_Manghi”<br>
-108 . MH0397 : “Aitor_Blanco;Paolo_Manghi”<br>
-109 . MH0398 : “Aitor_Blanco;Paolo_Manghi”<br>
-110 . MH0399 : “Aitor_Blanco;Paolo_Manghi”<br>
-111 . MH0400 : “Aitor_Blanco;Paolo_Manghi”<br>
-112 . MH0401 : “Aitor_Blanco;Paolo_Manghi”<br>
-113 . MH0402 : “Aitor_Blanco;Paolo_Manghi”<br>
-114 . NLF002-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-115 . NLF009-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-116 . NLM009-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-117 . NLM025-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-118 . NOF002-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-119 . NOF007-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-120 . NOF013-IE : “Aitor_Blanco;Paolo_Manghi”<br>
-121 . O2.CD1-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-122 . O2.CD1-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-123 . O2.CD2-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-124 . O2.CD2-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-125 . O2.CD3-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-126 . O2.UC1-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-127 . O2.UC11-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-128 . O2.UC12-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-129 . O2.UC13-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-130 . O2.UC14-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-131 . O2.UC15-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-132 . O2.UC15-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-133 . O2.UC15-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-134 . O2.UC16-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-135 . O2.UC17-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-136 . O2.UC18-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-137 . O2.UC19-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-138 . O2.UC20-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-139 . O2.UC2-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-140 . O2.UC21-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-141 . O2.UC22-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-142 . O2.UC23-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-143 . O2.UC24-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-144 . O2.UC26-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-145 . O2.UC27-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-146 . O2.UC28-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-147 . O2.UC28-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-148 . O2.UC28-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-149 . O2.UC29-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-150 . O2.UC30-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-151 . O2.UC3-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-152 . O2.UC31-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-153 . O2.UC32-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-154 . O2.UC35-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-155 . O2.UC36-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-156 . O2.UC36-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-157 . O2.UC37-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-158 . O2.UC38-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-159 . O2.UC40-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-160 . O2.UC4-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-161 . O2.UC41-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-162 . O2.UC43-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-163 . O2.UC44-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-164 . O2.UC46-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-165 . O2.UC47-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-166 . O2.UC48-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-167 . O2.UC5-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-168 . O2.UC6-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-169 . O2.UC6-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-170 . O2.UC6-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-171 . O2.UC7-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-172 . O2.UC7-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-173 . O2.UC8-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-174 . O2.UC8-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-175 . O2.UC8-2 : “Aitor_Blanco;Paolo_Manghi”<br>
-176 . O2.UC9-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-177 . V1.CD1-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-178 . V1.CD1-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-179 . V1.CD12-3 : “Aitor_Blanco;Paolo_Manghi”<br>
-180 . V1.CD1-3-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-181 . V1.CD20-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-182 . V1.CD2-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-183 . V1.CD2-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-184 . V1.CD3-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-185 . V1.CD3-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-186 . V1.CD32-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-187 . V1.CD32-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-188 . V1.CD3-3-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-189 . V1.CD37-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-190 . V1.CD40-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-191 . V1.CD4-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-192 . V1.CD4-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-193 . V1.CD43-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-194 . V1.CD44-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-195 . V1.CD44-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-196 . V1.CD45-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-197 . V1.CD46-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-198 . V1.CD48-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-199 . V1.CD49-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-200 . V1.CD50-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-201 . V1.CD5-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-202 . V1.CD51-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-203 . V1.CD52-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-204 . V1.CD53-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-205 . V1.CD54-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-206 . V1.CD55-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-207 . V1.CD6-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-208 . V1.CD6-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
-209 . V1.CD7-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-210 . V1.CD8-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
-211 . V1.FI01 : “Aitor_Blanco;Paolo_Manghi”<br>
-212 . V1.FI02 : “Aitor_Blanco;Paolo_Manghi”<br>
-213 . V1.FI03 : “Aitor_Blanco;Paolo_Manghi”<br>
-214 . V1.FI04 : “Aitor_Blanco;Paolo_Manghi”<br>
-215 . V1.FI05 : “Aitor_Blanco;Paolo_Manghi”<br>
-216 . V1.FI06 : “Aitor_Blanco;Paolo_Manghi”<br>
-217 . V1.FI07 : “Aitor_Blanco;Paolo_Manghi”<br>
-218 . V1.FI08 : “Aitor_Blanco;Paolo_Manghi”<br>
-219 . V1.FI09 : “Aitor_Blanco;Paolo_Manghi”<br>
-220 . V1.FI10 : “Aitor_Blanco;Paolo_Manghi”<br>
-221 . V1.FI11 : “Aitor_Blanco;Paolo_Manghi”<br>
-222 . V1.FI12 : “Aitor_Blanco;Paolo_Manghi”<br>
-223 . V1.FI13 : “Aitor_Blanco;Paolo_Manghi”<br>
-224 . V1.FI14 : “Aitor_Blanco;Paolo_Manghi”<br>
-225 . V1.FI15 : “Aitor_Blanco;Paolo_Manghi”<br>
-226 . V1.FI16 : “Aitor_Blanco;Paolo_Manghi”<br>
-227 . V1.FI17 : “Aitor_Blanco;Paolo_Manghi”<br>
-228 . V1.FI18 : “Aitor_Blanco;Paolo_Manghi”<br>
-229 . V1.FI19 : “Aitor_Blanco;Paolo_Manghi”<br>
-230 . V1.FI20 : “Aitor_Blanco;Paolo_Manghi”<br>
-231 . V1.FI21 : “Aitor_Blanco;Paolo_Manghi”<br>
-232 . V1.FI22 : “Aitor_Blanco;Paolo_Manghi”<br>
-233 . V1.FI23 : “Aitor_Blanco;Paolo_Manghi”<br>
-234 . V1.FI24 : “Aitor_Blanco;Paolo_Manghi”<br>
-235 . V1.FI25 : “Aitor_Blanco;Paolo_Manghi”<br>
-236 . V1.FI26 : “Aitor_Blanco;Paolo_Manghi”<br>
-237 . V1.FI27 : “Aitor_Blanco;Paolo_Manghi”<br>
-238 . V1.FI28 : “Aitor_Blanco;Paolo_Manghi”<br>
-239 . V1.FI29 : “Aitor_Blanco;Paolo_Manghi”<br>
-240 . V1.FI30 : “Aitor_Blanco;Paolo_Manghi”<br>
-241 . V1.FI31 : “Aitor_Blanco;Paolo_Manghi”<br>
-242 . V1.FI32 : “Aitor_Blanco;Paolo_Manghi”<br>
-243 . V1.FI33 : “Aitor_Blanco;Paolo_Manghi”<br>
-244 . V1.FI34 : “Aitor_Blanco;Paolo_Manghi”<br>
-245 . V1.FI35 : “Aitor_Blanco;Paolo_Manghi”<br>
-246 . V1.FI36 : “Aitor_Blanco;Paolo_Manghi”<br>
-247 . V1.FI37 : “Aitor_Blanco;Paolo_Manghi”<br>
-248 . V1.UC22-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-249 . V1.UC38-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-250 . V1.UC39-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-251 . V1.UC40-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-252 . V1.UC47-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-253 . V1.UC54-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-254 . V1.UC56-1 : “Aitor_Blanco;Paolo_Manghi”<br>
-255 . V1.UC58-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-256 . V1.UC59-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-257 . V1.UC59-4 : “Aitor_Blanco;Paolo_Manghi”<br>
-258 . V1.UC60-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-259 . V1.UC63-0 : “Aitor_Blanco;Paolo_Manghi”<br>
-260 . V1.UC64-0 : “Aitor_Blanco;Paolo_Manghi”</p>
-</div>
-</div>
 </div>
 <div id="lij_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -1652,9 +1290,9 @@
 <h1 class="hasAnchor">
 <a href="#loombar_2017_metadata-tsv" class="anchor"></a>LoombaR_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-8" class="section level2">
+<div id="entry-errors-6" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-6" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype" class="anchor"></a>disease_subtype</h3>
@@ -1670,7 +1308,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura|first_episode_schizofrenia|repeated_episodes_shizofrenia”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -1764,9 +1402,9 @@
 <h1 class="hasAnchor">
 <a href="#qinn_2014_metadata-tsv" class="anchor"></a>QinN_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-9" class="section level2">
+<div id="entry-errors-7" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-1" class="anchor"></a>disease_subtype</h3>
@@ -1782,7 +1420,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura|first_episode_schizofrenia|repeated_episodes_shizofrenia”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -1930,12 +1568,12 @@
 <h1 class="hasAnchor">
 <a href="#rosaba_2018_metadata-tsv" class="anchor"></a>RosaBA_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-10" class="section level2">
+<div id="entry-errors-8" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
-<div id="disease-3" class="section level3">
+<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<div id="disease-2" class="section level3">
 <h3 class="hasAnchor">
-<a href="#disease-3" class="anchor"></a>disease</h3>
+<a href="#disease-2" class="anchor"></a>disease</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -1948,7 +1586,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -1989,7 +1627,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura|first_episode_schizofrenia|repeated_episodes_shizofrenia”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -2012,12 +1650,12 @@
 <h1 class="hasAnchor">
 <a href="#rubelma_2020_metadata-tsv" class="anchor"></a>RubelMA_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-11" class="section level2">
+<div id="entry-errors-9" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
-<div id="disease-4" class="section level3">
+<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
+<div id="disease-3" class="section level3">
 <h3 class="hasAnchor">
-<a href="#disease-4" class="anchor"></a>disease</h3>
+<a href="#disease-3" class="anchor"></a>disease</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2030,7 +1668,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -2141,7 +1779,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura|first_episode_schizofrenia|repeated_episodes_shizofrenia”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -2342,9 +1980,9 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-12" class="section level2">
+<div id="entry-errors-10" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
 <div id="sequencing_platform" class="section level3">
 <h3 class="hasAnchor">
 <a href="#sequencing_platform" class="anchor"></a>sequencing_platform</h3>
@@ -2391,9 +2029,9 @@
 <h1 class="hasAnchor">
 <a href="#yachidas_2019_metadata-tsv" class="anchor"></a>YachidaS_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-13" class="section level2">
+<div id="entry-errors-11" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
 <div id="ajcc" class="section level3">
 <h3 class="hasAnchor">
 <a href="#ajcc" class="anchor"></a>ajcc</h3>
@@ -2441,9 +2079,9 @@
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-14" class="section level2">
+<div id="entry-errors-12" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
 <div id="tnm" class="section level3">
 <h3 class="hasAnchor">
 <a href="#tnm" class="anchor"></a>tnm</h3>
@@ -2459,15 +2097,13 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: t4n1m1|t3nxm1|t2n0m1|tnm|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0<br>
+<em>allowedvalues</em>: t4n1m1|t3nxm1|t2n0m1|tnm|t3n3m1|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0<br>
 </li>
 <li>
 <em>description</em>: TNM classification for colorectal-cancer.</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>5 . SZAXPI003413-4 : “t3n3m1”<br>
-46 . SZAXPI015225-18 : “t3n3m1”<br>
-107 . SZAXPI017463-36 : “t3nm0”<br>
+<p>107 . SZAXPI017463-36 : “t3nm0”<br>
 108 . SZAXPI017464-37 : “t3nm0”</p>
 </div>
 </div>
@@ -2488,233 +2124,9 @@
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-15" class="section level2">
+<div id="entry-errors-13" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-15" class="anchor"></a>Entry errors</h2>
-<div id="study_condition-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#study_condition-1" class="anchor"></a>study_condition</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: ACVD|acute_diarrhoea|carcinoma_surgery_history|cellulitis|melanoma|mucositis|gangrene|osteoarthritis|control|NK|peri-implantitis|pyelonefritis|salmonellosis|sepsis|skininf|suspinf|arthritis|STEC|CRC|adenoma|fatty_liver|hypertension|pre-hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|cephalosporins|AS|RA|metabolic_syndrome|FMT|premature_born|periodontitis|SRP|STH|BD|chorioamnionitis|pre-eclampsia|carcinoma_surgery_history<br>
-</li>
-<li>
-<em>description</em>: The main disease or condition under study; control for controls;STEC=Shiga-toxigenic E.coli;CDI=Clostridium difficile infection;IBD=Inflammatory bowel disease;T2D= Type-2 diabetes;T1D=Type-1 diabetes;AD=Atopic dermatitis;AR=Allergic rhinitis;IGT=Impaired glucose tolerance;AS=Ankylosing spondylitis;RA=rheumatic arthritis;FMT=fecal microbiota transplantaion;SRP=Scaling and root planing;CMV=Cytomegalovirus;HBV_HDV_HEV= Hepatitis viruses;BD= Bechet-disease;ACVD= Artheriosclerotic Cardiovalscular Disease</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>3 . wHAXPI032583-21 : “schizofrenia”<br>
-4 . wHAXPI032584-22 : “schizofrenia”<br>
-5 . wHAXPI032585-23 : “schizofrenia”<br>
-6 . wHAXPI032586-25 : “schizofrenia”<br>
-7 . wHAXPI032587-26 : “schizofrenia”<br>
-8 . wHAXPI032588-27 : “schizofrenia”<br>
-9 . wHAXPI032589-28 : “schizofrenia”<br>
-10 . wHAXPI032590-29 : “schizofrenia”<br>
-11 . wHAXPI032591-31 : “schizofrenia”<br>
-12 . wHAXPI032592-32 : “schizofrenia”<br>
-13 . wHAXPI032593-34 : “schizofrenia”<br>
-14 . wHAXPI032594-36 : “schizofrenia”<br>
-21 . wHAXPI032601-50 : “schizofrenia”<br>
-22 . wHAXPI032602-54 : “schizofrenia”<br>
-23 . wHAXPI032603-63 : “schizofrenia”<br>
-24 . wHAXPI032604-74 : “schizofrenia”<br>
-25 . wHAXPI032605-75 : “schizofrenia”<br>
-26 . wHAXPI032606-80 : “schizofrenia”<br>
-27 . wHAXPI032607-89 : “schizofrenia”<br>
-28 . wHAXPI032608-111 : “schizofrenia”<br>
-29 . wHAXPI032609-18 : “schizofrenia”<br>
-30 . wHAXPI032610-19 : “schizofrenia”<br>
-31 . wHAXPI032611-21 : “schizofrenia”<br>
-32 . wHAXPI032612-22 : “schizofrenia”<br>
-33 . wHAXPI032613-23 : “schizofrenia”<br>
-34 . wHAXPI032614-24 : “schizofrenia”<br>
-35 . wHAXPI032615-25 : “schizofrenia”<br>
-49 . wHAXPI032697-24 : “schizofrenia”<br>
-74 . wHAXPI032804-39 : “schizofrenia”<br>
-75 . wHAXPI032806-41 : “schizofrenia”<br>
-76 . wHAXPI032807-42 : “schizofrenia”<br>
-77 . wHAXPI032808-45 : “schizofrenia”<br>
-78 . wHAXPI032809-47 : “schizofrenia”<br>
-79 . wHAXPI032810-50 : “schizofrenia”<br>
-80 . wHAXPI032811-54 : “schizofrenia”<br>
-81 . wHAXPI032812-63 : “schizofrenia”<br>
-82 . wHAXPI032813-74 : “schizofrenia”<br>
-83 . wHAXPI032814-75 : “schizofrenia”<br>
-84 . wHAXPI032815-80 : “schizofrenia”<br>
-85 . wHAXPI032816-89 : “schizofrenia”<br>
-86 . wHAXPI032817-111 : “schizofrenia”<br>
-87 . wHAXPI033593-26 : “schizofrenia”<br>
-88 . wHAXPI033594-31 : “schizofrenia”<br>
-89 . wHAXPI033598-32 : “schizofrenia”<br>
-90 . wHAXPI033601-28 : “schizofrenia”<br>
-91 . wHAXPI033605-29 : “schizofrenia”<br>
-92 . wHAXPI033606-30 : “schizofrenia”<br>
-93 . wHAXPI033608-27 : “schizofrenia”<br>
-94 . wHAXPI033632-52 : “schizofrenia”<br>
-95 . wHAXPI033633-76 : “schizofrenia”<br>
-96 . wHAXPI033634-77 : “schizofrenia”<br>
-98 . wHAXPI033636-79 : “schizofrenia”<br>
-101 . wHAXPI033790-16 : “schizofrenia”<br>
-102 . wHAXPI033791-18 : “schizofrenia”<br>
-103 . wHAXPI033792-19 : “schizofrenia”<br>
-104 . wHAXPI033793-20 : “schizofrenia”<br>
-105 . wHAXPI033794-21 : “schizofrenia”<br>
-106 . wHAXPI033795-22 : “schizofrenia”<br>
-107 . wHAXPI033796-23 : “schizofrenia”<br>
-108 . wHAXPI033810-24 : “schizofrenia”<br>
-109 . wHAXPI033811-25 : “schizofrenia”<br>
-110 . wHAXPI033812-26 : “schizofrenia”<br>
-111 . wHAXPI033813-27 : “schizofrenia”<br>
-112 . wHAXPI033814-28 : “schizofrenia”<br>
-113 . wHAXPI033815-29 : “schizofrenia”<br>
-114 . wHAXPI033816-30 : “schizofrenia”<br>
-115 . wHAXPI033817-31 : “schizofrenia”<br>
-116 . wHAXPI033818-32 : “schizofrenia”<br>
-117 . wHAXPI033819-34 : “schizofrenia”<br>
-123 . wHAXPI033825-42 : “schizofrenia”<br>
-124 . wHAXPI033826-45 : “schizofrenia”<br>
-125 . wHAXPI033827-47 : “schizofrenia”<br>
-126 . wHAXPI033828-50 : “schizofrenia”<br>
-127 . wHAXPI033829-54 : “schizofrenia”<br>
-128 . wHAXPI033830-58 : “schizofrenia”<br>
-129 . wHAXPI033831-59 : “schizofrenia”<br>
-141 . wHAXPI034456-57 : “schizofrenia”<br>
-142 . wHAXPI034457-58 : “schizofrenia”<br>
-143 . wHAXPI034458-59 : “schizofrenia”<br>
-160 . wHAXPI034924-13 : “schizofrenia”<br>
-161 . wHAXPI034925-14 : “schizofrenia”<br>
-163 . wHAXPI037144-8 : “schizofrenia”<br>
-164 . wHAXPI037145-9 : “schizofrenia”<br>
-165 . wHAXPI037146-11 : “schizofrenia”<br>
-166 . wHAXPI037147-12 : “schizofrenia”<br>
-167 . wHAXPI043592-8 : “schizofrenia”<br>
-168 . wHAXPI043593-9 : “schizofrenia”<br>
-169 . wHAXPI043594-11 : “schizofrenia”<br>
-170 . wHAXPI047830-11 : “schizofrenia”<br>
-171 . wHAXPI048670-90 : “schizofrenia”</p>
-</div>
-<div id="disease-5" class="section level3">
-<h3 class="hasAnchor">
-<a href="#disease-5" class="anchor"></a>disease</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
-</li>
-<li>
-<em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>3 . wHAXPI032583-21 : “schizofrenia”<br>
-4 . wHAXPI032584-22 : “schizofrenia”<br>
-5 . wHAXPI032585-23 : “schizofrenia”<br>
-6 . wHAXPI032586-25 : “schizofrenia”<br>
-7 . wHAXPI032587-26 : “schizofrenia”<br>
-8 . wHAXPI032588-27 : “schizofrenia”<br>
-9 . wHAXPI032589-28 : “schizofrenia”<br>
-10 . wHAXPI032590-29 : “schizofrenia”<br>
-11 . wHAXPI032591-31 : “schizofrenia”<br>
-12 . wHAXPI032592-32 : “schizofrenia”<br>
-13 . wHAXPI032593-34 : “schizofrenia”<br>
-14 . wHAXPI032594-36 : “schizofrenia”<br>
-21 . wHAXPI032601-50 : “schizofrenia”<br>
-22 . wHAXPI032602-54 : “schizofrenia”<br>
-23 . wHAXPI032603-63 : “schizofrenia”<br>
-24 . wHAXPI032604-74 : “schizofrenia”<br>
-25 . wHAXPI032605-75 : “schizofrenia”<br>
-26 . wHAXPI032606-80 : “schizofrenia”<br>
-27 . wHAXPI032607-89 : “schizofrenia”<br>
-28 . wHAXPI032608-111 : “schizofrenia”<br>
-29 . wHAXPI032609-18 : “schizofrenia”<br>
-30 . wHAXPI032610-19 : “schizofrenia”<br>
-31 . wHAXPI032611-21 : “schizofrenia”<br>
-32 . wHAXPI032612-22 : “schizofrenia”<br>
-33 . wHAXPI032613-23 : “schizofrenia”<br>
-34 . wHAXPI032614-24 : “schizofrenia”<br>
-35 . wHAXPI032615-25 : “schizofrenia”<br>
-49 . wHAXPI032697-24 : “schizofrenia”<br>
-74 . wHAXPI032804-39 : “schizofrenia”<br>
-75 . wHAXPI032806-41 : “schizofrenia”<br>
-76 . wHAXPI032807-42 : “schizofrenia”<br>
-77 . wHAXPI032808-45 : “schizofrenia”<br>
-78 . wHAXPI032809-47 : “schizofrenia”<br>
-79 . wHAXPI032810-50 : “schizofrenia”<br>
-80 . wHAXPI032811-54 : “schizofrenia”<br>
-81 . wHAXPI032812-63 : “schizofrenia”<br>
-82 . wHAXPI032813-74 : “schizofrenia”<br>
-83 . wHAXPI032814-75 : “schizofrenia”<br>
-84 . wHAXPI032815-80 : “schizofrenia”<br>
-85 . wHAXPI032816-89 : “schizofrenia”<br>
-86 . wHAXPI032817-111 : “schizofrenia”<br>
-87 . wHAXPI033593-26 : “schizofrenia”<br>
-88 . wHAXPI033594-31 : “schizofrenia”<br>
-89 . wHAXPI033598-32 : “schizofrenia”<br>
-90 . wHAXPI033601-28 : “schizofrenia”<br>
-91 . wHAXPI033605-29 : “schizofrenia”<br>
-92 . wHAXPI033606-30 : “schizofrenia”<br>
-93 . wHAXPI033608-27 : “schizofrenia”<br>
-94 . wHAXPI033632-52 : “schizofrenia”<br>
-95 . wHAXPI033633-76 : “schizofrenia”<br>
-96 . wHAXPI033634-77 : “schizofrenia”<br>
-98 . wHAXPI033636-79 : “schizofrenia”<br>
-101 . wHAXPI033790-16 : “schizofrenia”<br>
-102 . wHAXPI033791-18 : “schizofrenia”<br>
-103 . wHAXPI033792-19 : “schizofrenia”<br>
-104 . wHAXPI033793-20 : “schizofrenia”<br>
-105 . wHAXPI033794-21 : “schizofrenia”<br>
-106 . wHAXPI033795-22 : “schizofrenia”<br>
-107 . wHAXPI033796-23 : “schizofrenia”<br>
-108 . wHAXPI033810-24 : “schizofrenia”<br>
-109 . wHAXPI033811-25 : “schizofrenia”<br>
-110 . wHAXPI033812-26 : “schizofrenia”<br>
-111 . wHAXPI033813-27 : “schizofrenia”<br>
-112 . wHAXPI033814-28 : “schizofrenia”<br>
-113 . wHAXPI033815-29 : “schizofrenia”<br>
-114 . wHAXPI033816-30 : “schizofrenia”<br>
-115 . wHAXPI033817-31 : “schizofrenia”<br>
-116 . wHAXPI033818-32 : “schizofrenia”<br>
-117 . wHAXPI033819-34 : “schizofrenia”<br>
-123 . wHAXPI033825-42 : “schizofrenia”<br>
-124 . wHAXPI033826-45 : “schizofrenia”<br>
-125 . wHAXPI033827-47 : “schizofrenia”<br>
-126 . wHAXPI033828-50 : “schizofrenia”<br>
-127 . wHAXPI033829-54 : “schizofrenia”<br>
-128 . wHAXPI033830-58 : “schizofrenia”<br>
-129 . wHAXPI033831-59 : “schizofrenia”<br>
-141 . wHAXPI034456-57 : “schizofrenia”<br>
-142 . wHAXPI034457-58 : “schizofrenia”<br>
-143 . wHAXPI034458-59 : “schizofrenia”<br>
-160 . wHAXPI034924-13 : “schizofrenia”<br>
-161 . wHAXPI034925-14 : “schizofrenia”<br>
-163 . wHAXPI037144-8 : “schizofrenia”<br>
-164 . wHAXPI037145-9 : “schizofrenia”<br>
-165 . wHAXPI037146-11 : “schizofrenia”<br>
-166 . wHAXPI037147-12 : “schizofrenia”<br>
-167 . wHAXPI043592-8 : “schizofrenia”<br>
-168 . wHAXPI043593-9 : “schizofrenia”<br>
-169 . wHAXPI043594-11 : “schizofrenia”<br>
-170 . wHAXPI047830-11 : “schizofrenia”<br>
-171 . wHAXPI048670-90 : “schizofrenia”</p>
-</div>
+<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-4" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-4" class="anchor"></a>disease_subtype</h3>
@@ -2730,30 +2142,17 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura”<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum;trichuris_trichiura|first_episode_schizofrenia|repeated_episodes_shizofrenia”<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>3 . wHAXPI032583-21 : “first_episode_schizofrenia”<br>
-4 . wHAXPI032584-22 : “first_episode_schizofrenia”<br>
-5 . wHAXPI032585-23 : “repeated_episodes_shizofrenia”<br>
-6 . wHAXPI032586-25 : “first_episode_schizofrenia”<br>
-7 . wHAXPI032587-26 : “first_episode_schizofrenia”<br>
+<p>5 . wHAXPI032585-23 : “repeated_episodes_shizofrenia”<br>
 8 . wHAXPI032588-27 : “repeated_episodes_shizofrenia”<br>
-9 . wHAXPI032589-28 : “first_episode_schizofrenia”<br>
-10 . wHAXPI032590-29 : “first_episode_schizofrenia”<br>
 11 . wHAXPI032591-31 : “repeated_episodes_shizofrenia”<br>
-12 . wHAXPI032592-32 : “first_episode_schizofrenia”<br>
 13 . wHAXPI032593-34 : “repeated_episodes_shizofrenia”<br>
-14 . wHAXPI032594-36 : “first_episode_schizofrenia”<br>
 21 . wHAXPI032601-50 : “repeated_episodes_shizofrenia”<br>
-22 . wHAXPI032602-54 : “first_episode_schizofrenia”<br>
-23 . wHAXPI032603-63 : “first_episode_schizofrenia”<br>
-24 . wHAXPI032604-74 : “first_episode_schizofrenia”<br>
-25 . wHAXPI032605-75 : “first_episode_schizofrenia”<br>
-26 . wHAXPI032606-80 : “first_episode_schizofrenia”<br>
 27 . wHAXPI032607-89 : “repeated_episodes_shizofrenia”<br>
 28 . wHAXPI032608-111 : “repeated_episodes_shizofrenia”<br>
 29 . wHAXPI032609-18 : “repeated_episodes_shizofrenia”<br>
@@ -2762,70 +2161,34 @@
 32 . wHAXPI032612-22 : “repeated_episodes_shizofrenia”<br>
 33 . wHAXPI032613-23 : “repeated_episodes_shizofrenia”<br>
 34 . wHAXPI032614-24 : “repeated_episodes_shizofrenia”<br>
-35 . wHAXPI032615-25 : “first_episode_schizofrenia”<br>
-49 . wHAXPI032697-24 : “first_episode_schizofrenia”<br>
-74 . wHAXPI032804-39 : “first_episode_schizofrenia”<br>
-75 . wHAXPI032806-41 : “first_episode_schizofrenia”<br>
-76 . wHAXPI032807-42 : “first_episode_schizofrenia”<br>
 77 . wHAXPI032808-45 : “repeated_episodes_shizofrenia”<br>
 78 . wHAXPI032809-47 : “repeated_episodes_shizofrenia”<br>
 79 . wHAXPI032810-50 : “repeated_episodes_shizofrenia”<br>
-80 . wHAXPI032811-54 : “first_episode_schizofrenia”<br>
 81 . wHAXPI032812-63 : “repeated_episodes_shizofrenia”<br>
 82 . wHAXPI032813-74 : “repeated_episodes_shizofrenia”<br>
-83 . wHAXPI032814-75 : “first_episode_schizofrenia”<br>
 84 . wHAXPI032815-80 : “repeated_episodes_shizofrenia”<br>
-85 . wHAXPI032816-89 : “first_episode_schizofrenia”<br>
-86 . wHAXPI032817-111 : “first_episode_schizofrenia”<br>
-87 . wHAXPI033593-26 : “first_episode_schizofrenia”<br>
 88 . wHAXPI033594-31 : “repeated_episodes_shizofrenia”<br>
-89 . wHAXPI033598-32 : “first_episode_schizofrenia”<br>
-90 . wHAXPI033601-28 : “first_episode_schizofrenia”<br>
-91 . wHAXPI033605-29 : “first_episode_schizofrenia”<br>
 92 . wHAXPI033606-30 : “repeated_episodes_shizofrenia”<br>
-93 . wHAXPI033608-27 : “first_episode_schizofrenia”<br>
 94 . wHAXPI033632-52 : “repeated_episodes_shizofrenia”<br>
 95 . wHAXPI033633-76 : “repeated_episodes_shizofrenia”<br>
-96 . wHAXPI033634-77 : “first_episode_schizofrenia”<br>
 98 . wHAXPI033636-79 : “repeated_episodes_shizofrenia”<br>
-101 . wHAXPI033790-16 : “first_episode_schizofrenia”<br>
-102 . wHAXPI033791-18 : “first_episode_schizofrenia”<br>
-103 . wHAXPI033792-19 : “first_episode_schizofrenia”<br>
-104 . wHAXPI033793-20 : “first_episode_schizofrenia”<br>
-105 . wHAXPI033794-21 : “first_episode_schizofrenia”<br>
-106 . wHAXPI033795-22 : “first_episode_schizofrenia”<br>
 107 . wHAXPI033796-23 : “repeated_episodes_shizofrenia”<br>
 108 . wHAXPI033810-24 : “repeated_episodes_shizofrenia”<br>
-109 . wHAXPI033811-25 : “first_episode_schizofrenia”<br>
 110 . wHAXPI033812-26 : “repeated_episodes_shizofrenia”<br>
 111 . wHAXPI033813-27 : “repeated_episodes_shizofrenia”<br>
 112 . wHAXPI033814-28 : “repeated_episodes_shizofrenia”<br>
-113 . wHAXPI033815-29 : “first_episode_schizofrenia”<br>
-114 . wHAXPI033816-30 : “first_episode_schizofrenia”<br>
 115 . wHAXPI033817-31 : “repeated_episodes_shizofrenia”<br>
-116 . wHAXPI033818-32 : “first_episode_schizofrenia”<br>
 117 . wHAXPI033819-34 : “repeated_episodes_shizofrenia”<br>
 118 . wHAXPI033820-35 : “repeated_episodes_shizofrenia”<br>
 119 . wHAXPI033821-36 : “repeated_episodes_shizofrenia”<br>
 120 . wHAXPI033822-39 : “repeated_episodes_shizofrenia”<br>
 121 . wHAXPI033823-40 : “repeated_episodes_shizofrenia”<br>
 122 . wHAXPI033824-41 : “repeated_episodes_shizofrenia”<br>
-123 . wHAXPI033825-42 : “first_episode_schizofrenia”<br>
 124 . wHAXPI033826-45 : “repeated_episodes_shizofrenia”<br>
-125 . wHAXPI033827-47 : “first_episode_schizofrenia”<br>
-126 . wHAXPI033828-50 : “first_episode_schizofrenia”<br>
-127 . wHAXPI033829-54 : “first_episode_schizofrenia”<br>
 128 . wHAXPI033830-58 : “repeated_episodes_shizofrenia”<br>
 129 . wHAXPI033831-59 : “repeated_episodes_shizofrenia”<br>
-141 . wHAXPI034456-57 : “first_episode_schizofrenia”<br>
-142 . wHAXPI034457-58 : “first_episode_schizofrenia”<br>
 143 . wHAXPI034458-59 : “repeated_episodes_shizofrenia”<br>
-160 . wHAXPI034924-13 : “first_episode_schizofrenia”<br>
 161 . wHAXPI034925-14 : “repeated_episodes_shizofrenia”<br>
-163 . wHAXPI037144-8 : “first_episode_schizofrenia”<br>
-164 . wHAXPI037145-9 : “first_episode_schizofrenia”<br>
-165 . wHAXPI037146-11 : “first_episode_schizofrenia”<br>
-166 . wHAXPI037147-12 : “first_episode_schizofrenia”<br>
 167 . wHAXPI043592-8 : “repeated_episodes_shizofrenia”<br>
 168 . wHAXPI043593-9 : “repeated_episodes_shizofrenia”<br>
 169 . wHAXPI043594-11 : “repeated_episodes_shizofrenia”<br>
