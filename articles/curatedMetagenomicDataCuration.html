@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-18 16:25:14 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-18 16:26:25 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -664,43 +664,6 @@
 <div id="entry-errors-2" class="section level2">
 <h2 class="hasAnchor">
 <a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
-<div id="country" class="section level3">
-<h3 class="hasAnchor">
-<a href="#country" class="anchor"></a>country</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR<br>
-</li>
-<li>
-<em>description</em>: Country of acquisition using ISO3 code from <a href="http://www.fao.org/countryprofiles/iso3list/en/" class="uri">http://www.fao.org/countryprofiles/iso3list/en/</a>.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . Y1 : “BRA”<br>
-2 . Y2 : “BRA”<br>
-3 . Y3 : “BRA”<br>
-4 . Y4 : “BRA”<br>
-5 . Y5 : “BRA”<br>
-6 . Y6 : “BRA”<br>
-7 . Y7 : “BRA”<br>
-8 . Y8 : “BRA”<br>
-9 . Y9 : “BRA”<br>
-10 . Y10 : “BRA”<br>
-11 . Y11 : “BRA”<br>
-12 . Y12 : “BRA”<br>
-13 . Y13 : “BRA”<br>
-14 . Y14 : “BRA”<br>
-15 . Y15 : “BRA”</p>
-</div>
 <div id="curator" class="section level3">
 <h3 class="hasAnchor">
 <a href="#curator" class="anchor"></a>curator</h3>
@@ -716,7 +679,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi<br>
+<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Mireia_VallesColomer<br>
 </li>
 <li>
 <em>description</em>: Curator name.</li>
@@ -1325,149 +1288,7 @@
 <h1 class="hasAnchor">
 <a href="#keohanedm_2020_metadata-tsv" class="anchor"></a>KeohaneDM_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-7" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
-<div id="country-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#country-1" class="anchor"></a>country</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR<br>
-</li>
-<li>
-<em>description</em>: Country of acquisition using ISO3 code from <a href="http://www.fao.org/countryprofiles/iso3list/en/" class="uri">http://www.fao.org/countryprofiles/iso3list/en/</a>.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . Travel001 : “IRL”<br>
-2 . Travel002 : “IRL”<br>
-3 . Travel003 : “IRL”<br>
-4 . Travel004 : “IRL”<br>
-5 . Travel005 : “IRL”<br>
-6 . Travel006 : “IRL”<br>
-7 . Travel007 : “IRL”<br>
-8 . Travel008 : “IRL”<br>
-9 . Travel009 : “IRL”<br>
-10 . Travel010 : “IRL”<br>
-11 . Travel011 : “IRL”<br>
-12 . Travel012 : “IRL”<br>
-13 . Travel014 : “IRL”<br>
-14 . Travel015 : “IRL”<br>
-15 . Travel016 : “IRL”<br>
-16 . Travel017 : “IRL”<br>
-17 . Travel018 : “IRL”<br>
-18 . Travel019 : “IRL”<br>
-19 . Travel020 : “IRL”<br>
-20 . Travel021 : “IRL”<br>
-21 . Travel022 : “IRL”<br>
-22 . Travel023 : “IRL”<br>
-23 . Travel024 : “IRL”<br>
-24 . Travel025 : “IRL”<br>
-25 . Travel026 : “IRL”<br>
-26 . Travel027 : “IRL”<br>
-27 . Travel028 : “IRL”<br>
-28 . Travel030 : “IRL”<br>
-29 . Travel031 : “IRL”<br>
-30 . Travel033 : “IRL”<br>
-31 . Travel036 : “IRL”<br>
-32 . Travel037 : “IRL”<br>
-33 . Travel038 : “IRL”<br>
-34 . Travel039 : “IRL”<br>
-35 . Travel040 : “IRL”<br>
-36 . Travel041 : “IRL”<br>
-37 . Travel042 : “IRL”<br>
-38 . Travel043 : “IRL”<br>
-39 . Travel045 : “IRL”<br>
-40 . Travel046 : “IRL”<br>
-41 . Travel047 : “IRL”<br>
-42 . Travel048 : “IRL”<br>
-43 . Travel049 : “IRL”<br>
-44 . Travel050 : “IRL”<br>
-45 . Travel051 : “IRL”<br>
-46 . Travel052 : “IRL”<br>
-47 . Travel053 : “IRL”<br>
-48 . Travel054 : “IRL”<br>
-49 . Travel057 : “IRL”<br>
-50 . Travel058 : “IRL”<br>
-51 . Travel059 : “IRL”<br>
-52 . Travel060 : “IRL”<br>
-53 . Travel061 : “IRL”<br>
-54 . Travel062 : “IRL”<br>
-55 . Travel063 : “IRL”<br>
-56 . Travel064 : “IRL”<br>
-57 . Travel065 : “IRL”<br>
-58 . Travel066 : “IRL”<br>
-59 . Travel067 : “IRL”<br>
-60 . Travel068 : “IRL”<br>
-61 . Travel070 : “IRL”<br>
-62 . Travel071 : “IRL”<br>
-63 . Travel072 : “IRL”<br>
-64 . Travel073 : “IRL”<br>
-65 . Travel075 : “IRL”<br>
-66 . Travel076 : “IRL”<br>
-67 . Travel077 : “IRL”<br>
-68 . Travel078 : “IRL”<br>
-69 . Travel079 : “IRL”<br>
-70 . Travel080 : “IRL”<br>
-71 . Travel081 : “IRL”<br>
-72 . Travel082 : “IRL”<br>
-73 . Travel083 : “IRL”<br>
-74 . Travel084 : “IRL”<br>
-75 . Travel085 : “IRL”<br>
-76 . Travel086 : “IRL”<br>
-77 . Travel087 : “IRL”<br>
-78 . Travel088 : “IRL”<br>
-79 . Travel089 : “IRL”<br>
-80 . Travel090 : “IRL”<br>
-81 . Travel091 : “IRL”<br>
-82 . Travel092 : “IRL”<br>
-83 . Travel093 : “IRL”<br>
-84 . Travel095 : “IRL”<br>
-85 . Travel096 : “IRL”<br>
-86 . Travel097 : “IRL”<br>
-87 . Travel098 : “IRL”<br>
-88 . Travel099 : “IRL”<br>
-89 . Travel100 : “IRL”<br>
-90 . Travel101 : “IRL”<br>
-91 . Travel102 : “IRL”<br>
-92 . Travel103 : “IRL”<br>
-93 . Travel104 : “IRL”<br>
-94 . Travel105 : “IRL”<br>
-95 . Travel106 : “IRL”<br>
-96 . Travel107 : “IRL”<br>
-97 . Travel108 : “IRL”<br>
-98 . Travel109 : “IRL”<br>
-99 . Travel110 : “IRL”<br>
-100 . Travel111 : “IRL”<br>
-101 . Travel112 : “IRL”<br>
-102 . Travel113 : “IRL”<br>
-103 . Travel114 : “IRL”<br>
-104 . Travel115 : “IRL”<br>
-105 . Travel117 : “IRL”<br>
-106 . Travel118 : “IRL”<br>
-107 . Travel119 : “IRL”<br>
-108 . Travel120 : “IRL”<br>
-109 . Travel121 : “IRL”<br>
-110 . Travel122 : “IRL”<br>
-111 . Travel123 : “IRL”<br>
-112 . Travel124 : “IRL”<br>
-113 . Travel125 : “IRL”<br>
-114 . Travel126 : “IRL”<br>
-115 . Travel128 : “IRL”<br>
-116 . Travel129 : “IRL”<br>
-117 . Travel130 : “IRL”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="kiesers_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -1510,9 +1331,9 @@
 <li>“fasting_glucose” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-8" class="section level2">
+<div id="entry-errors-7" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
 <div id="curator-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#curator-1" class="anchor"></a>curator</h3>
@@ -1528,7 +1349,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi<br>
+<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Mireia_VallesColomer<br>
 </li>
 <li>
 <em>description</em>: Curator name.</li>
@@ -1831,9 +1652,9 @@
 <h1 class="hasAnchor">
 <a href="#loombar_2017_metadata-tsv" class="anchor"></a>LoombaR_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-9" class="section level2">
+<div id="entry-errors-8" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype" class="anchor"></a>disease_subtype</h3>
@@ -1943,9 +1764,9 @@
 <h1 class="hasAnchor">
 <a href="#qinn_2014_metadata-tsv" class="anchor"></a>QinN_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-10" class="section level2">
+<div id="entry-errors-9" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-1" class="anchor"></a>disease_subtype</h3>
@@ -2109,9 +1930,9 @@
 <h1 class="hasAnchor">
 <a href="#rosaba_2018_metadata-tsv" class="anchor"></a>RosaBA_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-11" class="section level2">
+<div id="entry-errors-10" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
 <div id="disease-3" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease-3" class="anchor"></a>disease</h3>
@@ -2191,9 +2012,9 @@
 <h1 class="hasAnchor">
 <a href="#rubelma_2020_metadata-tsv" class="anchor"></a>RubelMA_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-12" class="section level2">
+<div id="entry-errors-11" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
 <div id="disease-4" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease-4" class="anchor"></a>disease</h3>
@@ -2516,103 +2337,14 @@
 <li>“mode_delivery” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-13" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
-<div id="curator-2" class="section level3">
-<h3 class="hasAnchor">
-<a href="#curator-2" class="anchor"></a>curator</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi<br>
-</li>
-<li>
-<em>description</em>: Curator name.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . V2_C100 : “Mireia_VallesColomer”<br>
-2 . V3_C100 : “Mireia_VallesColomer”<br>
-3 . V1_C101 : “Mireia_VallesColomer”<br>
-4 . V2_C101 : “Mireia_VallesColomer”<br>
-5 . V3_C101 : “Mireia_VallesColomer”<br>
-6 . V2_C105 : “Mireia_VallesColomer”<br>
-7 . V3_C105 : “Mireia_VallesColomer”<br>
-8 . V1_C106 : “Mireia_VallesColomer”<br>
-9 . V2_C106 : “Mireia_VallesColomer”<br>
-10 . V3_C106 : “Mireia_VallesColomer”<br>
-11 . V1_C109 : “Mireia_VallesColomer”<br>
-12 . V2_C109 : “Mireia_VallesColomer”<br>
-13 . V1_C110 : “Mireia_VallesColomer”<br>
-14 . V2_C110 : “Mireia_VallesColomer”<br>
-15 . V3_C110 : “Mireia_VallesColomer”<br>
-16 . V1_C111 : “Mireia_VallesColomer”<br>
-17 . V2_C111 : “Mireia_VallesColomer”<br>
-18 . V3_C111 : “Mireia_VallesColomer”<br>
-19 . V2_C112 : “Mireia_VallesColomer”<br>
-20 . V3_C112 : “Mireia_VallesColomer”<br>
-21 . V1_C113 : “Mireia_VallesColomer”<br>
-22 . V3_C113 : “Mireia_VallesColomer”<br>
-23 . V2_C114 : “Mireia_VallesColomer”<br>
-24 . V3_C114 : “Mireia_VallesColomer”<br>
-25 . V1_C115 : “Mireia_VallesColomer”<br>
-26 . V2_C115 : “Mireia_VallesColomer”<br>
-27 . V3_C115 : “Mireia_VallesColomer”<br>
-28 . V2_C116 : “Mireia_VallesColomer”<br>
-29 . V3_C116 : “Mireia_VallesColomer”<br>
-30 . V2_C117 : “Mireia_VallesColomer”<br>
-31 . V3_C117 : “Mireia_VallesColomer”<br>
-32 . V1_C118 : “Mireia_VallesColomer”<br>
-33 . V2_C118 : “Mireia_VallesColomer”<br>
-34 . V3_C118 : “Mireia_VallesColomer”<br>
-35 . V2_C119 : “Mireia_VallesColomer”<br>
-36 . V3_C119 : “Mireia_VallesColomer”<br>
-37 . V1_C120 : “Mireia_VallesColomer”<br>
-38 . V2_C120 : “Mireia_VallesColomer”<br>
-39 . V3_C120 : “Mireia_VallesColomer”<br>
-40 . M_C100 : “Mireia_VallesColomer”<br>
-41 . M_C101 : “Mireia_VallesColomer”<br>
-42 . MV_C101 : “Mireia_VallesColomer”<br>
-43 . M_C105 : “Mireia_VallesColomer”<br>
-44 . M_C106 : “Mireia_VallesColomer”<br>
-45 . MV_C106 : “Mireia_VallesColomer”<br>
-46 . M_C109 : “Mireia_VallesColomer”<br>
-47 . M_C110 : “Mireia_VallesColomer”<br>
-48 . M_C111 : “Mireia_VallesColomer”<br>
-49 . MV_C111 : “Mireia_VallesColomer”<br>
-50 . MV_C112 : “Mireia_VallesColomer”<br>
-51 . MV_C113 : “Mireia_VallesColomer”<br>
-52 . M_C114 : “Mireia_VallesColomer”<br>
-53 . MV_C114 : “Mireia_VallesColomer”<br>
-54 . M_C115 : “Mireia_VallesColomer”<br>
-55 . MV_C115 : “Mireia_VallesColomer”<br>
-56 . M_C117 : “Mireia_VallesColomer”<br>
-57 . MV_C117 : “Mireia_VallesColomer”<br>
-58 . M_C118 : “Mireia_VallesColomer”<br>
-59 . MV_C118 : “Mireia_VallesColomer”<br>
-60 . M_C119 : “Mireia_VallesColomer”<br>
-61 . M_C120 : “Mireia_VallesColomer”<br>
-62 . MV_C120 : “Mireia_VallesColomer”<br>
-63 . M_C123 : “Mireia_VallesColomer”</p>
-</div>
-</div>
 </div>
 <div id="wenc_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-14" class="section level2">
+<div id="entry-errors-12" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
 <div id="sequencing_platform" class="section level3">
 <h3 class="hasAnchor">
 <a href="#sequencing_platform" class="anchor"></a>sequencing_platform</h3>
@@ -2659,9 +2391,9 @@
 <h1 class="hasAnchor">
 <a href="#yachidas_2019_metadata-tsv" class="anchor"></a>YachidaS_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-15" class="section level2">
+<div id="entry-errors-13" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-15" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
 <div id="ajcc" class="section level3">
 <h3 class="hasAnchor">
 <a href="#ajcc" class="anchor"></a>ajcc</h3>
@@ -2691,68 +2423,7 @@
 <h1 class="hasAnchor">
 <a href="#yassourm_2016_metadata-tsv" class="anchor"></a>YassourM_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-16" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-16" class="anchor"></a>Entry errors</h2>
-<div id="country-2" class="section level3">
-<h3 class="hasAnchor">
-<a href="#country-2" class="anchor"></a>country</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR<br>
-</li>
-<li>
-<em>description</em>: Country of acquisition using ISO3 code from <a href="http://www.fao.org/countryprofiles/iso3list/en/" class="uri">http://www.fao.org/countryprofiles/iso3list/en/</a>.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . SAMEA2017457 : “KOR”<br>
-2 . SAMEA2017458 : “KOR”<br>
-3 . SAMEA2017459 : “KOR”<br>
-4 . SAMEA2017460 : “KOR”<br>
-5 . SAMEA2055106 : “KOR”<br>
-6 . SAMEA2055107 : “KOR”<br>
-7 . SAMEA2055108 : “KOR”<br>
-8 . SAMEA2055109 : “KOR”<br>
-9 . SAMEA2055266 : “KOR”<br>
-10 . SAMEA2055267 : “KOR”<br>
-11 . SAMEA2055273 : “KOR”<br>
-12 . SAMEA2055272 : “KOR”<br>
-13 . SAMEA2055275 : “KOR”<br>
-14 . SAMEA2055274 : “KOR”<br>
-15 . SAMEA2055276 : “KOR”<br>
-16 . SAMEA1966431 : “KOR”<br>
-17 . SAMEA2055277 : “KOR”<br>
-18 . SAMEA2055278 : “KOR”<br>
-19 . SAMEA2055280 : “KOR”<br>
-20 . SAMEA2055279 : “KOR”<br>
-21 . SAMEA2055281 : “KOR”<br>
-22 . SAMEA2055282 : “KOR”<br>
-23 . SAMEA2055284 : “KOR”<br>
-24 . SAMEA2055283 : “KOR”<br>
-25 . SAMEA2055291 : “KOR”<br>
-26 . SAMEA2055292 : “KOR”<br>
-27 . SAMEA2055293 : “KOR”<br>
-28 . SAMEA2055294 : “KOR”<br>
-29 . SAMEA2055268 : “KOR”<br>
-30 . SAMEA2055269 : “KOR”<br>
-31 . SAMEA2055285 : “KOR”<br>
-32 . SAMEA2055286 : “KOR”<br>
-33 . SAMEA2055288 : “KOR”<br>
-34 . SAMEA2055287 : “KOR”<br>
-35 . SAMEA2055289 : “KOR”<br>
-36 . SAMEA2055290 : “KOR”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="yassourm_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -2770,9 +2441,9 @@
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-17" class="section level2">
+<div id="entry-errors-14" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-17" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
 <div id="tnm" class="section level3">
 <h3 class="hasAnchor">
 <a href="#tnm" class="anchor"></a>tnm</h3>
@@ -2819,9 +2490,9 @@
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-18" class="section level2">
+<div id="entry-errors-15" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-18" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-15" class="anchor"></a>Entry errors</h2>
 <div id="study_condition-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#study_condition-1" class="anchor"></a>study_condition</h3>
