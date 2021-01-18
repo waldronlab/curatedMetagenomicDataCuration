@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-18 14:37:39 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-18 15:04:28 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -2999,84 +2999,7 @@
 <h1 class="hasAnchor">
 <a href="#defilippisf_2019_metadata-tsv" class="anchor"></a>DeFilippisF_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/DeFilippisF_2019/DeFilippisF_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/DeFilippisF_2019/DeFilippisF_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-4" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
-<div id="subjectid" class="section level3">
-<h3 class="hasAnchor">
-<a href="#subjectid" class="anchor"></a>subjectID</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [a-zA-Z]+<br>
-</li>
-<li>
-<em>description</em>: Subject identifier.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . SID01.BA.VG.2 : “01BA”<br>
-2 . SID01.BA.V_metag : “01BAV”<br>
-3 . SID02.BA.V_metag : “02BAV”<br>
-4 . SID02.BA.VG_metag : “02BAVG”<br>
-5 . SID03.BA.O_metag : “03BAO”<br>
-6 . SID04.BA.VG.2 : “04BA”<br>
-7 . SID04.BA.O_metag : “04BAO”<br>
-8 . SID04.BO.VG.2 : “04BO”<br>
-9 . SID04.TO.VG : “04TO”<br>
-10 . SID05.PR.VG.1 : “05PR”<br>
-11 . SID06.BA.VG_metag : “06BAVG”<br>
-12 . SID06.PR.VG_metag : “06PRVG”<br>
-13 . SID06.TO.VG : “06TO”<br>
-14 . SID07.BA.VG.2 : “07BA”<br>
-15 . SID07.PR.V.2 : “07PR”<br>
-16 . SID08.BA.V_metag : “08BAV”<br>
-17 . SID08.BA.VG_metag : “08BAVG”<br>
-18 . SID08.TO.VG : “08TO”<br>
-19 . SID09.PR.V_metag : “09PRV”<br>
-20 . SID09.TO.O.new : “09TO”<br>
-21 . SID10.BO.V : “10BO”<br>
-22 . SID10.TO.V.1 : “10TO”<br>
-23 . SID11.BA.V_metag : “11BAV”<br>
-24 . SID11.TO.V.2 : “11TO”<br>
-25 . SID12.PR.V.2 : “12PR”<br>
-26 . SID12.TO.O.new : “12TO”<br>
-27 . SID13.PR.VG.0 : “13PR”<br>
-28 . SID14.PR.VG.0 : “14PR”<br>
-29 . SID16.PR.VG.1 : “16PR”<br>
-30 . SID17.PR.V_metag : “17PRV”<br>
-31 . SID18.PR.V_metag : “18PRV”<br>
-32 . SID19.BA.V.2 : “19BA”<br>
-33 . SID19.TO.V : “19TO”<br>
-34 . SID20.TO.O.0 : “20TO”<br>
-35 . SID21.TO.V.new : “21TO”<br>
-36 . SID22.TO.O.new : “22TO”<br>
-37 . SID23.BA.V.2 : “23BA”<br>
-38 . SID26.BA.V.2 : “26BA”<br>
-39 . SID26.PR.V_metag : “26PRV”<br>
-40 . SID29.PR.O.2 : “29PR”<br>
-41 . SID30.BO.O.2 : “30BO”<br>
-42 . SID31.PR.O.0 : “31PR”<br>
-43 . SID32.PR.V.1 : “32PR”<br>
-44 . SID33.PR.V_metag : “33PRV”<br>
-45 . SID37.PR.O.new : “37PR”<br>
-46 . SID38.BA.O.2 : “38BA”<br>
-47 . SID38.PR.O.1 : “38PR”<br>
-48 . SID38.TO.VG : “38TO”<br>
-49 . SID39.TO.VG : “39TO”<br>
-50 . SID42.TO.VG.2 : “42TO”<br>
-51 . SID44.TO.V : “44TO”<br>
-52 . SID45.BO.V.new : “45BO”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="dhakandb_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -3111,9 +3034,9 @@
 <li><p>“PPD_L” is not defined in the template.</p></li>
 </ul>
 </div>
-<div id="entry-errors-5" class="section level2">
+<div id="entry-errors-4" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-5" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
 <div id="body_subsite" class="section level3">
 <h3 class="hasAnchor">
 <a href="#body_subsite" class="anchor"></a>body_subsite</h3>
@@ -3322,9 +3245,9 @@
 <h1 class="hasAnchor">
 <a href="#hannigangd_2017_metadata-tsv" class="anchor"></a>HanniganGD_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-6" class="section level2">
+<div id="entry-errors-5" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-6" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-5" class="anchor"></a>Entry errors</h2>
 <div id="fobt" class="section level3">
 <h3 class="hasAnchor">
 <a href="#fobt" class="anchor"></a>fobt</h3>
@@ -3459,9 +3382,9 @@
 <h1 class="hasAnchor">
 <a href="#hmp_2019_t2d_metadata-tsv" class="anchor"></a>HMP_2019_t2d_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-7" class="section level2">
+<div id="entry-errors-6" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-6" class="anchor"></a>Entry errors</h2>
 <div id="bilubirin" class="section level3">
 <h3 class="hasAnchor">
 <a href="#bilubirin" class="anchor"></a>bilubirin</h3>
@@ -3583,9 +3506,9 @@
 <h1 class="hasAnchor">
 <a href="#kaurk_2020_metadata-tsv" class="anchor"></a>KaurK_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-8" class="section level2">
+<div id="entry-errors-7" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-7" class="anchor"></a>Entry errors</h2>
 <div id="dna_extraction_kit-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#dna_extraction_kit-1" class="anchor"></a>DNA_extraction_kit</h3>
@@ -3645,9 +3568,9 @@
 <h1 class="hasAnchor">
 <a href="#keohanedm_2020_metadata-tsv" class="anchor"></a>KeohaneDM_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-9" class="section level2">
+<div id="entry-errors-8" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
 <div id="country-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#country-1" class="anchor"></a>country</h3>
@@ -3817,9 +3740,9 @@
 <h1 class="hasAnchor">
 <a href="#lifelinesdeep_2016_metadata-tsv" class="anchor"></a>LifeLinesDeep_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LifeLinesDeep_2016/LifeLinesDeep_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LifeLinesDeep_2016/LifeLinesDeep_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-10" class="section level2">
+<div id="entry-errors-9" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
 <div id="curator-2" class="section level3">
 <h3 class="hasAnchor">
 <a href="#curator-2" class="anchor"></a>curator</h3>
@@ -4990,9 +4913,9 @@
 <li>“fasting_glucose” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-11" class="section level2">
+<div id="entry-errors-10" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
 <div id="gender" class="section level3">
 <h3 class="hasAnchor">
 <a href="#gender" class="anchor"></a>gender</h3>
@@ -5628,9 +5551,9 @@
 <h1 class="hasAnchor">
 <a href="#loombar_2017_metadata-tsv" class="anchor"></a>LoombaR_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-12" class="section level2">
+<div id="entry-errors-11" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype" class="anchor"></a>disease_subtype</h3>
@@ -5740,9 +5663,9 @@
 <h1 class="hasAnchor">
 <a href="#qinn_2014_metadata-tsv" class="anchor"></a>QinN_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-13" class="section level2">
+<div id="entry-errors-12" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-1" class="anchor"></a>disease_subtype</h3>
@@ -5906,9 +5829,9 @@
 <h1 class="hasAnchor">
 <a href="#rosaba_2018_metadata-tsv" class="anchor"></a>RosaBA_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-14" class="section level2">
+<div id="entry-errors-13" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
 <div id="disease-3" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease-3" class="anchor"></a>disease</h3>
@@ -5997,9 +5920,9 @@
 <h1 class="hasAnchor">
 <a href="#rubelma_2020_metadata-tsv" class="anchor"></a>RubelMA_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-15" class="section level2">
+<div id="entry-errors-14" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-15" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
 <div id="disease-4" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease-4" class="anchor"></a>disease</h3>
@@ -6622,9 +6545,9 @@
 <h1 class="hasAnchor">
 <a href="#sankaranarayanank_2015_metadata-tsv" class="anchor"></a>SankaranarayananK_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-16" class="section level2">
+<div id="entry-errors-15" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-16" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-15" class="anchor"></a>Entry errors</h2>
 <div id="dna_extraction_kit-2" class="section level3">
 <h3 class="hasAnchor">
 <a href="#dna_extraction_kit-2" class="anchor"></a>DNA_extraction_kit</h3>
@@ -6809,9 +6732,9 @@
 <h1 class="hasAnchor">
 <a href="#thomasam_2018b_metadata-tsv" class="anchor"></a>ThomasAM_2018b_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-17" class="section level2">
+<div id="entry-errors-16" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-17" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-16" class="anchor"></a>Entry errors</h2>
 <div id="dna_extraction_kit-3" class="section level3">
 <h3 class="hasAnchor">
 <a href="#dna_extraction_kit-3" class="anchor"></a>DNA_extraction_kit</h3>
@@ -6900,9 +6823,9 @@
 <h1 class="hasAnchor">
 <a href="#thomasam_2019_c_metadata-tsv" class="anchor"></a>ThomasAM_2019_c_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-18" class="section level2">
+<div id="entry-errors-17" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-18" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-17" class="anchor"></a>Entry errors</h2>
 <div id="ajcc" class="section level3">
 <h3 class="hasAnchor">
 <a href="#ajcc" class="anchor"></a>ajcc</h3>
@@ -7073,9 +6996,9 @@
 <h1 class="hasAnchor">
 <a href="#vatanent_2016_metadata-tsv" class="anchor"></a>VatanenT_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-19" class="section level2">
+<div id="entry-errors-18" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-19" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-18" class="anchor"></a>Entry errors</h2>
 <div id="antibiotics_family" class="section level3">
 <h3 class="hasAnchor">
 <a href="#antibiotics_family" class="anchor"></a>antibiotics_family</h3>
@@ -7105,9 +7028,9 @@
 <h1 class="hasAnchor">
 <a href="#vilaav_2018_metadata-tsv" class="anchor"></a>VilaAV_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-20" class="section level2">
+<div id="entry-errors-19" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-20" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-19" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-4" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-4" class="anchor"></a>disease_subtype</h3>
@@ -7552,9 +7475,9 @@
 <li>“mode_delivery” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-21" class="section level2">
+<div id="entry-errors-20" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-21" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-20" class="anchor"></a>Entry errors</h2>
 <div id="curator-8" class="section level3">
 <h3 class="hasAnchor">
 <a href="#curator-8" class="anchor"></a>curator</h3>
@@ -7646,9 +7569,9 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-22" class="section level2">
+<div id="entry-errors-21" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-22" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-21" class="anchor"></a>Entry errors</h2>
 <div id="sequencing_platform" class="section level3">
 <h3 class="hasAnchor">
 <a href="#sequencing_platform" class="anchor"></a>sequencing_platform</h3>
@@ -7695,9 +7618,9 @@
 <h1 class="hasAnchor">
 <a href="#yachidas_2019_metadata-tsv" class="anchor"></a>YachidaS_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-23" class="section level2">
+<div id="entry-errors-22" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-23" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-22" class="anchor"></a>Entry errors</h2>
 <div id="ajcc-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#ajcc-1" class="anchor"></a>ajcc</h3>
@@ -7731,9 +7654,9 @@
 <h1 class="hasAnchor">
 <a href="#yassourm_2016_metadata-tsv" class="anchor"></a>YassourM_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-24" class="section level2">
+<div id="entry-errors-23" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-24" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-23" class="anchor"></a>Entry errors</h2>
 <div id="country-2" class="section level3">
 <h3 class="hasAnchor">
 <a href="#country-2" class="anchor"></a>country</h3>
@@ -7810,9 +7733,9 @@
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-25" class="section level2">
+<div id="entry-errors-24" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-25" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-24" class="anchor"></a>Entry errors</h2>
 <div id="tnm" class="section level3">
 <h3 class="hasAnchor">
 <a href="#tnm" class="anchor"></a>tnm</h3>
@@ -7859,9 +7782,9 @@
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-26" class="section level2">
+<div id="entry-errors-25" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-26" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-25" class="anchor"></a>Entry errors</h2>
 <div id="study_condition-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#study_condition-1" class="anchor"></a>study_condition</h3>
