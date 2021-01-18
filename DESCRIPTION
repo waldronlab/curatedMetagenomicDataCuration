@@ -17,9 +17,10 @@ Encoding: UTF-8
 LazyData: true
 Depends:
     R (>= 4.0.0),
-    RISmed,
     dplyr
 Imports:
+    RISmed,
+    readr,
     tidyr,
     curl,
     jsonlite
