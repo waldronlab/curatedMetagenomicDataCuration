@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-18 15:57:04 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-18 16:11:04 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -145,7 +145,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -617,7 +617,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -832,7 +832,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -1563,7 +1563,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|Indeterminate_colitis<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -1675,7 +1675,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|Indeterminate_colitis<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -1841,7 +1841,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -1882,31 +1882,22 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|Indeterminate_colitis<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>1 . U_VS-3059-508 : “necator_americanus”<br>
-3 . U_VS-1590-529 : “ascaris_lumbricoides;necator_americanus”<br>
+<p>3 . U_VS-1590-529 : “ascaris_lumbricoides;necator_americanus”<br>
 4 . U_VS-1592-169 : “ascaris_lumbricoides;necator_americanus”<br>
-5 . U_VS-3145-837 : “trichuris_trichiura”<br>
 6 . U_VS-1506-127 : “necator_americanus;trichuris_trichiura”<br>
 7 . U_VS-3059-665 : “ascaris_lumbricoides;necator_americanus;trichuris_trichiura”<br>
 8 . U_VS-1651-541 : “ascaris_lumbricoides;necator_americanus”<br>
 9 . U_VS-1686-548 : “ascaris_lumbricoides;necator_americanus”<br>
-10 . U_VS-1590-365 : “necator_americanus”<br>
-11 . U_VS-4218-901 : “ascaris_lumbricoides”<br>
-14 . U_VS-4218-876 : “ascaris_lumbricoides”<br>
 16 . U_VS-1540-523 : “necator_americanus;trichuris_trichiura”<br>
-17 . U_VS-1686-403 : “necator_americanus”<br>
-18 . U_VS-1226-705 : “necator_americanus”<br>
 19 . U_VS-1540-350 : “ascaris_lumbricoides;necator_americanus;trichuris_trichiura”<br>
 21 . U_VS-P610129-1 : “ascaris_lumbricoides;necator_americanus;trichuris_trichiura”<br>
-22 . U_VS-P610119-1 : “necator_americanus”<br>
-23 . U_VS-P610096-1 : “ascaris_lumbricoides;necator_americanus;trichuris_trichiura”<br>
-24 . U_VS-P610052-1 : “ascaris_lumbricoides”</p>
+23 . U_VS-P610096-1 : “ascaris_lumbricoides;necator_americanus;trichuris_trichiura”</p>
 </div>
 </div>
 </div>
@@ -1932,7 +1923,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -2043,7 +2034,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|Indeterminate_colitis<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -2054,9 +2045,7 @@
 3 . CM.105_WGS : “ascaris_lumbricoides;hookworm;trichuris_trichiura”<br>
 4 . CM.107_WGS : “plasmodium_falciparum”<br>
 5 . CM.109_WGS : “plasmodium_falciparum”<br>
-6 . CM.111_WGS : “ascaris_lumbricoides”<br>
 7 . CM.118_WGS : “ascaris_lumbricoides;plasmodium_falciparum”<br>
-8 . CM.126_WGS : “ascaris_lumbricoides”<br>
 10 . CM.13_WGS : “mansonella_perstans”<br>
 11 . CM.131_WGS : “ascaris_lumbricoides;plasmodium_falciparum;trichuris_trichiura”<br>
 12 . CM.132_WGS : “ascaris_lumbricoides;trichuris_trichiura”<br>
@@ -2071,14 +2060,12 @@
 27 . CM.175_WGS : “ascaris_lumbricoides;microfilaria_spp”<br>
 28 . CM.176_WGS : “microfilaria_spp”<br>
 31 . CM.179_WGS : “microfilaria_spp”<br>
-32 . CM.18_WGS : “ascaris_lumbricoides”<br>
 33 . CM.186_WGS : “plasmodium_falciparum”<br>
 34 . CM.187_WGS : “plasmodium_falciparum”<br>
 35 . CM.19_WGS : “ascaris_lumbricoides;hookworm;trichuris_trichiura”<br>
 36 . CM.194_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 37 . CM.195_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 39 . CM.20_WGS : “entamoeba_histolytica”<br>
-40 . CM.203_WGS : “ascaris_lumbricoides”<br>
 43 . CM.210_WGS : “microfilaria_loa_loa;plasmodium_falciparum”<br>
 44 . CM.211_WGS : “ascaris_lumbricoides;microfilaria_spp;plasmodium_falciparum”<br>
 45 . CM.212_WGS : “ascaris_lumbricoides;microfilaria_spp;plasmodium_falciparum;trichuris_trichiura”<br>
@@ -2095,13 +2082,11 @@
 57 . CM.232_WGS : “ascaris_lumbricoides;wuchereria_bancrofti”<br>
 58 . CM.233_WGS : “ascaris_lumbricoides;hookworm;microfilaria_loa_loa;trichuris_trichiura”<br>
 59 . CM.234_WGS : “ascaris_lumbricoides;microfilaria_spp;trichuris_trichiura”<br>
-60 . CM.235_WGS : “trichuris_trichiura”<br>
 61 . CM.237_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 62 . CM.239_WGS : “microfilaria_loa_loa”<br>
 64 . CM.247_WGS : “microfilaria_spp”<br>
 65 . CM.249_WGS : “microfilaria_loa_loa;plasmodium_falciparum”<br>
 66 . CM.25_WGS : “ascaris_lumbricoides;microfilaria_loa_loa”<br>
-67 . CM.251_WGS : “trichuris_trichiura”<br>
 68 . CM.253_WGS : “ascaris_lumbricoides;microfilaria_spp;trichuris_trichiura”<br>
 69 . CM.254_WGS : “hookworm;microfilaria_spp;plasmodium_falciparum;trichuris_trichiura”<br>
 70 . CM.255_WGS : “microfilaria_spp”<br>
@@ -2113,14 +2098,12 @@
 76 . CM.270_WGS : “microfilaria_spp”<br>
 77 . CM.271_WGS : “microfilaria_spp;plasmodium_falciparum”<br>
 78 . CM.273_WGS : “plasmodium_falciparum”<br>
-88 . CM.30_WGS : “ascaris_lumbricoides”<br>
 90 . CM.31_WGS : “ascaris_lumbricoides;trichuris_trichiura”<br>
 92 . CM.315_WGS : “plasmodium_falciparum”<br>
 95 . CM.32_WGS : “ascaris_lumbricoides;hookworm;microfilaria_loa_loa;trichomonas_intestinalis”<br>
 117 . CM.390_WGS : “plasmodium_falciparum”<br>
 121 . CM.401_WGS : “plasmodium_falciparum”<br>
 126 . CM.41_WGS : “microfilaria_loa_loa”<br>
-127 . CM.410_WGS : “ascaris_lumbricoides”<br>
 136 . CM.44_WGS : “ascaris_lumbricoides;mansonella_perstans;trichuris_trichiura”<br>
 140 . CM.46_WGS : “mansonella_perstans;trichuris_trichiura”<br>
 145 . CM.506_WGS : “ascaris_lumbricoides;microfilaria_loa_loa;plasmodium_falciparum;trichuris_trichiura”<br>
@@ -2129,8 +2112,6 @@
 157 . CM.55_WGS : “ascaris_lumbricoides;mansonella_perstans;trichuris_trichiura”<br>
 160 . CM.57_WGS : “ascaris_lumbricoides;hookworm;mansonella_perstans;trichuris_trichiura”<br>
 163 . CM.64_WGS : “mansonella_perstans”<br>
-164 . CM.65_WGS : “ascaris_lumbricoides”<br>
-166 . CM.7_WGS : “ascaris_lumbricoides”<br>
 167 . CM.70_WGS : “microfilaria_loa_loa”<br>
 168 . CM.75_WGS : “plasmodium_falciparum”<br>
 170 . CM.80_WGS : “ascaris_lumbricoides;entamoeba_histolytica”<br>
@@ -2963,52 +2944,7 @@
 <h1 class="hasAnchor">
 <a href="#vilaav_2018_metadata-tsv" class="anchor"></a>VilaAV_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-16" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-16" class="anchor"></a>Entry errors</h2>
-<div id="disease_subtype-4" class="section level3">
-<h3 class="hasAnchor">
-<a href="#disease_subtype-4" class="anchor"></a>disease_subtype</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|Indeterminate_colitis<br>
-</li>
-<li>
-<em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>14 . EGAR00001763385_1000IBD00033 : “undetermined_colitis”<br>
-15 . EGAR00001763386_1000IBD00035 : “undetermined_colitis”<br>
-49 . EGAR00001763421_1000IBD00097 : “undetermined_colitis”<br>
-50 . EGAR00001763422_1000IBD00099 : “undetermined_colitis”<br>
-58 . EGAR00001763431_1000IBD00111 : “undetermined_colitis”<br>
-59 . EGAR00001763432_1000IBD00112 : “undetermined_colitis”<br>
-65 . EGAR00001763439_1000IBD00125 : “undetermined_colitis”<br>
-66 . EGAR00001763440_1000IBD00126 : “undetermined_colitis”<br>
-121 . EGAR00001763503_1000IBD00256 : “undetermined_colitis”<br>
-134 . EGAR00001763517_1000IBD00296 : “undetermined_colitis”<br>
-137 . EGAR00001763521_1000IBD00308 : “undetermined_colitis”<br>
-138 . EGAR00001763522_1000IBD00309 : “undetermined_colitis”<br>
-237 . EGAR00001763639_1000IBD00577 : “undetermined_colitis”<br>
-238 . EGAR00001763640_1000IBD00579 : “undetermined_colitis”<br>
-247 . EGAR00001763649_1000IBD00597 : “undetermined_colitis”<br>
-248 . EGAR00001763650_1000IBD00598 : “undetermined_colitis”<br>
-307 . EGAR00001773299_1000IBD00132 : “undetermined_colitis”<br>
-316 . EGAR00001773308_1000IBD00387 : “undetermined_colitis”<br>
-340 . EGAR00001773332_1000IBD00680 : “undetermined_colitis”<br>
-355 . EGAR00001773347_1000IBD01332 : “undetermined_colitis”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="vincentc_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -3033,9 +2969,9 @@
 <li>“mode_delivery” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-17" class="section level2">
+<div id="entry-errors-16" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-17" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-16" class="anchor"></a>Entry errors</h2>
 <div id="curator-3" class="section level3">
 <h3 class="hasAnchor">
 <a href="#curator-3" class="anchor"></a>curator</h3>
@@ -3127,9 +3063,9 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-18" class="section level2">
+<div id="entry-errors-17" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-18" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-17" class="anchor"></a>Entry errors</h2>
 <div id="sequencing_platform" class="section level3">
 <h3 class="hasAnchor">
 <a href="#sequencing_platform" class="anchor"></a>sequencing_platform</h3>
@@ -3176,9 +3112,9 @@
 <h1 class="hasAnchor">
 <a href="#yachidas_2019_metadata-tsv" class="anchor"></a>YachidaS_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-19" class="section level2">
+<div id="entry-errors-18" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-19" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-18" class="anchor"></a>Entry errors</h2>
 <div id="ajcc-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#ajcc-1" class="anchor"></a>ajcc</h3>
@@ -3212,9 +3148,9 @@
 <h1 class="hasAnchor">
 <a href="#yassourm_2016_metadata-tsv" class="anchor"></a>YassourM_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-20" class="section level2">
+<div id="entry-errors-19" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-20" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-19" class="anchor"></a>Entry errors</h2>
 <div id="country-2" class="section level3">
 <h3 class="hasAnchor">
 <a href="#country-2" class="anchor"></a>country</h3>
@@ -3291,9 +3227,9 @@
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-21" class="section level2">
+<div id="entry-errors-20" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-21" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-20" class="anchor"></a>Entry errors</h2>
 <div id="tnm" class="section level3">
 <h3 class="hasAnchor">
 <a href="#tnm" class="anchor"></a>tnm</h3>
@@ -3340,9 +3276,9 @@
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-22" class="section level2">
+<div id="entry-errors-21" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-22" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-21" class="anchor"></a>Entry errors</h2>
 <div id="study_condition-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#study_condition-1" class="anchor"></a>study_condition</h3>
@@ -3470,7 +3406,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|chorioamnionitis|pre-eclampsia<br>
+<em>allowedvalues</em>: healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|NK|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia<br>
 </li>
 <li>
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
@@ -3567,9 +3503,9 @@
 170 . wHAXPI047830-11 : “schizofrenia”<br>
 171 . wHAXPI048670-90 : “schizofrenia”</p>
 </div>
-<div id="disease_subtype-5" class="section level3">
+<div id="disease_subtype-4" class="section level3">
 <h3 class="hasAnchor">
-<a href="#disease_subtype-5" class="anchor"></a>disease_subtype</h3>
+<a href="#disease_subtype-4" class="anchor"></a>disease_subtype</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -3582,7 +3518,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|Indeterminate_colitis<br>
+<em>allowedvalues</em>: healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
