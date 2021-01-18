@@ -40,7 +40,7 @@ alcohol_numeric,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Alcohol consumption re
 mumps,non-unique,optional,FALSE,yes|no,Subject has been through mumps in life.
 ajcc,non-unique,optional,FALSE,0|i|ii|iii|iv|iii/iv,AJCC staging for colorectal-cancer.
 fobt,non-unique,optional,FALSE,yes|no,Fecal occult blood test.
-tnm,non-unique,optional,FALSE,t4n1m1|t3nxm1|t2n0m1|tnm|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0,TNM classification for colorectal-cancer.
+tnm,non-unique,optional,FALSE,t4n1m1|t3nxm1|t2n0m1|tnm|t3n3m1|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0,TNM classification for colorectal-cancer.
 days_after_onset,non-unique,optional,FALSE,[0-9]+,Days from the onset of the disease.
 stec_count,non-unique,optional,FALSE,high|low|moderate,Amount of STEC colonies detected.
 shigatoxin_2_elisa,non-unique,optional,FALSE,positive|negative,Enzyme-linked immunosorbent assay for Shiga-toxigenic E.coli.
