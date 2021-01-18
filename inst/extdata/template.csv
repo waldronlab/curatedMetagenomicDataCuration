@@ -38,7 +38,7 @@ ever_smoker,non-unique,optional,FALSE,yes|no,Ever been a smoker.
 alcohol,non-unique,optional,FALSE,yes|no,Subject is reported as a drinker.
 alcohol_numeric,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Alcohol consumption reported as a float. 
 mumps,non-unique,optional,FALSE,yes|no,Subject has been through mumps in life.
-ajcc,non-unique,optional,FALSE,0|i|ii|iii|iv,AJCC staging for colorectal-cancer.
+ajcc,non-unique,optional,FALSE,0|i|ii|iii|iv|iii/iv,AJCC staging for colorectal-cancer.
 fobt,non-unique,optional,FALSE,yes|no,Fecal occult blood test.
 tnm,non-unique,optional,FALSE,t4n1m1|t3nxm1|t2n0m1|tnm|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0,TNM classification for colorectal-cancer.
 days_after_onset,non-unique,optional,FALSE,[0-9]+,Days from the onset of the disease.
@@ -125,5 +125,5 @@ SCCAI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,simple clinical colitis activity
 birth_weight,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curators must use gramms 
 gestational_age,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,duration time of pregnancy;curatos must use weeks
 diet,non-unique,optional,FALSE,omnivore|vegan|vegetarian,type of diet
-curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco;Paolo_Manghi,Curator name.
+curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
