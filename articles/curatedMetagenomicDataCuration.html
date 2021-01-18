@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-18 16:18:13 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-18 16:21:42 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -716,7 +716,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco;Paolo_Manghi<br>
+<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi<br>
 </li>
 <li>
 <em>description</em>: Curator name.</li>
@@ -1510,6 +1510,292 @@
 <li>“fasting_glucose” is not defined in the template.</li>
 </ul>
 </div>
+<div id="entry-errors-8" class="section level2">
+<h2 class="hasAnchor">
+<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<div id="curator-1" class="section level3">
+<h3 class="hasAnchor">
+<a href="#curator-1" class="anchor"></a>curator</h3>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi<br>
+</li>
+<li>
+<em>description</em>: Curator name.</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . DLF005-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+2 . DLM006-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+3 . DOM005-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+4 . DOM017-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+5 . MH0192 : “Aitor_Blanco;Paolo_Manghi”<br>
+6 . MH0221 : “Aitor_Blanco;Paolo_Manghi”<br>
+7 . MH0222 : “Aitor_Blanco;Paolo_Manghi”<br>
+8 . MH0234 : “Aitor_Blanco;Paolo_Manghi”<br>
+9 . MH0238 : “Aitor_Blanco;Paolo_Manghi”<br>
+10 . MH0245 : “Aitor_Blanco;Paolo_Manghi”<br>
+11 . MH0246 : “Aitor_Blanco;Paolo_Manghi”<br>
+12 . MH0252 : “Aitor_Blanco;Paolo_Manghi”<br>
+13 . MH0259 : “Aitor_Blanco;Paolo_Manghi”<br>
+14 . MH0260 : “Aitor_Blanco;Paolo_Manghi”<br>
+15 . MH0261 : “Aitor_Blanco;Paolo_Manghi”<br>
+16 . MH0262 : “Aitor_Blanco;Paolo_Manghi”<br>
+17 . MH0264 : “Aitor_Blanco;Paolo_Manghi”<br>
+18 . MH0265 : “Aitor_Blanco;Paolo_Manghi”<br>
+19 . MH0266 : “Aitor_Blanco;Paolo_Manghi”<br>
+20 . MH0268 : “Aitor_Blanco;Paolo_Manghi”<br>
+21 . MH0270 : “Aitor_Blanco;Paolo_Manghi”<br>
+22 . MH0271 : “Aitor_Blanco;Paolo_Manghi”<br>
+23 . MH0280 : “Aitor_Blanco;Paolo_Manghi”<br>
+24 . MH0281 : “Aitor_Blanco;Paolo_Manghi”<br>
+25 . MH0283 : “Aitor_Blanco;Paolo_Manghi”<br>
+26 . MH0284 : “Aitor_Blanco;Paolo_Manghi”<br>
+27 . MH0290 : “Aitor_Blanco;Paolo_Manghi”<br>
+28 . MH0293 : “Aitor_Blanco;Paolo_Manghi”<br>
+29 . MH0297 : “Aitor_Blanco;Paolo_Manghi”<br>
+30 . MH0298 : “Aitor_Blanco;Paolo_Manghi”<br>
+31 . MH0299 : “Aitor_Blanco;Paolo_Manghi”<br>
+32 . MH0301 : “Aitor_Blanco;Paolo_Manghi”<br>
+33 . MH0303 : “Aitor_Blanco;Paolo_Manghi”<br>
+34 . MH0308 : “Aitor_Blanco;Paolo_Manghi”<br>
+35 . MH0309 : “Aitor_Blanco;Paolo_Manghi”<br>
+36 . MH0310 : “Aitor_Blanco;Paolo_Manghi”<br>
+37 . MH0311 : “Aitor_Blanco;Paolo_Manghi”<br>
+38 . MH0314 : “Aitor_Blanco;Paolo_Manghi”<br>
+39 . MH0315 : “Aitor_Blanco;Paolo_Manghi”<br>
+40 . MH0319 : “Aitor_Blanco;Paolo_Manghi”<br>
+41 . MH0323 : “Aitor_Blanco;Paolo_Manghi”<br>
+42 . MH0325 : “Aitor_Blanco;Paolo_Manghi”<br>
+43 . MH0326 : “Aitor_Blanco;Paolo_Manghi”<br>
+44 . MH0327 : “Aitor_Blanco;Paolo_Manghi”<br>
+45 . MH0328 : “Aitor_Blanco;Paolo_Manghi”<br>
+46 . MH0329 : “Aitor_Blanco;Paolo_Manghi”<br>
+47 . MH0330 : “Aitor_Blanco;Paolo_Manghi”<br>
+48 . MH0332 : “Aitor_Blanco;Paolo_Manghi”<br>
+49 . MH0334 : “Aitor_Blanco;Paolo_Manghi”<br>
+50 . MH0335 : “Aitor_Blanco;Paolo_Manghi”<br>
+51 . MH0336 : “Aitor_Blanco;Paolo_Manghi”<br>
+52 . MH0337 : “Aitor_Blanco;Paolo_Manghi”<br>
+53 . MH0338 : “Aitor_Blanco;Paolo_Manghi”<br>
+54 . MH0339 : “Aitor_Blanco;Paolo_Manghi”<br>
+55 . MH0340 : “Aitor_Blanco;Paolo_Manghi”<br>
+56 . MH0341 : “Aitor_Blanco;Paolo_Manghi”<br>
+57 . MH0342 : “Aitor_Blanco;Paolo_Manghi”<br>
+58 . MH0343 : “Aitor_Blanco;Paolo_Manghi”<br>
+59 . MH0345 : “Aitor_Blanco;Paolo_Manghi”<br>
+60 . MH0346 : “Aitor_Blanco;Paolo_Manghi”<br>
+61 . MH0347 : “Aitor_Blanco;Paolo_Manghi”<br>
+62 . MH0348 : “Aitor_Blanco;Paolo_Manghi”<br>
+63 . MH0349 : “Aitor_Blanco;Paolo_Manghi”<br>
+64 . MH0350 : “Aitor_Blanco;Paolo_Manghi”<br>
+65 . MH0351 : “Aitor_Blanco;Paolo_Manghi”<br>
+66 . MH0354 : “Aitor_Blanco;Paolo_Manghi”<br>
+67 . MH0355 : “Aitor_Blanco;Paolo_Manghi”<br>
+68 . MH0356 : “Aitor_Blanco;Paolo_Manghi”<br>
+69 . MH0357 : “Aitor_Blanco;Paolo_Manghi”<br>
+70 . MH0358 : “Aitor_Blanco;Paolo_Manghi”<br>
+71 . MH0359 : “Aitor_Blanco;Paolo_Manghi”<br>
+72 . MH0360 : “Aitor_Blanco;Paolo_Manghi”<br>
+73 . MH0361 : “Aitor_Blanco;Paolo_Manghi”<br>
+74 . MH0362 : “Aitor_Blanco;Paolo_Manghi”<br>
+75 . MH0363 : “Aitor_Blanco;Paolo_Manghi”<br>
+76 . MH0364 : “Aitor_Blanco;Paolo_Manghi”<br>
+77 . MH0365 : “Aitor_Blanco;Paolo_Manghi”<br>
+78 . MH0366 : “Aitor_Blanco;Paolo_Manghi”<br>
+79 . MH0367 : “Aitor_Blanco;Paolo_Manghi”<br>
+80 . MH0368 : “Aitor_Blanco;Paolo_Manghi”<br>
+81 . MH0369 : “Aitor_Blanco;Paolo_Manghi”<br>
+82 . MH0370 : “Aitor_Blanco;Paolo_Manghi”<br>
+83 . MH0371 : “Aitor_Blanco;Paolo_Manghi”<br>
+84 . MH0372 : “Aitor_Blanco;Paolo_Manghi”<br>
+85 . MH0373 : “Aitor_Blanco;Paolo_Manghi”<br>
+86 . MH0374 : “Aitor_Blanco;Paolo_Manghi”<br>
+87 . MH0375 : “Aitor_Blanco;Paolo_Manghi”<br>
+88 . MH0376 : “Aitor_Blanco;Paolo_Manghi”<br>
+89 . MH0377 : “Aitor_Blanco;Paolo_Manghi”<br>
+90 . MH0378 : “Aitor_Blanco;Paolo_Manghi”<br>
+91 . MH0379 : “Aitor_Blanco;Paolo_Manghi”<br>
+92 . MH0381 : “Aitor_Blanco;Paolo_Manghi”<br>
+93 . MH0382 : “Aitor_Blanco;Paolo_Manghi”<br>
+94 . MH0383 : “Aitor_Blanco;Paolo_Manghi”<br>
+95 . MH0384 : “Aitor_Blanco;Paolo_Manghi”<br>
+96 . MH0385 : “Aitor_Blanco;Paolo_Manghi”<br>
+97 . MH0386 : “Aitor_Blanco;Paolo_Manghi”<br>
+98 . MH0387 : “Aitor_Blanco;Paolo_Manghi”<br>
+99 . MH0388 : “Aitor_Blanco;Paolo_Manghi”<br>
+100 . MH0389 : “Aitor_Blanco;Paolo_Manghi”<br>
+101 . MH0390 : “Aitor_Blanco;Paolo_Manghi”<br>
+102 . MH0391 : “Aitor_Blanco;Paolo_Manghi”<br>
+103 . MH0392 : “Aitor_Blanco;Paolo_Manghi”<br>
+104 . MH0393 : “Aitor_Blanco;Paolo_Manghi”<br>
+105 . MH0394 : “Aitor_Blanco;Paolo_Manghi”<br>
+106 . MH0395 : “Aitor_Blanco;Paolo_Manghi”<br>
+107 . MH0396 : “Aitor_Blanco;Paolo_Manghi”<br>
+108 . MH0397 : “Aitor_Blanco;Paolo_Manghi”<br>
+109 . MH0398 : “Aitor_Blanco;Paolo_Manghi”<br>
+110 . MH0399 : “Aitor_Blanco;Paolo_Manghi”<br>
+111 . MH0400 : “Aitor_Blanco;Paolo_Manghi”<br>
+112 . MH0401 : “Aitor_Blanco;Paolo_Manghi”<br>
+113 . MH0402 : “Aitor_Blanco;Paolo_Manghi”<br>
+114 . NLF002-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+115 . NLF009-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+116 . NLM009-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+117 . NLM025-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+118 . NOF002-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+119 . NOF007-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+120 . NOF013-IE : “Aitor_Blanco;Paolo_Manghi”<br>
+121 . O2.CD1-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+122 . O2.CD1-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+123 . O2.CD2-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+124 . O2.CD2-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+125 . O2.CD3-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+126 . O2.UC1-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+127 . O2.UC11-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+128 . O2.UC12-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+129 . O2.UC13-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+130 . O2.UC14-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+131 . O2.UC15-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+132 . O2.UC15-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+133 . O2.UC15-2 : “Aitor_Blanco;Paolo_Manghi”<br>
+134 . O2.UC16-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+135 . O2.UC17-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+136 . O2.UC18-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+137 . O2.UC19-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+138 . O2.UC20-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+139 . O2.UC2-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+140 . O2.UC21-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+141 . O2.UC22-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+142 . O2.UC23-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+143 . O2.UC24-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+144 . O2.UC26-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+145 . O2.UC27-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+146 . O2.UC28-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+147 . O2.UC28-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+148 . O2.UC28-2 : “Aitor_Blanco;Paolo_Manghi”<br>
+149 . O2.UC29-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+150 . O2.UC30-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+151 . O2.UC3-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+152 . O2.UC31-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+153 . O2.UC32-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+154 . O2.UC35-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+155 . O2.UC36-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+156 . O2.UC36-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+157 . O2.UC37-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+158 . O2.UC38-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+159 . O2.UC40-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+160 . O2.UC4-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+161 . O2.UC41-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+162 . O2.UC43-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+163 . O2.UC44-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+164 . O2.UC46-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+165 . O2.UC47-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+166 . O2.UC48-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+167 . O2.UC5-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+168 . O2.UC6-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+169 . O2.UC6-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+170 . O2.UC6-2 : “Aitor_Blanco;Paolo_Manghi”<br>
+171 . O2.UC7-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+172 . O2.UC7-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+173 . O2.UC8-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+174 . O2.UC8-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+175 . O2.UC8-2 : “Aitor_Blanco;Paolo_Manghi”<br>
+176 . O2.UC9-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+177 . V1.CD1-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+178 . V1.CD1-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+179 . V1.CD12-3 : “Aitor_Blanco;Paolo_Manghi”<br>
+180 . V1.CD1-3-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+181 . V1.CD20-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+182 . V1.CD2-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+183 . V1.CD2-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+184 . V1.CD3-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+185 . V1.CD3-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+186 . V1.CD32-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+187 . V1.CD32-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+188 . V1.CD3-3-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+189 . V1.CD37-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+190 . V1.CD40-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+191 . V1.CD4-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+192 . V1.CD4-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+193 . V1.CD43-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+194 . V1.CD44-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+195 . V1.CD44-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+196 . V1.CD45-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+197 . V1.CD46-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+198 . V1.CD48-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+199 . V1.CD49-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+200 . V1.CD50-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+201 . V1.CD5-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+202 . V1.CD51-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+203 . V1.CD52-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+204 . V1.CD53-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+205 . V1.CD54-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+206 . V1.CD55-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+207 . V1.CD6-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+208 . V1.CD6-0-PT : “Aitor_Blanco;Paolo_Manghi”<br>
+209 . V1.CD7-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+210 . V1.CD8-0-PN : “Aitor_Blanco;Paolo_Manghi”<br>
+211 . V1.FI01 : “Aitor_Blanco;Paolo_Manghi”<br>
+212 . V1.FI02 : “Aitor_Blanco;Paolo_Manghi”<br>
+213 . V1.FI03 : “Aitor_Blanco;Paolo_Manghi”<br>
+214 . V1.FI04 : “Aitor_Blanco;Paolo_Manghi”<br>
+215 . V1.FI05 : “Aitor_Blanco;Paolo_Manghi”<br>
+216 . V1.FI06 : “Aitor_Blanco;Paolo_Manghi”<br>
+217 . V1.FI07 : “Aitor_Blanco;Paolo_Manghi”<br>
+218 . V1.FI08 : “Aitor_Blanco;Paolo_Manghi”<br>
+219 . V1.FI09 : “Aitor_Blanco;Paolo_Manghi”<br>
+220 . V1.FI10 : “Aitor_Blanco;Paolo_Manghi”<br>
+221 . V1.FI11 : “Aitor_Blanco;Paolo_Manghi”<br>
+222 . V1.FI12 : “Aitor_Blanco;Paolo_Manghi”<br>
+223 . V1.FI13 : “Aitor_Blanco;Paolo_Manghi”<br>
+224 . V1.FI14 : “Aitor_Blanco;Paolo_Manghi”<br>
+225 . V1.FI15 : “Aitor_Blanco;Paolo_Manghi”<br>
+226 . V1.FI16 : “Aitor_Blanco;Paolo_Manghi”<br>
+227 . V1.FI17 : “Aitor_Blanco;Paolo_Manghi”<br>
+228 . V1.FI18 : “Aitor_Blanco;Paolo_Manghi”<br>
+229 . V1.FI19 : “Aitor_Blanco;Paolo_Manghi”<br>
+230 . V1.FI20 : “Aitor_Blanco;Paolo_Manghi”<br>
+231 . V1.FI21 : “Aitor_Blanco;Paolo_Manghi”<br>
+232 . V1.FI22 : “Aitor_Blanco;Paolo_Manghi”<br>
+233 . V1.FI23 : “Aitor_Blanco;Paolo_Manghi”<br>
+234 . V1.FI24 : “Aitor_Blanco;Paolo_Manghi”<br>
+235 . V1.FI25 : “Aitor_Blanco;Paolo_Manghi”<br>
+236 . V1.FI26 : “Aitor_Blanco;Paolo_Manghi”<br>
+237 . V1.FI27 : “Aitor_Blanco;Paolo_Manghi”<br>
+238 . V1.FI28 : “Aitor_Blanco;Paolo_Manghi”<br>
+239 . V1.FI29 : “Aitor_Blanco;Paolo_Manghi”<br>
+240 . V1.FI30 : “Aitor_Blanco;Paolo_Manghi”<br>
+241 . V1.FI31 : “Aitor_Blanco;Paolo_Manghi”<br>
+242 . V1.FI32 : “Aitor_Blanco;Paolo_Manghi”<br>
+243 . V1.FI33 : “Aitor_Blanco;Paolo_Manghi”<br>
+244 . V1.FI34 : “Aitor_Blanco;Paolo_Manghi”<br>
+245 . V1.FI35 : “Aitor_Blanco;Paolo_Manghi”<br>
+246 . V1.FI36 : “Aitor_Blanco;Paolo_Manghi”<br>
+247 . V1.FI37 : “Aitor_Blanco;Paolo_Manghi”<br>
+248 . V1.UC22-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+249 . V1.UC38-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+250 . V1.UC39-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+251 . V1.UC40-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+252 . V1.UC47-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+253 . V1.UC54-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+254 . V1.UC56-1 : “Aitor_Blanco;Paolo_Manghi”<br>
+255 . V1.UC58-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+256 . V1.UC59-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+257 . V1.UC59-4 : “Aitor_Blanco;Paolo_Manghi”<br>
+258 . V1.UC60-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+259 . V1.UC63-0 : “Aitor_Blanco;Paolo_Manghi”<br>
+260 . V1.UC64-0 : “Aitor_Blanco;Paolo_Manghi”</p>
+</div>
+</div>
 </div>
 <div id="lij_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -1545,9 +1831,9 @@
 <h1 class="hasAnchor">
 <a href="#loombar_2017_metadata-tsv" class="anchor"></a>LoombaR_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-8" class="section level2">
+<div id="entry-errors-9" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-8" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype" class="anchor"></a>disease_subtype</h3>
@@ -1657,9 +1943,9 @@
 <h1 class="hasAnchor">
 <a href="#qinn_2014_metadata-tsv" class="anchor"></a>QinN_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-9" class="section level2">
+<div id="entry-errors-10" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-9" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype-1" class="anchor"></a>disease_subtype</h3>
@@ -1823,9 +2109,9 @@
 <h1 class="hasAnchor">
 <a href="#rosaba_2018_metadata-tsv" class="anchor"></a>RosaBA_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-10" class="section level2">
+<div id="entry-errors-11" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-10" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
 <div id="disease-3" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease-3" class="anchor"></a>disease</h3>
@@ -1905,9 +2191,9 @@
 <h1 class="hasAnchor">
 <a href="#rubelma_2020_metadata-tsv" class="anchor"></a>RubelMA_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-11" class="section level2">
+<div id="entry-errors-12" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-11" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
 <div id="disease-4" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease-4" class="anchor"></a>disease</h3>
@@ -2115,272 +2401,13 @@
 174 . CM.94_WGS : “ascaris_lumbricoides;microfilaria_spp”<br>
 175 . CM.97_WGS : “hookworm;trichuris_trichiura”</p>
 </div>
-<div id="curator-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#curator-1" class="anchor"></a>curator</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco;Paolo_Manghi<br>
-</li>
-<li>
-<em>description</em>: Curator name.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . CM.102_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-2 . CM.103_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-3 . CM.105_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-4 . CM.107_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-5 . CM.109_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-6 . CM.111_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-7 . CM.118_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-8 . CM.126_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-9 . CM.129_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-10 . CM.13_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-11 . CM.131_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-12 . CM.132_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-13 . CM.138_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-14 . CM.139_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-15 . CM.146_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-16 . CM.147_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-17 . CM.152_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-18 . CM.157_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-19 . CM.16_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-20 . CM.160_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-21 . CM.162_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-22 . CM.164_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-23 . CM.165_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-24 . CM.168_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-25 . CM.17_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-26 . CM.172_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-27 . CM.175_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-28 . CM.176_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-29 . CM.177_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-30 . CM.178_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-31 . CM.179_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-32 . CM.18_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-33 . CM.186_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-34 . CM.187_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-35 . CM.19_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-36 . CM.194_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-37 . CM.195_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-38 . CM.199_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-39 . CM.20_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-40 . CM.203_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-41 . CM.206_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-42 . CM.208_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-43 . CM.210_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-44 . CM.211_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-45 . CM.212_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-46 . CM.215_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-47 . CM.219_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-48 . CM.220_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-49 . CM.221_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-50 . CM.222_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-51 . CM.223_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-52 . CM.224_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-53 . CM.226_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-54 . CM.227_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-55 . CM.228_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-56 . CM.231_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-57 . CM.232_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-58 . CM.233_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-59 . CM.234_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-60 . CM.235_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-61 . CM.237_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-62 . CM.239_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-63 . CM.24_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-64 . CM.247_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-65 . CM.249_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-66 . CM.25_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-67 . CM.251_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-68 . CM.253_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-69 . CM.254_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-70 . CM.255_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-71 . CM.257_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-72 . CM.259_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-73 . CM.260_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-74 . CM.261_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-75 . CM.268_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-76 . CM.270_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-77 . CM.271_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-78 . CM.273_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-79 . CM.275_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-80 . CM.278_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-81 . CM.283_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-82 . CM.284_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-83 . CM.285_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-84 . CM.289_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-85 . CM.29_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-86 . CM.291_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-87 . CM.294_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-88 . CM.30_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-89 . CM.308_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-90 . CM.31_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-91 . CM.310_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-92 . CM.315_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-93 . CM.316_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-94 . CM.317_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-95 . CM.32_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-96 . CM.328_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-97 . CM.335_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-98 . CM.339_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-99 . CM.340_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-100 . CM.342_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-101 . CM.343_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-102 . CM.345_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-103 . CM.347_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-104 . CM.358_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-105 . CM.361_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-106 . CM.364_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-107 . CM.366_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-108 . CM.367_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-109 . CM.369_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-110 . CM.370_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-111 . CM.373_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-112 . CM.375_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-113 . CM.376_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-114 . CM.378_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-115 . CM.382_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-116 . CM.389_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-117 . CM.390_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-118 . CM.392_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-119 . CM.395_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-120 . CM.397_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-121 . CM.401_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-122 . CM.402_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-123 . CM.403_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-124 . CM.408_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-125 . CM.409_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-126 . CM.41_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-127 . CM.410_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-128 . CM.412_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-129 . CM.413_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-130 . CM.418_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-131 . CM.425_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-132 . CM.432_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-133 . CM.437_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-134 . CM.438_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-135 . CM.439_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-136 . CM.44_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-137 . CM.443_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-138 . CM.445_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-139 . CM.454_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-140 . CM.46_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-141 . CM.466_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-142 . CM.47_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-143 . CM.486_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-144 . CM.490_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-145 . CM.506_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-146 . CM.507_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-147 . CM.511_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-148 . CM.512_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-149 . CM.514_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-150 . CM.520_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-151 . CM.521_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-152 . CM.525_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-153 . CM.528_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-154 . CM.530_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-155 . CM.532_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-156 . CM.536_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-157 . CM.55_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-158 . CM.553_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-159 . CM.555_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-160 . CM.57_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-161 . CM.574_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-162 . CM.580_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-163 . CM.64_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-164 . CM.65_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-165 . CM.67_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-166 . CM.7_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-167 . CM.70_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-168 . CM.75_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-169 . CM.79_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-170 . CM.80_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-171 . CM.82_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-172 . CM.86_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-173 . CM.90_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-174 . CM.94_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-175 . CM.97_WGS : “Aitor_Blanco_Miguez;Paolo_Manghi”</p>
-</div>
 </div>
 </div>
 <div id="sankaranarayanank_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#sankaranarayanank_2015_metadata-tsv" class="anchor"></a>SankaranarayananK_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-12" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-12" class="anchor"></a>Entry errors</h2>
-<div id="curator-2" class="section level3">
-<h3 class="hasAnchor">
-<a href="#curator-2" class="anchor"></a>curator</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco;Paolo_Manghi<br>
-</li>
-<li>
-<em>description</em>: Curator name.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . CA01 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-2 . CA02 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-3 . CA03 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-4 . CA04 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-5 . CA05 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-6 . CA06 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-7 . CA08 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-8 . CA12 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-9 . CA13 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-10 . CA14 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-11 . CA15 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-12 . CA16 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-13 . CA17 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-14 . CA18 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-15 . CA19 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-16 . CA20 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-17 . CA21 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-18 . CA22 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-19 . CA23 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-20 . CA24 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-21 . CA25 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-22 . CA26 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-23 . CA27 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-24 . CA28 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-25 . CA29 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-26 . CA30 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-27 . CA31 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-28 . CA32 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-29 . CA33 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-30 . CA34 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-31 . CA35 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-32 . CA36 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-33 . CA37 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-34 . CA38 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-35 . CA39 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-36 . CA40 : “Aitor_Blanco_Miguez;Paolo_Manghi”<br>
-37 . CA41 : “Aitor_Blanco_Miguez;Paolo_Manghi”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="schirmerm_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -2446,273 +2473,21 @@
 <h1 class="hasAnchor">
 <a href="#thomasam_2018b_metadata-tsv" class="anchor"></a>ThomasAM_2018b_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-13" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
-<div id="dna_extraction_kit-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#dna_extraction_kit-1" class="anchor"></a>DNA_extraction_kit</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro<br>
-</li>
-<li>
-<em>description</em>: DNA extraction kit.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . CRC_MR_SBJ01C_17 : “GNOME”<br>
-2 . CRC_MR_SBJ02C_17 : “GNOME”<br>
-3 . CRC_MR_SBJ03H_17 : “GNOME”<br>
-4 . CRC_MR_SBJ04C_17 : “GNOME”<br>
-5 . CRC_MR_SBJ05C_17 : “GNOME”<br>
-6 . CRC_MR_SBJ06C_17 : “GNOME”<br>
-7 . CRC_MR_SBJ07C_17 : “GNOME”<br>
-8 . CRC_MR_SBJ10C_17 : “GNOME”<br>
-9 . CRC_MR_SBJ11C_17 : “GNOME”<br>
-10 . CRC_MR_SBJ12C_17 : “GNOME”<br>
-11 . CRC_MR_SBJ16H_17 : “GNOME”<br>
-12 . CRC_MR_SBJ17H_17 : “GNOME”<br>
-13 . CRC_MR_SBJ18H_17 : “GNOME”<br>
-14 . CRC_MR_SBJ20C_17 : “GNOME”<br>
-15 . CRC_MR_SBJ21H_17 : “GNOME”<br>
-16 . CRC_MR_SBJ22C_17 : “GNOME”<br>
-17 . CRC_MR_SBJ24H_17 : “GNOME”<br>
-18 . CRC_MR_SBJ25C_17 : “GNOME”<br>
-19 . CRC_MR_SBJ26C_17 : “GNOME”<br>
-20 . CRC_MR_SBJ27C_17 : “GNOME”<br>
-21 . CRC_MR_SBJ29C_17 : “GNOME”<br>
-22 . CRC_MR_SBJ31C_17 : “GNOME”<br>
-23 . CRC_MR_SBJ32C_17 : “GNOME”<br>
-24 . CRC_MR_SBJ33C_17 : “GNOME”<br>
-25 . CRC_MR_SBJ34H_17 : “GNOME”<br>
-26 . CRC_MR_SBJ35C_17 : “GNOME”<br>
-27 . CRC_MR_SBJ36C_17 : “GNOME”<br>
-28 . CRC_MR_SBJ37H_17 : “GNOME”<br>
-29 . CRC_MR_SBJ39C_17 : “GNOME”<br>
-30 . CRC_MR_SBJ40C_17 : “GNOME”<br>
-31 . CRC_MR_SBJ42C_17 : “GNOME”<br>
-32 . CRC_MR_SBJ45H_17 : “GNOME”<br>
-33 . CRC_MR_SBJ46H_17 : “GNOME”<br>
-34 . CRC_MR_SBJ47C_17 : “GNOME”<br>
-35 . CRC_MR_SBJ49C_17 : “GNOME”<br>
-36 . CRC_MR_SBJ50C_17 : “GNOME”<br>
-37 . CRC_MR_SBJ51C_17 : “GNOME”<br>
-38 . CRC_MR_SBJ52C_17 : “GNOME”<br>
-39 . CRC_MR_SBJ53C_17 : “GNOME”<br>
-40 . CRC_MR_SBJ55C_17 : “GNOME”<br>
-41 . CRC_MR_SBJ57H_17 : “GNOME”<br>
-42 . CRC_MR_SBJ60H_17 : “GNOME”<br>
-43 . CRC_MR_SBJ61C_17 : “GNOME”<br>
-44 . CRC_MR_SBJ63H_17 : “GNOME”<br>
-45 . CRC_MR_SBJ64C_17 : “GNOME”<br>
-46 . CRC_MR_SBJ65H_17 : “GNOME”<br>
-47 . CRC_MR_SBJ67H_17 : “GNOME”<br>
-48 . CRC_MR_SBJ68H_17 : “GNOME”<br>
-49 . CRC_MR_SBJ69H_17 : “GNOME”<br>
-50 . CRC_MR_SBJ73H_17 : “GNOME”<br>
-51 . CRC_MR_SBJ74H_17 : “GNOME”<br>
-52 . CRC_MR_SBJ75H_17 : “GNOME”<br>
-53 . CRC_MR_SBJ77H_17 : “GNOME”<br>
-54 . CRC_MR_SBJ78H_17 : “GNOME”<br>
-55 . CRC_MR_SBJ79H_17 : “GNOME”<br>
-56 . CRC_MR_SBJ80H_17 : “GNOME”<br>
-57 . CRC_MR_SBJ81H_17 : “GNOME”<br>
-58 . CRC_MR_SBJ82H_17 : “GNOME”<br>
-59 . CRC_MR_SBJ83H_17 : “GNOME”<br>
-60 . CRC_MR_SBJ84H_17 : “GNOME”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="thomasam_2019_c_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#thomasam_2019_c_metadata-tsv" class="anchor"></a>ThomasAM_2019_c_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-14" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
-<div id="ajcc" class="section level3">
-<h3 class="hasAnchor">
-<a href="#ajcc" class="anchor"></a>ajcc</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: 0|i|ii|iii|iv<br>
-</li>
-<li>
-<em>description</em>: AJCC staging for colorectal-cancer.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>3 . mix3_N705-N506_GGACTCCT-ACTGCATA : “iii/iv”<br>
-6 . mix6_N707-N504_CTCTCTAC-AGAGTAGA : “iii/iv”<br>
-8 . mix2_N711-N504_AAGAGGCA-AGAGTAGA : “iii/iv”<br>
-9 . AHCT5GADXX.N703-S501_AGGCAGAA-TAGATCGC : “iii/iv”<br>
-11 . BHCNG3ADXX.N708-S502_CAGAGAGG-CTCTCTAT : “iii/iv”<br>
-13 . BHCNG3ADXX.N709-S502_GCTACGCT-CTCTCTAT : “iii/iv”<br>
-14 . BHCNG3ADXX.N711-S502_AAGAGGCA-CTCTCTAT : “iii/iv”<br>
-16 . BHCNG3ADXX.N701-S503_TAAGGCGA-TATCCTCT : “iii/iv”<br>
-17 . BHCNJJADXX.N703-S503_AGGCAGAA-TATCCTCT : “iii/iv”<br>
-18 . BHCNJJADXX.N705-S503_GGACTCCT-TATCCTCT : “iii/iv”<br>
-21 . AHCNC2ADXX.N708_CAGAGAGG : “iii/iv”<br>
-22 . AHCNC2ADXX.N710_CGAGGCTG : “iii/iv”<br>
-25 . BHCNFHADXX.N710-S505_CGAGGCTG-GTAAGGAG : “iii/iv”<br>
-27 . BHCNK3ADXX.N712-S506_GTAGAGGA-ACTGCATA : “iii/iv”<br>
-31 . AHCNMFADXX.N709-S507_GCTACGCT-AAGGAGTA : “iii/iv”<br>
-33 . AHCNMFADXX.N703-S508_AGGCAGAA-CTAAGCCT : “iii/iv”<br>
-39 . mix35_mix36-N712-S507_GTAGAGGA-AAGGAGTA : “iii/iv”<br>
-40 . HGK7MADXX_PG0662_19A0305_H3_L001 : “iii/iv”<br>
-41 . HGK7MADXX_PG0662_87A0503_H3_L002 : “iii/iv”<br>
-42 . HGKMWADXX_PG0662_92A0617_H3_L001 : “iii/iv”<br>
-46 . HGKMWADXX_PG0662_166A0807_H3_L002 : “iii/iv”<br>
-48 . HGK52ADXX_PG0662_172A0906_H3_L001 : “iii/iv”<br>
-51 . HGKY7ADXX_PG0662_182A0217_H1_L002 : “iii/iv”<br>
-52 . HGKY7ADXX_PG0662_239A0206_H1_L001 : “iii/iv”<br>
-53 . HGKYWADXX_PG0662_245A0305_H1_L002 : “iii/iv”<br>
-55 . HGKYWADXX_PG0662_255A0407_H1_L001 : “iii/iv”<br>
-56 . HGKYWADXX_PG0662_259A0504_H1_L001 : “iii/iv”<br>
-58 . HGKY5ADXX_PG0662_332A0817_H1_L001 : “iii/iv”<br>
-59 . HJK7MADXX_PG0783_04A0104_H1_L002 : “iii/iv”<br>
-62 . HJK7VADXX_PG0783_22A0417_H1_L001 : “iii/iv”<br>
-63 . HJK7VADXX_PG0783_23A0402_H1_L002 : “iii/iv”<br>
-65 . HJKJ2ADXX_PG0783_27A0405_H1_L001 : “iii/iv”<br>
-68 . HJKHTADXX_PG0783_65A0205_H1_L002 : “iii/iv”<br>
-70 . HJKHJADXX_PG0783_75A0417_H1_L001 : “iii/iv”<br>
-72 . HJKNLADXX_PG0783_89A0507_H1_L002 : “iii/iv”<br>
-73 . HJKJJADXX_PG0783_92A0603_H1_L002 : “iii/iv”<br>
-74 . HJKHJADXX_PG0783_98A0717_H1_L001 : “iii/iv”<br>
-77 . HJK7NADXX_PG0783_128A0406_H1_L002 : “iii/iv”<br>
-78 . HJKTNADXX_PG0783_132A0504_H1_L002 : “iii/iv”<br>
-79 . HJKTNADXX_PG0783_145A0703_H1_L001 : “iii/iv”</p>
-</div>
-<div id="curator-3" class="section level3">
-<h3 class="hasAnchor">
-<a href="#curator-3" class="anchor"></a>curator</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco;Paolo_Manghi<br>
-</li>
-<li>
-<em>description</em>: Curator name.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . mix1_N702-N505_CGTACTAG-GTAAGGAG : “Giacomo_Damato;Paolo_Manghi”<br>
-2 . mix3_N707-N505_CTCTCTAC-GTAAGGAG : “Giacomo_Damato;Paolo_Manghi”<br>
-3 . mix3_N705-N506_GGACTCCT-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-4 . mix3_N706-N506_TAGGCATG-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-5 . mix2_N707-N503_CTCTCTAC-TATCCTCT : “Giacomo_Damato;Paolo_Manghi”<br>
-6 . mix6_N707-N504_CTCTCTAC-AGAGTAGA : “Giacomo_Damato;Paolo_Manghi”<br>
-7 . mix2_N708-N504_CAGAGAGG-AGAGTAGA : “Giacomo_Damato;Paolo_Manghi”<br>
-8 . mix2_N711-N504_AAGAGGCA-AGAGTAGA : “Giacomo_Damato;Paolo_Manghi”<br>
-9 . AHCT5GADXX.N703-S501_AGGCAGAA-TAGATCGC : “Giacomo_Damato;Paolo_Manghi”<br>
-10 . BHCNG3ADXX.N705-S502_GGACTCCT-CTCTCTAT : “Giacomo_Damato;Paolo_Manghi”<br>
-11 . BHCNG3ADXX.N708-S502_CAGAGAGG-CTCTCTAT : “Giacomo_Damato;Paolo_Manghi”<br>
-12 . HGKT5ADXX_PG0662_09A0202_H2 : “Giacomo_Damato;Paolo_Manghi”<br>
-13 . BHCNG3ADXX.N709-S502_GCTACGCT-CTCTCTAT : “Giacomo_Damato;Paolo_Manghi”<br>
-14 . BHCNG3ADXX.N711-S502_AAGAGGCA-CTCTCTAT : “Giacomo_Damato;Paolo_Manghi”<br>
-15 . mix20-N702-S501_CGTACTAG-TAGATCGC : “Giacomo_Damato;Paolo_Manghi”<br>
-16 . BHCNG3ADXX.N701-S503_TAAGGCGA-TATCCTCT : “Giacomo_Damato;Paolo_Manghi”<br>
-17 . BHCNJJADXX.N703-S503_AGGCAGAA-TATCCTCT : “Giacomo_Damato;Paolo_Manghi”<br>
-18 . BHCNJJADXX.N705-S503_GGACTCCT-TATCCTCT : “Giacomo_Damato;Paolo_Manghi”<br>
-19 . BHCNJJADXX.N708-S503_CAGAGAGG-TATCCTCT : “Giacomo_Damato;Paolo_Manghi”<br>
-20 . mix21_mix22-N705-S502_GGACTCCT-CTCTCTAT : “Giacomo_Damato;Paolo_Manghi”<br>
-21 . AHCNC2ADXX.N708_CAGAGAGG : “Giacomo_Damato;Paolo_Manghi”<br>
-22 . AHCNC2ADXX.N710_CGAGGCTG : “Giacomo_Damato;Paolo_Manghi”<br>
-23 . mix23_mix24-N703-S503_AGGCAGAA-TATCCTCT : “Giacomo_Damato;Paolo_Manghi”<br>
-24 . BHCTGKADXX.N707-S505_CTCTCTAC-GTAAGGAG : “Giacomo_Damato;Paolo_Manghi”<br>
-25 . BHCNFHADXX.N710-S505_CGAGGCTG-GTAAGGAG : “Giacomo_Damato;Paolo_Manghi”<br>
-26 . BHCNK3ADXX.N711-S506_AAGAGGCA-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-27 . BHCNK3ADXX.N712-S506_GTAGAGGA-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-28 . mix29_mix30-N710_CGAGGCTG : “Giacomo_Damato;Paolo_Manghi”<br>
-29 . BHCNK3ADXX.N706-S507_TAGGCATG-AAGGAGTA : “Giacomo_Damato;Paolo_Manghi”<br>
-30 . mix31_mix32-N702-S506_CGTACTAG-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-31 . AHCNMFADXX.N709-S507_GCTACGCT-AAGGAGTA : “Giacomo_Damato;Paolo_Manghi”<br>
-32 . AHCNMFADXX.N712-S507_GTAGAGGA-AAGGAGTA : “Giacomo_Damato;Paolo_Manghi”<br>
-33 . AHCNMFADXX.N703-S508_AGGCAGAA-CTAAGCCT : “Giacomo_Damato;Paolo_Manghi”<br>
-34 . mix31_mix32-N705-S506_GGACTCCT-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-35 . BHCNM7ADXX.N712-S508_GTAGAGGA-CTAAGCCT : “Giacomo_Damato;Paolo_Manghi”<br>
-36 . BHCNM7ADXX.N701-S511_TAAGGCGA-TCTCTCCG : “Giacomo_Damato;Paolo_Manghi”<br>
-37 . mix33_mix34-N711-S506_AAGAGGCA-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-38 . mix33_mix34-N712-S506_GTAGAGGA-ACTGCATA : “Giacomo_Damato;Paolo_Manghi”<br>
-39 . mix35_mix36-N712-S507_GTAGAGGA-AAGGAGTA : “Giacomo_Damato;Paolo_Manghi”<br>
-40 . HGK7MADXX_PG0662_19A0305_H3_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-41 . HGK7MADXX_PG0662_87A0503_H3_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-42 . HGKMWADXX_PG0662_92A0617_H3_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-43 . HGKMWADXX_PG0662_95A0604_H3_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-44 . HGKYVADXX_PG0662_98A0607_H3_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-45 . HGKYVADXX_PG0662_104A0704_H3_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-46 . HGKMWADXX_PG0662_166A0807_H3_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-47 . HGKFCADXX_PG0662_168A0902_H3_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-48 . HGK52ADXX_PG0662_172A0906_H3_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-49 . HGKY7ADXX_PG0662_178A0104_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-50 . HGKY7ADXX_PG0662_179A0105_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-51 . HGKY7ADXX_PG0662_182A0217_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-52 . HGKY7ADXX_PG0662_239A0206_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-53 . HGKYWADXX_PG0662_245A0305_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-54 . HGKYWADXX_PG0662_249A0402_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-55 . HGKYWADXX_PG0662_255A0407_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-56 . HGKYWADXX_PG0662_259A0504_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-57 . HGKYVADXX_PG0662_320A0604_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-58 . HGKY5ADXX_PG0662_332A0817_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-59 . HJK7MADXX_PG0783_04A0104_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-60 . HJKJJADXX_PG0783_14A0207_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-61 . HJKJ2ADXX_PG0783_19A0305_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-62 . HJK7VADXX_PG0783_22A0417_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-63 . HJK7VADXX_PG0783_23A0402_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-64 . HJK7MADXX_PG0783_24A0403_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-65 . HJKJ2ADXX_PG0783_27A0405_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-66 . HJK7VADXX_PG0783_31A0502_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-67 . HJKHTADXX_PG0783_55A0104_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-68 . HJKHTADXX_PG0783_65A0205_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-69 . HJKNLADXX_PG0783_67A0207_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-70 . HJKHJADXX_PG0783_75A0417_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-71 . HJKNLADXX_PG0783_82A0407_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-72 . HJKNLADXX_PG0783_89A0507_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-73 . HJKJJADXX_PG0783_92A0603_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-74 . HJKHJADXX_PG0783_98A0717_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-75 . HJK7NADXX_PG0783_110A0106_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-76 . HJKTNADXX_PG0783_113A0203_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-77 . HJK7NADXX_PG0783_128A0406_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-78 . HJKTNADXX_PG0783_132A0504_H1_L002 : “Giacomo_Damato;Paolo_Manghi”<br>
-79 . HJKTNADXX_PG0783_145A0703_H1_L001 : “Giacomo_Damato;Paolo_Manghi”<br>
-80 . HJKTNADXX_PG0783_147A0704_H1_L002 : “Giacomo_Damato;Paolo_Manghi”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="vatanent_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#vatanent_2016_metadata-tsv" class="anchor"></a>VatanenT_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-15" class="section level2">
+<div id="entry-errors-13" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-15" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-13" class="anchor"></a>Entry errors</h2>
 <div id="antibiotics_family" class="section level3">
 <h3 class="hasAnchor">
 <a href="#antibiotics_family" class="anchor"></a>antibiotics_family</h3>
@@ -2767,12 +2542,12 @@
 <li>“mode_delivery” is not defined in the template.</li>
 </ul>
 </div>
-<div id="entry-errors-16" class="section level2">
+<div id="entry-errors-14" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-16" class="anchor"></a>Entry errors</h2>
-<div id="curator-4" class="section level3">
+<a href="#entry-errors-14" class="anchor"></a>Entry errors</h2>
+<div id="curator-2" class="section level3">
 <h3 class="hasAnchor">
-<a href="#curator-4" class="anchor"></a>curator</h3>
+<a href="#curator-2" class="anchor"></a>curator</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2785,7 +2560,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco;Paolo_Manghi<br>
+<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi<br>
 </li>
 <li>
 <em>description</em>: Curator name.</li>
@@ -2861,9 +2636,9 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-17" class="section level2">
+<div id="entry-errors-15" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-17" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-15" class="anchor"></a>Entry errors</h2>
 <div id="sequencing_platform" class="section level3">
 <h3 class="hasAnchor">
 <a href="#sequencing_platform" class="anchor"></a>sequencing_platform</h3>
@@ -2910,12 +2685,12 @@
 <h1 class="hasAnchor">
 <a href="#yachidas_2019_metadata-tsv" class="anchor"></a>YachidaS_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-18" class="section level2">
+<div id="entry-errors-16" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-18" class="anchor"></a>Entry errors</h2>
-<div id="ajcc-1" class="section level3">
+<a href="#entry-errors-16" class="anchor"></a>Entry errors</h2>
+<div id="ajcc" class="section level3">
 <h3 class="hasAnchor">
-<a href="#ajcc-1" class="anchor"></a>ajcc</h3>
+<a href="#ajcc" class="anchor"></a>ajcc</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2928,7 +2703,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: 0|i|ii|iii|iv<br>
+<em>allowedvalues</em>: 0|i|ii|iii|iv|iii/iv<br>
 </li>
 <li>
 <em>description</em>: AJCC staging for colorectal-cancer.</li>
@@ -2946,9 +2721,9 @@
 <h1 class="hasAnchor">
 <a href="#yassourm_2016_metadata-tsv" class="anchor"></a>YassourM_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-19" class="section level2">
+<div id="entry-errors-17" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-19" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-17" class="anchor"></a>Entry errors</h2>
 <div id="country-2" class="section level3">
 <h3 class="hasAnchor">
 <a href="#country-2" class="anchor"></a>country</h3>
@@ -3025,9 +2800,9 @@
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-20" class="section level2">
+<div id="entry-errors-18" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-20" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-18" class="anchor"></a>Entry errors</h2>
 <div id="tnm" class="section level3">
 <h3 class="hasAnchor">
 <a href="#tnm" class="anchor"></a>tnm</h3>
@@ -3074,9 +2849,9 @@
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-21" class="section level2">
+<div id="entry-errors-19" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-21" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-19" class="anchor"></a>Entry errors</h2>
 <div id="study_condition-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#study_condition-1" class="anchor"></a>study_condition</h3>
