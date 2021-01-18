@@ -1,6 +1,6 @@
 col.name,uniqueness,requiredness,multiplevalues,allowedvalues,description
-sampleID,unique,required,FALSE,[a-zA-Z]\S+,Sample identifier.
-subjectID,non-unique,required,FALSE,[a-zA-Z]\S+,Subject identifier.
+sampleID,unique,required,FALSE,[0-9a-zA-Z]\S+,Sample identifier.
+subjectID,non-unique,required,FALSE,[0-9a-zA-Z]\S+,Subject identifier.
 body_site,non-unique,required,FALSE,stool|skin|vagina|oralcavity|nasalcavity|lung|milk,Bodysite of acquisition.
 body_subsite,non-unique,optional,FALSE,anterior_nares|hard_palate|keratinized_gingiva|l_retroauricular_crease|r_retroauricular_crease|mid_vagina|palatine_tonsils|saliva|stool|supragingival_plaque|subgingival_plaque|throat|vaginal_introitus|posterior_fornix|tongue_dorsum|sputum|buccal_mucosa|left_elbow|right_ear|left_ear|right_elbow|rectal_swab|chest,Subsite of body site of acquisition.
 antibiotics_current_use,non-unique,optional,FALSE,yes|no,Subject is currently taking antibiotics.
