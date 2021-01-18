@@ -646,7 +646,7 @@ G80604	T008246	stool	no	NA	control	healthy	0	108.0	newborn	female	EST	no	64.0	Il
 G80456	T008246	stool	no	NA	control	healthy	0	44.0	newborn	female	EST	no	0.0	IlluminaHiSeq	Qiagen	27259157	21235240	2041495741	60	98	NA	NA	NA	401.0	Paolo_Manghi	SRR4408040
 G78518	T008246	stool	no	NA	control	healthy	1	NA	child	female	EST	no	500.0	IlluminaHiSeq	Qiagen	27259157	22166482	2159928727	71	101	NA	NA	NA	401.0	Paolo_Manghi	SRR4305046
 G80605	T008247	stool	no	NA	control	healthy	0	42.0	newborn	male	EST	no	0.0	IlluminaHiSeq	Qiagen	27259157	13387838	1290560072	60	99	NA	NA	NA	401.0	Paolo_Manghi	SRR4408199
-G80592	T008247	stool	yes	aminoneglycosides	pyelonephritis	pyelonephritis	0	120.0	newborn	male	EST	no	78.0	IlluminaHiSeq	Qiagen	27259157	8575128	830953346	60	100	NA	NA	NA	401.0	Paolo_Manghi	SRR4408186
+G80592	T008247	stool	yes	aminoglycosides	pyelonephritis	pyelonephritis	0	120.0	newborn	male	EST	no	78.0	IlluminaHiSeq	Qiagen	27259157	8575128	830953346	60	100	NA	NA	NA	401.0	Paolo_Manghi	SRR4408186
 G80536	T009275	stool	no	NA	control	healthy	0	33.0	newborn	female	EST	no	0.0	IlluminaHiSeq	Qiagen	27259157	18805890	1819727335	62	100	NA	NA	5.0	NA	Paolo_Manghi	SRR4408131
 G80531	T009275	stool	yes	penicillins	bronchitis	bronchitis	0	301.0	newborn	female	EST	no	268.0	IlluminaHiSeq	Qiagen	27259157	28410714	2737645942	60	99	NA	NA	5.0	NA	Paolo_Manghi	SRR4408126
 G80484	T009280	stool	no	NA	control	healthy	0	306.0	newborn	female	EST	no	0.0	IlluminaHiSeq	Qiagen	27259157	24764834	2387397814	60	99	NA	NA	NA	404.0	Paolo_Manghi	SRR4408068
