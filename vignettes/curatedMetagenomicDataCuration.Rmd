@@ -33,9 +33,19 @@ firstonly <- FALSE
 ```
 
 ```{r template, echo=FALSE}
-template <- read.csv(system.file("extdata/template.csv",
-                       package = "curatedMetagenomicDataCuration"),
-                     check.names=FALSE)
+library(readr)
+template <- read_csv(
+  system.file("extdata/template.csv",
+              package = "curatedMetagenomicDataCuration"),
+  col_types = cols(
+    col.name = col_character(),
+    uniqueness = col_character(),
+    requiredness = col_character(),
+    multiplevalues = col_logical(),
+    allowedvalues = col_character(),
+    description = col_character()
+  )
+)
 templatelist <- lapply(1:nrow(template), function(i){
   output <- t(template[i, ])
   output <- paste0("* *", rownames(output), "*: ", output[, 1])
