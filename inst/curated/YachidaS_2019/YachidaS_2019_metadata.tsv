@@ -58,7 +58,7 @@ SAMD00114832	sub_10144	stool	control	healthy	77	senior	female	21.28742654	no	JPN
 SAMD00114740	sub_10147	stool	CRC	CRC	51	adult	female	18.82711104	no	JPN	59939112	8172648066	50	150.0	30.0	604.9209999999998	i	left_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114741	sub_10150	stool	control	healthy	78	senior	female	24.03440715	no	JPN	75890344	10455593606	50	150.0	0.0	0.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114833	sub_10151	stool	control	healthy	59	adult	female	22.22222222	no	JPN	38204316	5603688139	50	150.0	0.0	0.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
-SAMD00114742	sub_10152	stool	CRC	CRC	67	senior	female	24.32322868	no	JPN	57029830	7874507972	50	150.0	0.0	0.0	iiia	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
+SAMD00114742	sub_10152	stool	CRC	CRC	67	senior	female	24.32322868	no	JPN	57029830	7874507972	50	150.0	0.0	0.0	iii	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114743	sub_10154	stool	CRC	CRC	69	senior	male	22.75830678	no	JPN	47896438	5846038383	50	150.0	800.0	54.0	0	left_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114757	sub_10158	stool	control	healthy	61	adult	male	26.2335558	no	JPN	64105400	8963537192	50	150.0	2400.0	0.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114758	sub_10161	stool	adenoma	adenoma	51	adult	male	21.79820239	no	JPN	65043752	9094605637	50	150.0	570.0	0.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
@@ -140,7 +140,7 @@ SAMD00114751	sub_10294	stool	adenoma	adenoma	74	senior	female	19.14672216	no	JPN
 SAMD00114752	sub_10299	stool	adenoma	adenoma	78	senior	male	27.34375	no	JPN	27818658	4064001457	50	150.0	165.0	0.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114780	sub_10301	stool	control	healthy	77	senior	female	22.85714286	no	JPN	27797116	4095687367	50	150.0	520.0	369.9	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114781	sub_10302	stool	control	healthy	64	adult	male	20.51913409	no	JPN	28408932	3890370691	50	150.0	100.0	243.9	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
-SAMD00114782	sub_10303	stool	CRC	CRC	44	adult	female	26.672763300000003	no	JPN	49789119	6795738690	50	150.0	0.0	0.0	iiib	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
+SAMD00114782	sub_10303	stool	CRC	CRC	44	adult	female	26.672763300000003	no	JPN	49789119	6795738690	50	150.0	0.0	0.0	iii	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114994	sub_10304	stool	control	healthy	44	adult	male	22.05219018	no	JPN	36042754	5205593175	50	150.0	180.0	687.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114774	sub_10306	stool	CRC	CRC	69	senior	male	19.43301326	no	JPN	44934410	6133073557	50	150.0	0.0	0.0	i	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114775	sub_10307	stool	CRC	CRC	49	adult	female	22.64086462	no	JPN	58057618	8045964065	50	150.0	0.0	62.1214	iii	left_colon	Paolo_Manghi	IlluminaHiSeq	31171880
@@ -215,7 +215,7 @@ SAMD00114824	sub_10510	stool	control	healthy	52	adult	male	21.30394858	no	JPN	44
 SAMD00114825	sub_10513	stool	CRC	CRC	70	senior	male	20.57613169	no	JPN	43062649	6262276088	50	150.0	300.0	0.0	iv	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114817	sub_10514	stool	CRC	CRC	59	adult	male	24.84098009	no	JPN	33905640	4961915216	50	150.0	780.0	360.0	iv	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114818	sub_10519	stool	control	healthy	71	senior	male	22.94213045	no	JPN	36478210	5358351533	50	150.0	0.0	0.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
-SAMD00114835	sub_10523	stool	CRC	CRC	50	adult	male	23.49	no	JPN	18467078	2700183637	50	150.0	0.0	0.0	iia	rectum	Paolo_Manghi	IlluminaHiSeq	31171880
+SAMD00114835	sub_10523	stool	CRC	CRC	50	adult	male	23.49	no	JPN	18467078	2700183637	50	150.0	0.0	0.0	ii	rectum	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114836	sub_10525	stool	CRC	CRC	68	senior	male	23.87511478	no	JPN	42312294	6069302958	50	150.0	1920.0	540.0	i	rectum	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114803	sub_10527	stool	CRC	CRC	62	adult	male	24.61810377	no	JPN	32179158	4710443973	50	150.0	630.0	1899.0	iv	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00114841	sub_10532	stool	CRC	CRC	60	adult	male	23.22543185	no	JPN	34079756	4999562836	50	150.0	0.0	0.0	iii	left_colon	Paolo_Manghi	IlluminaHiSeq	31171880
@@ -379,7 +379,7 @@ SAMD00164769	sub_10568	stool	CRC	CRC	58	adult	male	22.5306122449	no	JPN	46161112
 SAMD00154994	sub_10578	stool	CRC	CRC	65	adult	male	21.3839419961	no	JPN	57941751	8462198734	50	150.0	240.0	993.0	iii	right_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00164771	sub_10579	stool	CRC	CRC	69	senior	male	24.6097337006	no	JPN	43519800	6346245436	50	150.0	560.0	0.0	0	left_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00164772	sub_10580	stool	adenoma	adenoma	58	adult	male	25.4028160836	no	JPN	38623974	5603704556	50	150.0	570.0	130.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
-SAMD00154995	sub_10582	stool	CRC	CRC	70	senior	male	18.961927424200002	no	JPN	24917710	3640483934	50	150.0	1000.0	0.0	iva	rectum	Paolo_Manghi	IlluminaHiSeq	31171880
+SAMD00154995	sub_10582	stool	CRC	CRC	70	senior	male	18.961927424200002	no	JPN	24917710	3640483934	50	150.0	1000.0	0.0	iv	rectum	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00164773	sub_10583	stool	control	healthy	67	senior	male	25.0995015956	no	JPN	33899610	4975366072	50	150.0	165.0	90.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00164774	sub_10587	stool	control	healthy	62	adult	female	25.1531502292	no	JPN	42140932	6107514932	50	150.0	410.0	141.429	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00164776	sub_10595	stool	CRC	CRC	66	senior	male	20.545693622599998	no	JPN	35904212	5263421448	50	150.0	NA	0.0	ii	rectum	Paolo_Manghi	IlluminaHiSeq	31171880
