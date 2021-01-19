@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-19 11:30:36 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-19 13:39:03 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -1325,33 +1325,52 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>3 . YSZC12003_35387 : “migraine”<br>
+11 . YSZC12003_35511 : “ashtma”<br>
 13 . YSZC12003_35515 : “migraine”<br>
 15 . YSZC12003_35519 : “migraine”<br>
 19 . YSZC12003_35541 : “migraine”<br>
 20 . YSZC12003_35542 : “migraine”<br>
+23 . YSZC12003_35551 : “ashtma”<br>
 24 . YSZC12003_35552 : “migraine”<br>
 33 . YSZC12003_35630 : “migraine”<br>
 37 . YSZC12003_35654 : “migraine”<br>
 38 . YSZC12003_35657 : “migraine”<br>
+42 . YSZC12003_35697 : “ashtma”<br>
 45 . YSZC12003_35704 : “migraine”<br>
 47 . YSZC12003_35706 : “migraine”<br>
+50 . YSZC12003_35712 : “ashtma”<br>
 52 . YSZC12003_35724 : “migraine”<br>
+59 . YSZC12003_35837 : “ashtma”<br>
+60 . YSZC12003_35838 : “ashtma”<br>
 65 . YSZC12003_35991 : “migraine”<br>
 67 . YSZC12003_35999 : “migraine”<br>
+69 . YSZC12003_36005 : “ashtma”<br>
 71 . YSZC12003_36007 : “migraine”<br>
+73 . YSZC12003_36011 : “ashtma”<br>
+77 . YSZC12003_36033 : “ashtma”<br>
 80 . YSZC12003_36050 : “migraine”<br>
+82 . YSZC12003_36052 : “ashtma”<br>
+84 . YSZC12003_36056 : “ashtma”<br>
+85 . YSZC12003_36057 : “ashtma”<br>
 90 . YSZC12003_36119 : “migraine”<br>
+95 . YSZC12003_36243 : “ashtma”<br>
 116 . YSZC12003_36675 : “migraine”<br>
 117 . YSZC12003_36694 : “migraine”<br>
+118 . YSZC12003_36695 : “ashtma”<br>
 123 . YSZC12003_36702 : “migraine”<br>
 128 . YSZC12003_36982 : “migraine”<br>
 129 . YSZC12003_37096 : “migraine”<br>
 133 . YSZC12003_37102 : “migraine”<br>
 134 . YSZC12003_37103 : “migraine”<br>
 144 . YSZC12003_37171 : “migraine”<br>
+145 . YSZC12003_37172 : “ashtma”<br>
+154 . YSZC12003_37190R1 : “ashtma”<br>
 158 . YSZC12003_37194 : “migraine”<br>
+162 . YSZC12003_37198R1 : “ashtma”<br>
 163 . YSZC12003_37199 : “migraine”<br>
+168 . YSZC12003_37204 : “ashtma”<br>
 169 . YSZC12003_37205 : “migraine”<br>
+170 . YSZC12003_37206 : “ashtma”<br>
 177 . YSZC12003_37228 : “migraine”<br>
 179 . YSZC12003_37232 : “migraine”<br>
 180 . YSZC12003_37233 : “migraine”<br>
@@ -1369,9 +1388,14 @@
 216 . YSZC12003_37333 : “migraine”<br>
 219 . YSZC12003_37348 : “migraine”<br>
 221 . YSZC12003_37352 : “migraine”<br>
+226 . YSZC12003_37400 : “ashtma”<br>
+227 . YSZC12003_37405 : “ashtma”<br>
 230 . YSZC12003_37462 : “migraine”<br>
 237 . YSZC12003_37647 : “migraine”<br>
 242 . YSZC12003_37754 : “migraine”<br>
+243 . YSZC12003_37797 : “ashtma”<br>
+244 . YSZC12003_37798 : “ashtma”<br>
+249 . YSZC12003_37879 : “ashtma”<br>
 250 . YSZC12003_37880 : “migraine”</p>
 </div>
 <div id="disease-2" class="section level3">
@@ -1395,38 +1419,57 @@
 <em>description</em>: Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn’s disease; for other abbreviations see study_condition</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>3 . YSZC12003_35387 : “migraine”<br>
+<p>3 . YSZC12003_35387 : “migraine;ashtma”<br>
+11 . YSZC12003_35511 : “ashtma”<br>
 13 . YSZC12003_35515 : “migraine”<br>
-15 . YSZC12003_35519 : “migraine”<br>
+15 . YSZC12003_35519 : “migraine;ashtma”<br>
 19 . YSZC12003_35541 : “migraine”<br>
 20 . YSZC12003_35542 : “migraine”<br>
+23 . YSZC12003_35551 : “ashtma”<br>
 24 . YSZC12003_35552 : “migraine”<br>
 33 . YSZC12003_35630 : “migraine”<br>
 37 . YSZC12003_35654 : “migraine”<br>
 38 . YSZC12003_35657 : “migraine”<br>
+42 . YSZC12003_35697 : “ashtma”<br>
 45 . YSZC12003_35704 : “migraine”<br>
 47 . YSZC12003_35706 : “migraine”<br>
+50 . YSZC12003_35712 : “ashtma”<br>
 52 . YSZC12003_35724 : “migraine”<br>
+59 . YSZC12003_35837 : “ashtma”<br>
+60 . YSZC12003_35838 : “ashtma”<br>
 65 . YSZC12003_35991 : “migraine”<br>
 67 . YSZC12003_35999 : “migraine”<br>
-71 . YSZC12003_36007 : “migraine”<br>
-80 . YSZC12003_36050 : “migraine”<br>
-90 . YSZC12003_36119 : “migraine”<br>
+69 . YSZC12003_36005 : “ashtma”<br>
+71 . YSZC12003_36007 : “migraine;ashtma”<br>
+73 . YSZC12003_36011 : “ashtma”<br>
+77 . YSZC12003_36033 : “ashtma”<br>
+80 . YSZC12003_36050 : “migraine;ashtma”<br>
+82 . YSZC12003_36052 : “ashtma”<br>
+84 . YSZC12003_36056 : “ashtma”<br>
+85 . YSZC12003_36057 : “ashtma”<br>
+90 . YSZC12003_36119 : “migraine;ashtma”<br>
+95 . YSZC12003_36243 : “ashtma”<br>
 116 . YSZC12003_36675 : “migraine”<br>
-117 . YSZC12003_36694 : “migraine”<br>
+117 . YSZC12003_36694 : “migraine;ashtma”<br>
+118 . YSZC12003_36695 : “ashtma”<br>
 123 . YSZC12003_36702 : “migraine”<br>
-128 . YSZC12003_36982 : “migraine”<br>
-129 . YSZC12003_37096 : “migraine”<br>
+128 . YSZC12003_36982 : “migraine;ashtma”<br>
+129 . YSZC12003_37096 : “migraine;ashtma”<br>
 133 . YSZC12003_37102 : “migraine”<br>
 134 . YSZC12003_37103 : “migraine”<br>
 144 . YSZC12003_37171 : “migraine”<br>
-158 . YSZC12003_37194 : “migraine”<br>
+145 . YSZC12003_37172 : “ashtma”<br>
+154 . YSZC12003_37190R1 : “ashtma”<br>
+158 . YSZC12003_37194 : “migraine;ashtma”<br>
+162 . YSZC12003_37198R1 : “ashtma”<br>
 163 . YSZC12003_37199 : “migraine”<br>
-169 . YSZC12003_37205 : “migraine”<br>
+168 . YSZC12003_37204 : “ashtma”<br>
+169 . YSZC12003_37205 : “migraine;ashtma”<br>
+170 . YSZC12003_37206 : “ashtma”<br>
 177 . YSZC12003_37228 : “migraine”<br>
 179 . YSZC12003_37232 : “migraine”<br>
 180 . YSZC12003_37233 : “migraine”<br>
-187 . YSZC12003_37270 : “migraine”<br>
+187 . YSZC12003_37270 : “migraine;ashtma”<br>
 189 . YSZC12003_37276 : “migraine”<br>
 190 . YSZC12003_37277 : “migraine”<br>
 191 . YSZC12003_37282 : “migraine”<br>
@@ -1440,10 +1483,15 @@
 216 . YSZC12003_37333 : “migraine”<br>
 219 . YSZC12003_37348 : “migraine”<br>
 221 . YSZC12003_37352 : “migraine”<br>
+226 . YSZC12003_37400 : “ashtma”<br>
+227 . YSZC12003_37405 : “ashtma”<br>
 230 . YSZC12003_37462 : “migraine”<br>
 237 . YSZC12003_37647 : “migraine”<br>
 242 . YSZC12003_37754 : “migraine”<br>
-250 . YSZC12003_37880 : “migraine”</p>
+243 . YSZC12003_37797 : “ashtma”<br>
+244 . YSZC12003_37798 : “ashtma”<br>
+249 . YSZC12003_37879 : “ashtma”<br>
+250 . YSZC12003_37880 : “migraine;ashtma”</p>
 </div>
 </div>
 </div>
