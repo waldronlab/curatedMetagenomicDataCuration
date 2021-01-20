@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-20 09:38:26 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-20 09:40:23 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -1090,7 +1090,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: healthy|CD|UC|HBV|HDV|HEV|cirrhosis|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum|first_episode_schizofrenia|repeated_episodes_shizofrenia”<br>
+<em>allowedvalues</em>: healthy|CD|UC|HBV|HDV|HEV|cirrhosis|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum|first_episode_schizofrenia|repeated_episodes_shizofrenia<br>
 </li>
 <li>
 <em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
@@ -1288,34 +1288,7 @@
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-5" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-5" class="anchor"></a>Entry errors</h2>
-<div id="tnm" class="section level3">
-<h3 class="hasAnchor">
-<a href="#tnm" class="anchor"></a>tnm</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: t4n1m1|t3nxm1|t2n0m1|tnm|t3n3m1|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0<br>
-</li>
-<li>
-<em>description</em>: TNM classification for colorectal-cancer.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>107 . SZAXPI017463-36 : “t3nm0”<br>
-108 . SZAXPI017464-37 : “t3nm0”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="zeevid_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -1333,78 +1306,7 @@
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-6" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-6" class="anchor"></a>Entry errors</h2>
-<div id="disease_subtype-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#disease_subtype-1" class="anchor"></a>disease_subtype</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: healthy|CD|UC|HBV|HDV|HEV|cirrhosis|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum|first_episode_schizofrenia|repeated_episodes_shizofrenia”<br>
-</li>
-<li>
-<em>description</em>: Disease subtype; CD=Chrohn’s Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>5 . wHAXPI032585-23 : “repeated_episodes_shizofrenia”<br>
-8 . wHAXPI032588-27 : “repeated_episodes_shizofrenia”<br>
-11 . wHAXPI032591-31 : “repeated_episodes_shizofrenia”<br>
-13 . wHAXPI032593-34 : “repeated_episodes_shizofrenia”<br>
-21 . wHAXPI032601-50 : “repeated_episodes_shizofrenia”<br>
-27 . wHAXPI032607-89 : “repeated_episodes_shizofrenia”<br>
-28 . wHAXPI032608-111 : “repeated_episodes_shizofrenia”<br>
-29 . wHAXPI032609-18 : “repeated_episodes_shizofrenia”<br>
-30 . wHAXPI032610-19 : “repeated_episodes_shizofrenia”<br>
-31 . wHAXPI032611-21 : “repeated_episodes_shizofrenia”<br>
-32 . wHAXPI032612-22 : “repeated_episodes_shizofrenia”<br>
-33 . wHAXPI032613-23 : “repeated_episodes_shizofrenia”<br>
-34 . wHAXPI032614-24 : “repeated_episodes_shizofrenia”<br>
-77 . wHAXPI032808-45 : “repeated_episodes_shizofrenia”<br>
-78 . wHAXPI032809-47 : “repeated_episodes_shizofrenia”<br>
-79 . wHAXPI032810-50 : “repeated_episodes_shizofrenia”<br>
-81 . wHAXPI032812-63 : “repeated_episodes_shizofrenia”<br>
-82 . wHAXPI032813-74 : “repeated_episodes_shizofrenia”<br>
-84 . wHAXPI032815-80 : “repeated_episodes_shizofrenia”<br>
-88 . wHAXPI033594-31 : “repeated_episodes_shizofrenia”<br>
-92 . wHAXPI033606-30 : “repeated_episodes_shizofrenia”<br>
-94 . wHAXPI033632-52 : “repeated_episodes_shizofrenia”<br>
-95 . wHAXPI033633-76 : “repeated_episodes_shizofrenia”<br>
-98 . wHAXPI033636-79 : “repeated_episodes_shizofrenia”<br>
-107 . wHAXPI033796-23 : “repeated_episodes_shizofrenia”<br>
-108 . wHAXPI033810-24 : “repeated_episodes_shizofrenia”<br>
-110 . wHAXPI033812-26 : “repeated_episodes_shizofrenia”<br>
-111 . wHAXPI033813-27 : “repeated_episodes_shizofrenia”<br>
-112 . wHAXPI033814-28 : “repeated_episodes_shizofrenia”<br>
-115 . wHAXPI033817-31 : “repeated_episodes_shizofrenia”<br>
-117 . wHAXPI033819-34 : “repeated_episodes_shizofrenia”<br>
-118 . wHAXPI033820-35 : “repeated_episodes_shizofrenia”<br>
-119 . wHAXPI033821-36 : “repeated_episodes_shizofrenia”<br>
-120 . wHAXPI033822-39 : “repeated_episodes_shizofrenia”<br>
-121 . wHAXPI033823-40 : “repeated_episodes_shizofrenia”<br>
-122 . wHAXPI033824-41 : “repeated_episodes_shizofrenia”<br>
-124 . wHAXPI033826-45 : “repeated_episodes_shizofrenia”<br>
-128 . wHAXPI033830-58 : “repeated_episodes_shizofrenia”<br>
-129 . wHAXPI033831-59 : “repeated_episodes_shizofrenia”<br>
-143 . wHAXPI034458-59 : “repeated_episodes_shizofrenia”<br>
-161 . wHAXPI034925-14 : “repeated_episodes_shizofrenia”<br>
-167 . wHAXPI043592-8 : “repeated_episodes_shizofrenia”<br>
-168 . wHAXPI043593-9 : “repeated_episodes_shizofrenia”<br>
-169 . wHAXPI043594-11 : “repeated_episodes_shizofrenia”<br>
-170 . wHAXPI047830-11 : “repeated_episodes_shizofrenia”<br>
-171 . wHAXPI048670-90 : “repeated_episodes_shizofrenia”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
   </div>
 
