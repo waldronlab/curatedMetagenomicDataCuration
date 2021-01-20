@@ -23,7 +23,7 @@ lifestyle,non-unique,optional,FALSE,Hunter-gatherer|Agriculturalist|Agropastoral
 brinkman_index,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,The Brinkman index if provided
 days_from_first_collection,non-unique,optional,FALSE,[0-9]+,Used for time series studies.
 sequencing_platform,non-unique,required,FALSE,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq|IlluminaNovaSeq,This will be modified as new sequencing platforms are added to the database.
-DNA_extraction_kit,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro,DNA extraction kit.
+DNA_extraction_kit,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep,DNA extraction kit.
 PMID,non-unique,required,FALSE,[0-9]{8}|unpublished,Identifier of the main publication in PubMed.
 number_reads,non-unique,required,FALSE,[0-9]+,Number of final reads - calculated from raw data.
 number_bases,non-unique,required,FALSE,[0-9]+,Total number of bases sequenced in the sample - calculated from raw data.
