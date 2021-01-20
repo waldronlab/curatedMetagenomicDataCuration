@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-01-20 09:49:47 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
+<p>This vignette was built on 2021-01-20 09:51:54 based on <code>curatedMetagenomicDataCuration</code> version 0.99.5.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -293,107 +293,7 @@
 <h1 class="hasAnchor">
 <a href="#hmp_2019_t2d_metadata-tsv" class="anchor"></a>HMP_2019_t2d_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
-<div id="bilubirin" class="section level3">
-<h3 class="hasAnchor">
-<a href="#bilubirin" class="anchor"></a>bilubirin</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+.?[0-9]*<br>
-</li>
-<li>
-<em>description</em>: Bilubirin; curators must use mg/dl.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>38 . HMP2_J00850_M_ST_T0_B0_0120_ZL9BTWF-03_HA986ADXX : “&lt;0.5”<br>
-90 . HMP2_J00885_M_ST_T0_B0_0120_ZKFV71L-01_AC9387ANXX : “&lt;0.5”<br>
-91 . HMP2_J00885_M_ST_T0_B0_0120_ZKFV71L-01_C8GAAANXX : “&lt;0.5”<br>
-92 . HMP2_J00885_M_ST_T0_B0_0120_ZKFV71L-01_HA986ADXX : “&lt;0.5”<br>
-97 . HMP2_J00888_M_ST_T0_B0_0120_ZK4CK8Y-02_AC9387ANXX : “&lt;0.5”<br>
-98 . HMP2_J00888_M_ST_T0_B0_0120_ZK4CK8Y-02_C8GAAANXX : “&lt;0.5”<br>
-99 . HMP2_J00888_M_ST_T0_B0_0120_ZK4CK8Y-02_HA986ADXX : “&lt;0.5”<br>
-122 . HMP2_J05393_M_ST_T0_B0_0120_ZOZOW1T-56_HB5LAADX : “&lt;0.5”<br>
-135 . HMP2_J05447_M_ST_T0_B0_0120_ZK4CK8Y-01_C8GAAANXX : “&lt;0.5”<br>
-136 . HMP2_J05447_M_ST_T0_B0_0120_ZK4CK8Y-01_HBB8WADXX : “&lt;0.5”<br>
-223 . HMP2_J16506_M_ST_T0_B0_0120_ZOZOW1T-61_C93B2ANXX : “&lt;0.5”<br>
-224 . HMP2_J16506_M_ST_T0_B0_0120_ZOZOW1T-61_HLH73BGXX_S1 : “&lt;0.5”</p>
-</div>
-<div id="hscrp" class="section level3">
-<h3 class="hasAnchor">
-<a href="#hscrp" class="anchor"></a>hscrp</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+.?[0-9]*<br>
-</li>
-<li>
-<em>description</em>: High-sensitivity C-reactive protein test result;curator have to use mg/L</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>65 . HMP2_J00864_M_ST_T0_B0_0120_ZKVR426-1015_HA986ADXX : “&lt;0.2”<br>
-185 . HMP2_J09152_M_ST_T0_B0_0120_ZYHHR4Z-01_C93B2ANXX : “&lt;0.2”<br>
-186 . HMP2_J09153_M_ST_T0_B0_0120_ZYHHR4Z-02_C93B2ANXX_J43964 : “&lt;0.2”<br>
-187 . HMP2_J09153_M_ST_T0_B0_0120_ZYHHR4Z-02_C93B2ANXX_J43965 : “&lt;0.2”<br>
-188 . HMP2_J09155_M_ST_T0_B0_0120_ZYHHR4Z-1024_C93B2ANXX : “&lt;0.2”<br>
-236 . HMP2_J16515_M_ST_T0_B0_0120_ZOZOW1T-80_HLH73BGXX_S10 : “&lt;0.2”<br>
-244 . HMP2_J16523_M_ST_T0_B0_0120_ZOZOW1T-6021_HLH73BGXX_S18 : “&lt;0.2”<br>
-246 . HMP2_J16525_M_ST_T0_B0_0120_ZOZOW1T-6023_HLH73BGXX_S20 : “&lt;0.2”<br>
-270 . HMP2_J43819_M_ST_T0_B0_0120_ZYHHR4Z-05_C93B2ANXX : “&lt;0.2”<br>
-271 . HMP2_J43820_M_ST_T0_B0_0120_ZYHHR4Z-06_C93B2ANXX : “&lt;0.2”<br>
-292 . HMP2_J43841_M_ST_T0_B0_0120_ZTLUDS8-1014_C93B2ANXX : “&lt;0.2”<br>
-293 . HMP2_J43842_M_ST_T0_B0_0120_ZTLUDS8-1015_C93B2ANXX : “&lt;0.2”</p>
-</div>
-<div id="alt" class="section level3">
-<h3 class="hasAnchor">
-<a href="#alt" class="anchor"></a>alt</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+.?[0-9]*<br>
-</li>
-<li>
-<em>description</em>: Alanine aminotransferase; curator must use U/l</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>31 . HMP2_J00845_M_ST_T0_B0_0120_ZLGD9M0-05_AC9387ANXX : “&lt;15”<br>
-32 . HMP2_J00845_M_ST_T0_B0_0120_ZLGD9M0-05_C8GAAANXX : “&lt;15”<br>
-33 . HMP2_J00845_M_ST_T0_B0_0120_ZLGD9M0-05_HA986ADXX : “&lt;15”<br>
-34 . HMP2_J00846_M_ST_T0_B0_0120_ZLGD9M0-07_HA986ADXX : “&lt;15”<br>
-37 . HMP2_J00849_M_ST_T0_B0_0120_ZLGD9M0-1014_HA986ADXX : “&lt;15”<br>
-173 . HMP2_J09115_M_ST_T0_B0_0120_ZLGD9M0-08_C93B2ANXX : “&lt;15”<br>
-174 . HMP2_J09116_M_ST_T0_B0_0120_ZLGD9M0-09_C93B2ANXX : “&lt;15”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="ijazuz_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -555,9 +455,9 @@
 <h1 class="hasAnchor">
 <a href="#pasollie_2019_metadata-tsv" class="anchor"></a>PasolliE_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PasolliE_2019/PasolliE_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PasolliE_2019/PasolliE_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-2" class="section level2">
+<div id="entry-errors-1" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
 <div id="subjectid" class="section level3">
 <h3 class="hasAnchor">
 <a href="#subjectid" class="anchor"></a>subjectID</h3>
@@ -1062,9 +962,9 @@
 <h1 class="hasAnchor">
 <a href="#rubelma_2020_metadata-tsv" class="anchor"></a>RubelMA_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-3" class="section level2">
+<div id="entry-errors-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
 <div id="disease_subtype" class="section level3">
 <h3 class="hasAnchor">
 <a href="#disease_subtype" class="anchor"></a>disease_subtype</h3>
@@ -1205,9 +1105,9 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-4" class="section level2">
+<div id="entry-errors-3" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
 <div id="sequencing_platform-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#sequencing_platform-1" class="anchor"></a>sequencing_platform</h3>
