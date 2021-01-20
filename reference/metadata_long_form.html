@@ -143,9 +143,11 @@ each, then binds them together, appending a `study` column.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='va'>ret</span> <span class='op'>=</span> <span class='fu'>metadata_long_form</span><span class='op'>(</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] 462815      7</div><div class='input'><span class='va'>ret</span>
-</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 462,815 x 7</span><span>
+</div><div class='output co'>#&gt; <span class='warning'>Warning: 1 parsing failure.</span>
+#&gt; <span class='warning'>row col   expected     actual                                                                                                               file</span>
+#&gt; <span class='warning'> 55  -- 24 columns 25 columns '/Users/runner/work/_temp/Library/curatedMetagenomicDataCuration/curated/PasolliE_2019/PasolliE_2019_metadata.tsv'</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] 462703      7</div><div class='input'><span class='va'>ret</span>
+</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 462,703 x 7</span><span>
 #&gt;    study  sampleID  subjectID variable  numeric_value logical_value string_value
 #&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;lgl&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       
 #&gt; </span><span style='color: #555555;'> 1</span><span> Asnic… MV_FEI1_… MV_FEI1   age                   1 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
@@ -158,7 +160,7 @@ each, then binds them together, appending a `study` column.</p>
 #&gt; </span><span style='color: #555555;'> 8</span><span> Asnic… MV_FEI2_… MV_FEI2   age                   1 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
 #&gt; </span><span style='color: #555555;'> 9</span><span> Asnic… MV_FEI2_… MV_FEI2   infant_a…            90 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
 #&gt; </span><span style='color: #555555;'>10</span><span> Asnic… MV_FEI2_… MV_FEI2   PMID           28</span><span style='text-decoration: underline;'>144</span><span>631 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
-#&gt; </span><span style='color: #555555;'># … with 462,805 more rows</span><span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+#&gt; </span><span style='color: #555555;'># … with 462,693 more rows</span><span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt;          AsnicarF_2017          AsnicarF_2021          BackhedF_2015 
 #&gt;                    504                  20862                   9600 
@@ -195,7 +197,7 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;    Obregon-TitoAJ_2015               OhJ_2014             OlmMR_2017 
 #&gt;                   1160                   5238                    945 
 #&gt;          PasolliE_2019         PehrssonE_2016              QinJ_2012 
-#&gt;                   2576                   3820                   7986 
+#&gt;                   2464                   3820                   7986 
 #&gt;              QinN_2014         RampelliS_2015          RaymondF_2016 
 #&gt;                   6399                    722                   1728 
 #&gt;            RosaBA_2018           RubelMA_2020 SankaranarayananK_2015 
@@ -219,7 +221,7 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;            ZeeviD_2015           ZellerG_2014              ZhuF_2020 
 #&gt;                  15300                   3588                   4104 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;     study             sampleID          subjectID           variable        
-#&gt;  Length:462815      Length:462815      Length:462815      Length:462815     
+#&gt;  Length:462703      Length:462703      Length:462703      Length:462703     
 #&gt;  Class :character   Class :character   Class :character   Class :character  
 #&gt;  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
 #&gt;                                                                             
@@ -227,13 +229,13 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;                                                                             
 #&gt;                                                                             
 #&gt;  numeric_value       logical_value  string_value      
-#&gt;  Min.   :0.000e+00   Mode:logical   Length:462815     
-#&gt;  1st Qu.:4.000e+01   NA's:462815    Class :character  
+#&gt;  Min.   :0.000e+00   Mode:logical   Length:462703     
+#&gt;  1st Qu.:4.000e+01   NA's:462703    Class :character  
 #&gt;  Median :1.010e+02                  Mode  :character  
 #&gt;  Mean   :4.851e+08                                    
 #&gt;  3rd Qu.:2.872e+07                                    
 #&gt;  Max.   :6.973e+10                                    
-#&gt;  NA's   :297543                                       </div><div class='input'>
+#&gt;  NA's   :297431                                       </div><div class='input'>
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
