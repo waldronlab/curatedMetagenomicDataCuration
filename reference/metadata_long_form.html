@@ -143,9 +143,7 @@ each, then binds them together, appending a `study` column.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='va'>ret</span> <span class='op'>=</span> <span class='fu'>metadata_long_form</span><span class='op'>(</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='warning'>Warning: 1 parsing failure.</span>
-#&gt; <span class='warning'>row col   expected     actual                                                                                                               file</span>
-#&gt; <span class='warning'> 55  -- 24 columns 25 columns '/Users/runner/work/_temp/Library/curatedMetagenomicDataCuration/curated/PasolliE_2019/PasolliE_2019_metadata.tsv'</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; [1] 462703      7</div><div class='input'><span class='va'>ret</span>
 </div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 462,703 x 7</span><span>
 #&gt;    study  sampleID  subjectID variable  numeric_value logical_value string_value
