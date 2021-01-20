@@ -88,6 +88,7 @@ ferm_milk_prod_consumer,non-unique,optional,FALSE,dfmp,Dfmp means yes (defined m
 family,non-unique,optional,FALSE,.+,A number identifying the family subjects belong; not corrected for meta-analyses.
 family_role,non-unique,optional,FALSE,child|mother|father,Role in the family when multiple samples come from the same family but different persons.
 born_method,non-unique,optional,FALSE,c_section|vaginal,C-section vs vaginal birth.
+c_section_type,non-unique,optional,FALSE,Elective_CS|Emergency_CS,C-section main decision reason.
 premature,non-unique,optional,FALSE,yes|no,If premature at birth.
 birth_order,non-unique,optional,FALSE,[0-9]+,Can be used for multiple birth.
 age_twins_started_to_live_apart,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at which twins started to live apart (years).
