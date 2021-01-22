@@ -105,6 +105,7 @@ disease_location,non-unique,optional,TRUE,.+,Can be used for diseases which occu
 calprotectin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
 treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin,medications or treatments against the diseases.
 remission,non-unique,optional,FALSE,no|yes,Remission of the disease.
+anti_PD_1,non-unique,optional,FALSE,responder|non_responder,The patient results to be a responder/non-responder to the anti-PD1 treatment.
 wbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,White blood cells count; curators must use *1000counts/µL
 rbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Red blood cells count; curators must use *million_counts/µL
 blood_platelet,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use *1000counts/µl
