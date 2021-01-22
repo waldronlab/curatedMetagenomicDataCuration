@@ -74,6 +74,7 @@ cd163,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use ng/ml.
 il_1,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
 leptin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micrograms/l.
 glucose,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+fasting_glucose,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
 fgf_19,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
 glutamate_decarboxylase_2_antibody,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Glutamic acid decarboxylase (GAD65) antibody assay.
 creatinine,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
