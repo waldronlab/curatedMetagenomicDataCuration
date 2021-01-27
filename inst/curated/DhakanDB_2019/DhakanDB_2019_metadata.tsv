@@ -71,7 +71,7 @@ DHAK_HE	DHAK_HE	stool	no	control	healthy	22	NA	adult	male	22.23	IND	Bhopal	no	Il
 DHAK_HF	DHAK_HF	stool	no	control	healthy	30	NA	adult	male	24.38	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	14384716	1862246961	32	150	Giacomo_DAmato	SRR5898977
 DHAK_HCU	DHAK_HCU	stool	no	control	healthy	61	NA	adult	male	19.5	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	11104842	1433920763	35	150	Giacomo_DAmato	SRR5898978
 DHAK_HCV	DHAK_HCV	stool	no	control	healthy	58	NA	adult	female	19.9	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	10996252	1517224723	35	150	Giacomo_DAmato	SRR5898979
-DHAK_HCQ	DHAK_HCQ	stool	no	control	healthy	52	NA	adult	female	23	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	5635222	793309934	35	150	Giacomo_DAmato	SRR5898980
+DHAK_HCQ	DHAK_HCQ	stool	no	control	healthy	52	NA	adult	female	23.0	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	5635222	793309934	35	150	Giacomo_DAmato	SRR5898980
 DHAK_HCR	DHAK_HCR	stool	no	control	healthy	62	NA	adult	male	20.8	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	6710528	937125039	35	150	Giacomo_DAmato	SRR5898981
 DHAK_HCS	DHAK_HCS	stool	no	control	healthy	50	NA	adult	female	17.9	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	5521326	754584053	35	150	Giacomo_DAmato	SRR5898982
 DHAK_HCT	DHAK_HCT	stool	no	control	healthy	58	NA	adult	male	19.2	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	9651384	1363678978	35	150	Giacomo_DAmato	SRR5898983
@@ -90,11 +90,11 @@ DHAK_HBC	DHAK_HBC	stool	no	control	healthy	19	NA	adult	male	25.9	IND	Kerala	no	I
 DHAK_HBF	DHAK_HBF	stool	no	control	healthy	30	NA	adult	female	17.08	IND	Kerala	no	IlluminaNextSeq	Qiagen	30698687	6183924	882823784	35	151	Giacomo_DAmato	SRR5898996
 DHAK_HBE	DHAK_HBE	stool	no	control	healthy	30	NA	adult	female	23.3	IND	Kerala	no	IlluminaNextSeq	Qiagen	30698687	13405694	1753688459	35	150	Giacomo_DAmato	SRR5898997
 DHAK_HZ	DHAK_HZ	stool	no	control	healthy	29	NA	adult	female	28.04	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	9111352	1169300878	32	150	Giacomo_DAmato	SRR5898998
-DHAK_HY	DHAK_HY	stool	no	control	healthy	0	240	newborn	female	"NA"	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	19144504	2432406897	35	150	Giacomo_DAmato	SRR5898999
+DHAK_HY	DHAK_HY	stool	no	control	healthy	0	240.0	newborn	female	NA	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	19144504	2432406897	35	150	Giacomo_DAmato	SRR5898999
 DHAK_HU	DHAK_HU	stool	no	control	healthy	28	NA	adult	female	21.3	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	8625518	1119666721	32	150	Giacomo_DAmato	SRR5899000
 DHAK_HT	DHAK_HT	stool	no	control	healthy	25	NA	adult	female	22.6	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	6749366	874895400	32	150	Giacomo_DAmato	SRR5899001
-DHAK_HW	DHAK_HW	stool	no	control	healthy	0	180	newborn	female	"NA"	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	6952438	891899754	35	150	Giacomo_DAmato	SRR5899002
-DHAK_HV	DHAK_HV	stool	no	control	healthy	0	180	newborn	female	"NA"	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	10239262	1293408913	35	150	Giacomo_DAmato	SRR5899003
+DHAK_HW	DHAK_HW	stool	no	control	healthy	0	180.0	newborn	female	NA	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	6952438	891899754	35	150	Giacomo_DAmato	SRR5899002
+DHAK_HV	DHAK_HV	stool	no	control	healthy	0	180.0	newborn	female	NA	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	10239262	1293408913	35	150	Giacomo_DAmato	SRR5899003
 DHAK_HQ	DHAK_HQ	stool	no	control	healthy	24	NA	adult	female	23.14	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	15169950	1913868247	32	150	Giacomo_DAmato	SRR5899004
 DHAK_HP	DHAK_HP	stool	no	control	healthy	30	NA	adult	male	19.36	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	9276878	1156488365	32	150	Giacomo_DAmato	SRR5899005
 DHAK_HS	DHAK_HS	stool	no	control	healthy	25	NA	adult	male	18.3	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	13442182	1677800044	32	150	Giacomo_DAmato	SRR5899006

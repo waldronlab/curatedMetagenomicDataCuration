@@ -1,126 +1,137 @@
 col.name,uniqueness,requiredness,multiplevalues,allowedvalues,description
-sampleID,unique,required,False,[a-zA-Z]\S+,Sample identifier.
-subjectID,non-unique,required,False,[a-zA-Z]\S+,Subject identifier.
-body_site,non-unique,required,False,stool|skin|vagina|oralcavity|nasalcavity|lung|milk,Bodysite of acquisition.
-body_subsite,non-unique,optional,False,anterior_nares|hard_palate|keratinized_gingiva|l_retroauricular_crease|r_retroauricular_crease|mid_vagina|palatine_tonsils|saliva|stool|supragingival_plaque|subgingival_plaque|throat|vaginal_introitus|posterior_fornix|tongue_dorsum|sputum|buccal_mucosa|left_elbow|right_ear|left_ear|right_elbow|rectal_swab|chest,Subsite of body site of acquisition.
-antibiotics_current_use,non-unique,optional,False,yes|no,Subject is currently taking antibiotics.
-antibiotics_family,non-unique,optional,True,dopamine_antagonists|phenylpiperidines|thienobenzodiazepines|blood_pressure_medication|diabetes_oral_medication|anti_retrovirals|beta_blockers|reverse_transcriptase_inhibitors|anti_virals|cephalosporins|penicillins|macrolides|beta_lactamase_inhibitors|nitrofurans|sulphonamides|aminoglycosides|carbapenems|fluoroquinolones|laxatives|none,Family of antibiotics currently used; Semicolon-separated.
-study_condition,non-unique,optional,False,ACVD|acute_diarrhoea|cellulitis|melanoma|gangrene|osteoarthritis|control|NK|pyelonefritis|salmonellosis|sepsis|skininf|suspinf|arthritis|STEC|CRC|adenoma|fatty_liver|hypertension|pre-hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|cephalosporins|AS|RA|metabolic_syndrome|FMT|premature_born|periodontitis|SRP|STH|BD|chorioamnionitis|pre-eclampsia|carcinoma_surgery_history,The main disease or condition under study; control for controls;STEC=Shiga-toxigenic E.coli;CDI=Clostridium difficile infection;IBD=Inflammatory bowel disease;T2D= Type-2 diabetes;T1D=Type-1 diabetes;AD=Atopic dermatitis;AR=Allergic rhinitis;IGT=Impaired glucose tolerance;AS=Ankylosing spondylitis;RA=rheumatic arthritis;FMT=fecal microbiota transplantaion;SRP=Scaling and root planing;CMV=Cytomegalovirus;HBV_HDV_HEV= Hepatitis viruses;BD= Bechet-disease;ACVD= Artheriosclerotic Cardiovalscular Disease
-disease,non-unique,optional,True,healthy|acute_diarrhoea|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|osteoarthritis|NK|pyelonefritis|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|HBV|HDV|HEV|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|schizophrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|chorioamnionitis|pre-eclampsia,Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn's disease; for other abbreviations see study_condition
-disease_subtype,non-unique,optional,False,healthy|CD|UC|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|Indeterminate_colitis,Disease subtype; CD=Chrohn's Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition
-age,non-unique,optional,False,[0-9]+,Subject age (years).
-infant_age,non-unique,optional,False,[0-9]+,Infant age (days); should be used for infants < 2 years old.
-age_category,non-unique,optional,False,newborn|child|schoolage|adult|senior,Age category: newborn < 1 year; 1 <= child < 12; 12 <= schoolage < 19; 19 <= adult <= 65; senior > 65.
-gender,non-unique,optional,False,female|male|other,Subject gender.
-visit_number,non-unique,optional,False,[0-9]+,Visit number for studies with repeated visits.
-BMI,non-unique,optional,False,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,non-unique,required,False,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|ESP|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
-location,non-unique,optional,False,.+,Free-form additional location information.
-population,non-uniqze,optional,False,[a-zA-Z]\S+,can describe the belonging to a specific population
-travel_destination,non-unique,optional,False,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
-non_westernized,non-unique,optional,False,yes|no,Subject belongs to a non-westernized community.
-lifestyle,non-unique,optiona,False,Hunter-gatherer|Agriculturalist|Fisher,to descripe the lifestyle of non-westernized people
-days_from_first_collection,non-unique,optional,False,[0-9]+,Used for time series studies.
-sequencing_platform,non-unique,required,False,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq,This will be modified as new sequencing platforms are added to the database.
-DNA_extraction_kit,non-unique,optional,False,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|other|PowerSoilPro,DNA extraction kit.
-PMID,non-unique,required,False,[0-9]{8}|unpublished,Identifier of the main publication in PubMed.
-number_reads,non-unique,required,False,[0-9]+,Number of final reads - calculated from raw data.
-number_bases,non-unique,required,False,[0-9]+,Total number of bases sequenced in the sample - calculated from raw data.
-minimum_read_length,non-unique,required,False,[0-9]+,Minimum read length - calculated from raw data.
-median_read_length,non-unique,required,False,[0-9]+,Median read length - calculated from raw data.
-NCBI_accession,unique,optional,True,[ES]R[SR][0-9]+,Semicolon-separated vector of NCBI accessions.
-pregnant,non-unique,optional,False,yes|no,Pregnancy of the subject (men: no).
-lactating,non-unique,optional,False,yes|no,Lactating subjects (men: no).
-birth_control_pil,non-unique,optional,False,yes|no,Use of the birth-control-pils at the sampling time (men: no).
-smoker,non-unique,optional,False,yes|no,Currently a smoker at sampling.
-ever_smoker,non-unique,optional,False,yes|no,Ever been a smoker.
-alcohol,non-unique,optional,False,yes|no,Subject is reported as a drinker.
-mumps,non-unique,optional,False,yes|no,Subject has been through mumps in life.
-ajcc,non-unique,optional,False,0|i|ii|iii|iv,AJCC staging for colorectal-cancer.
-fobt,non-unique,optional,False,yes|no,Fecal occult blood test.
-tnm,non-unique,optional,False,t4n1m1|t3nxm1|t2n0m1|tnm|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0,TNM classification for colorectal-cancer.
-days_after_onset,non-unique,optional,False,[0-9]+,Days from the onset of the disease.
-stec_count,non-unique,optional,False,high|low|moderate,Amount of STEC colonies detected.
-shigatoxin_2_elisa,non-unique,optional,False,positive|negative,Enzyme-linked immunosorbent assay for Shiga-toxigenic E.coli.
-stool_texture,non-unique,optional,False,smooth|watery|bloody,Texture of the stool at sampling time.
-insulin_cat,non-unique,optional,False,yes|no,Insulin intake (yes/no)
-inr,non-unique,optional,False,[0-9]+\.?[0-9]*,International normalized ratio.
-protein_intake,non-unique,optional,False,[0-9]+\.?[0-9]*,Indication about the protein intake in the Mongolians diet.
-flg_genotype,non-unique,optional,False,wt|s1515x|e2422x|e2422x/3321dela,Any term for filaggrin-protein genotype.
-momeducat,non-unique,optional,False,[0-9]+,Years of education of the mother of the subject.
-hitchip_probe_class,non-unique,optional,False,lpc|hpc,High/Low species content onthe HIT-chip probe.
-hitchip_probe_number,non-unique,optional,False,[0-9]+,HIT-chip probe score.
-mgs_richness,non-unique,optional,False,[0-9]+\.?[0-9]*,Metagenomic species richness.
-hla_drb12,non-unique,optional,False,[0-9]+,Hla_drb12 allele.
-hla_dqa12,non-unique,optional,False,[0-9]+,Hla_dqa12 allele.
-hla_dqa11,non-unique,optional,False,[0-9]+,Hla_dqa11 allele.
-hla_drb11,non-unique,optional,False,[0-9]+,Hla_drb11 allele.
-hla_dbq12,non-unique,optional,False,[0-9]+,Hla_dbq12 allele.
-hla_dbq11,non-unique,optional,False,[0-9]+,Hla_dbq11 allele.
-ctp,non-unique,optional,False,[0-9]+,Cytidine triphosphate level.
-start_solidfood,non-unique,optional,False,[0-9]+,First day of solid food introduction (newborns).
-triglycerides,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use mg/dl.
-cholesterol,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use mg/dl.
-hdl,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use mg/dl.
-ldl,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use mg/dl.
-adiponectin,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use mg/l.
-fasting_insulin,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use micro-units/ml.
-hba1c,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use %.
-c_peptide,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use ng/ml.
-glp_1,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use pmol/l.
-cd163,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use ng/ml.
-il_1,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use pg/ml.
-leptin,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use micrograms/l.
-glucose,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use mg/dl.
-fgf_19,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use pg/ml.
-glutamate_decarboxylase_2_antibody,non-unique,optional,False,[0-9]+\.?[0-9]*,Glutamic acid decarboxylase (GAD65) antibody assay.
-creatinine,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
-creatine,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
-albumine,non-unique,optional,False,[0-9]+\.?[0-9]*,Albumine level; curators must use g/l.
-bilubirin,non-unique,optional,False,[0-9]+\.?[0-9]*,Bilubirin; curators must use mg/dl.
-prothrombin_time,non-unique,optional,False,[0-9]+\.?[0-9]*,Prothrombin time in seconds.
-dyastolic_p,non-unique,optional,False,[0-9]+\.?[0-9]*,Measured in mm/Hg.
-systolic_p,non-unique,optional,False,[0-9]+\.?[0-9]*,Measured in mm/Hg.
-hscrp,non-unique,optional,False,[0-9]+\.?[0-9]*,High-sensitivity C-reactive protein test result;curator have to use mg/L
-ferm_milk_prod_consumer,non-unique,optional,False,dfmp,Dfmp means yes (defined milk product).
-family,non-unique,optional,False,.+,A number identifying the family subjects belong; not corrected for meta-analyses.
-family_role,non-unique,optional,False,child|mother|father,Role in the family when multiple samples come from the same family but different persons.
-born_method,non-unique,optional,False,c_section|vaginal,C-section vs vaginal birth.
-premature,non-unique,optional,False,yes|no,If premature at birth.
-birth_order,non-unique,optional,False,[0-9]+,Can be used for multiple birth.
-age_twins_started_to_live_apart,non-unique,optional,False,[0-9]+\.?[0-9]*,Age at which twins started to live apart (years).
-feeding_practice,non-unique,optional,False,exclusively_breastfeeding|no_breastfeeding||mixed_feeding|any_breastfeeding|exclusively_formula_feeding,Feeding practice.
-breastfeeding_duration,non-unique,optional,False,[0-9]+,curator must use days
-formula_first_day,non-unique,optional,False,[0-9]+, the age infants get the first formula feeding in days
-ESR,non-unique,optional,False,[0-9]+\.?[0-9]*,Erythrocyte sedimentation rate (ESR) in mm/H.
-HLA,non-unique,optional,True,.+,HLA DR-DQ alleles conferring risk of Typ-1-Diabetes (T1D)
-autoantibody_positive,non-unique,optional,True,.+,Tested positive for AAB.
-age_seroconversion,non-unique,optional,False,[0-9]+\.?[0-9]*,Age at seroconvention was detected (days).
-age_T1D_diagnosis,non-unique, optional,False,[0-9]+\.?[0-9]*,Age at which T1D was diagnosed (days).
-disease_stage,non-unique,optional,False,[0-9]+,Stage information for diseases that can be divided into multiple stages.
-disease_location,non-unique,optional,True,.+,Can be used for diseases which occur on different body parts like CD.
-calprotectin,non-unique,optional,False,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
-treatment,non-unique,optional,True,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole,medications or treatments against the diseases.
-remission,non-unique,optional,False,no|yes,Remission of the disease.
-wbc,non-unique,optional,False,[0-9]+\.?[0-9]*,White blood cells count; curators must use *1000counts/µL
-rbc,non-unique,optional,False,[0-9]+\.?[0-9]*,Red blood cells count; curators must use *million_counts/µL
-blood_platelet,non-unique,optional,False,[0-9]+\.?[0-9]*,Curators must use *1000counts/µl
-hemoglobinometry,non-unique,optional,False,[0-9]+\.?[0-9]*,Hemoglobin concentration in blood; curators must use g/dl
-ast,non-unique,optional,False,[0-9]+\.?[0-9]*,Aspartate transaminase; curator must use U/l
-alt,non-unique,optional,False,[0-9]+\.?[0-9]*,Alanine aminotransferase; curator must use U/l
-globulin,non-unique,optional,False,[0-9]+\.?[0-9]*,Curator must use g/l
-urea_nitrogen,non-unique,optional,False,[0-9]+\.?[0-9]*,Curator must use mmol/l
-ASO,non-unique,optional,False,[0-9]+\.?[0-9]*,Antistreptolysin O; curator must use IU/ml
-anti_ccp_antibody,non-unique,optional,False,[0-9]+\.?[0-9]*,Curator must use U/ml
-rheumatoid_factor,non-unique,optional,False,[0-9]+\.?[0-9]*,Curator must use IU/ml
-dental_sample_type,non-unique,optional,False,teeth,Dental sample type.
-zigosity,non-unique,optional,False,monozygotic|dizygotic,Zigosity.
-menopausal_status,non-unique,optional,False,pre|going_through|post,Menopausal status.
-BASDAI,non-unique,optional,False,[0-9]+\.?[0-9]*,Bath Ankylosing Spondylitis Disease Activity Index
-BASFI,non-unique,optional,False,[0-9]+\.?[0-9]*,Bath Ankylosing Spondylitis Functional Index
-HBI,non-unique,optional,False,[0-9]+\.?[0-9]*,Harvey-Bradshaw Index clinical indication of active disease and inflammation 
-SCCAI,non-unique,optional,False,[0-9]+\.?[0-9]*,simple clinical colitis activity index
-birth_weight,non-unique,optional,False,[0-9]+\.?[0-9]*,curators must use gramms 
-gestational_age,non-unique,optional,False,[0-9]+\.?[0-9]*,duration time of pregnancy;curatos must use weeks
-curator,non-unique,required,True,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti,Curator name.
-uncurated_metadata,non-unique,optional,False,.+,A row for whatever field has not be included here.
+sampleID,unique,required,FALSE,[0-9a-zA-Z]\S+,Sample identifier.
+subjectID,non-unique,required,FALSE,[0-9a-zA-Z]\S+,Subject identifier.
+body_site,non-unique,required,FALSE,stool|skin|vagina|oralcavity|nasalcavity|lung|milk,Bodysite of acquisition.
+body_subsite,non-unique,optional,FALSE,anterior_nares|hard_palate|keratinized_gingiva|l_retroauricular_crease|r_retroauricular_crease|mid_vagina|palatine_tonsils|saliva|stool|supragingival_plaque|subgingival_plaque|throat|vaginal_introitus|posterior_fornix|tongue_dorsum|sputum|buccal_mucosa|left_elbow|right_ear|left_ear|right_elbow|rectal_swab|chest,Subsite of body site of acquisition.
+antibiotics_current_use,non-unique,optional,FALSE,yes|no,Subject is currently taking antibiotics.
+antibiotics_family,non-unique,optional,TRUE,dopamine_antagonists|phenylpiperidines|thienobenzodiazepines|blood_pressure_medication|diabetes_oral_medication|anti_retrovirals|beta_blockers|reverse_transcriptase_inhibitors|anti_virals|cephalosporins|penicillins|macrolides|beta_lactamase_inhibitors|nitrofurans|sulphonamides|aminoglycosides|carbapenems|fluoroquinolones|laxatives|none,Family of antibiotics currently used; Semicolon-separated.
+study_condition,non-unique,optional,FALSE,ACVD|acute_diarrhoea|carcinoma_surgery_history|cellulitis|melanoma|mucositis|gangrene|osteoarthritis|control|NK|peri-implantitis|pyelonefritis|salmonellosis|sepsis|skininf|suspinf|arthritis|STEC|CRC|adenoma|fatty_liver|hypertension|pre-hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|ME/CFS|premature_born|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|cephalosporins|AS|RA|metabolic_syndrome|FMT|premature_born|periodontitis|SRP|STH|BD|chorioamnionitis|pre-eclampsia|carcinoma_surgery_history|peri-implantitis|mucositis|migraine|ashtma,The main disease or condition under study; control for controls;STEC=Shiga-toxigenic E.coli;CDI=Clostridium difficile infection;IBD=Inflammatory bowel disease;T2D= Type-2 diabetes;T1D=Type-1 diabetes;AD=Atopic dermatitis;AR=Allergic rhinitis;IGT=Impaired glucose tolerance;AS=Ankylosing spondylitis;RA=rheumatic arthritis;FMT=fecal microbiota transplantaion;SRP=Scaling and root planing;CMV=Cytomegalovirus;HBV_HDV_HEV= Hepatitis viruses;BD= Bechet-disease;ACVD= Artheriosclerotic Cardiovalscular Disease
+disease,non-unique,optional,TRUE,healthy|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|hepatitis|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|ME/CFS|premature_born|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia|peri-implantitis|mucositis|STH|migraine|ashtma,Semicolon-delimited vector of conditions; Use healthy only if subject is known to be healthy; CRC=colorectal cancer;CD=Crohn's disease; for other abbreviations see study_condition
+disease_subtype,non-unique,optional,TRUE,healthy|CD|UC|HBV|HDV|HEV|cirrhosis|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|Ulcerative_colitis|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum|microfilaria_loa_loa|entamoeba_histolytica|mansonella_perstans|first_episode_schizofrenia|repeated_episodes_shizofrenia,Disease subtype; CD=Chrohn's Disease;AS=Ankylosing spondylitis;NAFLD=nonalcoholic fatty liver disease;for other abbreviations see study_condition
+age,non-unique,optional,FALSE,[0-9]+,Subject age (years).
+infant_age,non-unique,optional,FALSE,[0-9]+,Infant age (days); should be used for infants < 2 years old.
+age_category,non-unique,optional,FALSE,newborn|child|schoolage|adult|senior,Age category: newborn < 1 year; 1 <= child < 12; 12 <= schoolage < 19; 19 <= adult <= 65; senior > 65.
+gender,non-unique,optional,FALSE,female|male|other,Subject gender.
+visit_number,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repeated visits.
+BMI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
+country,non-unique,required,FALSE,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+location,non-unique,optional,FALSE,.+,Free-form additional location information.
+population,non-uniqze,optional,FALSE,[a-zA-Z]\S+,can describe the belonging to a specific population
+travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+non_westernized,non-unique,optional,FALSE,yes|no,Subject belongs to a non-westernized community.
+lifestyle,non-unique,optional,FALSE,Hunter-gatherer|Agriculturalist|Agropastoralist|Pastoralist|Fisher,to describe the lifestyle of non-westernized people
+brinkman_index,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,The Brinkman index if provided
+days_from_first_collection,non-unique,optional,FALSE,[0-9]+,Used for time series studies.
+sequencing_platform,non-unique,required,FALSE,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq|IlluminaNovaSeq,This will be modified as new sequencing platforms are added to the database.
+DNA_extraction_kit,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep,DNA extraction kit.
+PMID,non-unique,required,FALSE,[0-9]{8}|unpublished,Identifier of the main publication in PubMed.
+number_reads,non-unique,required,FALSE,[0-9]+,Number of final reads - calculated from raw data.
+number_bases,non-unique,required,FALSE,[0-9]+,Total number of bases sequenced in the sample - calculated from raw data.
+minimum_read_length,non-unique,required,FALSE,[0-9]+,Minimum read length - calculated from raw data.
+median_read_length,non-unique,required,FALSE,[0-9]+,Median read length - calculated from raw data.
+NCBI_accession,unique,optional,TRUE,[ES]R[SR][0-9]+,Semicolon-separated vector of NCBI accessions.
+pregnant,non-unique,optional,FALSE,yes|no,Pregnancy of the subject (men: no).
+lactating,non-unique,optional,FALSE,yes|no,Lactating subjects (men: no).
+birth_control_pil,non-unique,optional,FALSE,yes|no,Use of the birth-control-pils at the sampling time (men: no).
+smoker,non-unique,optional,FALSE,yes|no,Currently a smoker at sampling.
+ever_smoker,non-unique,optional,FALSE,yes|no,Ever been a smoker.
+alcohol,non-unique,optional,FALSE,yes|no,Subject is reported as a drinker.
+alcohol_numeric,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Alcohol consumption reported as a float. 
+mumps,non-unique,optional,FALSE,yes|no,Subject has been through mumps in life.
+ajcc,non-unique,optional,FALSE,0|i|ii|iii|iv|iii/iv,AJCC staging for colorectal-cancer.
+fobt,non-unique,optional,FALSE,yes|no,Fecal occult blood test.
+tnm,non-unique,optional,FALSE,t4n1m1|t3nxm1|t2n0m1|tnm|t3n3m1|t2n1m1|t4n2m1|t3n0m1|t3n2m0|t4n0m1|t4n1m0|no|t4n0m0|t3n0m0|t3n1m0|ptis|t1n0m0|t4n2m0|t3n1m1|t3n2m1|tisn0m0|t2n0m0|t1n0m1|t2n1m0|t2m0n0|t2n2m0,TNM classification for colorectal-cancer.
+days_after_onset,non-unique,optional,FALSE,[0-9]+,Days from the onset of the disease.
+stec_count,non-unique,optional,FALSE,high|low|moderate,Amount of STEC colonies detected.
+shigatoxin_2_elisa,non-unique,optional,FALSE,positive|negative,Enzyme-linked immunosorbent assay for Shiga-toxigenic E.coli.
+stool_texture,non-unique,optional,FALSE,smooth|watery|bloody,Texture of the stool at sampling time.
+insulin_cat,non-unique,optional,FALSE,yes|no,Insulin intake (yes/no)
+inr,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,International normalized ratio.
+protein_intake,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Indication about the protein intake in the Mongolians diet.
+flg_genotype,non-unique,optional,FALSE,wt|s1515x|e2422x|e2422x/3321dela,Any term for filaggrin-protein genotype.
+momeducat,non-unique,optional,FALSE,[0-9]+,Years of education of the mother of the subject.
+hitchip_probe_class,non-unique,optional,FALSE,lpc|hpc,High/Low species content onthe HIT-chip probe.
+hitchip_probe_number,non-unique,optional,FALSE,[0-9]+,HIT-chip probe score.
+mgs_richness,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Metagenomic species richness.
+hla_drb12,non-unique,optional,FALSE,[0-9]+,Hla_drb12 allele.
+hla_dqa12,non-unique,optional,FALSE,[0-9]+,Hla_dqa12 allele.
+hla_dqa11,non-unique,optional,FALSE,[0-9]+,Hla_dqa11 allele.
+hla_drb11,non-unique,optional,FALSE,[0-9]+,Hla_drb11 allele.
+hla_dbq12,non-unique,optional,FALSE,[0-9]+,Hla_dbq12 allele.
+hla_dbq11,non-unique,optional,FALSE,[0-9]+,Hla_dbq11 allele.
+ctp,non-unique,optional,FALSE,[0-9]+,Cytidine triphosphate level.
+start_solidfood,non-unique,optional,FALSE,[0-9]+,First day of solid food introduction (newborns).
+triglycerides,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+cholesterol,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+hdl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+ldl,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+adiponectin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/l.
+fasting_insulin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-units/ml.
+hba1c,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use %.
+c_peptide,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use ng/ml.
+glp_1,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pmol/l.
+cd163,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use ng/ml.
+il_1,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
+leptin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micrograms/l.
+glucose,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+fasting_glucose,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use mg/dl.
+fgf_19,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use pg/ml.
+glutamate_decarboxylase_2_antibody,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Glutamic acid decarboxylase (GAD65) antibody assay.
+creatinine,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
+creatine,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
+albumine,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Albumine level; curators must use g/l.
+bilubirin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Bilubirin; curators must use mg/dl.
+prothrombin_time,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Prothrombin time in seconds.
+dyastolic_p,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Measured in mm/Hg.
+systolic_p,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Measured in mm/Hg.
+hscrp,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,High-sensitivity C-reactive protein test result;curator have to use mg/L
+ferm_milk_prod_consumer,non-unique,optional,FALSE,dfmp,Dfmp means yes (defined milk product).
+family,non-unique,optional,FALSE,.+,A number identifying the family subjects belong; not corrected for meta-analyses.
+family_role,non-unique,optional,FALSE,child|mother|father,Role in the family when multiple samples come from the same family but different persons.
+born_method,non-unique,optional,FALSE,c_section|vaginal,C-section vs vaginal birth.
+c_section_type,non-unique,optional,FALSE,Elective_CS|Emergency_CS,C-section main decision reason.
+premature,non-unique,optional,FALSE,yes|no,If premature at birth.
+birth_order,non-unique,optional,FALSE,[0-9]+,Can be used for multiple birth.
+age_twins_started_to_live_apart,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at which twins started to live apart (years).
+feeding_practice,non-unique,optional,FALSE,exclusively_breastfeeding|no_breastfeeding||mixed_feeding|any_breastfeeding|exclusively_formula_feeding,Feeding practice.
+breastfeeding_duration,non-unique,optional,FALSE,[0-9]+,curator must use days
+formula_first_day,non-unique,optional,FALSE,[0-9]+, the age infants get the first formula feeding in days
+ESR,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Erythrocyte sedimentation rate (ESR) in mm/H.
+HLA,non-unique,optional,TRUE,.+,HLA DR-DQ alleles conferring risk of Typ-1-Diabetes (T1D)
+autoantibody_positive,non-unique,optional,TRUE,.+,Tested positive for AAB.
+age_seroconversion,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at seroconvention was detected (days).
+age_T1D_diagnosis,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at which T1D was diagnosed (days).
+disease_stage,non-unique,optional,FALSE,[0-9]+,Stage information for diseases that can be divided into multiple stages.
+disease_location,non-unique,optional,TRUE,.+,Can be used for diseases which occur on different body parts like CD.
+calprotectin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
+treatment,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin,medications or treatments against the diseases.
+remission,non-unique,optional,FALSE,no|yes,Remission of the disease.
+anti_PD_1,non-unique,optional,FALSE,responder|non_responder,The patient results to be a responder/non-responder to the anti-PD1 treatment.
+wbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,White blood cells count; curators must use *1000counts/µL
+rbc,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Red blood cells count; curators must use *million_counts/µL
+blood_platelet,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use *1000counts/µl
+hemoglobinometry,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Hemoglobin concentration in blood; curators must use g/dl
+ast,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Aspartate transaminase; curator must use U/l
+alt,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Alanine aminotransferase; curator must use U/l
+globulin,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curator must use g/l
+urea_nitrogen,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curator must use mmol/l
+ASO,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Antistreptolysin O; curator must use IU/ml
+anti_ccp_antibody,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curator must use U/ml
+rheumatoid_factor,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curator must use IU/ml
+dental_sample_type,non-unique,optional,FALSE,teeth|implant,Dental sample type.
+history_of_periodontitis,non-unique,optional,FALSE,yes|no,If the patients has been reported having previously suffered of periodontitis in one of more sites.
+PPD_M,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Depth of the pocket reached by the probe in a dental implant ('M').
+PPD_B,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Depth of the pocket reached by the probe in a dental implant ('B').
+PPD_D,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Depth of the pocket reached by the probe in a dental implant ('D').
+PPD_L,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Depth of the pocket reached by the probe in a dental implant ('L').
+zigosity,non-unique,optional,FALSE,monozygotic|dizygotic,Zigosity.
+menopausal_status,non-unique,optional,FALSE,pre|going_through|post,Menopausal status.
+BASDAI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Bath Ankylosing Spondylitis Disease Activity Index
+BASFI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Bath Ankylosing Spondylitis Functional Index
+HBI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Harvey-Bradshaw Index clinical indication of active disease and inflammation 
+SCCAI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,simple clinical colitis activity index
+birth_weight,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curators must use gramms 
+gestational_age,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,duration time of pregnancy;curatos must use weeks
+diet,non-unique,optional,FALSE,omnivore|vegan|vegetarian,type of diet
+curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Mireia_VallesColomer,Curator name.
+uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.

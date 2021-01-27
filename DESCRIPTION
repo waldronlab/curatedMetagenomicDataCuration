@@ -1,7 +1,7 @@
 Package: curatedMetagenomicDataCuration
 Type: Package
 Title: Curated Metagenomic Data of the Human Microbiome
-Version: 0.99.4
+Version: 0.99.5
 Author:
     Paolo Manghi <paolomanghi1974@gmail.com>,
     Lucas Schiffer <schiffer.lucas@gmail.com>,
@@ -16,8 +16,12 @@ License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
 Depends:
-    R (>= 3.3.0)
+    R (>= 4.0.0),
+    dplyr
 Imports:
+    RISmed,
+    readr,
+    tidyr,
     curl,
     jsonlite
 Suggests:
@@ -25,4 +29,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1

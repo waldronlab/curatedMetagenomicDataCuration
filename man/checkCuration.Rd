@@ -4,8 +4,11 @@
 \alias{checkCuration}
 \title{Title Check the curation of per-participant metadata against a template.}
 \usage{
-checkCuration(curated, template = read.csv(system.file("extdata/template.csv",
-  package = "curatedMetagenomicDataCuration"), as.is = TRUE))
+checkCuration(
+  curated,
+  template = read.csv(system.file("extdata/template.csv", package =
+    "curatedMetagenomicDataCuration"), as.is = TRUE)
+)
 }
 \arguments{
 \item{curated}{a data.frame containing the curated per-participant metadata to be checked}
