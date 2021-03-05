@@ -16,7 +16,7 @@ visit_number,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repe
 BMI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
 country,non-unique,required,FALSE,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,non-unique,optional,FALSE,.+,Free-form additional location information.
-population,non-uniqze,optional,FALSE,[a-zA-Z]\S+,can describe the belonging to a specific population
+population,non-unique,optional,FALSE,[a-zA-Z]\S+,can describe the belonging to a specific population
 travel_destination,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 non_westernized,non-unique,optional,FALSE,yes|no,Subject belongs to a non-westernized community.
 lifestyle,non-unique,optional,FALSE,Hunter-gatherer|Agriculturalist|Agropastoralist|Pastoralist|Fisher,to describe the lifestyle of non-westernized people
