@@ -1,0 +1,85 @@
+Original Abbreviation/Name,Full Name,Ontology link
+ACVD,atherosclerosis,http://www.ebi.ac.uk/efo/EFO_0003914
+acute_diarrhoea,acute diarrhea,http://purl.obolibrary.org/obo/DOID_0050140
+cellulitis,cellulitis,http://www.ebi.ac.uk/efo/EFO_0003035
+melanoma,melanoma,http://www.ebi.ac.uk/efo/EFO_0000756
+gangrene,gangrene,http://www.ebi.ac.uk/efo/EFO_0008574
+osteoarthritis,osteoarthritis,http://www.ebi.ac.uk/efo/EFO_0002506
+control,control,http://www.ebi.ac.uk/efo/EFO_0001461
+NK,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623
+pyelonefritis,pyelonephritis,http://www.ebi.ac.uk/efo/EFO_1001141
+salmonellosis,salmonellosis,http://purl.obolibrary.org/obo/NCIT_C157974
+sepsis,sepsis,http://purl.obolibrary.org/obo/HP_0100806
+skininf,skin infection,http://purl.obolibrary.org/obo/NCIT_C35025
+suspinf,,
+arthritis,arthritis,http://www.ebi.ac.uk/efo/EFO_0005856
+STEC,Shiga toxin,http://purl.obolibrary.org/obo/NCIT_C1225
+CRC,Colorectal Cancer,http://www.ebi.ac.uk/efo/EFO_0005842
+adenoma,Adenoma,http://purl.obolibrary.org/obo/NCIT_C2855
+fatty_liver,fatty liver,http://purl.obolibrary.org/obo/OMIT_0006456
+hypertension,hypertension,http://purl.obolibrary.org/obo/NCIT_C3117
+pre-hypertension,,
+coeliac,celiac disease,http://www.ebi.ac.uk/efo/EFO_0001060
+asthma,asthma,http://www.ebi.ac.uk/efo/EFO_0000270
+gestational_diabetes,gestational diabetes,http://www.ebi.ac.uk/efo/EFO_0004593
+cirrhosis,cirrhosis of liver,http://www.ebi.ac.uk/efo/EFO_0001422
+HBV,HBV infection,http://purl.obolibrary.org/obo/TXPO_0004584
+HDV,Hepatitis delta,http://www.orpha.net/ORDO/Orphanet_402823
+HEV,Hepatitis E virus,http://purl.obolibrary.org/obo/NCIT_C14295
+CMV,Cytomegalovirus,http://purl.obolibrary.org/obo/NCIT_C14196
+CDI,Clostridiodes difficile infection,http://purl.obolibrary.org/obo/OHMI_0000028
+IBD,Irritable bowel syndrome,http://purl.obolibrary.org/obo/DOID_9352
+T2D,Type 2 diabetes mellitus,http://purl.obolibrary.org/obo/DOID_9352
+T1D,Type 1 diabetes mellitus,http://purl.obolibrary.org/obo/HP_0100651
+AD,Alzheimer's disease,http://purl.obolibrary.org/obo/NCIT_C2866
+AR,,
+IGT,abnormal glucose tolerance,http://www.ebi.ac.uk/efo/EFO_0002546
+schizophrenia,schizophrenia,http://purl.obolibrary.org/obo/NCIT_C3362
+ascites,Wilson disease,http://purl.obolibrary.org/obo/MONDO_0010200
+wilson,otitis,http://purl.obolibrary.org/obo/OMIT_0011037
+otitis,otitis,http://purl.obolibrary.org/obo/OMIT_0011037
+bronchitis,bronchitis,http://purl.obolibrary.org/obo/NCIT_C2911
+pneumonia,pneumonia,http://purl.obolibrary.org/obo/HP_0002090
+respiratoryinf,respiratory tract infection,http://purl.obolibrary.org/obo/HP_0011947
+cough,cough,http://purl.obolibrary.org/obo/NCIT_C37935
+stomatitis,stomatitis,http://purl.obolibrary.org/obo/NCIT_C26887
+fever,fever,http://purl.obolibrary.org/obo/NCIT_C3038
+pyelonephritis,pyelonephritis,http://purl.obolibrary.org/obo/NCIT_C34965
+infectiousgastroenteritis,gastroenteritis,http://purl.obolibrary.org/obo/DOID_2326
+tonsillitis,Tonsillitis,http://purl.obolibrary.org/obo/NCIT_C116006
+cystitis,cystitis,http://www.ebi.ac.uk/efo/EFO_1000025
+abdominalhernia,Abdominal Hernia,http://purl.obolibrary.org/obo/NCIT_C98700
+psoriasis,psoriasis,http://www.ebi.ac.uk/efo/EFO_0000676
+cephalosporins,cephalosporins,http://purl.obolibrary.org/obo/OMIT_0003840
+AS,Ankylosing spondylitis,http://purl.obolibrary.org/obo/NCIT_C84564
+RA,Rheumatoid Arthritis,http://scdontology.h3abionet.org/ontology/SCDO_0001011
+metabolic_syndrome,metabolic syndrome,http://www.ebi.ac.uk/efo/EFO_0000195
+FMT,Arabidopsis thaliana,https://bar.utoronto.ca/thalemine/portal.do?externalids=AT3G52140
+premature_born,premature birth,http://www.ebi.ac.uk/efo/EFO_0003917
+periodontitis,periodontitis,http://www.ebi.ac.uk/efo/EFO_0000649
+SRP,,
+STH,Somatotropin,http://purl.obolibrary.org/obo/NCIT_C2288
+BD,Behcet's syndrome,http://www.ebi.ac.uk/efo/EFO_0003780
+chorioamnionitis,chorioamnionitis,http://www.ebi.ac.uk/efo/EFO_0009948
+pre-eclampsia,preeclampsia,http://www.ebi.ac.uk/efo/EFO_0000668
+carcinoma_surgery_history,,
+healthy,healthy,http://purl.obolibrary.org/obo/NCIT_C115935
+hepatitis,hepatitis,http://purl.obolibrary.org/obo/NCIT_C3095
+hypercholesterolemia,hypercholesterolemia,http://purl.obolibrary.org/obo/NCIT_C37967
+ascaris_lumbricoides,ascaris lumbricoides,http://purl.obolibrary.org/obo/NCIT_C122177
+necator_americanus,necator americanus,http://purl.obolibrary.org/obo/NCIT_C123524
+trichuris_trichiura,trichuris trichiura,http://purl.obolibrary.org/obo/NCIT_C125973
+metastases,,
+CD,Crohn's disease,http://www.ebi.ac.uk/efo/EFO_0000384
+UC,Ulcerative Colitis,http://purl.obolibrary.org/obo/NCIT_C2952
+smalladenoma,Small intestinal adenoma,http://purl.obolibrary.org/obo/NCIT_C5340
+largeadenoma,large intestinal adenoma,http://purl.obolibrary.org/obo/DOID_0050914
+advancedadenoma,,
+adenocarcinoma,adenocarcinoma,http://purl.obolibrary.org/obo/NCIT_C2852
+carcinoma,carcinoma,http://purl.obolibrary.org/obo/NCIT_C2916
+AS,Ankylosing spondylitis,http://purl.obolibrary.org/obo/NCIT_C84564
+cholera,cholera,http://purl.obolibrary.org/obo/NCIT_C157812
+T1D_nonconverter,,
+T1D_seroconverter,,
+NAFLD,Non alcoholic fatty liver disease,http://purl.obolibrary.org/obo/DOID_0080208
+Indeterminate_colitis,Indeterminate colitis,http://www.ebi.ac.uk/efo/EFO_1000034
