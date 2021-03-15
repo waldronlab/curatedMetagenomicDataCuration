@@ -1,0 +1,31 @@
+Original Abbreviation/Name,Ontology Name,Ontology link
+stool,feces,http://purl.obolibrary.org/obo/UBERON_0001988
+skin,skin of body,http://purl.obolibrary.org/obo/UBERON_0002097
+vagina,vagina,http://purl.obolibrary.org/obo/UBERON_0000996
+oralcavity,oral cavity,http://purl.obolibrary.org/obo/UBERON_0000167
+nasalcavity,nasal cavity,http://purl.obolibrary.org/obo/UBERON_0001707
+lung,lung,http://purl.obolibrary.org/obo/UBERON_0002048
+milk,milk,http://purl.obolibrary.org/obo/UBERON_0001913
+anterior_nares,anterior naris,http://purl.obolibrary.org/obo/UBERON_2001427
+hard_palate,hard palate,http://purl.obolibrary.org/obo/UBERON_0003216
+keratinized_gingiva,gingival epithelium,http://purl.obolibrary.org/obo/UBERON_0001949
+l_retroauricular_crease,skin crease,http://purl.obolibrary.org/obo/UBERON_0019243
+r_retroauricular_crease,skin crease,
+mid_vagina,median vaginal canal,http://purl.obolibrary.org/obo/UBERON_0013524
+palatine_tonsils,palatine tonsil,http://purl.obolibrary.org/obo/UBERON_0002373
+saliva,saliva,http://purl.obolibrary.org/obo/UBERON_0001836
+stool,,
+supragingival_plaque,supragingival dental plaque,http://purl.obolibrary.org/obo/UBERON_0016485
+subgingival_plaque,subgingival dental plaque,http://purl.obolibrary.org/obo/UBERON_0016484
+throat,throat,http://purl.obolibrary.org/obo/UBERON_0000341
+vaginal_introitus,vaginal oriface,http://purl.obolibrary.org/obo/UBERON_0012317
+posterior_fornix,posterior fornix of vagina,http://purl.obolibrary.org/obo/UBERON_0016486
+tongue_dorsum,dorsum of tongue,http://purl.obolibrary.org/obo/UBERON_0009471
+sputum,sputum,http://purl.obolibrary.org/obo/UBERON_0007311
+buccal_mucosa,buccal mucosa,http://purl.obolibrary.org/obo/UBERON_0006956
+left_elbow,elbow,http://purl.obolibrary.org/obo/UBERON_0001461
+right_ear,right ear,http://purl.obolibrary.org/obo/UBERON_0035174
+left_ear,left ear,http://purl.obolibrary.org/obo/UBERON_0035295
+right_elbow,elbow,http://purl.obolibrary.org/obo/UBERON_0001461
+rectal_swab,rectal swab specimen,http://purl.obolibrary.org/obo/NCIT_C173641
+chest,chest,http://purl.obolibrary.org/obo/UBERON_0001443
