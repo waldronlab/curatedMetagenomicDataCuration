@@ -3,13 +3,13 @@
 #' @return A data.table containing metadata for all studies in inst/curated
 
 makeCombinedMetadata <- function(){
-  rbindlist(fetchTSVs(), fill=TRUE) %>% return()
+  rbindlist(.fetchTSVs(), fill=TRUE) %>% return()
 }
 
 .fetchTSVs <- function(){
   studies <- system.file("curated", package = "curatedMetagenomicDataCuration") %>% 
     list.files(recursive = TRUE, pattern="\\.tsv$", full.names = TRUE) %>% 
-    lapply(. %>% fetchStudy())
+    lapply(. %>% .fetchStudy())
   return(studies)
 }
 
