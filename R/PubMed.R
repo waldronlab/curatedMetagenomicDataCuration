@@ -15,7 +15,6 @@
 
 PubMed <- function(PMID) {
   res <- EUtilsSummary(PMID, type="esearch")
-  Sys.sleep(0.1)
   article <- EUtilsGet(res)
   
   dfpub <- data.frame(PMID=PMID(article),
