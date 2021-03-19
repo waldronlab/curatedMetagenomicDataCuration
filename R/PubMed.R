@@ -3,7 +3,8 @@
 #' @param pmid A valid PMID as a string
 #'
 #' @return a PubMed-class object
-#' @importFrom RISmed EUtilsSummary EUtilsGet
+#' @importFrom RISmed EUtilsSummary EUtilsGet PMID ArticleTitle MedlineTA Affiliation 
+#' Volume MedlinePgn DayPubmed MonthPubmed YearPubmed ELocationID AbstractText Author
 #' @export PubMed
 #' @details Retrieves article details for a PMID and returns a PubMed class object.
 #' The object is a list with three data.frames:
@@ -14,7 +15,8 @@
 
 PubMed <- function(PMID) {
   res <- EUtilsSummary(PMID, type="esearch")
-  article <-EUtilsGet(res)
+  Sys.sleep(0.1)
+  article <- EUtilsGet(res)
   
   dfpub <- data.frame(PMID=PMID(article),
                       title=ArticleTitle(article),
