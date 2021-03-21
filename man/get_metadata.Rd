@@ -16,7 +16,7 @@ a data.frame with sampleID, sequencing_platform, number_reads, and avg_read_leng
 Get relevant metadata for each SRR using SRP
 }
 \details{
-See Examples for the template used for curatedMetagenomicData. 
+Supports studies with up to 99,990 runs. See Examples for the template used for curatedMetagenomicData. 
 The data.frame has five columns:
 
 1. "sampleID" Sample ID.
