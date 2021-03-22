@@ -626,7 +626,6 @@ SRS016002	HMP_2012_764447348	oralcavity	tongue_dorsum	NA	control	healthy	27	adul
 SRS047254	HMP_2012_764447348	nasalcavity	anterior_nares	NA	control	healthy	27	adult	24.0	male	USA	no	IlluminaHiSeq	Qiagen	22699609	1793187	158029212	60	96	Paolo_Manghi	SRR061283;SRR061307
 SRS015996	HMP_2012_764447348	nasalcavity	anterior_nares	NA	control	healthy	27	adult	24.0	male	USA	no	IlluminaHiSeq	Qiagen	22699609	6914660	529760029	60	70	Paolo_Manghi	SRR061387;SRR061404
 SRS015989	HMP_2012_764447348	oralcavity	supragingival_plaque	NA	control	healthy	27	adult	24.0	male	USA	no	IlluminaHiSeq	Qiagen	22699609	66820471	6151511471	60	100	Paolo_Manghi	SRR061542;SRR061546
-SRS057290	HMP_2012_764447348	oralcavity	supragingival_plaque	NA	control	healthy	27	adult	24.0	male	USA	no	IlluminaHiSeq	Qiagen	22699609	8778025	868664200	60	100	Paolo_Manghi	SRR062337;SRR062482
 SRS057083	HMP_2012_764447348	skin	r_retroauricular_crease	NA	control	healthy	27	adult	24.0	male	USA	no	IlluminaHiSeq	Qiagen	22699609	9005077	690411949	60	73	Paolo_Manghi	SRR061309
 SRS058105	HMP_2012_764487809	oralcavity	buccal_mucosa	NA	control	healthy	26	adult	25.0	male	USA	no	IlluminaHiSeq	Qiagen	22699609	29635725	2817775472	60	100	Paolo_Manghi	SRR062325;SRR062373
 SRS042131	HMP_2012_764487809	oralcavity	tongue_dorsum	NA	control	healthy	26	adult	25.0	male	USA	no	IlluminaHiSeq	Qiagen	22699609	88138909	8339249146	60	100	Paolo_Manghi	SRR062310;SRR062316
