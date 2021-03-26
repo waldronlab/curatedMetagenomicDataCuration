@@ -280,7 +280,6 @@ CSM7KOOJ	C3022	stool	no	control	healthy	NA	69.0	senior	male	17	USA	NA	Los_Angele
 CSM7KOOL	C3022	stool	no	control	healthy	NA	69.0	senior	male	18	USA	NA	Los_Angeles	no	212	IlluminaHiSeq	Chemagen	31142855	15061766	1439436578	50	101	Paolo_Manghi	NA
 CSM7KOON	C3022	stool	no	control	healthy	NA	69.0	senior	male	19	USA	NA	Los_Angeles	no	226	IlluminaHiSeq	Chemagen	31142855	24257872	2250246538	50	101	Paolo_Manghi	NA
 CSM7KOOP	C3022	stool	no	control	healthy	NA	69.0	senior	male	20	USA	NA	Los_Angeles	no	241	IlluminaHiSeq	Chemagen	31142855	25179406	2354105429	50	101	Paolo_Manghi	NA
-CSM7KOOR	C3022	stool	no	control	healthy	NA	69.0	senior	male	22	USA	NA	Los_Angeles	no	254	IlluminaHiSeq	Chemagen	31142855	4516	403700	50	101	Paolo_Manghi	NA
 CSMA8M9R	C3022	stool	no	control	healthy	NA	69.0	senior	male	23	USA	NA	Los_Angeles	no	281	IlluminaHiSeq	Chemagen	31142855	42226634	3931478699	50	101	Paolo_Manghi	NA
 CSMAAEUA	C3022	stool	no	control	healthy	NA	69.0	senior	male	24	USA	NA	Los_Angeles	no	295	IlluminaHiSeq	Chemagen	31142855	25428474	2389001537	50	101	Paolo_Manghi	NA
 CSMAE44D	C3022	stool	no	control	healthy	NA	69.0	senior	male	25	USA	NA	Los_Angeles	no	309	IlluminaHiSeq	Chemagen	31142855	28104606	2634105601	50	101	Paolo_Manghi	NA
@@ -685,12 +684,9 @@ HSM7CYYH	H4018	stool	no	control	healthy	NA	13.0	schoolage	female	16	USA	25.2	Cin
 HSM7CYYP	H4018	stool	no	control	healthy	NA	13.0	schoolage	female	20	USA	25.2	Cincinnati	no	118	IlluminaHiSeq	Chemagen	31142855	14501904	1317655062	50	101	Paolo_Manghi	NA
 HSM7J4LD	H4018	stool	no	control	healthy	NA	13.0	schoolage	female	22	USA	25.2	Cincinnati	no	133	IlluminaHiSeq	Chemagen	31142855	28881126	2666817259	50	101	Paolo_Manghi	NA
 HSM7J4LF	H4018	stool	no	control	healthy	NA	13.0	schoolage	female	23	USA	25.2	Cincinnati	no	146	IlluminaHiSeq	Chemagen	31142855	18636118	1693511954	50	101	Paolo_Manghi	NA
-HSM7J4LH	H4018	stool	no	control	healthy	NA	13.0	schoolage	female	24	USA	25.2	Cincinnati	no	160	IlluminaHiSeq	Chemagen	31142855	5044	430068	50	93	Paolo_Manghi	NA
-HSM7J4LN	H4018	stool	yes	control	healthy	NA	13.0	schoolage	female	27	USA	25.2	Cincinnati	no	174	IlluminaHiSeq	Chemagen	31142855	27541922	2531827971	50	101	Paolo_Manghi	NA
 HSM6XRQE_P	H4019	stool	no	IBD	IBD	UC	11.0	child	female	1	USA	16.9	Cincinnati	no	0	IlluminaHiSeq	Chemagen	29311644	16529594	1607801029	50	101	Paolo_Manghi	NA
 HSM6XRR5	H4019	stool	no	IBD	IBD	UC	11.0	child	female	2	USA	16.9	Cincinnati	no	14	IlluminaHiSeq	Chemagen	31142855	6830246	629293219	50	101	Paolo_Manghi	NA
 HSM6XRR7	H4019	stool	no	IBD	IBD	UC	11.0	child	female	3	USA	16.9	Cincinnati	no	28	IlluminaHiSeq	Chemagen	31142855	14270918	1293148723	50	101	Paolo_Manghi	NA
-HSM6XRR9	H4019	stool	no	IBD	IBD	UC	11.0	child	female	4	USA	16.9	Cincinnati	no	43	IlluminaHiSeq	Chemagen	31142855	2352	193933	50	85	Paolo_Manghi	NA
 HSM6XRRB	H4019	stool	no	IBD	IBD	UC	11.0	child	female	5	USA	16.9	Cincinnati	no	63	IlluminaHiSeq	Chemagen	31142855	31377442	2921055237	50	101	Paolo_Manghi	NA
 HSM6XRRD	H4019	stool	no	IBD	IBD	UC	11.0	child	female	6	USA	16.9	Cincinnati	no	70	IlluminaHiSeq	Chemagen	31142855	29562516	2667329726	50	101	Paolo_Manghi	NA
 HSM6XRUX	H4019	stool	no	IBD	IBD	UC	11.0	child	female	8	USA	16.9	Cincinnati	no	84	IlluminaHiSeq	Chemagen	31142855	16507908	1490807422	50	101	Paolo_Manghi	NA
@@ -1415,7 +1411,6 @@ PSM6XBQY_TR	P6005	stool	no	IBD	IBD	CD	11.0	child	male	5	USA	14.3	Boston	no	48	Il
 PSM6XBQY	P6005	stool	no	IBD	IBD	CD	11.0	child	male	5	USA	14.3	Boston	no	48	IlluminaHiSeq	Chemagen	31142855	3078078	293657718	50	101	Paolo_Manghi	NA
 PSM6XBR1	P6005	stool	no	IBD	IBD	CD	11.0	child	male	6	USA	14.3	Boston	no	61	IlluminaHiSeq	Chemagen	31142855	27749750	2576405590	50	101	Paolo_Manghi	NA
 PSM6XBSS	P6005	stool	no	IBD	IBD	CD	11.0	child	male	10	USA	14.3	Boston	no	77	IlluminaHiSeq	Chemagen	31142855	36066530	3327850315	50	101	Paolo_Manghi	NA
-PSM6XBSU_TR	P6005	stool	no	IBD	IBD	CD	11.0	child	male	11	USA	14.3	Boston	no	90	IlluminaHiSeq	Chemagen	31142855	1666	150020	50	101	Paolo_Manghi	NA
 PSM6XBSU	P6005	stool	no	IBD	IBD	CD	11.0	child	male	11	USA	14.3	Boston	no	90	IlluminaHiSeq	Chemagen	31142855	24894370	2331576045	50	101	Paolo_Manghi	NA
 PSM6XBT1	P6005	stool	no	IBD	IBD	CD	11.0	child	male	15	USA	14.3	Boston	no	104	IlluminaHiSeq	Chemagen	31142855	10269256	941934004	50	101	Paolo_Manghi	NA
 PSM7J1C8	P6005	stool	no	IBD	IBD	CD	11.0	child	male	16	USA	14.3	Boston	no	118	IlluminaHiSeq	Chemagen	31142855	34235890	3150191723	50	101	Paolo_Manghi	NA
@@ -1482,7 +1477,6 @@ PSM7J1B9	P6012	stool	no	IBD	IBD	UC	16.0	schoolage	female	10	USA	21.1	Boston	no	1
 PSM7J1BB	P6012	stool	no	IBD	IBD	UC	16.0	schoolage	female	12	USA	21.1	Boston	no	138	IlluminaHiSeq	Chemagen	31142855	32397802	3005055633	50	101	Paolo_Manghi	NA
 PSM7J1BF	P6012	stool	no	IBD	IBD	UC	16.0	schoolage	female	15	USA	21.1	Boston	no	165	IlluminaHiSeq	Chemagen	31142855	26100622	2405753834	50	101	Paolo_Manghi	NA
 PSM7J1BD	P6012	stool	no	IBD	IBD	UC	16.0	schoolage	female	13	USA	21.1	Boston	no	165	IlluminaHiSeq	Chemagen	31142855	16886050	1603058251	50	101	Paolo_Manghi	NA
-PSM7J1BH	P6012	stool	no	IBD	IBD	UC	16.0	schoolage	female	16	USA	21.1	Boston	no	187	IlluminaHiSeq	Chemagen	31142855	440	40489	50	101	Paolo_Manghi	NA
 PSM7J18Q	P6012	stool	no	IBD	IBD	UC	16.0	schoolage	female	20	USA	21.1	Boston	no	249	IlluminaHiSeq	Chemagen	31142855	26020298	2394732661	50	101	Paolo_Manghi	NA
 PSM6XBSG_P	P6013	stool	no	IBD	IBD	UC	6.0	child	male	1	USA	13.5	Boston	no	0	IlluminaHiSeq	Chemagen	29311644	16370852	1601936378	50	101	Paolo_Manghi	NA
 PSM6XBT3	P6013	stool	no	IBD	IBD	UC	6.0	child	male	2	USA	13.5	Boston	no	15	IlluminaHiSeq	Chemagen	31142855	9109394	841222329	50	101	Paolo_Manghi	NA
@@ -1490,16 +1484,13 @@ PSM6XBT5	P6013	stool	no	IBD	IBD	UC	6.0	child	male	3	USA	13.5	Boston	no	29	Illumi
 PSM6XBT7	P6013	stool	no	IBD	IBD	UC	6.0	child	male	4	USA	13.5	Boston	no	42	IlluminaHiSeq	Chemagen	31142855	10927560	1014617590	50	101	Paolo_Manghi	NA
 PSM6XBT9	P6013	stool	no	IBD	IBD	UC	6.0	child	male	5	USA	13.5	Boston	no	56	IlluminaHiSeq	Chemagen	31142855	3027388	270732465	50	101	Paolo_Manghi	NA
 PSM6XBTB	P6013	stool	no	IBD	IBD	UC	6.0	child	male	6	USA	13.5	Boston	no	70	IlluminaHiSeq	Chemagen	31142855	17818276	1717016631	50	101	Paolo_Manghi	NA
-PSM6XBTD	P6013	stool	no	IBD	IBD	UC	6.0	child	male	8	USA	13.5	Boston	no	86	IlluminaHiSeq	Chemagen	31142855	3802	340281	50	101	Paolo_Manghi	NA
 PSM7J1AM	P6013	stool	no	IBD	IBD	UC	6.0	child	male	9	USA	13.5	Boston	no	99	IlluminaHiSeq	Chemagen	31142855	14136696	1318599068	50	101	Paolo_Manghi	NA
 PSM7J1AS	P6013	stool	no	IBD	IBD	UC	6.0	child	male	10	USA	13.5	Boston	no	112	IlluminaHiSeq	Chemagen	31142855	26290796	2506647373	50	101	Paolo_Manghi	NA
 PSM7J1AU	P6013	stool	no	IBD	IBD	UC	6.0	child	male	11	USA	13.5	Boston	no	126	IlluminaHiSeq	Chemagen	31142855	21250170	1922760252	50	101	Paolo_Manghi	NA
 PSM7J1AO	P6013	stool	no	IBD	IBD	UC	6.0	child	male	12	USA	13.5	Boston	no	141	IlluminaHiSeq	Chemagen	31142855	17829990	1716355708	50	101	Paolo_Manghi	NA
 PSM7J1AQ	P6013	stool	no	IBD	IBD	UC	6.0	child	male	13	USA	13.5	Boston	no	155	IlluminaHiSeq	Chemagen	31142855	22901316	2192800069	50	101	Paolo_Manghi	NA
-PSM7J1AW	P6013	stool	no	IBD	IBD	UC	6.0	child	male	15	USA	13.5	Boston	no	168	IlluminaHiSeq	Chemagen	31142855	4996	451330	50	101	Paolo_Manghi	NA
 PSM7J193	P6013	stool	no	IBD	IBD	UC	6.0	child	male	16	USA	13.5	Boston	no	184	IlluminaHiSeq	Chemagen	31142855	24957888	2360572714	50	101	Paolo_Manghi	NA
 PSM7J127	P6013	stool	no	IBD	IBD	UC	6.0	child	male	17	USA	13.5	Boston	no	197	IlluminaHiSeq	Chemagen	31142855	30409070	2896585085	50	101	Paolo_Manghi	NA
-PSM7J129	P6013	stool	no	IBD	IBD	UC	6.0	child	male	18	USA	13.5	Boston	no	211	IlluminaHiSeq	Chemagen	31142855	1854	170504	50	101	Paolo_Manghi	NA
 PSM7J12B	P6013	stool	no	IBD	IBD	UC	6.0	child	male	19	USA	13.5	Boston	no	232	IlluminaHiSeq	Chemagen	31142855	26946154	2541031763	50	101	Paolo_Manghi	NA
 PSM7J12D	P6013	stool	no	IBD	IBD	UC	6.0	child	male	20	USA	13.5	Boston	no	248	IlluminaHiSeq	Chemagen	31142855	24499164	2292996713	50	101	Paolo_Manghi	NA
 PSM7J12F	P6013	stool	no	IBD	IBD	UC	6.0	child	male	22	USA	13.5	Boston	no	252	IlluminaHiSeq	Chemagen	31142855	11994510	1143210560	50	101	Paolo_Manghi	NA
@@ -1594,7 +1585,6 @@ PSM7J15W	P6028	stool	no	IBD	IBD	CD	9.0	child	male	9	USA	15.9	Boston	no	120	Illum
 PSM7J161	P6028	stool	no	IBD	IBD	CD	9.0	child	male	11	USA	15.9	Boston	no	135	IlluminaHiSeq	Chemagen	31142855	30397332	2866929138	50	101	Paolo_Manghi	NA
 PSM7J163	P6028	stool	no	IBD	IBD	CD	9.0	child	male	12	USA	15.9	Boston	no	148	IlluminaHiSeq	Chemagen	31142855	19435188	1841485788	50	101	Paolo_Manghi	NA
 PSMA2668	P6028	stool	no	IBD	IBD	CD	9.0	child	male	17	USA	15.9	Boston	no	177	IlluminaHiSeq	Chemagen	31142855	24325566	2295904617	50	101	Paolo_Manghi	NA
-PSMA266C	P6028	stool	no	IBD	IBD	CD	9.0	child	male	19	USA	15.9	Boston	no	191	IlluminaHiSeq	Chemagen	31142855	4512	407299	50	101	Paolo_Manghi	NA
 PSM7J13I	P6033	stool	no	IBD	IBD	CD	15.0	schoolage	male	1	USA	16.4	Boston	no	0	IlluminaHiSeq	Chemagen	31142855	22401840	2121632894	50	101	Paolo_Manghi	NA
 PSM7J13K	P6033	stool	yes	IBD	IBD	CD	15.0	schoolage	male	2	USA	16.4	Boston	no	13	IlluminaHiSeq	Chemagen	31142855	15626076	1475057739	50	101	Paolo_Manghi	NA
 PSM7J13Q	P6033	stool	no	IBD	IBD	CD	15.0	schoolage	male	4	USA	16.4	Boston	no	27	IlluminaHiSeq	Chemagen	31142855	36070680	3450967001	50	101	Paolo_Manghi	NA
