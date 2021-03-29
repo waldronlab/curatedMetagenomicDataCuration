@@ -133,5 +133,5 @@ SCCAI,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,simple clinical colitis activity
 birth_weight,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curators must use gramms 
 gestational_age,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,duration time of pregnancy;curatos must use weeks
 diet,non-unique,optional,FALSE,omnivore|vegan|vegetarian,type of diet
-curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Mireia_VallesColomer,Curator name.
+curator,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Anna_Pedrotti;Paolo_Manghi|Mireia_VallesColomer,Curator name.
 uncurated_metadata,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
