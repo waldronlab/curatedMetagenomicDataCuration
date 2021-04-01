@@ -20,7 +20,6 @@
 #' 
 #
 get_metadata <- function(srp){
-  
   cursor=""
   i=1
   srrlist <- vector(mode = "list", length = 100)
@@ -31,6 +30,7 @@ get_metadata <- function(srp){
   while(is.null(cursor)==FALSE){
     res <- api$RunsForStudySraStudiesAccessionRunsGet(srp, size=999, cursor=cursor)
     srrlist[[i]] <- res$hits
+    if(typeof(srrlist[[i]]$avg_length)=="character"){srrlist[[i]]$avg_length <- as.numeric(srrlist[[i]]$avg_length)}
     cursor <- res$cursor
     i=i+1
   }
