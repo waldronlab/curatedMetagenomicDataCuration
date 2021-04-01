@@ -1,7 +1,7 @@
 sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	infant_age	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	pregnant	lactating	curator	NCBI_accession
-MV_FEI1_t1Q14	MV_FEI1	stool	NA	control	healthy	1.0	90.0	child	female	ITA	no	IlluminaHiSeq	Qiagen	28144631	27553455	2748531713	80	100	no	no	Paolo_Manghi	SRR4052021
-MV_FEI2_t1Q14	MV_FEI2	stool	NA	control	healthy	1.0	90.0	child	male	ITA	no	IlluminaHiSeq	Qiagen	28144631	32197545	3210606434	80	100	no	no	Paolo_Manghi	SRR4052022
-MV_FEI3_t1Q14	MV_FEI3	stool	NA	control	healthy	1.0	90.0	child	male	ITA	no	IlluminaHiSeq	Qiagen	28144631	32310216	3222955818	80	100	no	no	Paolo_Manghi	SRR4052033
+MV_FEI1_t1Q14	MV_FEI1	stool	NA	control	healthy	0	90	newborn	female	ITA	no	IlluminaHiSeq	Qiagen	28144631	27553455	2748531713	80	100	no	no	Paolo_Manghi	SRR4052021
+MV_FEI2_t1Q14	MV_FEI2	stool	NA	control	healthy	0	90	newborn	male	ITA	no	IlluminaHiSeq	Qiagen	28144631	32197545	3210606434	80	100	no	no	Paolo_Manghi	SRR4052022
+MV_FEI3_t1Q14	MV_FEI3	stool	NA	control	healthy	0	90	newborn	male	ITA	no	IlluminaHiSeq	Qiagen	28144631	32310216	3222955818	80	100	no	no	Paolo_Manghi	SRR4052033
 MV_FEI4_t1Q14	MV_FEI4	stool	NA	control	healthy	1.0	NA	child	male	ITA	no	IlluminaHiSeq	Qiagen	28144631	14270590	1423299652	80	100	no	no	Paolo_Manghi	SRR4052038
 MV_FEI4_t2Q15	MV_FEI4	stool	NA	control	healthy	1.0	NA	child	male	ITA	no	IlluminaHiSeq	Qiagen	28144631	37677351	3735487055	80	100	no	no	Paolo_Manghi	SRR4052039
 MV_FEI5_t1Q14	MV_FEI5	stool	NA	control	healthy	1.0	NA	child	male	ITA	no	IlluminaHiSeq	Qiagen	28144631	22340005	2226916606	80	100	no	no	Paolo_Manghi	SRR4052040
