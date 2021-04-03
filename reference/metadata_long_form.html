@@ -144,8 +144,8 @@ each, then binds them together, appending a `study` column.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='va'>ret</span> <span class='op'>=</span> <span class='fu'>metadata_long_form</span><span class='op'>(</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] 465063      7</div><div class='input'><span class='va'>ret</span>
-</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 465,063 x 7</span><span>
+</div><div class='output co'>#&gt; [1] 464373      7</div><div class='input'><span class='va'>ret</span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 464,373 x 7</span><span>
 #&gt;    study  sampleID  subjectID variable  numeric_value logical_value string_value
 #&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;lgl&gt;</span><span>         </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>       
 #&gt; </span><span style='color: #BCBCBC;'> 1</span><span> Asnic… MV_FEI1_… MV_FEI1   age                   0 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
@@ -158,7 +158,7 @@ each, then binds them together, appending a `study` column.</p>
 #&gt; </span><span style='color: #BCBCBC;'> 8</span><span> Asnic… MV_FEI2_… MV_FEI2   age                   0 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
 #&gt; </span><span style='color: #BCBCBC;'> 9</span><span> Asnic… MV_FEI2_… MV_FEI2   infant_a…            90 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
 #&gt; </span><span style='color: #BCBCBC;'>10</span><span> Asnic… MV_FEI2_… MV_FEI2   PMID           28</span><span style='text-decoration: underline;'>144</span><span>631 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
-#&gt; </span><span style='color: #949494;'># … with 465,053 more rows</span><span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+#&gt; </span><span style='color: #949494;'># … with 464,363 more rows</span><span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt;          AsnicarF_2017          AsnicarF_2021          BackhedF_2015 
 #&gt;                    504                  20862                   9600 
@@ -196,32 +196,32 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;                   8712                   1160                   5238 
 #&gt;             OlmMR_2017          PasolliE_2019         PehrssonE_2016 
 #&gt;                    945                   2464                   3820 
-#&gt;       PRJNA687536_2016              QinJ_2012              QinN_2014 
-#&gt;                    690                   7986                   6399 
-#&gt;         RampelliS_2015          RaymondF_2016            RosaBA_2018 
-#&gt;                    722                   1728                    504 
-#&gt;           RubelMA_2020 SankaranarayananK_2015         SchirmerM_2016 
-#&gt;                   3850                    777                  11304 
-#&gt;             ShaoY_2019              ShiB_2015           SmitsSA_2017 
-#&gt;                  46032                   1008                    720 
-#&gt;            TettAJ_2016          TettAJ_2019_a          TettAJ_2019_b 
-#&gt;                   1780                   1360                    880 
-#&gt;          TettAJ_2019_c         ThomasAM_2018a         ThomasAM_2018b 
-#&gt;                   1000                   1840                   1200 
-#&gt;        ThomasAM_2019_c          VatanenT_2016            VilaAV_2018 
-#&gt;                   1520                  19625                   7100 
-#&gt;          VincentC_2016         VogtmannE_2016          WampachL_2018 
-#&gt;                   4580                   2090                   1386 
-#&gt;              WenC_2017           WirbelJ_2018              XieH_2016 
-#&gt;                   5544                   2625                   8000 
-#&gt;          YachidaS_2019          YassourM_2016          YassourM_2018 
-#&gt;                  12320                    864                   7588 
-#&gt;               YeZ_2018               YuJ_2015            ZeeviD_2015 
-#&gt;                   1300                   4224                  15300 
-#&gt;           ZellerG_2014              ZhuF_2020 
-#&gt;                   3588                   4104 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
+#&gt;              QinJ_2012              QinN_2014         RampelliS_2015 
+#&gt;                   7986                   6399                    722 
+#&gt;          RaymondF_2016            RosaBA_2018           RubelMA_2020 
+#&gt;                   1728                    504                   3850 
+#&gt; SankaranarayananK_2015         SchirmerM_2016             ShaoY_2019 
+#&gt;                    777                  11304                  46032 
+#&gt;              ShiB_2015           SmitsSA_2017            TettAJ_2016 
+#&gt;                   1008                    720                   1780 
+#&gt;          TettAJ_2019_a          TettAJ_2019_b          TettAJ_2019_c 
+#&gt;                   1360                    880                   1000 
+#&gt;         ThomasAM_2018a         ThomasAM_2018b        ThomasAM_2019_c 
+#&gt;                   1840                   1200                   1520 
+#&gt;          VatanenT_2016            VilaAV_2018          VincentC_2016 
+#&gt;                  19625                   7100                   4580 
+#&gt;         VogtmannE_2016          WampachL_2018              WenC_2017 
+#&gt;                   2090                   1386                   5544 
+#&gt;           WirbelJ_2018              XieH_2016          YachidaS_2019 
+#&gt;                   2625                   8000                  12320 
+#&gt;          YassourM_2016          YassourM_2018               YeZ_2018 
+#&gt;                    864                   7588                   1300 
+#&gt;               YuJ_2015            ZeeviD_2015           ZellerG_2014 
+#&gt;                   4224                  15300                   3588 
+#&gt;              ZhuF_2020 
+#&gt;                   4104 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;     study             sampleID          subjectID           variable        
-#&gt;  Length:465063      Length:465063      Length:465063      Length:465063     
+#&gt;  Length:464373      Length:464373      Length:464373      Length:464373     
 #&gt;  Class :character   Class :character   Class :character   Class :character  
 #&gt;  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
 #&gt;                                                                             
@@ -229,13 +229,13 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;                                                                             
 #&gt;                                                                             
 #&gt;  numeric_value       logical_value  string_value      
-#&gt;  Min.   :0.000e+00   Mode:logical   Length:465063     
-#&gt;  1st Qu.:4.000e+01   NA's:465063    Class :character  
+#&gt;  Min.   :0.000e+00   Mode:logical   Length:464373     
+#&gt;  1st Qu.:4.000e+01   NA's:464373    Class :character  
 #&gt;  Median :1.010e+02                  Mode  :character  
-#&gt;  Mean   :4.840e+08                                    
+#&gt;  Mean   :4.838e+08                                    
 #&gt;  3rd Qu.:2.847e+07                                    
 #&gt;  Max.   :6.973e+10                                    
-#&gt;  NA's   :298006                                       </div><div class='input'>
+#&gt;  NA's   :297408                                       </div><div class='input'>
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
