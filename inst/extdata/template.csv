@@ -1,4 +1,5 @@
 col.name,uniqueness,requiredness,multiplevalues,allowedvalues,description
+dataset_name,non-unique,optional,FALSE,[a-zA-Z-]+_[0-9]{4}[a-zA-Z_]*,Dataset name.
 sampleID,unique,required,FALSE,[0-9a-zA-Z]\S+,Sample identifier.
 subjectID,non-unique,required,FALSE,[0-9a-zA-Z]\S+,Subject identifier.
 body_site,non-unique,required,FALSE,stool|skin|vagina|oralcavity|nasalcavity|lung|milk,Bodysite of acquisition.
