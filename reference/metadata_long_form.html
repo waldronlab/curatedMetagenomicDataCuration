@@ -144,8 +144,8 @@ each, then binds them together, appending a `study` column.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='va'>ret</span> <span class='op'>=</span> <span class='fu'>metadata_long_form</span><span class='op'>(</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] 464373      7</div><div class='input'><span class='va'>ret</span>
-</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 464,373 x 7</span><span>
+</div><div class='output co'>#&gt; [1] 464352      7</div><div class='input'><span class='va'>ret</span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 464,352 x 7</span><span>
 #&gt;    study  sampleID  subjectID variable  numeric_value logical_value string_value
 #&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;lgl&gt;</span><span>         </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>       
 #&gt; </span><span style='color: #BCBCBC;'> 1</span><span> Asnic… MV_FEI1_… MV_FEI1   age                   0 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
@@ -158,7 +158,7 @@ each, then binds them together, appending a `study` column.</p>
 #&gt; </span><span style='color: #BCBCBC;'> 8</span><span> Asnic… MV_FEI2_… MV_FEI2   age                   0 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
 #&gt; </span><span style='color: #BCBCBC;'> 9</span><span> Asnic… MV_FEI2_… MV_FEI2   infant_a…            90 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
 #&gt; </span><span style='color: #BCBCBC;'>10</span><span> Asnic… MV_FEI2_… MV_FEI2   PMID           28</span><span style='text-decoration: underline;'>144</span><span>631 </span><span style='color: #BB0000;'>NA</span><span>            </span><span style='color: #BB0000;'>NA</span><span>          
-#&gt; </span><span style='color: #949494;'># … with 464,363 more rows</span><span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+#&gt; </span><span style='color: #949494;'># … with 464,342 more rows</span><span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt;          AsnicarF_2017          AsnicarF_2021          BackhedF_2015 
 #&gt;                    504                  20862                   9600 
@@ -189,7 +189,7 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;              LiSS_2016              LiuW_2016           LokmerA_2019 
 #&gt;                    990                   1980                   1197 
 #&gt;           LomanNJ_2013           LoombaR_2017            LouisS_2016 
-#&gt;                    903                   1634                   1656 
+#&gt;                    882                   1634                   1656 
 #&gt;           MatsonV_2018           MehtaRS_2018       NagySzakalD_2017 
 #&gt;                    663                  16704                   1900 
 #&gt;         NielsenHB_2014    Obregon-TitoAJ_2015               OhJ_2014 
@@ -221,7 +221,7 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;              ZhuF_2020 
 #&gt;                   4104 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;     study             sampleID          subjectID           variable        
-#&gt;  Length:464373      Length:464373      Length:464373      Length:464373     
+#&gt;  Length:464352      Length:464352      Length:464352      Length:464352     
 #&gt;  Class :character   Class :character   Class :character   Class :character  
 #&gt;  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
 #&gt;                                                                             
@@ -229,13 +229,13 @@ each, then binds them together, appending a `study` column.</p>
 #&gt;                                                                             
 #&gt;                                                                             
 #&gt;  numeric_value       logical_value  string_value      
-#&gt;  Min.   :0.000e+00   Mode:logical   Length:464373     
-#&gt;  1st Qu.:4.000e+01   NA's:464373    Class :character  
+#&gt;  Min.   :0.000e+00   Mode:logical   Length:464352     
+#&gt;  1st Qu.:4.000e+01   NA's:464352    Class :character  
 #&gt;  Median :1.010e+02                  Mode  :character  
 #&gt;  Mean   :4.838e+08                                    
 #&gt;  3rd Qu.:2.847e+07                                    
 #&gt;  Max.   :6.973e+10                                    
-#&gt;  NA's   :297408                                       </div><div class='input'>
+#&gt;  NA's   :297393                                       </div><div class='input'>
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
