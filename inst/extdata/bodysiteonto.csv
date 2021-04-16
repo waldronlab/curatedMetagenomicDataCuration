@@ -10,11 +10,11 @@ anterior_nares,anterior naris,http://purl.obolibrary.org/obo/UBERON_2001427
 hard_palate,hard palate,http://purl.obolibrary.org/obo/UBERON_0003216
 keratinized_gingiva,gingival epithelium,http://purl.obolibrary.org/obo/UBERON_0001949
 l_retroauricular_crease,skin crease,http://purl.obolibrary.org/obo/UBERON_0019243
-r_retroauricular_crease,skin crease,
+r_retroauricular_crease,skin crease,http://purl.obolibrary.org/obo/UBERON_0019243
 mid_vagina,median vaginal canal,http://purl.obolibrary.org/obo/UBERON_0013524
 palatine_tonsils,palatine tonsil,http://purl.obolibrary.org/obo/UBERON_0002373
 saliva,saliva,http://purl.obolibrary.org/obo/UBERON_0001836
-stool,,
+stool,feces,http://purl.obolibrary.org/obo/UBERON_0001988
 supragingival_plaque,supragingival dental plaque,http://purl.obolibrary.org/obo/UBERON_0016485
 subgingival_plaque,subgingival dental plaque,http://purl.obolibrary.org/obo/UBERON_0016484
 throat,throat,http://purl.obolibrary.org/obo/UBERON_0000341
