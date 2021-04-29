@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-04-29 14:39:32 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2021-04-29 14:44:34 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -295,153 +295,7 @@
 <h1 class="hasAnchor">
 <a href="#kosticad_2015_metadata-tsv" class="anchor"></a>KosticAD_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
-<div id="age_seroconversion" class="section level3">
-<h3 class="hasAnchor">
-<a href="#age_seroconversion" class="anchor"></a>age_seroconversion</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: double<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>6 . : “175.2”<br>
-7 . : “175.2”<br>
-8 . : “175.2”<br>
-9 . : “175.2”<br>
-10 . : “175.2”<br>
-11 . : “175.2”<br>
-12 . : “175.2”<br>
-13 . : “905.2”<br>
-14 . : “905.2”<br>
-15 . : “905.2”<br>
-16 . : “905.2”<br>
-17 . : “905.2”<br>
-18 . : “905.2”<br>
-19 . : “905.2”<br>
-20 . : “905.2”<br>
-21 . : “905.2”<br>
-22 . : “580.35”<br>
-23 . : “580.35”<br>
-24 . : “580.35”<br>
-25 . : “580.35”<br>
-26 . : “346.75”<br>
-27 . : “346.75”<br>
-28 . : “346.75”<br>
-29 . : “346.75”<br>
-30 . : “346.75”<br>
-31 . : “346.75”<br>
-32 . : “346.75”<br>
-33 . : “357.7”<br>
-34 . : “357.7”<br>
-35 . : “357.7”<br>
-36 . : “357.7”<br>
-37 . : “357.7”<br>
-50 . : “540.2”<br>
-51 . : “540.2”<br>
-52 . : “540.2”<br>
-53 . : “540.2”<br>
-54 . : “540.2”<br>
-55 . : “540.2”<br>
-56 . : “540.2”<br>
-76 . : “562.1”<br>
-77 . : “562.1”<br>
-78 . : “562.1”<br>
-79 . : “562.1”<br>
-80 . : “562.1”<br>
-81 . : “532.9”<br>
-82 . : “532.9”<br>
-83 . : “532.9”<br>
-84 . : “532.9”<br>
-85 . : “532.9”<br>
-86 . : “532.9”<br>
-87 . : “532.9”<br>
-88 . : “532.9”<br>
-89 . : “532.9”<br>
-90 . : “532.9”<br>
-91 . : “350.4”<br>
-92 . : “350.4”<br>
-93 . : “350.4”<br>
-94 . : “350.4”<br>
-95 . : “350.4”<br>
-96 . : “350.4”<br>
-97 . : “350.4”<br>
-98 . : “350.4”<br>
-99 . : “587.65”<br>
-100 . : “587.65”<br>
-101 . : “587.65”<br>
-102 . : “587.65”<br>
-103 . : “587.65”<br>
-104 . : “587.65”<br>
-105 . : “587.65”<br>
-106 . : “587.65”<br>
-114 . : “945.35”<br>
-115 . : “945.35”<br>
-116 . : “945.35”</p>
-</div>
-<div id="age_t1d_diagnosis" class="section level3">
-<h3 class="hasAnchor">
-<a href="#age_t1d_diagnosis" class="anchor"></a>age_T1D_diagnosis</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: double<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>13 . : “959.95”<br>
-14 . : “959.95”<br>
-15 . : “959.95”<br>
-16 . : “959.95”<br>
-17 . : “959.95”<br>
-18 . : “959.95”<br>
-19 . : “959.95”<br>
-20 . : “959.95”<br>
-21 . : “959.95”<br>
-50 . : “879.65”<br>
-51 . : “879.65”<br>
-52 . : “879.65”<br>
-53 . : “879.65”<br>
-54 . : “879.65”<br>
-55 . : “879.65”<br>
-56 . : “879.65”<br>
-81 . : “339.55”<br>
-82 . : “339.55”<br>
-83 . : “339.55”<br>
-84 . : “339.55”<br>
-85 . : “339.55”<br>
-86 . : “339.55”<br>
-87 . : “339.55”<br>
-88 . : “339.55”<br>
-89 . : “339.55”<br>
-90 . : “339.55”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="lassallef_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -705,9 +559,9 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-1" class="section level2">
+<div id="entry-errors" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
 <div id="pmid" class="section level3">
 <h3 class="hasAnchor">
 <a href="#pmid" class="anchor"></a>PMID</h3>
