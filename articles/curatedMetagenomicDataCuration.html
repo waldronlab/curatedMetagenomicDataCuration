@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-04-29 12:01:59 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2021-04-29 12:16:22 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -295,7 +295,153 @@
 <h1 class="hasAnchor">
 <a href="#kosticad_2015_metadata-tsv" class="anchor"></a>KosticAD_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<p>All checks OK.</p>
+<div id="entry-errors" class="section level2">
+<h2 class="hasAnchor">
+<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
+<div id="age_seroconversion" class="section level3">
+<h3 class="hasAnchor">
+<a href="#age_seroconversion" class="anchor"></a>age_seroconversion</h3>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: [0-9]+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>6 . PRJNA231909.3111969 : “175.2”<br>
+7 . PRJNA231909.3111970 : “175.2”<br>
+8 . PRJNA231909.3112924 : “175.2”<br>
+9 . PRJNA231909.3112925 : “175.2”<br>
+10 . PRJNA231909.3113339 : “175.2”<br>
+11 . PRJNA231909.3113393 : “175.2”<br>
+12 . PRJNA231909.3115615 : “175.2”<br>
+13 . PRJNA231909.3107345 : “905.2”<br>
+14 . PRJNA231909.3112358 : “905.2”<br>
+15 . PRJNA231909.3112359 : “905.2”<br>
+16 . PRJNA231909.3112360 : “905.2”<br>
+17 . PRJNA231909.3113831 : “905.2”<br>
+18 . PRJNA231909.3113834 : “905.2”<br>
+19 . PRJNA231909.3115067 : “905.2”<br>
+20 . PRJNA231909.3115068 : “905.2”<br>
+21 . PRJNA231909.3115070 : “905.2”<br>
+22 . PRJNA231909.3108330 : “580.35”<br>
+23 . PRJNA231909.3108332 : “580.35”<br>
+24 . PRJNA231909.3114542 : “580.35”<br>
+25 . PRJNA231909.3114545 : “580.35”<br>
+26 . PRJNA231909.3101436 : “346.75”<br>
+27 . PRJNA231909.3101439 : “346.75”<br>
+28 . PRJNA231909.3107649 : “346.75”<br>
+29 . PRJNA231909.3107651 : “346.75”<br>
+30 . PRJNA231909.3113065 : “346.75”<br>
+31 . PRJNA231909.3113068 : “346.75”<br>
+32 . PRJNA231909.3113996 : “346.75”<br>
+33 . PRJNA231909.3101335 : “357.7”<br>
+34 . PRJNA231909.3101336 : “357.7”<br>
+35 . PRJNA231909.3101338 : “357.7”<br>
+36 . PRJNA231909.3107526 : “357.7”<br>
+37 . PRJNA231909.3107527 : “357.7”<br>
+50 . PRJNA231909.3116456 : “540.2”<br>
+51 . PRJNA231909.3117245 : “540.2”<br>
+52 . PRJNA231909.3117247 : “540.2”<br>
+53 . PRJNA231909.3117249 : “540.2”<br>
+54 . PRJNA231909.3119726 : “540.2”<br>
+55 . PRJNA231909.3119727 : “540.2”<br>
+56 . PRJNA231909.3119729 : “540.2”<br>
+76 . PRJNA231909.3110086 : “562.1”<br>
+77 . PRJNA231909.3110090 : “562.1”<br>
+78 . PRJNA231909.3112419 : “562.1”<br>
+79 . PRJNA231909.3113044 : “562.1”<br>
+80 . PRJNA231909.3114201 : “562.1”<br>
+81 . PRJNA231909.3107859 : “532.9”<br>
+82 . PRJNA231909.3107861 : “532.9”<br>
+83 . PRJNA231909.3107883 : “532.9”<br>
+84 . PRJNA231909.3108096 : “532.9”<br>
+85 . PRJNA231909.3108098 : “532.9”<br>
+86 . PRJNA231909.3108100 : “532.9”<br>
+87 . PRJNA231909.3108103 : “532.9”<br>
+88 . PRJNA231909.3108105 : “532.9”<br>
+89 . PRJNA231909.3108107 : “532.9”<br>
+90 . PRJNA231909.3108363 : “532.9”<br>
+91 . PRJNA231909.3104913 : “350.4”<br>
+92 . PRJNA231909.3105378 : “350.4”<br>
+93 . PRJNA231909.3105379 : “350.4”<br>
+94 . PRJNA231909.3109753 : “350.4”<br>
+95 . PRJNA231909.3109755 : “350.4”<br>
+96 . PRJNA231909.3117378 : “350.4”<br>
+97 . PRJNA231909.3117380 : “350.4”<br>
+98 . PRJNA231909.3117383 : “350.4”<br>
+99 . PRJNA231909.3108485 : “587.65”<br>
+100 . PRJNA231909.3108488 : “587.65”<br>
+101 . PRJNA231909.3108490 : “587.65”<br>
+102 . PRJNA231909.3109997 : “587.65”<br>
+103 . PRJNA231909.3110006 : “587.65”<br>
+104 . PRJNA231909.3112121 : “587.65”<br>
+105 . PRJNA231909.3112122 : “587.65”<br>
+106 . PRJNA231909.3113663 : “587.65”<br>
+114 . PRJNA231909.3102986 : “945.35”<br>
+115 . PRJNA231909.3107336 : “945.35”<br>
+116 . PRJNA231909.3115087 : “945.35”</p>
+</div>
+<div id="age_t1d_diagnosis" class="section level3">
+<h3 class="hasAnchor">
+<a href="#age_t1d_diagnosis" class="anchor"></a>age_T1D_diagnosis</h3>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: [0-9]+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>13 . PRJNA231909.3107345 : “959.95”<br>
+14 . PRJNA231909.3112358 : “959.95”<br>
+15 . PRJNA231909.3112359 : “959.95”<br>
+16 . PRJNA231909.3112360 : “959.95”<br>
+17 . PRJNA231909.3113831 : “959.95”<br>
+18 . PRJNA231909.3113834 : “959.95”<br>
+19 . PRJNA231909.3115067 : “959.95”<br>
+20 . PRJNA231909.3115068 : “959.95”<br>
+21 . PRJNA231909.3115070 : “959.95”<br>
+50 . PRJNA231909.3116456 : “879.65”<br>
+51 . PRJNA231909.3117245 : “879.65”<br>
+52 . PRJNA231909.3117247 : “879.65”<br>
+53 . PRJNA231909.3117249 : “879.65”<br>
+54 . PRJNA231909.3119726 : “879.65”<br>
+55 . PRJNA231909.3119727 : “879.65”<br>
+56 . PRJNA231909.3119729 : “879.65”<br>
+81 . PRJNA231909.3107859 : “339.55”<br>
+82 . PRJNA231909.3107861 : “339.55”<br>
+83 . PRJNA231909.3107883 : “339.55”<br>
+84 . PRJNA231909.3108096 : “339.55”<br>
+85 . PRJNA231909.3108098 : “339.55”<br>
+86 . PRJNA231909.3108100 : “339.55”<br>
+87 . PRJNA231909.3108103 : “339.55”<br>
+88 . PRJNA231909.3108105 : “339.55”<br>
+89 . PRJNA231909.3108107 : “339.55”<br>
+90 . PRJNA231909.3108363 : “339.55”</p>
+</div>
+</div>
 </div>
 <div id="lassallef_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -499,14 +645,17 @@
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_b_metadata-tsv" class="anchor"></a>TettAJ_2019_b_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors" class="section level2">
+<div id="entry-errors-1" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
 <div id="pmid" class="section level3">
 <h3 class="hasAnchor">
 <a href="#pmid" class="anchor"></a>PMID</h3>
 <p><strong>Template definition</strong></p>
 <ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
 <li>
 <em>uniqueness</em>: non-unique<br>
 </li>
@@ -517,10 +666,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: [0-9]{8}|NA<br>
-</li>
-<li>
-<em>description</em>: Identifier of the main publication in PubMed.</li>
+<em>allowedvalues</em>: [0-9]{8}|NA</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . C16-20005-GH : “unpublished”<br>
@@ -574,14 +720,17 @@
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_c_metadata-tsv" class="anchor"></a>TettAJ_2019_c_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-1" class="section level2">
+<div id="entry-errors-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
 <div id="pmid-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#pmid-1" class="anchor"></a>PMID</h3>
 <p><strong>Template definition</strong></p>
 <ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
 <li>
 <em>uniqueness</em>: non-unique<br>
 </li>
@@ -592,10 +741,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: [0-9]{8}|NA<br>
-</li>
-<li>
-<em>description</em>: Identifier of the main publication in PubMed.</li>
+<em>allowedvalues</em>: [0-9]{8}|NA</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . CM_A01_I1_18 : “unpublished”<br>
@@ -703,14 +849,17 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-2" class="section level2">
+<div id="entry-errors-3" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
+<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
 <div id="pmid-2" class="section level3">
 <h3 class="hasAnchor">
 <a href="#pmid-2" class="anchor"></a>PMID</h3>
 <p><strong>Template definition</strong></p>
 <ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
 <li>
 <em>uniqueness</em>: non-unique<br>
 </li>
@@ -721,10 +870,7 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: [0-9]{8}|NA<br>
-</li>
-<li>
-<em>description</em>: Identifier of the main publication in PubMed.</li>
+<em>allowedvalues</em>: [0-9]{8}|NA</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . RA001 : “unpublished”<br>
