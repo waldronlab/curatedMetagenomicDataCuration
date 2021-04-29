@@ -10,7 +10,7 @@ TRAVELRES65	TRAVELRES65_66	stool	no	control	healthy	28	adult	female	SWE	no	0	Ill
 TRAVELRES67	TRAVELRES67_68	stool	no	control	healthy	25	adult	male	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	160578082	15323582546	20	101	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636415
 TRAVELRES47	TRAVELRES47_48	stool	no	control	healthy	28	adult	female	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	214195050	19591160321	20	96	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636395
 TRAVELRES23	TRAVELRES23_24	stool	no	control	healthy	24	adult	female	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	188188370	18620590274	20	101	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636371
-TRAVELRES70	TRAVELRES70_71	stool	no	control	healthy	28	adult	female	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	286857862	26648755592	20	101	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636418
+TRAVELRES70	TRAVELRES69_70	stool	no	control	healthy	28	adult	female	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	286857862	26648755592	20	101	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636418
 TRAVELRES21	TRAVELRES21_22	stool	no	control	healthy	24	adult	female	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	182408648	17726349305	20	101	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636369
 TRAVELRES27	TRAVELRES27_28	stool	no	control	healthy	25	adult	male	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	356009214	34557390836	20	101	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636375
 TRAVELRES1	TRAVELRES1_2	stool	no	control	healthy	25	adult	female	SWE	no	0	IlluminaHiSeq	Qiagen	26259788	147984098	13868148097	20	101	NA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636349
@@ -45,7 +45,7 @@ TRAVELRES66	TRAVELRES65_66	stool	no	control	healthy	28	adult	female	SWE	no	77	Il
 TRAVELRES68	TRAVELRES67_68	stool	no	control	healthy	25	adult	male	SWE	no	57	IlluminaHiSeq	Qiagen	26259788	248995670	24096794213	20	101	CMR	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636416
 TRAVELRES48	TRAVELRES47_48	stool	no	control	healthy	28	adult	female	SWE	no	161	IlluminaHiSeq	Qiagen	26259788	279021086	25450346613	20	96	ETH	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636396
 TRAVELRES24	TRAVELRES23_24	stool	no	control	healthy	24	adult	female	SWE	no	99	IlluminaHiSeq	Qiagen	26259788	155502422	14775627361	20	101	ETH	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636372
-TRAVELRES69	TRAVELRES68_69	stool	no	control	healthy	28	adult	female	SWE	no	83	IlluminaHiSeq	Qiagen	26259788	221068190	20693416103	20	101	KEN	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636417
+TRAVELRES69	TRAVELRES69_70	stool	no	control	healthy	28	adult	female	SWE	no	83	IlluminaHiSeq	Qiagen	26259788	221068190	20693416103	20	101	KEN	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636417
 TRAVELRES22	TRAVELRES21_22	stool	no	control	healthy	24	adult	female	SWE	no	52	IlluminaHiSeq	Qiagen	26259788	255430132	24693832848	20	101	TZA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636370
 TRAVELRES28	TRAVELRES27_28	stool	no	control	healthy	25	adult	male	SWE	no	97	IlluminaHiSeq	Qiagen	26259788	109975282	10674953960	20	101	TZA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636376
 TRAVELRES2	TRAVELRES1_2	stool	no	control	healthy	25	adult	female	SWE	no	49	IlluminaHiSeq	Qiagen	26259788	254471784	23867030018	20	101	RWA	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	ERR636350
