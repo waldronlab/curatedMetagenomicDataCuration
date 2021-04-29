@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	lifestyle	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	lifestyle	curator	NCBI_accession
 Y1	Y1	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	10854444	2724604317	60	261	Hunter-gatherer	Aitor_Blanco_Miguez	SRR8732220
 Y2	Y2	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	5569888	1836490636	60	383	Hunter-gatherer	Aitor_Blanco_Miguez	SRR8732219
 Y3	Y3	stool	no	control	healthy	NA	senior	BRA	NA	Amazon	yes	IlluminaHiSeq	MPBio	31417531	4860926	1218444004	60	261	Hunter-gatherer	Aitor_Blanco_Miguez	SRR8732222

@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	non_westernized	BMI	country	location	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	PMID
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	non_westernized	BMI	country	location	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	PMID
 CRC_MR_SBJ01C_17	SBJ01C	stool	no	CRC	CRC	51.0	adult	male	no	20.86111966	ITA	Milan	IlluminaHiSeq	Gnome	43868542	4347430447	75	100	Paolo_Manghi	NA	30936548
 CRC_MR_SBJ02C_17	SBJ02C	stool	no	CRC	CRC	51.0	adult	male	no	31.56167151	ITA	Milan	IlluminaHiSeq	Gnome	43898442	4346220764	75	100	Paolo_Manghi	NA	30936548
 CRC_MR_SBJ03H_17	SBJ03H	stool	no	control	healthy	52.0	adult	male	no	23.72281065	ITA	Milan	IlluminaHiSeq	Gnome	62248461	6153910114	75	100	Paolo_Manghi	NA	30936548

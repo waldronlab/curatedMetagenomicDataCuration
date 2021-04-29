@@ -1,4 +1,4 @@
-sampleID	subjectID	study_condition	disease	BMI	body_site	antibiotics_current_use	number_reads	number_bases	age	age_category	minimum_read_length	median_read_length	gender	country	non_westernized	ajcc	curator	NCBI_accession	PMID	sequencing_platform
+sample_id	subject_id	study_condition	disease	BMI	body_site	antibiotics_current_use	number_reads	number_bases	age	age_category	minimum_read_length	median_read_length	gender	country	non_westernized	ajcc	curator	NCBI_accession	PMID	sequencing_platform
 mix1_N702-N505_CGTACTAG-GTAAGGAG	mix1_N702-N505_CGTACTAG-GTAAGGAG	control	healthy	25.4108996539792	stool	NA	56699592	8092368865	66	senior	75	150	female	JPN	no	0	Giacomo_Damato;Paolo_Manghi	NA	30936548	IlluminaHiSeq
 mix3_N707-N505_CTCTCTAC-GTAAGGAG	mix3_N707-N505_CTCTCTAC-GTAAGGAG	control	healthy	23.6340330075308	stool	NA	52466237	7476566924	77	senior	75	150	female	JPN	no	0	Giacomo_Damato;Paolo_Manghi	NA	30936548	IlluminaHiSeq
 mix3_N705-N506_GGACTCCT-ACTGCATA	mix3_N705-N506_GGACTCCT-ACTGCATA	CRC	CRC	25.6369171607114	stool	NA	38301340	5444567853	69	senior	75	150	female	JPN	no	iii/iv	Giacomo_Damato;Paolo_Manghi	NA	30936548	IlluminaHiSeq

@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	infant_age	age_category	gender	BMI	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	infant_age	age_category	gender	BMI	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 DHAK_HAK	DHAK_HAK	stool	no	control	healthy	29	NA	adult	female	22.03	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	10655514	1344200520	32	150	Giacomo_DAmato	SRR5898908
 DHAK_HAJ	DHAK_HAJ	stool	no	control	healthy	22	NA	adult	female	23.23	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	6171104	773772009	32	150	Giacomo_DAmato	SRR5898909
 DHAK_HAI	DHAK_HAI	stool	no	control	healthy	24	NA	adult	male	26.03	IND	Bhopal	no	IlluminaNextSeq	Qiagen	30698687	17519102	2142440783	35	149	Giacomo_DAmato	SRR5898910

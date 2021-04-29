@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	age_category	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
+sample_id	subject_id	body_site	study_condition	disease	age_category	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
 SAMEA104335965	SAMEA104335965	stool	melanoma	melanoma;metastases	adult	USA	no	IlluminaHiSeq	29097493	34574954	3487237472	50	101	Giacomo_DAmato	ERR2162224	NA
 SAMEA104335964	SAMEA104335964	stool	melanoma	melanoma;metastases	adult	USA	no	IlluminaHiSeq	29097493	26816014	2706277948	1	101	Giacomo_DAmato	ERR2162223	NA
 SAMEA104335963	SAMEA104335963	stool	melanoma	melanoma;metastases	adult	USA	no	IlluminaHiSeq	29097493	26630098	2686994478	1	101	Giacomo_DAmato	ERR2162222	NA

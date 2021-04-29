@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	disease_subtype	disease_stage	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	disease_subtype	disease_stage	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 SID0002_gti	loombaSUB_subject-0002	stool	NA	control	fatty_liver	NA	NAFLD	0	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	34584052	4323006500	125	125	Paolo_Manghi,Marisa_Metzger	SRR5275484
 SID0004_cle	loombaSUB_subject-0004	stool	NA	control	fatty_liver	NA	NAFLD	0	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	31052262	3881532750	125	125	Paolo_Manghi,Marisa_Metzger	SRR5275483
 SID0005_aaf	loombaSUB_subject-0005	stool	NA	fatty_liver	fatty_liver	NA	NAFLD	1	adult	USA	no	IlluminaHiSeq	Qiagen	28467925	290630554	36328819250	125	125	Paolo_Manghi,Marisa_Metzger	SRR5275482

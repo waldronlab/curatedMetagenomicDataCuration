@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	smoker	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	smoker	curator	NCBI_accession
 CA01	CA01	stool	yes	control	healthy	55	adult	male	31.0	USA	Oklahoma	no	IlluminaHiSeq	MoBio	26671671	42228492	4018808535	20	100	yes	Aitor_Blanco_Miguez;Paolo_Manghi	SRR2912775
 CA02	CA02	stool	no	T2D	T2D	55	adult	female	40.8	USA	Oklahoma	no	IlluminaHiSeq	MoBio	26671671	45955348	4271456674	21	100	no	Aitor_Blanco_Miguez;Paolo_Manghi	SRR2912776
 CA03	CA03	stool	no	control	healthy	27	adult	female	35.0	USA	Oklahoma	no	IlluminaHiSeq	MoBio	26671671	54875512	5097414030	19	100	yes	Aitor_Blanco_Miguez;Paolo_Manghi	SRR2912787

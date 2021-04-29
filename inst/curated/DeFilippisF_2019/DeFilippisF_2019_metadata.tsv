@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	country	non_westernized	sequencing_platform	DNA_extraction_kit	diet	gender	age	age_category	BMI	PMID	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	curator
+sample_id	subject_id	body_site	study_condition	disease	country	non_westernized	sequencing_platform	DNA_extraction_kit	diet	gender	age	age_category	BMI	PMID	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	curator
 SID01.BA.VG.2	01BA	stool	control	healthy	ITA	no	IlluminaNextSeq	PowerSoil	vegetarian	male	34	adult	21.5	30799264	44785916	4478591600	100	100	SRR4074259	Francesca_DeFilippis;Edoardo_Pasolli
 SID01.BA.V_metag	01BAV	stool	control	healthy	ITA	no	IlluminaNextSeq	PowerSoil	vegan	male	53	adult	22.0	30799264	44887811	4488781100	100	100	SRR8146952	Francesca_DeFilippis;Edoardo_Pasolli
 SID02.BA.V_metag	02BAV	stool	control	healthy	ITA	no	IlluminaNextSeq	PowerSoil	vegan	female	29	adult	19.1	30799264	51948376	5194837600	100	100	SRR8146951	Francesca_DeFilippis;Edoardo_Pasolli

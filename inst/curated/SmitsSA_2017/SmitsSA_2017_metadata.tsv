@@ -1,4 +1,4 @@
-sampleID	subjectID	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	body_site	curator	NCBI_accession
+sample_id	subject_id	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	body_site	curator	NCBI_accession
 TZ_81781	TZ_81781	no	control	healthy	40.0	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	3058700	461863700	151	151	stool	Valentina_Giunchiglia	SRR5763462
 TZ_42864	TZ_42864	no	control	healthy	35.0	adult	male	TZA	sengele	yes	IlluminaHiSeq	28839072	2730714	412337814	151	151	stool	Valentina_Giunchiglia	SRR5763463
 TZ_76219	TZ_76219	no	control	healthy	40.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3107754	469270854	151	151	stool	Valentina_Giunchiglia	SRR5763466

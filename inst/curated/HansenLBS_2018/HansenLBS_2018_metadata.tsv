@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	days_from_first_collection	uncurated_metadata	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	days_from_first_collection	uncurated_metadata	curator	NCBI_accession
 SID5420-2	SID5420	stool	no	control	healthy	45	adult	male	29.36222405	DNK	no	IlluminaHiSeq	30425247	20433170	2043317000	100	100	Copenhagen	56.0	low_gluten_diet	Giacomo_DAmato	SRR8097415
 SID5420-1	SID5420	stool	no	control	healthy	45	adult	male	30.01736496	DNK	no	IlluminaHiSeq	30425247	61024948	6102494800	100	100	Copenhagen	0.0	low_gluten_diet	Giacomo_DAmato	SRR8097416
 SID5419-1	SID5419	stool	no	control	healthy	38	adult	male	28.85352397	DNK	no	IlluminaHiSeq	30425247	62157630	6215763000	100	100	Copenhagen	NA	high_gluten_diet	Giacomo_DAmato	SRR8097417

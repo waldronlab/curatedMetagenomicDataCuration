@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	country	sequencing_platform	NCBI_accession	population	gender	age	lifestyle	location	curator	PMID	non_westernized	study_condition	disease	age_category	number_bases	number_reads	minimum_read_length	median_read_length
+sample_id	subject_id	body_site	country	sequencing_platform	NCBI_accession	population	gender	age	lifestyle	location	curator	PMID	non_westernized	study_condition	disease	age_category	number_bases	number_reads	minimum_read_length	median_read_length
 SAMEA4031775	CAg34	oralcavity	PHL	IlluminaHiSeq	ERR1474587	Casigurani	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	5140705508	57189266	43	97
 SAMEA4031774	CAg32	oralcavity	PHL	IlluminaHiSeq	ERR1474586	Casigurani	female	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	7251536236	81232564	41	95
 SAMEA4031773	CAg09	oralcavity	PHL	IlluminaHiSeq	ERR1474585	Casigurani	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	6882086617	76646284	43	97

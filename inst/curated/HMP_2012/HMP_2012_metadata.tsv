@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age	age_category	BMI	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age	age_category	BMI	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 SRS021948	HMP_2012_158256496	stool	stool	NA	control	healthy	27	adult	23.0	female	USA	no	IlluminaHiSeq	Qiagen	22699609	102234331	9840792570	60	101	Paolo_Manghi	SRR059425;SRR059424
 SRS021960	HMP_2012_158256496	oralcavity	supragingival_plaque	NA	control	healthy	27	adult	23.0	female	USA	no	IlluminaHiSeq	Qiagen	22699609	27274798	2533272358	60	101	Paolo_Manghi	SRR059429;SRR059428
 SRS021969	HMP_2012_158256496	vagina	posterior_fornix	NA	control	healthy	27	adult	23.0	female	USA	no	IlluminaHiSeq	Qiagen	22699609	800296	77283466	60	101	Paolo_Manghi	SRR059431;SRR059430

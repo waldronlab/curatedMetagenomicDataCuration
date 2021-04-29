@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	disease	study_condition	age_category	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	hitchip_probe_class	curator	NCBI_accession	age
+sample_id	subject_id	body_site	antibiotics_current_use	disease	study_condition	age_category	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	hitchip_probe_class	curator	NCBI_accession	age
 MH0001	MH0001	stool	no	healthy	control	adult	25.6	DNK	no	IlluminaHiSeq	23985870	45014922	1980656568	44	44	lpc	Paolo_Manghi	ERR321063;ERR321062	NA
 MH0002	MH0002	stool	no	healthy	control	adult	27.3	DNK	no	IlluminaHiSeq	23985870	46564054	3492304050	75	75	hpc	Paolo_Manghi	ERR321066;ERR321065;ERR321064	NA
 MH0003	MH0003	stool	no	healthy	control	adult	33.2	DNK	no	IlluminaHiSeq	23985870	50381662	3778624650	75	75	hpc	Paolo_Manghi	ERR321069;ERR321068;ERR321067	NA

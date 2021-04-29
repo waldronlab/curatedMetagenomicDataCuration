@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 HCO02	HCO02	stool	NA	control	healthy	9.0	child	female	14.05	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	6433868	825648476	18	151	Paolo_Manghi	SRR1761722;SRR1761664
 HCO07	HCO07	stool	NA	control	healthy	3.0	child	female	19.67	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	11636403	1445862567	18	151	Paolo_Manghi	SRR1761723;SRR1761665
 HCO09	HCO09	stool	NA	control	healthy	13.0	schoolage	NA	18.77	PER	Tunapuco	yes	IlluminaHiSeq	MoBio	25807110	10896763	1435283725	17	151	Paolo_Manghi	SRR1761666;SRR1761724

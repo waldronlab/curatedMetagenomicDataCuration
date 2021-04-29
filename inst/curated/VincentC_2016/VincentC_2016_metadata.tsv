@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 MM001.1	MM001	stool	yes	NA	control	healthy	80	senior	female	CAN	no	0.0	IlluminaHiSeq	Qiagen	26975510	4215921	632388150	150	150	Paolo_Manghi	SRR2565533
 MM001.2	MM001	stool	yes	NA	control	healthy	80	senior	female	CAN	no	6.0	IlluminaHiSeq	Qiagen	26975510	26930197	4039529550	150	150	Paolo_Manghi	SRR2565534
 MM001.3	MM001	stool	yes	NA	control	healthy	80	senior	female	CAN	no	11.0	IlluminaHiSeq	Qiagen	26975510	27625587	4143838050	150	150	Paolo_Manghi	SRR2565950

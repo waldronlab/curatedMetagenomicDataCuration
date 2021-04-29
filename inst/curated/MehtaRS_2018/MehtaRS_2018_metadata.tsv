@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	gender	age_category	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
+sample_id	subject_id	body_site	study_condition	disease	gender	age_category	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
 SID10042055_SF05	SID10042055	stool	control	healthy	male	adult	USA	no	0	IlluminaHiSeq	Qiagen	29335554	31793429	3187011695	70	101.0	Arianna_Bonetti;Paolo_Manghi	SRR6028627	NA
 SID10042055_SF06	SID10042055	stool	control	healthy	male	adult	USA	no	2	IlluminaHiSeq	Qiagen	29335554	28653836	2873838196	70	101.0	Arianna_Bonetti;Paolo_Manghi	SRR6028628	NA
 SID10042055_SF07	SID10042055	stool	control	healthy	male	adult	USA	no	180	IlluminaHiSeq	Qiagen	29335554	20902282	2086489925	70	101.0	Arianna_Bonetti;Paolo_Manghi	SRR6028625	NA

@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	country	study_condition	disease	gender	age	age_category	BMI	antibiotics_current_use	DNA_extraction_kit	sequencing_platform	non_westernized	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	PMID	curator
+sample_id	subject_id	body_site	country	study_condition	disease	gender	age	age_category	BMI	antibiotics_current_use	DNA_extraction_kit	sequencing_platform	non_westernized	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	PMID	curator
 ESS-0542	ESS-0542	stool	USA	control	healthy	female	51	adult	28.80015117	no	KAMA_Hyper_Prep	IlluminaHiSeq	no	31075458	2810291897	44	94	SRR6784403	28441964	Paolo_Manghi
 ESS-0452	ESS-0452	stool	USA	ME/CFS	ME/CFS	female	51	adult	24.85353535	NA	KAMA_Hyper_Prep	IlluminaHiSeq	no	119741522	11199161770	44	94	SRR6784404	28441964	Paolo_Manghi
 ESS-0280	ESS-0280	stool	USA	ME/CFS	ME/CFS	female	51	adult	18.25041655	NA	KAMA_Hyper_Prep	IlluminaHiSeq	no	214155964	19993067116	44	94	SRR6784405	28441964	Paolo_Manghi

@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	uncurated_metadata	curator	NCBI_accession	age
+sample_id	subject_id	body_site	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	uncurated_metadata	curator	NCBI_accession	age
 DY.401.D01	DY.401.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	35707450	4454039399	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298222	NA
 DY.404.D01	DY.404.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	32923690	4111472080	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298221	NA
 DY.405.D01	DY.405.D01	stool	control	healthy	child	BGD	no	IlluminaHiSeq	MoBio	29786169	39932422	4944963602	35	126	Dhaka;Nanbipara;peri-urban	NA	Giacomo_DAmato	SRR5298220	NA

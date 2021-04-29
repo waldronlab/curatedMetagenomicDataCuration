@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	disease_subtype	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	population	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	disease_subtype	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	population	curator	NCBI_accession
 EGAR00001763367_1000IBD00001	sub_1000IBD00001	stool	NA	IBD	IBD	NA	UC	adult	female	NLD	no	IlluminaHiSeq	Qiagen	30567928	25334038	2469405067	60	101	Dutch	Ilya_Likhotkin;Paolo_Manghi	NA
 EGAR00001763368_1000IBD00004	sub_1000IBD00004	stool	NA	IBD	IBD	NA	UC	adult	female	NLD	no	IlluminaHiSeq	Qiagen	30567928	22489184	2186442627	60	101	Dutch	Ilya_Likhotkin;Paolo_Manghi	NA
 EGAR00001763370_1000IBD00006	sub_1000IBD00006	stool	NA	IBD	IBD	NA	UC	adult	male	NLD	no	IlluminaHiSeq	Qiagen	30567928	20349820	1995887527	60	101	Dutch	Ilya_Likhotkin;Paolo_Manghi	NA

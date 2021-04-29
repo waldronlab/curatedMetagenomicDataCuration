@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	curator
+sample_id	subject_id	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	curator
 SK_CT101OSL_t1M14	TettAJ_2016101	skin	left_elbow	no	control	psoriasis	59	adult	male	ITA	comano	no	IlluminaHiSeq	MoBio	28649415	8891859	8891859	20	100	NA	Paolo_Manghi
 SK_CT101RCR_t1M14	TettAJ_2016101	skin	right_ear	no	control	psoriasis	59	adult	male	ITA	comano	no	IlluminaHiSeq	MoBio	28649415	256485	256485	20	100	NA	Paolo_Manghi
 SK_CT102OSL_t1M14	TettAJ_2016102	skin	left_elbow	no	control	psoriasis	64	adult	male	ITA	comano	no	IlluminaHiSeq	MoBio	28649415	2858809	2858809	20	100	NA	Paolo_Manghi

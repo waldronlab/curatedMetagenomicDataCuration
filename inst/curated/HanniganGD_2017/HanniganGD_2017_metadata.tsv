@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	age	age_category	gender	country	non_westernized	location	antibiotics_current_use	BMI	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	fobt	curator	NCBI_accession
+sample_id	subject_id	body_site	study_condition	disease	age	age_category	gender	country	non_westernized	location	antibiotics_current_use	BMI	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	fobt	curator	NCBI_accession
 MG100208	HanniganGD_2017_A29	stool	adenoma	adenoma	45	adult	female	CAN	no	Toronto	no	31.62627648	IlluminaHiSeq	MoBio	30459201	6133350	763336051	75	126	no	Paolo_Manghi	SRR5665080
 MG100207	HanniganGD_2017_A28	stool	adenoma	adenoma	50	adult	male	CAN	no	Toronto	no	31.67346939	IlluminaHiSeq	MoBio	30459201	9320348	1161633690	75	126	no	Paolo_Manghi	SRR5665075
 MG100206	HanniganGD_2017_A27	stool	adenoma	adenoma	68	adult	male	CAN	no	Toronto	no	25.21625331	IlluminaHiSeq	MoBio	30459201	6342570	787897159	75	126	no	Paolo_Manghi	SRR5665074

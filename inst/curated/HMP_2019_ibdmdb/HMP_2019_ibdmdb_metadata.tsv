@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	disease_subtype	age	age_category	gender	visit_number	country	BMI	location	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	disease_subtype	age	age_category	gender	visit_number	country	BMI	location	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 CSM5FZ3N_P	C3001	stool	no	IBD	IBD	CD	43.0	adult	female	1	USA	NA	Los_Angeles	no	0	IlluminaHiSeq	Chemagen	29311644	19923486	1966052396	55	101	Paolo_Manghi	NA
 CSM5FZ3R_P	C3001	stool	no	IBD	IBD	CD	43.0	adult	female	2	USA	NA	Los_Angeles	no	14	IlluminaHiSeq	Chemagen	29311644	32912782	3260763260	55	101	Paolo_Manghi	NA
 CSM5YRY7_P	C3001	stool	no	IBD	IBD	CD	43.0	adult	female	3	USA	NA	Los_Angeles	no	32	IlluminaHiSeq	Chemagen	29311644	47270672	4596924058	50	101	Paolo_Manghi	NA

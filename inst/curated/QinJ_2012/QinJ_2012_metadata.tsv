@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	c_peptide	cholesterol	dyastolic_p	systolic_p	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	c_peptide	cholesterol	dyastolic_p	systolic_p	curator	NCBI_accession
 CON-001	CON-001	stool	NA	control	healthy	21.0	adult	female	26.3	CHN	no	IlluminaHiSeq	23023125	44142248	3972802320	90	90	NA	184.4547552	59.0	115.0	Paolo_Manghi	NA
 CON-002	CON-002	stool	NA	control	healthy	53.0	adult	female	26.67	CHN	no	IlluminaHiSeq	23023125	47793804	4301442360	90	90	NA	231.2451648	78.0	124.0	Paolo_Manghi	NA
 CON-003	CON-003	stool	NA	control	healthy	61.0	adult	female	25.07	CHN	no	IlluminaHiSeq	23023125	45268384	4074154560	90	90	NA	189.8685216	80.0	140.0	Paolo_Manghi	NA

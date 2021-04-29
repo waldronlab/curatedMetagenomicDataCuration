@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 AS43_12	AS43	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	23705858	2394291658	101	101	Paolo_Manghi	SRR2155180
 AS43_18	AS43	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	10797144	1090511544	101	101	Paolo_Manghi	SRR2155323
 AS43_24	AS43	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	19171802	1936352002	101	101	Paolo_Manghi	SRR2155339
