@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	pregnant	lactating	smoker	ever_smoker	birth_control_pil	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	pregnant	lactating	smoker	ever_smoker	birth_control_pil	curator	NCBI_accession
 G88690	HV531	stool	no	control	healthy	23.0	adult	female	20.94	NLD	no	IlluminaHiSeq	Illuminakit	27984736	31876870	3112600441	61	101	no	no	no	no	yes	Paolo_Manghi	SRR5128731;SRR5127642
 G88691	HV532	stool	no	control	healthy	23.0	adult	male	23.27	NLD	no	IlluminaHiSeq	Illuminakit	27984736	26063474	2598517890	76	101	no	no	no	no	NA	Paolo_Manghi	SRR5128742;SRR5127802
 G88692	HV533	stool	no	control	healthy	24.0	adult	female	20.05	NLD	no	IlluminaHiSeq	Illuminakit	27984736	27677269	2753920126	60	101	no	no	no	no	no	Paolo_Manghi	SRR5128831;SRR5127486

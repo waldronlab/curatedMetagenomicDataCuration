@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age_category	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
+sample_id	subject_id	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age_category	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
 PNP_Main_10	PNP_Main_10	stool	rectal_swab	no	control	healthy	adult	ISR	no	IlluminaHiSeq	26590418	25992426	2428897220	20	101	Paolo_Manghi	ERR1137230;ERR1136702	NA
 PNP_Main_100	PNP_Main_100	stool	rectal_swab	no	control	healthy	adult	ISR	no	IlluminaHiSeq	26590418	26880264	2657830375	50	101	Paolo_Manghi	ERR1136792	NA
 PNP_Main_101	PNP_Main_101	stool	rectal_swab	no	control	healthy	adult	ISR	no	IlluminaHiSeq	26590418	34365680	3400710150	50	101	Paolo_Manghi	ERR1136793	NA

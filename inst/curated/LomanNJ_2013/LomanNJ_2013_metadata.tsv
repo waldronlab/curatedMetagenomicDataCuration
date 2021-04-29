@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	days_after_onset	stec_count	shigatoxin_2_elisa	stool_texture	curator	NCBI_accession	age
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	days_after_onset	stec_count	shigatoxin_2_elisa	stool_texture	curator	NCBI_accession	age
 OBK1122	OBK1122	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	464060	69609000	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262939;ERR262938	NA
 OBK1196	OBK1196	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	30181380	4527207000	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262941;ERR262940	NA
 OBK1253	OBK1253	stool	NA	STEC	STEC	adult	DEU	no	IlluminaHiSeq	Qiagen	23571589	65704818	9855722700	150	150	NA	NA	NA	NA	Paolo_Manghi	ERR262942;ERR260476	NA

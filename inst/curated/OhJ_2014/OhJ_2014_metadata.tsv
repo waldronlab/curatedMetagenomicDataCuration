@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	age
 MET0001	HV04	skin	NA	control	healthy	adult	female	USA	no	IlluminaHiSeq	Qiagen	25279917	3475040	350979040	101	101	Paolo_Manghi	SRR1620013	NA
 MET0002	HV04	skin	NA	control	healthy	adult	female	USA	no	IlluminaHiSeq	Qiagen	25279917	26806328	2707439128	101	101	Paolo_Manghi	SRR1620014	NA
 MET0004	LOWSTAGGERED_MOCK	skin	NA	control	healthy	adult	NA	USA	no	IlluminaHiSeq	Qiagen	25279917	50151954	5065347354	101	101	Paolo_Manghi	SRR1620015	NA

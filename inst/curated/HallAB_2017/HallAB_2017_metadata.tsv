@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	disease_subtype	age_category	visit_number	country	location	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	calprotectin	HBI	SCCAI	curator	NCBI_accession	age
+sample_id	subject_id	body_site	study_condition	disease	disease_subtype	age_category	visit_number	country	location	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	calprotectin	HBI	SCCAI	curator	NCBI_accession	age
 SKST006_6_G102964	SKST006	stool	IBD	IBD	UC	adult	6	USA	Atlanta	no	180	IlluminaMiSeq	other	29183332	6458544	647139014	50	101.0	NA	NA	NA	Marisa_Metzger	SRR5651391	NA
 SKST006_7_G102965	SKST006	stool	IBD	IBD	UC	adult	7	USA	Atlanta	no	210	IlluminaMiSeq	other	29183332	1128218	112812111	51	101.0	NA	NA	NA	Marisa_Metzger	SRR5651392	NA
 SKST006_4_G102962	SKST006	stool	IBD	IBD	UC	adult	4	USA	Atlanta	no	120	IlluminaMiSeq	other	29183332	12073898	1203906363	50	101.0	NA	NA	NA	Marisa_Metzger	SRR5651393	NA

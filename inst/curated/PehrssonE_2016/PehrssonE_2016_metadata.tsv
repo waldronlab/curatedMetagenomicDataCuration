@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	antibiotics_current_use	age	infant_age	disease	age_category	gender	country	location	non_westernized	days_from_first_collection	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	study_condition	antibiotics_current_use	age	infant_age	disease	age_category	gender	country	location	non_westernized	days_from_first_collection	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 SID01B_221	SID01B	stool	control	NA	64	NA	healthy	adult	male	PER	Lima_periurban_shantytown	yes	208.0	IlluminaNextSeq	27172044	2056260	291964649	40	142	Giacomo_DAmato	SRR2938595;SRR2938310
 SID01A_220	SID01A	stool	control	NA	57	NA	healthy	adult	female	PER	Lima_periurban_shantytown	yes	208.0	IlluminaNextSeq	27172044	1949860	276845040	74	142	Giacomo_DAmato	SRR2938594;SRR2938309
 SID09E_519	SID09E	stool	control	NA	5	NA	healthy	child	female	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	6077614	849700012	36	142	Giacomo_DAmato	SRR2938551;SRR2938266

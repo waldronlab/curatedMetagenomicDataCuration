@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	age_category	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	antibiotics_current_use	smoker	curator	NCBI_accession	age
+sample_id	subject_id	body_site	study_condition	disease	age_category	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	antibiotics_current_use	smoker	curator	NCBI_accession	age
 nHF511704	nHF511704	stool	control	healthy	adult	CHN	Tangshan	no	IlluminaHiSeq	Tiangen	28143587	39417362	4927170250	125	125	no	no	Valentina_Giunchiglia	ERR1398129	NA
 nHM512705	nHM512705	stool	control	healthy	adult	CHN	Tangshan	no	IlluminaHiSeq	Tiangen	28143587	39288154	4911019250	125	125	no	no	Valentina_Giunchiglia	ERR1398173	NA
 nHM611708	nHM611708	stool	control	healthy	adult	CHN	Tangshan	no	IlluminaHiSeq	Tiangen	28143587	39222364	4902795500	125	125	no	no	Valentina_Giunchiglia	ERR1398206	NA

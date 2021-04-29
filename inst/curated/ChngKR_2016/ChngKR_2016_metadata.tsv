@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	alcohol	flg_genotype	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	alcohol	flg_genotype	curator	NCBI_accession
 WBE003	Sub21	skin	NA	AD	AD;AR	29	adult	male	25.36	SGP	no	IlluminaHiSeq	Qiagen	27562258	16897048	1689704800	99	100	no	wt	Paolo_Manghi	SRR1950743
 WBE004	Sub21	skin	NA	AD	AD;AR	29	adult	male	25.36	SGP	no	IlluminaHiSeq	Qiagen	27562258	20524052	2052405200	99	100	no	wt	Paolo_Manghi	SRR1950744
 WBE005	Sub1	skin	NA	control	healthy	30	adult	male	NA	IDN	no	IlluminaHiSeq	Qiagen	27562258	17092902	1709290200	99	100	no	wt	Paolo_Manghi	SRR1950713

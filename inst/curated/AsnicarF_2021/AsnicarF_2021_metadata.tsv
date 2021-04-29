@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	PMID
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	PMID
 SAMEA7041133	s998481	stool	no	control	healthy	36	adult	female	37.268492756803106	USA	no	IlluminaNovaSeq	PowerSoilPro	27999010	4227850510	151	151	Francesco_Asnicar;Paolo_Manghi	ERR4330026	33432175
 SAMEA7041134	s904531	stool	no	control	healthy	24	adult	male	23.268585963695198	GBR	no	IlluminaNovaSeq	PowerSoilPro	28573197	4314552747	151	151	Francesco_Asnicar;Paolo_Manghi	ERR4330027	33432175
 SAMEA7041135	s998831	stool	no	control	healthy	63	adult	female	21.9017094017094	USA	no	IlluminaNovaSeq	PowerSoilPro	27479829	4149454179	151	151	Francesco_Asnicar;Paolo_Manghi	ERR4330028	33432175

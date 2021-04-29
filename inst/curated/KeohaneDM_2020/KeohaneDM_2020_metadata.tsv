@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	PMID	number_reads	number_bases	minimum_read_length	ever_smoker	median_read_length	smoker	alcohol	systolic_p	dyastolic_p	curator	NCBI_accession	sequencing_platform
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	PMID	number_reads	number_bases	minimum_read_length	ever_smoker	median_read_length	smoker	alcohol	systolic_p	dyastolic_p	curator	NCBI_accession	sequencing_platform
 Travel001	Travel001	stool	no	control	healthy	45	adult	female	34.7	IRL	no	32632193	20388798	2933514468	70	yes	150	yes	yes	127	84	Paolo_Manghi	ERR3957678	IlluminaHiSeq
 Travel002	Travel002	stool	no	control	healthy	52	adult	male	32.4	IRL	no	32632193	20763888	2982483551	70	yes	150	yes	yes	156	97	Paolo_Manghi	ERR3957679	IlluminaHiSeq
 Travel003	Travel003	stool	no	control	healthy	48	adult	male	29.9	IRL	no	32632193	14791740	2117604054	70	yes	150	yes	yes	132	86	Paolo_Manghi	ERR3957680	IlluminaHiSeq

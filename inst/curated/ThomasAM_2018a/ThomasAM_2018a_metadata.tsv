@@ -1,4 +1,4 @@
-sampleID	subjectID	PMID	body_site	antibiotics_current_use	study_condition	disease	disease_subtype	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	ever_smoker	smoker	alcohol	curator	NCBI_accession
+sample_id	subject_id	PMID	body_site	antibiotics_current_use	study_condition	disease	disease_subtype	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	number_reads	number_bases	minimum_read_length	median_read_length	ever_smoker	smoker	alcohol	curator	NCBI_accession
 LILT_GF06_16	GF06	30936548	stool	no	control	metastases	NA	77	senior	female	25.0	ITA	no	IlluminaHiSeq	Qiagen	168171670	16627043626	75	100	no	no	no	Paolo_Manghi;Marisa_Metzger	NA
 LILT_GF12_16	GF12	30936548	stool	no	adenoma	adenoma	adenoma	68	senior	female	30.0	ITA	no	IlluminaHiSeq	Qiagen	129054410	12772253934	75	100	no	no	no	Paolo_Manghi;Marisa_Metzger	NA
 LILT_GF15_16	GF15	30936548	stool	no	CRC	CRC;hypercholesterolemia	adenocarcinoma	75	senior	male	NA	ITA	no	IlluminaHiSeq	Qiagen	132351728	13091772784	75	100	no	no	no	Paolo_Manghi;Marisa_Metzger	NA

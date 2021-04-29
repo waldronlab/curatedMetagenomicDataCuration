@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	curator	NCBI_accession
 CM_A01_I1_18	CM_A01_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	unpublished	69397730	6985545594	75	101	child	TettAJ_2019_c_8	Paolo_Manghi	SRR8784372
 CM_A01_M0_18	CM_A01_M0	stool	NA	control	healthy	30.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	unpublished	47669482	4796329191	75	101	mother	TettAJ_2019_c_8	Paolo_Manghi	SRR8784374
 CM_A04_I1_18	CM_A04_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	unpublished	68028500	6838561595	75	101	child	TettAJ_2019_c_7	Paolo_Manghi	SRR8784375

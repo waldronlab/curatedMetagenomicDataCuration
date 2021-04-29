@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 H1	H1	stool	NA	control	healthy	43	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	29669622	2830033596	60	100	Paolo_Manghi	SRR1927149
 H10	H10	stool	NA	control	healthy	40	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	63686272	6142112280	60	100	Paolo_Manghi	SRR1929408
 H11	H11	stool	NA	control	healthy	29	adult	female	TZA	Dedauko	yes	IlluminaHiSeq	Qiagen	25981789	16543096	1565359457	60	100	Paolo_Manghi	SRR1929484

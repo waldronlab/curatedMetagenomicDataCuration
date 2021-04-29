@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	study_condition	disease	age	age_category	gender	BMI	non_westernized	country	number_reads	number_bases	minimum_read_length	median_read_length	brinkman_index	alcohol_numeric	ajcc	disease_location	curator	sequencing_platform	PMID
+sample_id	subject_id	body_site	study_condition	disease	age	age_category	gender	BMI	non_westernized	country	number_reads	number_bases	minimum_read_length	median_read_length	brinkman_index	alcohol_numeric	ajcc	disease_location	curator	sequencing_platform	PMID
 SAMD00115014	sub_10021	stool	CRC	CRC	57	adult	male	26.8809517	no	JPN	51568728	7363146531	50	150.0	130.0	993.0	i	left_colon	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00115015	sub_10023	stool	control	healthy	65	adult	male	26.5625	no	JPN	53354508	7526567159	50	150.0	660.0	0.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880
 SAMD00115025	sub_10025	stool	control	healthy	40	adult	male	25.0	no	JPN	44355082	6499155721	50	150.0	400.0	993.0	NA	NA	Paolo_Manghi	IlluminaHiSeq	31171880

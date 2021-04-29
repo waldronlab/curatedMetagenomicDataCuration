@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	ajcc	tnm	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	ajcc	tnm	curator	NCBI_accession
 CCMD11006829ST-21-0	CCMD11006829ST-21-0	stool	NA	CRC	CRC	42	adult	female	35.0	DEU	no	IlluminaHiSeq	Gnome	30936547	83456496	7310970279	45	94	ii	t3n0m0	Paolo_Manghi	NA
 CCMD12232071ST-21-0	CCMD12232071ST-21-0	stool	NA	CRC	CRC	75	senior	male	28.0	DEU	no	IlluminaHiSeq	Gnome	30936547	65269931	5370021950	2	88	iii	t3n2m0	Paolo_Manghi	NA
 CCMD13071240ST-21-0	CCMD13071240ST-21-0	stool	NA	CRC	CRC	66	senior	female	23.0	DEU	no	IlluminaHiSeq	Gnome	30936547	63427722	5486983593	45	93	ii	t3n0m0	Paolo_Manghi	NA

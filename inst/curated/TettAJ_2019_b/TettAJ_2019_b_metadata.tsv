@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	curator	NCBI_accession
 C16-20005-GH	C16-10022-GH_M	stool	NA	control	healthy	34.0	adult	GHA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	36632244	3686981894	75	101	mother	TettAJ_2019_b_1	Paolo_Manghi	SRR8791405
 C16-20006-GH	C16-10022-GH_F	stool	NA	control	healthy	33.0	adult	GHA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	59637528	5990210178	75	101	father	TettAJ_2019_b_1	Paolo_Manghi	SRR8791404
 C16-20007-GH	C16-10022-GH_S1	stool	NA	control	healthy	7.0	child	GHA	NA	yes	IlluminaHiSeq	Qiagen	unpublished	74101786	7457636921	75	101	child	TettAJ_2019_b_1	Paolo_Manghi	SRR8791403

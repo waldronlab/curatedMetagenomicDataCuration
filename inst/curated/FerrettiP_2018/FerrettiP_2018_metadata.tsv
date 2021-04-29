@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age	infant_age	age_category	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	feeding_practice	curator	NCBI_accession
+sample_id	subject_id	body_site	body_subsite	antibiotics_current_use	study_condition	disease	age	infant_age	age_category	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	feeding_practice	curator	NCBI_accession
 CA_C10001MS2003VA_t0M15	C10001_mo	vagina	vaginal_introitus	NA	control	healthy	NA	NA	adult	22.8	ITA	no	IlluminaHiSeq	30001516	165289	13953144	20	100	mother	1	NA	Pamela_Ferretti	NA
 CA_C10001MS2001SA_t0M15	C10001_mo	oralcavity	tongue_dorsum	NA	control	healthy	NA	NA	adult	22.8	ITA	no	IlluminaHiSeq	30001516	10175735	975036207	20	100	mother	1	NA	Pamela_Ferretti	NA
 CA_C10001IS2006FE_t1M15	C10001	stool	stool	NA	control	healthy	0.0	1.0	newborn	NA	ITA	no	IlluminaHiSeq	30001516	25827165	2477845202	20	100	child	1	exclusively_breastfeeding	Pamela_Ferretti	NA

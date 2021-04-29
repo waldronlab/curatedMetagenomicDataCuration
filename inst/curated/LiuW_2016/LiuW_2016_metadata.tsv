@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	protein_intake	curator	NCBI_accession	age
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age_category	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	protein_intake	curator	NCBI_accession	age
 SRR3992955	SRR3992955	stool	NA	control	healthy	adult	MNG	no	IlluminaHiSeq	Qiagen	27708392	78376762	11756514300	150	150	125.1	Paolo_Manghi	SRR3992955	NA
 SRR3992956	SRR3992956	stool	NA	control	healthy	adult	MNG	no	IlluminaHiSeq	Qiagen	27708392	43599100	6539865000	150	150	128.12	Paolo_Manghi	SRR3992956	NA
 SRR3992957	SRR3992957	stool	NA	control	healthy	adult	MNG	no	IlluminaHiSeq	Qiagen	27708392	34782688	5217403200	150	150	166.7	Paolo_Manghi	SRR3992957	NA

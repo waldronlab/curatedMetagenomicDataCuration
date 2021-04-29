@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
 ES_001	ES_001	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	36	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	97036033	9800639333	101	101	Paolo_Manghi	SRR1519058
 ES_007	ES_007	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	40	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	97509055	9848414555	101	101	Paolo_Manghi	SRR1519059
 ES_010	ES_010	oralcavity	yes	thienobenzodiazepines	schizofrenia	T2D;schizofrenia	37	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	73087454	7381832854	101	101	Paolo_Manghi	SRR1519060

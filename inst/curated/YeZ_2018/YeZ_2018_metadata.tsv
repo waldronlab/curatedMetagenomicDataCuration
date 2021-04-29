@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	curator	NCBI_accession
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	BMI	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	location	curator	NCBI_accession
 YEZ_N-48	YEZ_N-48	stool	no	control	healthy	42	adult	female	24.0	CHN	no	IlluminaHiSeq	Qiagen	30077182	39872611	5971169867	41	150	Chongqing	Giacomo_DAmato	SRR8675870
 YEZ_N-47	YEZ_N-47	stool	no	control	healthy	54	adult	male	30.6	CHN	no	IlluminaHiSeq	Qiagen	30077182	44623037	6675300345	40	150	Chongqing	Giacomo_DAmato	SRR8675871
 YEZ_N-10	YEZ_N-10	stool	no	control	healthy	27	adult	male	24.6	CHN	no	IlluminaHiSeq	Qiagen	30077182	37218253	5510255162	44	150	Sichuan	Giacomo_DAmato	SRR8675872

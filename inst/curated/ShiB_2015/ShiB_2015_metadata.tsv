@@ -1,4 +1,4 @@
-sampleID	subjectID	body_site	body_subsite	antibiotics_current_use	study_condition	age	age_category	disease	country	non_westernized	days_from_first_collection	number_reads	number_bases	minimum_read_length	median_read_length	ever_smoker	smoker	dental_sample_type	sequencing_platform	PMID	curator	NCBI_accession
+sample_id	subject_id	body_site	body_subsite	antibiotics_current_use	study_condition	age	age_category	disease	country	non_westernized	days_from_first_collection	number_reads	number_bases	minimum_read_length	median_read_length	ever_smoker	smoker	dental_sample_type	sequencing_platform	PMID	curator	NCBI_accession
 S01-01-D	S01	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	no	0	61557421	5794329769	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781914
 S01-02-D	S01	oralcavity	subgingival_plaque	no	periodontitis	NA	adult	periodontitis	USA	no	0	43402442	4041845567	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781969
 S01-05-R	S01	oralcavity	subgingival_plaque	no	SRP	NA	adult	periodontitis	USA	no	60	9946077	939139011	60	100	no	no	teeth	IlluminaHiSeq	25691586	Paolo_Manghi	SRR1781970
