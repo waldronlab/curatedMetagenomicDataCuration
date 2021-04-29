@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-04-29 14:29:36 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2021-04-29 14:30:10 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -97,613 +97,204 @@
 <h1 class="hasAnchor">
 <a href="#asnicarf_2017_metadata-tsv" class="anchor"></a>AsnicarF_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/AsnicarF_2017/AsnicarF_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/AsnicarF_2017/AsnicarF_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="asnicarf_2021_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#asnicarf_2021_metadata-tsv" class="anchor"></a>AsnicarF_2021_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/AsnicarF_2021/AsnicarF_2021_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/AsnicarF_2021/AsnicarF_2021_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-1" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-1" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="backhedf_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#backhedf_2015_metadata-tsv" class="anchor"></a>BackhedF_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/BackhedF_2015/BackhedF_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/BackhedF_2015/BackhedF_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-2" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-2" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-2" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-2" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="bengtsson-palmej_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#bengtsson-palmej_2015_metadata-tsv" class="anchor"></a>Bengtsson-PalmeJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-3" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-3" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-3" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-3" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="britoil_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#britoil_2016_metadata-tsv" class="anchor"></a>BritoIL_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/BritoIL_2016/BritoIL_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/BritoIL_2016/BritoIL_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-4" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-4" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-4" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-4" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="brooksb_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#brooksb_2017_metadata-tsv" class="anchor"></a>BrooksB_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/BrooksB_2017/BrooksB_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/BrooksB_2017/BrooksB_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-5" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-5" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-5" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-5" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="castro-nallare_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#castro-nallare_2015_metadata-tsv" class="anchor"></a>Castro-NallarE_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Castro-NallarE_2015/Castro-NallarE_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Castro-NallarE_2015/Castro-NallarE_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-6" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-6" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-6" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-6" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="chengpingw_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#chengpingw_2017_metadata-tsv" class="anchor"></a>ChengpingW_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ChengpingW_2017/ChengpingW_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ChengpingW_2017/ChengpingW_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-7" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-7" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-7" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-7" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="chngkr_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#chngkr_2016_metadata-tsv" class="anchor"></a>ChngKR_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ChngKR_2016/ChngKR_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ChngKR_2016/ChngKR_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-8" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-8" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-8" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-8" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="chudm_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#chudm_2017_metadata-tsv" class="anchor"></a>ChuDM_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ChuDM_2017/ChuDM_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ChuDM_2017/ChuDM_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-9" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-9" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-9" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-9" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="contevillelc_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#contevillelc_2019_metadata-tsv" class="anchor"></a>ContevilleLC_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-10" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-10" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-10" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-10" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="costeapi_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#costeapi_2017_metadata-tsv" class="anchor"></a>CosteaPI_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/CosteaPI_2017/CosteaPI_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/CosteaPI_2017/CosteaPI_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-11" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-11" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-11" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-11" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="davidla_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#davidla_2015_metadata-tsv" class="anchor"></a>DavidLA_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/DavidLA_2015/DavidLA_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/DavidLA_2015/DavidLA_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-12" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-12" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-12" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-12" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="defilippisf_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#defilippisf_2019_metadata-tsv" class="anchor"></a>DeFilippisF_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/DeFilippisF_2019/DeFilippisF_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/DeFilippisF_2019/DeFilippisF_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-13" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-13" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-13" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-13" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="dhakandb_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#dhakandb_2019_metadata-tsv" class="anchor"></a>DhakanDB_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/DhakanDB_2019/DhakanDB_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/DhakanDB_2019/DhakanDB_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-14" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-14" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-14" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-14" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="fengq_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#fengq_2015_metadata-tsv" class="anchor"></a>FengQ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/FengQ_2015/FengQ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/FengQ_2015/FengQ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-15" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-15" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-15" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-15" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="ferrettip_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#ferrettip_2018_metadata-tsv" class="anchor"></a>FerrettiP_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/FerrettiP_2018/FerrettiP_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/FerrettiP_2018/FerrettiP_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-16" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-16" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-16" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-16" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="ghensip_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#ghensip_2019_metadata-tsv" class="anchor"></a>GhensiP_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GhensiP_2019/GhensiP_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GhensiP_2019/GhensiP_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-17" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-17" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-17" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-17" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="gopalakrishnanv_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#gopalakrishnanv_2018_metadata-tsv" class="anchor"></a>GopalakrishnanV_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GopalakrishnanV_2018/GopalakrishnanV_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GopalakrishnanV_2018/GopalakrishnanV_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-18" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-18" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-18" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-18" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="guptaa_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#guptaa_2019_metadata-tsv" class="anchor"></a>GuptaA_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-19" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-19" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-19" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-19" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="hallab_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#hallab_2017_metadata-tsv" class="anchor"></a>HallAB_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HallAB_2017/HallAB_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HallAB_2017/HallAB_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-20" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-20" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-20" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-20" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="hannigangd_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#hannigangd_2017_metadata-tsv" class="anchor"></a>HanniganGD_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-21" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-21" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-21" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-21" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="hansenlbs_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#hansenlbs_2018_metadata-tsv" class="anchor"></a>HansenLBS_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HansenLBS_2018/HansenLBS_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HansenLBS_2018/HansenLBS_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-22" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-22" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-22" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-22" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="heitz-buscharta_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#heitz-buscharta_2016_metadata-tsv" class="anchor"></a>Heitz-BuschartA_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Heitz-BuschartA_2016/Heitz-BuschartA_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Heitz-BuschartA_2016/Heitz-BuschartA_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-23" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-23" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-23" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-23" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="hmp_2012_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#hmp_2012_metadata-tsv" class="anchor"></a>HMP_2012_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2012/HMP_2012_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2012/HMP_2012_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-24" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-24" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-24" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-24" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="hmp_2019_ibdmdb_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#hmp_2019_ibdmdb_metadata-tsv" class="anchor"></a>HMP_2019_ibdmdb_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_ibdmdb/HMP_2019_ibdmdb_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_ibdmdb/HMP_2019_ibdmdb_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-25" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-25" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-25" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-25" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="hmp_2019_t2d_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#hmp_2019_t2d_metadata-tsv" class="anchor"></a>HMP_2019_t2d_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-26" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-26" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-26" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-26" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="ijazuz_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#ijazuz_2017_metadata-tsv" class="anchor"></a>IjazUZ_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/IjazUZ_2017/IjazUZ_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/IjazUZ_2017/IjazUZ_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-27" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-27" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-27" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-27" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="jiez_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#jiez_2017_metadata-tsv" class="anchor"></a>JieZ_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-28" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-28" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-28" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-28" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="karlssonfh_2013_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#karlssonfh_2013_metadata-tsv" class="anchor"></a>KarlssonFH_2013_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-29" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-29" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-29" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-29" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="kaurk_2020_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#kaurk_2020_metadata-tsv" class="anchor"></a>KaurK_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-30" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-30" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-30" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-30" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="keohanedm_2020_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#keohanedm_2020_metadata-tsv" class="anchor"></a>KeohaneDM_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-31" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-31" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-31" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-31" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="kiesers_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#kiesers_2018_metadata-tsv" class="anchor"></a>KieserS_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KieserS_2018/KieserS_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KieserS_2018/KieserS_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-32" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-32" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-32" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-32" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="kosticad_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#kosticad_2015_metadata-tsv" class="anchor"></a>KosticAD_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-33" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-33" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-33" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-33" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
 <div id="entry-errors" class="section level2">
 <h2 class="hasAnchor">
 <a href="#entry-errors" class="anchor"></a>Entry errors</h2>
@@ -713,7 +304,7 @@
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
-<em>col.class</em>: integer<br>
+<em>col.class</em>: double<br>
 </li>
 <li>
 <em>uniqueness</em>: non-unique<br>
@@ -808,7 +399,7 @@
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
-<em>col.class</em>: integer<br>
+<em>col.class</em>: double<br>
 </li>
 <li>
 <em>uniqueness</em>: non-unique<br>
@@ -856,613 +447,204 @@
 <h1 class="hasAnchor">
 <a href="#lassallef_2017_metadata-tsv" class="anchor"></a>LassalleF_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LassalleF_2017/LassalleF_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LassalleF_2017/LassalleF_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-34" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-34" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-34" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-34" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="lechateliere_2013_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#lechateliere_2013_metadata-tsv" class="anchor"></a>LeChatelierE_2013_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LeChatelierE_2013/LeChatelierE_2013_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LeChatelierE_2013/LeChatelierE_2013_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-35" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-35" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-35" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-35" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="lifelinesdeep_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#lifelinesdeep_2016_metadata-tsv" class="anchor"></a>LifeLinesDeep_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LifeLinesDeep_2016/LifeLinesDeep_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LifeLinesDeep_2016/LifeLinesDeep_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-36" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-36" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-36" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-36" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="lij_2014_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#lij_2014_metadata-tsv" class="anchor"></a>LiJ_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiJ_2014/LiJ_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiJ_2014/LiJ_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-37" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-37" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-37" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-37" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="lij_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#lij_2017_metadata-tsv" class="anchor"></a>LiJ_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiJ_2017/LiJ_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiJ_2017/LiJ_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-38" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-38" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-38" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-38" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="liss_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#liss_2016_metadata-tsv" class="anchor"></a>LiSS_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiSS_2016/LiSS_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiSS_2016/LiSS_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-39" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-39" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-39" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-39" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="liuw_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#liuw_2016_metadata-tsv" class="anchor"></a>LiuW_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiuW_2016/LiuW_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiuW_2016/LiuW_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-40" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-40" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-40" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-40" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="lokmera_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#lokmera_2019_metadata-tsv" class="anchor"></a>LokmerA_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LokmerA_2019/LokmerA_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LokmerA_2019/LokmerA_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-41" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-41" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-41" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-41" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="lomannj_2013_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#lomannj_2013_metadata-tsv" class="anchor"></a>LomanNJ_2013_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LomanNJ_2013/LomanNJ_2013_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LomanNJ_2013/LomanNJ_2013_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-42" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-42" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-42" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-42" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="loombar_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#loombar_2017_metadata-tsv" class="anchor"></a>LoombaR_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-43" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-43" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-43" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-43" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="louiss_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#louiss_2016_metadata-tsv" class="anchor"></a>LouisS_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LouisS_2016/LouisS_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LouisS_2016/LouisS_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-44" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-44" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-44" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-44" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="matsonv_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#matsonv_2018_metadata-tsv" class="anchor"></a>MatsonV_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/MatsonV_2018/MatsonV_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/MatsonV_2018/MatsonV_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-45" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-45" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-45" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-45" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="mehtars_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#mehtars_2018_metadata-tsv" class="anchor"></a>MehtaRS_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/MehtaRS_2018/MehtaRS_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/MehtaRS_2018/MehtaRS_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-46" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-46" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-46" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-46" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="nagyszakald_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#nagyszakald_2017_metadata-tsv" class="anchor"></a>NagySzakalD_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/NagySzakalD_2017/NagySzakalD_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/NagySzakalD_2017/NagySzakalD_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-47" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-47" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-47" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-47" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="nielsenhb_2014_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#nielsenhb_2014_metadata-tsv" class="anchor"></a>NielsenHB_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/NielsenHB_2014/NielsenHB_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/NielsenHB_2014/NielsenHB_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-48" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-48" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-48" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-48" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="obregon-titoaj_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#obregon-titoaj_2015_metadata-tsv" class="anchor"></a>Obregon-TitoAJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Obregon-TitoAJ_2015/Obregon-TitoAJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Obregon-TitoAJ_2015/Obregon-TitoAJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-49" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-49" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-49" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-49" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="ohj_2014_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#ohj_2014_metadata-tsv" class="anchor"></a>OhJ_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/OhJ_2014/OhJ_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/OhJ_2014/OhJ_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-50" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-50" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-50" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-50" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="olmmr_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#olmmr_2017_metadata-tsv" class="anchor"></a>OlmMR_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/OlmMR_2017/OlmMR_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/OlmMR_2017/OlmMR_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-51" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-51" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-51" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-51" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="pasollie_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#pasollie_2019_metadata-tsv" class="anchor"></a>PasolliE_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PasolliE_2019/PasolliE_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PasolliE_2019/PasolliE_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-52" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-52" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-52" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-52" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="pehrssone_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#pehrssone_2016_metadata-tsv" class="anchor"></a>PehrssonE_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-53" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-53" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-53" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-53" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="qinj_2012_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#qinj_2012_metadata-tsv" class="anchor"></a>QinJ_2012_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinJ_2012/QinJ_2012_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinJ_2012/QinJ_2012_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-54" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-54" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-54" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-54" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="qinn_2014_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#qinn_2014_metadata-tsv" class="anchor"></a>QinN_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-55" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-55" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-55" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-55" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="rampellis_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#rampellis_2015_metadata-tsv" class="anchor"></a>RampelliS_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RampelliS_2015/RampelliS_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RampelliS_2015/RampelliS_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-56" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-56" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-56" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-56" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="raymondf_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#raymondf_2016_metadata-tsv" class="anchor"></a>RaymondF_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RaymondF_2016/RaymondF_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RaymondF_2016/RaymondF_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-57" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-57" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-57" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-57" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="rosaba_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#rosaba_2018_metadata-tsv" class="anchor"></a>RosaBA_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-58" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-58" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-58" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-58" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="rubelma_2020_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#rubelma_2020_metadata-tsv" class="anchor"></a>RubelMA_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-59" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-59" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-59" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-59" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="sankaranarayanank_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#sankaranarayanank_2015_metadata-tsv" class="anchor"></a>SankaranarayananK_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-60" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-60" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-60" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-60" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="schirmerm_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#schirmerm_2016_metadata-tsv" class="anchor"></a>SchirmerM_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SchirmerM_2016/SchirmerM_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SchirmerM_2016/SchirmerM_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-61" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-61" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-61" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-61" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="shaoy_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#shaoy_2019_metadata-tsv" class="anchor"></a>ShaoY_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ShaoY_2019/ShaoY_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ShaoY_2019/ShaoY_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-62" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-62" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-62" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-62" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="shib_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#shib_2015_metadata-tsv" class="anchor"></a>ShiB_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ShiB_2015/ShiB_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ShiB_2015/ShiB_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-63" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-63" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-63" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-63" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="smitssa_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#smitssa_2017_metadata-tsv" class="anchor"></a>SmitsSA_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SmitsSA_2017/SmitsSA_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SmitsSA_2017/SmitsSA_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-64" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-64" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-64" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-64" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="tettaj_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#tettaj_2016_metadata-tsv" class="anchor"></a>TettAJ_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2016/TettAJ_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2016/TettAJ_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-65" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-65" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-65" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-65" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="tettaj_2019_a_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_a_metadata-tsv" class="anchor"></a>TettAJ_2019_a_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-66" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-66" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-66" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-66" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="tettaj_2019_b_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_b_metadata-tsv" class="anchor"></a>TettAJ_2019_b_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-67" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-67" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-67" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-67" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
 <div id="entry-errors-1" class="section level2">
 <h2 class="hasAnchor">
 <a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
@@ -1538,19 +720,6 @@
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_c_metadata-tsv" class="anchor"></a>TettAJ_2019_c_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-68" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-68" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-68" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-68" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
 <div id="entry-errors-2" class="section level2">
 <h2 class="hasAnchor">
 <a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
@@ -1632,163 +801,54 @@
 <h1 class="hasAnchor">
 <a href="#thomasam_2018a_metadata-tsv" class="anchor"></a>ThomasAM_2018a_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2018a/ThomasAM_2018a_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2018a/ThomasAM_2018a_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-69" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-69" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-69" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-69" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="thomasam_2018b_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#thomasam_2018b_metadata-tsv" class="anchor"></a>ThomasAM_2018b_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-70" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-70" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-70" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-70" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="thomasam_2019_c_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#thomasam_2019_c_metadata-tsv" class="anchor"></a>ThomasAM_2019_c_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-71" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-71" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-71" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-71" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="vatanent_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#vatanent_2016_metadata-tsv" class="anchor"></a>VatanenT_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-72" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-72" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-72" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-72" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="vilaav_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#vilaav_2018_metadata-tsv" class="anchor"></a>VilaAV_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-73" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-73" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-73" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-73" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="vincentc_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#vincentc_2016_metadata-tsv" class="anchor"></a>VincentC_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-74" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-74" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-74" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-74" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="vogtmanne_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#vogtmanne_2016_metadata-tsv" class="anchor"></a>VogtmannE_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VogtmannE_2016/VogtmannE_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VogtmannE_2016/VogtmannE_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-75" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-75" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-75" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-75" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="wampachl_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#wampachl_2018_metadata-tsv" class="anchor"></a>WampachL_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WampachL_2018/WampachL_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WampachL_2018/WampachL_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-76" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-76" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-76" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-76" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="wenc_2017_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-77" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-77" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-77" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-77" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
 <div id="entry-errors-3" class="section level2">
 <h2 class="hasAnchor">
 <a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
@@ -1988,181 +1048,61 @@
 <h1 class="hasAnchor">
 <a href="#wirbelj_2018_metadata-tsv" class="anchor"></a>WirbelJ_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WirbelJ_2018/WirbelJ_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WirbelJ_2018/WirbelJ_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-78" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-78" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-78" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-78" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="xieh_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#xieh_2016_metadata-tsv" class="anchor"></a>XieH_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-79" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-79" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-79" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-79" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="yachidas_2019_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#yachidas_2019_metadata-tsv" class="anchor"></a>YachidaS_2019_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-80" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-80" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-80" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-80" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="yassourm_2016_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#yassourm_2016_metadata-tsv" class="anchor"></a>YassourM_2016_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-81" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-81" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-81" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-81" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="yassourm_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#yassourm_2018_metadata-tsv" class="anchor"></a>YassourM_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2018/YassourM_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2018/YassourM_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-82" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-82" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-82" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-82" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="yez_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#yez_2018_metadata-tsv" class="anchor"></a>YeZ_2018_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YeZ_2018/YeZ_2018_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YeZ_2018/YeZ_2018_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-83" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-83" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-83" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-83" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="yuj_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#yuj_2015_metadata-tsv" class="anchor"></a>YuJ_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-84" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-84" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-84" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-84" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="zeevid_2015_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#zeevid_2015_metadata-tsv" class="anchor"></a>ZeeviD_2015_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZeeviD_2015/ZeeviD_2015_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZeeviD_2015/ZeeviD_2015_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-85" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-85" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-85" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-85" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="zellerg_2014_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#zellerg_2014_metadata-tsv" class="anchor"></a>ZellerG_2014_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZellerG_2014/ZellerG_2014_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZellerG_2014/ZellerG_2014_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-86" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-86" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-86" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-86" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="zhuf_2020_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#zhuf_2020_metadata-tsv" class="anchor"></a>ZhuF_2020_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="required-columns-that-are-missing-87" class="section level2">
-<h2 class="hasAnchor">
-<a href="#required-columns-that-are-missing-87" class="anchor"></a>Required columns that are missing</h2>
-<p>sampleID subjectID</p>
-</div>
-<div id="column-name-errors-87" class="section level2">
-<h2 class="hasAnchor">
-<a href="#column-name-errors-87" class="anchor"></a>Column name errors</h2>
-<ul>
-<li><p>“sample_id” is not defined in the template.</p></li>
-<li><p>“subject_id” is not defined in the template.</p></li>
-</ul>
-</div>
+<p>All checks OK.</p>
 </div>
   </div>
 
