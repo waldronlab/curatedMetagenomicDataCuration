@@ -102,8 +102,8 @@ formula_first_day,integer,non-unique,optional,FALSE,[0-9]+, the age infants get 
 ESR,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Erythrocyte sedimentation rate (ESR) in mm/H.
 HLA,character,non-unique,optional,TRUE,.+,HLA DR-DQ alleles conferring risk of Typ-1-Diabetes (T1D)
 autoantibody_positive,character,non-unique,optional,TRUE,.+,Tested positive for AAB.
-age_seroconversion,integer,non-unique,optional,FALSE,[0-9]+,Age at seroconvention was detected (days).
-age_T1D_diagnosis,integer,non-unique,optional,FALSE,[0-9]+,Age at which T1D was diagnosed (days).
+age_seroconversion,double,non-unique,optional,FALSE,[0-9]+,Age at seroconvention was detected (days).
+age_T1D_diagnosis,double,non-unique,optional,FALSE,[0-9]+,Age at which T1D was diagnosed (days).
 disease_stage,integer,non-unique,optional,FALSE,[0-9]+,Stage information for diseases that can be divided into multiple stages.
 disease_location,character,non-unique,optional,TRUE,.+,Can be used for diseases which occur on different body parts like CD.
 calprotectin,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
