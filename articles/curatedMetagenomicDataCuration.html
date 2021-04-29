@@ -84,7 +84,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-04-29 11:51:39 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2021-04-29 11:55:50 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -223,113 +223,7 @@
 <h1 class="hasAnchor">
 <a href="#hannigangd_2017_metadata-tsv" class="anchor"></a>HanniganGD_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
-<div id="pmid" class="section level3">
-<h3 class="hasAnchor">
-<a href="#pmid" class="anchor"></a>PMID</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]{8}|NA<br>
-</li>
-<li>
-<em>description</em>: Identifier of the main publication in PubMed.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . MG100208 : “unpublished”<br>
-2 . MG100207 : “unpublished”<br>
-3 . MG100206 : “unpublished”<br>
-4 . MG100205 : “unpublished”<br>
-5 . MG100204 : “unpublished”<br>
-6 . MG100203 : “unpublished”<br>
-7 . MG100202 : “unpublished”<br>
-8 . MG100201 : “unpublished”<br>
-9 . MG100200 : “unpublished”<br>
-10 . MG100199 : “unpublished”<br>
-11 . MG100198 : “unpublished”<br>
-12 . MG100196 : “unpublished”<br>
-13 . MG100195 : “unpublished”<br>
-14 . MG100194 : “unpublished”<br>
-15 . MG100193 : “unpublished”<br>
-16 . MG100192 : “unpublished”<br>
-17 . MG100191 : “unpublished”<br>
-18 . MG100190 : “unpublished”<br>
-19 . MG100189 : “unpublished”<br>
-20 . MG100188 : “unpublished”<br>
-21 . MG100187 : “unpublished”<br>
-22 . MG100186 : “unpublished”<br>
-23 . MG100185 : “unpublished”<br>
-24 . MG100184 : “unpublished”<br>
-25 . MG100182 : “unpublished”<br>
-26 . MG100181 : “unpublished”<br>
-27 . MG100180 : “unpublished”<br>
-28 . MG100179 : “unpublished”<br>
-29 . MG100178 : “unpublished”<br>
-30 . MG100177 : “unpublished”<br>
-31 . MG100176 : “unpublished”<br>
-32 . MG100175 : “unpublished”<br>
-33 . MG100174 : “unpublished”<br>
-34 . MG100173 : “unpublished”<br>
-35 . MG100172 : “unpublished”<br>
-36 . MG100171 : “unpublished”<br>
-37 . MG100170 : “unpublished”<br>
-38 . MG100169 : “unpublished”<br>
-39 . MG100168 : “unpublished”<br>
-40 . MG100167 : “unpublished”<br>
-41 . MG100166 : “unpublished”<br>
-42 . MG100165 : “unpublished”<br>
-43 . MG100164 : “unpublished”<br>
-44 . MG100163 : “unpublished”<br>
-45 . MG100162 : “unpublished”<br>
-46 . MG100161 : “unpublished”<br>
-47 . MG100160 : “unpublished”<br>
-48 . MG100159 : “unpublished”<br>
-49 . MG100158 : “unpublished”<br>
-50 . MG100157 : “unpublished”<br>
-51 . MG100156 : “unpublished”<br>
-52 . MG100155 : “unpublished”<br>
-53 . MG100154 : “unpublished”<br>
-54 . MG100153 : “unpublished”<br>
-55 . MG100152 : “unpublished”<br>
-56 . MG100151 : “unpublished”<br>
-57 . MG100150 : “unpublished”<br>
-58 . MG100149 : “unpublished”<br>
-59 . MG100148 : “unpublished”<br>
-60 . MG100147 : “unpublished”<br>
-61 . MG100146 : “unpublished”<br>
-62 . MG100145 : “unpublished”<br>
-63 . MG100144 : “unpublished”<br>
-64 . MG100143 : “unpublished”<br>
-65 . MG100142 : “unpublished”<br>
-66 . MG100141 : “unpublished”<br>
-67 . MG100140 : “unpublished”<br>
-68 . MG100139 : “unpublished”<br>
-69 . MG100138 : “unpublished”<br>
-70 . MG100137 : “unpublished”<br>
-71 . MG100136 : “unpublished”<br>
-72 . MG100134 : “unpublished”<br>
-73 . MG100133 : “unpublished”<br>
-74 . MG100132 : “unpublished”<br>
-75 . MG100131 : “unpublished”<br>
-76 . MG100130 : “unpublished”<br>
-77 . MG100129 : “unpublished”<br>
-78 . MG100128 : “unpublished”<br>
-79 . MG100127 : “unpublished”<br>
-80 . MG100126 : “unpublished”<br>
-81 . MG100125 : “unpublished”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="hansenlbs_2018_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
@@ -599,111 +493,18 @@
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_a_metadata-tsv" class="anchor"></a>TettAJ_2019_a_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
-<div id="pmid-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#pmid-1" class="anchor"></a>PMID</h3>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]{8}|NA<br>
-</li>
-<li>
-<em>description</em>: Identifier of the main publication in PubMed.</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . C16-20002-TZ : “unpublished”<br>
-2 . C16-20003-TZ : “unpublished”<br>
-3 . C16-20005-TZ : “unpublished”<br>
-4 . C16-20070-TZ : “unpublished”<br>
-5 . C16-20071-TZ : “unpublished”<br>
-6 . C16-20072-TZ : “unpublished”<br>
-7 . C16-20073-TZ : “unpublished”<br>
-8 . C16-20117-TZ : “unpublished”<br>
-9 . C16-20118-TZ : “unpublished”<br>
-10 . C16-20119-TZ : “unpublished”<br>
-11 . C16-20123-TZ : “unpublished”<br>
-12 . C16-20135-TZ : “unpublished”<br>
-13 . C16-20152-TZ : “unpublished”<br>
-14 . C16-20153-TZ : “unpublished”<br>
-15 . C16-20197-TZ : “unpublished”<br>
-16 . C16-20198-TZ : “unpublished”<br>
-17 . C16-20211-TZ : “unpublished”<br>
-18 . C16-20212-TZ : “unpublished”<br>
-19 . C16-20215-TZ : “unpublished”<br>
-20 . C16-20237-TZ : “unpublished”<br>
-21 . C16-20238-TZ : “unpublished”<br>
-22 . C16-20246-TZ : “unpublished”<br>
-23 . C16-20247-TZ : “unpublished”<br>
-24 . C16-20248-TZ : “unpublished”<br>
-25 . C16-20340-TZ : “unpublished”<br>
-26 . C16-20341-TZ : “unpublished”<br>
-27 . C16-20345-TZ : “unpublished”<br>
-28 . C16-20346-TZ : “unpublished”<br>
-29 . C16-20347-TZ : “unpublished”<br>
-30 . C16-20371-TZ : “unpublished”<br>
-31 . C16-20372-TZ : “unpublished”<br>
-32 . C16-20373-TZ : “unpublished”<br>
-33 . C16-20374-TZ : “unpublished”<br>
-34 . C16-20415-TZ : “unpublished”<br>
-35 . C16-20416-TZ : “unpublished”<br>
-36 . C16-20417-TZ : “unpublished”<br>
-37 . C16-20437-TZ : “unpublished”<br>
-38 . C16-20438-TZ : “unpublished”<br>
-39 . C16-20439-TZ : “unpublished”<br>
-40 . C16-20440-TZ : “unpublished”<br>
-41 . C16-20441-TZ : “unpublished”<br>
-42 . C16-20470-TZ : “unpublished”<br>
-43 . C16-20471-TZ : “unpublished”<br>
-44 . C16-20473-TZ : “unpublished”<br>
-45 . C16-20474-TZ : “unpublished”<br>
-46 . C16-20475-TZ : “unpublished”<br>
-47 . C16-20491-TZ : “unpublished”<br>
-48 . C16-20492-TZ : “unpublished”<br>
-49 . C16-20493-TZ : “unpublished”<br>
-50 . C16-20494-TZ : “unpublished”<br>
-51 . C16-20548-TZ : “unpublished”<br>
-52 . C16-20549-TZ : “unpublished”<br>
-53 . C16-20550-TZ : “unpublished”<br>
-54 . C16-20551-TZ : “unpublished”<br>
-55 . C16-20554-TZ : “unpublished”<br>
-56 . C16-20557-TZ : “unpublished”<br>
-57 . C16-20558-TZ : “unpublished”<br>
-58 . C16-20625-TZ : “unpublished”<br>
-59 . C16-20626-TZ : “unpublished”<br>
-60 . C16-20627-TZ : “unpublished”<br>
-61 . C16-20645-TZ : “unpublished”<br>
-62 . C16-20646-TZ : “unpublished”<br>
-63 . C16-20647-TZ : “unpublished”<br>
-64 . C16-20648-TZ : “unpublished”<br>
-65 . C16-20649-TZ : “unpublished”<br>
-66 . C16-20650-TZ : “unpublished”<br>
-67 . C16-20651-TZ : “unpublished”<br>
-68 . C16-20652-TZ : “unpublished”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div id="tettaj_2019_b_metadata-tsv" class="section level1">
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_b_metadata-tsv" class="anchor"></a>TettAJ_2019_b_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-2" class="section level2">
+<div id="entry-errors" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
-<div id="pmid-2" class="section level3">
+<a href="#entry-errors" class="anchor"></a>Entry errors</h2>
+<div id="pmid" class="section level3">
 <h3 class="hasAnchor">
-<a href="#pmid-2" class="anchor"></a>PMID</h3>
+<a href="#pmid" class="anchor"></a>PMID</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -773,12 +574,12 @@
 <h1 class="hasAnchor">
 <a href="#tettaj_2019_c_metadata-tsv" class="anchor"></a>TettAJ_2019_c_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-3" class="section level2">
+<div id="entry-errors-1" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-3" class="anchor"></a>Entry errors</h2>
-<div id="pmid-3" class="section level3">
+<a href="#entry-errors-1" class="anchor"></a>Entry errors</h2>
+<div id="pmid-1" class="section level3">
 <h3 class="hasAnchor">
-<a href="#pmid-3" class="anchor"></a>PMID</h3>
+<a href="#pmid-1" class="anchor"></a>PMID</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -902,12 +703,12 @@
 <h1 class="hasAnchor">
 <a href="#wenc_2017_metadata-tsv" class="anchor"></a>WenC_2017_metadata.tsv</h1>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv">edit</a> this file directly on github.com.</p>
-<div id="entry-errors-4" class="section level2">
+<div id="entry-errors-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#entry-errors-4" class="anchor"></a>Entry errors</h2>
-<div id="pmid-4" class="section level3">
+<a href="#entry-errors-2" class="anchor"></a>Entry errors</h2>
+<div id="pmid-2" class="section level3">
 <h3 class="hasAnchor">
-<a href="#pmid-4" class="anchor"></a>PMID</h3>
+<a href="#pmid-2" class="anchor"></a>PMID</h3>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
