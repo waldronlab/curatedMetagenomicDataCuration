@@ -1,93 +1,93 @@
-sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
-AS43_12	AS43	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	23705858	2394291658	101	101	Paolo_Manghi	SRR2155180
-AS43_18	AS43	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	10797144	1090511544	101	101	Paolo_Manghi	SRR2155323
-AS43_24	AS43	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	19171802	1936352002	101	101	Paolo_Manghi	SRR2155339
-AS43_3	AS43	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	42654404	4308094804	101	101	Paolo_Manghi	SRR2155358
-AS43_6	AS43	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	24033338	2427367138	101	101	Paolo_Manghi	SRR2155377
-AS44_0	AS44	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	114595596	11574155196	101	101	Paolo_Manghi	SRR2155482
-AS44_12	AS44	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	21105482	2131653682	101	101	Paolo_Manghi	SRR2155181
-AS44_18	AS44	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	13482870	1361769870	101	101	Paolo_Manghi	SRR2155324
-AS44_24	AS44	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	19656430	1985299430	101	101	Paolo_Manghi	SRR2155340
-AS44_3	AS44	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	20337444	2054081844	101	101	Paolo_Manghi	SRR2155359
-AS44_6	AS44	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	13972994	1411272394	101	101	Paolo_Manghi	SRR2155379
-AS45_0	AS45	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	20393196	2059712796	101	101	Paolo_Manghi	SRR2155174
-AS45_12	AS45	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	22233550	2245588550	101	101	Paolo_Manghi	SRR2155182
-AS45_24	AS45	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	19515066	1971021666	101	101	Paolo_Manghi	SRR2155341
-AS45_3	AS45	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	14599374	1474536774	101	101	Paolo_Manghi	SRR2155360
-AS45_6	AS45	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	25846708	2610517508	101	101	Paolo_Manghi	SRR2155380
-AS50_0	AS50	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	19630980	1982728980	101	101	Paolo_Manghi	SRR2155306
-AS50_12	AS50	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	11132144	1124346544	101	101	Paolo_Manghi	SRR2155183
-AS50_18	AS50	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	21107554	2131862954	101	101	Paolo_Manghi	SRR2155325
-AS50_24	AS50	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	17345286	1751873886	101	101	Paolo_Manghi	SRR2155343
-AS50_3	AS50	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	21252456	2146498056	101	101	Paolo_Manghi	SRR2155361
-AS50_6	AS50	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20516666	2072183266	101	101	Paolo_Manghi	SRR2155381
-AS51_0	AS51	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	19527640	1972291640	101	101	Paolo_Manghi	SRR2155319
-AS51_12	AS51	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	17987202	1816707402	101	101	Paolo_Manghi	SRR2155184
-AS51_18	AS51	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	19386438	1958030238	101	101	Paolo_Manghi	SRR2155326
-AS51_24	AS51	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	8075266	815601866	101	101	Paolo_Manghi	SRR2155344
-AS51_3	AS51	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	16680962	1684777162	101	101	Paolo_Manghi	SRR2155362
-AS51_6	AS51	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	15221220	1537343220	101	101	Paolo_Manghi	SRR2155383
-AS53_0	AS53	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	18799470	1898746470	101	101	Paolo_Manghi	SRR2155333
-AS53_12	AS53	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	49669786	5016648386	101	101	Paolo_Manghi	SRR2155307
-AS53_18	AS53	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	26871026	2713973626	101	101	Paolo_Manghi	SRR2155327
-AS53_24	AS53	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	26687296	2695416896	101	101	Paolo_Manghi	SRR2155346
-AS53_3	AS53	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	11216744	1132891144	101	101	Paolo_Manghi	SRR2155365
-AS53_6	AS53	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	17892974	1807190374	101	101	Paolo_Manghi	SRR2155384
-AS56_0	AS56	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	25606732	2586279932	101	101	Paolo_Manghi	SRR2155345
-AS56_12	AS56	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	15861378	1601999178	101	101	Paolo_Manghi	SRR2155308
-AS56_18	AS56	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	42182396	4260421996	101	101	Paolo_Manghi	SRR2155328
-AS56_24	AS56	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	22198328	2242031128	101	101	Paolo_Manghi	SRR2155347
-AS56_3	AS56	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	8715846	880300446	101	101	Paolo_Manghi	SRR2155367
-AS56_6	AS56	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	19179942	1937174142	101	101	Paolo_Manghi	SRR2155385
-AS58_0	AS58	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	21685500	2190235500	101	101	Paolo_Manghi	SRR2155356
-AS58_12	AS58	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	14107300	1424837300	101	101	Paolo_Manghi	SRR2155309
-AS58_18	AS58	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	14567512	1471318712	101	101	Paolo_Manghi	SRR2155330
-AS58_24	AS58	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	18026088	1820634888	101	101	Paolo_Manghi	SRR2155348
-AS58_3	AS58	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	19209124	1940121524	101	101	Paolo_Manghi	SRR2155368
-AS58_6	AS58	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	19876656	2007542256	101	101	Paolo_Manghi	SRR2155386
-AS60_0	AS60	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	24479434	2472422834	101	101	Paolo_Manghi	SRR2155370
-AS60_12	AS60	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	20972560	2118228560	101	101	Paolo_Manghi	SRR2155310
-AS60_18	AS60	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	21473130	2168786130	101	101	Paolo_Manghi	SRR2155331
-AS60_24	AS60	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	8554026	863956626	101	101	Paolo_Manghi	SRR2155349
-AS60_3	AS60	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	17578700	1775448700	101	101	Paolo_Manghi	SRR2155369
-AS60_6	AS60	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20941114	2115052514	101	101	Paolo_Manghi	SRR2155387
-AS61_0	AS61	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	21680024	2189682424	101	101	Paolo_Manghi	SRR2155382
-AS61_12	AS61	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	38801244	3918925644	101	101	Paolo_Manghi	SRR2155311
-AS61_18	AS61	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	46424224	4688846624	101	101	Paolo_Manghi	SRR2155332
-AS61_24	AS61	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	16184464	1634630864	101	101	Paolo_Manghi	SRR2155350
-AS61_6	AS61	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20931172	2114048372	101	101	Paolo_Manghi	SRR2155388
-AS62_0	AS62	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	17158122	1732970322	101	101	Paolo_Manghi	SRR2155394
-AS62_12	AS62	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	21282896	2149572496	101	101	Paolo_Manghi	SRR2155312
-AS62_18	AS62	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	7006054	707611454	101	101	Paolo_Manghi	SRR2155334
-AS62_24	AS62	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	17727048	1790431848	101	101	Paolo_Manghi	SRR2155351
-AS62_3	AS62	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	19569766	1976546366	101	101	Paolo_Manghi	SRR2155371
-AS62_6	AS62	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	22272946	2249567546	101	101	Paolo_Manghi	SRR2155390
-AS63_0	AS63	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	19140596	1933200196	101	101	Paolo_Manghi	SRR2155175
-AS63_12	AS63	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	17133334	1730466734	101	101	Paolo_Manghi	SRR2155314
-AS63_18	AS63	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	13411540	1354565540	101	101	Paolo_Manghi	SRR2155335
-AS63_24	AS63	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	24742978	2499040778	101	101	Paolo_Manghi	SRR2155352
-AS63_3	AS63	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	27675098	2795184898	101	101	Paolo_Manghi	SRR2155372
-AS63_6	AS63	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	23542478	2377790278	101	101	Paolo_Manghi	SRR2155391
-AS64_0	AS64	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	22746778	2297424578	101	101	Paolo_Manghi	SRR2155176
-AS64_12	AS64	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	11819104	1193729504	101	101	Paolo_Manghi	SRR2155315
-AS64_18	AS64	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	17825442	1800369642	101	101	Paolo_Manghi	SRR2155336
-AS64_24	AS64	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	27202346	2747436946	101	101	Paolo_Manghi	SRR2155353
-AS64_3	AS64	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	23014264	2324440664	101	101	Paolo_Manghi	SRR2155373
-AS64_6	AS64	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20882144	2109096544	101	101	Paolo_Manghi	SRR2155392
-AS65_0	AS65	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	10849876	1095837476	101	101	Paolo_Manghi	SRR2155177
-AS65_12	AS65	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	19183014	1937484414	101	101	Paolo_Manghi	SRR2155317
-AS65_18	AS65	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	23264318	2349696118	101	101	Paolo_Manghi	SRR2155337
-AS65_24	AS65	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	16525026	1669027626	101	101	Paolo_Manghi	SRR2155354
-AS65_3	AS65	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	20427890	2063216890	101	101	Paolo_Manghi	SRR2155374
-AS65_6	AS65	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	22010020	2223012020	101	101	Paolo_Manghi	SRR2155393
-AS66_0	AS66	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	25687932	2594481132	101	101	Paolo_Manghi	SRR2155178
-AS66_12	AS66	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	25380188	2563398988	101	101	Paolo_Manghi	SRR2155318
-AS66_18	AS66	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	54135726	5467708326	101	101	Paolo_Manghi	SRR2155338
-AS66_24	AS66	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	28443652	2872808852	101	101	Paolo_Manghi	SRR2155355
-AS66_3	AS66	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	23266764	2349943164	101	101	Paolo_Manghi	SRR2155375
-AS66_6	AS66	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	7798726	787671326	101	101	Paolo_Manghi	SRR2155395
-AS68_0	AS68	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	26918696	2718788296	101	101	Paolo_Manghi	SRR2155179
-AS68_12	AS68	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	15921936	1608115536	101	101	Paolo_Manghi	SRR2155321
-AS68_24	AS68	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	22520052	2274525252	101	101	Paolo_Manghi	SRR2155357
-AS68_3	AS68	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	17721426	1789864026	101	101	Paolo_Manghi	SRR2155376
-AS68_6	AS68	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	17488182	1766306382	101	101	Paolo_Manghi	SRR2155396
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	study_name
+AS43_12	AS43	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	23705858	2394291658	101	101	Paolo_Manghi	SRR2155180	LouisS_2016
+AS43_18	AS43	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	10797144	1090511544	101	101	Paolo_Manghi	SRR2155323	LouisS_2016
+AS43_24	AS43	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	19171802	1936352002	101	101	Paolo_Manghi	SRR2155339	LouisS_2016
+AS43_3	AS43	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	42654404	4308094804	101	101	Paolo_Manghi	SRR2155358	LouisS_2016
+AS43_6	AS43	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	24033338	2427367138	101	101	Paolo_Manghi	SRR2155377	LouisS_2016
+AS44_0	AS44	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	114595596	11574155196	101	101	Paolo_Manghi	SRR2155482	LouisS_2016
+AS44_12	AS44	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	21105482	2131653682	101	101	Paolo_Manghi	SRR2155181	LouisS_2016
+AS44_18	AS44	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	13482870	1361769870	101	101	Paolo_Manghi	SRR2155324	LouisS_2016
+AS44_24	AS44	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	19656430	1985299430	101	101	Paolo_Manghi	SRR2155340	LouisS_2016
+AS44_3	AS44	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	20337444	2054081844	101	101	Paolo_Manghi	SRR2155359	LouisS_2016
+AS44_6	AS44	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	13972994	1411272394	101	101	Paolo_Manghi	SRR2155379	LouisS_2016
+AS45_0	AS45	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	20393196	2059712796	101	101	Paolo_Manghi	SRR2155174	LouisS_2016
+AS45_12	AS45	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	22233550	2245588550	101	101	Paolo_Manghi	SRR2155182	LouisS_2016
+AS45_24	AS45	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	19515066	1971021666	101	101	Paolo_Manghi	SRR2155341	LouisS_2016
+AS45_3	AS45	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	14599374	1474536774	101	101	Paolo_Manghi	SRR2155360	LouisS_2016
+AS45_6	AS45	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	25846708	2610517508	101	101	Paolo_Manghi	SRR2155380	LouisS_2016
+AS50_0	AS50	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	19630980	1982728980	101	101	Paolo_Manghi	SRR2155306	LouisS_2016
+AS50_12	AS50	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	11132144	1124346544	101	101	Paolo_Manghi	SRR2155183	LouisS_2016
+AS50_18	AS50	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	21107554	2131862954	101	101	Paolo_Manghi	SRR2155325	LouisS_2016
+AS50_24	AS50	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	17345286	1751873886	101	101	Paolo_Manghi	SRR2155343	LouisS_2016
+AS50_3	AS50	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	21252456	2146498056	101	101	Paolo_Manghi	SRR2155361	LouisS_2016
+AS50_6	AS50	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20516666	2072183266	101	101	Paolo_Manghi	SRR2155381	LouisS_2016
+AS51_0	AS51	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	19527640	1972291640	101	101	Paolo_Manghi	SRR2155319	LouisS_2016
+AS51_12	AS51	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	17987202	1816707402	101	101	Paolo_Manghi	SRR2155184	LouisS_2016
+AS51_18	AS51	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	19386438	1958030238	101	101	Paolo_Manghi	SRR2155326	LouisS_2016
+AS51_24	AS51	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	8075266	815601866	101	101	Paolo_Manghi	SRR2155344	LouisS_2016
+AS51_3	AS51	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	16680962	1684777162	101	101	Paolo_Manghi	SRR2155362	LouisS_2016
+AS51_6	AS51	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	15221220	1537343220	101	101	Paolo_Manghi	SRR2155383	LouisS_2016
+AS53_0	AS53	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	18799470	1898746470	101	101	Paolo_Manghi	SRR2155333	LouisS_2016
+AS53_12	AS53	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	49669786	5016648386	101	101	Paolo_Manghi	SRR2155307	LouisS_2016
+AS53_18	AS53	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	26871026	2713973626	101	101	Paolo_Manghi	SRR2155327	LouisS_2016
+AS53_24	AS53	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	26687296	2695416896	101	101	Paolo_Manghi	SRR2155346	LouisS_2016
+AS53_3	AS53	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	11216744	1132891144	101	101	Paolo_Manghi	SRR2155365	LouisS_2016
+AS53_6	AS53	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	17892974	1807190374	101	101	Paolo_Manghi	SRR2155384	LouisS_2016
+AS56_0	AS56	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	25606732	2586279932	101	101	Paolo_Manghi	SRR2155345	LouisS_2016
+AS56_12	AS56	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	15861378	1601999178	101	101	Paolo_Manghi	SRR2155308	LouisS_2016
+AS56_18	AS56	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	42182396	4260421996	101	101	Paolo_Manghi	SRR2155328	LouisS_2016
+AS56_24	AS56	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	22198328	2242031128	101	101	Paolo_Manghi	SRR2155347	LouisS_2016
+AS56_3	AS56	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	8715846	880300446	101	101	Paolo_Manghi	SRR2155367	LouisS_2016
+AS56_6	AS56	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	19179942	1937174142	101	101	Paolo_Manghi	SRR2155385	LouisS_2016
+AS58_0	AS58	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	21685500	2190235500	101	101	Paolo_Manghi	SRR2155356	LouisS_2016
+AS58_12	AS58	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	14107300	1424837300	101	101	Paolo_Manghi	SRR2155309	LouisS_2016
+AS58_18	AS58	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	14567512	1471318712	101	101	Paolo_Manghi	SRR2155330	LouisS_2016
+AS58_24	AS58	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	18026088	1820634888	101	101	Paolo_Manghi	SRR2155348	LouisS_2016
+AS58_3	AS58	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	19209124	1940121524	101	101	Paolo_Manghi	SRR2155368	LouisS_2016
+AS58_6	AS58	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	19876656	2007542256	101	101	Paolo_Manghi	SRR2155386	LouisS_2016
+AS60_0	AS60	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	24479434	2472422834	101	101	Paolo_Manghi	SRR2155370	LouisS_2016
+AS60_12	AS60	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	20972560	2118228560	101	101	Paolo_Manghi	SRR2155310	LouisS_2016
+AS60_18	AS60	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	21473130	2168786130	101	101	Paolo_Manghi	SRR2155331	LouisS_2016
+AS60_24	AS60	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	8554026	863956626	101	101	Paolo_Manghi	SRR2155349	LouisS_2016
+AS60_3	AS60	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	17578700	1775448700	101	101	Paolo_Manghi	SRR2155369	LouisS_2016
+AS60_6	AS60	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20941114	2115052514	101	101	Paolo_Manghi	SRR2155387	LouisS_2016
+AS61_0	AS61	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	21680024	2189682424	101	101	Paolo_Manghi	SRR2155382	LouisS_2016
+AS61_12	AS61	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	38801244	3918925644	101	101	Paolo_Manghi	SRR2155311	LouisS_2016
+AS61_18	AS61	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	46424224	4688846624	101	101	Paolo_Manghi	SRR2155332	LouisS_2016
+AS61_24	AS61	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	16184464	1634630864	101	101	Paolo_Manghi	SRR2155350	LouisS_2016
+AS61_6	AS61	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20931172	2114048372	101	101	Paolo_Manghi	SRR2155388	LouisS_2016
+AS62_0	AS62	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	17158122	1732970322	101	101	Paolo_Manghi	SRR2155394	LouisS_2016
+AS62_12	AS62	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	21282896	2149572496	101	101	Paolo_Manghi	SRR2155312	LouisS_2016
+AS62_18	AS62	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	7006054	707611454	101	101	Paolo_Manghi	SRR2155334	LouisS_2016
+AS62_24	AS62	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	17727048	1790431848	101	101	Paolo_Manghi	SRR2155351	LouisS_2016
+AS62_3	AS62	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	19569766	1976546366	101	101	Paolo_Manghi	SRR2155371	LouisS_2016
+AS62_6	AS62	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	22272946	2249567546	101	101	Paolo_Manghi	SRR2155390	LouisS_2016
+AS63_0	AS63	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	19140596	1933200196	101	101	Paolo_Manghi	SRR2155175	LouisS_2016
+AS63_12	AS63	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	17133334	1730466734	101	101	Paolo_Manghi	SRR2155314	LouisS_2016
+AS63_18	AS63	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	13411540	1354565540	101	101	Paolo_Manghi	SRR2155335	LouisS_2016
+AS63_24	AS63	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	24742978	2499040778	101	101	Paolo_Manghi	SRR2155352	LouisS_2016
+AS63_3	AS63	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	27675098	2795184898	101	101	Paolo_Manghi	SRR2155372	LouisS_2016
+AS63_6	AS63	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	23542478	2377790278	101	101	Paolo_Manghi	SRR2155391	LouisS_2016
+AS64_0	AS64	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	22746778	2297424578	101	101	Paolo_Manghi	SRR2155176	LouisS_2016
+AS64_12	AS64	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	11819104	1193729504	101	101	Paolo_Manghi	SRR2155315	LouisS_2016
+AS64_18	AS64	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	17825442	1800369642	101	101	Paolo_Manghi	SRR2155336	LouisS_2016
+AS64_24	AS64	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	27202346	2747436946	101	101	Paolo_Manghi	SRR2155353	LouisS_2016
+AS64_3	AS64	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	23014264	2324440664	101	101	Paolo_Manghi	SRR2155373	LouisS_2016
+AS64_6	AS64	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	20882144	2109096544	101	101	Paolo_Manghi	SRR2155392	LouisS_2016
+AS65_0	AS65	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	10849876	1095837476	101	101	Paolo_Manghi	SRR2155177	LouisS_2016
+AS65_12	AS65	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	19183014	1937484414	101	101	Paolo_Manghi	SRR2155317	LouisS_2016
+AS65_18	AS65	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	23264318	2349696118	101	101	Paolo_Manghi	SRR2155337	LouisS_2016
+AS65_24	AS65	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	16525026	1669027626	101	101	Paolo_Manghi	SRR2155354	LouisS_2016
+AS65_3	AS65	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	20427890	2063216890	101	101	Paolo_Manghi	SRR2155374	LouisS_2016
+AS65_6	AS65	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	22010020	2223012020	101	101	Paolo_Manghi	SRR2155393	LouisS_2016
+AS66_0	AS66	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	25687932	2594481132	101	101	Paolo_Manghi	SRR2155178	LouisS_2016
+AS66_12	AS66	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	25380188	2563398988	101	101	Paolo_Manghi	SRR2155318	LouisS_2016
+AS66_18	AS66	stool	no	control	healthy	NA	adult	DEU	no	540	IlluminaHiSeq	PSP_Spin_Stool	26919743	54135726	5467708326	101	101	Paolo_Manghi	SRR2155338	LouisS_2016
+AS66_24	AS66	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	28443652	2872808852	101	101	Paolo_Manghi	SRR2155355	LouisS_2016
+AS66_3	AS66	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	23266764	2349943164	101	101	Paolo_Manghi	SRR2155375	LouisS_2016
+AS66_6	AS66	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	7798726	787671326	101	101	Paolo_Manghi	SRR2155395	LouisS_2016
+AS68_0	AS68	stool	no	control	healthy	NA	adult	DEU	no	0	IlluminaHiSeq	PSP_Spin_Stool	26919743	26918696	2718788296	101	101	Paolo_Manghi	SRR2155179	LouisS_2016
+AS68_12	AS68	stool	no	control	healthy	NA	adult	DEU	no	360	IlluminaHiSeq	PSP_Spin_Stool	26919743	15921936	1608115536	101	101	Paolo_Manghi	SRR2155321	LouisS_2016
+AS68_24	AS68	stool	no	control	healthy	NA	adult	DEU	no	720	IlluminaHiSeq	PSP_Spin_Stool	26919743	22520052	2274525252	101	101	Paolo_Manghi	SRR2155357	LouisS_2016
+AS68_3	AS68	stool	no	control	healthy	NA	adult	DEU	no	90	IlluminaHiSeq	PSP_Spin_Stool	26919743	17721426	1789864026	101	101	Paolo_Manghi	SRR2155376	LouisS_2016
+AS68_6	AS68	stool	no	control	healthy	NA	adult	DEU	no	180	IlluminaHiSeq	PSP_Spin_Stool	26919743	17488182	1766306382	101	101	Paolo_Manghi	SRR2155396	LouisS_2016

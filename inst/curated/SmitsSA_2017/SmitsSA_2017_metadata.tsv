@@ -1,41 +1,41 @@
-sample_id	subject_id	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	body_site	curator	NCBI_accession
-TZ_81781	TZ_81781	no	control	healthy	40.0	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	3058700	461863700	151	151	stool	Valentina_Giunchiglia	SRR5763462
-TZ_42864	TZ_42864	no	control	healthy	35.0	adult	male	TZA	sengele	yes	IlluminaHiSeq	28839072	2730714	412337814	151	151	stool	Valentina_Giunchiglia	SRR5763463
-TZ_76219	TZ_76219	no	control	healthy	40.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3107754	469270854	151	151	stool	Valentina_Giunchiglia	SRR5763466
-TZ_70090	TZ_70090	no	control	healthy	55.0	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	2534759	382748609	151	151	stool	Valentina_Giunchiglia	SRR5763458
-TZ_24827	TZ_24827	no	control	healthy	49.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	4415841	666791991	151	151	stool	Valentina_Giunchiglia	SRR5763457
-TZ_61717	TZ_61717	no	control	healthy	12.0	schoolage	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3788801	572108951	151	151	stool	Valentina_Giunchiglia	SRR5763483
-TZ_12739	TZ_12739	no	control	healthy	48.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3231702	487987002	151	151	stool	Valentina_Giunchiglia	SRR5763482
-TZ_14139	TZ_14139	no	control	healthy	6.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3060072	462070872	151	151	stool	Valentina_Giunchiglia	SRR5763481
-TZ_21618	TZ_21618	no	control	healthy	4.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3639320	549537320	151	151	stool	Valentina_Giunchiglia	SRR5763480
-TZ_39371	TZ_39371	no	control	healthy	40.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3327385	502435135	151	151	stool	Valentina_Giunchiglia	SRR5763479
-TZ_40311	TZ_40311	no	control	healthy	NA	adult	male	TZA	sengele	yes	IlluminaHiSeq	28839072	2346792	354365592	151	151	stool	Valentina_Giunchiglia	SRR5763478
-TZ_47979	TZ_47979	no	control	healthy	NA	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	6308608	952599808	151	151	stool	Valentina_Giunchiglia	SRR5763445
-TZ_83627	TZ_83627	no	control	healthy	55.0	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	4333880	654415880	151	151	stool	Valentina_Giunchiglia	SRR5763476
-TZ_60579	TZ_60579	no	control	healthy	35.0	adult	male	TZA	sengele	yes	IlluminaHiSeq	28839072	4533526	684562426	151	151	stool	Valentina_Giunchiglia	SRR5763475
-TZ_86771	TZ_86771	no	control	healthy	32.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3988200	602218200	151	151	stool	Valentina_Giunchiglia	SRR5763474
-TZ_65172	TZ_65172	no	control	healthy	9.0	child	male	TZA	sengele	yes	IlluminaHiSeq	28839072	13453019	2031405869	151	151	stool	Valentina_Giunchiglia	SRR5763453
-TZ_65642	TZ_65642	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	18825909	2842712259	151	151	stool	Valentina_Giunchiglia	SRR5763454
-TZ_73414	TZ_73414	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	12450120	1879968120	151	151	stool	Valentina_Giunchiglia	SRR5763451
-TZ_83893	TZ_83893	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	7688381	1160945531	151	151	stool	Valentina_Giunchiglia	SRR5763452
-TZ_41014	TZ_41014	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	9168719	1384476569	151	151	stool	Valentina_Giunchiglia	SRR5763449
-TZ_10742	TZ_10742	no	control	healthy	NA	adult	NA	TZA	sengele	yes	IlluminaHiSeq	28839072	7509099	1133873949	151	151	stool	Valentina_Giunchiglia	SRR5763450
-TZ_67706	TZ_67706	no	control	healthy	NA	adult	NA	TZA	sengele	yes	IlluminaHiSeq	28839072	6218173	938944123	151	151	stool	Valentina_Giunchiglia	SRR5763447
-TZ_21460	TZ_21460	no	control	healthy	NA	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3349082	505711382	151	151	stool	Valentina_Giunchiglia	SRR5763448
-TZ_90808	TZ_90808	no	control	healthy	33.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	10427584	1574565184	151	151	stool	Valentina_Giunchiglia	SRR5763455
-TZ_16581	TZ_16581	no	control	healthy	48.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	2552808	385474008	151	151	stool	Valentina_Giunchiglia	SRR5763456
-TZ_42041	TZ_42041	no	control	healthy	7.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	4625372	698431172	151	151	stool	Valentina_Giunchiglia	SRR5763473
-TZ_99300	TZ_99300	no	control	healthy	5.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3349152	505721952	151	151	stool	Valentina_Giunchiglia	SRR5763472
-TZ_27689	TZ_27689	no	control	healthy	30.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	5682209	858013559	151	151	stool	Valentina_Giunchiglia	SRR5763484
-TZ_83985	TZ_83985	no	control	healthy	49.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	2633890	397717390	151	151	stool	Valentina_Giunchiglia	SRR5763467
-TZ_83788	TZ_83788	no	control	healthy	13.0	schoolage	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	4736745	715248495	151	151	stool	Valentina_Giunchiglia	SRR5763469
-TZ_25806	TZ_25806	no	control	healthy	40.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	2111411	318823061	151	151	stool	Valentina_Giunchiglia	SRR5763468
-TZ_43638	TZ_43638	no	control	healthy	35.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3825493	577649443	151	151	stool	Valentina_Giunchiglia	SRR5763471
-TZ_38244	TZ_38244	no	control	healthy	13.0	schoolage	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	2218343	334969793	151	151	stool	Valentina_Giunchiglia	SRR5763470
-TZ_37609	TZ_37609	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	3970559	599554409	151	151	stool	Valentina_Giunchiglia	SRR5763460
-TZ_91827	TZ_91827	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	2830630	427425130	151	151	stool	Valentina_Giunchiglia	SRR5763477
-TZ_87532	TZ_87532	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	3787087	571850137	151	151	stool	Valentina_Giunchiglia	SRR5763465
-TZ_86768	TZ_86768	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	4182875	631614125	151	151	stool	Valentina_Giunchiglia	SRR5763459
-TZ_93321	TZ_93321	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	11081380	1673288380	151	151	stool	Valentina_Giunchiglia	SRR5763446
-TZ_29321	TZ_29321	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	2578936	389419336	151	151	stool	Valentina_Giunchiglia	SRR5763464
-TZ_39227	TZ_39227	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	3234209	488365559	151	151	stool	Valentina_Giunchiglia	SRR5763461
+sample_id	subject_id	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	body_site	curator	NCBI_accession	study_name
+TZ_81781	TZ_81781	no	control	healthy	40.0	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	3058700	461863700	151	151	stool	Valentina_Giunchiglia	SRR5763462	SmitsSA_2017
+TZ_42864	TZ_42864	no	control	healthy	35.0	adult	male	TZA	sengele	yes	IlluminaHiSeq	28839072	2730714	412337814	151	151	stool	Valentina_Giunchiglia	SRR5763463	SmitsSA_2017
+TZ_76219	TZ_76219	no	control	healthy	40.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3107754	469270854	151	151	stool	Valentina_Giunchiglia	SRR5763466	SmitsSA_2017
+TZ_70090	TZ_70090	no	control	healthy	55.0	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	2534759	382748609	151	151	stool	Valentina_Giunchiglia	SRR5763458	SmitsSA_2017
+TZ_24827	TZ_24827	no	control	healthy	49.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	4415841	666791991	151	151	stool	Valentina_Giunchiglia	SRR5763457	SmitsSA_2017
+TZ_61717	TZ_61717	no	control	healthy	12.0	schoolage	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3788801	572108951	151	151	stool	Valentina_Giunchiglia	SRR5763483	SmitsSA_2017
+TZ_12739	TZ_12739	no	control	healthy	48.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3231702	487987002	151	151	stool	Valentina_Giunchiglia	SRR5763482	SmitsSA_2017
+TZ_14139	TZ_14139	no	control	healthy	6.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3060072	462070872	151	151	stool	Valentina_Giunchiglia	SRR5763481	SmitsSA_2017
+TZ_21618	TZ_21618	no	control	healthy	4.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3639320	549537320	151	151	stool	Valentina_Giunchiglia	SRR5763480	SmitsSA_2017
+TZ_39371	TZ_39371	no	control	healthy	40.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3327385	502435135	151	151	stool	Valentina_Giunchiglia	SRR5763479	SmitsSA_2017
+TZ_40311	TZ_40311	no	control	healthy	NA	adult	male	TZA	sengele	yes	IlluminaHiSeq	28839072	2346792	354365592	151	151	stool	Valentina_Giunchiglia	SRR5763478	SmitsSA_2017
+TZ_47979	TZ_47979	no	control	healthy	NA	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	6308608	952599808	151	151	stool	Valentina_Giunchiglia	SRR5763445	SmitsSA_2017
+TZ_83627	TZ_83627	no	control	healthy	55.0	adult	female	TZA	sengele	yes	IlluminaHiSeq	28839072	4333880	654415880	151	151	stool	Valentina_Giunchiglia	SRR5763476	SmitsSA_2017
+TZ_60579	TZ_60579	no	control	healthy	35.0	adult	male	TZA	sengele	yes	IlluminaHiSeq	28839072	4533526	684562426	151	151	stool	Valentina_Giunchiglia	SRR5763475	SmitsSA_2017
+TZ_86771	TZ_86771	no	control	healthy	32.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3988200	602218200	151	151	stool	Valentina_Giunchiglia	SRR5763474	SmitsSA_2017
+TZ_65172	TZ_65172	no	control	healthy	9.0	child	male	TZA	sengele	yes	IlluminaHiSeq	28839072	13453019	2031405869	151	151	stool	Valentina_Giunchiglia	SRR5763453	SmitsSA_2017
+TZ_65642	TZ_65642	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	18825909	2842712259	151	151	stool	Valentina_Giunchiglia	SRR5763454	SmitsSA_2017
+TZ_73414	TZ_73414	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	12450120	1879968120	151	151	stool	Valentina_Giunchiglia	SRR5763451	SmitsSA_2017
+TZ_83893	TZ_83893	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	7688381	1160945531	151	151	stool	Valentina_Giunchiglia	SRR5763452	SmitsSA_2017
+TZ_41014	TZ_41014	no	control	healthy	NA	adult	NA	TZA	hukamako	yes	IlluminaHiSeq	28839072	9168719	1384476569	151	151	stool	Valentina_Giunchiglia	SRR5763449	SmitsSA_2017
+TZ_10742	TZ_10742	no	control	healthy	NA	adult	NA	TZA	sengele	yes	IlluminaHiSeq	28839072	7509099	1133873949	151	151	stool	Valentina_Giunchiglia	SRR5763450	SmitsSA_2017
+TZ_67706	TZ_67706	no	control	healthy	NA	adult	NA	TZA	sengele	yes	IlluminaHiSeq	28839072	6218173	938944123	151	151	stool	Valentina_Giunchiglia	SRR5763447	SmitsSA_2017
+TZ_21460	TZ_21460	no	control	healthy	NA	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3349082	505711382	151	151	stool	Valentina_Giunchiglia	SRR5763448	SmitsSA_2017
+TZ_90808	TZ_90808	no	control	healthy	33.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	10427584	1574565184	151	151	stool	Valentina_Giunchiglia	SRR5763455	SmitsSA_2017
+TZ_16581	TZ_16581	no	control	healthy	48.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	2552808	385474008	151	151	stool	Valentina_Giunchiglia	SRR5763456	SmitsSA_2017
+TZ_42041	TZ_42041	no	control	healthy	7.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	4625372	698431172	151	151	stool	Valentina_Giunchiglia	SRR5763473	SmitsSA_2017
+TZ_99300	TZ_99300	no	control	healthy	5.0	child	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	3349152	505721952	151	151	stool	Valentina_Giunchiglia	SRR5763472	SmitsSA_2017
+TZ_27689	TZ_27689	no	control	healthy	30.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	5682209	858013559	151	151	stool	Valentina_Giunchiglia	SRR5763484	SmitsSA_2017
+TZ_83985	TZ_83985	no	control	healthy	49.0	adult	female	TZA	hukamako	yes	IlluminaHiSeq	28839072	2633890	397717390	151	151	stool	Valentina_Giunchiglia	SRR5763467	SmitsSA_2017
+TZ_83788	TZ_83788	no	control	healthy	13.0	schoolage	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	4736745	715248495	151	151	stool	Valentina_Giunchiglia	SRR5763469	SmitsSA_2017
+TZ_25806	TZ_25806	no	control	healthy	40.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	2111411	318823061	151	151	stool	Valentina_Giunchiglia	SRR5763468	SmitsSA_2017
+TZ_43638	TZ_43638	no	control	healthy	35.0	adult	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	3825493	577649443	151	151	stool	Valentina_Giunchiglia	SRR5763471	SmitsSA_2017
+TZ_38244	TZ_38244	no	control	healthy	13.0	schoolage	male	TZA	hukamako	yes	IlluminaHiSeq	28839072	2218343	334969793	151	151	stool	Valentina_Giunchiglia	SRR5763470	SmitsSA_2017
+TZ_37609	TZ_37609	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	3970559	599554409	151	151	stool	Valentina_Giunchiglia	SRR5763460	SmitsSA_2017
+TZ_91827	TZ_91827	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	2830630	427425130	151	151	stool	Valentina_Giunchiglia	SRR5763477	SmitsSA_2017
+TZ_87532	TZ_87532	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	3787087	571850137	151	151	stool	Valentina_Giunchiglia	SRR5763465	SmitsSA_2017
+TZ_86768	TZ_86768	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	4182875	631614125	151	151	stool	Valentina_Giunchiglia	SRR5763459	SmitsSA_2017
+TZ_93321	TZ_93321	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	11081380	1673288380	151	151	stool	Valentina_Giunchiglia	SRR5763446	SmitsSA_2017
+TZ_29321	TZ_29321	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	2578936	389419336	151	151	stool	Valentina_Giunchiglia	SRR5763464	SmitsSA_2017
+TZ_39227	TZ_39227	no	control	healthy	NA	adult	NA	TZA	NA	yes	IlluminaHiSeq	28839072	3234209	488365559	151	151	stool	Valentina_Giunchiglia	SRR5763461	SmitsSA_2017

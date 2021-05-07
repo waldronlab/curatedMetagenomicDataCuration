@@ -1,293 +1,293 @@
-sample_id	subject_id	body_site	antibiotics_current_use	disease	study_condition	age_category	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	hitchip_probe_class	curator	NCBI_accession	age
-MH0001	MH0001	stool	no	healthy	control	adult	25.6	DNK	no	IlluminaHiSeq	23985870	45014922	1980656568	44	44	lpc	Paolo_Manghi	ERR321063;ERR321062	NA
-MH0002	MH0002	stool	no	healthy	control	adult	27.3	DNK	no	IlluminaHiSeq	23985870	46564054	3492304050	75	75	hpc	Paolo_Manghi	ERR321066;ERR321065;ERR321064	NA
-MH0003	MH0003	stool	no	healthy	control	adult	33.2	DNK	no	IlluminaHiSeq	23985870	50381662	3778624650	75	75	hpc	Paolo_Manghi	ERR321069;ERR321068;ERR321067	NA
-MH0004	MH0004	stool	no	healthy	control	adult	31.2	DNK	no	IlluminaHiSeq	23985870	40277026	1772189144	44	44	lpc	Paolo_Manghi	ERR321071;ERR321070	NA
-MH0005	MH0005	stool	no	healthy	control	adult	21.7	DNK	no	IlluminaHiSeq	23985870	39402462	1733708328	44	44	lpc	Paolo_Manghi	ERR321072;ERR321073	NA
-MH0006	MH0006	stool	no	healthy	control	adult	22.4	DNK	no	IlluminaHiSeq	23985870	161145974	10901069708	44	75	hpc	Paolo_Manghi	ERR321079;ERR321078;ERR321077;ERR321076;ERR321075;ERR321074	NA
-MH0007	MH0007	stool	no	healthy	control	adult	33.6	DNK	no	IlluminaHiSeq	23985870	36951094	1625848136	44	44	hpc	Paolo_Manghi	ERR321081;ERR321080	NA
-MH0008	MH0008	stool	no	healthy	control	adult	24.3	DNK	no	IlluminaHiSeq	23985870	38154256	1678787264	44	44	lpc	Paolo_Manghi	ERR321083;ERR321082	NA
-MH0009	MH0009	stool	no	healthy	control	adult	29.0	DNK	no	IlluminaHiSeq	23985870	58446132	4383459900	75	75	hpc	Paolo_Manghi	ERR321086;ERR321085;ERR321084	NA
-MH0010	MH0010	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	39167030	1723349320	44	44	lpc	Paolo_Manghi	ERR321088;ERR321087	NA
-MH0011	MH0011	stool	no	healthy	control	adult	22.3	DNK	no	IlluminaHiSeq	23985870	58492736	4386955200	75	75	hpc	Paolo_Manghi	ERR321091;ERR321090;ERR321089	NA
-MH0012	MH0012	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	186050798	13953809850	75	75	hpc	Paolo_Manghi	ERR321098;ERR321097;ERR321096;ERR321095;ERR321094;ERR321093;ERR321092	NA
-MH0013	MH0013	stool	no	healthy	control	adult	20.5	DNK	no	IlluminaHiSeq	23985870	40004484	1760197296	44	44	hpc	Paolo_Manghi	ERR321100;ERR321099	NA
-MH0014	MH0014	stool	no	healthy	control	adult	38.5	DNK	no	IlluminaHiSeq	23985870	56295656	4222174200	75	75	hpc	Paolo_Manghi	ERR321103;ERR321102;ERR321101	NA
-MH0015	MH0015	stool	no	healthy	control	adult	25.5	DNK	no	IlluminaHiSeq	23985870	33012850	1452565400	44	44	hpc	Paolo_Manghi	ERR321105;ERR321104	NA
-MH0016	MH0016	stool	no	healthy	control	adult	30.5	DNK	no	IlluminaHiSeq	23985870	54391486	4079361450	75	75	hpc	Paolo_Manghi	ERR321108;ERR321107;ERR321106	NA
-MH0017	MH0017	stool	no	healthy	control	adult	21.8	DNK	no	IlluminaHiSeq	23985870	36152668	1590717392	44	44	hpc	Paolo_Manghi	ERR321110;ERR321109	NA
-MH0018	MH0018	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	36577566	1609412904	44	44	lpc	Paolo_Manghi	ERR321112;ERR321111	NA
-MH0019	MH0019	stool	no	healthy	control	adult	20.0	DNK	no	IlluminaHiSeq	23985870	38853986	1709575384	44	44	lpc	Paolo_Manghi	ERR321114;ERR321113	NA
-MH0020	MH0020	stool	no	healthy	control	adult	33.2	DNK	no	IlluminaHiSeq	23985870	45794576	3434593200	75	75	lpc	Paolo_Manghi	ERR321116;ERR321115	NA
-MH0021	MH0021	stool	no	healthy	control	adult	25.4	DNK	no	IlluminaHiSeq	23985870	26254116	1969058700	75	75	hpc	Paolo_Manghi	ERR321118;ERR321117	NA
-MH0022	MH0022	stool	no	healthy	control	adult	24.4	DNK	no	IlluminaHiSeq	23985870	37108408	1632769952	44	44	hpc	Paolo_Manghi	ERR321120;ERR321119	NA
-MH0023	MH0023	stool	no	healthy	control	adult	31.7	DNK	no	IlluminaHiSeq	23985870	37780892	1662359248	44	44	lpc	Paolo_Manghi	ERR321122;ERR321121	NA
-MH0024	MH0024	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	54906872	3615740280	45	75	hpc	Paolo_Manghi	ERR321124;ERR321123	NA
-MH0025	MH0025	stool	no	healthy	control	adult	34.2	DNK	no	IlluminaHiSeq	23985870	55597758	3678992940	45	75	hpc	Paolo_Manghi	ERR321126;ERR321125	NA
-MH0026	MH0026	stool	no	healthy	control	adult	37.3	DNK	no	IlluminaHiSeq	23985870	37481422	2811106650	75	75	hpc	Paolo_Manghi	ERR321128;ERR321127	NA
-MH0027	MH0027	stool	no	healthy	control	adult	23.1	DNK	no	IlluminaHiSeq	23985870	32375364	1424516016	44	44	hpc	Paolo_Manghi	ERR321130;ERR321129	NA
-MH0028	MH0028	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	55147450	3618371490	45	75	hpc	Paolo_Manghi	ERR321132;ERR321131	NA
-MH0030	MH0030	stool	no	healthy	control	adult	35.2	DNK	no	IlluminaHiSeq	23985870	51598890	3399735120	45	75	hpc	Paolo_Manghi	ERR321134;ERR321133	NA
-MH0031	MH0031	stool	no	healthy	control	adult	22.3	DNK	no	IlluminaHiSeq	23985870	55512226	3653785380	45	75	hpc	Paolo_Manghi	ERR321136;ERR321135	NA
-MH0032	MH0032	stool	no	healthy	control	adult	35.3	DNK	no	IlluminaHiSeq	23985870	50094084	3279648690	45	75	hpc	Paolo_Manghi	ERR321138;ERR321137	NA
-MH0033	MH0033	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	44993368	3374502600	75	75	hpc	Paolo_Manghi	ERR321140;ERR321139	NA
-MH0034	MH0034	stool	no	healthy	control	adult	40.0	DNK	no	IlluminaHiSeq	23985870	37399690	2804976750	75	75	lpc	Paolo_Manghi	ERR321142;ERR321141	NA
-MH0035	MH0035	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	49255994	3694199550	75	75	hpc	Paolo_Manghi	ERR321144;ERR321143	NA
-MH0036	MH0036	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	47700842	3577563150	75	75	hpc	Paolo_Manghi	ERR321146;ERR321145	NA
-MH0037	MH0037	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	42030812	3152310900	75	75	hpc	Paolo_Manghi	ERR321148;ERR321147	NA
-MH0038	MH0038	stool	no	healthy	control	adult	22.0	DNK	no	IlluminaHiSeq	23985870	45459094	3409432050	75	75	hpc	Paolo_Manghi	ERR321150;ERR321149	NA
-MH0039	MH0039	stool	no	healthy	control	adult	23.1	DNK	no	IlluminaHiSeq	23985870	42715114	3203633550	75	75	hpc	Paolo_Manghi	ERR321152;ERR321151	NA
-MH0040	MH0040	stool	no	healthy	control	adult	20.9	DNK	no	IlluminaHiSeq	23985870	44247598	3318569850	75	75	hpc	Paolo_Manghi	ERR321154;ERR321153	NA
-MH0041	MH0041	stool	no	healthy	control	adult	23.2	DNK	no	IlluminaHiSeq	23985870	44369418	3327706350	75	75	hpc	Paolo_Manghi	ERR321156;ERR321155	NA
-MH0042	MH0042	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	43406328	3255474600	75	75	hpc	Paolo_Manghi	ERR321158;ERR321157	NA
-MH0043	MH0043	stool	no	healthy	control	adult	23.7	DNK	no	IlluminaHiSeq	23985870	49336750	3700256250	75	75	hpc	Paolo_Manghi	ERR321160;ERR321159	NA
-MH0044	MH0044	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	44861872	3364640400	75	75	hpc	Paolo_Manghi	ERR321162;ERR321161	NA
-MH0045	MH0045	stool	no	healthy	control	adult	25.1	DNK	no	IlluminaHiSeq	23985870	49429392	3707204400	75	75	hpc	Paolo_Manghi	ERR321164;ERR321163	NA
-MH0046	MH0046	stool	no	healthy	control	adult	23.7	DNK	no	IlluminaHiSeq	23985870	35794106	2684557950	75	75	hpc	Paolo_Manghi	ERR321166;ERR321165	NA
-MH0047	MH0047	stool	no	healthy	control	adult	30.4	DNK	no	IlluminaHiSeq	23985870	26929148	2019686100	75	75	hpc	Paolo_Manghi	ERR321168;ERR321167	NA
-MH0048	MH0048	stool	no	healthy	control	adult	19.4	DNK	no	IlluminaHiSeq	23985870	26967604	2022570300	75	75	hpc	Paolo_Manghi	ERR321170;ERR321169	NA
-MH0049	MH0049	stool	no	healthy	control	adult	35.5	DNK	no	IlluminaHiSeq	23985870	30653092	2298981900	75	75	lpc	Paolo_Manghi	ERR321172;ERR321171	NA
-MH0050	MH0050	stool	no	healthy	control	adult	25.1	DNK	no	IlluminaHiSeq	23985870	47789610	3584220750	75	75	hpc	Paolo_Manghi	ERR321174;ERR321173	NA
-MH0051	MH0051	stool	no	healthy	control	adult	23.2	DNK	no	IlluminaHiSeq	23985870	25954644	1946598300	75	75	hpc	Paolo_Manghi	ERR321176;ERR321175	NA
-MH0052	MH0052	stool	no	healthy	control	adult	33.2	DNK	no	IlluminaHiSeq	23985870	28572586	2142943950	75	75	hpc	Paolo_Manghi	ERR321178;ERR321177	NA
-MH0053	MH0053	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	43280824	3246061800	75	75	hpc	Paolo_Manghi	ERR321180;ERR321179	NA
-MH0054	MH0054	stool	no	healthy	control	adult	20.3	DNK	no	IlluminaHiSeq	23985870	42258418	3169381350	75	75	hpc	Paolo_Manghi	ERR321182;ERR321181	NA
-MH0055	MH0055	stool	no	healthy	control	adult	30.3	DNK	no	IlluminaHiSeq	23985870	47108026	3533101950	75	75	hpc	Paolo_Manghi	ERR321184;ERR321183	NA
-MH0056	MH0056	stool	no	healthy	control	adult	25.3	DNK	no	IlluminaHiSeq	23985870	49134840	3685113000	75	75	hpc	Paolo_Manghi	ERR321186;ERR321185	NA
-MH0057	MH0057	stool	no	healthy	control	adult	33.0	DNK	no	IlluminaHiSeq	23985870	43046732	3228504900	75	75	hpc	Paolo_Manghi	ERR321188;ERR321187	NA
-MH0058	MH0058	stool	no	healthy	control	adult	22.0	DNK	no	IlluminaHiSeq	23985870	49812516	3735938700	75	75	hpc	Paolo_Manghi	ERR321190;ERR321189	NA
-MH0059	MH0059	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	41014368	3076077600	75	75	hpc	Paolo_Manghi	ERR321192;ERR321191	NA
-MH0060	MH0060	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	41109952	3083246400	75	75	hpc	Paolo_Manghi	ERR321194;ERR321193	NA
-MH0061	MH0061	stool	no	healthy	control	adult	30.0	DNK	no	IlluminaHiSeq	23985870	44444004	3333300300	75	75	lpc	Paolo_Manghi	ERR321196;ERR321195	NA
-MH0062	MH0062	stool	no	healthy	control	adult	37.5	DNK	no	IlluminaHiSeq	23985870	36512292	2738421900	75	75	hpc	Paolo_Manghi	ERR321198;ERR321197	NA
-MH0063	MH0063	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	45957518	3446813850	75	75	hpc	Paolo_Manghi	ERR321200;ERR321199	NA
-MH0064	MH0064	stool	no	healthy	control	adult	23.2	DNK	no	IlluminaHiSeq	23985870	44727782	3354583650	75	75	hpc	Paolo_Manghi	ERR321202;ERR321201	NA
-MH0065	MH0065	stool	no	healthy	control	adult	28.2	DNK	no	IlluminaHiSeq	23985870	44573964	3343047300	75	75	hpc	Paolo_Manghi	ERR321204;ERR321203	NA
-MH0066	MH0066	stool	no	healthy	control	adult	20.8	DNK	no	IlluminaHiSeq	23985870	36112910	2708468250	75	75	hpc	Paolo_Manghi	ERR321206;ERR321205	NA
-MH0067	MH0067	stool	no	healthy	control	adult	21.1	DNK	no	IlluminaHiSeq	23985870	44483444	3336258300	75	75	lpc	Paolo_Manghi	ERR321208;ERR321207	NA
-MH0068	MH0068	stool	no	healthy	control	adult	29.0	DNK	no	IlluminaHiSeq	23985870	43864016	3289801200	75	75	lpc	Paolo_Manghi	ERR321210;ERR321209	NA
-MH0069	MH0069	stool	no	healthy	control	adult	36.7	DNK	no	IlluminaHiSeq	23985870	69711626	5228371950	75	75	hpc	Paolo_Manghi	ERR321213;ERR321212;ERR321211	NA
-MH0070	MH0070	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	47913662	3593524650	75	75	hpc	Paolo_Manghi	ERR321215;ERR321214	NA
-MH0071	MH0071	stool	no	healthy	control	adult	25.4	DNK	no	IlluminaHiSeq	23985870	46234872	3467615400	75	75	hpc	Paolo_Manghi	ERR321217;ERR321216	NA
-MH0072	MH0072	stool	no	healthy	control	adult	40.2	DNK	no	IlluminaHiSeq	23985870	49276126	3695709450	75	75	lpc	Paolo_Manghi	ERR321219;ERR321218	NA
-MH0073	MH0073	stool	no	healthy	control	adult	32.5	DNK	no	IlluminaHiSeq	23985870	47228584	3542143800	75	75	lpc	Paolo_Manghi	ERR321221;ERR321220	NA
-MH0074	MH0074	stool	no	healthy	control	adult	20.5	DNK	no	IlluminaHiSeq	23985870	46028996	3452174700	75	75	lpc	Paolo_Manghi	ERR321223;ERR321222	NA
-MH0075	MH0075	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	47063604	3529770300	75	75	hpc	Paolo_Manghi	ERR321225;ERR321224	NA
-MH0076	MH0076	stool	no	healthy	control	adult	34.8	DNK	no	IlluminaHiSeq	23985870	30642366	2298177450	75	75	hpc	Paolo_Manghi	ERR321226;ERR321227	NA
-MH0077	MH0077	stool	no	healthy	control	adult	24.9	DNK	no	IlluminaHiSeq	23985870	49649746	3723730950	75	75	hpc	Paolo_Manghi	ERR321229;ERR321228	NA
-MH0078	MH0078	stool	no	healthy	control	adult	36.9	DNK	no	IlluminaHiSeq	23985870	26012006	1950900450	75	75	lpc	Paolo_Manghi	ERR321231;ERR321230	NA
-MH0079	MH0079	stool	no	healthy	control	adult	20.0	DNK	no	IlluminaHiSeq	23985870	27414950	2056121250	75	75	hpc	Paolo_Manghi	ERR321233;ERR321232	NA
-MH0080	MH0080	stool	no	healthy	control	adult	18.6	DNK	no	IlluminaHiSeq	23985870	46584102	3493807650	75	75	hpc	Paolo_Manghi	ERR321235;ERR321234	NA
-MH0081	MH0081	stool	no	healthy	control	adult	38.0	DNK	no	IlluminaHiSeq	23985870	47850158	3588761850	75	75	hpc	Paolo_Manghi	ERR321237;ERR321236	NA
-MH0082	MH0082	stool	no	healthy	control	adult	22.6	DNK	no	IlluminaHiSeq	23985870	48342310	3625673250	75	75	hpc	Paolo_Manghi	ERR321239;ERR321238	NA
-MH0083	MH0083	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	47902174	3592663050	75	75	hpc	Paolo_Manghi	ERR321241;ERR321240	NA
-MH0084	MH0084	stool	no	healthy	control	adult	31.7	DNK	no	IlluminaHiSeq	23985870	53561048	4017078600	75	75	hpc	Paolo_Manghi	ERR321243;ERR321242	NA
-MH0085	MH0085	stool	no	healthy	control	adult	36.5	DNK	no	IlluminaHiSeq	23985870	49432344	3707425800	75	75	hpc	Paolo_Manghi	ERR321245;ERR321244	NA
-MH0086	MH0086	stool	no	healthy	control	adult	21.6	DNK	no	IlluminaHiSeq	23985870	55430592	4157294400	75	75	hpc	Paolo_Manghi	ERR321247;ERR321246	NA
-MH0087	MH0087	stool	no	healthy	control	adult	23.0	DNK	no	IlluminaHiSeq	23985870	63207452	4666725299	72	74	lpc	Paolo_Manghi	ERR321251;ERR321250;ERR321249;ERR321248	NA
-MH0088	MH0088	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	63915880	4793691000	75	75	lpc	Paolo_Manghi	ERR321252	NA
-MH0089	MH0089	stool	no	healthy	control	adult	22.5	DNK	no	IlluminaHiSeq	23985870	58781294	4349815756	73	74	hpc	Paolo_Manghi	ERR321256;ERR321255;ERR321254;ERR321253	NA
-MH0090	MH0090	stool	no	healthy	control	adult	28.2	DNK	no	IlluminaHiSeq	23985870	55336872	4091085908	72	74	hpc	Paolo_Manghi	ERR321260;ERR321259;ERR321258;ERR321257	NA
-MH0091	MH0091	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	62462910	4622255340	73	74	hpc	Paolo_Manghi	ERR321261	NA
-MH0092	MH0092	stool	no	healthy	control	adult	35.5	DNK	no	IlluminaHiSeq	23985870	83848974	6198782326	73	73	hpc	Paolo_Manghi	ERR321268;ERR321267;ERR321266;ERR321265;ERR321264;ERR321263;ERR321262	NA
-MH0093	MH0093	stool	no	healthy	control	adult	34.5	DNK	no	IlluminaHiSeq	23985870	58782054	4339805688	73	73	lpc	Paolo_Manghi	ERR321274;ERR321273;ERR321272;ERR321271;ERR321270;ERR321269	NA
-MH0094	MH0094	stool	no	healthy	control	adult	33.5	DNK	no	IlluminaHiSeq	23985870	68315370	5047719386	73	73	hpc	Paolo_Manghi	ERR321280;ERR321279;ERR321278;ERR321277;ERR321276;ERR321275	NA
-MH0095	MH0095	stool	no	healthy	control	adult	38.7	DNK	no	IlluminaHiSeq	23985870	55253594	4079217306	73	73	hpc	Paolo_Manghi	ERR321286;ERR321285;ERR321284;ERR321283;ERR321282;ERR321281	NA
-MH0096	MH0096	stool	no	healthy	control	adult	40.2	DNK	no	IlluminaHiSeq	23985870	66517084	4915916254	73	73	hpc	Paolo_Manghi	ERR321292;ERR321291;ERR321290;ERR321289;ERR321288;ERR321287	NA
-MH0097	MH0097	stool	no	healthy	control	adult	34.7	DNK	no	IlluminaHiSeq	23985870	57085690	4215657824	73	73	hpc	Paolo_Manghi	ERR321298;ERR321297;ERR321296;ERR321295;ERR321294;ERR321293	NA
-MH0098	MH0098	stool	no	healthy	control	adult	23.9	DNK	no	IlluminaHiSeq	23985870	75593728	5587557002	73	73	hpc	Paolo_Manghi	ERR321302;ERR321301;ERR321300;ERR321299	NA
-MH0099	MH0099	stool	no	healthy	control	adult	32.4	DNK	no	IlluminaHiSeq	23985870	59039162	4368897988	73	74	hpc	Paolo_Manghi	ERR321307;ERR321306;ERR321305;ERR321304;ERR321303	NA
-MH0100	MH0100	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	71308972	5271577124	73	73	hpc	Paolo_Manghi	ERR321311;ERR321310;ERR321309;ERR321308	NA
-MH0101	MH0101	stool	no	healthy	control	adult	32.3	DNK	no	IlluminaHiSeq	23985870	58483976	4327814224	73	74	hpc	Paolo_Manghi	ERR321316;ERR321315;ERR321314;ERR321313;ERR321312	NA
-MH0102	MH0102	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	58830590	4353463660	73	74	hpc	Paolo_Manghi	ERR321321;ERR321320;ERR321319;ERR321318;ERR321317	NA
-MH0103	MH0103	stool	no	healthy	control	adult	30.0	DNK	no	IlluminaHiSeq	23985870	63505154	4699381396	73	74	hpc	Paolo_Manghi	ERR321326;ERR321325;ERR321324;ERR321323;ERR321322	NA
-MH0104	MH0104	stool	no	healthy	control	adult	28.9	DNK	no	IlluminaHiSeq	23985870	77929132	5756951038	73	73	hpc	Paolo_Manghi	ERR321333;ERR321332;ERR321331;ERR321330;ERR321329;ERR321328;ERR321327	NA
-MH0105	MH0105	stool	no	healthy	control	adult	32.5	DNK	no	IlluminaHiSeq	23985870	63784510	4720053740	73	74	hpc	Paolo_Manghi	ERR321338;ERR321337;ERR321336;ERR321335;ERR321334	NA
-MH0106	MH0106	stool	no	healthy	control	adult	30.1	DNK	no	IlluminaHiSeq	23985870	81706032	6033376616	73	73	hpc	Paolo_Manghi	ERR321345;ERR321344;ERR321343;ERR321342;ERR321341;ERR321340;ERR321339	NA
-MH0107	MH0107	stool	no	healthy	control	adult	19.6	DNK	no	IlluminaHiSeq	23985870	80721308	5973376792	73	74	hpc	Paolo_Manghi	ERR321351;ERR321350;ERR321349;ERR321348;ERR321347;ERR321346	NA
-MH0108	MH0108	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	65205682	5868511380	90	90	lpc	Paolo_Manghi	ERR321353;ERR321352	NA
-MH0109	MH0109	stool	no	healthy	control	adult	29.6	DNK	no	IlluminaHiSeq	23985870	65783028	4867944072	73	74	lpc	Paolo_Manghi	ERR321358;ERR321357;ERR321356;ERR321355;ERR321354	NA
-MH0110	MH0110	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	66082082	4883101150	73	73	lpc	Paolo_Manghi	ERR321364;ERR321363;ERR321362;ERR321361;ERR321360;ERR321359	NA
-MH0111	MH0111	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	61923532	4582341368	73	74	hpc	Paolo_Manghi	ERR321367;ERR321366;ERR321365	NA
-MH0113	MH0113	stool	no	healthy	control	adult	23.1	DNK	no	IlluminaHiSeq	23985870	55011540	4070853960	73	74	hpc	Paolo_Manghi	ERR321371;ERR321370;ERR321369;ERR321368	NA
-MH0114	MH0114	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	61669500	4563543000	73	74	lpc	Paolo_Manghi	ERR321376;ERR321375;ERR321374;ERR321373;ERR321372	NA
-MH0115	MH0115	stool	no	healthy	control	adult	23.9	DNK	no	IlluminaHiSeq	23985870	55119888	4073745278	73	73	hpc	Paolo_Manghi	ERR321379;ERR321378;ERR321377	NA
-MH0116	MH0116	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	62436508	4614283398	73	73	hpc	Paolo_Manghi	ERR321385;ERR321384;ERR321383;ERR321382;ERR321381;ERR321380	NA
-MH0117	MH0117	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	59372568	4393570032	73	74	hpc	Paolo_Manghi	ERR321389;ERR321388;ERR321387;ERR321386	NA
-MH0118	MH0118	stool	no	healthy	control	adult	31.5	DNK	no	IlluminaHiSeq	23985870	59291100	4387541400	73	74	hpc	Paolo_Manghi	ERR321392;ERR321391;ERR321390	NA
-MH0119	MH0119	stool	no	healthy	control	adult	42.9	DNK	no	IlluminaHiSeq	23985870	63363190	5702687100	90	90	hpc	Paolo_Manghi	ERR321393	NA
-MH0120	MH0120	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	59954722	4436649428	73	74	hpc	Paolo_Manghi	ERR321397;ERR321396;ERR321395;ERR321394	NA
-MH0121	MH0121	stool	no	healthy	control	adult	35.1	DNK	no	IlluminaHiSeq	23985870	59394708	4454603100	75	75	hpc	Paolo_Manghi	ERR321398	NA
-MH0122	MH0122	stool	no	healthy	control	adult	30.5	DNK	no	IlluminaHiSeq	23985870	61291372	4526990536	72	74	lpc	Paolo_Manghi	ERR321403;ERR321402;ERR321401;ERR321400;ERR321399	NA
-MH0123	MH0123	stool	no	healthy	control	adult	31.5	DNK	no	IlluminaHiSeq	23985870	58109206	4290550859	72	74	hpc	Paolo_Manghi	ERR321407;ERR321406;ERR321405;ERR321404	NA
-MH0124	MH0124	stool	no	healthy	control	adult	33.7	DNK	no	IlluminaHiSeq	23985870	55503418	4103713347	72	74	hpc	Paolo_Manghi	ERR321412;ERR321411;ERR321410;ERR321409;ERR321408	NA
-MH0125	MH0125	stool	no	healthy	control	adult	22.1	DNK	no	IlluminaHiSeq	23985870	60358690	4457238216	72	74	hpc	Paolo_Manghi	ERR321416;ERR321415;ERR321414;ERR321413	NA
-MH0126	MH0126	stool	no	healthy	control	adult	21.2	DNK	no	IlluminaHiSeq	23985870	56779510	4197745916	72	74	hpc	Paolo_Manghi	ERR321420;ERR321419;ERR321418;ERR321417	NA
-MH0127	MH0127	stool	no	healthy	control	adult	32.3	DNK	no	IlluminaHiSeq	23985870	52676404	3898053896	73	74	hpc	Paolo_Manghi	ERR321424;ERR321423;ERR321422;ERR321421	NA
-MH0128	MH0128	stool	no	healthy	control	adult	36.5	DNK	no	IlluminaHiSeq	23985870	61219810	4520172383	72	74	lpc	Paolo_Manghi	ERR321428;ERR321427;ERR321426;ERR321425	NA
-MH0129	MH0129	stool	no	healthy	control	adult	28.9	DNK	no	IlluminaHiSeq	23985870	55066474	4074919076	73	74	hpc	Paolo_Manghi	ERR321432;ERR321431;ERR321430;ERR321429	NA
-MH0130	MH0130	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	59978710	4434771523	72	74	hpc	Paolo_Manghi	ERR321436;ERR321435;ERR321434;ERR321433	NA
-MH0131	MH0131	stool	no	healthy	control	adult	31.2	DNK	no	IlluminaHiSeq	23985870	61160430	5504438700	90	90	hpc	Paolo_Manghi	ERR321437	NA
-MH0132	MH0132	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	59979754	4438501796	73	74	hpc	Paolo_Manghi	ERR321441;ERR321440;ERR321439;ERR321438	NA
-MH0133	MH0133	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	59204228	4381112872	73	74	lpc	Paolo_Manghi	ERR321445;ERR321444;ERR321443;ERR321442	NA
-MH0134	MH0134	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	56533614	4183487436	73	74	hpc	Paolo_Manghi	ERR321449;ERR321448;ERR321447;ERR321446	NA
-MH0135	MH0135	stool	no	healthy	control	adult	22.6	DNK	no	IlluminaHiSeq	23985870	55141002	4080434148	73	74	hpc	Paolo_Manghi	ERR321453;ERR321452;ERR321451;ERR321450	NA
-MH0136	MH0136	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	58240556	4306031449	72	74	lpc	Paolo_Manghi	ERR321457;ERR321456;ERR321455;ERR321454	NA
-MH0137	MH0137	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	52914788	3906729681	72	74	lpc	Paolo_Manghi	ERR321461;ERR321460;ERR321459;ERR321458	NA
-MH0138	MH0138	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	60425092	4471456808	73	74	lpc	Paolo_Manghi	ERR321462	NA
-MH0139	MH0139	stool	no	healthy	control	adult	27.6	DNK	no	IlluminaHiSeq	23985870	71831300	5387347500	75	75	hpc	Paolo_Manghi	ERR321463	NA
-MH0140	MH0140	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	70427028	5282027100	75	75	hpc	Paolo_Manghi	ERR321464	NA
-MH0141	MH0141	stool	no	healthy	control	adult	30.5	DNK	no	IlluminaHiSeq	23985870	70759866	5306989950	75	75	lpc	Paolo_Manghi	ERR321465	NA
-MH0142	MH0142	stool	no	healthy	control	adult	29.4	DNK	no	IlluminaHiSeq	23985870	67012594	5025944550	75	75	lpc	Paolo_Manghi	ERR321466	NA
-MH0143	MH0143	stool	no	healthy	control	adult	28.7	DNK	no	IlluminaHiSeq	23985870	67997802	5099835150	75	75	hpc	Paolo_Manghi	ERR321467	NA
-MH0144	MH0144	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	70338286	5275371450	75	75	hpc	Paolo_Manghi	ERR321468	NA
-MH0145	MH0145	stool	no	healthy	control	adult	25.7	DNK	no	IlluminaHiSeq	23985870	66595596	4979323690	73	75	hpc	Paolo_Manghi	ERR321470;ERR321469	NA
-MH0146	MH0146	stool	no	healthy	control	adult	25.7	DNK	no	IlluminaHiSeq	23985870	57592966	4319472450	75	75	hpc	Paolo_Manghi	ERR321471	NA
-MH0147	MH0147	stool	no	healthy	control	adult	35.9	DNK	no	IlluminaHiSeq	23985870	62261122	4640340488	72	75	hpc	Paolo_Manghi	ERR321475;ERR321474;ERR321473;ERR321472	NA
-MH0148	MH0148	stool	no	healthy	control	adult	42.0	DNK	no	IlluminaHiSeq	23985870	64804260	4837155414	73	75	hpc	Paolo_Manghi	ERR321479;ERR321478;ERR321477;ERR321476	NA
-MH0149	MH0149	stool	no	healthy	control	adult	22.4	DNK	no	IlluminaHiSeq	23985870	58869090	4415181750	75	75	hpc	Paolo_Manghi	ERR321480	NA
-MH0150	MH0150	stool	no	healthy	control	adult	36.6	DNK	no	IlluminaHiSeq	23985870	67588262	6082943580	90	90	hpc	Paolo_Manghi	ERR321482;ERR321481	NA
-MH0151	MH0151	stool	no	healthy	control	adult	23.0	DNK	no	IlluminaHiSeq	23985870	63513832	4763537400	75	75	hpc	Paolo_Manghi	ERR321483	NA
-MH0152	MH0152	stool	no	healthy	control	adult	34.6	DNK	no	IlluminaHiSeq	23985870	60898546	4567390950	75	75	hpc	Paolo_Manghi	ERR321484	NA
-MH0153	MH0153	stool	no	healthy	control	adult	32.3	DNK	no	IlluminaHiSeq	23985870	61157996	4586849700	75	75	hpc	Paolo_Manghi	ERR321485	NA
-MH0154	MH0154	stool	no	healthy	control	adult	36.1	DNK	no	IlluminaHiSeq	23985870	59646896	4473517200	75	75	hpc	Paolo_Manghi	ERR321486	NA
-MH0155	MH0155	stool	no	healthy	control	adult	31.8	DNK	no	IlluminaHiSeq	23985870	59466402	4459980150	75	75	hpc	Paolo_Manghi	ERR321487	NA
-MH0156	MH0156	stool	no	healthy	control	adult	36.1	DNK	no	IlluminaHiSeq	23985870	59688950	4476671250	75	75	lpc	Paolo_Manghi	ERR321488	NA
-MH0157	MH0157	stool	no	healthy	control	adult	38.6	DNK	no	IlluminaHiSeq	23985870	58429724	4382229300	75	75	hpc	Paolo_Manghi	ERR321489	NA
-MH0158	MH0158	stool	no	healthy	control	adult	30.4	DNK	no	IlluminaHiSeq	23985870	59409144	4455685800	75	75	hpc	Paolo_Manghi	ERR321490	NA
-MH0159	MH0159	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	58836624	4412746800	75	75	hpc	Paolo_Manghi	ERR321491	NA
-MH0160	MH0160	stool	no	healthy	control	adult	31.8	DNK	no	IlluminaHiSeq	23985870	56395546	4229665950	75	75	hpc	Paolo_Manghi	ERR321492	NA
-MH0161	MH0161	stool	no	healthy	control	adult	22.0	DNK	no	IlluminaHiSeq	23985870	66564212	5990779080	90	90	lpc	Paolo_Manghi	ERR321493	NA
-MH0162	MH0162	stool	no	healthy	control	adult	33.5	DNK	no	IlluminaHiSeq	23985870	68547286	5141046450	75	75	lpc	Paolo_Manghi	ERR321494	NA
-MH0163	MH0163	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	61347790	4539736460	73	74	hpc	Paolo_Manghi	ERR321496;ERR321495	NA
-MH0164	MH0164	stool	no	healthy	control	adult	25.2	DNK	no	IlluminaHiSeq	23985870	63093720	4668935280	73	74	lpc	Paolo_Manghi	ERR321497	NA
-MH0165	MH0165	stool	no	healthy	control	adult	37.2	DNK	no	IlluminaHiSeq	23985870	63102046	4669551404	73	74	hpc	Paolo_Manghi	ERR321502;ERR321501;ERR321500;ERR321499;ERR321498	NA
-MH0166	MH0166	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	55584816	4113276384	73	74	lpc	Paolo_Manghi	ERR321505;ERR321504;ERR321503	NA
-MH0167	MH0167	stool	no	healthy	control	adult	41.9	DNK	no	IlluminaHiSeq	23985870	58559028	4333368072	73	74	hpc	Paolo_Manghi	ERR321509;ERR321508;ERR321507;ERR321506	NA
-MH0168	MH0168	stool	no	healthy	control	adult	41.2	DNK	no	IlluminaHiSeq	23985870	59111322	4374237828	73	74	hpc	Paolo_Manghi	ERR321513;ERR321512;ERR321511;ERR321510	NA
-MH0169	MH0169	stool	no	healthy	control	adult	25.8	DNK	no	IlluminaHiSeq	23985870	61639412	4611832936	73	75	hpc	Paolo_Manghi	ERR321515;ERR321514	NA
-MH0170	MH0170	stool	no	healthy	control	adult	32.6	DNK	no	IlluminaHiSeq	23985870	69993022	5225223056	73	75	hpc	Paolo_Manghi	ERR321519;ERR321518;ERR321517;ERR321516	NA
-MH0172	MH0172	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	66181294	4963597050	75	75	hpc	Paolo_Manghi	ERR321520	NA
-MH0173	MH0173	stool	no	healthy	control	adult	29.2	DNK	no	IlluminaHiSeq	23985870	66887276	5016545700	75	75	hpc	Paolo_Manghi	ERR321521	NA
-MH0174	MH0174	stool	no	healthy	control	adult	36.2	DNK	no	IlluminaHiSeq	23985870	65626772	4922007900	75	75	hpc	Paolo_Manghi	ERR321522	NA
-MH0175	MH0175	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	65331138	4899835350	75	75	hpc	Paolo_Manghi	ERR321523	NA
-MH0176	MH0176	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	61901204	5571108360	90	90	hpc	Paolo_Manghi	ERR321524	NA
-MH0177	MH0177	stool	no	healthy	control	adult	33.9	DNK	no	IlluminaHiSeq	23985870	54546370	4036431380	73	74	hpc	Paolo_Manghi	ERR321528;ERR321527;ERR321526;ERR321525	NA
-MH0178	MH0178	stool	no	healthy	control	adult	21.9	DNK	no	IlluminaHiSeq	23985870	64217132	4816284900	75	75	lpc	Paolo_Manghi	ERR321529	NA
-MH0179	MH0179	stool	no	healthy	control	adult	24.4	DNK	no	IlluminaHiSeq	23985870	66357610	4976820750	75	75	lpc	Paolo_Manghi	ERR321530	NA
-MH0180	MH0180	stool	no	healthy	control	adult	30.1	DNK	no	IlluminaHiSeq	23985870	59658146	4474360950	75	75	hpc	Paolo_Manghi	ERR321531	NA
-MH0181	MH0181	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	69823068	5236730100	75	75	hpc	Paolo_Manghi	ERR321532	NA
-MH0182	MH0182	stool	no	healthy	control	adult	37.7	DNK	no	IlluminaHiSeq	23985870	74372028	5577902100	75	75	lpc	Paolo_Manghi	ERR321533	NA
-MH0183	MH0183	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	76565854	5720205292	73	75	hpc	Paolo_Manghi	ERR321537;ERR321536;ERR321535;ERR321534	NA
-MH0184	MH0184	stool	no	healthy	control	adult	41.3	DNK	no	IlluminaHiSeq	23985870	67762098	5051772511	72	75	hpc	Paolo_Manghi	ERR321541;ERR321540;ERR321539;ERR321538	NA
-MH0185	MH0185	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	73808044	5535603300	75	75	hpc	Paolo_Manghi	ERR321542	NA
-MH0186	MH0186	stool	no	healthy	control	adult	34.8	DNK	no	IlluminaHiSeq	23985870	74388704	5579152800	75	75	lpc	Paolo_Manghi	ERR321543	NA
-MH0187	MH0187	stool	no	healthy	control	adult	36.7	DNK	no	IlluminaHiSeq	23985870	67283592	6055523280	90	90	hpc	Paolo_Manghi	ERR321544	NA
-MH0188	MH0188	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	90882994	8179469460	90	90	lpc	Paolo_Manghi	ERR321546;ERR321545	NA
-MH0189	MH0189	stool	no	healthy	control	adult	43.5	DNK	no	IlluminaHiSeq	23985870	71018904	6391701360	90	90	hpc	Paolo_Manghi	ERR321547	NA
-MH0191	MH0191	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	76050120	6844510800	90	90	hpc	Paolo_Manghi	ERR321548	NA
-MH0193	MH0193	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	83663740	7529736600	90	90	hpc	Paolo_Manghi	ERR321550;ERR321549	NA
-MH0195	MH0195	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	88854390	7996895100	90	90	hpc	Paolo_Manghi	ERR321551	NA
-MH0196	MH0196	stool	no	healthy	control	adult	46.6	DNK	no	IlluminaHiSeq	23985870	95619960	8605796400	90	90	hpc	Paolo_Manghi	ERR321552	NA
-MH0197	MH0197	stool	no	healthy	control	adult	23.9	DNK	no	IlluminaHiSeq	23985870	93076782	8376910380	90	90	hpc	Paolo_Manghi	ERR321553	NA
-MH0198	MH0198	stool	no	healthy	control	adult	35.4	DNK	no	IlluminaHiSeq	23985870	96817078	8713537020	90	90	hpc	Paolo_Manghi	ERR321554	NA
-MH0199	MH0199	stool	no	healthy	control	adult	45.7	DNK	no	IlluminaHiSeq	23985870	106852124	9616691160	90	90	lpc	Paolo_Manghi	ERR321555	NA
-MH0200	MH0200	stool	no	healthy	control	adult	24.8	DNK	no	IlluminaHiSeq	23985870	76670250	6900322500	90	90	hpc	Paolo_Manghi	ERR321556	NA
-MH0203	MH0203	stool	no	healthy	control	adult	22.8	DNK	no	IlluminaHiSeq	23985870	99289284	8936035560	90	90	hpc	Paolo_Manghi	ERR321557	NA
-MH0204	MH0204	stool	no	healthy	control	adult	37.2	DNK	no	IlluminaHiSeq	23985870	103827288	9344455920	90	90	hpc	Paolo_Manghi	ERR321558	NA
-MH0205	MH0205	stool	no	healthy	control	adult	41.2	DNK	no	IlluminaHiSeq	23985870	86385716	7774714440	90	90	hpc	Paolo_Manghi	ERR321559	NA
-MH0206	MH0206	stool	no	healthy	control	adult	25.0	DNK	no	IlluminaHiSeq	23985870	97854620	8806915800	90	90	hpc	Paolo_Manghi	ERR321560	NA
-MH0211	MH0211	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	117066734	10536006060	90	90	hpc	Paolo_Manghi	ERR321561	NA
-MH0212	MH0212	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	100321828	9028964520	90	90	lpc	Paolo_Manghi	ERR321562	NA
-MH0217	MH0217	stool	no	healthy	control	adult	33.4	DNK	no	IlluminaHiSeq	23985870	75873186	6828586740	90	90	hpc	Paolo_Manghi	ERR321563	NA
-MH0220	MH0220	stool	no	healthy	control	adult	37.2	DNK	no	IlluminaHiSeq	23985870	92747932	8347313880	90	90	hpc	Paolo_Manghi	ERR321564	NA
-MH0224	MH0224	stool	no	healthy	control	adult	22.3	DNK	no	IlluminaHiSeq	23985870	92940546	8364649140	90	90	hpc	Paolo_Manghi	ERR321565	NA
-MH0227	MH0227	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	117873014	10608571260	90	90	lpc	Paolo_Manghi	ERR321567;ERR321566	NA
-MH0229	MH0229	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	107338874	9660498660	90	90	hpc	Paolo_Manghi	ERR321568	NA
-MH0230	MH0230	stool	no	healthy	control	adult	32.4	DNK	no	IlluminaHiSeq	23985870	77164104	6944769360	90	90	lpc	Paolo_Manghi	ERR321569	NA
-MH0233	MH0233	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	73553162	6619784580	90	90	lpc	Paolo_Manghi	ERR321570	NA
-MH0236	MH0236	stool	no	healthy	control	adult	37.5	DNK	no	IlluminaHiSeq	23985870	89250392	8032535280	90	90	lpc	Paolo_Manghi	ERR321571	NA
-MH0239	MH0239	stool	no	healthy	control	adult	34.3	DNK	no	IlluminaHiSeq	23985870	103705384	9333484560	90	90	lpc	Paolo_Manghi	ERR321572	NA
-MH0243	MH0243	stool	no	healthy	control	adult	34.4	DNK	no	IlluminaHiSeq	23985870	88973624	8007626160	90	90	hpc	Paolo_Manghi	ERR321573	NA
-MH0244	MH0244	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	92188930	8297003700	90	90	lpc	Paolo_Manghi	ERR321574	NA
-MH0247	MH0247	stool	no	healthy	control	adult	22.5	DNK	no	IlluminaHiSeq	23985870	104778334	9430050060	90	90	hpc	Paolo_Manghi	ERR321575	NA
-MH0250	MH0250	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	102848186	9256336740	90	90	hpc	Paolo_Manghi	ERR321576	NA
-MH0251	MH0251	stool	no	healthy	control	adult	24.7	DNK	no	IlluminaHiSeq	23985870	117735108	10596159720	90	90	lpc	Paolo_Manghi	ERR321577	NA
-MH0253	MH0253	stool	no	healthy	control	adult	33.8	DNK	no	IlluminaHiSeq	23985870	75367948	6783115320	90	90	hpc	Paolo_Manghi	ERR321578	NA
-MH0257	MH0257	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	95332652	8579938680	90	90	hpc	Paolo_Manghi	ERR321579	NA
-MH0267	MH0267	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	95313804	8578242360	90	90	hpc	Paolo_Manghi	ERR321580	NA
-MH0272	MH0272	stool	no	healthy	control	adult	21.2	DNK	no	IlluminaHiSeq	23985870	93178044	8386023960	90	90	hpc	Paolo_Manghi	ERR321581	NA
-MH0274	MH0274	stool	no	healthy	control	adult	24.4	DNK	no	IlluminaHiSeq	23985870	115683988	10411558920	90	90	hpc	Paolo_Manghi	ERR321582	NA
-MH0275	MH0275	stool	no	healthy	control	adult	24.1	DNK	no	IlluminaHiSeq	23985870	100315068	9028356120	90	90	lpc	Paolo_Manghi	ERR321583	NA
-MH0276	MH0276	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	93420656	8407859040	90	90	hpc	Paolo_Manghi	ERR321584	NA
-MH0277	MH0277	stool	no	healthy	control	adult	20.3	DNK	no	IlluminaHiSeq	23985870	107367954	9663115860	90	90	lpc	Paolo_Manghi	ERR321586;ERR321585	NA
-MH0286	MH0286	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	76108014	6849721260	90	90	hpc	Paolo_Manghi	ERR321587	NA
-MH0287	MH0287	stool	no	healthy	control	adult	35.1	DNK	no	IlluminaHiSeq	23985870	94435574	8499201660	90	90	hpc	Paolo_Manghi	ERR321588	NA
-MH0288	MH0288	stool	no	healthy	control	adult	21.1	DNK	no	IlluminaHiSeq	23985870	87272504	7854525360	90	90	hpc	Paolo_Manghi	ERR321589	NA
-MH0289	MH0289	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	107825622	9704305980	90	90	hpc	Paolo_Manghi	ERR321590	NA
-MH0292	MH0292	stool	no	healthy	control	adult	22.1	DNK	no	IlluminaHiSeq	23985870	75586080	6802747200	90	90	lpc	Paolo_Manghi	ERR321591	NA
-MH0302	MH0302	stool	no	healthy	control	adult	23.6	DNK	no	IlluminaHiSeq	23985870	88723696	7985132640	90	90	lpc	Paolo_Manghi	ERR321592	NA
-MH0305	MH0305	stool	no	healthy	control	adult	33.0	DNK	no	IlluminaHiSeq	23985870	72051324	6484619160	90	90	hpc	Paolo_Manghi	ERR321593	NA
-MH0307	MH0307	stool	no	healthy	control	adult	19.5	DNK	no	IlluminaHiSeq	23985870	89611704	8065053360	90	90	hpc	Paolo_Manghi	ERR321594	NA
-MH0313	MH0313	stool	no	healthy	control	adult	33.5	DNK	no	IlluminaHiSeq	23985870	71564400	6440796000	90	90	hpc	Paolo_Manghi	ERR321595	NA
-MH0316	MH0316	stool	no	healthy	control	adult	37.0	DNK	no	IlluminaHiSeq	23985870	88148550	7933369500	90	90	hpc	Paolo_Manghi	ERR321596	NA
-MH0318	MH0318	stool	no	healthy	control	adult	18.1	DNK	no	IlluminaHiSeq	23985870	88681082	7981297380	90	90	hpc	Paolo_Manghi	ERR321597	NA
-MH0321	MH0321	stool	no	healthy	control	adult	34.9	DNK	no	IlluminaHiSeq	23985870	90135120	8112160800	90	90	hpc	Paolo_Manghi	ERR321598	NA
-MH0322	MH0322	stool	no	healthy	control	adult	21.9	DNK	no	IlluminaHiSeq	23985870	89840238	8085621420	90	90	hpc	Paolo_Manghi	ERR321599	NA
-MH0333	MH0333	stool	no	healthy	control	adult	32.4	DNK	no	IlluminaHiSeq	23985870	80140744	7212666960	90	90	lpc	Paolo_Manghi	ERR321600	NA
-MH0403	MH0403	stool	no	healthy	control	adult	35.4	DNK	no	IlluminaHiSeq	23985870	87625872	7886328480	90	90	hpc	Paolo_Manghi	ERR321601	NA
-MH0404	MH0404	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	80453800	7240842000	90	90	hpc	Paolo_Manghi	ERR321602	NA
-MH0405	MH0405	stool	no	healthy	control	adult	23.4	DNK	no	IlluminaHiSeq	23985870	85952788	7735750920	90	90	hpc	Paolo_Manghi	ERR321603	NA
-MH0406	MH0406	stool	no	healthy	control	adult	33.7	DNK	no	IlluminaHiSeq	23985870	92775624	8349806160	90	90	hpc	Paolo_Manghi	ERR321604	NA
-MH0407	MH0407	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	93457578	8411182020	90	90	hpc	Paolo_Manghi	ERR321605	NA
-MH0408	MH0408	stool	no	healthy	control	adult	20.1	DNK	no	IlluminaHiSeq	23985870	96057212	8645149080	90	90	hpc	Paolo_Manghi	ERR321606	NA
-MH0409	MH0409	stool	no	healthy	control	adult	23.4	DNK	no	IlluminaHiSeq	23985870	84908988	7641808920	90	90	hpc	Paolo_Manghi	ERR321607	NA
-MH0410	MH0410	stool	no	healthy	control	adult	31.2	DNK	no	IlluminaHiSeq	23985870	81239906	7311591540	90	90	lpc	Paolo_Manghi	ERR321608	NA
-MH0411	MH0411	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	93478090	8413028100	90	90	hpc	Paolo_Manghi	ERR321609	NA
-MH0412	MH0412	stool	no	healthy	control	adult	36.7	DNK	no	IlluminaHiSeq	23985870	87068936	7836204240	90	90	hpc	Paolo_Manghi	ERR321610	NA
-MH0413	MH0413	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	80848150	7276333500	90	90	hpc	Paolo_Manghi	ERR321611	NA
-MH0414	MH0414	stool	no	healthy	control	adult	36.9	DNK	no	IlluminaHiSeq	23985870	77472300	6972507000	90	90	hpc	Paolo_Manghi	ERR321612	NA
-MH0415	MH0415	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	80011728	7201055520	90	90	hpc	Paolo_Manghi	ERR321613	NA
-MH0416	MH0416	stool	no	healthy	control	adult	29.0	DNK	no	IlluminaHiSeq	23985870	91695516	8252596440	90	90	hpc	Paolo_Manghi	ERR321614	NA
-MH0417	MH0417	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	98884974	8899647660	90	90	hpc	Paolo_Manghi	ERR321615	NA
-MH0418	MH0418	stool	no	healthy	control	adult	34.5	DNK	no	IlluminaHiSeq	23985870	88543770	7968939300	90	90	hpc	Paolo_Manghi	ERR321616	NA
-MH0419	MH0419	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	101560248	9140422320	90	90	hpc	Paolo_Manghi	ERR321617	NA
-MH0420	MH0420	stool	no	healthy	control	adult	19.0	DNK	no	IlluminaHiSeq	23985870	85828048	7724524320	90	90	lpc	Paolo_Manghi	ERR321618	NA
-MH0421	MH0421	stool	no	healthy	control	adult	30.4	DNK	no	IlluminaHiSeq	23985870	88583124	7972481160	90	90	hpc	Paolo_Manghi	ERR321619	NA
-MH0422	MH0422	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	79482320	7153408800	90	90	hpc	Paolo_Manghi	ERR321620	NA
-MH0423	MH0423	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	82395456	7415591040	90	90	hpc	Paolo_Manghi	ERR321621	NA
-MH0424	MH0424	stool	no	healthy	control	adult	21.8	DNK	no	IlluminaHiSeq	23985870	79036038	7113243420	90	90	lpc	Paolo_Manghi	ERR321622	NA
-MH0425	MH0425	stool	no	healthy	control	adult	20.8	DNK	no	IlluminaHiSeq	23985870	92673880	8340649200	90	90	hpc	Paolo_Manghi	ERR321623	NA
-MH0426	MH0426	stool	no	healthy	control	adult	40.2	DNK	no	IlluminaHiSeq	23985870	91294522	8216506980	90	90	hpc	Paolo_Manghi	ERR321624	NA
-MH0427	MH0427	stool	no	healthy	control	adult	34.4	DNK	no	IlluminaHiSeq	23985870	92421696	8317952640	90	90	lpc	Paolo_Manghi	ERR321625	NA
-MH0428	MH0428	stool	no	healthy	control	adult	25.2	DNK	no	IlluminaHiSeq	23985870	99861330	8987519700	90	90	hpc	Paolo_Manghi	ERR321626	NA
-MH0429	MH0429	stool	no	healthy	control	adult	31.9	DNK	no	IlluminaHiSeq	23985870	64860322	5837428980	90	90	hpc	Paolo_Manghi	ERR321627	NA
-MH0430	MH0430	stool	no	healthy	control	adult	30.3	DNK	no	IlluminaHiSeq	23985870	64825116	5834260440	90	90	hpc	Paolo_Manghi	ERR321628	NA
-MH0431	MH0431	stool	no	healthy	control	adult	34.9	DNK	no	IlluminaHiSeq	23985870	89069102	8016219180	90	90	hpc	Paolo_Manghi	ERR321629	NA
-MH0432	MH0432	stool	no	healthy	control	adult	19.9	DNK	no	IlluminaHiSeq	23985870	91767488	8259073920	90	90	lpc	Paolo_Manghi	ERR321630	NA
-MH0433	MH0433	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	84668092	7620128280	90	90	hpc	Paolo_Manghi	ERR321631	NA
-MH0434	MH0434	stool	no	healthy	control	adult	23.6	DNK	no	IlluminaHiSeq	23985870	94429580	8498662200	90	90	hpc	Paolo_Manghi	ERR321632	NA
-MH0435	MH0435	stool	no	healthy	control	adult	29.5	DNK	no	IlluminaHiSeq	23985870	106319324	9568739160	90	90	hpc	Paolo_Manghi	ERR321633	NA
-MH0436	MH0436	stool	no	healthy	control	adult	38.3	DNK	no	IlluminaHiSeq	23985870	102315606	9208404540	90	90	hpc	Paolo_Manghi	ERR321634	NA
-MH0437	MH0437	stool	no	healthy	control	adult	20.2	DNK	no	IlluminaHiSeq	23985870	98666990	8880029100	90	90	hpc	Paolo_Manghi	ERR321635	NA
-MH0438	MH0438	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	96413258	8677193220	90	90	hpc	Paolo_Manghi	ERR321636	NA
-MH0439	MH0439	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	98064204	8825778360	90	90	hpc	Paolo_Manghi	ERR321637	NA
-MH0440	MH0440	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	96794646	8711518140	90	90	hpc	Paolo_Manghi	ERR321638	NA
-MH0441	MH0441	stool	no	healthy	control	adult	34.9	DNK	no	IlluminaHiSeq	23985870	90292896	8126360640	90	90	hpc	Paolo_Manghi	ERR321639	NA
-MH0442	MH0442	stool	no	healthy	control	adult	36.4	DNK	no	IlluminaHiSeq	23985870	98897552	8900779680	90	90	hpc	Paolo_Manghi	ERR321640	NA
-MH0443	MH0443	stool	no	healthy	control	adult	39.1	DNK	no	IlluminaHiSeq	23985870	97466924	8772023160	90	90	lpc	Paolo_Manghi	ERR321641	NA
-MH0444	MH0444	stool	no	healthy	control	adult	31.9	DNK	no	IlluminaHiSeq	23985870	98712780	8884150200	90	90	lpc	Paolo_Manghi	ERR321642	NA
-MH0445	MH0445	stool	no	healthy	control	adult	20.8	DNK	no	IlluminaHiSeq	23985870	92037010	8283330900	90	90	hpc	Paolo_Manghi	ERR321643	NA
-MH0446	MH0446	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	117074346	10536691140	90	90	hpc	Paolo_Manghi	ERR321644	NA
-MH0447	MH0447	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	109244906	9832041540	90	90	hpc	Paolo_Manghi	ERR321645	NA
-MH0448	MH0448	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	90147200	8113248000	90	90	hpc	Paolo_Manghi	ERR321646	NA
-MH0450	MH0450	stool	no	healthy	control	adult	40.7	DNK	no	IlluminaHiSeq	23985870	91964818	8276833620	90	90	hpc	Paolo_Manghi	ERR321647	NA
-MH0451	MH0451	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	85941302	7734717180	90	90	hpc	Paolo_Manghi	ERR321648	NA
-MH0452	MH0452	stool	no	healthy	control	adult	35.4	DNK	no	IlluminaHiSeq	23985870	99801936	8982174240	90	90	hpc	Paolo_Manghi	ERR321649	NA
-MH0453	MH0453	stool	no	healthy	control	adult	32.9	DNK	no	IlluminaHiSeq	23985870	86737890	7806410100	90	90	hpc	Paolo_Manghi	ERR321650	NA
-MH0454	MH0454	stool	no	healthy	control	adult	22.9	DNK	no	IlluminaHiSeq	23985870	89107084	8019637560	90	90	hpc	Paolo_Manghi	ERR321651	NA
-MH0455	MH0455	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	98098766	8828888940	90	90	hpc	Paolo_Manghi	ERR321652	NA
-MH0456	MH0456	stool	no	healthy	control	adult	25.2	DNK	no	IlluminaHiSeq	23985870	88114284	7930285560	90	90	hpc	Paolo_Manghi	ERR321653	NA
-MH0457	MH0457	stool	no	healthy	control	adult	23.7	DNK	no	IlluminaHiSeq	23985870	95130010	8561700900	90	90	hpc	Paolo_Manghi	ERR321654	NA
-MH0458	MH0458	stool	no	healthy	control	adult	33.4	DNK	no	IlluminaHiSeq	23985870	87603926	7884353340	90	90	hpc	Paolo_Manghi	ERR321655	NA
-MH0462	MH0462	stool	no	healthy	control	adult	36.2	DNK	no	IlluminaHiSeq	23985870	104533724	9408035160	90	90	lpc	Paolo_Manghi	ERR321656	NA
+sample_id	subject_id	body_site	antibiotics_current_use	disease	study_condition	age_category	BMI	country	non_westernized	sequencing_platform	PMID	number_reads	number_bases	minimum_read_length	median_read_length	hitchip_probe_class	curator	NCBI_accession	age	study_name
+MH0001	MH0001	stool	no	healthy	control	adult	25.6	DNK	no	IlluminaHiSeq	23985870	45014922	1980656568	44	44	lpc	Paolo_Manghi	ERR321063;ERR321062	NA	LeChatelierE_2013
+MH0002	MH0002	stool	no	healthy	control	adult	27.3	DNK	no	IlluminaHiSeq	23985870	46564054	3492304050	75	75	hpc	Paolo_Manghi	ERR321066;ERR321065;ERR321064	NA	LeChatelierE_2013
+MH0003	MH0003	stool	no	healthy	control	adult	33.2	DNK	no	IlluminaHiSeq	23985870	50381662	3778624650	75	75	hpc	Paolo_Manghi	ERR321069;ERR321068;ERR321067	NA	LeChatelierE_2013
+MH0004	MH0004	stool	no	healthy	control	adult	31.2	DNK	no	IlluminaHiSeq	23985870	40277026	1772189144	44	44	lpc	Paolo_Manghi	ERR321071;ERR321070	NA	LeChatelierE_2013
+MH0005	MH0005	stool	no	healthy	control	adult	21.7	DNK	no	IlluminaHiSeq	23985870	39402462	1733708328	44	44	lpc	Paolo_Manghi	ERR321072;ERR321073	NA	LeChatelierE_2013
+MH0006	MH0006	stool	no	healthy	control	adult	22.4	DNK	no	IlluminaHiSeq	23985870	161145974	10901069708	44	75	hpc	Paolo_Manghi	ERR321079;ERR321078;ERR321077;ERR321076;ERR321075;ERR321074	NA	LeChatelierE_2013
+MH0007	MH0007	stool	no	healthy	control	adult	33.6	DNK	no	IlluminaHiSeq	23985870	36951094	1625848136	44	44	hpc	Paolo_Manghi	ERR321081;ERR321080	NA	LeChatelierE_2013
+MH0008	MH0008	stool	no	healthy	control	adult	24.3	DNK	no	IlluminaHiSeq	23985870	38154256	1678787264	44	44	lpc	Paolo_Manghi	ERR321083;ERR321082	NA	LeChatelierE_2013
+MH0009	MH0009	stool	no	healthy	control	adult	29.0	DNK	no	IlluminaHiSeq	23985870	58446132	4383459900	75	75	hpc	Paolo_Manghi	ERR321086;ERR321085;ERR321084	NA	LeChatelierE_2013
+MH0010	MH0010	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	39167030	1723349320	44	44	lpc	Paolo_Manghi	ERR321088;ERR321087	NA	LeChatelierE_2013
+MH0011	MH0011	stool	no	healthy	control	adult	22.3	DNK	no	IlluminaHiSeq	23985870	58492736	4386955200	75	75	hpc	Paolo_Manghi	ERR321091;ERR321090;ERR321089	NA	LeChatelierE_2013
+MH0012	MH0012	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	186050798	13953809850	75	75	hpc	Paolo_Manghi	ERR321098;ERR321097;ERR321096;ERR321095;ERR321094;ERR321093;ERR321092	NA	LeChatelierE_2013
+MH0013	MH0013	stool	no	healthy	control	adult	20.5	DNK	no	IlluminaHiSeq	23985870	40004484	1760197296	44	44	hpc	Paolo_Manghi	ERR321100;ERR321099	NA	LeChatelierE_2013
+MH0014	MH0014	stool	no	healthy	control	adult	38.5	DNK	no	IlluminaHiSeq	23985870	56295656	4222174200	75	75	hpc	Paolo_Manghi	ERR321103;ERR321102;ERR321101	NA	LeChatelierE_2013
+MH0015	MH0015	stool	no	healthy	control	adult	25.5	DNK	no	IlluminaHiSeq	23985870	33012850	1452565400	44	44	hpc	Paolo_Manghi	ERR321105;ERR321104	NA	LeChatelierE_2013
+MH0016	MH0016	stool	no	healthy	control	adult	30.5	DNK	no	IlluminaHiSeq	23985870	54391486	4079361450	75	75	hpc	Paolo_Manghi	ERR321108;ERR321107;ERR321106	NA	LeChatelierE_2013
+MH0017	MH0017	stool	no	healthy	control	adult	21.8	DNK	no	IlluminaHiSeq	23985870	36152668	1590717392	44	44	hpc	Paolo_Manghi	ERR321110;ERR321109	NA	LeChatelierE_2013
+MH0018	MH0018	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	36577566	1609412904	44	44	lpc	Paolo_Manghi	ERR321112;ERR321111	NA	LeChatelierE_2013
+MH0019	MH0019	stool	no	healthy	control	adult	20.0	DNK	no	IlluminaHiSeq	23985870	38853986	1709575384	44	44	lpc	Paolo_Manghi	ERR321114;ERR321113	NA	LeChatelierE_2013
+MH0020	MH0020	stool	no	healthy	control	adult	33.2	DNK	no	IlluminaHiSeq	23985870	45794576	3434593200	75	75	lpc	Paolo_Manghi	ERR321116;ERR321115	NA	LeChatelierE_2013
+MH0021	MH0021	stool	no	healthy	control	adult	25.4	DNK	no	IlluminaHiSeq	23985870	26254116	1969058700	75	75	hpc	Paolo_Manghi	ERR321118;ERR321117	NA	LeChatelierE_2013
+MH0022	MH0022	stool	no	healthy	control	adult	24.4	DNK	no	IlluminaHiSeq	23985870	37108408	1632769952	44	44	hpc	Paolo_Manghi	ERR321120;ERR321119	NA	LeChatelierE_2013
+MH0023	MH0023	stool	no	healthy	control	adult	31.7	DNK	no	IlluminaHiSeq	23985870	37780892	1662359248	44	44	lpc	Paolo_Manghi	ERR321122;ERR321121	NA	LeChatelierE_2013
+MH0024	MH0024	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	54906872	3615740280	45	75	hpc	Paolo_Manghi	ERR321124;ERR321123	NA	LeChatelierE_2013
+MH0025	MH0025	stool	no	healthy	control	adult	34.2	DNK	no	IlluminaHiSeq	23985870	55597758	3678992940	45	75	hpc	Paolo_Manghi	ERR321126;ERR321125	NA	LeChatelierE_2013
+MH0026	MH0026	stool	no	healthy	control	adult	37.3	DNK	no	IlluminaHiSeq	23985870	37481422	2811106650	75	75	hpc	Paolo_Manghi	ERR321128;ERR321127	NA	LeChatelierE_2013
+MH0027	MH0027	stool	no	healthy	control	adult	23.1	DNK	no	IlluminaHiSeq	23985870	32375364	1424516016	44	44	hpc	Paolo_Manghi	ERR321130;ERR321129	NA	LeChatelierE_2013
+MH0028	MH0028	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	55147450	3618371490	45	75	hpc	Paolo_Manghi	ERR321132;ERR321131	NA	LeChatelierE_2013
+MH0030	MH0030	stool	no	healthy	control	adult	35.2	DNK	no	IlluminaHiSeq	23985870	51598890	3399735120	45	75	hpc	Paolo_Manghi	ERR321134;ERR321133	NA	LeChatelierE_2013
+MH0031	MH0031	stool	no	healthy	control	adult	22.3	DNK	no	IlluminaHiSeq	23985870	55512226	3653785380	45	75	hpc	Paolo_Manghi	ERR321136;ERR321135	NA	LeChatelierE_2013
+MH0032	MH0032	stool	no	healthy	control	adult	35.3	DNK	no	IlluminaHiSeq	23985870	50094084	3279648690	45	75	hpc	Paolo_Manghi	ERR321138;ERR321137	NA	LeChatelierE_2013
+MH0033	MH0033	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	44993368	3374502600	75	75	hpc	Paolo_Manghi	ERR321140;ERR321139	NA	LeChatelierE_2013
+MH0034	MH0034	stool	no	healthy	control	adult	40.0	DNK	no	IlluminaHiSeq	23985870	37399690	2804976750	75	75	lpc	Paolo_Manghi	ERR321142;ERR321141	NA	LeChatelierE_2013
+MH0035	MH0035	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	49255994	3694199550	75	75	hpc	Paolo_Manghi	ERR321144;ERR321143	NA	LeChatelierE_2013
+MH0036	MH0036	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	47700842	3577563150	75	75	hpc	Paolo_Manghi	ERR321146;ERR321145	NA	LeChatelierE_2013
+MH0037	MH0037	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	42030812	3152310900	75	75	hpc	Paolo_Manghi	ERR321148;ERR321147	NA	LeChatelierE_2013
+MH0038	MH0038	stool	no	healthy	control	adult	22.0	DNK	no	IlluminaHiSeq	23985870	45459094	3409432050	75	75	hpc	Paolo_Manghi	ERR321150;ERR321149	NA	LeChatelierE_2013
+MH0039	MH0039	stool	no	healthy	control	adult	23.1	DNK	no	IlluminaHiSeq	23985870	42715114	3203633550	75	75	hpc	Paolo_Manghi	ERR321152;ERR321151	NA	LeChatelierE_2013
+MH0040	MH0040	stool	no	healthy	control	adult	20.9	DNK	no	IlluminaHiSeq	23985870	44247598	3318569850	75	75	hpc	Paolo_Manghi	ERR321154;ERR321153	NA	LeChatelierE_2013
+MH0041	MH0041	stool	no	healthy	control	adult	23.2	DNK	no	IlluminaHiSeq	23985870	44369418	3327706350	75	75	hpc	Paolo_Manghi	ERR321156;ERR321155	NA	LeChatelierE_2013
+MH0042	MH0042	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	43406328	3255474600	75	75	hpc	Paolo_Manghi	ERR321158;ERR321157	NA	LeChatelierE_2013
+MH0043	MH0043	stool	no	healthy	control	adult	23.7	DNK	no	IlluminaHiSeq	23985870	49336750	3700256250	75	75	hpc	Paolo_Manghi	ERR321160;ERR321159	NA	LeChatelierE_2013
+MH0044	MH0044	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	44861872	3364640400	75	75	hpc	Paolo_Manghi	ERR321162;ERR321161	NA	LeChatelierE_2013
+MH0045	MH0045	stool	no	healthy	control	adult	25.1	DNK	no	IlluminaHiSeq	23985870	49429392	3707204400	75	75	hpc	Paolo_Manghi	ERR321164;ERR321163	NA	LeChatelierE_2013
+MH0046	MH0046	stool	no	healthy	control	adult	23.7	DNK	no	IlluminaHiSeq	23985870	35794106	2684557950	75	75	hpc	Paolo_Manghi	ERR321166;ERR321165	NA	LeChatelierE_2013
+MH0047	MH0047	stool	no	healthy	control	adult	30.4	DNK	no	IlluminaHiSeq	23985870	26929148	2019686100	75	75	hpc	Paolo_Manghi	ERR321168;ERR321167	NA	LeChatelierE_2013
+MH0048	MH0048	stool	no	healthy	control	adult	19.4	DNK	no	IlluminaHiSeq	23985870	26967604	2022570300	75	75	hpc	Paolo_Manghi	ERR321170;ERR321169	NA	LeChatelierE_2013
+MH0049	MH0049	stool	no	healthy	control	adult	35.5	DNK	no	IlluminaHiSeq	23985870	30653092	2298981900	75	75	lpc	Paolo_Manghi	ERR321172;ERR321171	NA	LeChatelierE_2013
+MH0050	MH0050	stool	no	healthy	control	adult	25.1	DNK	no	IlluminaHiSeq	23985870	47789610	3584220750	75	75	hpc	Paolo_Manghi	ERR321174;ERR321173	NA	LeChatelierE_2013
+MH0051	MH0051	stool	no	healthy	control	adult	23.2	DNK	no	IlluminaHiSeq	23985870	25954644	1946598300	75	75	hpc	Paolo_Manghi	ERR321176;ERR321175	NA	LeChatelierE_2013
+MH0052	MH0052	stool	no	healthy	control	adult	33.2	DNK	no	IlluminaHiSeq	23985870	28572586	2142943950	75	75	hpc	Paolo_Manghi	ERR321178;ERR321177	NA	LeChatelierE_2013
+MH0053	MH0053	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	43280824	3246061800	75	75	hpc	Paolo_Manghi	ERR321180;ERR321179	NA	LeChatelierE_2013
+MH0054	MH0054	stool	no	healthy	control	adult	20.3	DNK	no	IlluminaHiSeq	23985870	42258418	3169381350	75	75	hpc	Paolo_Manghi	ERR321182;ERR321181	NA	LeChatelierE_2013
+MH0055	MH0055	stool	no	healthy	control	adult	30.3	DNK	no	IlluminaHiSeq	23985870	47108026	3533101950	75	75	hpc	Paolo_Manghi	ERR321184;ERR321183	NA	LeChatelierE_2013
+MH0056	MH0056	stool	no	healthy	control	adult	25.3	DNK	no	IlluminaHiSeq	23985870	49134840	3685113000	75	75	hpc	Paolo_Manghi	ERR321186;ERR321185	NA	LeChatelierE_2013
+MH0057	MH0057	stool	no	healthy	control	adult	33.0	DNK	no	IlluminaHiSeq	23985870	43046732	3228504900	75	75	hpc	Paolo_Manghi	ERR321188;ERR321187	NA	LeChatelierE_2013
+MH0058	MH0058	stool	no	healthy	control	adult	22.0	DNK	no	IlluminaHiSeq	23985870	49812516	3735938700	75	75	hpc	Paolo_Manghi	ERR321190;ERR321189	NA	LeChatelierE_2013
+MH0059	MH0059	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	41014368	3076077600	75	75	hpc	Paolo_Manghi	ERR321192;ERR321191	NA	LeChatelierE_2013
+MH0060	MH0060	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	41109952	3083246400	75	75	hpc	Paolo_Manghi	ERR321194;ERR321193	NA	LeChatelierE_2013
+MH0061	MH0061	stool	no	healthy	control	adult	30.0	DNK	no	IlluminaHiSeq	23985870	44444004	3333300300	75	75	lpc	Paolo_Manghi	ERR321196;ERR321195	NA	LeChatelierE_2013
+MH0062	MH0062	stool	no	healthy	control	adult	37.5	DNK	no	IlluminaHiSeq	23985870	36512292	2738421900	75	75	hpc	Paolo_Manghi	ERR321198;ERR321197	NA	LeChatelierE_2013
+MH0063	MH0063	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	45957518	3446813850	75	75	hpc	Paolo_Manghi	ERR321200;ERR321199	NA	LeChatelierE_2013
+MH0064	MH0064	stool	no	healthy	control	adult	23.2	DNK	no	IlluminaHiSeq	23985870	44727782	3354583650	75	75	hpc	Paolo_Manghi	ERR321202;ERR321201	NA	LeChatelierE_2013
+MH0065	MH0065	stool	no	healthy	control	adult	28.2	DNK	no	IlluminaHiSeq	23985870	44573964	3343047300	75	75	hpc	Paolo_Manghi	ERR321204;ERR321203	NA	LeChatelierE_2013
+MH0066	MH0066	stool	no	healthy	control	adult	20.8	DNK	no	IlluminaHiSeq	23985870	36112910	2708468250	75	75	hpc	Paolo_Manghi	ERR321206;ERR321205	NA	LeChatelierE_2013
+MH0067	MH0067	stool	no	healthy	control	adult	21.1	DNK	no	IlluminaHiSeq	23985870	44483444	3336258300	75	75	lpc	Paolo_Manghi	ERR321208;ERR321207	NA	LeChatelierE_2013
+MH0068	MH0068	stool	no	healthy	control	adult	29.0	DNK	no	IlluminaHiSeq	23985870	43864016	3289801200	75	75	lpc	Paolo_Manghi	ERR321210;ERR321209	NA	LeChatelierE_2013
+MH0069	MH0069	stool	no	healthy	control	adult	36.7	DNK	no	IlluminaHiSeq	23985870	69711626	5228371950	75	75	hpc	Paolo_Manghi	ERR321213;ERR321212;ERR321211	NA	LeChatelierE_2013
+MH0070	MH0070	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	47913662	3593524650	75	75	hpc	Paolo_Manghi	ERR321215;ERR321214	NA	LeChatelierE_2013
+MH0071	MH0071	stool	no	healthy	control	adult	25.4	DNK	no	IlluminaHiSeq	23985870	46234872	3467615400	75	75	hpc	Paolo_Manghi	ERR321217;ERR321216	NA	LeChatelierE_2013
+MH0072	MH0072	stool	no	healthy	control	adult	40.2	DNK	no	IlluminaHiSeq	23985870	49276126	3695709450	75	75	lpc	Paolo_Manghi	ERR321219;ERR321218	NA	LeChatelierE_2013
+MH0073	MH0073	stool	no	healthy	control	adult	32.5	DNK	no	IlluminaHiSeq	23985870	47228584	3542143800	75	75	lpc	Paolo_Manghi	ERR321221;ERR321220	NA	LeChatelierE_2013
+MH0074	MH0074	stool	no	healthy	control	adult	20.5	DNK	no	IlluminaHiSeq	23985870	46028996	3452174700	75	75	lpc	Paolo_Manghi	ERR321223;ERR321222	NA	LeChatelierE_2013
+MH0075	MH0075	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	47063604	3529770300	75	75	hpc	Paolo_Manghi	ERR321225;ERR321224	NA	LeChatelierE_2013
+MH0076	MH0076	stool	no	healthy	control	adult	34.8	DNK	no	IlluminaHiSeq	23985870	30642366	2298177450	75	75	hpc	Paolo_Manghi	ERR321226;ERR321227	NA	LeChatelierE_2013
+MH0077	MH0077	stool	no	healthy	control	adult	24.9	DNK	no	IlluminaHiSeq	23985870	49649746	3723730950	75	75	hpc	Paolo_Manghi	ERR321229;ERR321228	NA	LeChatelierE_2013
+MH0078	MH0078	stool	no	healthy	control	adult	36.9	DNK	no	IlluminaHiSeq	23985870	26012006	1950900450	75	75	lpc	Paolo_Manghi	ERR321231;ERR321230	NA	LeChatelierE_2013
+MH0079	MH0079	stool	no	healthy	control	adult	20.0	DNK	no	IlluminaHiSeq	23985870	27414950	2056121250	75	75	hpc	Paolo_Manghi	ERR321233;ERR321232	NA	LeChatelierE_2013
+MH0080	MH0080	stool	no	healthy	control	adult	18.6	DNK	no	IlluminaHiSeq	23985870	46584102	3493807650	75	75	hpc	Paolo_Manghi	ERR321235;ERR321234	NA	LeChatelierE_2013
+MH0081	MH0081	stool	no	healthy	control	adult	38.0	DNK	no	IlluminaHiSeq	23985870	47850158	3588761850	75	75	hpc	Paolo_Manghi	ERR321237;ERR321236	NA	LeChatelierE_2013
+MH0082	MH0082	stool	no	healthy	control	adult	22.6	DNK	no	IlluminaHiSeq	23985870	48342310	3625673250	75	75	hpc	Paolo_Manghi	ERR321239;ERR321238	NA	LeChatelierE_2013
+MH0083	MH0083	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	47902174	3592663050	75	75	hpc	Paolo_Manghi	ERR321241;ERR321240	NA	LeChatelierE_2013
+MH0084	MH0084	stool	no	healthy	control	adult	31.7	DNK	no	IlluminaHiSeq	23985870	53561048	4017078600	75	75	hpc	Paolo_Manghi	ERR321243;ERR321242	NA	LeChatelierE_2013
+MH0085	MH0085	stool	no	healthy	control	adult	36.5	DNK	no	IlluminaHiSeq	23985870	49432344	3707425800	75	75	hpc	Paolo_Manghi	ERR321245;ERR321244	NA	LeChatelierE_2013
+MH0086	MH0086	stool	no	healthy	control	adult	21.6	DNK	no	IlluminaHiSeq	23985870	55430592	4157294400	75	75	hpc	Paolo_Manghi	ERR321247;ERR321246	NA	LeChatelierE_2013
+MH0087	MH0087	stool	no	healthy	control	adult	23.0	DNK	no	IlluminaHiSeq	23985870	63207452	4666725299	72	74	lpc	Paolo_Manghi	ERR321251;ERR321250;ERR321249;ERR321248	NA	LeChatelierE_2013
+MH0088	MH0088	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	63915880	4793691000	75	75	lpc	Paolo_Manghi	ERR321252	NA	LeChatelierE_2013
+MH0089	MH0089	stool	no	healthy	control	adult	22.5	DNK	no	IlluminaHiSeq	23985870	58781294	4349815756	73	74	hpc	Paolo_Manghi	ERR321256;ERR321255;ERR321254;ERR321253	NA	LeChatelierE_2013
+MH0090	MH0090	stool	no	healthy	control	adult	28.2	DNK	no	IlluminaHiSeq	23985870	55336872	4091085908	72	74	hpc	Paolo_Manghi	ERR321260;ERR321259;ERR321258;ERR321257	NA	LeChatelierE_2013
+MH0091	MH0091	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	62462910	4622255340	73	74	hpc	Paolo_Manghi	ERR321261	NA	LeChatelierE_2013
+MH0092	MH0092	stool	no	healthy	control	adult	35.5	DNK	no	IlluminaHiSeq	23985870	83848974	6198782326	73	73	hpc	Paolo_Manghi	ERR321268;ERR321267;ERR321266;ERR321265;ERR321264;ERR321263;ERR321262	NA	LeChatelierE_2013
+MH0093	MH0093	stool	no	healthy	control	adult	34.5	DNK	no	IlluminaHiSeq	23985870	58782054	4339805688	73	73	lpc	Paolo_Manghi	ERR321274;ERR321273;ERR321272;ERR321271;ERR321270;ERR321269	NA	LeChatelierE_2013
+MH0094	MH0094	stool	no	healthy	control	adult	33.5	DNK	no	IlluminaHiSeq	23985870	68315370	5047719386	73	73	hpc	Paolo_Manghi	ERR321280;ERR321279;ERR321278;ERR321277;ERR321276;ERR321275	NA	LeChatelierE_2013
+MH0095	MH0095	stool	no	healthy	control	adult	38.7	DNK	no	IlluminaHiSeq	23985870	55253594	4079217306	73	73	hpc	Paolo_Manghi	ERR321286;ERR321285;ERR321284;ERR321283;ERR321282;ERR321281	NA	LeChatelierE_2013
+MH0096	MH0096	stool	no	healthy	control	adult	40.2	DNK	no	IlluminaHiSeq	23985870	66517084	4915916254	73	73	hpc	Paolo_Manghi	ERR321292;ERR321291;ERR321290;ERR321289;ERR321288;ERR321287	NA	LeChatelierE_2013
+MH0097	MH0097	stool	no	healthy	control	adult	34.7	DNK	no	IlluminaHiSeq	23985870	57085690	4215657824	73	73	hpc	Paolo_Manghi	ERR321298;ERR321297;ERR321296;ERR321295;ERR321294;ERR321293	NA	LeChatelierE_2013
+MH0098	MH0098	stool	no	healthy	control	adult	23.9	DNK	no	IlluminaHiSeq	23985870	75593728	5587557002	73	73	hpc	Paolo_Manghi	ERR321302;ERR321301;ERR321300;ERR321299	NA	LeChatelierE_2013
+MH0099	MH0099	stool	no	healthy	control	adult	32.4	DNK	no	IlluminaHiSeq	23985870	59039162	4368897988	73	74	hpc	Paolo_Manghi	ERR321307;ERR321306;ERR321305;ERR321304;ERR321303	NA	LeChatelierE_2013
+MH0100	MH0100	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	71308972	5271577124	73	73	hpc	Paolo_Manghi	ERR321311;ERR321310;ERR321309;ERR321308	NA	LeChatelierE_2013
+MH0101	MH0101	stool	no	healthy	control	adult	32.3	DNK	no	IlluminaHiSeq	23985870	58483976	4327814224	73	74	hpc	Paolo_Manghi	ERR321316;ERR321315;ERR321314;ERR321313;ERR321312	NA	LeChatelierE_2013
+MH0102	MH0102	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	58830590	4353463660	73	74	hpc	Paolo_Manghi	ERR321321;ERR321320;ERR321319;ERR321318;ERR321317	NA	LeChatelierE_2013
+MH0103	MH0103	stool	no	healthy	control	adult	30.0	DNK	no	IlluminaHiSeq	23985870	63505154	4699381396	73	74	hpc	Paolo_Manghi	ERR321326;ERR321325;ERR321324;ERR321323;ERR321322	NA	LeChatelierE_2013
+MH0104	MH0104	stool	no	healthy	control	adult	28.9	DNK	no	IlluminaHiSeq	23985870	77929132	5756951038	73	73	hpc	Paolo_Manghi	ERR321333;ERR321332;ERR321331;ERR321330;ERR321329;ERR321328;ERR321327	NA	LeChatelierE_2013
+MH0105	MH0105	stool	no	healthy	control	adult	32.5	DNK	no	IlluminaHiSeq	23985870	63784510	4720053740	73	74	hpc	Paolo_Manghi	ERR321338;ERR321337;ERR321336;ERR321335;ERR321334	NA	LeChatelierE_2013
+MH0106	MH0106	stool	no	healthy	control	adult	30.1	DNK	no	IlluminaHiSeq	23985870	81706032	6033376616	73	73	hpc	Paolo_Manghi	ERR321345;ERR321344;ERR321343;ERR321342;ERR321341;ERR321340;ERR321339	NA	LeChatelierE_2013
+MH0107	MH0107	stool	no	healthy	control	adult	19.6	DNK	no	IlluminaHiSeq	23985870	80721308	5973376792	73	74	hpc	Paolo_Manghi	ERR321351;ERR321350;ERR321349;ERR321348;ERR321347;ERR321346	NA	LeChatelierE_2013
+MH0108	MH0108	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	65205682	5868511380	90	90	lpc	Paolo_Manghi	ERR321353;ERR321352	NA	LeChatelierE_2013
+MH0109	MH0109	stool	no	healthy	control	adult	29.6	DNK	no	IlluminaHiSeq	23985870	65783028	4867944072	73	74	lpc	Paolo_Manghi	ERR321358;ERR321357;ERR321356;ERR321355;ERR321354	NA	LeChatelierE_2013
+MH0110	MH0110	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	66082082	4883101150	73	73	lpc	Paolo_Manghi	ERR321364;ERR321363;ERR321362;ERR321361;ERR321360;ERR321359	NA	LeChatelierE_2013
+MH0111	MH0111	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	61923532	4582341368	73	74	hpc	Paolo_Manghi	ERR321367;ERR321366;ERR321365	NA	LeChatelierE_2013
+MH0113	MH0113	stool	no	healthy	control	adult	23.1	DNK	no	IlluminaHiSeq	23985870	55011540	4070853960	73	74	hpc	Paolo_Manghi	ERR321371;ERR321370;ERR321369;ERR321368	NA	LeChatelierE_2013
+MH0114	MH0114	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	61669500	4563543000	73	74	lpc	Paolo_Manghi	ERR321376;ERR321375;ERR321374;ERR321373;ERR321372	NA	LeChatelierE_2013
+MH0115	MH0115	stool	no	healthy	control	adult	23.9	DNK	no	IlluminaHiSeq	23985870	55119888	4073745278	73	73	hpc	Paolo_Manghi	ERR321379;ERR321378;ERR321377	NA	LeChatelierE_2013
+MH0116	MH0116	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	62436508	4614283398	73	73	hpc	Paolo_Manghi	ERR321385;ERR321384;ERR321383;ERR321382;ERR321381;ERR321380	NA	LeChatelierE_2013
+MH0117	MH0117	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	59372568	4393570032	73	74	hpc	Paolo_Manghi	ERR321389;ERR321388;ERR321387;ERR321386	NA	LeChatelierE_2013
+MH0118	MH0118	stool	no	healthy	control	adult	31.5	DNK	no	IlluminaHiSeq	23985870	59291100	4387541400	73	74	hpc	Paolo_Manghi	ERR321392;ERR321391;ERR321390	NA	LeChatelierE_2013
+MH0119	MH0119	stool	no	healthy	control	adult	42.9	DNK	no	IlluminaHiSeq	23985870	63363190	5702687100	90	90	hpc	Paolo_Manghi	ERR321393	NA	LeChatelierE_2013
+MH0120	MH0120	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	59954722	4436649428	73	74	hpc	Paolo_Manghi	ERR321397;ERR321396;ERR321395;ERR321394	NA	LeChatelierE_2013
+MH0121	MH0121	stool	no	healthy	control	adult	35.1	DNK	no	IlluminaHiSeq	23985870	59394708	4454603100	75	75	hpc	Paolo_Manghi	ERR321398	NA	LeChatelierE_2013
+MH0122	MH0122	stool	no	healthy	control	adult	30.5	DNK	no	IlluminaHiSeq	23985870	61291372	4526990536	72	74	lpc	Paolo_Manghi	ERR321403;ERR321402;ERR321401;ERR321400;ERR321399	NA	LeChatelierE_2013
+MH0123	MH0123	stool	no	healthy	control	adult	31.5	DNK	no	IlluminaHiSeq	23985870	58109206	4290550859	72	74	hpc	Paolo_Manghi	ERR321407;ERR321406;ERR321405;ERR321404	NA	LeChatelierE_2013
+MH0124	MH0124	stool	no	healthy	control	adult	33.7	DNK	no	IlluminaHiSeq	23985870	55503418	4103713347	72	74	hpc	Paolo_Manghi	ERR321412;ERR321411;ERR321410;ERR321409;ERR321408	NA	LeChatelierE_2013
+MH0125	MH0125	stool	no	healthy	control	adult	22.1	DNK	no	IlluminaHiSeq	23985870	60358690	4457238216	72	74	hpc	Paolo_Manghi	ERR321416;ERR321415;ERR321414;ERR321413	NA	LeChatelierE_2013
+MH0126	MH0126	stool	no	healthy	control	adult	21.2	DNK	no	IlluminaHiSeq	23985870	56779510	4197745916	72	74	hpc	Paolo_Manghi	ERR321420;ERR321419;ERR321418;ERR321417	NA	LeChatelierE_2013
+MH0127	MH0127	stool	no	healthy	control	adult	32.3	DNK	no	IlluminaHiSeq	23985870	52676404	3898053896	73	74	hpc	Paolo_Manghi	ERR321424;ERR321423;ERR321422;ERR321421	NA	LeChatelierE_2013
+MH0128	MH0128	stool	no	healthy	control	adult	36.5	DNK	no	IlluminaHiSeq	23985870	61219810	4520172383	72	74	lpc	Paolo_Manghi	ERR321428;ERR321427;ERR321426;ERR321425	NA	LeChatelierE_2013
+MH0129	MH0129	stool	no	healthy	control	adult	28.9	DNK	no	IlluminaHiSeq	23985870	55066474	4074919076	73	74	hpc	Paolo_Manghi	ERR321432;ERR321431;ERR321430;ERR321429	NA	LeChatelierE_2013
+MH0130	MH0130	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	59978710	4434771523	72	74	hpc	Paolo_Manghi	ERR321436;ERR321435;ERR321434;ERR321433	NA	LeChatelierE_2013
+MH0131	MH0131	stool	no	healthy	control	adult	31.2	DNK	no	IlluminaHiSeq	23985870	61160430	5504438700	90	90	hpc	Paolo_Manghi	ERR321437	NA	LeChatelierE_2013
+MH0132	MH0132	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	59979754	4438501796	73	74	hpc	Paolo_Manghi	ERR321441;ERR321440;ERR321439;ERR321438	NA	LeChatelierE_2013
+MH0133	MH0133	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	59204228	4381112872	73	74	lpc	Paolo_Manghi	ERR321445;ERR321444;ERR321443;ERR321442	NA	LeChatelierE_2013
+MH0134	MH0134	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	56533614	4183487436	73	74	hpc	Paolo_Manghi	ERR321449;ERR321448;ERR321447;ERR321446	NA	LeChatelierE_2013
+MH0135	MH0135	stool	no	healthy	control	adult	22.6	DNK	no	IlluminaHiSeq	23985870	55141002	4080434148	73	74	hpc	Paolo_Manghi	ERR321453;ERR321452;ERR321451;ERR321450	NA	LeChatelierE_2013
+MH0136	MH0136	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	58240556	4306031449	72	74	lpc	Paolo_Manghi	ERR321457;ERR321456;ERR321455;ERR321454	NA	LeChatelierE_2013
+MH0137	MH0137	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	52914788	3906729681	72	74	lpc	Paolo_Manghi	ERR321461;ERR321460;ERR321459;ERR321458	NA	LeChatelierE_2013
+MH0138	MH0138	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	60425092	4471456808	73	74	lpc	Paolo_Manghi	ERR321462	NA	LeChatelierE_2013
+MH0139	MH0139	stool	no	healthy	control	adult	27.6	DNK	no	IlluminaHiSeq	23985870	71831300	5387347500	75	75	hpc	Paolo_Manghi	ERR321463	NA	LeChatelierE_2013
+MH0140	MH0140	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	70427028	5282027100	75	75	hpc	Paolo_Manghi	ERR321464	NA	LeChatelierE_2013
+MH0141	MH0141	stool	no	healthy	control	adult	30.5	DNK	no	IlluminaHiSeq	23985870	70759866	5306989950	75	75	lpc	Paolo_Manghi	ERR321465	NA	LeChatelierE_2013
+MH0142	MH0142	stool	no	healthy	control	adult	29.4	DNK	no	IlluminaHiSeq	23985870	67012594	5025944550	75	75	lpc	Paolo_Manghi	ERR321466	NA	LeChatelierE_2013
+MH0143	MH0143	stool	no	healthy	control	adult	28.7	DNK	no	IlluminaHiSeq	23985870	67997802	5099835150	75	75	hpc	Paolo_Manghi	ERR321467	NA	LeChatelierE_2013
+MH0144	MH0144	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	70338286	5275371450	75	75	hpc	Paolo_Manghi	ERR321468	NA	LeChatelierE_2013
+MH0145	MH0145	stool	no	healthy	control	adult	25.7	DNK	no	IlluminaHiSeq	23985870	66595596	4979323690	73	75	hpc	Paolo_Manghi	ERR321470;ERR321469	NA	LeChatelierE_2013
+MH0146	MH0146	stool	no	healthy	control	adult	25.7	DNK	no	IlluminaHiSeq	23985870	57592966	4319472450	75	75	hpc	Paolo_Manghi	ERR321471	NA	LeChatelierE_2013
+MH0147	MH0147	stool	no	healthy	control	adult	35.9	DNK	no	IlluminaHiSeq	23985870	62261122	4640340488	72	75	hpc	Paolo_Manghi	ERR321475;ERR321474;ERR321473;ERR321472	NA	LeChatelierE_2013
+MH0148	MH0148	stool	no	healthy	control	adult	42.0	DNK	no	IlluminaHiSeq	23985870	64804260	4837155414	73	75	hpc	Paolo_Manghi	ERR321479;ERR321478;ERR321477;ERR321476	NA	LeChatelierE_2013
+MH0149	MH0149	stool	no	healthy	control	adult	22.4	DNK	no	IlluminaHiSeq	23985870	58869090	4415181750	75	75	hpc	Paolo_Manghi	ERR321480	NA	LeChatelierE_2013
+MH0150	MH0150	stool	no	healthy	control	adult	36.6	DNK	no	IlluminaHiSeq	23985870	67588262	6082943580	90	90	hpc	Paolo_Manghi	ERR321482;ERR321481	NA	LeChatelierE_2013
+MH0151	MH0151	stool	no	healthy	control	adult	23.0	DNK	no	IlluminaHiSeq	23985870	63513832	4763537400	75	75	hpc	Paolo_Manghi	ERR321483	NA	LeChatelierE_2013
+MH0152	MH0152	stool	no	healthy	control	adult	34.6	DNK	no	IlluminaHiSeq	23985870	60898546	4567390950	75	75	hpc	Paolo_Manghi	ERR321484	NA	LeChatelierE_2013
+MH0153	MH0153	stool	no	healthy	control	adult	32.3	DNK	no	IlluminaHiSeq	23985870	61157996	4586849700	75	75	hpc	Paolo_Manghi	ERR321485	NA	LeChatelierE_2013
+MH0154	MH0154	stool	no	healthy	control	adult	36.1	DNK	no	IlluminaHiSeq	23985870	59646896	4473517200	75	75	hpc	Paolo_Manghi	ERR321486	NA	LeChatelierE_2013
+MH0155	MH0155	stool	no	healthy	control	adult	31.8	DNK	no	IlluminaHiSeq	23985870	59466402	4459980150	75	75	hpc	Paolo_Manghi	ERR321487	NA	LeChatelierE_2013
+MH0156	MH0156	stool	no	healthy	control	adult	36.1	DNK	no	IlluminaHiSeq	23985870	59688950	4476671250	75	75	lpc	Paolo_Manghi	ERR321488	NA	LeChatelierE_2013
+MH0157	MH0157	stool	no	healthy	control	adult	38.6	DNK	no	IlluminaHiSeq	23985870	58429724	4382229300	75	75	hpc	Paolo_Manghi	ERR321489	NA	LeChatelierE_2013
+MH0158	MH0158	stool	no	healthy	control	adult	30.4	DNK	no	IlluminaHiSeq	23985870	59409144	4455685800	75	75	hpc	Paolo_Manghi	ERR321490	NA	LeChatelierE_2013
+MH0159	MH0159	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	58836624	4412746800	75	75	hpc	Paolo_Manghi	ERR321491	NA	LeChatelierE_2013
+MH0160	MH0160	stool	no	healthy	control	adult	31.8	DNK	no	IlluminaHiSeq	23985870	56395546	4229665950	75	75	hpc	Paolo_Manghi	ERR321492	NA	LeChatelierE_2013
+MH0161	MH0161	stool	no	healthy	control	adult	22.0	DNK	no	IlluminaHiSeq	23985870	66564212	5990779080	90	90	lpc	Paolo_Manghi	ERR321493	NA	LeChatelierE_2013
+MH0162	MH0162	stool	no	healthy	control	adult	33.5	DNK	no	IlluminaHiSeq	23985870	68547286	5141046450	75	75	lpc	Paolo_Manghi	ERR321494	NA	LeChatelierE_2013
+MH0163	MH0163	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	61347790	4539736460	73	74	hpc	Paolo_Manghi	ERR321496;ERR321495	NA	LeChatelierE_2013
+MH0164	MH0164	stool	no	healthy	control	adult	25.2	DNK	no	IlluminaHiSeq	23985870	63093720	4668935280	73	74	lpc	Paolo_Manghi	ERR321497	NA	LeChatelierE_2013
+MH0165	MH0165	stool	no	healthy	control	adult	37.2	DNK	no	IlluminaHiSeq	23985870	63102046	4669551404	73	74	hpc	Paolo_Manghi	ERR321502;ERR321501;ERR321500;ERR321499;ERR321498	NA	LeChatelierE_2013
+MH0166	MH0166	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	55584816	4113276384	73	74	lpc	Paolo_Manghi	ERR321505;ERR321504;ERR321503	NA	LeChatelierE_2013
+MH0167	MH0167	stool	no	healthy	control	adult	41.9	DNK	no	IlluminaHiSeq	23985870	58559028	4333368072	73	74	hpc	Paolo_Manghi	ERR321509;ERR321508;ERR321507;ERR321506	NA	LeChatelierE_2013
+MH0168	MH0168	stool	no	healthy	control	adult	41.2	DNK	no	IlluminaHiSeq	23985870	59111322	4374237828	73	74	hpc	Paolo_Manghi	ERR321513;ERR321512;ERR321511;ERR321510	NA	LeChatelierE_2013
+MH0169	MH0169	stool	no	healthy	control	adult	25.8	DNK	no	IlluminaHiSeq	23985870	61639412	4611832936	73	75	hpc	Paolo_Manghi	ERR321515;ERR321514	NA	LeChatelierE_2013
+MH0170	MH0170	stool	no	healthy	control	adult	32.6	DNK	no	IlluminaHiSeq	23985870	69993022	5225223056	73	75	hpc	Paolo_Manghi	ERR321519;ERR321518;ERR321517;ERR321516	NA	LeChatelierE_2013
+MH0172	MH0172	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	66181294	4963597050	75	75	hpc	Paolo_Manghi	ERR321520	NA	LeChatelierE_2013
+MH0173	MH0173	stool	no	healthy	control	adult	29.2	DNK	no	IlluminaHiSeq	23985870	66887276	5016545700	75	75	hpc	Paolo_Manghi	ERR321521	NA	LeChatelierE_2013
+MH0174	MH0174	stool	no	healthy	control	adult	36.2	DNK	no	IlluminaHiSeq	23985870	65626772	4922007900	75	75	hpc	Paolo_Manghi	ERR321522	NA	LeChatelierE_2013
+MH0175	MH0175	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	65331138	4899835350	75	75	hpc	Paolo_Manghi	ERR321523	NA	LeChatelierE_2013
+MH0176	MH0176	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	61901204	5571108360	90	90	hpc	Paolo_Manghi	ERR321524	NA	LeChatelierE_2013
+MH0177	MH0177	stool	no	healthy	control	adult	33.9	DNK	no	IlluminaHiSeq	23985870	54546370	4036431380	73	74	hpc	Paolo_Manghi	ERR321528;ERR321527;ERR321526;ERR321525	NA	LeChatelierE_2013
+MH0178	MH0178	stool	no	healthy	control	adult	21.9	DNK	no	IlluminaHiSeq	23985870	64217132	4816284900	75	75	lpc	Paolo_Manghi	ERR321529	NA	LeChatelierE_2013
+MH0179	MH0179	stool	no	healthy	control	adult	24.4	DNK	no	IlluminaHiSeq	23985870	66357610	4976820750	75	75	lpc	Paolo_Manghi	ERR321530	NA	LeChatelierE_2013
+MH0180	MH0180	stool	no	healthy	control	adult	30.1	DNK	no	IlluminaHiSeq	23985870	59658146	4474360950	75	75	hpc	Paolo_Manghi	ERR321531	NA	LeChatelierE_2013
+MH0181	MH0181	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	69823068	5236730100	75	75	hpc	Paolo_Manghi	ERR321532	NA	LeChatelierE_2013
+MH0182	MH0182	stool	no	healthy	control	adult	37.7	DNK	no	IlluminaHiSeq	23985870	74372028	5577902100	75	75	lpc	Paolo_Manghi	ERR321533	NA	LeChatelierE_2013
+MH0183	MH0183	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	76565854	5720205292	73	75	hpc	Paolo_Manghi	ERR321537;ERR321536;ERR321535;ERR321534	NA	LeChatelierE_2013
+MH0184	MH0184	stool	no	healthy	control	adult	41.3	DNK	no	IlluminaHiSeq	23985870	67762098	5051772511	72	75	hpc	Paolo_Manghi	ERR321541;ERR321540;ERR321539;ERR321538	NA	LeChatelierE_2013
+MH0185	MH0185	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	73808044	5535603300	75	75	hpc	Paolo_Manghi	ERR321542	NA	LeChatelierE_2013
+MH0186	MH0186	stool	no	healthy	control	adult	34.8	DNK	no	IlluminaHiSeq	23985870	74388704	5579152800	75	75	lpc	Paolo_Manghi	ERR321543	NA	LeChatelierE_2013
+MH0187	MH0187	stool	no	healthy	control	adult	36.7	DNK	no	IlluminaHiSeq	23985870	67283592	6055523280	90	90	hpc	Paolo_Manghi	ERR321544	NA	LeChatelierE_2013
+MH0188	MH0188	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	90882994	8179469460	90	90	lpc	Paolo_Manghi	ERR321546;ERR321545	NA	LeChatelierE_2013
+MH0189	MH0189	stool	no	healthy	control	adult	43.5	DNK	no	IlluminaHiSeq	23985870	71018904	6391701360	90	90	hpc	Paolo_Manghi	ERR321547	NA	LeChatelierE_2013
+MH0191	MH0191	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	76050120	6844510800	90	90	hpc	Paolo_Manghi	ERR321548	NA	LeChatelierE_2013
+MH0193	MH0193	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	83663740	7529736600	90	90	hpc	Paolo_Manghi	ERR321550;ERR321549	NA	LeChatelierE_2013
+MH0195	MH0195	stool	no	healthy	control	adult	30.9	DNK	no	IlluminaHiSeq	23985870	88854390	7996895100	90	90	hpc	Paolo_Manghi	ERR321551	NA	LeChatelierE_2013
+MH0196	MH0196	stool	no	healthy	control	adult	46.6	DNK	no	IlluminaHiSeq	23985870	95619960	8605796400	90	90	hpc	Paolo_Manghi	ERR321552	NA	LeChatelierE_2013
+MH0197	MH0197	stool	no	healthy	control	adult	23.9	DNK	no	IlluminaHiSeq	23985870	93076782	8376910380	90	90	hpc	Paolo_Manghi	ERR321553	NA	LeChatelierE_2013
+MH0198	MH0198	stool	no	healthy	control	adult	35.4	DNK	no	IlluminaHiSeq	23985870	96817078	8713537020	90	90	hpc	Paolo_Manghi	ERR321554	NA	LeChatelierE_2013
+MH0199	MH0199	stool	no	healthy	control	adult	45.7	DNK	no	IlluminaHiSeq	23985870	106852124	9616691160	90	90	lpc	Paolo_Manghi	ERR321555	NA	LeChatelierE_2013
+MH0200	MH0200	stool	no	healthy	control	adult	24.8	DNK	no	IlluminaHiSeq	23985870	76670250	6900322500	90	90	hpc	Paolo_Manghi	ERR321556	NA	LeChatelierE_2013
+MH0203	MH0203	stool	no	healthy	control	adult	22.8	DNK	no	IlluminaHiSeq	23985870	99289284	8936035560	90	90	hpc	Paolo_Manghi	ERR321557	NA	LeChatelierE_2013
+MH0204	MH0204	stool	no	healthy	control	adult	37.2	DNK	no	IlluminaHiSeq	23985870	103827288	9344455920	90	90	hpc	Paolo_Manghi	ERR321558	NA	LeChatelierE_2013
+MH0205	MH0205	stool	no	healthy	control	adult	41.2	DNK	no	IlluminaHiSeq	23985870	86385716	7774714440	90	90	hpc	Paolo_Manghi	ERR321559	NA	LeChatelierE_2013
+MH0206	MH0206	stool	no	healthy	control	adult	25.0	DNK	no	IlluminaHiSeq	23985870	97854620	8806915800	90	90	hpc	Paolo_Manghi	ERR321560	NA	LeChatelierE_2013
+MH0211	MH0211	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	117066734	10536006060	90	90	hpc	Paolo_Manghi	ERR321561	NA	LeChatelierE_2013
+MH0212	MH0212	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	100321828	9028964520	90	90	lpc	Paolo_Manghi	ERR321562	NA	LeChatelierE_2013
+MH0217	MH0217	stool	no	healthy	control	adult	33.4	DNK	no	IlluminaHiSeq	23985870	75873186	6828586740	90	90	hpc	Paolo_Manghi	ERR321563	NA	LeChatelierE_2013
+MH0220	MH0220	stool	no	healthy	control	adult	37.2	DNK	no	IlluminaHiSeq	23985870	92747932	8347313880	90	90	hpc	Paolo_Manghi	ERR321564	NA	LeChatelierE_2013
+MH0224	MH0224	stool	no	healthy	control	adult	22.3	DNK	no	IlluminaHiSeq	23985870	92940546	8364649140	90	90	hpc	Paolo_Manghi	ERR321565	NA	LeChatelierE_2013
+MH0227	MH0227	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	117873014	10608571260	90	90	lpc	Paolo_Manghi	ERR321567;ERR321566	NA	LeChatelierE_2013
+MH0229	MH0229	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	107338874	9660498660	90	90	hpc	Paolo_Manghi	ERR321568	NA	LeChatelierE_2013
+MH0230	MH0230	stool	no	healthy	control	adult	32.4	DNK	no	IlluminaHiSeq	23985870	77164104	6944769360	90	90	lpc	Paolo_Manghi	ERR321569	NA	LeChatelierE_2013
+MH0233	MH0233	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	73553162	6619784580	90	90	lpc	Paolo_Manghi	ERR321570	NA	LeChatelierE_2013
+MH0236	MH0236	stool	no	healthy	control	adult	37.5	DNK	no	IlluminaHiSeq	23985870	89250392	8032535280	90	90	lpc	Paolo_Manghi	ERR321571	NA	LeChatelierE_2013
+MH0239	MH0239	stool	no	healthy	control	adult	34.3	DNK	no	IlluminaHiSeq	23985870	103705384	9333484560	90	90	lpc	Paolo_Manghi	ERR321572	NA	LeChatelierE_2013
+MH0243	MH0243	stool	no	healthy	control	adult	34.4	DNK	no	IlluminaHiSeq	23985870	88973624	8007626160	90	90	hpc	Paolo_Manghi	ERR321573	NA	LeChatelierE_2013
+MH0244	MH0244	stool	no	healthy	control	adult	32.7	DNK	no	IlluminaHiSeq	23985870	92188930	8297003700	90	90	lpc	Paolo_Manghi	ERR321574	NA	LeChatelierE_2013
+MH0247	MH0247	stool	no	healthy	control	adult	22.5	DNK	no	IlluminaHiSeq	23985870	104778334	9430050060	90	90	hpc	Paolo_Manghi	ERR321575	NA	LeChatelierE_2013
+MH0250	MH0250	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	102848186	9256336740	90	90	hpc	Paolo_Manghi	ERR321576	NA	LeChatelierE_2013
+MH0251	MH0251	stool	no	healthy	control	adult	24.7	DNK	no	IlluminaHiSeq	23985870	117735108	10596159720	90	90	lpc	Paolo_Manghi	ERR321577	NA	LeChatelierE_2013
+MH0253	MH0253	stool	no	healthy	control	adult	33.8	DNK	no	IlluminaHiSeq	23985870	75367948	6783115320	90	90	hpc	Paolo_Manghi	ERR321578	NA	LeChatelierE_2013
+MH0257	MH0257	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	95332652	8579938680	90	90	hpc	Paolo_Manghi	ERR321579	NA	LeChatelierE_2013
+MH0267	MH0267	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	95313804	8578242360	90	90	hpc	Paolo_Manghi	ERR321580	NA	LeChatelierE_2013
+MH0272	MH0272	stool	no	healthy	control	adult	21.2	DNK	no	IlluminaHiSeq	23985870	93178044	8386023960	90	90	hpc	Paolo_Manghi	ERR321581	NA	LeChatelierE_2013
+MH0274	MH0274	stool	no	healthy	control	adult	24.4	DNK	no	IlluminaHiSeq	23985870	115683988	10411558920	90	90	hpc	Paolo_Manghi	ERR321582	NA	LeChatelierE_2013
+MH0275	MH0275	stool	no	healthy	control	adult	24.1	DNK	no	IlluminaHiSeq	23985870	100315068	9028356120	90	90	lpc	Paolo_Manghi	ERR321583	NA	LeChatelierE_2013
+MH0276	MH0276	stool	no	healthy	control	adult	30.2	DNK	no	IlluminaHiSeq	23985870	93420656	8407859040	90	90	hpc	Paolo_Manghi	ERR321584	NA	LeChatelierE_2013
+MH0277	MH0277	stool	no	healthy	control	adult	20.3	DNK	no	IlluminaHiSeq	23985870	107367954	9663115860	90	90	lpc	Paolo_Manghi	ERR321586;ERR321585	NA	LeChatelierE_2013
+MH0286	MH0286	stool	no	healthy	control	adult	24.5	DNK	no	IlluminaHiSeq	23985870	76108014	6849721260	90	90	hpc	Paolo_Manghi	ERR321587	NA	LeChatelierE_2013
+MH0287	MH0287	stool	no	healthy	control	adult	35.1	DNK	no	IlluminaHiSeq	23985870	94435574	8499201660	90	90	hpc	Paolo_Manghi	ERR321588	NA	LeChatelierE_2013
+MH0288	MH0288	stool	no	healthy	control	adult	21.1	DNK	no	IlluminaHiSeq	23985870	87272504	7854525360	90	90	hpc	Paolo_Manghi	ERR321589	NA	LeChatelierE_2013
+MH0289	MH0289	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	107825622	9704305980	90	90	hpc	Paolo_Manghi	ERR321590	NA	LeChatelierE_2013
+MH0292	MH0292	stool	no	healthy	control	adult	22.1	DNK	no	IlluminaHiSeq	23985870	75586080	6802747200	90	90	lpc	Paolo_Manghi	ERR321591	NA	LeChatelierE_2013
+MH0302	MH0302	stool	no	healthy	control	adult	23.6	DNK	no	IlluminaHiSeq	23985870	88723696	7985132640	90	90	lpc	Paolo_Manghi	ERR321592	NA	LeChatelierE_2013
+MH0305	MH0305	stool	no	healthy	control	adult	33.0	DNK	no	IlluminaHiSeq	23985870	72051324	6484619160	90	90	hpc	Paolo_Manghi	ERR321593	NA	LeChatelierE_2013
+MH0307	MH0307	stool	no	healthy	control	adult	19.5	DNK	no	IlluminaHiSeq	23985870	89611704	8065053360	90	90	hpc	Paolo_Manghi	ERR321594	NA	LeChatelierE_2013
+MH0313	MH0313	stool	no	healthy	control	adult	33.5	DNK	no	IlluminaHiSeq	23985870	71564400	6440796000	90	90	hpc	Paolo_Manghi	ERR321595	NA	LeChatelierE_2013
+MH0316	MH0316	stool	no	healthy	control	adult	37.0	DNK	no	IlluminaHiSeq	23985870	88148550	7933369500	90	90	hpc	Paolo_Manghi	ERR321596	NA	LeChatelierE_2013
+MH0318	MH0318	stool	no	healthy	control	adult	18.1	DNK	no	IlluminaHiSeq	23985870	88681082	7981297380	90	90	hpc	Paolo_Manghi	ERR321597	NA	LeChatelierE_2013
+MH0321	MH0321	stool	no	healthy	control	adult	34.9	DNK	no	IlluminaHiSeq	23985870	90135120	8112160800	90	90	hpc	Paolo_Manghi	ERR321598	NA	LeChatelierE_2013
+MH0322	MH0322	stool	no	healthy	control	adult	21.9	DNK	no	IlluminaHiSeq	23985870	89840238	8085621420	90	90	hpc	Paolo_Manghi	ERR321599	NA	LeChatelierE_2013
+MH0333	MH0333	stool	no	healthy	control	adult	32.4	DNK	no	IlluminaHiSeq	23985870	80140744	7212666960	90	90	lpc	Paolo_Manghi	ERR321600	NA	LeChatelierE_2013
+MH0403	MH0403	stool	no	healthy	control	adult	35.4	DNK	no	IlluminaHiSeq	23985870	87625872	7886328480	90	90	hpc	Paolo_Manghi	ERR321601	NA	LeChatelierE_2013
+MH0404	MH0404	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	80453800	7240842000	90	90	hpc	Paolo_Manghi	ERR321602	NA	LeChatelierE_2013
+MH0405	MH0405	stool	no	healthy	control	adult	23.4	DNK	no	IlluminaHiSeq	23985870	85952788	7735750920	90	90	hpc	Paolo_Manghi	ERR321603	NA	LeChatelierE_2013
+MH0406	MH0406	stool	no	healthy	control	adult	33.7	DNK	no	IlluminaHiSeq	23985870	92775624	8349806160	90	90	hpc	Paolo_Manghi	ERR321604	NA	LeChatelierE_2013
+MH0407	MH0407	stool	no	healthy	control	adult	30.6	DNK	no	IlluminaHiSeq	23985870	93457578	8411182020	90	90	hpc	Paolo_Manghi	ERR321605	NA	LeChatelierE_2013
+MH0408	MH0408	stool	no	healthy	control	adult	20.1	DNK	no	IlluminaHiSeq	23985870	96057212	8645149080	90	90	hpc	Paolo_Manghi	ERR321606	NA	LeChatelierE_2013
+MH0409	MH0409	stool	no	healthy	control	adult	23.4	DNK	no	IlluminaHiSeq	23985870	84908988	7641808920	90	90	hpc	Paolo_Manghi	ERR321607	NA	LeChatelierE_2013
+MH0410	MH0410	stool	no	healthy	control	adult	31.2	DNK	no	IlluminaHiSeq	23985870	81239906	7311591540	90	90	lpc	Paolo_Manghi	ERR321608	NA	LeChatelierE_2013
+MH0411	MH0411	stool	no	healthy	control	adult	31.6	DNK	no	IlluminaHiSeq	23985870	93478090	8413028100	90	90	hpc	Paolo_Manghi	ERR321609	NA	LeChatelierE_2013
+MH0412	MH0412	stool	no	healthy	control	adult	36.7	DNK	no	IlluminaHiSeq	23985870	87068936	7836204240	90	90	hpc	Paolo_Manghi	ERR321610	NA	LeChatelierE_2013
+MH0413	MH0413	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	80848150	7276333500	90	90	hpc	Paolo_Manghi	ERR321611	NA	LeChatelierE_2013
+MH0414	MH0414	stool	no	healthy	control	adult	36.9	DNK	no	IlluminaHiSeq	23985870	77472300	6972507000	90	90	hpc	Paolo_Manghi	ERR321612	NA	LeChatelierE_2013
+MH0415	MH0415	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	80011728	7201055520	90	90	hpc	Paolo_Manghi	ERR321613	NA	LeChatelierE_2013
+MH0416	MH0416	stool	no	healthy	control	adult	29.0	DNK	no	IlluminaHiSeq	23985870	91695516	8252596440	90	90	hpc	Paolo_Manghi	ERR321614	NA	LeChatelierE_2013
+MH0417	MH0417	stool	no	healthy	control	adult	32.0	DNK	no	IlluminaHiSeq	23985870	98884974	8899647660	90	90	hpc	Paolo_Manghi	ERR321615	NA	LeChatelierE_2013
+MH0418	MH0418	stool	no	healthy	control	adult	34.5	DNK	no	IlluminaHiSeq	23985870	88543770	7968939300	90	90	hpc	Paolo_Manghi	ERR321616	NA	LeChatelierE_2013
+MH0419	MH0419	stool	no	healthy	control	adult	23.5	DNK	no	IlluminaHiSeq	23985870	101560248	9140422320	90	90	hpc	Paolo_Manghi	ERR321617	NA	LeChatelierE_2013
+MH0420	MH0420	stool	no	healthy	control	adult	19.0	DNK	no	IlluminaHiSeq	23985870	85828048	7724524320	90	90	lpc	Paolo_Manghi	ERR321618	NA	LeChatelierE_2013
+MH0421	MH0421	stool	no	healthy	control	adult	30.4	DNK	no	IlluminaHiSeq	23985870	88583124	7972481160	90	90	hpc	Paolo_Manghi	ERR321619	NA	LeChatelierE_2013
+MH0422	MH0422	stool	no	healthy	control	adult	31.1	DNK	no	IlluminaHiSeq	23985870	79482320	7153408800	90	90	hpc	Paolo_Manghi	ERR321620	NA	LeChatelierE_2013
+MH0423	MH0423	stool	no	healthy	control	adult	30.7	DNK	no	IlluminaHiSeq	23985870	82395456	7415591040	90	90	hpc	Paolo_Manghi	ERR321621	NA	LeChatelierE_2013
+MH0424	MH0424	stool	no	healthy	control	adult	21.8	DNK	no	IlluminaHiSeq	23985870	79036038	7113243420	90	90	lpc	Paolo_Manghi	ERR321622	NA	LeChatelierE_2013
+MH0425	MH0425	stool	no	healthy	control	adult	20.8	DNK	no	IlluminaHiSeq	23985870	92673880	8340649200	90	90	hpc	Paolo_Manghi	ERR321623	NA	LeChatelierE_2013
+MH0426	MH0426	stool	no	healthy	control	adult	40.2	DNK	no	IlluminaHiSeq	23985870	91294522	8216506980	90	90	hpc	Paolo_Manghi	ERR321624	NA	LeChatelierE_2013
+MH0427	MH0427	stool	no	healthy	control	adult	34.4	DNK	no	IlluminaHiSeq	23985870	92421696	8317952640	90	90	lpc	Paolo_Manghi	ERR321625	NA	LeChatelierE_2013
+MH0428	MH0428	stool	no	healthy	control	adult	25.2	DNK	no	IlluminaHiSeq	23985870	99861330	8987519700	90	90	hpc	Paolo_Manghi	ERR321626	NA	LeChatelierE_2013
+MH0429	MH0429	stool	no	healthy	control	adult	31.9	DNK	no	IlluminaHiSeq	23985870	64860322	5837428980	90	90	hpc	Paolo_Manghi	ERR321627	NA	LeChatelierE_2013
+MH0430	MH0430	stool	no	healthy	control	adult	30.3	DNK	no	IlluminaHiSeq	23985870	64825116	5834260440	90	90	hpc	Paolo_Manghi	ERR321628	NA	LeChatelierE_2013
+MH0431	MH0431	stool	no	healthy	control	adult	34.9	DNK	no	IlluminaHiSeq	23985870	89069102	8016219180	90	90	hpc	Paolo_Manghi	ERR321629	NA	LeChatelierE_2013
+MH0432	MH0432	stool	no	healthy	control	adult	19.9	DNK	no	IlluminaHiSeq	23985870	91767488	8259073920	90	90	lpc	Paolo_Manghi	ERR321630	NA	LeChatelierE_2013
+MH0433	MH0433	stool	no	healthy	control	adult	34.0	DNK	no	IlluminaHiSeq	23985870	84668092	7620128280	90	90	hpc	Paolo_Manghi	ERR321631	NA	LeChatelierE_2013
+MH0434	MH0434	stool	no	healthy	control	adult	23.6	DNK	no	IlluminaHiSeq	23985870	94429580	8498662200	90	90	hpc	Paolo_Manghi	ERR321632	NA	LeChatelierE_2013
+MH0435	MH0435	stool	no	healthy	control	adult	29.5	DNK	no	IlluminaHiSeq	23985870	106319324	9568739160	90	90	hpc	Paolo_Manghi	ERR321633	NA	LeChatelierE_2013
+MH0436	MH0436	stool	no	healthy	control	adult	38.3	DNK	no	IlluminaHiSeq	23985870	102315606	9208404540	90	90	hpc	Paolo_Manghi	ERR321634	NA	LeChatelierE_2013
+MH0437	MH0437	stool	no	healthy	control	adult	20.2	DNK	no	IlluminaHiSeq	23985870	98666990	8880029100	90	90	hpc	Paolo_Manghi	ERR321635	NA	LeChatelierE_2013
+MH0438	MH0438	stool	no	healthy	control	adult	22.7	DNK	no	IlluminaHiSeq	23985870	96413258	8677193220	90	90	hpc	Paolo_Manghi	ERR321636	NA	LeChatelierE_2013
+MH0439	MH0439	stool	no	healthy	control	adult	23.3	DNK	no	IlluminaHiSeq	23985870	98064204	8825778360	90	90	hpc	Paolo_Manghi	ERR321637	NA	LeChatelierE_2013
+MH0440	MH0440	stool	no	healthy	control	adult	32.1	DNK	no	IlluminaHiSeq	23985870	96794646	8711518140	90	90	hpc	Paolo_Manghi	ERR321638	NA	LeChatelierE_2013
+MH0441	MH0441	stool	no	healthy	control	adult	34.9	DNK	no	IlluminaHiSeq	23985870	90292896	8126360640	90	90	hpc	Paolo_Manghi	ERR321639	NA	LeChatelierE_2013
+MH0442	MH0442	stool	no	healthy	control	adult	36.4	DNK	no	IlluminaHiSeq	23985870	98897552	8900779680	90	90	hpc	Paolo_Manghi	ERR321640	NA	LeChatelierE_2013
+MH0443	MH0443	stool	no	healthy	control	adult	39.1	DNK	no	IlluminaHiSeq	23985870	97466924	8772023160	90	90	lpc	Paolo_Manghi	ERR321641	NA	LeChatelierE_2013
+MH0444	MH0444	stool	no	healthy	control	adult	31.9	DNK	no	IlluminaHiSeq	23985870	98712780	8884150200	90	90	lpc	Paolo_Manghi	ERR321642	NA	LeChatelierE_2013
+MH0445	MH0445	stool	no	healthy	control	adult	20.8	DNK	no	IlluminaHiSeq	23985870	92037010	8283330900	90	90	hpc	Paolo_Manghi	ERR321643	NA	LeChatelierE_2013
+MH0446	MH0446	stool	no	healthy	control	adult	31.4	DNK	no	IlluminaHiSeq	23985870	117074346	10536691140	90	90	hpc	Paolo_Manghi	ERR321644	NA	LeChatelierE_2013
+MH0447	MH0447	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	109244906	9832041540	90	90	hpc	Paolo_Manghi	ERR321645	NA	LeChatelierE_2013
+MH0448	MH0448	stool	no	healthy	control	adult	24.0	DNK	no	IlluminaHiSeq	23985870	90147200	8113248000	90	90	hpc	Paolo_Manghi	ERR321646	NA	LeChatelierE_2013
+MH0450	MH0450	stool	no	healthy	control	adult	40.7	DNK	no	IlluminaHiSeq	23985870	91964818	8276833620	90	90	hpc	Paolo_Manghi	ERR321647	NA	LeChatelierE_2013
+MH0451	MH0451	stool	no	healthy	control	adult	33.3	DNK	no	IlluminaHiSeq	23985870	85941302	7734717180	90	90	hpc	Paolo_Manghi	ERR321648	NA	LeChatelierE_2013
+MH0452	MH0452	stool	no	healthy	control	adult	35.4	DNK	no	IlluminaHiSeq	23985870	99801936	8982174240	90	90	hpc	Paolo_Manghi	ERR321649	NA	LeChatelierE_2013
+MH0453	MH0453	stool	no	healthy	control	adult	32.9	DNK	no	IlluminaHiSeq	23985870	86737890	7806410100	90	90	hpc	Paolo_Manghi	ERR321650	NA	LeChatelierE_2013
+MH0454	MH0454	stool	no	healthy	control	adult	22.9	DNK	no	IlluminaHiSeq	23985870	89107084	8019637560	90	90	hpc	Paolo_Manghi	ERR321651	NA	LeChatelierE_2013
+MH0455	MH0455	stool	no	healthy	control	adult	31.3	DNK	no	IlluminaHiSeq	23985870	98098766	8828888940	90	90	hpc	Paolo_Manghi	ERR321652	NA	LeChatelierE_2013
+MH0456	MH0456	stool	no	healthy	control	adult	25.2	DNK	no	IlluminaHiSeq	23985870	88114284	7930285560	90	90	hpc	Paolo_Manghi	ERR321653	NA	LeChatelierE_2013
+MH0457	MH0457	stool	no	healthy	control	adult	23.7	DNK	no	IlluminaHiSeq	23985870	95130010	8561700900	90	90	hpc	Paolo_Manghi	ERR321654	NA	LeChatelierE_2013
+MH0458	MH0458	stool	no	healthy	control	adult	33.4	DNK	no	IlluminaHiSeq	23985870	87603926	7884353340	90	90	hpc	Paolo_Manghi	ERR321655	NA	LeChatelierE_2013
+MH0462	MH0462	stool	no	healthy	control	adult	36.2	DNK	no	IlluminaHiSeq	23985870	104533724	9408035160	90	90	lpc	Paolo_Manghi	ERR321656	NA	LeChatelierE_2013

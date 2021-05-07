@@ -1,24 +1,24 @@
-sample_id	subject_id	body_site	country	sequencing_platform	NCBI_accession	population	gender	age	lifestyle	location	curator	PMID	non_westernized	study_condition	disease	age_category	number_bases	number_reads	minimum_read_length	median_read_length
-SAMEA4031775	CAg34	oralcavity	PHL	IlluminaHiSeq	ERR1474587	Casigurani	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	5140705508	57189266	43	97
-SAMEA4031774	CAg32	oralcavity	PHL	IlluminaHiSeq	ERR1474586	Casigurani	female	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	7251536236	81232564	41	95
-SAMEA4031773	CAg09	oralcavity	PHL	IlluminaHiSeq	ERR1474585	Casigurani	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	6882086617	76646284	43	97
-SAMEA4031772	Cag05	oralcavity	PHL	IlluminaHiSeq	ERR1474584	Casigurani	female	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1705418053	18888654	43	97
-SAMEA4031771	Ag57	oralcavity	PHL	IlluminaHiSeq	ERR1474583	Agta	male	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1800588022	19933662	43	97
-SAMEA4031770	Ag44	oralcavity	PHL	IlluminaHiSeq	ERR1474582	Agta	female	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1520308933	16748230	43	97
-SAMEA4031769	Ag27	oralcavity	PHL	IlluminaHiSeq	ERR1474581	Agta	female	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	532187618	5838736	43	97
-SAMEA4031768	Ag09	oralcavity	PHL	IlluminaHiSeq	ERR1474580	Agta	male	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	9341265282	108143326	39	93
-SAMEA4031767	B99	oralcavity	PHL	IlluminaHiSeq	ERR1474579	Batak	female	39.0	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	2142446938	22420034	42	96
-SAMEA4031766	B73	oralcavity	PHL	IlluminaHiSeq	ERR1474578	Tagbanua	male	NA	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	695155953	7215048	43	97
-SAMEA4031765	B33	oralcavity	PHL	IlluminaHiSeq	ERR1474577	Tagbanua	female	20.0	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	1367419216	14174986	43	97
-SAMEA4031764	B62	oralcavity	PHL	IlluminaHiSeq	ERR1474576	Batak	female	NA	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	552871599	5759686	42	96
-SAMEA4031763	B42	oralcavity	PHL	IlluminaHiSeq	ERR1474575	Batak	male	28.0	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	2449147517	25382956	43	97
-SAMEA4031762	B35	oralcavity	PHL	IlluminaHiSeq	ERR1474574	Batak	male	23.0	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	330259744	3460804	42	96
-SAMEA4031761	B64	oralcavity	PHL	IlluminaHiSeq	ERR1474573	Tagbanua	female	NA	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	328610234	3409272	43	97
-SAMEA4031760	B29	oralcavity	PHL	IlluminaHiSeq	ERR1474572	Tagbanua	male	30.0	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	426242332	4475798	42	96
-SAMEA4031759	CAe45	oralcavity	PHL	IlluminaHiSeq	ERR1474571	Zambal	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1766112731	18811620	42	96
-SAMEA4031758	CAe42	oralcavity	PHL	IlluminaHiSeq	ERR1474570	Zambal	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	5807272204	60550446	43	97
-SAMEA4031756	Cae01	oralcavity	PHL	IlluminaHiSeq	ERR1474568	Zambal	female	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	8014713960	83782478	44	98
-SAMEA4031755	Ae61	oralcavity	PHL	IlluminaHiSeq	ERR1474567	Aeta	female	26.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1288478907	15465158	42	91
-SAMEA4031754	Ae12	oralcavity	PHL	IlluminaHiSeq	ERR1474566	Aeta	female	30.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	2428708630	25284648	43	98
-SAMEA4031753	Ae10	oralcavity	PHL	IlluminaHiSeq	ERR1474565	Aeta	male	23.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	2202468578	24523600	40	94
-SAMEA4031752	Ae08	oralcavity	PHL	IlluminaHiSeq	ERR1474564	Aeta	male	24.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1354644126	14236398	43	97
+sample_id	subject_id	body_site	country	sequencing_platform	NCBI_accession	population	gender	age	lifestyle	location	curator	PMID	non_westernized	study_condition	disease	age_category	number_bases	number_reads	minimum_read_length	median_read_length	study_name
+SAMEA4031775	CAg34	oralcavity	PHL	IlluminaHiSeq	ERR1474587	Casigurani	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	5140705508	57189266	43	97	LassalleF_2017
+SAMEA4031774	CAg32	oralcavity	PHL	IlluminaHiSeq	ERR1474586	Casigurani	female	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	7251536236	81232564	41	95	LassalleF_2017
+SAMEA4031773	CAg09	oralcavity	PHL	IlluminaHiSeq	ERR1474585	Casigurani	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	6882086617	76646284	43	97	LassalleF_2017
+SAMEA4031772	Cag05	oralcavity	PHL	IlluminaHiSeq	ERR1474584	Casigurani	female	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1705418053	18888654	43	97	LassalleF_2017
+SAMEA4031771	Ag57	oralcavity	PHL	IlluminaHiSeq	ERR1474583	Agta	male	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1800588022	19933662	43	97	LassalleF_2017
+SAMEA4031770	Ag44	oralcavity	PHL	IlluminaHiSeq	ERR1474582	Agta	female	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1520308933	16748230	43	97	LassalleF_2017
+SAMEA4031769	Ag27	oralcavity	PHL	IlluminaHiSeq	ERR1474581	Agta	female	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	532187618	5838736	43	97	LassalleF_2017
+SAMEA4031768	Ag09	oralcavity	PHL	IlluminaHiSeq	ERR1474580	Agta	male	NA	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	9341265282	108143326	39	93	LassalleF_2017
+SAMEA4031767	B99	oralcavity	PHL	IlluminaHiSeq	ERR1474579	Batak	female	39.0	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	2142446938	22420034	42	96	LassalleF_2017
+SAMEA4031766	B73	oralcavity	PHL	IlluminaHiSeq	ERR1474578	Tagbanua	male	NA	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	695155953	7215048	43	97	LassalleF_2017
+SAMEA4031765	B33	oralcavity	PHL	IlluminaHiSeq	ERR1474577	Tagbanua	female	20.0	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	1367419216	14174986	43	97	LassalleF_2017
+SAMEA4031764	B62	oralcavity	PHL	IlluminaHiSeq	ERR1474576	Batak	female	NA	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	552871599	5759686	42	96	LassalleF_2017
+SAMEA4031763	B42	oralcavity	PHL	IlluminaHiSeq	ERR1474575	Batak	male	28.0	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	2449147517	25382956	43	97	LassalleF_2017
+SAMEA4031762	B35	oralcavity	PHL	IlluminaHiSeq	ERR1474574	Batak	male	23.0	Hunter-gatherer	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	330259744	3460804	42	96	LassalleF_2017
+SAMEA4031761	B64	oralcavity	PHL	IlluminaHiSeq	ERR1474573	Tagbanua	female	NA	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	328610234	3409272	43	97	LassalleF_2017
+SAMEA4031760	B29	oralcavity	PHL	IlluminaHiSeq	ERR1474572	Tagbanua	male	30.0	Agriculturalist	Palawan	Marisa_Metzger	29165844	yes	control	healthy	adult	426242332	4475798	42	96	LassalleF_2017
+SAMEA4031759	CAe45	oralcavity	PHL	IlluminaHiSeq	ERR1474571	Zambal	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1766112731	18811620	42	96	LassalleF_2017
+SAMEA4031758	CAe42	oralcavity	PHL	IlluminaHiSeq	ERR1474570	Zambal	male	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	5807272204	60550446	43	97	LassalleF_2017
+SAMEA4031756	Cae01	oralcavity	PHL	IlluminaHiSeq	ERR1474568	Zambal	female	NA	Agriculturalist	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	8014713960	83782478	44	98	LassalleF_2017
+SAMEA4031755	Ae61	oralcavity	PHL	IlluminaHiSeq	ERR1474567	Aeta	female	26.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1288478907	15465158	42	91	LassalleF_2017
+SAMEA4031754	Ae12	oralcavity	PHL	IlluminaHiSeq	ERR1474566	Aeta	female	30.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	2428708630	25284648	43	98	LassalleF_2017
+SAMEA4031753	Ae10	oralcavity	PHL	IlluminaHiSeq	ERR1474565	Aeta	male	23.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	2202468578	24523600	40	94	LassalleF_2017
+SAMEA4031752	Ae08	oralcavity	PHL	IlluminaHiSeq	ERR1474564	Aeta	male	24.0	Hunter-gatherer	Luzon	Marisa_Metzger	29165844	yes	control	healthy	adult	1354644126	14236398	43	97	LassalleF_2017

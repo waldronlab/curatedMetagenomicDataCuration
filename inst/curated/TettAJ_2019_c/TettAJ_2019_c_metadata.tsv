@@ -1,51 +1,51 @@
-sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	curator	NCBI_accession
-CM_A01_I1_18	CM_A01_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	69397730	6985545594	75	101	child	TettAJ_2019_c_8	Paolo_Manghi	SRR8784372
-CM_A01_M0_18	CM_A01_M0	stool	NA	control	healthy	30.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	47669482	4796329191	75	101	mother	TettAJ_2019_c_8	Paolo_Manghi	SRR8784374
-CM_A04_I1_18	CM_A04_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	68028500	6838561595	75	101	child	TettAJ_2019_c_7	Paolo_Manghi	SRR8784375
-CM_A04_M0_18	CM_A04_M0	stool	NA	control	healthy	37.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	43507386	4363867978	75	101	mother	TettAJ_2019_c_7	Paolo_Manghi	SRR8784364
-CM_A06_I1_18	CM_A06_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	44438865	4406449653	75	101	child	TettAJ_2019_c_6	Paolo_Manghi	SRR8784386
-CM_A06_M0_18	CM_A06_M0	stool	NA	control	healthy	30.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	39465507	3973022842	75	101	mother	TettAJ_2019_c_6	Paolo_Manghi	SRR8784387
-CM_D02_I1_18	CM_D02_I1	stool	NA	control	healthy	3.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	51446026	5133345540	75	101	child	TettAJ_2019_c_5	Paolo_Manghi	SRR8784389
-CM_D02_M0_18	CM_D02_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	46205805	4601887533	75	101	mother	TettAJ_2019_c_5	Paolo_Manghi	SRR8784391
-CM_D03_I12_18	CM_D03_I12	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	28792930	2899055882	75	101	child	TettAJ_2019_c_4	Paolo_Manghi	SRR8784354
-CM_D03_M0_18	CM_D03_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	50733000	5080496386	75	101	mother	TettAJ_2019_c_4	Paolo_Manghi	SRR8784390
-CM_D04_I1_18	CM_D04_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	59084332	5946132081	75	101	child	TettAJ_2019_c_3	Paolo_Manghi	SRR8784355
-CM_D04_M0_18	CM_D04_M0	stool	NA	control	healthy	28.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	50028307	4990496325	75	101	mother	TettAJ_2019_c_3	Paolo_Manghi	SRR8784370
-CM_D05_I1_18	CM_D05_I1	stool	NA	control	healthy	2.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	42769074	4251493658	75	101	child	TettAJ_2019_c_24	Paolo_Manghi	SRR8784393
-CM_D05_M0_18	CM_D05_M0	stool	NA	control	healthy	45.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	92136650	9131810448	75	101	mother	TettAJ_2019_c_24	Paolo_Manghi	SRR8784383
-CM_D06_I1_18	CM_D06_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	130127484	13041806089	75	101	child	TettAJ_2019_c_23	Paolo_Manghi	SRR8784382
-CM_D06_M0_18	CM_D06_M0	stool	NA	control	healthy	35.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	52030125	5216220432	75	101	mother	TettAJ_2019_c_23	Paolo_Manghi	SRR8784378
-CM_D07_I1_18	CM_D07_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	35083693	3531515216	75	101	child	TettAJ_2019_c_22	Paolo_Manghi	SRR8784394
-CM_D07_M0_18	CM_D07_M0	stool	NA	control	healthy	22.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	79634124	8018694527	75	101	mother	TettAJ_2019_c_22	Paolo_Manghi	SRR8180448
-CM_D08_I1_18	CM_D08_I1	stool	NA	control	healthy	2.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	25610018	2578083389	75	101	child	TettAJ_2019_c_21	Paolo_Manghi	SRR8784388
-CM_D08_M0_18	CM_D08_M0	stool	NA	control	healthy	22.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	41158910	4142384784	75	101	mother	TettAJ_2019_c_21	Paolo_Manghi	SRR8784368
-CM_D09_I1_18	CM_D09_I1	stool	NA	control	healthy	3.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	38343168	3861442368	75	101	child	TettAJ_2019_c_20	Paolo_Manghi	SRR8784365
-CM_D09_M0_18	CM_D09_M0	stool	NA	control	healthy	27.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	38753031	3894166152	75	101	mother	TettAJ_2019_c_20	Paolo_Manghi	SRR8784381
-CM_D10_I1_18	CM_D10_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	47091523	4740522541	75	101	child	TettAJ_2019_c_19	Paolo_Manghi	SRR8784366
-CM_D10_M0_18	CM_D10_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	91253395	9185763119	75	101	mother	TettAJ_2019_c_19	Paolo_Manghi	SRR8180450
-CM_D11_I1_18	CM_D11_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	61063150	6095721216	75	101	child	TettAJ_2019_c_18	Paolo_Manghi	SRR8784397
-CM_D11_M0_18	CM_D11_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	73484432	7313819843	75	101	mother	TettAJ_2019_c_18	Paolo_Manghi	SRR8180449
-CM_D13_I1_18	CM_D13_I1	stool	NA	control	healthy	1.0	child	ETH	NA	yes	IlluminaHiSeq	Qiagen	31607556	111768117	11228539003	75	101	child	TettAJ_2019_c_17	Paolo_Manghi	SRR8784392
-CM_D13_M0_18	CM_D13_M0	stool	NA	control	healthy	26.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	46226513	4579289554	75	101	mother	TettAJ_2019_c_17	Paolo_Manghi	SRR8784356
-CM_D15_I1_18	CM_D15_I1	stool	NA	control	healthy	4.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	59860594	5976321871	75	101	child	TettAJ_2019_c_16	Paolo_Manghi	SRR8784380
-CM_D15_M0_18	CM_D15_M0	stool	NA	control	healthy	28.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	48938485	4867713719	75	101	mother	TettAJ_2019_c_16	Paolo_Manghi	SRR8784395
-CM_D21_I1_18	CM_D21_I1	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	37220227	3744365474	75	101	child	TettAJ_2019_c_15	Paolo_Manghi	SRR8784396
-CM_D21_M0_18	CM_D21_M0	stool	NA	control	healthy	NA	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	50579593	5020064512	75	101	mother	TettAJ_2019_c_15	Paolo_Manghi	SRR8784379
-CM_D21B_I12_18	CM_D21B_I12	stool	NA	control	healthy	0.0	newborn	ETH	NA	yes	IlluminaHiSeq	Qiagen	31607556	41075019	4128756348	75	101	child	TettAJ_2019_c_15	Paolo_Manghi	SRR8784373
-CM_D24_I1_18	CM_D24_I1	stool	NA	control	healthy	2.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	61244807	6162817712	75	101	child	TettAJ_2019_c_14	Paolo_Manghi	SRR8784376
-CM_D24_M0_18	CM_D24_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	61620106	6201906790	75	101	mother	TettAJ_2019_c_14	Paolo_Manghi	SRR8180447
-CM_D26_M0_18	CM_D26_M0	stool	NA	control	healthy	30.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	59708958	6008799475	75	101	mother	TettAJ_2019_c_13	Paolo_Manghi	SRR8784360
-CM_D26A_I13_18	CM_D26A_I13	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	51998398	5232021884	75	101	child	TettAJ_2019_c_13	Paolo_Manghi	SRR8784371
-CM_D26AB_I1_18	CM_D26AB_I1	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	47250316	4757465422	75	101	child	TettAJ_2019_c_13	Paolo_Manghi	SRR8784369
-CM_D26K_I12_18	CM_D26K_I12	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	65830229	6620151974	75	101	child	TettAJ_2019_c_13	Paolo_Manghi	SRR8784357
-CM_D33_I1_18	CM_D33_I1	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	51968007	5221478988	75	101	child	TettAJ_2019_c_12	Paolo_Manghi	SRR8784359
-CM_D33_M0_18	CM_D33_M0	stool	NA	control	healthy	27.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	34064412	3427665907	75	101	mother	TettAJ_2019_c_12	Paolo_Manghi	SRR8784377
-CM_D39_I1_18	CM_D39_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	61173586	6129309749	75	101	child	TettAJ_2019_c_11	Paolo_Manghi	SRR8784385
-CM_D39_M0_18	CM_D39_M0	stool	NA	control	healthy	28.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	54333283	5447889428	75	101	mother	TettAJ_2019_c_11	Paolo_Manghi	SRR8784353
-CM_D40_I1_18	CM_D40_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	51149675	5128361471	75	101	child	TettAJ_2019_c_10	Paolo_Manghi	SRR8784361
-CM_D40_M0_18	CM_D40_M0	stool	NA	control	healthy	26.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	51985432	5201629674	75	101	mother	TettAJ_2019_c_10	Paolo_Manghi	SRR8784362
-CM_D43_I1_18	CM_D43_I1	stool	NA	control	healthy	1.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	49380127	4954271748	75	101	child	TettAJ_2019_c_9	Paolo_Manghi	SRR8784363
-CM_D43_M0_18	CM_D43_M0	stool	NA	control	healthy	42.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	60613988	6075982670	75	101	mother	TettAJ_2019_c_9	Paolo_Manghi	SRR8784384
-CM_D48_M0_18	CM_D48_M0	stool	NA	control	healthy	40.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	45731318	4601441431	75	101	mother	TettAJ_2019_c_2	Paolo_Manghi	SRR8784358
-CM_D50_I1_18	CM_D50_I1	stool	NA	control	healthy	1.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	102641190	10249705832	75	101	child	TettAJ_2019_c_1	Paolo_Manghi	SRR8784367
-CM_D50_M0_18	CM_D50_M0	stool	NA	control	healthy	27.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	71121821	7130206805	75	101	mother	TettAJ_2019_c_1	Paolo_Manghi	SRR8180446
+sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	country	gender	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	family_role	family	curator	NCBI_accession	study_name
+CM_A01_I1_18	CM_A01_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	69397730	6985545594	75	101	child	TettAJ_2019_c_8	Paolo_Manghi	SRR8784372	TettAJ_2019_c
+CM_A01_M0_18	CM_A01_M0	stool	NA	control	healthy	30.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	47669482	4796329191	75	101	mother	TettAJ_2019_c_8	Paolo_Manghi	SRR8784374	TettAJ_2019_c
+CM_A04_I1_18	CM_A04_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	68028500	6838561595	75	101	child	TettAJ_2019_c_7	Paolo_Manghi	SRR8784375	TettAJ_2019_c
+CM_A04_M0_18	CM_A04_M0	stool	NA	control	healthy	37.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	43507386	4363867978	75	101	mother	TettAJ_2019_c_7	Paolo_Manghi	SRR8784364	TettAJ_2019_c
+CM_A06_I1_18	CM_A06_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	44438865	4406449653	75	101	child	TettAJ_2019_c_6	Paolo_Manghi	SRR8784386	TettAJ_2019_c
+CM_A06_M0_18	CM_A06_M0	stool	NA	control	healthy	30.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	39465507	3973022842	75	101	mother	TettAJ_2019_c_6	Paolo_Manghi	SRR8784387	TettAJ_2019_c
+CM_D02_I1_18	CM_D02_I1	stool	NA	control	healthy	3.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	51446026	5133345540	75	101	child	TettAJ_2019_c_5	Paolo_Manghi	SRR8784389	TettAJ_2019_c
+CM_D02_M0_18	CM_D02_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	46205805	4601887533	75	101	mother	TettAJ_2019_c_5	Paolo_Manghi	SRR8784391	TettAJ_2019_c
+CM_D03_I12_18	CM_D03_I12	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	28792930	2899055882	75	101	child	TettAJ_2019_c_4	Paolo_Manghi	SRR8784354	TettAJ_2019_c
+CM_D03_M0_18	CM_D03_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	50733000	5080496386	75	101	mother	TettAJ_2019_c_4	Paolo_Manghi	SRR8784390	TettAJ_2019_c
+CM_D04_I1_18	CM_D04_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	59084332	5946132081	75	101	child	TettAJ_2019_c_3	Paolo_Manghi	SRR8784355	TettAJ_2019_c
+CM_D04_M0_18	CM_D04_M0	stool	NA	control	healthy	28.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	50028307	4990496325	75	101	mother	TettAJ_2019_c_3	Paolo_Manghi	SRR8784370	TettAJ_2019_c
+CM_D05_I1_18	CM_D05_I1	stool	NA	control	healthy	2.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	42769074	4251493658	75	101	child	TettAJ_2019_c_24	Paolo_Manghi	SRR8784393	TettAJ_2019_c
+CM_D05_M0_18	CM_D05_M0	stool	NA	control	healthy	45.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	92136650	9131810448	75	101	mother	TettAJ_2019_c_24	Paolo_Manghi	SRR8784383	TettAJ_2019_c
+CM_D06_I1_18	CM_D06_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	130127484	13041806089	75	101	child	TettAJ_2019_c_23	Paolo_Manghi	SRR8784382	TettAJ_2019_c
+CM_D06_M0_18	CM_D06_M0	stool	NA	control	healthy	35.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	52030125	5216220432	75	101	mother	TettAJ_2019_c_23	Paolo_Manghi	SRR8784378	TettAJ_2019_c
+CM_D07_I1_18	CM_D07_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	35083693	3531515216	75	101	child	TettAJ_2019_c_22	Paolo_Manghi	SRR8784394	TettAJ_2019_c
+CM_D07_M0_18	CM_D07_M0	stool	NA	control	healthy	22.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	79634124	8018694527	75	101	mother	TettAJ_2019_c_22	Paolo_Manghi	SRR8180448	TettAJ_2019_c
+CM_D08_I1_18	CM_D08_I1	stool	NA	control	healthy	2.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	25610018	2578083389	75	101	child	TettAJ_2019_c_21	Paolo_Manghi	SRR8784388	TettAJ_2019_c
+CM_D08_M0_18	CM_D08_M0	stool	NA	control	healthy	22.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	41158910	4142384784	75	101	mother	TettAJ_2019_c_21	Paolo_Manghi	SRR8784368	TettAJ_2019_c
+CM_D09_I1_18	CM_D09_I1	stool	NA	control	healthy	3.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	38343168	3861442368	75	101	child	TettAJ_2019_c_20	Paolo_Manghi	SRR8784365	TettAJ_2019_c
+CM_D09_M0_18	CM_D09_M0	stool	NA	control	healthy	27.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	38753031	3894166152	75	101	mother	TettAJ_2019_c_20	Paolo_Manghi	SRR8784381	TettAJ_2019_c
+CM_D10_I1_18	CM_D10_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	47091523	4740522541	75	101	child	TettAJ_2019_c_19	Paolo_Manghi	SRR8784366	TettAJ_2019_c
+CM_D10_M0_18	CM_D10_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	91253395	9185763119	75	101	mother	TettAJ_2019_c_19	Paolo_Manghi	SRR8180450	TettAJ_2019_c
+CM_D11_I1_18	CM_D11_I1	stool	NA	control	healthy	1.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	61063150	6095721216	75	101	child	TettAJ_2019_c_18	Paolo_Manghi	SRR8784397	TettAJ_2019_c
+CM_D11_M0_18	CM_D11_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	73484432	7313819843	75	101	mother	TettAJ_2019_c_18	Paolo_Manghi	SRR8180449	TettAJ_2019_c
+CM_D13_I1_18	CM_D13_I1	stool	NA	control	healthy	1.0	child	ETH	NA	yes	IlluminaHiSeq	Qiagen	31607556	111768117	11228539003	75	101	child	TettAJ_2019_c_17	Paolo_Manghi	SRR8784392	TettAJ_2019_c
+CM_D13_M0_18	CM_D13_M0	stool	NA	control	healthy	26.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	46226513	4579289554	75	101	mother	TettAJ_2019_c_17	Paolo_Manghi	SRR8784356	TettAJ_2019_c
+CM_D15_I1_18	CM_D15_I1	stool	NA	control	healthy	4.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	59860594	5976321871	75	101	child	TettAJ_2019_c_16	Paolo_Manghi	SRR8784380	TettAJ_2019_c
+CM_D15_M0_18	CM_D15_M0	stool	NA	control	healthy	28.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	48938485	4867713719	75	101	mother	TettAJ_2019_c_16	Paolo_Manghi	SRR8784395	TettAJ_2019_c
+CM_D21_I1_18	CM_D21_I1	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	37220227	3744365474	75	101	child	TettAJ_2019_c_15	Paolo_Manghi	SRR8784396	TettAJ_2019_c
+CM_D21_M0_18	CM_D21_M0	stool	NA	control	healthy	NA	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	50579593	5020064512	75	101	mother	TettAJ_2019_c_15	Paolo_Manghi	SRR8784379	TettAJ_2019_c
+CM_D21B_I12_18	CM_D21B_I12	stool	NA	control	healthy	0.0	newborn	ETH	NA	yes	IlluminaHiSeq	Qiagen	31607556	41075019	4128756348	75	101	child	TettAJ_2019_c_15	Paolo_Manghi	SRR8784373	TettAJ_2019_c
+CM_D24_I1_18	CM_D24_I1	stool	NA	control	healthy	2.0	child	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	61244807	6162817712	75	101	child	TettAJ_2019_c_14	Paolo_Manghi	SRR8784376	TettAJ_2019_c
+CM_D24_M0_18	CM_D24_M0	stool	NA	control	healthy	25.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	61620106	6201906790	75	101	mother	TettAJ_2019_c_14	Paolo_Manghi	SRR8180447	TettAJ_2019_c
+CM_D26_M0_18	CM_D26_M0	stool	NA	control	healthy	30.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	59708958	6008799475	75	101	mother	TettAJ_2019_c_13	Paolo_Manghi	SRR8784360	TettAJ_2019_c
+CM_D26A_I13_18	CM_D26A_I13	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	51998398	5232021884	75	101	child	TettAJ_2019_c_13	Paolo_Manghi	SRR8784371	TettAJ_2019_c
+CM_D26AB_I1_18	CM_D26AB_I1	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	47250316	4757465422	75	101	child	TettAJ_2019_c_13	Paolo_Manghi	SRR8784369	TettAJ_2019_c
+CM_D26K_I12_18	CM_D26K_I12	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	65830229	6620151974	75	101	child	TettAJ_2019_c_13	Paolo_Manghi	SRR8784357	TettAJ_2019_c
+CM_D33_I1_18	CM_D33_I1	stool	NA	control	healthy	0.0	newborn	ETH	male	yes	IlluminaHiSeq	Qiagen	31607556	51968007	5221478988	75	101	child	TettAJ_2019_c_12	Paolo_Manghi	SRR8784359	TettAJ_2019_c
+CM_D33_M0_18	CM_D33_M0	stool	NA	control	healthy	27.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	34064412	3427665907	75	101	mother	TettAJ_2019_c_12	Paolo_Manghi	SRR8784377	TettAJ_2019_c
+CM_D39_I1_18	CM_D39_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	61173586	6129309749	75	101	child	TettAJ_2019_c_11	Paolo_Manghi	SRR8784385	TettAJ_2019_c
+CM_D39_M0_18	CM_D39_M0	stool	NA	control	healthy	28.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	54333283	5447889428	75	101	mother	TettAJ_2019_c_11	Paolo_Manghi	SRR8784353	TettAJ_2019_c
+CM_D40_I1_18	CM_D40_I1	stool	NA	control	healthy	0.0	newborn	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	51149675	5128361471	75	101	child	TettAJ_2019_c_10	Paolo_Manghi	SRR8784361	TettAJ_2019_c
+CM_D40_M0_18	CM_D40_M0	stool	NA	control	healthy	26.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	51985432	5201629674	75	101	mother	TettAJ_2019_c_10	Paolo_Manghi	SRR8784362	TettAJ_2019_c
+CM_D43_I1_18	CM_D43_I1	stool	NA	control	healthy	1.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	49380127	4954271748	75	101	child	TettAJ_2019_c_9	Paolo_Manghi	SRR8784363	TettAJ_2019_c
+CM_D43_M0_18	CM_D43_M0	stool	NA	control	healthy	42.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	60613988	6075982670	75	101	mother	TettAJ_2019_c_9	Paolo_Manghi	SRR8784384	TettAJ_2019_c
+CM_D48_M0_18	CM_D48_M0	stool	NA	control	healthy	40.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	45731318	4601441431	75	101	mother	TettAJ_2019_c_2	Paolo_Manghi	SRR8784358	TettAJ_2019_c
+CM_D50_I1_18	CM_D50_I1	stool	NA	control	healthy	1.0	child	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	102641190	10249705832	75	101	child	TettAJ_2019_c_1	Paolo_Manghi	SRR8784367	TettAJ_2019_c
+CM_D50_M0_18	CM_D50_M0	stool	NA	control	healthy	27.0	adult	ETH	female	yes	IlluminaHiSeq	Qiagen	31607556	71121821	7130206805	75	101	mother	TettAJ_2019_c_1	Paolo_Manghi	SRR8180446	TettAJ_2019_c

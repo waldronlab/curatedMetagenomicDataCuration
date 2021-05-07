@@ -1,33 +1,33 @@
-sample_id	subject_id	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession
-ES_001	ES_001	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	36	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	97036033	9800639333	101	101	Paolo_Manghi	SRR1519058
-ES_007	ES_007	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	40	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	97509055	9848414555	101	101	Paolo_Manghi	SRR1519059
-ES_010	ES_010	oralcavity	yes	thienobenzodiazepines	schizofrenia	T2D;schizofrenia	37	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	73087454	7381832854	101	101	Paolo_Manghi	SRR1519060
-ES_014	ES_014	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	28	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	77455688	7823024488	101	101	Paolo_Manghi	SRR1519061
-ES_017	ES_017	oralcavity	yes	dopamine_antagonists	schizofrenia	schizofrenia	39	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	68567248	6925292048	101	101	Paolo_Manghi	SRR1519071
-ES_019	ES_019	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	32	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	65908779	6656786679	101	101	Paolo_Manghi	SRR1519072
-ES_024	ES_024	oralcavity	yes	dopamine_antagonists;thienobenzodiazepines	schizofrenia	schizofrenia	34	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	96308103	9727118403	101	101	Paolo_Manghi	SRR1519073
-ES_043	ES_043	oralcavity	yes	phenylpiperidines;thienobenzodiazepines	schizofrenia	schizofrenia	27	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	76433636	7719797236	101	101	Paolo_Manghi	SRR1519075
-ES_046	ES_046	oralcavity	yes	dopamine_antagonists	schizofrenia	schizofrenia	40	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	50665692	5117234892	101	101	Paolo_Manghi	SRR1519076
-ES_048	ES_048	oralcavity	yes	dopamine_antagonists	schizofrenia	schizofrenia	41	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	54260267	5480286967	101	101	Paolo_Manghi	SRR1519077
-ES_069	ES_069	oralcavity	no	NA	control	healthy	59	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	142660639	14408724539	101	101	Paolo_Manghi	SRR1518393;SRR1518410
-ES_080	ES_080	oralcavity	yes	dopamine_antagonists	schizofrenia	T2D;schizofrenia	31	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	67748090	6842557090	101	101	Paolo_Manghi	SRR1519078
-ES_088	ES_088	oralcavity	no	NA	control	healthy	29	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	46560451	4702605551	101	101	Paolo_Manghi	SRR1518476
-ES_089	ES_089	oralcavity	no	NA	control	healthy	29	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	51170097	5168179797	101	101	Paolo_Manghi	SRR1518536
-ES_095	ES_095	oralcavity	no	NA	control	healthy	32	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	29670989	2996769889	101	101	Paolo_Manghi	SRR1518998
-ES_099	ES_099	oralcavity	no	NA	control	healthy	48	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	43956858	4439642658	101	101	Paolo_Manghi	SRR1519031
-ES_104	ES_104	oralcavity	no	NA	control	healthy	46	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	37021728	3739194528	101	101	Paolo_Manghi	SRR1519044
-ES_106	ES_106	oralcavity	no	NA	control	healthy	29	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	38562271	3894789371	101	101	Paolo_Manghi	SRR1519045
-ES_107	ES_107	oralcavity	no	NA	control	healthy	27	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	51343041	5185647141	101	101	Paolo_Manghi	SRR1519046
-ES_108	ES_108	oralcavity	no	NA	schizofrenia	schizofrenia	37	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	105178791	10623057891	101	101	Paolo_Manghi	SRR1519079
-ES_110	ES_110	oralcavity	no	NA	control	healthy	46	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	58009820	5858991820	101	101	Paolo_Manghi	SRR1519047
-ES_114	ES_114	oralcavity	no	NA	control	healthy	28	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	41257060	4166963060	101	101	Paolo_Manghi	SRR1519048
-ES_116	ES_116	oralcavity	no	NA	schizofrenia	schizofrenia	37	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	35667403	3602407703	101	101	Paolo_Manghi	SRR1519080
-ES_132	ES_132	oralcavity	yes	dopamine_antagonists;phenylpiperidines	schizofrenia	schizofrenia	36	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	41668554	4208523954	101	101	Paolo_Manghi	SRR1519082
-ES_137	ES_137	oralcavity	no	NA	schizofrenia	T2D;schizofrenia	29	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	59698462	6029544662	101	101	Paolo_Manghi	SRR1519083
-ES_147	ES_147	oralcavity	no	NA	schizofrenia	CD;schizofrenia	27	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	45995940	4645589940	101	101	Paolo_Manghi	SRR1519084
-ES_158	ES_158	oralcavity	no	NA	control	healthy	27	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	51350540	5186404540	101	101	Paolo_Manghi	SRR1519049
-ES_207	ES_207	oralcavity	no	NA	control	healthy	26	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	37126527	3749779227	101	101	Paolo_Manghi	SRR1519050
-ES_208	ES_208	oralcavity	no	NA	control	healthy	27	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	57023729	5759396629	101	101	Paolo_Manghi	SRR1519052
-ES_209	ES_209	oralcavity	no	NA	control	healthy	28	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	73888908	7462779708	101	101	Paolo_Manghi	SRR1519055
-ES_210	ES_210	oralcavity	no	NA	control	healthy	28	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	40768371	4117605471	101	101	Paolo_Manghi	SRR1519056
-ES_211	ES_211	oralcavity	no	NA	control	healthy	31	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	37767401	3814507501	101	101	Paolo_Manghi	SRR1519057
+sample_id	subject_id	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	curator	NCBI_accession	study_name
+ES_001	ES_001	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	36	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	97036033	9800639333	101	101	Paolo_Manghi	SRR1519058	Castro-NallarE_2015
+ES_007	ES_007	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	40	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	97509055	9848414555	101	101	Paolo_Manghi	SRR1519059	Castro-NallarE_2015
+ES_010	ES_010	oralcavity	yes	thienobenzodiazepines	schizofrenia	T2D;schizofrenia	37	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	73087454	7381832854	101	101	Paolo_Manghi	SRR1519060	Castro-NallarE_2015
+ES_014	ES_014	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	28	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	77455688	7823024488	101	101	Paolo_Manghi	SRR1519061	Castro-NallarE_2015
+ES_017	ES_017	oralcavity	yes	dopamine_antagonists	schizofrenia	schizofrenia	39	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	68567248	6925292048	101	101	Paolo_Manghi	SRR1519071	Castro-NallarE_2015
+ES_019	ES_019	oralcavity	yes	thienobenzodiazepines	schizofrenia	schizofrenia	32	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	65908779	6656786679	101	101	Paolo_Manghi	SRR1519072	Castro-NallarE_2015
+ES_024	ES_024	oralcavity	yes	dopamine_antagonists;thienobenzodiazepines	schizofrenia	schizofrenia	34	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	96308103	9727118403	101	101	Paolo_Manghi	SRR1519073	Castro-NallarE_2015
+ES_043	ES_043	oralcavity	yes	phenylpiperidines;thienobenzodiazepines	schizofrenia	schizofrenia	27	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	76433636	7719797236	101	101	Paolo_Manghi	SRR1519075	Castro-NallarE_2015
+ES_046	ES_046	oralcavity	yes	dopamine_antagonists	schizofrenia	schizofrenia	40	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	50665692	5117234892	101	101	Paolo_Manghi	SRR1519076	Castro-NallarE_2015
+ES_048	ES_048	oralcavity	yes	dopamine_antagonists	schizofrenia	schizofrenia	41	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	54260267	5480286967	101	101	Paolo_Manghi	SRR1519077	Castro-NallarE_2015
+ES_069	ES_069	oralcavity	no	NA	control	healthy	59	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	142660639	14408724539	101	101	Paolo_Manghi	SRR1518393;SRR1518410	Castro-NallarE_2015
+ES_080	ES_080	oralcavity	yes	dopamine_antagonists	schizofrenia	T2D;schizofrenia	31	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	67748090	6842557090	101	101	Paolo_Manghi	SRR1519078	Castro-NallarE_2015
+ES_088	ES_088	oralcavity	no	NA	control	healthy	29	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	46560451	4702605551	101	101	Paolo_Manghi	SRR1518476	Castro-NallarE_2015
+ES_089	ES_089	oralcavity	no	NA	control	healthy	29	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	51170097	5168179797	101	101	Paolo_Manghi	SRR1518536	Castro-NallarE_2015
+ES_095	ES_095	oralcavity	no	NA	control	healthy	32	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	29670989	2996769889	101	101	Paolo_Manghi	SRR1518998	Castro-NallarE_2015
+ES_099	ES_099	oralcavity	no	NA	control	healthy	48	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	43956858	4439642658	101	101	Paolo_Manghi	SRR1519031	Castro-NallarE_2015
+ES_104	ES_104	oralcavity	no	NA	control	healthy	46	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	37021728	3739194528	101	101	Paolo_Manghi	SRR1519044	Castro-NallarE_2015
+ES_106	ES_106	oralcavity	no	NA	control	healthy	29	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	38562271	3894789371	101	101	Paolo_Manghi	SRR1519045	Castro-NallarE_2015
+ES_107	ES_107	oralcavity	no	NA	control	healthy	27	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	51343041	5185647141	101	101	Paolo_Manghi	SRR1519046	Castro-NallarE_2015
+ES_108	ES_108	oralcavity	no	NA	schizofrenia	schizofrenia	37	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	105178791	10623057891	101	101	Paolo_Manghi	SRR1519079	Castro-NallarE_2015
+ES_110	ES_110	oralcavity	no	NA	control	healthy	46	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	58009820	5858991820	101	101	Paolo_Manghi	SRR1519047	Castro-NallarE_2015
+ES_114	ES_114	oralcavity	no	NA	control	healthy	28	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	41257060	4166963060	101	101	Paolo_Manghi	SRR1519048	Castro-NallarE_2015
+ES_116	ES_116	oralcavity	no	NA	schizofrenia	schizofrenia	37	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	35667403	3602407703	101	101	Paolo_Manghi	SRR1519080	Castro-NallarE_2015
+ES_132	ES_132	oralcavity	yes	dopamine_antagonists;phenylpiperidines	schizofrenia	schizofrenia	36	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	41668554	4208523954	101	101	Paolo_Manghi	SRR1519082	Castro-NallarE_2015
+ES_137	ES_137	oralcavity	no	NA	schizofrenia	T2D;schizofrenia	29	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	59698462	6029544662	101	101	Paolo_Manghi	SRR1519083	Castro-NallarE_2015
+ES_147	ES_147	oralcavity	no	NA	schizofrenia	CD;schizofrenia	27	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	45995940	4645589940	101	101	Paolo_Manghi	SRR1519084	Castro-NallarE_2015
+ES_158	ES_158	oralcavity	no	NA	control	healthy	27	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	51350540	5186404540	101	101	Paolo_Manghi	SRR1519049	Castro-NallarE_2015
+ES_207	ES_207	oralcavity	no	NA	control	healthy	26	adult	female	USA	no	IlluminaHiSeq	MoBio	26336637	37126527	3749779227	101	101	Paolo_Manghi	SRR1519050	Castro-NallarE_2015
+ES_208	ES_208	oralcavity	no	NA	control	healthy	27	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	57023729	5759396629	101	101	Paolo_Manghi	SRR1519052	Castro-NallarE_2015
+ES_209	ES_209	oralcavity	no	NA	control	healthy	28	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	73888908	7462779708	101	101	Paolo_Manghi	SRR1519055	Castro-NallarE_2015
+ES_210	ES_210	oralcavity	no	NA	control	healthy	28	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	40768371	4117605471	101	101	Paolo_Manghi	SRR1519056	Castro-NallarE_2015
+ES_211	ES_211	oralcavity	no	NA	control	healthy	31	adult	male	USA	no	IlluminaHiSeq	MoBio	26336637	37767401	3814507501	101	101	Paolo_Manghi	SRR1519057	Castro-NallarE_2015
