@@ -1,5 +1,5 @@
 col.name,col.class,uniqueness,requiredness,multiplevalues,allowedvalues,description
-study_name,character,non-unique,optional,FALSE,[a-zA-Z-]+_[0-9]{4}[a-zA-Z_]*,Dataset name.
+study_name,character,non-unique,optional,FALSE,[a-zA-Z-]+_[0-9]{4}[0-9a-zA-Z]\S+,Dataset name.
 sample_id,character,unique,required,FALSE,[0-9a-zA-Z]\S+,Sample identifier.
 subject_id,character,non-unique,required,FALSE,[0-9a-zA-Z]\S+,Subject identifier.
 body_site,character,non-unique,required,FALSE,stool|skin|vagina|oralcavity|nasalcavity|lung|milk,Bodysite of acquisition.
