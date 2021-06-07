@@ -144,14 +144,14 @@ each, then binds them together, appending a `study` column.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='va'>ret</span> <span class='op'>=</span> <span class='fu'>metadata_long_form</span><span class='op'>(</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span class='warning'>Warning: Unknown or uninitialised column: `sampleID`.</span></div><div class='output co'>#&gt; <span class='error'>Error: Assigned data `as.character(df$sampleID)` must be compatible with existing data.</span>
-#&gt; <span class='error'><span style='color: #BB0000;'>✖</span><span> Existing data has 24 rows.</span>
-#&gt; <span class='error'></span><span style='color: #BB0000;'>✖</span><span> Assigned data has 0 rows.</span>
-#&gt; <span class='error'></span><span style='color: #0000BB;'>ℹ</span><span> Only vectors of size 1 are recycled.</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
+#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> Existing data has 24 rows.</span>
+#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> Assigned data has 0 rows.</span>
+#&gt; <span class='error'><span style='color: #0000BB;'>ℹ</span> Only vectors of size 1 are recycled.</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'ret' not found</span></div><div class='input'><span class='va'>ret</span>
 </div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'ret' not found</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span class='error'>Error in table(ret$study): object 'ret' not found</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>ret</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span class='error'>Error in summary(ret): object 'ret' not found</span></div><div class='input'>
-</div></span></pre>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
