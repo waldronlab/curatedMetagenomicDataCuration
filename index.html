@@ -20,6 +20,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -32,18 +34,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">curatedMetagenomicDataCuration</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.99.6</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.99.6</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="articles/curatedMetagenomicDataCuration.html">Get started</a>
 </li>
@@ -53,7 +49,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/">
+  <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -71,61 +67,73 @@
       </header><div class="row">
   <div class="contents col-md-9">
 
-<div id="quick-start" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#quick-start" class="anchor"></a>Quick Start</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="quick-start">Quick Start<a class="anchor" aria-label="anchor" href="#quick-start"></a>
+</h1></div>
 <p>This package checks metadata curation for curatedMetagenomicData. To use it:</p>
-<ol>
-<li>Look at the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv">template</a> and <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated">already curated files</a> to see what curated files should look like.</li>
-<li>Place a tab-separated file ending in "_metadata.tsv" in a directory under inst/curation. Commit and create a pull request. Or if you don’t like git, use Github.com’s <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated">“Upload Files” button</a> to upload to create a pull request without the need to use git.</li>
+<ol style="list-style-type: decimal">
+<li>Look at the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template</a> and <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated" class="external-link">already curated files</a> to see what curated files should look like.</li>
+<li>Place a tab-separated file ending in "_metadata.tsv" in a directory under inst/curation. Commit and create a pull request. Or if you don’t like git, use Github.com’s <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated" class="external-link">“Upload Files” button</a> to upload to create a pull request without the need to use git.</li>
 <li>Does the new dataset pass all checks? It takes 3-4 minutes for the check to be completed (TODO: add overall badge)</li>
-<li>See the <a href="https://waldronlab.io/curatedMetagenomicDataCuration/articles/curatedMetagenomicDataCuration.html">detailed syntax-checking report</a>.</li>
+<li>See the <a href="https://waldronlab.io/curatedMetagenomicDataCuration/articles/curatedMetagenomicDataCuration.html" class="external-link">detailed syntax-checking report</a>.</li>
 </ol>
 <p>If you don’t want to wait for GitHub Actions to finish checking, you can check on your own computer:</p>
-<pre><code>BiocManager::install("waldronlab/curatedMetagenomicDataCuration", build_vignettes=TRUE)
-browseVignettes("curatedMetagenomicDataCuration")</code></pre>
+<pre><code><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu">install</span><span class="op">(</span><span class="st">"waldronlab/curatedMetagenomicDataCuration"</span>, build_vignettes<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/browseVignettes.html" class="external-link">browseVignettes</a></span><span class="op">(</span><span class="st">"curatedMetagenomicDataCuration"</span><span class="op">)</span></code></pre>
 </div>
-<div id="more-complete-introduction" class="section level1">
-<h1 class="hasAnchor">
-<a href="#more-complete-introduction" class="anchor"></a>More complete introduction</h1>
-<p>The complete reference for curators is provided at this page’s <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/wiki">wiki</a>.</p>
+<div class="section level1">
+<h1 id="more-complete-introduction">More complete introduction<a class="anchor" aria-label="anchor" href="#more-complete-introduction"></a>
+</h1>
+<p>The complete reference for curators is provided at this page’s <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/wiki" class="external-link">wiki</a>.</p>
 </div>
 
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/">https://​github.com/​waldronlab/​curatedMetagenomicDataCuration/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/issues">https://​github.com/​waldronlab/​curatedMetagenomicDataCuration/​issues</a>
-</li>
+<li><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/Artistic-2.0">Artistic-2.0</a></li>
+<li><a href="https://www.r-project.org/Licenses/Artistic-2.0" class="external-link">Artistic-2.0</a></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing curatedMetagenomicDataCuration</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Levi Waldron <br><small class="roles"> Maintainer </small>  </li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Levi Waldron.</p>
+  <p></p>
+<p>Developed by Levi Waldron.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -133,6 +141,8 @@ browseVignettes("curatedMetagenomicDataCuration")</code></pre>
 
   
 
+
+  
 
   </body>
 </html>
