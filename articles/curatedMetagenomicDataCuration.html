@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2021-12-13 16:15:35 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-02-28 18:12:33 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -89,166 +89,166 @@
 <p>If <code>firstonly &lt;- TRUE</code>, only show results from the first dataset. This can be used as a temporary measure to shorten the output when troubleshooting the syntax-checking system itself.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">firstonly</span> <span class="op">&lt;-</span> <span class="cn">FALSE</span></code></pre></div>
-<div class="section level1">
-<h1 id="asnicarf_2017_metadata-tsv">AsnicarF_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#asnicarf_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="asnicarf_2017_metadata-tsv">AsnicarF_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#asnicarf_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/AsnicarF_2017/AsnicarF_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/AsnicarF_2017/AsnicarF_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="asnicarf_2021_metadata-tsv">AsnicarF_2021_metadata.tsv<a class="anchor" aria-label="anchor" href="#asnicarf_2021_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="asnicarf_2021_metadata-tsv">AsnicarF_2021_metadata.tsv<a class="anchor" aria-label="anchor" href="#asnicarf_2021_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/AsnicarF_2021/AsnicarF_2021_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/AsnicarF_2021/AsnicarF_2021_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="backhedf_2015_metadata-tsv">BackhedF_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#backhedf_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="backhedf_2015_metadata-tsv">BackhedF_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#backhedf_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/BackhedF_2015/BackhedF_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/BackhedF_2015/BackhedF_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="bengtsson-palmej_2015_metadata-tsv">Bengtsson-PalmeJ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#bengtsson-palmej_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="bengtsson-palmej_2015_metadata-tsv">Bengtsson-PalmeJ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#bengtsson-palmej_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="britoil_2016_metadata-tsv">BritoIL_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#britoil_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="britoil_2016_metadata-tsv">BritoIL_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#britoil_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/BritoIL_2016/BritoIL_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/BritoIL_2016/BritoIL_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="brooksb_2017_metadata-tsv">BrooksB_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#brooksb_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="brooksb_2017_metadata-tsv">BrooksB_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#brooksb_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/BrooksB_2017/BrooksB_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/BrooksB_2017/BrooksB_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="castro-nallare_2015_metadata-tsv">Castro-NallarE_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#castro-nallare_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="castro-nallare_2015_metadata-tsv">Castro-NallarE_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#castro-nallare_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Castro-NallarE_2015/Castro-NallarE_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Castro-NallarE_2015/Castro-NallarE_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="chengpingw_2017_metadata-tsv">ChengpingW_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#chengpingw_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="chengpingw_2017_metadata-tsv">ChengpingW_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#chengpingw_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ChengpingW_2017/ChengpingW_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ChengpingW_2017/ChengpingW_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="chngkr_2016_metadata-tsv">ChngKR_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#chngkr_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="chngkr_2016_metadata-tsv">ChngKR_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#chngkr_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ChngKR_2016/ChngKR_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ChngKR_2016/ChngKR_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="chudm_2017_metadata-tsv">ChuDM_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#chudm_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="chudm_2017_metadata-tsv">ChuDM_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#chudm_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ChuDM_2017/ChuDM_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ChuDM_2017/ChuDM_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="contevillelc_2019_metadata-tsv">ContevilleLC_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#contevillelc_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="contevillelc_2019_metadata-tsv">ContevilleLC_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#contevillelc_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ContevilleLC_2019/ContevilleLC_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="costeapi_2017_metadata-tsv">CosteaPI_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#costeapi_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="costeapi_2017_metadata-tsv">CosteaPI_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#costeapi_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/CosteaPI_2017/CosteaPI_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/CosteaPI_2017/CosteaPI_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="davidla_2015_metadata-tsv">DavidLA_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#davidla_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="davidla_2015_metadata-tsv">DavidLA_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#davidla_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/DavidLA_2015/DavidLA_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/DavidLA_2015/DavidLA_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="defilippisf_2019_metadata-tsv">DeFilippisF_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#defilippisf_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="defilippisf_2019_metadata-tsv">DeFilippisF_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#defilippisf_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/DeFilippisF_2019/DeFilippisF_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/DeFilippisF_2019/DeFilippisF_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="dhakandb_2019_metadata-tsv">DhakanDB_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#dhakandb_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="dhakandb_2019_metadata-tsv">DhakanDB_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#dhakandb_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/DhakanDB_2019/DhakanDB_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/DhakanDB_2019/DhakanDB_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="fengq_2015_metadata-tsv">FengQ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#fengq_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="fengq_2015_metadata-tsv">FengQ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#fengq_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/FengQ_2015/FengQ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/FengQ_2015/FengQ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="ferrettip_2018_metadata-tsv">FerrettiP_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#ferrettip_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="ferrettip_2018_metadata-tsv">FerrettiP_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#ferrettip_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/FerrettiP_2018/FerrettiP_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/FerrettiP_2018/FerrettiP_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="ghensip_2019_metadata-tsv">GhensiP_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#ghensip_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="ghensip_2019_metadata-tsv">GhensiP_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#ghensip_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GhensiP_2019/GhensiP_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GhensiP_2019/GhensiP_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="gopalakrishnanv_2018_metadata-tsv">GopalakrishnanV_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#gopalakrishnanv_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="gopalakrishnanv_2018_metadata-tsv">GopalakrishnanV_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#gopalakrishnanv_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GopalakrishnanV_2018/GopalakrishnanV_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GopalakrishnanV_2018/GopalakrishnanV_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="guptaa_2019_metadata-tsv">GuptaA_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#guptaa_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="guptaa_2019_metadata-tsv">GuptaA_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#guptaa_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="hallab_2017_metadata-tsv">HallAB_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#hallab_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="hallab_2017_metadata-tsv">HallAB_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#hallab_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HallAB_2017/HallAB_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HallAB_2017/HallAB_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="hannigangd_2017_metadata-tsv">HanniganGD_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#hannigangd_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="hannigangd_2017_metadata-tsv">HanniganGD_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#hannigangd_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HanniganGD_2017/HanniganGD_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="hansenlbs_2018_metadata-tsv">HansenLBS_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#hansenlbs_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="hansenlbs_2018_metadata-tsv">HansenLBS_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#hansenlbs_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HansenLBS_2018/HansenLBS_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HansenLBS_2018/HansenLBS_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="heitz-buscharta_2016_metadata-tsv">Heitz-BuschartA_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#heitz-buscharta_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="heitz-buscharta_2016_metadata-tsv">Heitz-BuschartA_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#heitz-buscharta_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Heitz-BuschartA_2016/Heitz-BuschartA_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Heitz-BuschartA_2016/Heitz-BuschartA_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="hmp_2012_metadata-tsv">HMP_2012_metadata.tsv<a class="anchor" aria-label="anchor" href="#hmp_2012_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="hmp_2012_metadata-tsv">HMP_2012_metadata.tsv<a class="anchor" aria-label="anchor" href="#hmp_2012_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2012/HMP_2012_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2012/HMP_2012_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="hmp_2019_ibdmdb_metadata-tsv">HMP_2019_ibdmdb_metadata.tsv<a class="anchor" aria-label="anchor" href="#hmp_2019_ibdmdb_metadata-tsv"></a>
-</h1>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_ibdmdb/HMP_2019_ibdmdb_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_ibdmdb/HMP_2019_ibdmdb_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level2">
-<h2 id="entry-errors">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors"></a>
+<h2 id="hmp_2019_ibdmdb_metadata-tsv">HMP_2019_ibdmdb_metadata.tsv<a class="anchor" aria-label="anchor" href="#hmp_2019_ibdmdb_metadata-tsv"></a>
 </h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_ibdmdb/HMP_2019_ibdmdb_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_ibdmdb/HMP_2019_ibdmdb_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="study_name">study_name<a class="anchor" aria-label="anchor" href="#study_name"></a>
+<h3 id="entry-errors">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors"></a>
 </h3>
+<div class="section level4">
+<h4 id="study_name">study_name<a class="anchor" aria-label="anchor" href="#study_name"></a>
+</h4>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -1898,16 +1898,16 @@
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="hmp_2019_t2d_metadata-tsv">HMP_2019_t2d_metadata.tsv<a class="anchor" aria-label="anchor" href="#hmp_2019_t2d_metadata-tsv"></a>
-</h1>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level2">
-<h2 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
+<h2 id="hmp_2019_t2d_metadata-tsv">HMP_2019_t2d_metadata.tsv<a class="anchor" aria-label="anchor" href="#hmp_2019_t2d_metadata-tsv"></a>
 </h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="study_name-1">study_name<a class="anchor" aria-label="anchor" href="#study_name-1"></a>
+<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
 </h3>
+<div class="section level4">
+<h4 id="study_name-1">study_name<a class="anchor" aria-label="anchor" href="#study_name-1"></a>
+</h4>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2225,28 +2225,28 @@
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="ijazuz_2017_metadata-tsv">IjazUZ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#ijazuz_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="ijazuz_2017_metadata-tsv">IjazUZ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#ijazuz_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/IjazUZ_2017/IjazUZ_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/IjazUZ_2017/IjazUZ_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="jiez_2017_metadata-tsv">JieZ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#jiez_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="jiez_2017_metadata-tsv">JieZ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#jiez_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="karlssonfh_2013_metadata-tsv">KarlssonFH_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#karlssonfh_2013_metadata-tsv"></a>
-</h1>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level2">
-<h2 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
+<h2 id="karlssonfh_2013_metadata-tsv">KarlssonFH_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#karlssonfh_2013_metadata-tsv"></a>
 </h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
+<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
 </h3>
+<div class="section level4">
+<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
+</h4>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2270,232 +2270,232 @@
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="kaurk_2020_metadata-tsv">KaurK_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#kaurk_2020_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="kaurk_2020_metadata-tsv">KaurK_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#kaurk_2020_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="keohanedm_2020_metadata-tsv">KeohaneDM_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#keohanedm_2020_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="keohanedm_2020_metadata-tsv">KeohaneDM_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#keohanedm_2020_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KeohaneDM_2020/KeohaneDM_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="kiesers_2018_metadata-tsv">KieserS_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#kiesers_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="kiesers_2018_metadata-tsv">KieserS_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#kiesers_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KieserS_2018/KieserS_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KieserS_2018/KieserS_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="kosticad_2015_metadata-tsv">KosticAD_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#kosticad_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="kosticad_2015_metadata-tsv">KosticAD_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#kosticad_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KosticAD_2015/KosticAD_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="lassallef_2017_metadata-tsv">LassalleF_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#lassallef_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="lassallef_2017_metadata-tsv">LassalleF_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#lassallef_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LassalleF_2017/LassalleF_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LassalleF_2017/LassalleF_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="lechateliere_2013_metadata-tsv">LeChatelierE_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#lechateliere_2013_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="lechateliere_2013_metadata-tsv">LeChatelierE_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#lechateliere_2013_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LeChatelierE_2013/LeChatelierE_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LeChatelierE_2013/LeChatelierE_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="lifelinesdeep_2016_metadata-tsv">LifeLinesDeep_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#lifelinesdeep_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="lifelinesdeep_2016_metadata-tsv">LifeLinesDeep_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#lifelinesdeep_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LifeLinesDeep_2016/LifeLinesDeep_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LifeLinesDeep_2016/LifeLinesDeep_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="lij_2014_metadata-tsv">LiJ_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#lij_2014_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="lij_2014_metadata-tsv">LiJ_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#lij_2014_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiJ_2014/LiJ_2014_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiJ_2014/LiJ_2014_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="lij_2017_metadata-tsv">LiJ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#lij_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="lij_2017_metadata-tsv">LiJ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#lij_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiJ_2017/LiJ_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiJ_2017/LiJ_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="liss_2016_metadata-tsv">LiSS_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#liss_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="liss_2016_metadata-tsv">LiSS_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#liss_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiSS_2016/LiSS_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiSS_2016/LiSS_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="liuw_2016_metadata-tsv">LiuW_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#liuw_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="liuw_2016_metadata-tsv">LiuW_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#liuw_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LiuW_2016/LiuW_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LiuW_2016/LiuW_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="lokmera_2019_metadata-tsv">LokmerA_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#lokmera_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="lokmera_2019_metadata-tsv">LokmerA_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#lokmera_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LokmerA_2019/LokmerA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LokmerA_2019/LokmerA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="lomannj_2013_metadata-tsv">LomanNJ_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#lomannj_2013_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="lomannj_2013_metadata-tsv">LomanNJ_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#lomannj_2013_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LomanNJ_2013/LomanNJ_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LomanNJ_2013/LomanNJ_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="loombar_2017_metadata-tsv">LoombaR_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#loombar_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="loombar_2017_metadata-tsv">LoombaR_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#loombar_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="louiss_2016_metadata-tsv">LouisS_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#louiss_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="louiss_2016_metadata-tsv">LouisS_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#louiss_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LouisS_2016/LouisS_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LouisS_2016/LouisS_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="matsonv_2018_metadata-tsv">MatsonV_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#matsonv_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="matsonv_2018_metadata-tsv">MatsonV_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#matsonv_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/MatsonV_2018/MatsonV_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/MatsonV_2018/MatsonV_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="mehtars_2018_metadata-tsv">MehtaRS_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#mehtars_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="mehtars_2018_metadata-tsv">MehtaRS_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#mehtars_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/MehtaRS_2018/MehtaRS_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/MehtaRS_2018/MehtaRS_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="nagyszakald_2017_metadata-tsv">NagySzakalD_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#nagyszakald_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="nagyszakald_2017_metadata-tsv">NagySzakalD_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#nagyszakald_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/NagySzakalD_2017/NagySzakalD_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/NagySzakalD_2017/NagySzakalD_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="nielsenhb_2014_metadata-tsv">NielsenHB_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#nielsenhb_2014_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="nielsenhb_2014_metadata-tsv">NielsenHB_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#nielsenhb_2014_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/NielsenHB_2014/NielsenHB_2014_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/NielsenHB_2014/NielsenHB_2014_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="obregon-titoaj_2015_metadata-tsv">Obregon-TitoAJ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#obregon-titoaj_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="obregon-titoaj_2015_metadata-tsv">Obregon-TitoAJ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#obregon-titoaj_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Obregon-TitoAJ_2015/Obregon-TitoAJ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Obregon-TitoAJ_2015/Obregon-TitoAJ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="ohj_2014_metadata-tsv">OhJ_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#ohj_2014_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="ohj_2014_metadata-tsv">OhJ_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#ohj_2014_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/OhJ_2014/OhJ_2014_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/OhJ_2014/OhJ_2014_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="olmmr_2017_metadata-tsv">OlmMR_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#olmmr_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="olmmr_2017_metadata-tsv">OlmMR_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#olmmr_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/OlmMR_2017/OlmMR_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/OlmMR_2017/OlmMR_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="pasollie_2019_metadata-tsv">PasolliE_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#pasollie_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="pasollie_2019_metadata-tsv">PasolliE_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#pasollie_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PasolliE_2019/PasolliE_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PasolliE_2019/PasolliE_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="pehrssone_2016_metadata-tsv">PehrssonE_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#pehrssone_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="pehrssone_2016_metadata-tsv">PehrssonE_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#pehrssone_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="qinj_2012_metadata-tsv">QinJ_2012_metadata.tsv<a class="anchor" aria-label="anchor" href="#qinj_2012_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="qinj_2012_metadata-tsv">QinJ_2012_metadata.tsv<a class="anchor" aria-label="anchor" href="#qinj_2012_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinJ_2012/QinJ_2012_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinJ_2012/QinJ_2012_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="qinn_2014_metadata-tsv">QinN_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#qinn_2014_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="qinn_2014_metadata-tsv">QinN_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#qinn_2014_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/QinN_2014/QinN_2014_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="rampellis_2015_metadata-tsv">RampelliS_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#rampellis_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="rampellis_2015_metadata-tsv">RampelliS_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#rampellis_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RampelliS_2015/RampelliS_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RampelliS_2015/RampelliS_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="raymondf_2016_metadata-tsv">RaymondF_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#raymondf_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="raymondf_2016_metadata-tsv">RaymondF_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#raymondf_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RaymondF_2016/RaymondF_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RaymondF_2016/RaymondF_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="rosaba_2018_metadata-tsv">RosaBA_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#rosaba_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="rosaba_2018_metadata-tsv">RosaBA_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#rosaba_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RosaBA_2018/RosaBA_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="rubelma_2020_metadata-tsv">RubelMA_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#rubelma_2020_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="rubelma_2020_metadata-tsv">RubelMA_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#rubelma_2020_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/RubelMA_2020/RubelMA_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="sankaranarayanank_2015_metadata-tsv">SankaranarayananK_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#sankaranarayanank_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="sankaranarayanank_2015_metadata-tsv">SankaranarayananK_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#sankaranarayanank_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SankaranarayananK_2015/SankaranarayananK_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="schirmerm_2016_metadata-tsv">SchirmerM_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#schirmerm_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="schirmerm_2016_metadata-tsv">SchirmerM_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#schirmerm_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SchirmerM_2016/SchirmerM_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SchirmerM_2016/SchirmerM_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="shaoy_2019_metadata-tsv">ShaoY_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#shaoy_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="shaoy_2019_metadata-tsv">ShaoY_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#shaoy_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ShaoY_2019/ShaoY_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ShaoY_2019/ShaoY_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="shib_2015_metadata-tsv">ShiB_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#shib_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="shib_2015_metadata-tsv">ShiB_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#shib_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ShiB_2015/ShiB_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ShiB_2015/ShiB_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="smitssa_2017_metadata-tsv">SmitsSA_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#smitssa_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="smitssa_2017_metadata-tsv">SmitsSA_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#smitssa_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SmitsSA_2017/SmitsSA_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SmitsSA_2017/SmitsSA_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="tettaj_2016_metadata-tsv">TettAJ_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="tettaj_2016_metadata-tsv">TettAJ_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2016/TettAJ_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2016/TettAJ_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="tettaj_2019_a_metadata-tsv">TettAJ_2019_a_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2019_a_metadata-tsv"></a>
-</h1>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level2">
-<h2 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+<h2 id="tettaj_2019_a_metadata-tsv">TettAJ_2019_a_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2019_a_metadata-tsv"></a>
 </h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_a/TettAJ_2019_a_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="study_name-2">study_name<a class="anchor" aria-label="anchor" href="#study_name-2"></a>
+<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
+<div class="section level4">
+<h4 id="study_name-2">study_name<a class="anchor" aria-label="anchor" href="#study_name-2"></a>
+</h4>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2585,16 +2585,16 @@
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="tettaj_2019_b_metadata-tsv">TettAJ_2019_b_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2019_b_metadata-tsv"></a>
-</h1>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level2">
-<h2 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h2 id="tettaj_2019_b_metadata-tsv">TettAJ_2019_b_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2019_b_metadata-tsv"></a>
 </h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_b/TettAJ_2019_b_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="study_name-3">study_name<a class="anchor" aria-label="anchor" href="#study_name-3"></a>
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
 </h3>
+<div class="section level4">
+<h4 id="study_name-3">study_name<a class="anchor" aria-label="anchor" href="#study_name-3"></a>
+</h4>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2660,16 +2660,16 @@
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="tettaj_2019_c_metadata-tsv">TettAJ_2019_c_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2019_c_metadata-tsv"></a>
-</h1>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level2">
-<h2 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+<h2 id="tettaj_2019_c_metadata-tsv">TettAJ_2019_c_metadata.tsv<a class="anchor" aria-label="anchor" href="#tettaj_2019_c_metadata-tsv"></a>
 </h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/TettAJ_2019_c/TettAJ_2019_c_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="study_name-4">study_name<a class="anchor" aria-label="anchor" href="#study_name-4"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
+<div class="section level4">
+<h4 id="study_name-4">study_name<a class="anchor" aria-label="anchor" href="#study_name-4"></a>
+</h4>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2741,28 +2741,28 @@
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="thomasam_2018a_metadata-tsv">ThomasAM_2018a_metadata.tsv<a class="anchor" aria-label="anchor" href="#thomasam_2018a_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="thomasam_2018a_metadata-tsv">ThomasAM_2018a_metadata.tsv<a class="anchor" aria-label="anchor" href="#thomasam_2018a_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2018a/ThomasAM_2018a_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2018a/ThomasAM_2018a_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="thomasam_2018b_metadata-tsv">ThomasAM_2018b_metadata.tsv<a class="anchor" aria-label="anchor" href="#thomasam_2018b_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="thomasam_2018b_metadata-tsv">ThomasAM_2018b_metadata.tsv<a class="anchor" aria-label="anchor" href="#thomasam_2018b_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2018b/ThomasAM_2018b_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="thomasam_2019_c_metadata-tsv">ThomasAM_2019_c_metadata.tsv<a class="anchor" aria-label="anchor" href="#thomasam_2019_c_metadata-tsv"></a>
-</h1>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level2">
-<h2 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
+<h2 id="thomasam_2019_c_metadata-tsv">ThomasAM_2019_c_metadata.tsv<a class="anchor" aria-label="anchor" href="#thomasam_2019_c_metadata-tsv"></a>
 </h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ThomasAM_2019_c/ThomasAM_2019_c_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="study_name-5">study_name<a class="anchor" aria-label="anchor" href="#study_name-5"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
+<div class="section level4">
+<h4 id="study_name-5">study_name<a class="anchor" aria-label="anchor" href="#study_name-5"></a>
+</h4>
 <p><strong>Template definition</strong></p>
 <ul>
 <li>
@@ -2864,99 +2864,99 @@
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="vatanent_2016_metadata-tsv">VatanenT_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vatanent_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="vatanent_2016_metadata-tsv">VatanenT_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vatanent_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VatanenT_2016/VatanenT_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="vilaav_2018_metadata-tsv">VilaAV_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#vilaav_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="vilaav_2018_metadata-tsv">VilaAV_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#vilaav_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VilaAV_2018/VilaAV_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="vincentc_2016_metadata-tsv">VincentC_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vincentc_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="vincentc_2016_metadata-tsv">VincentC_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vincentc_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="vogtmanne_2016_metadata-tsv">VogtmannE_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vogtmanne_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="vogtmanne_2016_metadata-tsv">VogtmannE_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vogtmanne_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VogtmannE_2016/VogtmannE_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VogtmannE_2016/VogtmannE_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="wampachl_2018_metadata-tsv">WampachL_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#wampachl_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="wampachl_2018_metadata-tsv">WampachL_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#wampachl_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WampachL_2018/WampachL_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WampachL_2018/WampachL_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="wenc_2017_metadata-tsv">WenC_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#wenc_2017_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="wenc_2017_metadata-tsv">WenC_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#wenc_2017_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WenC_2017/WenC_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="wirbelj_2018_metadata-tsv">WirbelJ_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#wirbelj_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="wirbelj_2018_metadata-tsv">WirbelJ_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#wirbelj_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WirbelJ_2018/WirbelJ_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WirbelJ_2018/WirbelJ_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="xieh_2016_metadata-tsv">XieH_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#xieh_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="xieh_2016_metadata-tsv">XieH_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#xieh_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="yachidas_2019_metadata-tsv">YachidaS_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#yachidas_2019_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="yachidas_2019_metadata-tsv">YachidaS_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#yachidas_2019_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="yassourm_2016_metadata-tsv">YassourM_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#yassourm_2016_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="yassourm_2016_metadata-tsv">YassourM_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#yassourm_2016_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2016/YassourM_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="yassourm_2018_metadata-tsv">YassourM_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#yassourm_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="yassourm_2018_metadata-tsv">YassourM_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#yassourm_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YassourM_2018/YassourM_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YassourM_2018/YassourM_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="yez_2018_metadata-tsv">YeZ_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#yez_2018_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="yez_2018_metadata-tsv">YeZ_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#yez_2018_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YeZ_2018/YeZ_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YeZ_2018/YeZ_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="yuj_2015_metadata-tsv">YuJ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#yuj_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="yuj_2015_metadata-tsv">YuJ_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#yuj_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="zeevid_2015_metadata-tsv">ZeeviD_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#zeevid_2015_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="zeevid_2015_metadata-tsv">ZeeviD_2015_metadata.tsv<a class="anchor" aria-label="anchor" href="#zeevid_2015_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZeeviD_2015/ZeeviD_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZeeviD_2015/ZeeviD_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="zellerg_2014_metadata-tsv">ZellerG_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#zellerg_2014_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="zellerg_2014_metadata-tsv">ZellerG_2014_metadata.tsv<a class="anchor" aria-label="anchor" href="#zellerg_2014_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZellerG_2014/ZellerG_2014_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZellerG_2014/ZellerG_2014_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
-<div class="section level1">
-<h1 id="zhuf_2020_metadata-tsv">ZhuF_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#zhuf_2020_metadata-tsv"></a>
-</h1>
+<div class="section level2">
+<h2 id="zhuf_2020_metadata-tsv">ZhuF_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#zhuf_2020_metadata-tsv"></a>
+</h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
 </div>
@@ -2979,7 +2979,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>
