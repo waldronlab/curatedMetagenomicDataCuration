@@ -1,0 +1,85 @@
+Original Abbreviation/Name,Full Name,Ontology link
+ACVD,atherosclerosis,http://www.ebi.ac.uk/efo/EFO_0003914
+acute_diarrhoea,acute diarrhea,http://purl.obolibrary.org/obo/DOID_0050140
+cellulitis,cellulitis,http://www.ebi.ac.uk/efo/EFO_0003035
+melanoma,melanoma,http://www.ebi.ac.uk/efo/EFO_0000756
+gangrene,gangrene,http://www.ebi.ac.uk/efo/EFO_0008574
+osteoarthritis,osteoarthritis,http://www.ebi.ac.uk/efo/EFO_0002506
+control,control,http://www.ebi.ac.uk/efo/EFO_0001461
+NK,natural killer cell,
+pyelonefritis,pyelonephritis,http://www.ebi.ac.uk/efo/EFO_1001141
+salmonellosis,salmonellosis,
+sepsis,sepsis,http://www.ebi.ac.uk/efo/EFO_1001478
+skininf,skin infection,
+suspinf,,
+arthritis,arthritis,http://www.ebi.ac.uk/efo/EFO_0005856
+STEC,shiga toxin,
+CRC,colorectal Cancer,http://www.ebi.ac.uk/efo/EFO_0005842
+adenoma,adenoma,http://www.ebi.ac.uk/efo/EFO_0000232
+fatty_liver,fatty liver,http://purl.obolibrary.org/obo/MONDO_0004790
+hypertension,hypertension,http://www.ebi.ac.uk/efo/EFO_0000537
+pre-hypertension,,
+coeliac,celiac disease,http://www.ebi.ac.uk/efo/EFO_0001060
+asthma,asthma,http://www.ebi.ac.uk/efo/EFO_0000270
+gestational_diabetes,gestational diabetes,http://www.ebi.ac.uk/efo/EFO_0004593
+cirrhosis,cirrhosis of liver,http://www.ebi.ac.uk/efo/EFO_0001422
+HBV,hepatitis B virus infection,http://www.ebi.ac.uk/efo/EFO_0004197
+HDV,hepatitis D virus infection,http://www.ebi.ac.uk/efo/EFO_0007304
+HEV,hepatitis E virus infection,http://www.ebi.ac.uk/efo/EFO_0007303
+CMV,cytomegalovirus infection,http://www.ebi.ac.uk/efo/EFO_0001062
+CDI,clostridium difficile infection,http://www.ebi.ac.uk/efo/EFO_0009130
+IBD,irritable bowel syndrome,http://www.ebi.ac.uk/efo/EFO_0000555
+T2D,type 2 diabetes mellitus,http://www.ebi.ac.uk/efo/EFO_0001360
+T1D,type 1 diabetes mellitus,http://www.ebi.ac.uk/efo/EFO_0001359
+AD,alzheimer's disease,http://www.ebi.ac.uk/efo/EFO_0000249
+AR,,
+IGT,abnormal glucose tolerance,http://www.ebi.ac.uk/efo/EFO_0002546
+schizophrenia,schizophrenia,http://www.ebi.ac.uk/efo/EFO_0000692
+ascites,ascites,
+wilson,wilson disease,
+otitis,otitis,
+bronchitis,bronchitis,http://www.ebi.ac.uk/efo/EFO_0009661
+pneumonia,pneumonia,http://www.ebi.ac.uk/efo/EFO_0003106
+respiratoryinf,respiratory tract infection,
+cough,cough,
+stomatitis,stomatitis,http://www.ebi.ac.uk/efo/EFO_0009688
+fever,fever,
+pyelonephritis,pyelonephritis,http://www.ebi.ac.uk/efo/EFO_1001141
+infectiousgastroenteritis,gastroenteritis,http://www.ebi.ac.uk/efo/EFO_1001463
+tonsillitis,Tonsillitis,
+cystitis,cystitis,http://www.ebi.ac.uk/efo/EFO_1000025
+abdominalhernia,abdominal Hernia,
+psoriasis,psoriasis,http://www.ebi.ac.uk/efo/EFO_0000676
+cephalosporins,cephalosporins,
+AS,ankylosing spondylitis,http://www.ebi.ac.uk/efo/EFO_0003898
+RA,rheumatoid Arthritis,http://www.ebi.ac.uk/efo/EFO_0000685
+metabolic_syndrome,metabolic syndrome,http://www.ebi.ac.uk/efo/EFO_0000195
+FMT,arabidopsis thaliana,
+premature_born,premature birth,http://www.ebi.ac.uk/efo/EFO_0003917
+periodontitis,periodontitis,http://www.ebi.ac.uk/efo/EFO_0000649
+SRP,,
+STH,somatotropin,
+BD,behcet's syndrome,http://www.ebi.ac.uk/efo/EFO_0003780
+chorioamnionitis,chorioamnionitis,http://www.ebi.ac.uk/efo/EFO_0009948
+pre-eclampsia,preeclampsia,http://www.ebi.ac.uk/efo/EFO_0000668
+carcinoma_surgery_history,,
+healthy,healthy,
+hepatitis,hepatitis,http://purl.obolibrary.org/obo/HP_0012115
+hypercholesterolemia,hypercholesterolemia,http://purl.obolibrary.org/obo/HP_0003124
+ascaris_lumbricoides,ascaris lumbricoides,http://www.ebi.ac.uk/efo/EFO_0007154
+necator_americanus,necator americanus,
+trichuris_trichiura,trichuris trichiura,http://www.ebi.ac.uk/efo/EFO_0007524
+metastases,,
+CD,crohn's disease,http://www.ebi.ac.uk/efo/EFO_0000384
+UC,ulcerative Colitis,http://www.ebi.ac.uk/efo/EFO_0000729
+smalladenoma,small intestinal adenoma,
+largeadenoma,large intestinal adenoma,
+advancedadenoma,,
+adenocarcinoma,adenocarcinoma,http://www.ebi.ac.uk/efo/EFO_0000228
+carcinoma,carcinoma,http://www.ebi.ac.uk/efo/EFO_0000313
+AS,ankylosing spondylitis,http://www.ebi.ac.uk/efo/EFO_0003898
+cholera,cholera,
+T1D_nonconverter,,
+T1D_seroconverter,,
+NAFLD,non alcoholic fatty liver disease,http://www.ebi.ac.uk/efo/EFO_1001248
+Indeterminate_colitis,indeterminate colitis,http://www.ebi.ac.uk/efo/EFO_1000034
