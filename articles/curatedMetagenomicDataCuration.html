@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-04-07 16:24:31 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-04-07 16:25:56 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -752,95 +752,6 @@
 <div class="section level3">
 <h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
-<div class="section level4">
-<h4 id="country">country<a class="anchor" aria-label="anchor" href="#country"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “SPN”<br>
-2 . : “SPN”<br>
-3 . : “SPN”<br>
-4 . : “SPN”<br>
-5 . : “SPN”<br>
-6 . : “SPN”<br>
-7 . : “SPN”<br>
-8 . : “SPN”<br>
-9 . : “SPN”<br>
-10 . : “SPN”<br>
-11 . : “SPN”<br>
-12 . : “SPN”<br>
-56 . : “NDL”<br>
-57 . : “NDL”<br>
-58 . : “NDL”<br>
-59 . : “NDL”<br>
-60 . : “NDL”<br>
-61 . : “NDL”<br>
-62 . : “NDL”<br>
-63 . : “NDL”<br>
-64 . : “NDL”<br>
-65 . : “NDL”<br>
-66 . : “NDL”<br>
-67 . : “NDL”<br>
-68 . : “NDL”<br>
-69 . : “NDL”<br>
-70 . : “NDL”<br>
-71 . : “NDL”<br>
-72 . : “NDL”<br>
-73 . : “NDL”<br>
-74 . : “NDL”<br>
-75 . : “NDL”<br>
-76 . : “NDL”<br>
-77 . : “NDL”<br>
-78 . : “NDL”<br>
-79 . : “NDL”<br>
-80 . : “NDL”<br>
-81 . : “NDL”<br>
-82 . : “NDL”<br>
-83 . : “NDL”<br>
-84 . : “NDL”<br>
-85 . : “NDL”<br>
-86 . : “NDL”<br>
-87 . : “NDL”<br>
-88 . : “NDL”<br>
-89 . : “NDL”<br>
-90 . : “NDL”<br>
-91 . : “NDL”<br>
-92 . : “NDL”<br>
-93 . : “NDL”<br>
-94 . : “NDL”<br>
-95 . : “NDL”<br>
-96 . : “NDL”<br>
-97 . : “NDL”<br>
-98 . : “NDL”<br>
-99 . : “NDL”<br>
-100 . : “NDL”<br>
-101 . : “NDL”<br>
-102 . : “NDL”<br>
-103 . : “NDL”<br>
-104 . : “NDL”<br>
-105 . : “NDL”<br>
-106 . : “NDL”<br>
-107 . : “NDL”<br>
-108 . : “NDL”<br>
-109 . : “NDL”<br>
-110 . : “NDL”</p>
-</div>
 <div class="section level4">
 <h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
 </h4>
@@ -1769,48 +1680,6 @@
 <div class="section level3">
 <h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
-<div class="section level4">
-<h4 id="country-1">country<a class="anchor" aria-label="anchor" href="#country-1"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “NDL”<br>
-2 . : “NDL”<br>
-3 . : “NDL”<br>
-4 . : “NDL”<br>
-5 . : “NDL”<br>
-6 . : “NDL”<br>
-7 . : “NDL”<br>
-8 . : “NDL”<br>
-9 . : “NDL”<br>
-10 . : “NDL”<br>
-11 . : “NDL”<br>
-12 . : “NDL”<br>
-13 . : “NDL”<br>
-14 . : “NDL”<br>
-15 . : “NDL”<br>
-16 . : “NDL”<br>
-17 . : “NDL”<br>
-18 . : “NDL”<br>
-19 . : “NDL”<br>
-20 . : “NDL”</p>
-</div>
 <div class="section level4">
 <h4 id="curator-2">curator<a class="anchor" aria-label="anchor" href="#curator-2"></a>
 </h4>
