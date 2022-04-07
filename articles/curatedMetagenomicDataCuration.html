@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-04-07 16:29:08 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-04-07 16:36:00 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -204,71 +204,6 @@
 <li><p>“ORR” is not defined in the template.</p></li>
 </ul>
 </div>
-<div class="section level3">
-<h3 id="entry-errors">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors"></a>
-</h3>
-<div class="section level4">
-<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “ipilumumab;nivolmab”<br>
-2 . : “ipilumumab;nivolmab”<br>
-3 . : “ipilumumab;nivolmab”<br>
-4 . : “ipilumumab;nivolmab”<br>
-5 . : “pembrolizumab”<br>
-6 . : “nivolmab”<br>
-7 . : “pembrolizumab”<br>
-8 . : “ipilumumab;nivolmab”<br>
-9 . : “ipilumumab;nivolmab”<br>
-10 . : “ipilumumab;nivolmab”<br>
-11 . : “ipilumumab;nivolmab”<br>
-12 . : “ipilumumab;nivolmab”<br>
-13 . : “ipilumumab;nivolmab”<br>
-14 . : “pembrolizumab”<br>
-15 . : “ipilumumab;nivolmab”<br>
-16 . : “ipilumumab;nivolmab”<br>
-17 . : “pembrolizumab”<br>
-18 . : “pembrolizumab”<br>
-19 . : “pembrolizumab”<br>
-20 . : “pembrolizumab”<br>
-21 . : “ipilumumab;nivolmab”<br>
-22 . : “pembrolizumab”<br>
-23 . : “pembrolizumab”<br>
-24 . : “ipilumumab;nivolmab”<br>
-25 . : “ipilumumab;nivolmab”<br>
-26 . : “ipilumumab;nivolmab”<br>
-27 . : “ipilumumab;nivolmab”<br>
-28 . : “pembrolizumab”<br>
-29 . : “ipilumumab”<br>
-30 . : “pembrolizumab”<br>
-31 . : “ipilumumab;nivolmab”<br>
-32 . : “ipilumumab;nivolmab”<br>
-33 . : “ipilumumab;nivolmab”<br>
-34 . : “pembrolizumab”<br>
-35 . : “pembrolizumab”<br>
-36 . : “ipilumumab;nivolmab”<br>
-37 . : “ipilumumab;nivolmab”<br>
-38 . : “ipilumumab;nivolmab”<br>
-39 . : “ipilumumab;nivolmab”</p>
-</div>
-</div>
 </div>
 <div class="section level2">
 <h2 id="ghensip_2019_metadata-tsv">GhensiP_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#ghensip_2019_metadata-tsv"></a>
@@ -346,34 +281,7 @@
 <h2 id="karlssonfh_2013_metadata-tsv">KarlssonFH_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#karlssonfh_2013_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
-</h3>
-<div class="section level4">
-<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>107 . : “sulphonylurea”<br>
-119 . : “sulphonylurea”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="kaurk_2020_metadata-tsv">KaurK_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#kaurk_2020_metadata-tsv"></a>
@@ -429,7 +337,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
+<h3 id="entry-errors">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors"></a>
 </h3>
 <div class="section level4">
 <h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
@@ -617,127 +525,6 @@
 163 . : “thermo_fisher”<br>
 164 . : “thermo_fisher”<br>
 165 . : “thermo_fisher”</p>
-</div>
-<div class="section level4">
-<h4 id="treatment-2">treatment<a class="anchor" aria-label="anchor" href="#treatment-2"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>5 . : “PPI”<br>
-10 . : “steroids”<br>
-13 . : “PPI;steroids”<br>
-14 . : “steroids”<br>
-15 . : “PPI”<br>
-17 . : “PPI;steroids”<br>
-19 . : “steroids”<br>
-20 . : “steroids”<br>
-23 . : “steroids”<br>
-25 . : “steroid”<br>
-26 . : “PPI”<br>
-28 . : “PPI”<br>
-31 . : “steroids”<br>
-37 . : “steroids”<br>
-40 . : “PPI”<br>
-43 . : “steroids”<br>
-44 . : “PPI;steroids”<br>
-45 . : “steroids”<br>
-46 . : “PPI;steroids”<br>
-49 . : “steroids”<br>
-51 . : “steroids”<br>
-52 . : “steroids”<br>
-53 . : “PPI;steroids”<br>
-58 . : “steroids”<br>
-62 . : “steroids”<br>
-64 . : “PPI”<br>
-66 . : “steroids”<br>
-67 . : “PPI”<br>
-68 . : “steroids”<br>
-71 . : “PPI”<br>
-72 . : “steroids”<br>
-73 . : “PPI”<br>
-74 . : “PPI”<br>
-75 . : “PPI”<br>
-76 . : “PPI;steroids”<br>
-77 . : “PPI”<br>
-78 . : “PPI”<br>
-81 . : “PPI;steroids”<br>
-82 . : “steroids”<br>
-83 . : “steroids”<br>
-84 . : “steroids”<br>
-85 . : “steroids”<br>
-86 . : “steroids”<br>
-87 . : “steroids”<br>
-88 . : “steroids”<br>
-90 . : “steroids”<br>
-91 . : “steroids”<br>
-92 . : “steroids”<br>
-93 . : “PPI”<br>
-94 . : “PPI;steroids”<br>
-95 . : “PPI”<br>
-96 . : “PPI”<br>
-100 . : “PPI”<br>
-101 . : “PPI”<br>
-102 . : “steroids”<br>
-103 . : “PPI”<br>
-104 . : “PPI”<br>
-105 . : “steroids”<br>
-106 . : “steroids”<br>
-107 . : “PPI”<br>
-109 . : “PPI”<br>
-112 . : “steroids”<br>
-113 . : “steroids”<br>
-114 . : “steroids”<br>
-115 . : “steroids”<br>
-116 . : “steroids”<br>
-117 . : “steroids”<br>
-119 . : “steroids”<br>
-120 . : “steroids”<br>
-121 . : “PPI”<br>
-122 . : “steroids”<br>
-123 . : “PPI”<br>
-124 . : “PPI”<br>
-126 . : “steroids”<br>
-127 . : “PPI;steroids”<br>
-130 . : “steroids”<br>
-132 . : “steroids”<br>
-135 . : “PPI”<br>
-136 . : “PPI”<br>
-138 . : “PPI”<br>
-139 . : “steroids”<br>
-140 . : “steroids”<br>
-141 . : “steroids”<br>
-142 . : “PPI;steroids”<br>
-143 . : “steroids”<br>
-144 . : “steroids”<br>
-145 . : “PPI;steroids”<br>
-146 . : “PPI”<br>
-147 . : “steroids”<br>
-149 . : “steroids”<br>
-150 . : “steroids”<br>
-151 . : “PPI;steroids”<br>
-153 . : “PPI;steroids”<br>
-154 . : “PPI;steroids”<br>
-155 . : “steroids”<br>
-161 . : “steroids”<br>
-162 . : “steroids”<br>
-163 . : “steroids”<br>
-165 . : “PPI”</p>
 </div>
 <div class="section level4">
 <h4 id="curator">curator<a class="anchor" aria-label="anchor" href="#curator"></a>
@@ -1048,7 +835,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage"></a>
@@ -1098,55 +885,6 @@
 25 . : “III”<br>
 26 . : “IV”<br>
 27 . : “III”</p>
-</div>
-<div class="section level4">
-<h4 id="treatment-3">treatment<a class="anchor" aria-label="anchor" href="#treatment-3"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “PD1”<br>
-2 . : “PD1”<br>
-3 . : “CTLA4;PD1”<br>
-4 . : “CTLA4;PD1”<br>
-5 . : “PD1”<br>
-6 . : “CTLA4;PD1”<br>
-7 . : “CTLA4;PD1”<br>
-8 . : “CTLA4;PD1”<br>
-9 . : “PD1”<br>
-10 . : “PD1”<br>
-11 . : “PD1”<br>
-12 . : “PD1”<br>
-13 . : “PD1”<br>
-14 . : “CTLA4;PD1”<br>
-15 . : “CTLA4;PD1”<br>
-16 . : “CTLA4;PD1”<br>
-17 . : “PD1”<br>
-18 . : “CTLA4;PD1”<br>
-19 . : “PD1”<br>
-20 . : “PD1”<br>
-21 . : “PD1”<br>
-22 . : “CTLA4;PD1”<br>
-23 . : “CTLA4;PD1”<br>
-24 . : “PD1”<br>
-25 . : “CTLA4”<br>
-26 . : “PD1”<br>
-27 . : “CTLA4;PD1”</p>
 </div>
 <div class="section level4">
 <h4 id="curator-1">curator<a class="anchor" aria-label="anchor" href="#curator-1"></a>
@@ -1357,7 +1095,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
 </h3>
 <div class="section level4">
 <h4 id="curator-2">curator<a class="anchor" aria-label="anchor" href="#curator-2"></a>
@@ -1413,36 +1151,7 @@
 <h2 id="xieh_2016_metadata-tsv">XieH_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#xieh_2016_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
-</h3>
-<div class="section level4">
-<h4 id="treatment-4">treatment<a class="anchor" aria-label="anchor" href="#treatment-4"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “glargine;novorapid”<br>
-2 . : “metformin;lantus;novorapid”<br>
-120 . : “metformin;hydrochloryde;isophane”<br>
-196 . : “metformin;sitagliptin;lantus;solostar;novorapid”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="yachidas_2019_metadata-tsv">YachidaS_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#yachidas_2019_metadata-tsv"></a>
@@ -1473,7 +1182,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
+<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease">disease<a class="anchor" aria-label="anchor" href="#disease"></a>
