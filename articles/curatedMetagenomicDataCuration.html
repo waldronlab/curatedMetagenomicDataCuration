@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-04-07 16:25:56 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-04-07 16:29:08 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span>
@@ -328,328 +328,7 @@
 <h2 id="hmp_2019_t2d_metadata-tsv">HMP_2019_t2d_metadata.tsv<a class="anchor" aria-label="anchor" href="#hmp_2019_t2d_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/HMP_2019_t2d/HMP_2019_t2d_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
-</h3>
-<div class="section level4">
-<h4 id="study_name">study_name<a class="anchor" aria-label="anchor" href="#study_name"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [a-zA-Z-]+<em>[0-9]{4}|[a-zA-Z-]+</em>[0-9]{4}[a-zA-Z-]+|[a-zA-Z-]+<em>[0-9]{4}</em>[a-zA-Z-]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “HMP_2019_t2d”<br>
-2 . : “HMP_2019_t2d”<br>
-3 . : “HMP_2019_t2d”<br>
-4 . : “HMP_2019_t2d”<br>
-5 . : “HMP_2019_t2d”<br>
-6 . : “HMP_2019_t2d”<br>
-7 . : “HMP_2019_t2d”<br>
-8 . : “HMP_2019_t2d”<br>
-9 . : “HMP_2019_t2d”<br>
-10 . : “HMP_2019_t2d”<br>
-11 . : “HMP_2019_t2d”<br>
-12 . : “HMP_2019_t2d”<br>
-13 . : “HMP_2019_t2d”<br>
-14 . : “HMP_2019_t2d”<br>
-15 . : “HMP_2019_t2d”<br>
-16 . : “HMP_2019_t2d”<br>
-17 . : “HMP_2019_t2d”<br>
-18 . : “HMP_2019_t2d”<br>
-19 . : “HMP_2019_t2d”<br>
-20 . : “HMP_2019_t2d”<br>
-21 . : “HMP_2019_t2d”<br>
-22 . : “HMP_2019_t2d”<br>
-23 . : “HMP_2019_t2d”<br>
-24 . : “HMP_2019_t2d”<br>
-25 . : “HMP_2019_t2d”<br>
-26 . : “HMP_2019_t2d”<br>
-27 . : “HMP_2019_t2d”<br>
-28 . : “HMP_2019_t2d”<br>
-29 . : “HMP_2019_t2d”<br>
-30 . : “HMP_2019_t2d”<br>
-31 . : “HMP_2019_t2d”<br>
-32 . : “HMP_2019_t2d”<br>
-33 . : “HMP_2019_t2d”<br>
-34 . : “HMP_2019_t2d”<br>
-35 . : “HMP_2019_t2d”<br>
-36 . : “HMP_2019_t2d”<br>
-37 . : “HMP_2019_t2d”<br>
-38 . : “HMP_2019_t2d”<br>
-39 . : “HMP_2019_t2d”<br>
-40 . : “HMP_2019_t2d”<br>
-41 . : “HMP_2019_t2d”<br>
-42 . : “HMP_2019_t2d”<br>
-43 . : “HMP_2019_t2d”<br>
-44 . : “HMP_2019_t2d”<br>
-45 . : “HMP_2019_t2d”<br>
-46 . : “HMP_2019_t2d”<br>
-47 . : “HMP_2019_t2d”<br>
-48 . : “HMP_2019_t2d”<br>
-49 . : “HMP_2019_t2d”<br>
-50 . : “HMP_2019_t2d”<br>
-51 . : “HMP_2019_t2d”<br>
-52 . : “HMP_2019_t2d”<br>
-53 . : “HMP_2019_t2d”<br>
-54 . : “HMP_2019_t2d”<br>
-55 . : “HMP_2019_t2d”<br>
-56 . : “HMP_2019_t2d”<br>
-57 . : “HMP_2019_t2d”<br>
-58 . : “HMP_2019_t2d”<br>
-59 . : “HMP_2019_t2d”<br>
-60 . : “HMP_2019_t2d”<br>
-61 . : “HMP_2019_t2d”<br>
-62 . : “HMP_2019_t2d”<br>
-63 . : “HMP_2019_t2d”<br>
-64 . : “HMP_2019_t2d”<br>
-65 . : “HMP_2019_t2d”<br>
-66 . : “HMP_2019_t2d”<br>
-67 . : “HMP_2019_t2d”<br>
-68 . : “HMP_2019_t2d”<br>
-69 . : “HMP_2019_t2d”<br>
-70 . : “HMP_2019_t2d”<br>
-71 . : “HMP_2019_t2d”<br>
-72 . : “HMP_2019_t2d”<br>
-73 . : “HMP_2019_t2d”<br>
-74 . : “HMP_2019_t2d”<br>
-75 . : “HMP_2019_t2d”<br>
-76 . : “HMP_2019_t2d”<br>
-77 . : “HMP_2019_t2d”<br>
-78 . : “HMP_2019_t2d”<br>
-79 . : “HMP_2019_t2d”<br>
-80 . : “HMP_2019_t2d”<br>
-81 . : “HMP_2019_t2d”<br>
-82 . : “HMP_2019_t2d”<br>
-83 . : “HMP_2019_t2d”<br>
-84 . : “HMP_2019_t2d”<br>
-85 . : “HMP_2019_t2d”<br>
-86 . : “HMP_2019_t2d”<br>
-87 . : “HMP_2019_t2d”<br>
-88 . : “HMP_2019_t2d”<br>
-89 . : “HMP_2019_t2d”<br>
-90 . : “HMP_2019_t2d”<br>
-91 . : “HMP_2019_t2d”<br>
-92 . : “HMP_2019_t2d”<br>
-93 . : “HMP_2019_t2d”<br>
-94 . : “HMP_2019_t2d”<br>
-95 . : “HMP_2019_t2d”<br>
-96 . : “HMP_2019_t2d”<br>
-97 . : “HMP_2019_t2d”<br>
-98 . : “HMP_2019_t2d”<br>
-99 . : “HMP_2019_t2d”<br>
-100 . : “HMP_2019_t2d”<br>
-101 . : “HMP_2019_t2d”<br>
-102 . : “HMP_2019_t2d”<br>
-103 . : “HMP_2019_t2d”<br>
-104 . : “HMP_2019_t2d”<br>
-105 . : “HMP_2019_t2d”<br>
-106 . : “HMP_2019_t2d”<br>
-107 . : “HMP_2019_t2d”<br>
-108 . : “HMP_2019_t2d”<br>
-109 . : “HMP_2019_t2d”<br>
-110 . : “HMP_2019_t2d”<br>
-111 . : “HMP_2019_t2d”<br>
-112 . : “HMP_2019_t2d”<br>
-113 . : “HMP_2019_t2d”<br>
-114 . : “HMP_2019_t2d”<br>
-115 . : “HMP_2019_t2d”<br>
-116 . : “HMP_2019_t2d”<br>
-117 . : “HMP_2019_t2d”<br>
-118 . : “HMP_2019_t2d”<br>
-119 . : “HMP_2019_t2d”<br>
-120 . : “HMP_2019_t2d”<br>
-121 . : “HMP_2019_t2d”<br>
-122 . : “HMP_2019_t2d”<br>
-123 . : “HMP_2019_t2d”<br>
-124 . : “HMP_2019_t2d”<br>
-125 . : “HMP_2019_t2d”<br>
-126 . : “HMP_2019_t2d”<br>
-127 . : “HMP_2019_t2d”<br>
-128 . : “HMP_2019_t2d”<br>
-129 . : “HMP_2019_t2d”<br>
-130 . : “HMP_2019_t2d”<br>
-131 . : “HMP_2019_t2d”<br>
-132 . : “HMP_2019_t2d”<br>
-133 . : “HMP_2019_t2d”<br>
-134 . : “HMP_2019_t2d”<br>
-135 . : “HMP_2019_t2d”<br>
-136 . : “HMP_2019_t2d”<br>
-137 . : “HMP_2019_t2d”<br>
-138 . : “HMP_2019_t2d”<br>
-139 . : “HMP_2019_t2d”<br>
-140 . : “HMP_2019_t2d”<br>
-141 . : “HMP_2019_t2d”<br>
-142 . : “HMP_2019_t2d”<br>
-143 . : “HMP_2019_t2d”<br>
-144 . : “HMP_2019_t2d”<br>
-145 . : “HMP_2019_t2d”<br>
-146 . : “HMP_2019_t2d”<br>
-147 . : “HMP_2019_t2d”<br>
-148 . : “HMP_2019_t2d”<br>
-149 . : “HMP_2019_t2d”<br>
-150 . : “HMP_2019_t2d”<br>
-151 . : “HMP_2019_t2d”<br>
-152 . : “HMP_2019_t2d”<br>
-153 . : “HMP_2019_t2d”<br>
-154 . : “HMP_2019_t2d”<br>
-155 . : “HMP_2019_t2d”<br>
-156 . : “HMP_2019_t2d”<br>
-157 . : “HMP_2019_t2d”<br>
-158 . : “HMP_2019_t2d”<br>
-159 . : “HMP_2019_t2d”<br>
-160 . : “HMP_2019_t2d”<br>
-161 . : “HMP_2019_t2d”<br>
-162 . : “HMP_2019_t2d”<br>
-163 . : “HMP_2019_t2d”<br>
-164 . : “HMP_2019_t2d”<br>
-165 . : “HMP_2019_t2d”<br>
-166 . : “HMP_2019_t2d”<br>
-167 . : “HMP_2019_t2d”<br>
-168 . : “HMP_2019_t2d”<br>
-169 . : “HMP_2019_t2d”<br>
-170 . : “HMP_2019_t2d”<br>
-171 . : “HMP_2019_t2d”<br>
-172 . : “HMP_2019_t2d”<br>
-173 . : “HMP_2019_t2d”<br>
-174 . : “HMP_2019_t2d”<br>
-175 . : “HMP_2019_t2d”<br>
-176 . : “HMP_2019_t2d”<br>
-177 . : “HMP_2019_t2d”<br>
-178 . : “HMP_2019_t2d”<br>
-179 . : “HMP_2019_t2d”<br>
-180 . : “HMP_2019_t2d”<br>
-181 . : “HMP_2019_t2d”<br>
-182 . : “HMP_2019_t2d”<br>
-183 . : “HMP_2019_t2d”<br>
-184 . : “HMP_2019_t2d”<br>
-185 . : “HMP_2019_t2d”<br>
-186 . : “HMP_2019_t2d”<br>
-187 . : “HMP_2019_t2d”<br>
-188 . : “HMP_2019_t2d”<br>
-189 . : “HMP_2019_t2d”<br>
-190 . : “HMP_2019_t2d”<br>
-191 . : “HMP_2019_t2d”<br>
-192 . : “HMP_2019_t2d”<br>
-193 . : “HMP_2019_t2d”<br>
-194 . : “HMP_2019_t2d”<br>
-195 . : “HMP_2019_t2d”<br>
-196 . : “HMP_2019_t2d”<br>
-197 . : “HMP_2019_t2d”<br>
-198 . : “HMP_2019_t2d”<br>
-199 . : “HMP_2019_t2d”<br>
-200 . : “HMP_2019_t2d”<br>
-201 . : “HMP_2019_t2d”<br>
-202 . : “HMP_2019_t2d”<br>
-203 . : “HMP_2019_t2d”<br>
-204 . : “HMP_2019_t2d”<br>
-205 . : “HMP_2019_t2d”<br>
-206 . : “HMP_2019_t2d”<br>
-207 . : “HMP_2019_t2d”<br>
-208 . : “HMP_2019_t2d”<br>
-209 . : “HMP_2019_t2d”<br>
-210 . : “HMP_2019_t2d”<br>
-211 . : “HMP_2019_t2d”<br>
-212 . : “HMP_2019_t2d”<br>
-213 . : “HMP_2019_t2d”<br>
-214 . : “HMP_2019_t2d”<br>
-215 . : “HMP_2019_t2d”<br>
-216 . : “HMP_2019_t2d”<br>
-217 . : “HMP_2019_t2d”<br>
-218 . : “HMP_2019_t2d”<br>
-219 . : “HMP_2019_t2d”<br>
-220 . : “HMP_2019_t2d”<br>
-221 . : “HMP_2019_t2d”<br>
-222 . : “HMP_2019_t2d”<br>
-223 . : “HMP_2019_t2d”<br>
-224 . : “HMP_2019_t2d”<br>
-225 . : “HMP_2019_t2d”<br>
-226 . : “HMP_2019_t2d”<br>
-227 . : “HMP_2019_t2d”<br>
-228 . : “HMP_2019_t2d”<br>
-229 . : “HMP_2019_t2d”<br>
-230 . : “HMP_2019_t2d”<br>
-231 . : “HMP_2019_t2d”<br>
-232 . : “HMP_2019_t2d”<br>
-233 . : “HMP_2019_t2d”<br>
-234 . : “HMP_2019_t2d”<br>
-235 . : “HMP_2019_t2d”<br>
-236 . : “HMP_2019_t2d”<br>
-237 . : “HMP_2019_t2d”<br>
-238 . : “HMP_2019_t2d”<br>
-239 . : “HMP_2019_t2d”<br>
-240 . : “HMP_2019_t2d”<br>
-241 . : “HMP_2019_t2d”<br>
-242 . : “HMP_2019_t2d”<br>
-243 . : “HMP_2019_t2d”<br>
-244 . : “HMP_2019_t2d”<br>
-245 . : “HMP_2019_t2d”<br>
-246 . : “HMP_2019_t2d”<br>
-247 . : “HMP_2019_t2d”<br>
-248 . : “HMP_2019_t2d”<br>
-249 . : “HMP_2019_t2d”<br>
-250 . : “HMP_2019_t2d”<br>
-251 . : “HMP_2019_t2d”<br>
-252 . : “HMP_2019_t2d”<br>
-253 . : “HMP_2019_t2d”<br>
-254 . : “HMP_2019_t2d”<br>
-255 . : “HMP_2019_t2d”<br>
-256 . : “HMP_2019_t2d”<br>
-257 . : “HMP_2019_t2d”<br>
-258 . : “HMP_2019_t2d”<br>
-259 . : “HMP_2019_t2d”<br>
-260 . : “HMP_2019_t2d”<br>
-261 . : “HMP_2019_t2d”<br>
-262 . : “HMP_2019_t2d”<br>
-263 . : “HMP_2019_t2d”<br>
-264 . : “HMP_2019_t2d”<br>
-265 . : “HMP_2019_t2d”<br>
-266 . : “HMP_2019_t2d”<br>
-267 . : “HMP_2019_t2d”<br>
-268 . : “HMP_2019_t2d”<br>
-269 . : “HMP_2019_t2d”<br>
-270 . : “HMP_2019_t2d”<br>
-271 . : “HMP_2019_t2d”<br>
-272 . : “HMP_2019_t2d”<br>
-273 . : “HMP_2019_t2d”<br>
-274 . : “HMP_2019_t2d”<br>
-275 . : “HMP_2019_t2d”<br>
-276 . : “HMP_2019_t2d”<br>
-277 . : “HMP_2019_t2d”<br>
-278 . : “HMP_2019_t2d”<br>
-279 . : “HMP_2019_t2d”<br>
-280 . : “HMP_2019_t2d”<br>
-281 . : “HMP_2019_t2d”<br>
-282 . : “HMP_2019_t2d”<br>
-283 . : “HMP_2019_t2d”<br>
-284 . : “HMP_2019_t2d”<br>
-285 . : “HMP_2019_t2d”<br>
-286 . : “HMP_2019_t2d”<br>
-287 . : “HMP_2019_t2d”<br>
-288 . : “HMP_2019_t2d”<br>
-289 . : “HMP_2019_t2d”<br>
-290 . : “HMP_2019_t2d”<br>
-291 . : “HMP_2019_t2d”<br>
-292 . : “HMP_2019_t2d”<br>
-293 . : “HMP_2019_t2d”<br>
-294 . : “HMP_2019_t2d”<br>
-295 . : “HMP_2019_t2d”<br>
-296 . : “HMP_2019_t2d”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="ijazuz_2017_metadata-tsv">IjazUZ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#ijazuz_2017_metadata-tsv"></a>
@@ -668,7 +347,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
+<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
 </h3>
 <div class="section level4">
 <h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
@@ -750,7 +429,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
 </h3>
 <div class="section level4">
 <h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
@@ -1369,7 +1048,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage"></a>
@@ -1678,7 +1357,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
 </h3>
 <div class="section level4">
 <h4 id="curator-2">curator<a class="anchor" aria-label="anchor" href="#curator-2"></a>
@@ -1735,7 +1414,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/XieH_2016/XieH_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
 <div class="section level4">
 <h4 id="treatment-4">treatment<a class="anchor" aria-label="anchor" href="#treatment-4"></a>
@@ -1794,7 +1473,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease">disease<a class="anchor" aria-label="anchor" href="#disease"></a>
