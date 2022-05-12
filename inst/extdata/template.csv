@@ -24,7 +24,7 @@ lifestyle,character,non-unique,optional,FALSE,Hunter-gatherer|Agriculturalist|Ag
 brinkman_index,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,The Brinkman index if provided
 days_from_first_collection,integer,non-unique,optional,FALSE,[0-9]+,Used for time series studies.
 sequencing_platform,character,non-unique,required,FALSE,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq|IlluminaNovaSeq,This will be modified as new sequencing platforms are added to the database.
-DNA_extraction_kit,character,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep,DNA extraction kit.
+DNA_extraction_kit,character,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep|thermo_fisher,DNA extraction kit.
 PMID,character,non-unique,optional,FALSE,[0-9]{8}|NA,Identifier of the main publication in PubMed.
 number_reads,integer,non-unique,required,FALSE,[0-9]+,Number of final reads - calculated from raw data.
 number_bases,double,non-unique,required,FALSE,[0-9]+,Total number of bases sequenced in the sample - calculated from raw data.
@@ -104,10 +104,10 @@ HLA,character,non-unique,optional,TRUE,.+,HLA DR-DQ alleles conferring risk of T
 autoantibody_positive,character,non-unique,optional,TRUE,.+,Tested positive for AAB.
 age_seroconversion,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at seroconvention was detected (days).
 age_T1D_diagnosis,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at which T1D was diagnosed (days).
-disease_stage,integer,non-unique,optional,FALSE,[0-9]+,Stage information for diseases that can be divided into multiple stages.
+disease_stage,character,non-unique,optional,FALSE,[A-Z]{1,2},Stage information for diseases that can be divided into multiple stages.
 disease_location,character,non-unique,optional,TRUE,.+,Can be used for diseases which occur on different body parts like CD.
 calprotectin,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
-treatment,character,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI,medications or treatments against the diseases.
+treatment,character,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea,medications or treatments against the diseases.
 remission,character,non-unique,optional,FALSE,no|yes,Remission of the disease.
 anti_PD_1,character,non-unique,optional,FALSE,responder|non_responder,The patient results to be a responder/non-responder to the anti-PD1 treatment.
 wbc,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,White blood cells count; curators must use *1000counts/µL
@@ -136,5 +136,9 @@ SCCAI,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,simple clinical colitis a
 birth_weight,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,curators must use gramms 
 gestational_age,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,duration time of pregnancy;curatos must use weeks
 diet,character,non-unique,optional,FALSE,omnivore|vegan|vegetarian,type of diet
+subcohort,character,non-unique,optional,FALSE,[0-9a-zA-Z]\S+,Identifier of a sub-set of the cohort. Can be everything.
+RECIST,character,non-unique,optional,FALSE,SD|PR|PD|CR,RECIST classification for response to cancer-therapy: SD=Stable Disease; PR=Partial Response; PD=Progression Disease; CR=Complete Response
+ORR,character,non-unique,optional,FALSE,yes|no,Overall Response Rate (see also RECIST)
+PFS12,character,non-unique,optional,FALSE,yes|no,Progression-free survival in 12 months.
 curator,character,non-unique,required,TRUE,Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Anna_Pedrotti;Paolo_Manghi|Mireia_VallesColomer,Curator name.
 uncurated_metadata,character,non-unique,optional,FALSE,.+,A row for whatever field has not be included here.
