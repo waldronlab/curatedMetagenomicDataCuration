@@ -37,8 +37,6 @@ PehrssonE_2016	SID05A_000	SID05A	stool	NA	control	healthy	46	NA	adult	female	PER
 PehrssonE_2016	SID03G_000	SID03G	stool	NA	control	healthy	3	NA	child	male	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	10565226	1478494877	36	142	SRR2938516;SRR2938231	Giacomo_DAmato
 PehrssonE_2016	SID03F_000	SID03F	stool	NA	control	healthy	20	NA	adult	female	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	7556141	1057872194	36	142	SRR2938515;SRR2938230	Giacomo_DAmato
 PehrssonE_2016	SID03E_000	SID03E	stool	NA	control	healthy	29	NA	adult	female	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	4389689	614708070	36	142	SRR2938514;SRR2938229	Giacomo_DAmato
-PehrssonE_2016	SID03D_000	SID03D	stool	NA	control	healthy	8	NA	child	male	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	9555255	1339447745	36	142	SRR2938513;SRR2938228	Giacomo_DAmato
-PehrssonE_2016	SID03C_000	SID03C	stool	NA	control	healthy	19	NA	adult	male	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	10264850	1440166465	36	142	SRR2938512;SRR2938227	Giacomo_DAmato
 PehrssonE_2016	SID03D_000	SID03D	stool	NA	control	healthy	8	NA	child	male	PER	Lima_periurban_shantytown	yes	NA 	IlluminaHiSeq	27172044	95552551	339447745	36	142	SRR2938513;SRR2938228	Giacomo_DAmato
 PehrssonE_2016	SID03C_000	SID03C	stool	NA	control	healthy	19	NA	adult	male	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	10264850	1440166465	36	142	SRR2938512;SRR2938227	Giacomo_DAmato
 PehrssonE_2016	SID03B_000	SID03B	stool	NA	control	healthy	58	NA	adult	female	PER	Lima_periurban_shantytown	yes	NA	IlluminaHiSeq	27172044	12616895	1769957514	36	142	SRR2938511;SRR2938226	Giacomo_DAmato
