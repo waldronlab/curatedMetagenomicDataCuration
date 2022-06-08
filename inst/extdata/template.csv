@@ -104,7 +104,7 @@ HLA,character,non-unique,optional,TRUE,.+,HLA DR-DQ alleles conferring risk of T
 autoantibody_positive,character,non-unique,optional,TRUE,.+,Tested positive for AAB.
 age_seroconversion,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at seroconvention was detected (days).
 age_T1D_diagnosis,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at which T1D was diagnosed (days).
-disease_stage,character,non-unique,optional,FALSE,[A-Z]{1,2},Stage information for diseases that can be divided into multiple stages.
+disease_stage,character,non-unique,optional,FALSE,[A-Z]{1\,2},Stage information for diseases that can be divided into multiple stages.
 disease_location,character,non-unique,optional,TRUE,.+,Can be used for diseases which occur on different body parts like CD.
 calprotectin,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
 treatment,character,non-unique,optional,TRUE,no|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea,Medications or treatments against the diseases.
