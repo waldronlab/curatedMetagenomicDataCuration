@@ -54,11 +54,11 @@ cephalosporins,cephalosporins,
 AS,ankylosing spondylitis,http://www.ebi.ac.uk/efo/EFO_0003898
 RA,rheumatoid Arthritis,http://www.ebi.ac.uk/efo/EFO_0000685
 metabolic_syndrome,metabolic syndrome,http://www.ebi.ac.uk/efo/EFO_0000195
-FMT,arabidopsis thaliana,
+FMT,fecal metragenome transplantationj,
 premature_born,premature birth,http://www.ebi.ac.uk/efo/EFO_0003917
 periodontitis,periodontitis,http://www.ebi.ac.uk/efo/EFO_0000649
 SRP,,
-STH,somatotropin,
+STH,soil transmitted helminths,
 BD,behcet's syndrome,http://www.ebi.ac.uk/efo/EFO_0003780
 chorioamnionitis,chorioamnionitis,http://www.ebi.ac.uk/efo/EFO_0009948
 pre-eclampsia,preeclampsia,http://www.ebi.ac.uk/efo/EFO_0000668
