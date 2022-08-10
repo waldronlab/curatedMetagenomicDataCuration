@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-08-10 11:25:57 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-08-10 13:53:57 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -579,10 +579,10 @@
 <em>allowedvalues</em>: [0-9a-zA-Z]+</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>152 . : “UNIVERSAL DONOR”<br>
-154 . : “UNIVERSAL DONOR”<br>
-155 . : “UNIVERSAL DONOR”<br>
-156 . : “UNIVERSAL DONOR”</p>
+<p>149 . : “UNIVERSAL DONOR”<br>
+151 . : “UNIVERSAL DONOR”<br>
+152 . : “UNIVERSAL DONOR”<br>
+153 . : “UNIVERSAL DONOR”</p>
 </div>
 <div class="section level4">
 <h4 id="study_condition-1">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-1"></a>
@@ -621,20 +621,20 @@
 40 . : “TKI_dependent_diarrhoea”<br>
 41 . : “TKI_dependent_diarrhoea”<br>
 42 . : “TKI_dependent_diarrhoea”<br>
+96 . : “donor”<br>
 98 . : “donor”<br>
-100 . : “donor”<br>
-106 . : “donor”<br>
-146 . : “MDRB”<br>
-148 . : “MDRB”<br>
+104 . : “donor”<br>
+143 . : “MDRB”<br>
+145 . : “MDRB”<br>
+148 . : “donor”<br>
+149 . : “donor”<br>
+150 . : “donor”<br>
 151 . : “donor”<br>
 152 . : “donor”<br>
 153 . : “donor”<br>
-154 . : “donor”<br>
-155 . : “donor”<br>
-156 . : “donor”<br>
-159 . : “MDRB”<br>
-163 . : “MDRB”<br>
-167 . : “MDRB”</p>
+156 . : “MDRB”<br>
+160 . : “MDRB”<br>
+164 . : “MDRB”</p>
 </div>
 <div class="section level4">
 <h4 id="disease-1">disease<a class="anchor" aria-label="anchor" href="#disease-1"></a>
@@ -699,17 +699,17 @@
 40 . : “TKI_dependent_diarrhoea”<br>
 41 . : “TKI_dependent_diarrhoea”<br>
 42 . : “TKI_dependent_diarrhoea”<br>
+143 . : “MDRB”<br>
+144 . : “MDRB”<br>
+145 . : “MDRB”<br>
 146 . : “MDRB”<br>
 147 . : “MDRB”<br>
-148 . : “MDRB”<br>
-149 . : “MDRB”<br>
-150 . : “MDRB”<br>
-159 . : “MDRB”<br>
+156 . : “MDRB”<br>
+157 . : “MDRB”<br>
 160 . : “MDRB”<br>
-163 . : “MDRB”<br>
+161 . : “MDRB”<br>
 164 . : “MDRB”<br>
-167 . : “MDRB”<br>
-168 . : “MDRB”</p>
+165 . : “MDRB”</p>
 </div>
 </div>
 </div>
