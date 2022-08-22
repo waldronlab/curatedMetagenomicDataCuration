@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-08-12 14:59:20 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-08-22 16:22:51 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4686,40 +4686,14 @@
 <h2 id="pehrssone_2016_metadata-tsv">PehrssonE_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#pehrssone_2016_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
-</h3>
-<div class="section level4">
-<h4 id="days_from_first_collection">days_from_first_collection<a class="anchor" aria-label="anchor" href="#days_from_first_collection"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: integer<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>39 . : “NA”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="petersba_2019_metadata-tsv">PetersBA_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#petersba_2019_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-2">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-2"></a>
@@ -4952,7 +4926,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
+<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
 </h3>
 <div class="section level4">
 <h4 id="curator-2">curator<a class="anchor" aria-label="anchor" href="#curator-2"></a>
