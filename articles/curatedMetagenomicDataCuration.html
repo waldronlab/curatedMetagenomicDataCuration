@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-08-25 08:57:48 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-08-25 12:34:18 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -723,7 +723,107 @@
 <h2 id="jiez_2017_metadata-tsv">JieZ_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#jiez_2017_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<p>All checks OK.</p>
+<div class="section level3">
+<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+</h3>
+<div class="section level4">
+<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>8 . : “anti_hypertension”<br>
+9 . : “anti_hypertension”<br>
+12 . : “urinary_alkalinizer”<br>
+16 . : “aspirin;beta_blockers;statin”<br>
+17 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+28 . : “anti_hypertension”<br>
+35 . : “aspirin;beta_blockers;statin”<br>
+36 . : “urinary_alkalinizer”<br>
+37 . : “aspirin”<br>
+38 . : “aspirin”<br>
+39 . : “beta_blockers;urinary_alkalinizer”<br>
+42 . : “antihypertension;aspirin;beta_blockers”<br>
+45 . : “beta_blockers”<br>
+49 . : “aspirin;beta_blockers;statin”<br>
+50 . : “anti_hypertension;antihypertension;beta_blockers”<br>
+53 . : “aspirin”<br>
+61 . : “aspirin”<br>
+62 . : “antidiab”<br>
+65 . : “insulin”<br>
+67 . : “antihypertension”<br>
+68 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+70 . : “antidiab;antihypertension;aspirin;beta_blockers;urinary_alkalinizer”<br>
+72 . : “antihypertension”<br>
+74 . : “anti_hypertension”<br>
+75 . : “anti_hypertension”<br>
+86 . : “antihypertension;aspirin;beta_blockers”<br>
+96 . : “anti_hypertension;antidiab”<br>
+98 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+99 . : “aspirin;beta_blockers;statin”<br>
+100 . : “antihypertension;urinary_alkalinizer”<br>
+102 . : “antihypertension”<br>
+103 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+105 . : “antihypertension”<br>
+106 . : “antihypertension;aspirin;beta_blockers;urinary_alkalinizer”<br>
+107 . : “antihypertension;urinary_alkalinizer”<br>
+108 . : “antihypertension”<br>
+109 . : “insulin”<br>
+111 . : “antidiab;antihypertension;aspirin;beta_blockers;statin;urinary_alkalinizer”<br>
+112 . : “insulin”<br>
+115 . : “anti_hypertension”<br>
+117 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+132 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+134 . : “antidiab;aspirin;beta_blockers;statin”<br>
+137 . : “antihypertension;beta_blockers”<br>
+142 . : “aspirin;ppi”<br>
+145 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+146 . : “statin”<br>
+149 . : “antihypertension;aspirin;statin”<br>
+150 . : “antihypertension;statin”<br>
+152 . : “aspirin”<br>
+155 . : “statin”<br>
+157 . : “antihypertension”<br>
+163 . : “antihypertension;beta_blockers;insulin”<br>
+166 . : “urinary_alkalinizer”<br>
+167 . : “antihypertension”<br>
+169 . : “antihypertension;urinary_alkalinizer”<br>
+170 . : “antidiab;antihypertension;aspirin;beta_blockers;insulin;statin”<br>
+171 . : “antihypertension;aspirin;ppi;statin”<br>
+173 . : “urinary_alkalinizer”<br>
+174 . : “antihypertension;aspirin;beta_blockers;ppi;statin”<br>
+175 . : “antihypertension;beta_blockers”<br>
+176 . : “antihypertension;aspirin”<br>
+177 . : “antihypertension”<br>
+179 . : “ppi”<br>
+185 . : “statin”<br>
+186 . : “urinary_alkalinizer”<br>
+188 . : “antihypertension;aspirin;beta_blockers;ppi;statin”<br>
+189 . : “ppi;urinary_alkalinizer”<br>
+195 . : “statin”<br>
+198 . : “antihypertension;aspirin;ppi”<br>
+201 . : “antihypertension;aspirin;beta_blockers;statin”<br>
+203 . : “aspirin”<br>
+209 . : “ppi”<br>
+211 . : “antihypertension”<br>
+213 . : “antidiab;antihypertension;aspirin;beta_blockers;insulin;ppi;statin”</p>
+</div>
+</div>
 </div>
 <div class="section level2">
 <h2 id="karlssonfh_2013_metadata-tsv">KarlssonFH_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#karlssonfh_2013_metadata-tsv"></a>
@@ -781,7 +881,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
 </h3>
 <div class="section level4">
 <h4 id="curator">curator<a class="anchor" aria-label="anchor" href="#curator"></a>
@@ -1019,7 +1119,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-1">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-1"></a>
@@ -1171,7 +1271,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
 <h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
@@ -3834,7 +3934,7 @@
 1833 . : “IonProton”</p>
 </div>
 <div class="section level4">
-<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
+<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -4693,7 +4793,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
+<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-2">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-2"></a>
@@ -4926,7 +5026,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
 </h3>
 <div class="section level4">
 <h4 id="curator-2">curator<a class="anchor" aria-label="anchor" href="#curator-2"></a>
