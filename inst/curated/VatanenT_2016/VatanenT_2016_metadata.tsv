@@ -472,7 +472,7 @@ VatanenT_2016	G78546	P015091	stool	no	NA	control	healthy	0	248	newborn	female	RU
 VatanenT_2016	G69158	P015091	stool	no	NA	control	healthy	0	278	newborn	female	RUS	no	30	IlluminaHiSeq	Qiagen	27133167	13255210	1319640008	66	101	SRR4305044	NA	5	5	NA	Paolo_Manghi
 VatanenT_2016	G78734	P015091	stool	no	NA	control	healthy	1	NA	child	female	RUS	no	561	IlluminaHiSeq	Qiagen	27133167	8379390	818566431	79	101	SRR4305249	NA	5	5	NA	Paolo_Manghi
 VatanenT_2016	G69196	P015091	stool	no	NA	control	healthy	1	NA	child	female	RUS	no	638	IlluminaHiSeq	Qiagen	27133167	34732040	3431780676	62	101	SRR4305435	NA	5	5	NA	Paolo_Manghi
-VatanenT_2016	G80310	P015091	stool	yes	nitrofurans	NK	NK	1	NA	child	female	RUS	no	381	IlluminaHiSeq	Qiagen	27133167	24487776	2356990498	60	99	SRR4305471	NA	5	5	NA	Paolo_Manghi
+VatanenT_2016	G80310	P015091	stool	yes	nitrofurans	control	healthy	1	NA	child	female	RUS	no	381	IlluminaHiSeq	Qiagen	27133167	24487776	2356990498	60	99	SRR4305471	NA	5	5	NA	Paolo_Manghi
 VatanenT_2016	G78905	P015163	stool	no	NA	control	healthy	0	144	newborn	male	RUS	no	0	IlluminaHiSeq	Qiagen	27133167	19952724	1947336300	60	100	SRR4305409	NA	NA	NA	404	Paolo_Manghi
 VatanenT_2016	G69181	P015163	stool	no	NA	control	healthy	0	175	newborn	male	RUS	no	31	IlluminaHiSeq	Qiagen	27133167	52185144	5182255975	68	101	SRR4305267	NA	NA	NA	404	Paolo_Manghi
 VatanenT_2016	G78647	P015163	stool	no	NA	control	healthy	0	205	newborn	male	RUS	no	61	IlluminaHiSeq	Qiagen	27133167	32568468	3204340098	60	101	SRR4305176	NA	NA	NA	404	Paolo_Manghi
