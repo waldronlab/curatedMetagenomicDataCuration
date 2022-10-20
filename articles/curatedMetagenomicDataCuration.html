@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-10-19 15:38:22 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-10-20 14:51:19 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -1314,6 +1314,176 @@
 <p>All checks OK.</p>
 </div>
 <div class="section level2">
+<h2 id="mccullochja_2022_metadata-tsv">McCullochJA_2022_metadata.tsv<a class="anchor" aria-label="anchor" href="#mccullochja_2022_metadata-tsv"></a>
+</h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/McCullochJA_2022/McCullochJA_2022_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/McCullochJA_2022/McCullochJA_2022_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
+<div class="section level3">
+<h3 id="column-name-errors-4">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-4"></a>
+</h3>
+<ul>
+<li>“previous_therapy” is not defined in the template.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+</h3>
+<div class="section level4">
+<h4 id="ajcc">ajcc<a class="anchor" aria-label="anchor" href="#ajcc"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: 0|i|ii|iii|iv|iii/iv</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “iv-c”<br>
+2 . : “iv-c”<br>
+3 . : “iv-c”<br>
+4 . : “iv-c”<br>
+5 . : “iv-a”<br>
+6 . : “iv-c”<br>
+7 . : “iv-a”<br>
+8 . : “iv-d”<br>
+9 . : “iv-c”<br>
+10 . : “iv-a”<br>
+11 . : “iv-d”<br>
+12 . : “iv-c”<br>
+13 . : “iv-c”<br>
+14 . : “iv-a”<br>
+15 . : “iv-c”<br>
+16 . : “iv-b”<br>
+17 . : “iv-a”<br>
+18 . : “iv-c”<br>
+19 . : “iv-c”<br>
+20 . : “iv-a”<br>
+21 . : “iv-c”<br>
+22 . : “iv-a”<br>
+23 . : “iv-d”<br>
+24 . : “iv-a”<br>
+25 . : “iv-c”<br>
+26 . : “iv-c”<br>
+27 . : “iv-c”<br>
+28 . : “iv-c”<br>
+29 . : “iv-a”<br>
+30 . : “iv-c”<br>
+31 . : “iv-b”<br>
+32 . : “iv-c”<br>
+33 . : “iv-d”<br>
+34 . : “iv-b”<br>
+35 . : “iv-a”<br>
+36 . : “iv-c”<br>
+37 . : “iv-c”<br>
+38 . : “iv-d”<br>
+39 . : “iv-d”<br>
+40 . : “iv-c”<br>
+41 . : “iv-c”<br>
+42 . : “iv-b”<br>
+43 . : “iv-a”<br>
+44 . : “iv-a”<br>
+45 . : “iv-b”<br>
+46 . : “iv-b”<br>
+47 . : “iv-c”<br>
+48 . : “iv-a”<br>
+49 . : “iv-a”<br>
+50 . : “iv-c”<br>
+51 . : “iv-a”<br>
+52 . : “iv-b”<br>
+53 . : “iv-d”<br>
+54 . : “iv-b”<br>
+55 . : “iv-d”<br>
+56 . : “iv-b”<br>
+57 . : “iv-a”<br>
+58 . : “iv-a”<br>
+59 . : “iv-b”<br>
+60 . : “iv-c”<br>
+61 . : “iv-c”<br>
+62 . : “iv-a”<br>
+63 . : “iv-c”<br>
+64 . : “iv-c”<br>
+65 . : “iv-a”<br>
+66 . : “iv-a”<br>
+67 . : “iv-a”<br>
+68 . : “iv-b”<br>
+69 . : “iv-a”<br>
+70 . : “iv-b”<br>
+71 . : “iv-c”<br>
+72 . : “iv-c”<br>
+73 . : “iv-a”<br>
+74 . : “iv-b”<br>
+75 . : “iv-b”<br>
+76 . : “iv-d”<br>
+77 . : “iv-a”<br>
+78 . : “iv-a”<br>
+79 . : “iv-a”<br>
+80 . : “iv-b”<br>
+81 . : “iv-a”<br>
+82 . : “iv-c”<br>
+83 . : “iv-b”<br>
+84 . : “iv-c”<br>
+85 . : “iv-b”<br>
+86 . : “iv-b”<br>
+87 . : “iv-d”<br>
+88 . : “iv-c”<br>
+89 . : “iv-d”<br>
+90 . : “iv-b”<br>
+91 . : “iv-a”<br>
+92 . : “iv-b”<br>
+93 . : “iv-a”<br>
+94 . : “iv-c”</p>
+</div>
+<div class="section level4">
+<h4 id="treatment-2">treatment<a class="anchor" aria-label="anchor" href="#treatment-2"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “nivolumab”<br>
+2 . : “nivolumab;antacids;H2RA;psychotropics”<br>
+6 . : “nivolumab;psychotropics”<br>
+17 . : “nivolumab”<br>
+24 . : “nivolumab”<br>
+25 . : “nivolumab”<br>
+28 . : “nivolumab”<br>
+30 . : “nivolumab;psychotropics”<br>
+31 . : “nivolumab;psychotropics”<br>
+49 . : “nivolumab”<br>
+54 . : “nivolumab”<br>
+55 . : “nivolumab;psychotropics”<br>
+64 . : “nivolumab”<br>
+84 . : “nivolumab;psychotropics”<br>
+88 . : “nivolumab”<br>
+91 . : “nivolumab”</p>
+</div>
+</div>
+</div>
+<div class="section level2">
 <h2 id="mehtars_2018_metadata-tsv">MehtaRS_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#mehtars_2018_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/MehtaRS_2018/MehtaRS_2018_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/MehtaRS_2018/MehtaRS_2018_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
@@ -1329,7 +1499,7 @@
 <p>minimum_read_length median_read_length</p>
 </div>
 <div class="section level3">
-<h3 id="column-name-errors-4">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-4"></a>
+<h3 id="column-name-errors-5">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-5"></a>
 </h3>
 <ul>
 <li><p>“smoke” is not defined in the template.</p></li>
@@ -1341,7 +1511,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
 </h3>
 <div class="section level4">
 <h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
@@ -4001,7 +4171,7 @@
 1831 . : “IonProton”</p>
 </div>
 <div class="section level4">
-<h4 id="treatment-2">treatment<a class="anchor" aria-label="anchor" href="#treatment-2"></a>
+<h4 id="treatment-3">treatment<a class="anchor" aria-label="anchor" href="#treatment-3"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -4859,7 +5029,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
+<h3 id="entry-errors-9">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-9"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-2">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-2"></a>
@@ -5092,7 +5262,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-9">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-9"></a>
+<h3 id="entry-errors-10">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-10"></a>
 </h3>
 <div class="section level4">
 <h4 id="curator-2">curator<a class="anchor" aria-label="anchor" href="#curator-2"></a>
