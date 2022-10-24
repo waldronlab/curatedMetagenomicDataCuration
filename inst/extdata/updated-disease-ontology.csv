@@ -83,3 +83,7 @@ T1D_nonconverter,,
 T1D_seroconverter,,
 NAFLD,non alcoholic fatty liver disease,http://www.ebi.ac.uk/efo/EFO_1001248
 Indeterminate_colitis,indeterminate colitis,http://www.ebi.ac.uk/efo/EFO_1000034
+PD,parkinson disease,http://purl.obolibrary.org/obo/MONDO_0005180
+uveitis,uveitis,http://www.ebi.ac.uk/efo/EFO_1001231
+VKH,Vogt-Koyanagi-Harada disease (uveitis),http://purl.obolibrary.org/obo/MONDO_0018092
+CAD,coronary artery disease,http://www.ebi.ac.uk/efo/EFO_0001645
