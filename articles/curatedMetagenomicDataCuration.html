@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-10-24 16:06:26 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-10-24 16:47:30 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -208,6 +208,33 @@
 <li>“change_in_tumor_size” is not defined in the template.</li>
 </ul>
 </div>
+<div class="section level3">
+<h3 id="entry-errors">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors"></a>
+</h3>
+<div class="section level4">
+<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>6 . : “nivolmab”</p>
+</div>
+</div>
 </div>
 <div class="section level2">
 <h2 id="ghensip_2019_metadata-tsv">GhensiP_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#ghensip_2019_metadata-tsv"></a>
@@ -226,7 +253,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors"></a>
+<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage"></a>
@@ -338,7 +365,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
+<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
 </h3>
 <div class="section level4">
 <h4 id="subject_id">subject_id<a class="anchor" aria-label="anchor" href="#subject_id"></a>
@@ -506,112 +533,6 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
-</h3>
-<div class="section level4">
-<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>8 . : “anti_hypertension”<br>
-9 . : “anti_hypertension”<br>
-12 . : “urinary_alkalinizer”<br>
-16 . : “aspirin;beta_blockers;statin”<br>
-17 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-28 . : “anti_hypertension”<br>
-35 . : “aspirin;beta_blockers;statin”<br>
-36 . : “urinary_alkalinizer”<br>
-37 . : “aspirin”<br>
-38 . : “aspirin”<br>
-39 . : “beta_blockers;urinary_alkalinizer”<br>
-42 . : “antihypertension;aspirin;beta_blockers”<br>
-45 . : “beta_blockers”<br>
-49 . : “aspirin;beta_blockers;statin”<br>
-50 . : “anti_hypertension;antihypertension;beta_blockers”<br>
-53 . : “aspirin”<br>
-61 . : “aspirin”<br>
-62 . : “antidiab”<br>
-65 . : “insulin”<br>
-67 . : “antihypertension”<br>
-68 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-70 . : “antidiab;antihypertension;aspirin;beta_blockers;urinary_alkalinizer”<br>
-72 . : “antihypertension”<br>
-74 . : “anti_hypertension”<br>
-75 . : “anti_hypertension”<br>
-86 . : “antihypertension;aspirin;beta_blockers”<br>
-96 . : “anti_hypertension;antidiab”<br>
-98 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-99 . : “aspirin;beta_blockers;statin”<br>
-100 . : “antihypertension;urinary_alkalinizer”<br>
-102 . : “antihypertension”<br>
-103 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-105 . : “antihypertension”<br>
-106 . : “antihypertension;aspirin;beta_blockers;urinary_alkalinizer”<br>
-107 . : “antihypertension;urinary_alkalinizer”<br>
-108 . : “antihypertension”<br>
-109 . : “insulin”<br>
-111 . : “antidiab;antihypertension;aspirin;beta_blockers;statin;urinary_alkalinizer”<br>
-112 . : “insulin”<br>
-115 . : “anti_hypertension”<br>
-117 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-132 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-134 . : “antidiab;aspirin;beta_blockers;statin”<br>
-137 . : “antihypertension;beta_blockers”<br>
-142 . : “aspirin;ppi”<br>
-145 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-146 . : “statin”<br>
-149 . : “antihypertension;aspirin;statin”<br>
-150 . : “antihypertension;statin”<br>
-152 . : “aspirin”<br>
-155 . : “statin”<br>
-157 . : “antihypertension”<br>
-163 . : “antihypertension;beta_blockers;insulin”<br>
-166 . : “urinary_alkalinizer”<br>
-167 . : “antihypertension”<br>
-169 . : “antihypertension;urinary_alkalinizer”<br>
-170 . : “antidiab;antihypertension;aspirin;beta_blockers;insulin;statin”<br>
-171 . : “antihypertension;aspirin;ppi;statin”<br>
-173 . : “urinary_alkalinizer”<br>
-174 . : “antihypertension;aspirin;beta_blockers;ppi;statin”<br>
-175 . : “antihypertension;beta_blockers”<br>
-176 . : “antihypertension;aspirin”<br>
-177 . : “antihypertension”<br>
-179 . : “ppi”<br>
-185 . : “statin”<br>
-186 . : “urinary_alkalinizer”<br>
-188 . : “antihypertension;aspirin;beta_blockers;ppi;statin”<br>
-189 . : “ppi;urinary_alkalinizer”<br>
-195 . : “statin”<br>
-198 . : “antihypertension;aspirin;ppi”<br>
-201 . : “antihypertension;aspirin;beta_blockers;statin”<br>
-203 . : “aspirin”<br>
-209 . : “ppi”<br>
-211 . : “antihypertension”<br>
-213 . : “antidiab;antihypertension;aspirin;beta_blockers;insulin;ppi;statin”</p>
-</div>
-</div>
-</div>
-<div class="section level2">
-<h2 id="karlssonfh_2013_metadata-tsv">KarlssonFH_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#karlssonfh_2013_metadata-tsv"></a>
-</h2>
-<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
 <h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
 <div class="section level4">
@@ -632,7 +553,72 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea</li>
+<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>8 . : “anti_hypertension”<br>
+9 . : “anti_hypertension”<br>
+12 . : “urinary_alkalinizer”<br>
+28 . : “anti_hypertension”<br>
+36 . : “urinary_alkalinizer”<br>
+39 . : “beta_blockers;urinary_alkalinizer”<br>
+62 . : “antidiab”<br>
+67 . : “antihypertension”<br>
+72 . : “antihypertension”<br>
+74 . : “anti_hypertension”<br>
+75 . : “anti_hypertension”<br>
+96 . : “anti_hypertension;antidiab”<br>
+100 . : “antihypertension;urinary_alkalinizer”<br>
+102 . : “antihypertension”<br>
+105 . : “antihypertension”<br>
+107 . : “antihypertension;urinary_alkalinizer”<br>
+108 . : “antihypertension”<br>
+115 . : “anti_hypertension”<br>
+146 . : “statin”<br>
+150 . : “antihypertension;statin”<br>
+155 . : “statin”<br>
+157 . : “antihypertension”<br>
+166 . : “urinary_alkalinizer”<br>
+167 . : “antihypertension”<br>
+169 . : “antihypertension;urinary_alkalinizer”<br>
+173 . : “urinary_alkalinizer”<br>
+177 . : “antihypertension”<br>
+179 . : “ppi”<br>
+185 . : “statin”<br>
+186 . : “urinary_alkalinizer”<br>
+189 . : “ppi;urinary_alkalinizer”<br>
+195 . : “statin”<br>
+209 . : “ppi”<br>
+211 . : “antihypertension”</p>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="karlssonfh_2013_metadata-tsv">KarlssonFH_2013_metadata.tsv<a class="anchor" aria-label="anchor" href="#karlssonfh_2013_metadata-tsv"></a>
+</h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KarlssonFH_2013/KarlssonFH_2013_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
+<div class="section level3">
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+</h3>
+<div class="section level4">
+<h4 id="treatment-2">treatment<a class="anchor" aria-label="anchor" href="#treatment-2"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . : “statin”<br>
@@ -670,9 +656,7 @@
 104 . : “statin”<br>
 106 . : “statin”<br>
 112 . : “statin”<br>
-115 . : “statin;insulin”<br>
 121 . : “statin”<br>
-124 . : “insulin”<br>
 126 . : “statin”<br>
 128 . : “statin”<br>
 130 . : “statin”<br>
@@ -780,7 +764,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-1">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-1"></a>
@@ -916,7 +900,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
 <h4 id="ajcc">ajcc<a class="anchor" aria-label="anchor" href="#ajcc"></a>
@@ -1034,44 +1018,6 @@
 93 . : “iv-a”<br>
 94 . : “iv-c”</p>
 </div>
-<div class="section level4">
-<h4 id="treatment-2">treatment<a class="anchor" aria-label="anchor" href="#treatment-2"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “nivolumab”<br>
-2 . : “nivolumab;antacids;H2RA;psychotropics”<br>
-6 . : “nivolumab;psychotropics”<br>
-17 . : “nivolumab”<br>
-24 . : “nivolumab”<br>
-25 . : “nivolumab”<br>
-28 . : “nivolumab”<br>
-30 . : “nivolumab;psychotropics”<br>
-31 . : “nivolumab;psychotropics”<br>
-49 . : “nivolumab”<br>
-54 . : “nivolumab”<br>
-55 . : “nivolumab;psychotropics”<br>
-64 . : “nivolumab”<br>
-84 . : “nivolumab;psychotropics”<br>
-88 . : “nivolumab”<br>
-91 . : “nivolumab”</p>
-</div>
 </div>
 </div>
 <div class="section level2">
@@ -1102,7 +1048,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
+<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
 </h3>
 <div class="section level4">
 <h4 id="study_condition-1">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-1"></a>
@@ -3779,7 +3725,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolmab|pembrolizumab|sulphonylurea</li>
+<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . : “antihta;thiazidique;at2_inhib”<br>
@@ -3796,7 +3742,6 @@
 46 . : “antilipid;antihta;ace_inhib;statin;asa;clopidogrel;cumarine;ppi”<br>
 47 . : “antihta;thiazidique;at2_inhib;kspdiur;ca2_cbl”<br>
 49 . : “antihta;ace_inhib;beta_blockers;asa;ppi”<br>
-53 . : “antihta;thiazidique;ace_inhib;beta_blockers”<br>
 55 . : “antidiab;su;dppiv”<br>
 56 . : “cumarine;ppi”<br>
 66 . : “antihta;thiazidique;at2_inhib”<br>
@@ -3833,7 +3778,6 @@
 144 . : “antilipid;statin”<br>
 146 . : “antihta;at2_inhib;ca2_cbl”<br>
 150 . : “antilipid;antihta;antidiab;at2_inhib;su;statin;asa”<br>
-152 . : “antidiab;insulin;bolus”<br>
 153 . : “cumarine;ppi”<br>
 171 . : “antilipid;antihta;thiazidique;ace_inhib;ca2_cbl;statin”<br>
 172 . : “antilipid;antihta;thiazidique;ace_inhib;kspdiur;ezetimibe;ppi;xantoxinh”<br>
@@ -3842,7 +3786,6 @@
 180 . : “antilipid;antihta;at2_inhib;kspdiur;ca2_cbl;statin”<br>
 181 . : “antihta;ace_inhib”<br>
 182 . : “ppi”<br>
-183 . : “antidiab;insulin;bolus”<br>
 184 . : “ppi”<br>
 185 . : “antilipid;statin”<br>
 188 . : “ppi”<br>
@@ -3856,7 +3799,6 @@
 212 . : “antilipid;statin;asa”<br>
 215 . : “antihta;ace_inhib”<br>
 217 . : “antilipid;antihta;ca2_cbl;statin”<br>
-220 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
 224 . : “antilipid;antihta;thiazidique;ace_inhib;kspdiur;beta_blockers;statin;clopidogrel;ppi”<br>
 229 . : “ppi”<br>
 233 . : “antihta;thiazidique;at2_inhib”<br>
@@ -3872,7 +3814,6 @@
 258 . : “antilipid;antihta;at2_inhib;statin;asa”<br>
 259 . : “antihta;antidiab;thiazidique;ace_inhib;beta_blockers;ca2_cbl;su”<br>
 261 . : “antihta;thiazidique;at2_inhib”<br>
-265 . : “antihta;beta_blockers”<br>
 267 . : “antihta;thiazidique;ca2_cbl;ctrblock;xantoxinh”<br>
 271 . : “antilipid;antihta;thiazidique;at2_inhib;ca2_cbl;statin;ppi”<br>
 274 . : “antihta;antidiab;at2_inhib;su”<br>
@@ -3883,7 +3824,6 @@
 286 . : “antilipid;antihta;thiazidique;at2_inhib;ezetimibe;ppi”<br>
 289 . : “ppi”<br>
 294 . : “antihta;thiazidique;at2_inhib”<br>
-295 . : “antidiab;insulin;bolus”<br>
 303 . : “antilipid;antihta;beta_blockers;statin;ppi”<br>
 304 . : “antihta;ace_inhib;ppi”<br>
 305 . : “antihta;thiazidique;at2_inhib;ca2_cbl”<br>
@@ -3897,7 +3837,6 @@
 317 . : “antilipid;antidiab;su;statin;asa”<br>
 320 . : “antilipid;antihta;thiazidique;kspdiur;ca2_cbl;ezetimibe;ppi”<br>
 321 . : “antilipid;antihta;thiazidique;at2_inhib;statin;ppi”<br>
-322 . : “antilipid;antihta;antidiab;diuranse;ace_inhib;kspdiur;beta_blockers;su;glp_1;dppiv;insulin;statin;asa;cumarine;digitalis;ppi”<br>
 325 . : “antilipid;statin;asa”<br>
 329 . : “antihta;ace_inhib”<br>
 330 . : “antilipid;fibrate;ppi”<br>
@@ -3909,13 +3848,11 @@
 343 . : “antilipid;statin;asa”<br>
 347 . : “ppi”<br>
 349 . : “antidiab;glp_1;ppi”<br>
-351 . : “antihta;kspdiur;beta_blockers”<br>
 352 . : “antilipid;antihta;diuranse;beta_blockers;statin;asa”<br>
 355 . : “antihta;thiazidique;at2_inhib”<br>
 359 . : “antihta;ctrblock”<br>
 362 . : “antihta;at2_inhib;kspdiur;ca2_cbl”<br>
 363 . : “antilipid;antihta;beta_blockers;statin;asa”<br>
-364 . : “antilipid;antidiab;su;insulin;statin”<br>
 367 . : “antilipid;antihta;diuranse;at2_inhib;beta_blockers;statin;ezetimibe;asa;clopidogrel”<br>
 370 . : “antihta;thiazidique;at2_inhib;kspdiur;beta_blockers;ca2_cbl;ctrblock”<br>
 373 . : “antilipid;antihta;thiazidique;at2_inhib;statin;ezetimibe”<br>
@@ -3923,21 +3860,13 @@
 392 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;glp_1;statin”<br>
 397 . : “antilipid;ezetimibe”<br>
 400 . : “antihta;thiazidique”<br>
-406 . : “antilipid;antihta;antidiab;at2_inhib;insulin;bolus;statin”<br>
 410 . : “antilipid;fibrate;antithombo”<br>
-427 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;insulin;bolus;statin”<br>
-431 . : “antilipid;antidiab;insulin;bolus;statin;ezetimibe”<br>
-435 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;insulin;bolus;statin”<br>
 437 . : “antilipid;antihta;antidiab;ace_inhib;su;statin;cumarine”<br>
 438 . : “antilipid;antidiab;su;statin”<br>
-448 . : “antidiab;su;insulin;bolus”<br>
 450 . : “antihta;diuranse;thiazidique”<br>
 453 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;ezetimibe;asa;clopidogrel;ppi”<br>
-459 . : “antilipid;antihta;antidiab;ca2_cbl;insulin;bolus;statin;ppi”<br>
-462 . : “antilipid;antihta;antidiab;ace_inhib;beta_blockers;insulin;bolus;statin;cumarine”<br>
 464 . : “antilipid;antihta;antidiab;ace_inhib;beta_blockers;ca2_cbl;su;statin”<br>
 466 . : “antilipid;antihta;antidiab;at2_inhib;ca2_cbl;dppiv;statin”<br>
-468 . : “antilipid;antihta;antidiab;beta_blockers;glp_1;insulin;bolus;statin”<br>
 474 . : “antihta;beta_blockers;ca2_cbl”<br>
 479 . : “antilipid;antihta;antidiab;at2_inhib;beta_blockers;glp_1;bolus;fibrate;ppi”<br>
 483 . : “antilipid;antihta;diuranse;at2_inhib;kspdiur;beta_blockers;statin;asa;cumarine;ppi”<br>
@@ -4017,7 +3946,6 @@
 573 . : “antilipid;antihta;ace_inhib;kspdiur;beta_blockers;statin;asa”<br>
 574 . : “antilipid;antihta;diuranse;ace_inhib;statin;amiodaron;asa;cumarine”<br>
 578 . : “antilipid;antihta;diuranse;ace_inhib;kspdiur;beta_blockers;statin;amiodaron;asa;cumarine”<br>
-579 . : “antilipid;antihta;antidiab;ace_inhib;beta_blockers;insulin;bolus;statin;antithombo;ppi”<br>
 581 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;asa;clopidogrel;nitrate”<br>
 583 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;asa;clopidogrel;ppi”<br>
 584 . : “antilipid;statin;antithombo”<br>
@@ -4045,7 +3973,6 @@
 630 . : “antilipid;antihta;at2_inhib;ca2_cbl;statin;asa”<br>
 631 . : “antilipid;antihta;at2_inhib;kspdiur;ca2_cbl;statin”<br>
 633 . : “antilipid;statin;asa”<br>
-637 . : “antidiab;su;dppiv;insulin”<br>
 639 . : “antilipid;statin”<br>
 641 . : “antihta;thiazidique;at2_inhib;ppi”<br>
 642 . : “antihta;thiazidique;beta_blockers;ca2_cbl;ctrblock;ppi”<br>
@@ -4055,86 +3982,60 @@
 646 . : “antihta;at2_inhib”<br>
 647 . : “antilipid;statin;asa”<br>
 652 . : “antilipid;statin;asa”<br>
-656 . : “antihta;kspdiur;beta_blockers”<br>
 659 . : “antilipid;antihta;at2_inhib;fibrate”<br>
 661 . : “antilipid;antihta;ace_inhib;ezetimibe”<br>
 663 . : “ppi”<br>
-693 . : “antihta;beta_blockers”<br>
 699 . : “antilipid;statin;ezetimibe”<br>
 761 . : “ppi”<br>
-762 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
 767 . : “antihta;ace_inhib;kspdiur;beta_blockers;xantoxinh”<br>
-769 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;insulin;bolus;statin;xantoxinh”<br>
 770 . : “xantoxinh”<br>
 774 . : “antilipid;antihta;at2_inhib;statin”<br>
-776 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
 780 . : “ppi”<br>
-781 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
 782 . : “antihta;antidiab;thiazidique;ace_inhib;beta_blockers;sglt2”<br>
 783 . : “antihta;diuranse;beta_blockers;ppi”<br>
-784 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;beta_blockers;ca2_cbl;ctrblock;glp_1;dppiv;insulin;statin;ppi”<br>
 786 . : “antihta;antidiab;ace_inhib;beta_blockers;ca2_cbl;bolus;asa;ppi”<br>
-789 . : “antihta;antidiab;ace_inhib;insulin;bolus”<br>
-791 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
-799 . : “antihta;thiazidique;beta_blockers”<br>
 804 . : “antihta;antidiab;diuranse;thiazidique;glp_1;cumarine”<br>
 805 . : “antilipid;antihta;thiazidique;at2_inhib;beta_blockers;statin;cumarine;other_antiarythmic;ppi”<br>
 806 . : “antihta;diuranse;antithombo”<br>
 808 . : “antihta;at2_inhib;beta_blockers;ca2_cbl”<br>
 810 . : “antihta;thiazidique;at2_inhib;ace_inhib;ppi”<br>
-812 . : “antihta;antidiab;thiazidique;ace_inhib;beta_blockers;insulin;bolus”<br>
 816 . : “antilipid;antihta;thiazidique;at2_inhib;ca2_cbl;statin;clopidogrel;ppi;xantoxinh”<br>
 817 . : “ppi”<br>
 819 . : “antihta;thiazidique;ppi”<br>
 820 . : “antihta;ca2_cbl”<br>
 826 . : “antihta;at2_inhib;ca2_cbl;ppi”<br>
 827 . : “antihta;at2_inhib”<br>
-828 . : “antihta;beta_blockers”<br>
 833 . : “antidiab;su;dppiv;ppi”<br>
 837 . : “antihta;thiazidique;at2_inhib”<br>
 840 . : “antihta;antidiab;diuranse;ace_inhib;bolus”<br>
 845 . : “ppi”<br>
 847 . : “xantoxinh”<br>
-850 . : “antihta;beta_blockers”<br>
 851 . : “antihta;at2_inhib”<br>
 852 . : “antihta;at2_inhib;asa”<br>
-854 . : “antidiab;insulin;bolus;ppi”<br>
 859 . : “antihta;beta_blockers;ppi”<br>
 860 . : “antihta;thiazidique;at2_inhib;ca2_cbl”<br>
 862 . : “antihta;at2_inhib”<br>
 864 . : “ppi”<br>
-867 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;beta_blockers;insulin;bolus;statin;ppi;xantoxinh”<br>
-872 . : “antihta;antidiab;thiazidique;at2_inhib;ca2_cbl;dppiv;insulin;bolus;asa;ppi”<br>
 874 . : “antihta;at2_inhib;ppi”<br>
 876 . : “antihta;at2_inhib;ca2_cbl”<br>
 880 . : “antihta;at2_inhib;beta_blockers;ca2_cbl”<br>
 885 . : “antihta;thiazidique;ace_inhib;ca2_cbl;ctrblock”<br>
 886 . : “antihta;ace_inhib”<br>
 887 . : “antidiab;dppiv”<br>
-888 . : “antilipid;antihta;antidiab;ace_inhib;insulin;statin;ezetimibe;asa”<br>
 895 . : “antihta;at2_inhib;beta_blockers;ca2_cbl”<br>
-898 . : “antihta;antidiab;ace_inhib;insulin;bolus”<br>
-903 . : “antidiab;insulin;bolus”<br>
 905 . : “antihta;beta_blockers;ppi”<br>
 910 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;dppiv;statin;other_antiarythmic”<br>
 914 . : “antihta;thiazidique”<br>
-917 . : “antihta;beta_blockers”<br>
 919 . : “antilipid;antihta;antidiab;thiazidique;at2_inhib;beta_blockers;dppiv;statin;ezetimibe;clopidogrel;ppi”<br>
 921 . : “ppi”<br>
-923 . : “antihta;thiazidique;ace_inhib;beta_blockers”<br>
-924 . : “antidiab;insulin;bolus”<br>
-927 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
 928 . : “antihta;at2_inhib”<br>
-930 . : “antihta;beta_blockers”<br>
 935 . : “antihta;at2_inhib”<br>
-941 . : “antilipid;antihta;antidiab;ace_inhib;insulin;statin”<br>
 943 . : “antihta;thiazidique;ace_inhib;ctrblock;xantoxinh”<br>
 948 . : “antihta;beta_blockers;cumarine;ppi”<br>
 953 . : “antilipid;antihta;ace_inhib;ca2_cbl;statin;asa”<br>
 956 . : “antihta;thiazidique;at2_inhib;ca2_cbl”<br>
 957 . : “antihta;diuranse;beta_blockers;ppi”<br>
 959 . : “antilipid;antihta;diuranse;thiazidique;at2_inhib;beta_blockers;ca2_cbl;statin;ppi”<br>
-960 . : “antihta;beta_blockers”<br>
 961 . : “ppi”<br>
 969 . : “antihta;antidiab;diuranse;at2_inhib;ace_inhib;beta_blockers;ca2_cbl;dppiv;bolus;xantoxinh”<br>
 972 . : “antihta;diuranse;ace_inhib”<br>
@@ -4143,25 +4044,20 @@
 977 . : “antihta;at2_inhib;ppi”<br>
 981 . : “antihta;ca2_cbl”<br>
 984 . : “antilipid;statin”<br>
-985 . : “antihta;antidiab;ace_inhib;ca2_cbl;insulin;bolus”<br>
 986 . : “antihta;at2_inhib;beta_blockers;ppi”<br>
 990 . : “antihta;antidiab;thiazidique;su;glp_1”<br>
 991 . : “antihta;ace_inhib;beta_blockers;ppi”<br>
 993 . : “antihta;thiazidique;at2_inhib;beta_blockers;ca2_cbl;antithombo”<br>
 997 . : “antihta;antidiab;diuranse;ace_inhib;kspdiur;beta_blockers;dppiv;bolus;cumarine”<br>
 999 . : “antilipid;antihta;diuranse;ace_inhib;beta_blockers;statin;asa;xantoxinh”<br>
-1004 . : “antilipid;antihta;antidiab;diuranse;at2_inhib;beta_blockers;ca2_cbl;insulin;statin;asa;xantoxinh”<br>
 1010 . : “antilipid;antihta;beta_blockers;ca2_cbl;ezetimibe”<br>
 1013 . : “antihta;antidiab;diuranse;at2_inhib;ace_inhib;glp_1”<br>
 1019 . : “antihta;beta_blockers;ppi”<br>
 1021 . : “antihta;thiazidique;beta_blockers;ppi”<br>
 1024 . : “antihta;ace_inhib”<br>
 1027 . : “antilipid;antihta;thiazidique;ace_inhib;statin”<br>
-1028 . : “antihta;ace_inhib;beta_blockers”<br>
 1032 . : “antihta;thiazidique”<br>
-1033 . : “antilipid;antihta;antidiab;beta_blockers;insulin;statin;xantoxinh”<br>
 1034 . : “antihta;ace_inhib”<br>
-1037 . : “antihta;beta_blockers”<br>
 1039 . : “antihta;ace_inhib;ca2_cbl”<br>
 1041 . : “antihta;at2_inhib”<br>
 1045 . : “antihta;diuranse;thiazidique;ace_inhib;beta_blockers;ca2_cbl;xantoxinh”<br>
@@ -4169,32 +4065,22 @@
 1048 . : “antihta;diuranse;thiazidique;at2_inhib;ace_inhib;ca2_cbl;ctrblock”<br>
 1051 . : “antihta;ace_inhib”<br>
 1054 . : “antihta;thiazidique;at2_inhib;ca2_cbl”<br>
-1057 . : “antihta;beta_blockers”<br>
 1059 . : “antihta;ace_inhib”<br>
 1060 . : “antihta;thiazidique;ace_inhib”<br>
 1061 . : “antihta;thiazidique;at2_inhib;ca2_cbl;ctrblock”<br>
-1065 . : “antihta;beta_blockers”<br>
 1069 . : “antihta;thiazidique;at2_inhib;ca2_cbl”<br>
 1073 . : “ppi”<br>
 1075 . : “antilipid;antihta;beta_blockers;statin”<br>
-1079 . : “antihta;beta_blockers”<br>
 1083 . : “antihta;ace_inhib”<br>
 1084 . : “antihta;ace_inhib”<br>
-1086 . : “antilipid;antidiab;insulin;bolus;statin”<br>
 1088 . : “antihta;thiazidique;at2_inhib”<br>
-1089 . : “antidiab;insulin”<br>
 1093 . : “antihta;ace_inhib”<br>
-1094 . : “antilipid;antihta;antidiab;at2_inhib;kspdiur;beta_blockers;ca2_cbl;insulin;bolus;statin”<br>
 1095 . : “antihta;thiazidique;at2_inhib;beta_blockers;ctrblock”<br>
 1096 . : “antihta;beta_blockers;cumarine”<br>
 1098 . : “antihta;antidiab;ace_inhib;acarbose;asa”<br>
 1101 . : “ppi”<br>
 1102 . : “antihta;at2_inhib”<br>
-1103 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
-1104 . : “antihta;beta_blockers”<br>
 1105 . : “antilipid;antihta;diuranse;thiazidique;beta_blockers;ezetimibe;xantoxinh”<br>
-1106 . : “antihta;beta_blockers”<br>
-1108 . : “antihta;antidiab;at2_inhib;su;glp_1;insulin;ppi”<br>
 1109 . : “cumarine”<br>
 1111 . : “antilipid;statin”<br>
 1116 . : “antihta;diuranse;ace_inhib;ppi”<br>
@@ -4203,29 +4089,20 @@
 1119 . : “antihta;ace_inhib”<br>
 1121 . : “antihta;diuranse;ace_inhib;beta_blockers;ppi;xantoxinh”<br>
 1122 . : “antihta;antidiab;thiazidique;at2_inhib;su”<br>
-1123 . : “antihta;thiazidique;beta_blockers”<br>
 1128 . : “antihta;at2_inhib;ppi”<br>
 1131 . : “ppi”<br>
 1132 . : “antihta;at2_inhib;ca2_cbl”<br>
-1137 . : “antilipid;antihta;antidiab;diuranse;thiazidique;ace_inhib;beta_blockers;ctrblock;insulin;bolus;statin;antithombo”<br>
 1139 . : “antihta;ace_inhib”<br>
 1140 . : “antihta;at2_inhib;ppi”<br>
 1142 . : “antihta;thiazidique;at2_inhib;ca2_cbl;ppi”<br>
-1144 . : “antihta;antidiab;ace_inhib;beta_blockers;ca2_cbl;insulin;bolus”<br>
 1146 . : “antilipid;antihta;ace_inhib;statin;ezetimibe”<br>
 1151 . : “antilipid;antihta;thiazidique;ace_inhib;beta_blockers;statin;asa;ppi”<br>
 1160 . : “antilipid;antihta;diuranse;thiazidique;ace_inhib;beta_blockers;ca2_cbl;statin;asa;ppi”<br>
-1161 . : “antihta;thiazidique;ace_inhib;beta_blockers”<br>
-1162 . : “antihta;beta_blockers”<br>
 1163 . : “antihta;ace_inhib”<br>
-1164 . : “antihta;antidiab;thiazidique;ace_inhib;ca2_cbl;dppiv;insulin;bolus”<br>
-1165 . : “antihta;diuranse;beta_blockers”<br>
 1168 . : “antihta;thiazidique;at2_inhib;beta_blockers;ca2_cbl;ppi”<br>
 1169 . : “antihta;thiazidique;at2_inhib;ca2_cbl;ppi”<br>
 1171 . : “antihta;thiazidique;ace_inhib”<br>
-1173 . : “antihta;antidiab;diuranse;thiazidique;ace_inhib;beta_blockers;insulin;bolus;antithombo”<br>
 1175 . : “antihta;antidiab;thiazidique;ace_inhib;beta_blockers;glp_1;ppi”<br>
-1176 . : “antihta;antidiab;at2_inhib;ca2_cbl;insulin”<br>
 1177 . : “antihta;beta_blockers;xantoxinh”<br>
 1180 . : “antihta;ace_inhib”<br>
 1182 . : “antihta;thiazidique;beta_blockers;ca2_cbl”<br>
@@ -4237,9 +4114,7 @@
 1201 . : “antihta;thiazidique;ppi”<br>
 1206 . : “antilipid;antihta;beta_blockers;statin”<br>
 1215 . : “asa”<br>
-1222 . : “antihta;ace_inhib;beta_blockers”<br>
 1227 . : “antihta;ace_inhib”<br>
-1228 . : “antihta;thiazidique;at2_inhib;beta_blockers”<br>
 1231 . : “antihta;thiazidique;ace_inhib;beta_blockers;ppi”<br>
 1235 . : “antihta;ace_inhib”<br>
 1236 . : “antihta;ace_inhib”<br>
@@ -4252,7 +4127,6 @@
 1257 . : “antihta;thiazidique;ace_inhib;beta_blockers;asa;ppi”<br>
 1260 . : “antihta;diuranse;ppi”<br>
 1261 . : “antilipid;antihta;diuranse;thiazidique;at2_inhib;ca2_cbl;statin;antithombo;ppi;xantoxinh”<br>
-1263 . : “antihta;beta_blockers”<br>
 1265 . : “antihta;ace_inhib;asa;ppi”<br>
 1266 . : “antihta;ace_inhib;ca2_cbl”<br>
 1267 . : “antihta;ace_inhib”<br>
@@ -4263,13 +4137,8 @@
 1273 . : “antihta;thiazidique;ace_inhib;ctrblock”<br>
 1278 . : “ppi”<br>
 1281 . : “antihta;ace_inhib;cumarine”<br>
-1282 . : “antihta;ace_inhib;beta_blockers”<br>
 1283 . : “antihta;thiazidique”<br>
-1289 . : “antidiab;insulin;bolus;ppi”<br>
-1292 . : “antihta;ace_inhib;beta_blockers”<br>
-1297 . : “antilipid;antidiab;insulin;bolus;statin”<br>
 1305 . : “antihta;at2_inhib;beta_blockers;ppi”<br>
-1306 . : “antihta;antidiab;thiazidique;ace_inhib;ca2_cbl;insulin;bolus”<br>
 1307 . : “antihta;antidiab;beta_blockers;sglt2;ppi”<br>
 1308 . : “antihta;ace_inhib;ca2_cbl”<br>
 1311 . : “antihta;ace_inhib;beta_blockers;ca2_cbl”<br>
@@ -4294,7 +4163,6 @@
 1345 . : “antihta;ca2_cbl;cumarine”<br>
 1346 . : “antihta;antidiab;diuranse;kspdiur;beta_blockers;su”<br>
 1347 . : “antilipid;antihta;ace_inhib;beta_blockers;ca2_cbl;statin;asa;ppi”<br>
-1348 . : “antihta;beta_blockers”<br>
 1350 . : “antilipid;antihta;thiazidique;at2_inhib;statin;asa”<br>
 1351 . : “antilipid;antihta;ace_inhib;statin;asa”<br>
 1354 . : “antilipid;antihta;diuranse;ace_inhib;kspdiur;statin;antithombo;asa”<br>
@@ -4337,7 +4205,6 @@
 1425 . : “antilipid;antihta;at2_inhib;beta_blockers;statin”<br>
 1426 . : “antilipid;antihta;thiazidique;beta_blockers;ca2_cbl;statin;asa”<br>
 1431 . : “antilipid;antihta;diuranse;at2_inhib;kspdiur;beta_blockers;statin;asa”<br>
-1434 . : “antihta;at2_inhib;beta_blockers”<br>
 1435 . : “antilipid;antihta;beta_blockers;statin;asa”<br>
 1436 . : “antihta;ace_inhib”<br>
 1437 . : “antilipid;antihta;beta_blockers;statin;antithombo;asa”<br>
@@ -4360,14 +4227,12 @@
 1461 . : “antilipid;antihta;beta_blockers;statin;asa;ppi”<br>
 1466 . : “ppi”<br>
 1467 . : “antilipid;antihta;beta_blockers;statin;antithombo;digitalis”<br>
-1470 . : “antihta;beta_blockers”<br>
 1472 . : “antilipid;antihta;ace_inhib;statin;clopidogrel”<br>
 1473 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;antithombo;asa;ppi”<br>
 1474 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;antithombo;asa”<br>
 1475 . : “ppi”<br>
 1476 . : “antilipid;antihta;ca2_cbl;statin”<br>
 1477 . : “antilipid;antihta;beta_blockers;statin;antithombo”<br>
-1478 . : “antihta;beta_blockers”<br>
 1479 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;antithombo;asa;nitrate”<br>
 1480 . : “antihta;thiazidique;at2_inhib;ca2_cbl;asa”<br>
 1481 . : “antilipid;antihta;beta_blockers;statin;antithombo;asa;nitrate”<br>
@@ -4426,7 +4291,6 @@
 1566 . : “antilipid;antihta;diuranse;ace_inhib;kspdiur;beta_blockers;statin;asa”<br>
 1567 . : “antilipid;antihta;at2_inhib;kspdiur;beta_blockers;statin;asa;ppi”<br>
 1568 . : “antilipid;antihta;diuranse;ace_inhib;beta_blockers;ca2_cbl;statin;ezetimibe;asa;nitrate;xantoxinh”<br>
-1570 . : “antihta;beta_blockers”<br>
 1571 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;antithombo;asa”<br>
 1572 . : “antilipid;antihta;beta_blockers;statin;antithombo;asa”<br>
 1573 . : “antilipid;antihta;thiazidique;ace_inhib;beta_blockers;statin;ezetimibe;antithombo;asa;clopidogrel”<br>
@@ -4461,10 +4325,8 @@
 1628 . : “antilipid;antihta;beta_blockers;statin;asa”<br>
 1631 . : “antilipid;statin;asa”<br>
 1632 . : “antilipid;antihta;ace_inhib;statin;xantoxinh”<br>
-1634 . : “antilipid;antihta;antidiab;beta_blockers;insulin;bolus;statin;antithombo;asa”<br>
 1638 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;antithombo;asa;nitrate”<br>
 1639 . : “antilipid;statin;antithombo;asa”<br>
-1640 . : “antilipid;antidiab;insulin;bolus;statin;antithombo;asa”<br>
 1641 . : “antihta;at2_inhib;ca2_cbl”<br>
 1644 . : “antilipid;statin”<br>
 1649 . : “antilipid;statin;asa”<br>
@@ -4477,10 +4339,8 @@
 1661 . : “antilipid;antihta;at2_inhib;kspdiur;beta_blockers;statin;asa”<br>
 1662 . : “antilipid;antihta;beta_blockers;statin;asa”<br>
 1663 . : “antilipid;antihta;beta_blockers;ca2_cbl;statin;asa;ppi”<br>
-1664 . : “antilipid;antihta;antidiab;diuranse;at2_inhib;kspdiur;insulin;statin;amiodaron;asa;nitrate”<br>
 1667 . : “antilipid;statin;asa”<br>
 1670 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;antithombo;asa”<br>
-1672 . : “antihta;beta_blockers”<br>
 1673 . : “antilipid;antihta;thiazidique;ace_inhib;beta_blockers;ca2_cbl;ezetimibe;asa”<br>
 1675 . : “antihta;at2_inhib;kspdiur;beta_blockers;antithombo;ppi”<br>
 1679 . : “antilipid;antihta;ace_inhib;beta_blockers;statin;antithombo;asa;nitrate”<br>
@@ -4534,7 +4394,6 @@
 1764 . : “antilipid;antihta;diuranse;beta_blockers;ca2_cbl;statin;antithombo;asa;clopidogrel;ppi”<br>
 1765 . : “antilipid;antihta;ace_inhib;beta_blockers;ca2_cbl;statin;ezetimibe;asa;clopidogrel;nitrate;ppi”<br>
 1767 . : “antilipid;statin;asa;nitrate”<br>
-1768 . : “antihta;beta_blockers”<br>
 1769 . : “antilipid;antihta;ace_inhib;statin;asa”<br>
 1770 . : “antilipid;antihta;beta_blockers;statin;antithombo;asa;nitrate”<br>
 1772 . : “antihta;at2_inhib”<br>
@@ -4620,7 +4479,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-2">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-2"></a>
