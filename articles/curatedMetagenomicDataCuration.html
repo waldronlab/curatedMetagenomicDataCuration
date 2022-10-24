@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-10-24 15:19:11 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-10-24 15:51:23 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -249,36 +249,23 @@
 <em>allowedvalues</em>: [A-Z]{1}|[A-Z]{2}</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>1 . : “3”<br>
-2 . : “1”<br>
-3 . : “3”<br>
-4 . : “1”<br>
-5 . : “2”<br>
-6 . : “3”<br>
-7 . : “1”<br>
-8 . : “3”<br>
-9 . : “3”<br>
-10 . : “1”<br>
-11 . : “3”<br>
-12 . : “1”<br>
-13 . : “4”<br>
-14 . : “3”<br>
-15 . : “1”<br>
-16 . : “1”<br>
-17 . : “3”<br>
-18 . : “3”<br>
-19 . : “3”<br>
-20 . : “1”<br>
-21 . : “3”<br>
-22 . : “3”<br>
-23 . : “3”<br>
-24 . : “1”<br>
-25 . : “3”<br>
-26 . : “1”<br>
-27 . : “3”<br>
-28 . : “3”<br>
-29 . : “3”<br>
-30 . : “1”</p>
+<p>1 . : “III”<br>
+3 . : “III”<br>
+6 . : “III”<br>
+8 . : “III”<br>
+9 . : “III”<br>
+11 . : “III”<br>
+14 . : “III”<br>
+17 . : “III”<br>
+18 . : “III”<br>
+19 . : “III”<br>
+21 . : “III”<br>
+22 . : “III”<br>
+23 . : “III”<br>
+25 . : “III”<br>
+27 . : “III”<br>
+28 . : “III”<br>
+29 . : “III”</p>
 </div>
 </div>
 </div>
@@ -337,7 +324,7 @@
 <div class="section level3">
 <h3 id="required-columns-that-are-missing">Required columns that are missing<a class="anchor" aria-label="anchor" href="#required-columns-that-are-missing"></a>
 </h3>
-<p>sequencing_platform minimum_read_length median_read_length</p>
+<p>sequencing_platform</p>
 </div>
 <div class="section level3">
 <h3 id="column-name-errors-1">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-1"></a>
@@ -346,10 +333,8 @@
 <li><p>“FMT_role” is not defined in the template.</p></li>
 <li><p>“fmt_id” is not defined in the template.</p></li>
 <li><p>“age_group” is not defined in the template.</p></li>
-<li><p>“min_read_len” is not defined in the template.</p></li>
-<li><p>“median_read_len” is not defined in the template.</p></li>
-<li><p>“mean_read_len” is not defined in the template.</p></li>
-<li><p>“max_read_len” is not defined in the template.</p></li>
+<li><p>“mean_read_length” is not defined in the template.</p></li>
+<li><p>“max_read_length” is not defined in the template.</p></li>
 </ul>
 </div>
 <div class="section level3">
