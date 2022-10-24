@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-10-24 16:05:48 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-10-24 16:06:26 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -732,197 +732,6 @@
 <li><p>“toxicity_above_zero” is not defined in the template.</p></li>
 </ul>
 </div>
-<div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
-</h3>
-<div class="section level4">
-<h4 id="curator">curator<a class="anchor" aria-label="anchor" href="#curator"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Anna_Pedrotti;Paolo_Manghi|Mireia_VallesColomer|Andrea_Zen</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-2 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-3 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-4 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-5 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-6 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-7 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-8 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-9 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-10 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-11 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-12 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-13 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-14 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-15 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-16 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-17 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-18 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-19 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-20 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-21 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-22 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-23 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-24 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-25 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-26 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-27 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-28 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-29 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-30 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-31 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-32 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-33 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-34 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-35 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-36 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-37 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-38 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-39 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-40 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-41 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-42 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-43 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-44 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-45 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-46 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-47 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-48 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-49 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-50 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-51 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-52 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-53 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-54 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-55 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-56 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-57 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-58 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-59 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-60 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-61 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-62 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-63 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-64 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-65 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-66 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-67 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-68 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-69 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-70 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-71 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-72 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-73 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-74 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-75 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-76 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-77 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-78 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-79 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-80 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-81 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-82 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-83 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-84 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-85 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-86 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-87 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-88 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-89 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-90 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-91 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-92 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-93 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-94 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-95 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-96 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-97 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-98 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-99 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-100 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-101 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-102 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-103 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-104 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-105 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-106 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-107 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-108 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-109 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-110 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-111 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-112 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-113 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-114 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-115 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-116 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-117 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-118 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-119 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-120 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-121 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-122 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-123 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-124 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-125 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-126 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-127 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-128 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-129 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-130 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-131 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-132 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-133 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-134 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-135 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-136 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-137 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-138 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-139 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-140 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-141 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-142 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-143 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-144 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-145 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-146 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-147 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-148 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-149 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-150 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-151 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-152 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-153 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-154 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-155 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-156 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-157 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-158 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-159 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-160 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-161 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-162 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-163 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-164 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-165 . : “Andrew_Malthez_Thomas;Paolo_Manghi”</p>
-</div>
-</div>
 </div>
 <div class="section level2">
 <h2 id="lifelinesdeep_2016_metadata-tsv">LifeLinesDeep_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#lifelinesdeep_2016_metadata-tsv"></a>
@@ -971,7 +780,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/LoombaR_2017/LoombaR_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-1">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-1"></a>
@@ -1107,7 +916,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
 <div class="section level4">
 <h4 id="ajcc">ajcc<a class="anchor" aria-label="anchor" href="#ajcc"></a>
@@ -1293,7 +1102,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
 <h4 id="study_condition-1">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-1"></a>
@@ -4811,7 +4620,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PetersBA_2019/PetersBA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
+<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_stage-2">disease_stage<a class="anchor" aria-label="anchor" href="#disease_stage-2"></a>
@@ -4843,55 +4652,6 @@
 22 . : “III”<br>
 25 . : “III”<br>
 27 . : “III”</p>
-</div>
-<div class="section level4">
-<h4 id="curator-1">curator<a class="anchor" aria-label="anchor" href="#curator-1"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Anna_Pedrotti;Paolo_Manghi|Mireia_VallesColomer|Andrea_Zen</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-2 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-3 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-4 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-5 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-6 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-7 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-8 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-9 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-10 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-11 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-12 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-13 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-14 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-15 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-16 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-17 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-18 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-19 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-20 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-21 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-22 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-23 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-24 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-25 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-26 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-27 . : “Andrew_Malthez_Thomas;Paolo_Manghi”</p>
 </div>
 </div>
 </div>
@@ -5043,52 +4803,7 @@
 <h2 id="windtt_2020_metadata-tsv">WindTT_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#windtt_2020_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/WindTT_2020/WindTT_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-9">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-9"></a>
-</h3>
-<div class="section level4">
-<h4 id="curator-2">curator<a class="anchor" aria-label="anchor" href="#curator-2"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Anna_Pedrotti;Paolo_Manghi|Mireia_VallesColomer|Andrea_Zen</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-2 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-3 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-4 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-5 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-6 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-7 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-8 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-9 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-10 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-11 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-12 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-13 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-14 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-15 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-16 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-17 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-18 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-19 . : “Andrew_Malthez_Thomas;Paolo_Manghi”<br>
-20 . : “Andrew_Malthez_Thomas;Paolo_Manghi”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="wirbelj_2018_metadata-tsv">WirbelJ_2018_metadata.tsv<a class="anchor" aria-label="anchor" href="#wirbelj_2018_metadata-tsv"></a>
