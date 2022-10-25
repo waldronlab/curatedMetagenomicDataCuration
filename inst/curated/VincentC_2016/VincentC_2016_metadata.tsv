@@ -1,230 +1,230 @@
-study_name	sample_id	subject_id	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	curator
-VincentC_2016	MM001.1	MM001	stool	yes	NA	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	4215921	632388150	150	150	SRR2565533	Paolo_Manghi
-VincentC_2016	MM001.2	MM001	stool	yes	NA	control	healthy	80	senior	female	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	26930197	4039529550	150	150	SRR2565534	Paolo_Manghi
-VincentC_2016	MM001.3	MM001	stool	yes	NA	control	healthy	80	senior	female	CAN	no	11	IlluminaHiSeq	Qiagen	26975510	27625587	4143838050	150	150	SRR2565950	Paolo_Manghi
-VincentC_2016	MM001.4	MM001	stool	yes	NA	control	healthy	80	senior	female	CAN	no	18	IlluminaHiSeq	Qiagen	26975510	12638949	1895842350	150	150	SRR2565992	Paolo_Manghi
-VincentC_2016	MM002.1	MM002	stool	yes	NA	control	healthy	79	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16344586	2451687900	150	150	SRR2566003	Paolo_Manghi
-VincentC_2016	MM002.2	MM002	stool	yes	NA	control	healthy	79	senior	male	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	18751103	2812665450	150	150	SRR2566014	Paolo_Manghi
-VincentC_2016	MM003.1	MM003	stool	yes	NA	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	4591417	688712550	150	150	SRR2566026	Paolo_Manghi
-VincentC_2016	MM003.2	MM003	stool	yes	NA	control	healthy	75	senior	female	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	9759720	1463958000	150	150	SRR2566037	Paolo_Manghi
-VincentC_2016	MM004.1	MM004	stool	yes	NA	control	healthy	81	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	18363168	2754475200	150	150	SRR2566049	Paolo_Manghi
-VincentC_2016	MM004.2	MM004	stool	yes	NA	control	healthy	81	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	26014149	3902122350	150	150	SRR2566060	Paolo_Manghi
-VincentC_2016	MM005.1	MM005	stool	yes	NA	control	healthy	66	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	4300076	645011400	150	150	SRR2565535	Paolo_Manghi
-VincentC_2016	MM005.2	MM005	stool	yes	NA	control	healthy	66	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	29889963	4483494450	150	150	SRR2565546	Paolo_Manghi
-VincentC_2016	MM005.3	MM005	stool	yes	NA	control	healthy	66	senior	female	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	15717746	2357661900	150	150	SRR2565557	Paolo_Manghi
-VincentC_2016	MM006.1	MM006	stool	yes	NA	control	healthy	78	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	12840247	1926037050	150	150	SRR2565647	Paolo_Manghi
-VincentC_2016	MM006.2	MM006	stool	yes	NA	control	healthy	78	senior	male	CAN	no	1	IlluminaHiSeq	Qiagen	26975510	18083118	2712467700	150	150	SRR2565811	Paolo_Manghi
-VincentC_2016	MM007	MM007	stool	yes	NA	control	healthy	79	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	12960643	1944096450	150	150	SRR2565822	Paolo_Manghi
-VincentC_2016	MM008.1	MM008	stool	yes	NA	control	healthy	84	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	20152237	3022835550	150	150	SRR2565834	Paolo_Manghi
-VincentC_2016	MM008.2	MM008	stool	yes	NA	control	healthy	84	senior	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	4513925	677088750	150	150	SRR2565845	Paolo_Manghi
-VincentC_2016	MM008.3	MM008	stool	yes	NA	control	healthy	84	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	23642605	3546390750	150	150	SRR2565927	Paolo_Manghi
-VincentC_2016	MM009.1	MM009	stool	yes	NA	control	healthy	71	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	39653897	5948084550	150	150	SRR2565938	Paolo_Manghi
-VincentC_2016	MM009.2	MM009	stool	yes	NA	control	healthy	71	senior	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	13608666	2041299900	150	150	SRR2565951	Paolo_Manghi
-VincentC_2016	MM010	MM010	stool	yes	NA	control	healthy	62	adult	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	40812650	6121897500	150	150	SRR2583965;SRR2583977	Paolo_Manghi
-VincentC_2016	MM011	MM011	stool	yes	NA	control	healthy	85	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	18249374	2737406100	150	150	SRR2565974	Paolo_Manghi
-VincentC_2016	MM012.1	MM012	stool	yes	NA	control	healthy	66	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	9791924	1468788600	150	150	SRR2565984	Paolo_Manghi
-VincentC_2016	MM012.2	MM012	stool	yes	NA	control	healthy	66	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	16779126	2516868900	150	150	SRR2565985	Paolo_Manghi
-VincentC_2016	MM013.1	MM013	stool	yes	NA	control	healthy	76	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	20940776	3141116400	150	150	SRR2565986	Paolo_Manghi
-VincentC_2016	MM013.2	MM013	stool	yes	NA	control	healthy	76	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	2472713	370906950	150	150	SRR2565987	Paolo_Manghi
-VincentC_2016	MM013.3	MM013	stool	yes	NA	control	healthy	76	senior	male	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	8402596	1260389400	150	150	SRR2565988	Paolo_Manghi
-VincentC_2016	MM014	MM014	stool	yes	NA	control	healthy	86	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	14056576	2108486400	150	150	SRR2565990	Paolo_Manghi
-VincentC_2016	MM015.1	MM015	stool	yes	NA	control	healthy	81	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16293979	2444096850	150	150	SRR2565991	Paolo_Manghi
-VincentC_2016	MM015.2	MM015	stool	yes	NA	control	healthy	81	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	20302632	3045394800	150	150	SRR2565993	Paolo_Manghi
-VincentC_2016	MM016.1	MM016	stool	yes	NA	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	10571583	1585737450	150	150	SRR2583966;SRR2583978	Paolo_Manghi
-VincentC_2016	MM016.2	MM016	stool	yes	NA	control	healthy	73	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	25933435	3890015250	150	150	SRR2565995	Paolo_Manghi
-VincentC_2016	MM016.3	MM016	stool	yes	NA	control	healthy	73	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	13183826	1977573900	150	150	SRR2565996	Paolo_Manghi
-VincentC_2016	MM017	MM017	stool	yes	NA	control	pneumonia	75	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	28062029	4209304350	150	150	SRR2565997	Paolo_Manghi
-VincentC_2016	MM018	MM018	stool	yes	NA	control	healthy	65	adult	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	9383591	1407538650	150	150	SRR2565998	Paolo_Manghi
-VincentC_2016	MM019.1	MM019	stool	yes	NA	control	healthy	75	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	4305391	645808650	150	150	SRR2565999	Paolo_Manghi
-VincentC_2016	MM019.2	MM019	stool	yes	NA	control	healthy	75	senior	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	82768033	12415204950	150	150	SRR2583967;SRR2583979	Paolo_Manghi
-VincentC_2016	MM019.3	MM019	stool	yes	NA	control	healthy	75	senior	male	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	11300634	1695095100	150	150	SRR2566001	Paolo_Manghi
-VincentC_2016	MM020.1	MM020	stool	yes	NA	control	pneumonia	74	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	11780205	1767030750	150	150	SRR2566002	Paolo_Manghi
-VincentC_2016	MM020.2	MM020	stool	yes	NA	control	pneumonia	74	senior	female	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	2300618	345092700	150	150	SRR2566004	Paolo_Manghi
-VincentC_2016	MM020.3	MM020	stool	yes	NA	control	abdominalhernia	74	senior	female	CAN	no	9	IlluminaHiSeq	Qiagen	26975510	16370111	2455516650	150	150	SRR2566005	Paolo_Manghi
-VincentC_2016	MM021.1	MM021	stool	yes	NA	control	healthy	61	adult	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	28155786	4223367900	150	150	SRR2566006	Paolo_Manghi
-VincentC_2016	MM021.2	MM021	stool	yes	NA	control	healthy	61	adult	female	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	36345296	5451794400	150	150	SRR2583968;SRR2583980	Paolo_Manghi
-VincentC_2016	MM021.3	MM021	stool	yes	NA	control	healthy	61	adult	female	CAN	no	7	IlluminaHiSeq	Qiagen	26975510	11265054	1689758100	150	150	SRR2566008	Paolo_Manghi
-VincentC_2016	MM021.4	MM021	stool	yes	NA	control	healthy	61	adult	female	CAN	no	11	IlluminaHiSeq	Qiagen	26975510	15919132	2387869800	150	150	SRR2566009	Paolo_Manghi
-VincentC_2016	MM022.1	MM022	stool	yes	NA	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16401405	2460210750	150	150	SRR2566010	Paolo_Manghi
-VincentC_2016	MM022.2	MM022	stool	yes	NA	control	healthy	78	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	21986251	3297937650	150	150	SRR2566011	Paolo_Manghi
-VincentC_2016	MM022.3	MM022	stool	yes	NA	control	healthy	78	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	19409873	2911480950	150	150	SRR2566012	Paolo_Manghi
-VincentC_2016	MM023.1	MM023	stool	yes	NA	control	healthy	62	adult	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	14984634	2247695100	150	150	SRR2566013	Paolo_Manghi
-VincentC_2016	MM023.2	MM023	stool	yes	NA	control	healthy	62	adult	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	34076017	5111402550	150	150	SRR2566015	Paolo_Manghi
-VincentC_2016	MM024.1	MM024	stool	yes	NA	control	healthy	79	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16053824	2408073600	150	150	SRR2566017	Paolo_Manghi
-VincentC_2016	MM024.2	MM024	stool	yes	NA	control	healthy	79	senior	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	16599765	2489964750	150	150	SRR2566018	Paolo_Manghi
-VincentC_2016	MM024.3	MM024	stool	yes	NA	control	healthy	79	senior	male	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	13573906	2036085900	150	150	SRR2566019	Paolo_Manghi
-VincentC_2016	MM025	MM025	stool	yes	NA	control	healthy	71	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	2539760	380964000	150	150	SRR2566020	Paolo_Manghi
-VincentC_2016	MM026.1	MM026	stool	yes	NA	control	healthy	66	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	12179090	1826863500	150	150	SRR2566021	Paolo_Manghi
-VincentC_2016	MM026.2	MM026	stool	yes	NA	control	healthy	66	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	4630286	694542900	150	150	SRR2566022	Paolo_Manghi
-VincentC_2016	MM027.1	MM027	stool	yes	NA	control	healthy	65	adult	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	17790792	2668618800	150	150	SRR2566023	Paolo_Manghi
-VincentC_2016	MM027.2	MM027	stool	yes	NA	control	healthy	65	adult	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	15585791	2337868650	150	150	SRR2566024	Paolo_Manghi
-VincentC_2016	MM027.3	MM027	stool	yes	NA	control	healthy	65	adult	female	CAN	no	8	IlluminaHiSeq	Qiagen	26975510	13642190	2046328500	150	150	SRR2566025	Paolo_Manghi
-VincentC_2016	MM028.1	MM028	stool	yes	NA	control	healthy	80	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	7946347	1191952050	150	150	SRR2566027	Paolo_Manghi
-VincentC_2016	MM028.2	MM028	stool	yes	NA	control	healthy	80	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	4281524	642228600	150	150	SRR2566028	Paolo_Manghi
-VincentC_2016	MM029.1	MM029	stool	yes	NA	control	healthy	74	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	29789349	4468402350	150	150	SRR2566029	Paolo_Manghi
-VincentC_2016	MM029.2	MM029	stool	yes	NA	control	healthy	74	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	16894763	2534214450	150	150	SRR2566030	Paolo_Manghi
-VincentC_2016	MM029.3	MM029	stool	yes	NA	control	healthy	74	senior	male	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	30346407	4551961050	150	150	SRR2583969;SRR2583981	Paolo_Manghi
-VincentC_2016	MM030.1	MM030	stool	yes	cephalosporins	CDI	CDI	73	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	90622102	13593315300	150	150	SRR2583970;SRR2583982	Paolo_Manghi
-VincentC_2016	MM030.2	MM030	stool	yes	cephalosporins	CDI	CDI	73	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	16649719	2497457850	150	150	SRR2566033	Paolo_Manghi
-VincentC_2016	MM031	MM031	stool	yes	NA	control	healthy	78	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	7766262	1164939300	150	150	SRR2566034	Paolo_Manghi
-VincentC_2016	MM032.1	MM032	stool	yes	NA	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	22409914	3361487100	150	150	SRR2566035	Paolo_Manghi
-VincentC_2016	MM032.2	MM032	stool	yes	NA	control	healthy	78	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	22723607	3408541050	150	150	SRR2566036	Paolo_Manghi
-VincentC_2016	MM032.3	MM032	stool	yes	NA	control	healthy	78	senior	female	CAN	no	7	IlluminaHiSeq	Qiagen	26975510	21994152	3299122800	150	150	SRR2566038	Paolo_Manghi
-VincentC_2016	MM032.4	MM032	stool	yes	NA	control	healthy	78	senior	female	CAN	no	10	IlluminaHiSeq	Qiagen	26975510	13367461	2005119150	150	150	SRR2566039	Paolo_Manghi
-VincentC_2016	MM033.1	MM033	stool	yes	NA	control	healthy	79	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	11811797	1771769550	150	150	SRR2566040	Paolo_Manghi
-VincentC_2016	MM033.2	MM033	stool	yes	NA	control	healthy	79	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	3339872	500980800	150	150	SRR2566041	Paolo_Manghi
-VincentC_2016	MM033.3	MM033	stool	yes	NA	control	healthy	79	senior	female	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	15648701	2347305150	150	150	SRR2566042	Paolo_Manghi
-VincentC_2016	MM033.4	MM033	stool	yes	NA	control	healthy	79	senior	female	CAN	no	7	IlluminaHiSeq	Qiagen	26975510	10961770	1644265500	150	150	SRR2566043	Paolo_Manghi
-VincentC_2016	MM034.1	MM034	stool	yes	NA	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	10266990	1540048500	150	150	SRR2566044	Paolo_Manghi
-VincentC_2016	MM034.2	MM034	stool	yes	NA	control	healthy	78	senior	female	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	17351480	2602722000	150	150	SRR2566045	Paolo_Manghi
-VincentC_2016	MM034.3	MM034	stool	yes	NA	control	healthy	78	senior	female	CAN	no	7	IlluminaHiSeq	Qiagen	26975510	24992568	3748885200	150	150	SRR2566046	Paolo_Manghi
-VincentC_2016	MM035.1	MM035	stool	yes	beta_lactamase_inhibitors;penicillin	CDI	CDI	80	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	6523769	978565350	150	150	SRR2566047	Paolo_Manghi
-VincentC_2016	MM035.2	MM035	stool	yes	beta_lactamase_inhibitors;penicillin	CDI	CDI	80	senior	female	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	24737718	3710657700	150	150	SRR2566050	Paolo_Manghi
-VincentC_2016	MM036	MM036	stool	yes	aminoglycosides;beta_lactamase_inhibitors;laxatives;penicillin	CDI	CDI	68	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	10583277	1587491550	150	150	SRR2566051	Paolo_Manghi
-VincentC_2016	MM037.1	MM037	stool	yes	NA	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	11865187	1779778050	150	150	SRR2566052	Paolo_Manghi
-VincentC_2016	MM037.2	MM037	stool	yes	NA	control	healthy	78	senior	female	CAN	no	1	IlluminaHiSeq	Qiagen	26975510	16241365	2436204750	150	150	SRR2566053	Paolo_Manghi
-VincentC_2016	MM038	MM038	stool	yes	NA	control	healthy	75	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16630457	2494568550	150	150	SRR2566054	Paolo_Manghi
-VincentC_2016	MM039	MM039	stool	yes	NA	control	healthy	66	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	10825530	1623829500	150	150	SRR2566055	Paolo_Manghi
-VincentC_2016	MM040.1	MM040	stool	yes	NA	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	10011949	1501792350	150	150	SRR2566056	Paolo_Manghi
-VincentC_2016	MM040.2	MM040	stool	yes	NA	control	healthy	73	senior	female	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	9407426	1411113900	150	150	SRR2566057	Paolo_Manghi
-VincentC_2016	MM041.1	MM041	stool	yes	NA	control	healthy	68	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16140027	2421004050	150	150	SRR2566058	Paolo_Manghi
-VincentC_2016	MM041.2	MM041	stool	yes	NA	control	healthy	68	senior	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	20867556	3130133400	150	150	SRR2566059	Paolo_Manghi
-VincentC_2016	MM042.1	MM042	stool	yes	NA	control	healthy	66	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	13456615	2018492250	150	150	SRR2566061	Paolo_Manghi
-VincentC_2016	MM042.2	MM042	stool	yes	NA	control	healthy	66	senior	male	CAN	no	1	IlluminaHiSeq	Qiagen	26975510	6961915	1044287250	150	150	SRR2566062	Paolo_Manghi
-VincentC_2016	MM043.1	MM043	stool	yes	NA	control	healthy	66	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	7216537	1082480550	150	150	SRR2566063	Paolo_Manghi
-VincentC_2016	MM043.2	MM043	stool	yes	NA	control	healthy	66	senior	female	CAN	no	1	IlluminaHiSeq	Qiagen	26975510	6515923	977388450	150	150	SRR2566064	Paolo_Manghi
-VincentC_2016	MM044.1	MM044	stool	yes	NA	control	cellulitis	73	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	23573713	3536056950	150	150	SRR2566065	Paolo_Manghi
-VincentC_2016	MM044.2	MM044	stool	yes	NA	control	cellulitis	73	senior	female	CAN	no	1	IlluminaHiSeq	Qiagen	26975510	23248985	3487347750	150	150	SRR2566066	Paolo_Manghi
-VincentC_2016	MM045.1	MM045	stool	yes	NA	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	21453570	3218035500	150	150	SRR2566067	Paolo_Manghi
-VincentC_2016	MM045.2	MM045	stool	yes	NA	control	healthy	73	senior	female	CAN	no	1	IlluminaHiSeq	Qiagen	26975510	45511597	6826739550	150	150	SRR2566068	Paolo_Manghi
-VincentC_2016	MM046.1	MM046	stool	yes	NA	control	healthy	76	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	22306102	3345915300	150	150	SRR2566069	Paolo_Manghi
-VincentC_2016	MM046.2	MM046	stool	yes	NA	control	healthy	76	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	9439047	1415857050	150	150	SRR2566070	Paolo_Manghi
-VincentC_2016	MM046.3	MM046	stool	yes	NA	control	healthy	76	senior	female	CAN	no	8	IlluminaHiSeq	Qiagen	26975510	15830963	2374644450	150	150	SRR2565536	Paolo_Manghi
-VincentC_2016	MM047.1	MM047	stool	yes	NA	control	healthy	77	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	24906509	3735976350	150	150	SRR2565537	Paolo_Manghi
-VincentC_2016	MM047.2	MM047	stool	yes	NA	control	healthy	77	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	21863226	3279483900	150	150	SRR2565538	Paolo_Manghi
-VincentC_2016	MM047.3	MM047	stool	yes	NA	control	healthy	77	senior	female	CAN	no	8	IlluminaHiSeq	Qiagen	26975510	16160780	2424117000	150	150	SRR2565539	Paolo_Manghi
-VincentC_2016	MM048.1	MM048	stool	yes	NA	control	healthy	76	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	25528888	3829333200	150	150	SRR2565540	Paolo_Manghi
-VincentC_2016	MM048.2	MM048	stool	yes	NA	control	healthy	76	senior	female	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	13546562	2031984300	150	150	SRR2565541	Paolo_Manghi
-VincentC_2016	MM049.1	MM049	stool	yes	NA	control	healthy	70	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	12734717	1910207550	150	150	SRR2565542	Paolo_Manghi
-VincentC_2016	MM049.2	MM049	stool	yes	NA	control	healthy	70	senior	female	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	7271897	1090784550	150	150	SRR2565543	Paolo_Manghi
-VincentC_2016	MM050.1	MM050	stool	yes	NA	control	healthy	67	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	20271482	3040722300	150	150	SRR2565544	Paolo_Manghi
-VincentC_2016	MM050.2	MM050	stool	yes	NA	control	healthy	67	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	10018805	1502820750	150	150	SRR2565545	Paolo_Manghi
-VincentC_2016	MM050.3	MM050	stool	yes	NA	control	healthy	67	senior	female	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	11684820	1752723000	150	150	SRR2565547	Paolo_Manghi
-VincentC_2016	MM050.4	MM050	stool	yes	NA	control	healthy	67	senior	female	CAN	no	8	IlluminaHiSeq	Qiagen	26975510	54725506	8208825900	150	150	SRR2565548	Paolo_Manghi
-VincentC_2016	MM051	MM051	stool	yes	NA	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	22564847	3384727050	150	150	SRR2565549	Paolo_Manghi
-VincentC_2016	MM052.1	MM052	stool	yes	NA	control	healthy	73	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16247725	2437158750	150	150	SRR2565550	Paolo_Manghi
-VincentC_2016	MM052.2	MM052	stool	yes	NA	control	healthy	73	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	9051394	1357709100	150	150	SRR2565551	Paolo_Manghi
-VincentC_2016	MM053	MM053	stool	yes	NA	control	healthy	86	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	6238776	935816400	150	150	SRR2565552	Paolo_Manghi
-VincentC_2016	MM054.1	MM054	stool	yes	NA	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16618551	2492782650	150	150	SRR2565553	Paolo_Manghi
-VincentC_2016	MM054.2	MM054	stool	yes	NA	control	healthy	73	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	2154163	323124450	150	150	SRR2565554	Paolo_Manghi
-VincentC_2016	MM055.1	MM055	stool	yes	macrolides	CDI	CDI	72	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	2644014	396602100	150	150	SRR2565555	Paolo_Manghi
-VincentC_2016	MM055.3	MM055	stool	yes	macrolides	CDI	CDI	72	senior	male	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	12290841	1843626150	150	150	SRR2565556	Paolo_Manghi
-VincentC_2016	MM055.4	MM055	stool	yes	carbapenems;fluoroquinolones	CDI	CDI	72	senior	male	CAN	no	14	IlluminaHiSeq	Qiagen	26975510	19354575	2903186250	150	150	SRR2565558	Paolo_Manghi
-VincentC_2016	MM055.5	MM055	stool	yes	carbapenems;fluoroquinolones;laxatives	CDI	CDI	72	senior	male	CAN	no	17	IlluminaHiSeq	Qiagen	26975510	48798449	7319767350	150	150	SRR2565559	Paolo_Manghi
-VincentC_2016	MM055.6	MM055	stool	yes	carbapenems;laxatives	CDI	CDI	72	senior	male	CAN	no	21	IlluminaHiSeq	Qiagen	26975510	17040419	2556062850	150	150	SRR2565579	Paolo_Manghi
-VincentC_2016	MM055.7	MM055	stool	yes	carbapenems	CDI	CDI	72	senior	male	CAN	no	34	IlluminaHiSeq	Qiagen	26975510	11152285	1672842750	150	150	SRR2565597	Paolo_Manghi
-VincentC_2016	MM056.1	MM056	stool	yes	NA	control	healthy	76	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	4390529	658579350	150	150	SRR2565617	Paolo_Manghi
-VincentC_2016	MM056.2	MM056	stool	yes	NA	control	healthy	76	senior	male	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	11571668	1735750200	150	150	SRR2565618	Paolo_Manghi
-VincentC_2016	MM057.1	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	6088618	913292700	150	150	SRR2565619	Paolo_Manghi
-VincentC_2016	MM057.10	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	14751029	2212654350	150	150	SRR2565742	Paolo_Manghi
-VincentC_2016	MM057.11	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	10	IlluminaHiSeq	Qiagen	26975510	14535975	2180396250	150	150	SRR2565743	Paolo_Manghi
-VincentC_2016	MM057.12	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	13	IlluminaHiSeq	Qiagen	26975510	18806860	2821029000	150	150	SRR2565744	Paolo_Manghi
-VincentC_2016	MM057.2	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	18	IlluminaHiSeq	Qiagen	26975510	16061208	2409181200	150	150	SRR2565620	Paolo_Manghi
-VincentC_2016	MM057.3	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	33	IlluminaHiSeq	Qiagen	26975510	13962837	2094425550	150	150	SRR2565621	Paolo_Manghi
-VincentC_2016	MM057.4	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	39	IlluminaHiSeq	Qiagen	26975510	63512536	9526880400	150	150	SRR2565646	Paolo_Manghi
-VincentC_2016	MM057.5	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	46	IlluminaHiSeq	Qiagen	26975510	8166414	1224962100	150	150	SRR2565687	Paolo_Manghi
-VincentC_2016	MM057.6	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	49	IlluminaHiSeq	Qiagen	26975510	19381004	2907150600	150	150	SRR2565714	Paolo_Manghi
-VincentC_2016	MM057.7	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	51	IlluminaHiSeq	Qiagen	26975510	14459658	2168948700	150	150	SRR2565715	Paolo_Manghi
-VincentC_2016	MM057.8	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	56	IlluminaHiSeq	Qiagen	26975510	7787111	1168066650	150	150	SRR2583971;SRR2583983	Paolo_Manghi
-VincentC_2016	MM057.9	MM057	stool	yes	NA	control	healthy	91	senior	male	CAN	no	60	IlluminaHiSeq	Qiagen	26975510	24537066	3680559900	150	150	SRR2565717	Paolo_Manghi
-VincentC_2016	MM058.1	MM058	stool	yes	NA	control	healthy	84	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	53761227	8064184050	150	150	SRR2565770	Paolo_Manghi
-VincentC_2016	MM058.2	MM058	stool	yes	NA	control	healthy	84	senior	female	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	11279390	1691908500	150	150	SRR2565790	Paolo_Manghi
-VincentC_2016	MM059.1	MM059	stool	yes	NA	control	healthy	75	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	32739464	4910919600	150	150	SRR2565812	Paolo_Manghi
-VincentC_2016	MM059.2	MM059	stool	yes	NA	control	healthy	75	senior	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	15617441	2342616150	150	150	SRR2565813	Paolo_Manghi
-VincentC_2016	MM060.1	MM060	stool	yes	NA	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	14361947	2154292050	150	150	SRR2565814	Paolo_Manghi
-VincentC_2016	MM060.2	MM060	stool	yes	NA	control	healthy	75	senior	female	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	13758531	2063779650	150	150	SRR2565815	Paolo_Manghi
-VincentC_2016	MM061	MM061	stool	yes	NA	control	healthy	68	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	27041960	4056294000	150	150	SRR2565816	Paolo_Manghi
-VincentC_2016	MM062.1	MM062	stool	yes	NA	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	13278297	1991744550	150	150	SRR2565817	Paolo_Manghi
-VincentC_2016	MM062.2	MM062	stool	yes	NA	control	healthy	75	senior	female	CAN	no	1	IlluminaHiSeq	Qiagen	26975510	26640912	3996136800	150	150	SRR2565818	Paolo_Manghi
-VincentC_2016	MM063	MM063	stool	yes	carbapenems	CDI	CDI	71	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	15304582	2295687300	150	150	SRR2565819	Paolo_Manghi
-VincentC_2016	MM064.1	MM064	stool	yes	NA	control	gangrene	78	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	26786655	4017998250	150	150	SRR2583972;SRR2583984	Paolo_Manghi
-VincentC_2016	MM064.2	MM064	stool	yes	NA	control	osteoarthritis	78	senior	female	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	22761932	3414289800	150	150	SRR2583973;SRR2583985	Paolo_Manghi
-VincentC_2016	MM065	MM065	stool	yes	NA	control	healthy	74	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16558522	2483778300	150	150	SRR2565824	Paolo_Manghi
-VincentC_2016	MM066	MM066	stool	yes	NA	control	pneumonia	68	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	1924847	288727050	150	150	SRR2565825	Paolo_Manghi
-VincentC_2016	MM068.1	MM068	stool	yes	NA	control	healthy	64	adult	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	24672415	3700862250	150	150	SRR2565826	Paolo_Manghi
-VincentC_2016	MM068.2	MM068	stool	yes	NA	control	healthy	64	adult	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	6826645	1023996750	150	150	SRR2565827	Paolo_Manghi
-VincentC_2016	MM069	MM069	stool	yes	NA	control	healthy	61	adult	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	11513715	1727057250	150	150	SRR2565828	Paolo_Manghi
-VincentC_2016	MM070.1	MM070	stool	yes	NA	control	cellulitis	68	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	21534709	3230206350	150	150	SRR2565829	Paolo_Manghi
-VincentC_2016	MM070.2	MM070	stool	yes	NA	control	cellulitis	68	senior	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	21971917	3295787550	150	150	SRR2565830	Paolo_Manghi
-VincentC_2016	MM070.3	MM070	stool	yes	NA	control	cellulitis	68	senior	male	CAN	no	13	IlluminaHiSeq	Qiagen	26975510	20868325	3130248750	150	150	SRR2565831	Paolo_Manghi
-VincentC_2016	MM071.2	MM071	stool	yes	NA	control	healthy	71	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	10986575	1647986250	150	150	SRR2565832	Paolo_Manghi
-VincentC_2016	MM071.3	MM071	stool	yes	NA	control	healthy	71	senior	female	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	6115056	917258400	150	150	SRR2565833	Paolo_Manghi
-VincentC_2016	MM072.1	MM072	stool	yes	NA	control	abdominalhernia	73	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	11229353	1684402950	150	150	SRR2565835	Paolo_Manghi
-VincentC_2016	MM072.2	MM072	stool	yes	NA	control	cellulitis	73	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	16846597	2526989550	150	150	SRR2565836	Paolo_Manghi
-VincentC_2016	MM074.1	MM074	stool	yes	NA	control	healthy	70	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	14138604	2120790600	150	150	SRR2565837	Paolo_Manghi
-VincentC_2016	MM074.2	MM074	stool	yes	NA	control	healthy	70	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	13674764	2051214600	150	150	SRR2565838	Paolo_Manghi
-VincentC_2016	MM075.1	MM075	stool	yes	NA	control	healthy	65	adult	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	28796455	4319468250	150	150	SRR2565839	Paolo_Manghi
-VincentC_2016	MM075.2	MM075	stool	yes	NA	control	healthy	65	adult	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	23719167	3557875050	150	150	SRR2565840	Paolo_Manghi
-VincentC_2016	MM077	MM077	stool	yes	NA	control	healthy	64	adult	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	21445765	3216864750	150	150	SRR2565841	Paolo_Manghi
-VincentC_2016	MM078	MM078	stool	yes	NA	control	healthy	89	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	23986611	3597991650	150	150	SRR2565842	Paolo_Manghi
-VincentC_2016	MM079.1	MM079	stool	yes	NA	control	healthy	83	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	15740749	2361112350	150	150	SRR2565843	Paolo_Manghi
-VincentC_2016	MM079.2	MM079	stool	yes	NA	control	healthy	83	senior	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	6943846	1041576900	150	150	SRR2565844	Paolo_Manghi
-VincentC_2016	MM080	MM080	stool	yes	NA	control	healthy	68	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	30866363	4629954450	150	150	SRR2565846	Paolo_Manghi
-VincentC_2016	MM081	MM081	stool	yes	NA	control	healthy	85	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	14669017	2200352550	150	150	SRR2565847	Paolo_Manghi
-VincentC_2016	MM082	MM082	stool	yes	NA	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	14068442	2110266300	150	150	SRR2565849	Paolo_Manghi
-VincentC_2016	MM083.1	MM083	stool	yes	NA	control	healthy	62	adult	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	17908916	2686337400	150	150	SRR2565850	Paolo_Manghi
-VincentC_2016	MM083.2	MM083	stool	yes	NA	control	healthy	62	adult	male	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	7304639	1095695850	150	150	SRR2565921	Paolo_Manghi
-VincentC_2016	MM083.3	MM083	stool	yes	NA	control	healthy	62	adult	male	CAN	no	8	IlluminaHiSeq	Qiagen	26975510	6973155	1045973250	150	150	SRR2565922	Paolo_Manghi
-VincentC_2016	MM083.4	MM083	stool	yes	NA	control	healthy	62	adult	male	CAN	no	11	IlluminaHiSeq	Qiagen	26975510	22015767	3302365050	150	150	SRR2565923	Paolo_Manghi
-VincentC_2016	MM083.5	MM083	stool	yes	NA	control	healthy	62	adult	male	CAN	no	14	IlluminaHiSeq	Qiagen	26975510	13872077	2080811550	150	150	SRR2565924	Paolo_Manghi
-VincentC_2016	MM084	MM084	stool	yes	NA	control	healthy	81	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	18700279	2805041850	150	150	SRR2565925	Paolo_Manghi
-VincentC_2016	MM085.1	MM085	stool	yes	NA	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	8846109	1326916350	150	150	SRR2565926	Paolo_Manghi
-VincentC_2016	MM085.2	MM085	stool	yes	NA	control	healthy	80	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	25786313	3867946950	150	150	SRR2565928	Paolo_Manghi
-VincentC_2016	MM086.2	MM086	stool	yes	NA	control	healthy	74	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	5695214	854282100	150	150	SRR2565929	Paolo_Manghi
-VincentC_2016	MM086.3	MM086	stool	yes	NA	control	healthy	74	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	21612050	3241807500	150	150	SRR2565930	Paolo_Manghi
-VincentC_2016	MM086.5	MM086	stool	yes	NA	control	healthy	74	senior	male	CAN	no	11	IlluminaHiSeq	Qiagen	26975510	9104654	1365698100	150	150	SRR2565931	Paolo_Manghi
-VincentC_2016	MM086.6	MM086	stool	yes	NA	control	healthy	74	senior	male	CAN	no	15	IlluminaHiSeq	Qiagen	26975510	10191932	1528789800	150	150	SRR2565932	Paolo_Manghi
-VincentC_2016	MM087.1	MM087	stool	yes	carbapenems	CDI	CDI	78	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	12529978	1879496700	150	150	SRR2565933	Paolo_Manghi
-VincentC_2016	MM087.2	MM087	stool	yes	carbapenems	CDI	CDI	78	senior	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	15032540	2254881000	150	150	SRR2565934	Paolo_Manghi
-VincentC_2016	MM088	MM088	stool	yes	NA	control	healthy	78	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	8716537	1307480550	150	150	SRR2565935	Paolo_Manghi
-VincentC_2016	MM089.1	MM089	stool	yes	NA	control	healthy	85	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	50018981	7502847150	150	150	SRR2565936	Paolo_Manghi
-VincentC_2016	MM089.2	MM089	stool	yes	NA	control	healthy	85	senior	female	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	13874950	2081242500	150	150	SRR2565937	Paolo_Manghi
-VincentC_2016	MM090.1	MM090	stool	yes	NA	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	37152975	5572946250	150	150	SRR2565939	Paolo_Manghi
-VincentC_2016	MM090.2	MM090	stool	yes	NA	control	healthy	75	senior	female	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	16526031	2478904650	150	150	SRR2565941	Paolo_Manghi
-VincentC_2016	MM090.3	MM090	stool	yes	NA	control	healthy	75	senior	female	CAN	no	5	IlluminaHiSeq	Qiagen	26975510	62473878	9371081700	150	150	SRR2565942	Paolo_Manghi
-VincentC_2016	MM091.1	MM091	stool	yes	NA	control	healthy	71	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	8021588	1203238200	150	150	SRR2565943	Paolo_Manghi
-VincentC_2016	MM091.2	MM091	stool	yes	NA	control	healthy	71	senior	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	7478254	1121738100	150	150	SRR2565944	Paolo_Manghi
-VincentC_2016	MM091.3	MM091	stool	yes	NA	control	healthy	71	senior	male	CAN	no	7	IlluminaHiSeq	Qiagen	26975510	22223800	3333570000	150	150	SRR2565945	Paolo_Manghi
-VincentC_2016	MM091.4	MM091	stool	yes	NA	control	healthy	71	senior	male	CAN	no	9	IlluminaHiSeq	Qiagen	26975510	6975566	1046334900	150	150	SRR2565946	Paolo_Manghi
-VincentC_2016	MM092	MM092	stool	yes	NA	control	healthy	86	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	22791160	3418674000	150	150	SRR2565947	Paolo_Manghi
-VincentC_2016	MM093	MM093	stool	yes	NA	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	46836077	7025411550	150	150	SRR2583974;SRR2583986	Paolo_Manghi
-VincentC_2016	MM094.1	MM094	stool	yes	NA	control	healthy	73	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	8443955	1266593250	150	150	SRR2565949	Paolo_Manghi
-VincentC_2016	MM094.2	MM094	stool	yes	NA	control	healthy	73	senior	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	5475680	821352000	150	150	SRR2565952	Paolo_Manghi
-VincentC_2016	MM096	MM096	stool	yes	NA	control	healthy	68	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	22131056	3319658400	150	150	SRR2565953	Paolo_Manghi
-VincentC_2016	MM098.1	MM098	stool	yes	beta_lactamase_inhibitors;macrolides;penicillin	CDI	CDI;pneumonia	66	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	14436687	2165503050	150	150	SRR2565954	Paolo_Manghi
-VincentC_2016	MM098.10	MM098	stool	yes	fluoroquinolones	CDI	CDI;cellulitis	66	senior	male	CAN	no	10	IlluminaHiSeq	Qiagen	26975510	13880172	2082025800	150	150	SRR2565964	Paolo_Manghi
-VincentC_2016	MM098.11	MM098	stool	yes	carbapenems;fluoroquinolones	CDI	CDI;cellulitis	66	senior	male	CAN	no	13	IlluminaHiSeq	Qiagen	26975510	2463553	369532950	150	150	SRR2565965	Paolo_Manghi
-VincentC_2016	MM098.12	MM098	stool	yes	carbapenems;fluoroquinolones	CDI	CDI;pneumonia	66	senior	male	CAN	no	18	IlluminaHiSeq	Qiagen	26975510	12052019	1807802850	150	150	SRR2565966	Paolo_Manghi
-VincentC_2016	MM098.13	MM098	stool	yes	carbapenems;fluoroquinolones	CDI	CDI;pneumonia	66	senior	male	CAN	no	25	IlluminaHiSeq	Qiagen	26975510	2449912	367486800	150	150	SRR2565968	Paolo_Manghi
-VincentC_2016	MM098.14	MM098	stool	yes	carbapenems;fluoroquinolones	CDI	CDI;pneumonia	66	senior	male	CAN	no	28	IlluminaHiSeq	Qiagen	26975510	15233376	2285006400	150	150	SRR2565969	Paolo_Manghi
-VincentC_2016	MM098.15	MM098	stool	yes	carbapenems;fluoroquinolones	CDI	CDI;pneumonia	66	senior	male	CAN	no	31	IlluminaHiSeq	Qiagen	26975510	4542051	681307650	150	150	SRR2583975;SRR2583987	Paolo_Manghi
-VincentC_2016	MM098.2	MM098	stool	yes	beta_lactamase_inhibitors;macrolides;penicillin	CDI	CDI;pneumonia	66	senior	male	CAN	no	35	IlluminaHiSeq	Qiagen	26975510	14730937	2209640550	150	150	SRR2565955	Paolo_Manghi
-VincentC_2016	MM098.3	MM098	stool	yes	beta_lactamase_inhibitors;carbapenems;cephalosporins;penicillin	CDI	CDI;pneumonia	66	senior	male	CAN	no	38	IlluminaHiSeq	Qiagen	26975510	8669644	1300446600	150	150	SRR2565956	Paolo_Manghi
-VincentC_2016	MM098.4	MM098	stool	yes	beta_lactamase_inhibitors;carbapenems;cephalosporins;fluoroquinolones;penicillin	CDI	CDI;pneumonia	66	senior	male	CAN	no	41	IlluminaHiSeq	Qiagen	26975510	22899048	3434857200	150	150	SRR2565957	Paolo_Manghi
-VincentC_2016	MM098.5	MM098	stool	yes	beta_lactamase_inhibitors;carbapenems;cephalosporins;fluoroquinolones;penicillin	CDI	CDI;pneumonia	66	senior	male	CAN	no	46	IlluminaHiSeq	Qiagen	26975510	8789783	1318467450	150	150	SRR2565958	Paolo_Manghi
-VincentC_2016	MM098.6	MM098	stool	yes	beta_lactamase_inhibitors;carbapenems;fluoroquinolones;penicillin	CDI	CDI;pneumonia	66	senior	male	CAN	no	49	IlluminaHiSeq	Qiagen	26975510	14362857	2154428550	150	150	SRR2565959	Paolo_Manghi
-VincentC_2016	MM098.7	MM098	stool	yes	beta_lactamase_inhibitors;carbapenems;fluoroquinolones;penicillin	CDI	CDI;pneumonia	66	senior	male	CAN	no	52	IlluminaHiSeq	Qiagen	26975510	5636922	845538300	150	150	SRR2565960	Paolo_Manghi
-VincentC_2016	MM098.8	MM098	stool	yes	carbapenems;fluoroquinolones	CDI	CDI;pneumonia	66	senior	male	CAN	no	55	IlluminaHiSeq	Qiagen	26975510	6594513	989176950	150	150	SRR2565961	Paolo_Manghi
-VincentC_2016	MM098.9	MM098	stool	yes	fluoroquinolones	CDI	CDI;pneumonia	66	senior	male	CAN	no	56	IlluminaHiSeq	Qiagen	26975510	4155804	623370600	150	150	SRR2565963	Paolo_Manghi
-VincentC_2016	MM099.1	MM099	stool	yes	beta_lactamase_inhibitors;penicillin	CDI	CDI;osteoarthritis	74	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	6524147	978622050	150	150	SRR2565971	Paolo_Manghi
-VincentC_2016	MM099.2	MM099	stool	yes	beta_lactamase_inhibitors;penicillin	CDI	CDI;ureteralstone	74	senior	male	CAN	no	3	IlluminaHiSeq	Qiagen	26975510	11826878	1774031700	150	150	SRR2565972	Paolo_Manghi
-VincentC_2016	MM099.3	MM099	stool	yes	beta_lactamase_inhibitors;penicillin	CDI	CDI;pneumonia	74	senior	male	CAN	no	7	IlluminaHiSeq	Qiagen	26975510	2505669	375850350	150	150	SRR2565973	Paolo_Manghi
-VincentC_2016	MM099.4	MM099	stool	yes	beta_lactamase_inhibitors;penicillin	CDI	CDI;pneumonia	74	senior	male	CAN	no	11	IlluminaHiSeq	Qiagen	26975510	16867542	2530131300	150	150	SRR2583976;SRR2583988	Paolo_Manghi
-VincentC_2016	MM100.1	MM100	stool	yes	NA	control	healthy	72	senior	female	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	16565050	2484757500	150	150	SRR2565976	Paolo_Manghi
-VincentC_2016	MM100.2	MM100	stool	yes	NA	control	healthy	72	senior	female	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	48681462	7302219300	150	150	SRR2565977	Paolo_Manghi
-VincentC_2016	MM101.1	MM101	stool	yes	NA	control	healthy	80	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	19693672	2954050800	150	150	SRR2565978	Paolo_Manghi
-VincentC_2016	MM101.2	MM101	stool	yes	NA	control	healthy	80	senior	male	CAN	no	2	IlluminaHiSeq	Qiagen	26975510	52809465	7921419750	150	150	SRR2565979	Paolo_Manghi
-VincentC_2016	MM103.1	MM103	stool	yes	NA	control	healthy	85	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	21799579	3269936850	150	150	SRR2565980	Paolo_Manghi
-VincentC_2016	MM103.2	MM103	stool	yes	NA	control	healthy	85	senior	male	CAN	no	4	IlluminaHiSeq	Qiagen	26975510	16820684	2523102600	150	150	SRR2565981	Paolo_Manghi
-VincentC_2016	MM103.3	MM103	stool	yes	NA	control	healthy	85	senior	male	CAN	no	6	IlluminaHiSeq	Qiagen	26975510	6571815	985772250	150	150	SRR2565982	Paolo_Manghi
-VincentC_2016	MM104	MM104	stool	yes	NA	control	healthy	81	senior	male	CAN	no	0	IlluminaHiSeq	Qiagen	26975510	8940774	1341116100	150	150	SRR2565983	Paolo_Manghi
+study_name	sample_id	subject_id	body_site	antibiotics_current_use	antibiotics_family	study_condition	disease	age	age_category	gender	country	non_westernized	days_from_first_collection	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	treatment	NCBI_accession	curator
+VincentC_2016	MM001.1	MM001	stool	yes	cephalosporins	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	4215921	632388150	150	150	no	SRR2565533	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM001.2	MM001	stool	yes	cephalosporins	control	healthy	80	senior	female	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	26930197	4039529550	150	150	opioids;laxatives	SRR2565534	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM001.3	MM001	stool	yes	cephalosporins	control	healthy	80	senior	female	CAN	no	11	IlluminaHiSeq	QIAamp	26975510	27625587	4143838050	150	150	NSAID;opioids;laxatives	SRR2565950	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM001.4	MM001	stool	yes	cephalosporins	control	healthy	80	senior	female	CAN	no	18	IlluminaHiSeq	QIAamp	26975510	12638949	1895842350	150	150	NSAID;opioids;laxatives	SRR2565992	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM002.1	MM002	stool	yes	cephalosporins	control	healthy	79	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16344586	2451687900	150	150	no	SRR2566003	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM002.2	MM002	stool	yes	cephalosporins	control	healthy	79	senior	male	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	18751103	2812665450	150	150	NSAID	SRR2566014	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM003.1	MM003	stool	yes	cephalosporins	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	4591417	688712550	150	150	PPI	SRR2566026	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM003.2	MM003	stool	yes	cephalosporins	control	healthy	75	senior	female	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	9759720	1463958000	150	150	PPI	SRR2566037	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM004.1	MM004	stool	yes	no	control	healthy	81	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	18363168	2754475200	150	150	NSAID;opioids	SRR2566049	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM004.2	MM004	stool	yes	no	control	healthy	81	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	26014149	3902122350	150	150	NSAID;opioids	SRR2566060	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM005.1	MM005	stool	yes	no	control	healthy	66	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	4300076	645011400	150	150	no	SRR2565535	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM005.2	MM005	stool	yes	no	control	healthy	66	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	29889963	4483494450	150	150	no	SRR2565546	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM005.3	MM005	stool	yes	no	control	healthy	66	senior	female	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	15717746	2357661900	150	150	no	SRR2565557	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM006.1	MM006	stool	yes	cephalosporins	control	healthy	78	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	12840247	1926037050	150	150	no	SRR2565647	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM006.2	MM006	stool	yes	cephalosporins	control	healthy	78	senior	male	CAN	no	1	IlluminaHiSeq	QIAamp	26975510	18083118	2712467700	150	150	no	SRR2565811	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM007	MM007	stool	yes	cephalosporins	control	healthy	79	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	12960643	1944096450	150	150	no	SRR2565822	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM008.1	MM008	stool	yes	cephalosporins	control	healthy	84	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	20152237	3022835550	150	150	NSAID	SRR2565834	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM008.2	MM008	stool	yes	cephalosporins	control	healthy	84	senior	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	4513925	677088750	150	150	NSAID	SRR2565845	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM008.3	MM008	stool	yes	cephalosporins	control	healthy	84	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	23642605	3546390750	150	150	NSAID	SRR2565927	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM009.1	MM009	stool	yes	penicillins;fluoroquinolones;gentamicin	control	healthy	71	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	39653897	5948084550	150	150	NSAID;opioids	SRR2565938	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM009.2	MM009	stool	yes	penicillins;fluoroquinolones;gentamicin;beta_lactamase_inhibitors	control	healthy	71	senior	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	13608666	2041299900	150	150	NSAID;opioids	SRR2565951	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM010	MM010	stool	yes	cephalosporins	control	healthy	62	adult	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	40812650	6121897500	150	150	opioids;laxatives	SRR2583965;SRR2583977	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM011	MM011	stool	yes	cephalosporins	control	healthy	85	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	18249374	2737406100	150	150	NSAID;opioids;laxatives	SRR2565974	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM012.1	MM012	stool	yes	cephalosporins	control	healthy	66	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	9791924	1468788600	150	150	no	SRR2565984	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM012.2	MM012	stool	yes	cephalosporins	control	healthy	66	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	16779126	2516868900	150	150	NSAID	SRR2565985	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM013.1	MM013	stool	yes	cephalosporins	control	healthy	76	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	20940776	3141116400	150	150	no	SRR2565986	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM013.2	MM013	stool	yes	cephalosporins	control	healthy	76	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	2472713	370906950	150	150	no	SRR2565987	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM013.3	MM013	stool	yes	cephalosporins	control	healthy	76	senior	male	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	8402596	1260389400	150	150	no	SRR2565988	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM014	MM014	stool	yes	penicillins;vancomycin_iv;fluoroquinolones	control	healthy	86	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	14056576	2108486400	150	150	no	SRR2565990	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM015.1	MM015	stool	yes	no	control	healthy	81	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16293979	2444096850	150	150	no	SRR2565991	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM015.2	MM015	stool	yes	cephalosporins	control	healthy	81	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	20302632	3045394800	150	150	no	SRR2565993	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM016.1	MM016	stool	yes	cephalosporins;penicillins;beta_lactamase_inhibitors	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	10571583	1585737450	150	150	PPI	SRR2583966;SRR2583978	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM016.2	MM016	stool	yes	penicillins;beta_lactamase_inhibitors;cephalosporins;carbapenems;vancomycin_iv	control	healthy	73	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	25933435	3890015250	150	150	PPI	SRR2565995	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM016.3	MM016	stool	yes	penicillins;beta_lactamase_inhibitors;cephalosporins;carbapenems;vancomycin_iv	control	healthy	73	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	13183826	1977573900	150	150	PPI	SRR2565996	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM017	MM017	stool	yes	cephalosporins	control	pneumonia	75	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	28062029	4209304350	150	150	opioids;PPI	SRR2565997	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM018	MM018	stool	yes	cephalosporins	control	healthy	65	adult	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	9383591	1407538650	150	150	no	SRR2565998	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM019.1	MM019	stool	yes	cephalosporins	control	healthy	75	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	4305391	645808650	150	150	NSAID	SRR2565999	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM019.2	MM019	stool	yes	cephalosporins	control	healthy	75	senior	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	82768033	12415204950	150	150	NSAID;PPI	SRR2583967;SRR2583979	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM019.3	MM019	stool	yes	cephalosporins	control	healthy	75	senior	male	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	11300634	1695095100	150	150	NSAID;PPI	SRR2566001	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM020.1	MM020	stool	yes	cephalosporins	control	pneumonia	74	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	11780205	1767030750	150	150	no	SRR2566002	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM020.2	MM020	stool	yes	cephalosporins	control	pneumonia	74	senior	female	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	2300618	345092700	150	150	no	SRR2566004	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM020.3	MM020	stool	yes	cephalosporins	control	abdominalhernia	74	senior	female	CAN	no	9	IlluminaHiSeq	QIAamp	26975510	16370111	2455516650	150	150	opioids;corticosteroids;laxatives	SRR2566005	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM021.1	MM021	stool	yes	cephalosporins	control	healthy	61	adult	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	28155786	4223367900	150	150	PPI	SRR2566006	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM021.2	MM021	stool	yes	cephalosporins	control	healthy	61	adult	female	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	36345296	5451794400	150	150	PPI	SRR2583968;SRR2583980	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM021.3	MM021	stool	yes	cephalosporins;fluoroquinolones	control	healthy	61	adult	female	CAN	no	7	IlluminaHiSeq	QIAamp	26975510	11265054	1689758100	150	150	PPI	SRR2566008	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM021.4	MM021	stool	yes	cephalosporins;fluoroquinolones	control	healthy	61	adult	female	CAN	no	11	IlluminaHiSeq	QIAamp	26975510	15919132	2387869800	150	150	opioids;laxatives;PPI	SRR2566009	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM022.1	MM022	stool	yes	no	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16401405	2460210750	150	150	no	SRR2566010	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM022.2	MM022	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	21986251	3297937650	150	150	no	SRR2566011	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM022.3	MM022	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	19409873	2911480950	150	150	no	SRR2566012	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM023.1	MM023	stool	yes	no	control	healthy	62	adult	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	14984634	2247695100	150	150	no	SRR2566013	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM023.2	MM023	stool	yes	cephalosporins	control	healthy	62	adult	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	34076017	5111402550	150	150	no	SRR2566015	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM024.1	MM024	stool	yes	cephalosporins	control	healthy	79	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16053824	2408073600	150	150	corticosteroids;PPI	SRR2566017	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM024.2	MM024	stool	yes	cephalosporins	control	healthy	79	senior	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	16599765	2489964750	150	150	corticosteroids;PPI	SRR2566018	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM024.3	MM024	stool	yes	cephalosporins	control	healthy	79	senior	male	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	13573906	2036085900	150	150	corticosteroids;PPI	SRR2566019	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM025	MM025	stool	yes	cephalosporins	control	healthy	71	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	2539760	380964000	150	150	NSAID;opioids	SRR2566020	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM026.1	MM026	stool	yes	cephalosporins	control	healthy	66	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	12179090	1826863500	150	150	NSAID;opioids	SRR2566021	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM026.2	MM026	stool	yes	cephalosporins	control	healthy	66	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	4630286	694542900	150	150	NSAID;opioids	SRR2566022	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM027.1	MM027	stool	yes	cephalosporins	control	healthy	65	adult	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	17790792	2668618800	150	150	NSAID	SRR2566023	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM027.2	MM027	stool	yes	cephalosporins	control	healthy	65	adult	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	15585791	2337868650	150	150	NSAID	SRR2566024	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM027.3	MM027	stool	yes	cephalosporins	control	healthy	65	adult	female	CAN	no	8	IlluminaHiSeq	QIAamp	26975510	13642190	2046328500	150	150	NSAID	SRR2566025	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM028.1	MM028	stool	yes	no	control	healthy	80	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	7946347	1191952050	150	150	no	SRR2566027	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM028.2	MM028	stool	yes	cephalosporins	control	healthy	80	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	4281524	642228600	150	150	no	SRR2566028	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM029.1	MM029	stool	yes	no	control	healthy	74	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	29789349	4468402350	150	150	no	SRR2566029	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM029.2	MM029	stool	yes	no	control	healthy	74	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	16894763	2534214450	150	150	NSAID	SRR2566030	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM029.3	MM029	stool	yes	no	control	healthy	74	senior	male	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	30346407	4551961050	150	150	NSAID	SRR2583969;SRR2583981	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM030.1	MM030	stool	yes	cephalosporins	CDI	CDI	73	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	90622102	13593315300	150	150	no	SRR2583970;SRR2583982	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM030.2	MM030	stool	yes	cephalosporins	CDI	CDI	73	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	16649719	2497457850	150	150	PPI	SRR2566033	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM031	MM031	stool	yes	cephalosporins	control	healthy	78	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	7766262	1164939300	150	150	NSAID;PPI	SRR2566034	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM032.1	MM032	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	22409914	3361487100	150	150	opioids;PPI	SRR2566035	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM032.2	MM032	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	22723607	3408541050	150	150	opioids;PPI	SRR2566036	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM032.3	MM032	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	7	IlluminaHiSeq	QIAamp	26975510	21994152	3299122800	150	150	opioids;laxatives;PPI	SRR2566038	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM032.4	MM032	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	10	IlluminaHiSeq	QIAamp	26975510	13367461	2005119150	150	150	opioids;laxatives;PPI	SRR2566039	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM033.1	MM033	stool	yes	cephalosporins	control	healthy	79	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	11811797	1771769550	150	150	no	SRR2566040	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM033.2	MM033	stool	yes	cephalosporins	control	healthy	79	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	3339872	500980800	150	150	no	SRR2566041	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM033.3	MM033	stool	yes	cephalosporins	control	healthy	79	senior	female	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	15648701	2347305150	150	150	no	SRR2566042	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM033.4	MM033	stool	yes	cephalosporins	control	healthy	79	senior	female	CAN	no	7	IlluminaHiSeq	QIAamp	26975510	10961770	1644265500	150	150	opioids;laxatives	SRR2566043	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM034.1	MM034	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	10266990	1540048500	150	150	NSAID;opioids	SRR2566044	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM034.2	MM034	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	17351480	2602722000	150	150	NSAID;opioids;laxatives	SRR2566045	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM034.3	MM034	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	7	IlluminaHiSeq	QIAamp	26975510	24992568	3748885200	150	150	NSAID;opioids;laxatives	SRR2566046	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM035.1	MM035	stool	yes	penicillins;beta_lactamase_inhibitors	CDI	CDI	80	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	6523769	978565350	150	150	NSAID;opioids	SRR2566047	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM035.2	MM035	stool	yes	penicillins;beta_lactamase_inhibitors	CDI	CDI	80	senior	female	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	24737718	3710657700	150	150	NSAID;opioids	SRR2566050	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM036	MM036	stool	yes	gentamicin;penicillins;beta_lactamase_inhibitors	CDI	CDI	68	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	10583277	1587491550	150	150	NSAID;opioids;laxatives	SRR2566051	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM037.1	MM037	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	11865187	1779778050	150	150	opioids	SRR2566052	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM037.2	MM037	stool	yes	cephalosporins	control	healthy	78	senior	female	CAN	no	1	IlluminaHiSeq	QIAamp	26975510	16241365	2436204750	150	150	opioids	SRR2566053	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM038	MM038	stool	yes	cephalosporins	control	healthy	75	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16630457	2494568550	150	150	no	SRR2566054	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM039	MM039	stool	yes	metronidazole	control	healthy	66	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	10825530	1623829500	150	150	NSAID;opioids	SRR2566055	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM040.1	MM040	stool	yes	cephalosporins	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	10011949	1501792350	150	150	no	SRR2566056	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM040.2	MM040	stool	yes	cephalosporins	control	healthy	73	senior	female	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	9407426	1411113900	150	150	no	SRR2566057	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM041.1	MM041	stool	yes	cephalosporins	control	healthy	68	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16140027	2421004050	150	150	NSAID	SRR2566058	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM041.2	MM041	stool	yes	cephalosporins	control	healthy	68	senior	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	20867556	3130133400	150	150	NSAID	SRR2566059	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM042.1	MM042	stool	yes	cephalosporins	control	healthy	66	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	13456615	2018492250	150	150	no	SRR2566061	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM042.2	MM042	stool	yes	cephalosporins	control	healthy	66	senior	male	CAN	no	1	IlluminaHiSeq	QIAamp	26975510	6961915	1044287250	150	150	no	SRR2566062	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM043.1	MM043	stool	yes	cephalosporins	control	healthy	66	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	7216537	1082480550	150	150	no	SRR2566063	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM043.2	MM043	stool	yes	cephalosporins	control	healthy	66	senior	female	CAN	no	1	IlluminaHiSeq	QIAamp	26975510	6515923	977388450	150	150	no	SRR2566064	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM044.1	MM044	stool	yes	cephalosporins	control	cellulitis	73	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	23573713	3536056950	150	150	PPI	SRR2566065	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM044.2	MM044	stool	yes	cephalosporins	control	cellulitis	73	senior	female	CAN	no	1	IlluminaHiSeq	QIAamp	26975510	23248985	3487347750	150	150	PPI	SRR2566066	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM045.1	MM045	stool	yes	cephalosporins	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	21453570	3218035500	150	150	no	SRR2566067	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM045.2	MM045	stool	yes	cephalosporins	control	healthy	73	senior	female	CAN	no	1	IlluminaHiSeq	QIAamp	26975510	45511597	6826739550	150	150	no	SRR2566068	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM046.1	MM046	stool	yes	vancomycin_iv;metronidazole;fluoroquinolones	control	healthy	76	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	22306102	3345915300	150	150	laxatives	SRR2566069	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM046.2	MM046	stool	yes	vancomycin_iv;metronidazole;fluoroquinolones	control	healthy	76	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	9439047	1415857050	150	150	laxatives	SRR2566070	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM046.3	MM046	stool	yes	vancomycin_iv;metronidazole;fluoroquinolones	control	healthy	76	senior	female	CAN	no	8	IlluminaHiSeq	QIAamp	26975510	15830963	2374644450	150	150	laxatives	SRR2565536	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM047.1	MM047	stool	yes	cephalosporins	control	healthy	77	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	24906509	3735976350	150	150	NSAID;PPI	SRR2565537	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM047.2	MM047	stool	yes	cephalosporins	control	healthy	77	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	21863226	3279483900	150	150	NSAID;PPI	SRR2565538	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM047.3	MM047	stool	yes	cephalosporins	control	healthy	77	senior	female	CAN	no	8	IlluminaHiSeq	QIAamp	26975510	16160780	2424117000	150	150	NSAID;opioids;PPI	SRR2565539	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM048.1	MM048	stool	yes	cephalosporins	control	healthy	76	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	25528888	3829333200	150	150	NSAID	SRR2565540	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM048.2	MM048	stool	yes	cephalosporins	control	healthy	76	senior	female	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	13546562	2031984300	150	150	NSAID	SRR2565541	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM049.1	MM049	stool	yes	cephalosporins	control	healthy	70	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	12734717	1910207550	150	150	no	SRR2565542	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM049.2	MM049	stool	yes	cephalosporins	control	healthy	70	senior	female	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	7271897	1090784550	150	150	no	SRR2565543	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM050.1	MM050	stool	yes	cephalosporins	control	healthy	67	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	20271482	3040722300	150	150	no	SRR2565544	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM050.2	MM050	stool	yes	cephalosporins	control	healthy	67	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	10018805	1502820750	150	150	no	SRR2565545	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM050.3	MM050	stool	yes	cephalosporins	control	healthy	67	senior	female	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	11684820	1752723000	150	150	no	SRR2565547	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM050.4	MM050	stool	yes	cephalosporins	control	healthy	67	senior	female	CAN	no	8	IlluminaHiSeq	QIAamp	26975510	54725506	8208825900	150	150	no	SRR2565548	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM051	MM051	stool	yes	no	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	22564847	3384727050	150	150	no	SRR2565549	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM052.1	MM052	stool	yes	cephalosporins	control	healthy	73	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16247725	2437158750	150	150	no	SRR2565550	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM052.2	MM052	stool	yes	cephalosporins	control	healthy	73	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	9051394	1357709100	150	150	no	SRR2565551	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM053	MM053	stool	yes	cephalosporins	control	healthy	86	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	6238776	935816400	150	150	corticosteroids;PPI	SRR2565552	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM054.1	MM054	stool	yes	cephalosporins	control	healthy	73	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16618551	2492782650	150	150	no	SRR2565553	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM054.2	MM054	stool	yes	cephalosporins	control	healthy	73	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	2154163	323124450	150	150	no	SRR2565554	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM055.1	MM055	stool	yes	clindamycin;vancomycin_iv	CDI	CDI	72	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	2644014	396602100	150	150	NSAID;PPI	SRR2565555	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM055.3	MM055	stool	yes	clindamycin;vancomycin_iv	CDI	CDI	72	senior	male	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	12290841	1843626150	150	150	NSAID;PPI	SRR2565556	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM055.4	MM055	stool	yes	carbapenems;vancomycin_iv;fluoroquinolones;clindamycin	CDI	CDI	72	senior	male	CAN	no	14	IlluminaHiSeq	QIAamp	26975510	19354575	2903186250	150	150	NSAID;corticosteroids;PPI	SRR2565558	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM055.5	MM055	stool	yes	carbapenems;vancomycin_iv;fluoroquinolones;clindamycin	CDI	CDI	72	senior	male	CAN	no	17	IlluminaHiSeq	QIAamp	26975510	48798449	7319767350	150	150	NSAID;corticosteroids;PPI	SRR2565559	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM055.6	MM055	stool	yes	carbapenems;vancomycin_iv;fluoroquinolones;clindamycin	CDI	CDI	72	senior	male	CAN	no	21	IlluminaHiSeq	QIAamp	26975510	17040419	2556062850	150	150	NSAID;corticosteroids;PPI	SRR2565579	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM055.7	MM055	stool	yes	carbapenems;vancomycin_iv;fluoroquinolones	CDI	CDI	72	senior	male	CAN	no	34	IlluminaHiSeq	QIAamp	26975510	11152285	1672842750	150	150	NSAID;corticosteroids;laxatives;PPI	SRR2565597	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM056.1	MM056	stool	yes	penicillins;beta_lactamase_inhibitors	control	healthy	76	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	4390529	658579350	150	150	no	SRR2565617	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM056.2	MM056	stool	yes	cotrimoxazole;penicillins;beta_lactamase_inhibitors	control	healthy	76	senior	male	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	11571668	1735750200	150	150	no	SRR2565618	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.1	MM057	stool	yes	carbapenems;penicillins;fluoroquinolones;beta_lactamase_inhibitors	control	healthy	91	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	6088618	913292700	150	150	laxatives;PPI	SRR2565619	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.10	MM057	stool	yes	no	control	healthy	91	senior	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	14751029	2212654350	150	150	PPI	SRR2565742	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.11	MM057	stool	yes	penicillins	control	healthy	91	senior	male	CAN	no	10	IlluminaHiSeq	QIAamp	26975510	14535975	2180396250	150	150	PPI	SRR2565743	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.12	MM057	stool	yes	penicillins	control	healthy	91	senior	male	CAN	no	13	IlluminaHiSeq	QIAamp	26975510	18806860	2821029000	150	150	PPI	SRR2565744	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.2	MM057	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;carbapenems;vancomycin_iv;azithromycin;metronidazole	control	healthy	91	senior	male	CAN	no	18	IlluminaHiSeq	QIAamp	26975510	16061208	2409181200	150	150	laxatives;PPI	SRR2565620	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.3	MM057	stool	yes	fluoroquinolones	control	healthy	91	senior	male	CAN	no	33	IlluminaHiSeq	QIAamp	26975510	13962837	2094425550	150	150	PPI	SRR2565621	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.4	MM057	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;carbapenems;vancomycin_iv;azithromycin;metronidazole	control	healthy	91	senior	male	CAN	no	39	IlluminaHiSeq	QIAamp	26975510	63512536	9526880400	150	150	laxatives;PPI	SRR2565646	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.5	MM057	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;carbapenems;vancomycin_iv;azithromycin;metronidazole	control	healthy	91	senior	male	CAN	no	46	IlluminaHiSeq	QIAamp	26975510	8166414	1224962100	150	150	laxatives;PPI	SRR2565687	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.6	MM057	stool	yes	fluoroquinolones;carbapenems;vancomycin_iv;azithromycin;metronidazole	control	healthy	91	senior	male	CAN	no	49	IlluminaHiSeq	QIAamp	26975510	19381004	2907150600	150	150	PPI	SRR2565714	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.7	MM057	stool	yes	fluoroquinolones	control	healthy	91	senior	male	CAN	no	51	IlluminaHiSeq	QIAamp	26975510	14459658	2168948700	150	150	PPI	SRR2565715	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.8	MM057	stool	yes	no	control	healthy	91	senior	male	CAN	no	56	IlluminaHiSeq	QIAamp	26975510	7787111	1168066650	150	150	PPI	SRR2583971;SRR2583983	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM057.9	MM057	stool	yes	no	control	healthy	91	senior	male	CAN	no	60	IlluminaHiSeq	QIAamp	26975510	24537066	3680559900	150	150	PPI	SRR2565717	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM058.1	MM058	stool	yes	no	control	healthy	84	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	53761227	8064184050	150	150	NSAID;opioids	SRR2565770	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM058.2	MM058	stool	yes	no	control	healthy	84	senior	female	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	11279390	1691908500	150	150	NSAID;opioids	SRR2565790	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM059.1	MM059	stool	yes	cephalosporins	control	healthy	75	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	32739464	4910919600	150	150	no	SRR2565812	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM059.2	MM059	stool	yes	cephalosporins	control	healthy	75	senior	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	15617441	2342616150	150	150	no	SRR2565813	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM060.1	MM060	stool	yes	cephalosporins	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	14361947	2154292050	150	150	PPI	SRR2565814	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM060.2	MM060	stool	yes	cephalosporins	control	healthy	75	senior	female	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	13758531	2063779650	150	150	PPI	SRR2565815	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM061	MM061	stool	yes	no	control	healthy	68	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	27041960	4056294000	150	150	NSAID;opioids	SRR2565816	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM062.1	MM062	stool	yes	carbapenems;fluoroquinolones	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	13278297	1991744550	150	150	no	SRR2565817	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM062.2	MM062	stool	yes	carbapenems;fluoroquinolones	control	healthy	75	senior	female	CAN	no	1	IlluminaHiSeq	QIAamp	26975510	26640912	3996136800	150	150	no	SRR2565818	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM063	MM063	stool	yes	carbapenems	CDI	CDI	71	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	15304582	2295687300	150	150	no	SRR2565819	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM064.1	MM064	stool	yes	no	control	gangrene	78	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	26786655	4017998250	150	150	opioids;laxatives;PPI	SRR2583972;SRR2583984	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM064.2	MM064	stool	yes	fluoroquinolones	control	osteoarthritis	78	senior	female	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	22761932	3414289800	150	150	opioids;laxatives;PPI	SRR2583973;SRR2583985	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM065	MM065	stool	yes	cephalosporins	control	healthy	74	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16558522	2483778300	150	150	no	SRR2565824	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM066	MM066	stool	yes	no	control	pneumonia	68	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	1924847	288727050	150	150	NSAID;opioids	SRR2565825	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM068.1	MM068	stool	yes	cephalosporins	control	healthy	64	adult	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	24672415	3700862250	150	150	opioids	SRR2565826	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM068.2	MM068	stool	yes	cephalosporins	control	healthy	64	adult	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	6826645	1023996750	150	150	opioids;laxatives	SRR2565827	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM069	MM069	stool	yes	cephalosporins	control	healthy	61	adult	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	11513715	1727057250	150	150	no	SRR2565828	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM070.1	MM070	stool	yes	vancomycin_iv;penicillins;azithromycin;beta_lactamase_inhibitors	control	cellulitis	68	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	21534709	3230206350	150	150	no	SRR2565829	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM070.2	MM070	stool	yes	vancomycin_iv;penicillins;azithromycin;beta_lactamase_inhibitors	control	cellulitis	68	senior	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	21971917	3295787550	150	150	no	SRR2565830	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM070.3	MM070	stool	yes	penicillins;beta_lactamase_inhibitors;carbapenems;vancomycin_iv;azithromycin	control	cellulitis	68	senior	male	CAN	no	13	IlluminaHiSeq	QIAamp	26975510	20868325	3130248750	150	150	no	SRR2565831	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM071.2	MM071	stool	yes	cephalosporins	control	healthy	71	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	10986575	1647986250	150	150	PPI	SRR2565832	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM071.3	MM071	stool	yes	cephalosporins	control	healthy	71	senior	female	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	6115056	917258400	150	150	PPI	SRR2565833	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM072.1	MM072	stool	yes	cephalosporins	control	abdominalhernia	73	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	11229353	1684402950	150	150	opioids	SRR2565835	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM072.2	MM072	stool	yes	cephalosporins	control	cellulitis	73	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	16846597	2526989550	150	150	opioids	SRR2565836	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM074.1	MM074	stool	yes	cephalosporins	control	healthy	70	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	14138604	2120790600	150	150	no	SRR2565837	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM074.2	MM074	stool	yes	cephalosporins	control	healthy	70	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	13674764	2051214600	150	150	no	SRR2565838	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM075.1	MM075	stool	yes	cephalosporins	control	healthy	65	adult	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	28796455	4319468250	150	150	no	SRR2565839	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM075.2	MM075	stool	yes	cephalosporins	control	healthy	65	adult	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	23719167	3557875050	150	150	NSAID	SRR2565840	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM077	MM077	stool	yes	no	control	healthy	64	adult	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	21445765	3216864750	150	150	antineoplastics	SRR2565841	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM078	MM078	stool	yes	no	control	healthy	89	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	23986611	3597991650	150	150	no	SRR2565842	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM079.1	MM079	stool	yes	cephalosporins	control	healthy	83	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	15740749	2361112350	150	150	NSAID	SRR2565843	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM079.2	MM079	stool	yes	cephalosporins	control	healthy	83	senior	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	6943846	1041576900	150	150	NSAID	SRR2565844	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM080	MM080	stool	yes	no	control	healthy	68	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	30866363	4629954450	150	150	PPI	SRR2565846	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM081	MM081	stool	yes	no	control	healthy	85	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	14669017	2200352550	150	150	corticosteroids	SRR2565847	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM082	MM082	stool	yes	cephalosporins	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	14068442	2110266300	150	150	PPI	SRR2565849	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM083.1	MM083	stool	yes	carbapenems;penicillins	control	healthy	62	adult	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	17908916	2686337400	150	150	no	SRR2565850	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM083.2	MM083	stool	yes	carbapenems;penicillins	control	healthy	62	adult	male	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	7304639	1095695850	150	150	NSAID;opioids;laxatives	SRR2565921	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM083.3	MM083	stool	yes	carbapenems;penicillins	control	healthy	62	adult	male	CAN	no	8	IlluminaHiSeq	QIAamp	26975510	6973155	1045973250	150	150	NSAID;opioids;laxatives	SRR2565922	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM083.4	MM083	stool	yes	carbapenems;penicillins	control	healthy	62	adult	male	CAN	no	11	IlluminaHiSeq	QIAamp	26975510	22015767	3302365050	150	150	NSAID;opioids;laxatives	SRR2565923	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM083.5	MM083	stool	yes	carbapenems;penicillins	control	healthy	62	adult	male	CAN	no	14	IlluminaHiSeq	QIAamp	26975510	13872077	2080811550	150	150	NSAID;opioids;laxatives	SRR2565924	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM084	MM084	stool	yes	no	control	healthy	81	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	18700279	2805041850	150	150	no	SRR2565925	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM085.1	MM085	stool	yes	cephalosporins	control	healthy	80	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	8846109	1326916350	150	150	NSAID	SRR2565926	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM085.2	MM085	stool	yes	cephalosporins	control	healthy	80	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	25786313	3867946950	150	150	NSAID	SRR2565928	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM086.2	MM086	stool	yes	no	control	healthy	74	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	5695214	854282100	150	150	no	SRR2565929	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM086.3	MM086	stool	yes	no	control	healthy	74	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	21612050	3241807500	150	150	no	SRR2565930	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM086.5	MM086	stool	yes	no	control	healthy	74	senior	male	CAN	no	11	IlluminaHiSeq	QIAamp	26975510	9104654	1365698100	150	150	NSAID	SRR2565931	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM086.6	MM086	stool	yes	cotrimoxazole	control	healthy	74	senior	male	CAN	no	15	IlluminaHiSeq	QIAamp	26975510	10191932	1528789800	150	150	NSAID	SRR2565932	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM087.1	MM087	stool	yes	carbapenems	CDI	CDI	78	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	12529978	1879496700	150	150	NSAID	SRR2565933	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM087.2	MM087	stool	yes	carbapenems	CDI	CDI	78	senior	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	15032540	2254881000	150	150	NSAID;opioids	SRR2565934	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM088	MM088	stool	yes	no	control	healthy	78	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	8716537	1307480550	150	150	no	SRR2565935	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM089.1	MM089	stool	yes	no	control	healthy	85	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	50018981	7502847150	150	150	NSAID	SRR2565936	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM089.2	MM089	stool	yes	no	control	healthy	85	senior	female	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	13874950	2081242500	150	150	NSAID;opioids	SRR2565937	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM090.1	MM090	stool	yes	cephalosporins	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	37152975	5572946250	150	150	NSAID;corticosteroids;PPI	SRR2565939	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM090.2	MM090	stool	yes	cephalosporins	control	healthy	75	senior	female	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	16526031	2478904650	150	150	NSAID;corticosteroids;PPI	SRR2565941	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM090.3	MM090	stool	yes	cephalosporins	control	healthy	75	senior	female	CAN	no	5	IlluminaHiSeq	QIAamp	26975510	62473878	9371081700	150	150	NSAID;corticosteroids;PPI	SRR2565942	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM091.1	MM091	stool	yes	no	control	healthy	71	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	8021588	1203238200	150	150	no	SRR2565943	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM091.2	MM091	stool	yes	vancomycin_iv;penicillins;azithromycin;beta_lactamase_inhibitors	control	healthy	71	senior	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	7478254	1121738100	150	150	corticosteroids;PPI	SRR2565944	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM091.3	MM091	stool	yes	vancomycin_iv;penicillins;azithromycin;beta_lactamase_inhibitors	control	healthy	71	senior	male	CAN	no	7	IlluminaHiSeq	QIAamp	26975510	22223800	3333570000	150	150	corticosteroids;laxatives;PPI	SRR2565945	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM091.4	MM091	stool	yes	vancomycin_iv;penicillins;azithromycin;beta_lactamase_inhibitors	control	healthy	71	senior	male	CAN	no	9	IlluminaHiSeq	QIAamp	26975510	6975566	1046334900	150	150	corticosteroids;laxatives;PPI	SRR2565946	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM092	MM092	stool	yes	no	control	healthy	86	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	22791160	3418674000	150	150	no	SRR2565947	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM093	MM093	stool	yes	no	control	healthy	75	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	46836077	7025411550	150	150	no	SRR2583974;SRR2583986	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM094.1	MM094	stool	yes	no	control	healthy	73	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	8443955	1266593250	150	150	no	SRR2565949	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM094.2	MM094	stool	yes	penicillins;azithromycin;beta_lactamase_inhibitors	control	healthy	73	senior	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	5475680	821352000	150	150	NSAID;corticosteroids	SRR2565952	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM096	MM096	stool	yes	fluoroquinolones	control	healthy	68	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	22131056	3319658400	150	150	no	SRR2565953	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.1	MM098	stool	yes	vancomycin_iv;penicillins;azithromycin;beta_lactamase_inhibitors	CDI	CDI;pneumonia	66	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	14436687	2165503050	150	150	NSAID	SRR2565954	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.10	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;cephalosporins;carbapenems;vancomycin_iv;metronidazole	CDI	CDI;cellulitis	66	senior	male	CAN	no	10	IlluminaHiSeq	QIAamp	26975510	13880172	2082025800	150	150	NSAID;opioids;PPI	SRR2565964	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.11	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;carbapenems;vancomycin_iv;metronidazole;daptomycin	CDI	CDI;cellulitis	66	senior	male	CAN	no	13	IlluminaHiSeq	QIAamp	26975510	2463553	369532950	150	150	NSAID;opioids;corticosteroids;PPI	SRR2565965	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.12	MM098	stool	yes	fluoroquinolones;vancomycin_po;carbapenems;vancomycin_iv;metronidazole;daptomycin	CDI	CDI;pneumonia	66	senior	male	CAN	no	18	IlluminaHiSeq	QIAamp	26975510	12052019	1807802850	150	150	NSAID;opioids;corticosteroids;PPI	SRR2565966	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.13	MM098	stool	yes	fluoroquinolones;vancomycin_po;carbapenems;vancomycin_iv;metronidazole;daptomycin	CDI	CDI;pneumonia	66	senior	male	CAN	no	25	IlluminaHiSeq	QIAamp	26975510	2449912	367486800	150	150	NSAID;opioids;corticosteroids;PPI	SRR2565968	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.14	MM098	stool	yes	fluoroquinolones;vancomycin_po;carbapenems;vancomycin_iv;metronidazole;daptomycin	CDI	CDI;pneumonia	66	senior	male	CAN	no	28	IlluminaHiSeq	QIAamp	26975510	15233376	2285006400	150	150	NSAID;opioids;corticosteroids;laxatives;PPI	SRR2565969	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.15	MM098	stool	yes	fluoroquinolones;vancomycin_po;carbapenems;vancomycin_iv;metronidazole;daptomycin	CDI	CDI;pneumonia	66	senior	male	CAN	no	31	IlluminaHiSeq	QIAamp	26975510	4542051	681307650	150	150	NSAID;opioids;corticosteroids;laxatives;PPI	SRR2583975;SRR2583987	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.2	MM098	stool	yes	vancomycin_iv;penicillins;azithromycin;beta_lactamase_inhibitors	CDI	CDI;pneumonia	66	senior	male	CAN	no	35	IlluminaHiSeq	QIAamp	26975510	14730937	2209640550	150	150	NSAID	SRR2565955	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.3	MM098	stool	yes	penicillins;beta_lactamase_inhibitors;cephalosporins;vancomycin_iv;azithromycin	CDI	CDI;pneumonia	66	senior	male	CAN	no	38	IlluminaHiSeq	QIAamp	26975510	8669644	1300446600	150	150	NSAID	SRR2565956	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.4	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;cephalosporins;carbapenems;vancomycin_iv;azithromycin	CDI	CDI;pneumonia	66	senior	male	CAN	no	41	IlluminaHiSeq	QIAamp	26975510	22899048	3434857200	150	150	NSAID;opioids	SRR2565957	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.5	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;cephalosporins;carbapenems;vancomycin_iv;azithromycin;metronidazole	CDI	CDI;pneumonia	66	senior	male	CAN	no	46	IlluminaHiSeq	QIAamp	26975510	8789783	1318467450	150	150	NSAID;opioids	SRR2565958	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.6	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;cephalosporins;carbapenems;vancomycin_iv;metronidazole	CDI	CDI;pneumonia	66	senior	male	CAN	no	49	IlluminaHiSeq	QIAamp	26975510	14362857	2154428550	150	150	NSAID;opioids;PPI	SRR2565959	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.7	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;cephalosporins;carbapenems;vancomycin_iv;metronidazole	CDI	CDI;pneumonia	66	senior	male	CAN	no	52	IlluminaHiSeq	QIAamp	26975510	5636922	845538300	150	150	NSAID;opioids;PPI	SRR2565960	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.8	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;cephalosporins;carbapenems;vancomycin_iv;metronidazole	CDI	CDI;pneumonia	66	senior	male	CAN	no	55	IlluminaHiSeq	QIAamp	26975510	6594513	989176950	150	150	NSAID;opioids;PPI	SRR2565961	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM098.9	MM098	stool	yes	penicillins;fluoroquinolones;beta_lactamase_inhibitors;vancomycin_po;cephalosporins;carbapenems;vancomycin_iv;metronidazole	CDI	CDI;pneumonia	66	senior	male	CAN	no	56	IlluminaHiSeq	QIAamp	26975510	4155804	623370600	150	150	NSAID;opioids;PPI	SRR2565963	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM099.1	MM099	stool	yes	no	CDI	CDI;osteoarthritis	74	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	6524147	978622050	150	150	antineoplastics	SRR2565971	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM099.2	MM099	stool	yes	penicillins;beta_lactamase_inhibitors	CDI	CDI;ureteralstone	74	senior	male	CAN	no	3	IlluminaHiSeq	QIAamp	26975510	11826878	1774031700	150	150	antineoplastics	SRR2565972	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM099.3	MM099	stool	yes	penicillins;beta_lactamase_inhibitors	CDI	CDI;pneumonia	74	senior	male	CAN	no	7	IlluminaHiSeq	QIAamp	26975510	2505669	375850350	150	150	antineoplastics	SRR2565973	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM099.4	MM099	stool	yes	penicillins;beta_lactamase_inhibitors	CDI	CDI;pneumonia	74	senior	male	CAN	no	11	IlluminaHiSeq	QIAamp	26975510	16867542	2530131300	150	150	NSAID;antineoplastics;corticosteroids;PPI	SRR2583976;SRR2583988	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM100.1	MM100	stool	yes	cephalosporins	control	healthy	72	senior	female	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	16565050	2484757500	150	150	no	SRR2565976	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM100.2	MM100	stool	yes	cephalosporins	control	healthy	72	senior	female	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	48681462	7302219300	150	150	no	SRR2565977	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM101.1	MM101	stool	yes	cephalosporins	control	healthy	80	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	19693672	2954050800	150	150	NSAID;PPI	SRR2565978	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM101.2	MM101	stool	yes	cephalosporins	control	healthy	80	senior	male	CAN	no	2	IlluminaHiSeq	QIAamp	26975510	52809465	7921419750	150	150	NSAID;PPI	SRR2565979	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM103.1	MM103	stool	yes	cephalosporins	control	healthy	85	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	21799579	3269936850	150	150	no	SRR2565980	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM103.2	MM103	stool	yes	cephalosporins	control	healthy	85	senior	male	CAN	no	4	IlluminaHiSeq	QIAamp	26975510	16820684	2523102600	150	150	no	SRR2565981	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM103.3	MM103	stool	yes	cephalosporins	control	healthy	85	senior	male	CAN	no	6	IlluminaHiSeq	QIAamp	26975510	6571815	985772250	150	150	no	SRR2565982	Paolo_Manghi;Andrea_Zen
+VincentC_2016	MM104	MM104	stool	yes	penicillins;beta_lactamase_inhibitors	control	healthy	81	senior	male	CAN	no	0	IlluminaHiSeq	QIAamp	26975510	8940774	1341116100	150	150	NSAID	SRR2565983	Paolo_Manghi;Andrea_Zen
