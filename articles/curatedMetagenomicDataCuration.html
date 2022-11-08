@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-10-25 18:35:35 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-11-08 12:58:57 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4662,47 +4662,10 @@
 <em>allowedvalues</em>: dopamine_antagonists|phenylpiperidines|thienobenzodiazepines|blood_pressure_medication|diabetes_oral_medication|anti_retrovirals|beta_blockers|reverse_transcriptase_inhibitors|anti_virals|cephalosporins|penicillins|macrolides|beta_lactamase_inhibitors|nitrofurans|sulphonamides|aminoglycosides|carbapenems|fluoroquinolones|laxatives|none</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>9 . : “no”<br>
-10 . : “no”<br>
-11 . : “no”<br>
-12 . : “no”<br>
-13 . : “no”<br>
-30 . : “no”<br>
-47 . : “no”<br>
-50 . : “no”<br>
-61 . : “no”<br>
-63 . : “no”<br>
-64 . : “no”<br>
-65 . : “no”<br>
-86 . : “metronidazole”<br>
-113 . : “no”<br>
+<p>86 . : “metronidazole”<br>
 119 . : “clindamycin;vancomycin_iv”<br>
 120 . : “clindamycin;vancomycin_iv”<br>
-128 . : “no”<br>
-137 . : “no”<br>
-138 . : “no”<br>
-139 . : “no”<br>
-140 . : “no”<br>
-145 . : “no”<br>
-149 . : “no”<br>
-152 . : “no”<br>
-167 . : “no”<br>
-168 . : “no”<br>
-171 . : “no”<br>
-172 . : “no”<br>
-179 . : “no”<br>
-182 . : “no”<br>
-183 . : “no”<br>
-184 . : “no”<br>
-185 . : “cotrimoxazole”<br>
-188 . : “no”<br>
-189 . : “no”<br>
-190 . : “no”<br>
-194 . : “no”<br>
-198 . : “no”<br>
-199 . : “no”<br>
-200 . : “no”<br>
-218 . : “no”</p>
+185 . : “cotrimoxazole”</p>
 </div>
 <div class="section level4">
 <h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
