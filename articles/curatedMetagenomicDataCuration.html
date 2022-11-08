@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-11-08 13:18:21 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-11-08 13:20:13 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4642,397 +4642,6 @@
 <h3 id="entry-errors-9">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-9"></a>
 </h3>
 <div class="section level4">
-<h4 id="study_name">study_name<a class="anchor" aria-label="anchor" href="#study_name"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [a-zA-Z-]+<em>[0-9]{4}|[a-zA-Z-]+</em>[0-9]{4}[a-zA-Z-]+|[a-zA-Z-]+<em>[0-9]{4}</em>[a-zA-Z-]+|[a-zA-Z-]+<em>[0-9]{4}</em>[a-zA-Z0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-15 . : “=======”<br>
-21 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-38 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-40 . : “=======”<br>
-42 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-59 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-64 . : “=======”<br>
-69 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-80 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-86 . : “=======”<br>
-92 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-140 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-142 . : “=======”<br>
-144 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-159 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-161 . : “=======”<br>
-163 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-172 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-177 . : “=======”<br>
-182 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-187 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-196 . : “=======”<br>
-205 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-220 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-227 . : “=======”<br>
-234 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-241 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-264 . : “=======”<br>
-287 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”<br>
-305 . : “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”<br>
-307 . : “=======”<br>
-309 . : “&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2fc375511977c85335609661a26dd85317b9340c”</p>
-</div>
-<div class="section level4">
-<h4 id="sample_id">sample_id<a class="anchor" aria-label="anchor" href="#sample_id"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9a-zA-Z]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-10 . : “MM004.1”<br>
-11 . : “MM004.2”<br>
-12 . : “MM005.1”<br>
-13 . : “MM005.2”<br>
-14 . : “MM005.3”<br>
-15 . : ""<br>
-16 . : “MM004.1”<br>
-17 . : “MM004.2”<br>
-18 . : “MM005.1”<br>
-19 . : “MM005.2”<br>
-20 . : “MM005.3”<br>
-21 . : ""<br>
-38 . : ""<br>
-39 . : “MM015.1”<br>
-40 . : ""<br>
-41 . : “MM015.1”<br>
-42 . : ""<br>
-59 . : ""<br>
-60 . : “MM022.1”<br>
-61 . : “MM022.2”<br>
-62 . : “MM022.3”<br>
-63 . : “MM023.1”<br>
-64 . : ""<br>
-65 . : “MM022.1”<br>
-66 . : “MM022.2”<br>
-67 . : “MM022.3”<br>
-68 . : “MM023.1”<br>
-69 . : ""<br>
-80 . : ""<br>
-81 . : “MM028.1”<br>
-82 . : “MM028.2”<br>
-83 . : “MM029.1”<br>
-84 . : “MM029.2”<br>
-85 . : “MM029.3”<br>
-86 . : ""<br>
-87 . : “MM028.1”<br>
-88 . : “MM028.2”<br>
-89 . : “MM029.1”<br>
-90 . : “MM029.2”<br>
-91 . : “MM029.3”<br>
-92 . : ""<br>
-140 . : ""<br>
-141 . : “MM051”<br>
-142 . : ""<br>
-143 . : “MM051”<br>
-144 . : ""<br>
-159 . : ""<br>
-160 . : “MM057.10”<br>
-161 . : ""<br>
-162 . : “MM057.10”<br>
-163 . : ""<br>
-172 . : ""<br>
-173 . : “MM057.8”<br>
-174 . : “MM057.9”<br>
-175 . : “MM058.1”<br>
-176 . : “MM058.2”<br>
-177 . : ""<br>
-178 . : “MM057.8”<br>
-179 . : “MM057.9”<br>
-180 . : “MM058.1”<br>
-181 . : “MM058.2”<br>
-182 . : ""<br>
-187 . : ""<br>
-188 . : “MM061”<br>
-189 . : “MM062.1”<br>
-190 . : “MM062.2”<br>
-191 . : “MM063”<br>
-192 . : “MM064.1”<br>
-193 . : “MM064.2”<br>
-194 . : “MM065”<br>
-195 . : “MM066”<br>
-196 . : ""<br>
-197 . : “MM061”<br>
-198 . : “MM062.1”<br>
-199 . : “MM062.2”<br>
-200 . : “MM063”<br>
-201 . : “MM064.1”<br>
-202 . : “MM064.2”<br>
-203 . : “MM065”<br>
-204 . : “MM066”<br>
-205 . : ""<br>
-220 . : ""<br>
-221 . : “MM077”<br>
-222 . : “MM078”<br>
-223 . : “MM079.1”<br>
-224 . : “MM079.2”<br>
-225 . : “MM080”<br>
-226 . : “MM081”<br>
-227 . : ""<br>
-228 . : “MM077”<br>
-229 . : “MM078”<br>
-230 . : “MM079.1”<br>
-231 . : “MM079.2”<br>
-232 . : “MM080”<br>
-233 . : “MM081”<br>
-234 . : ""<br>
-241 . : ""<br>
-242 . : “MM084”<br>
-243 . : “MM085.1”<br>
-244 . : “MM085.2”<br>
-245 . : “MM086.2”<br>
-246 . : “MM086.3”<br>
-247 . : “MM086.5”<br>
-248 . : “MM086.6”<br>
-249 . : “MM087.1”<br>
-250 . : “MM087.2”<br>
-251 . : “MM088”<br>
-252 . : “MM089.1”<br>
-253 . : “MM089.2”<br>
-254 . : “MM090.1”<br>
-255 . : “MM090.2”<br>
-256 . : “MM090.3”<br>
-257 . : “MM091.1”<br>
-258 . : “MM091.2”<br>
-259 . : “MM091.3”<br>
-260 . : “MM091.4”<br>
-261 . : “MM092”<br>
-262 . : “MM093”<br>
-263 . : “MM094.1”<br>
-264 . : ""<br>
-265 . : “MM084”<br>
-266 . : “MM085.1”<br>
-267 . : “MM085.2”<br>
-268 . : “MM086.2”<br>
-269 . : “MM086.3”<br>
-270 . : “MM086.5”<br>
-271 . : “MM086.6”<br>
-272 . : “MM087.1”<br>
-273 . : “MM087.2”<br>
-274 . : “MM088”<br>
-275 . : “MM089.1”<br>
-276 . : “MM089.2”<br>
-277 . : “MM090.1”<br>
-278 . : “MM090.2”<br>
-279 . : “MM090.3”<br>
-280 . : “MM091.1”<br>
-281 . : “MM091.2”<br>
-282 . : “MM091.3”<br>
-283 . : “MM091.4”<br>
-284 . : “MM092”<br>
-285 . : “MM093”<br>
-286 . : “MM094.1”<br>
-287 . : ""<br>
-305 . : ""<br>
-306 . : “MM099.1”<br>
-307 . : ""<br>
-308 . : “MM099.1”<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="subject_id-1">subject_id<a class="anchor" aria-label="anchor" href="#subject_id-1"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9a-zA-Z]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="body_site">body_site<a class="anchor" aria-label="anchor" href="#body_site"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: stool|skin|vagina|oralcavity|nasalcavity|lung|milk</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="antibiotics_current_use">antibiotics_current_use<a class="anchor" aria-label="anchor" href="#antibiotics_current_use"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: yes|no</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
 <h4 id="antibiotics_family">antibiotics_family<a class="anchor" aria-label="anchor" href="#antibiotics_family"></a>
 </h4>
 <p><strong>Template definition</strong></p>
@@ -5053,429 +4662,10 @@
 <em>allowedvalues</em>: dopamine_antagonists|phenylpiperidines|thienobenzodiazepines|blood_pressure_medication|diabetes_oral_medication|anti_retrovirals|beta_blockers|reverse_transcriptase_inhibitors|anti_virals|cephalosporins|penicillins|macrolides|beta_lactamase_inhibitors|nitrofurans|sulphonamides|aminoglycosides|carbapenems|fluoroquinolones|laxatives|none</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-113 . : “metronidazole”<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-150 . : “clindamycin;vancomycin_iv”<br>
-151 . : “clindamycin;vancomycin_iv”<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-248 . : “cotrimoxazole”<br>
-264 . : ""<br>
-271 . : “cotrimoxazole”<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: ACVD|generic_diabetes|acute_diarrhoea|carcinoma_surgery_history|cellulitis|melanoma|mucositis|gangrene|osteoarthritis|control|NK|peri-implantitis|pyelonefritis|salmonellosis|sepsis|skininf|suspinf|arthritis|STEC|CRC|adenoma|fatty_liver|hypertension|pre-hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|ME/CFS|premature_born|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|cephalosporins|AS|RA|metabolic_syndrome|FMT|premature_born|periodontitis|SRP|STH|BD|chorioamnionitis|pre-eclampsia|carcinoma_surgery_history|peri-implantitis|mucositis|migraine|asthma|PD</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="disease-2">disease<a class="anchor" aria-label="anchor" href="#disease-2"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: healthy|generic_diabetes|acute_diarrhoea|carcinoma_surgery_history|chorioamnionitis|hepatitis|ACVD|NK|CRC|STEC|melanoma|adenoma|arthritis|cellulitis|gangrene|few_polyps|osteoarthritis|pyelonefritis|pre-eclampsia|salmonellosis|sepsis|skininf|suspinf|fatty_liver|hypertension|coeliac|asthma|gestational_diabetes|cirrhosis|hepatitis|CMV|CDI|IBD|T2D|T1D|AD|AR|IGT|BD|ME/CFS|premature_born|schizofrenia|ascites|wilson|otitis|bronchitis|pneumonia|respiratoryinf|cough|stomatitis|fever|pyelonephritis|infectiousgastroenteritis|tonsillitis|cystitis|abdominalhernia|psoriasis|RA|metabolic_syndrome|metastases|hypercholesterolemia|periodontitis|chorioamnionitis|pre-eclampsia|peri-implantitis|mucositis|STH|migraine|asthma|PD|CAD|VKH|uveitis</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="age_category">age_category<a class="anchor" aria-label="anchor" href="#age_category"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: newborn|child|schoolage|adult|senior</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="gender">gender<a class="anchor" aria-label="anchor" href="#gender"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: female|male|other</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="country">country<a class="anchor" aria-label="anchor" href="#country"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="non_westernized">non_westernized<a class="anchor" aria-label="anchor" href="#non_westernized"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: yes|no</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
-</div>
-<div class="section level4">
-<h4 id="sequencing_platform-1">sequencing_platform<a class="anchor" aria-label="anchor" href="#sequencing_platform-1"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq|IlluminaNovaSeq</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
+<p>86 . : “metronidazole”<br>
+119 . : “clindamycin;vancomycin_iv”<br>
+120 . : “clindamycin;vancomycin_iv”<br>
+185 . : “cotrimoxazole”</p>
 </div>
 <div class="section level4">
 <h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
@@ -5506,19 +4696,19 @@
 6 . : “QIAamp”<br>
 7 . : “QIAamp”<br>
 8 . : “QIAamp”<br>
-9 . : ""<br>
+9 . : “QIAamp”<br>
 10 . : “QIAamp”<br>
 11 . : “QIAamp”<br>
 12 . : “QIAamp”<br>
 13 . : “QIAamp”<br>
 14 . : “QIAamp”<br>
-15 . : ""<br>
+15 . : “QIAamp”<br>
 16 . : “QIAamp”<br>
 17 . : “QIAamp”<br>
 18 . : “QIAamp”<br>
 19 . : “QIAamp”<br>
 20 . : “QIAamp”<br>
-21 . : ""<br>
+21 . : “QIAamp”<br>
 22 . : “QIAamp”<br>
 23 . : “QIAamp”<br>
 24 . : “QIAamp”<br>
@@ -5535,11 +4725,11 @@
 35 . : “QIAamp”<br>
 36 . : “QIAamp”<br>
 37 . : “QIAamp”<br>
-38 . : ""<br>
+38 . : “QIAamp”<br>
 39 . : “QIAamp”<br>
-40 . : ""<br>
+40 . : “QIAamp”<br>
 41 . : “QIAamp”<br>
-42 . : ""<br>
+42 . : “QIAamp”<br>
 43 . : “QIAamp”<br>
 44 . : “QIAamp”<br>
 45 . : “QIAamp”<br>
@@ -5556,17 +4746,17 @@
 56 . : “QIAamp”<br>
 57 . : “QIAamp”<br>
 58 . : “QIAamp”<br>
-59 . : ""<br>
+59 . : “QIAamp”<br>
 60 . : “QIAamp”<br>
 61 . : “QIAamp”<br>
 62 . : “QIAamp”<br>
 63 . : “QIAamp”<br>
-64 . : ""<br>
+64 . : “QIAamp”<br>
 65 . : “QIAamp”<br>
 66 . : “QIAamp”<br>
 67 . : “QIAamp”<br>
 68 . : “QIAamp”<br>
-69 . : ""<br>
+69 . : “QIAamp”<br>
 70 . : “QIAamp”<br>
 71 . : “QIAamp”<br>
 72 . : “QIAamp”<br>
@@ -5577,19 +4767,19 @@
 77 . : “QIAamp”<br>
 78 . : “QIAamp”<br>
 79 . : “QIAamp”<br>
-80 . : ""<br>
+80 . : “QIAamp”<br>
 81 . : “QIAamp”<br>
 82 . : “QIAamp”<br>
 83 . : “QIAamp”<br>
 84 . : “QIAamp”<br>
 85 . : “QIAamp”<br>
-86 . : ""<br>
+86 . : “QIAamp”<br>
 87 . : “QIAamp”<br>
 88 . : “QIAamp”<br>
 89 . : “QIAamp”<br>
 90 . : “QIAamp”<br>
 91 . : “QIAamp”<br>
-92 . : ""<br>
+92 . : “QIAamp”<br>
 93 . : “QIAamp”<br>
 94 . : “QIAamp”<br>
 95 . : “QIAamp”<br>
@@ -5637,11 +4827,11 @@
 137 . : “QIAamp”<br>
 138 . : “QIAamp”<br>
 139 . : “QIAamp”<br>
-140 . : ""<br>
+140 . : “QIAamp”<br>
 141 . : “QIAamp”<br>
-142 . : ""<br>
+142 . : “QIAamp”<br>
 143 . : “QIAamp”<br>
-144 . : ""<br>
+144 . : “QIAamp”<br>
 145 . : “QIAamp”<br>
 146 . : “QIAamp”<br>
 147 . : “QIAamp”<br>
@@ -5656,11 +4846,11 @@
 156 . : “QIAamp”<br>
 157 . : “QIAamp”<br>
 158 . : “QIAamp”<br>
-159 . : ""<br>
+159 . : “QIAamp”<br>
 160 . : “QIAamp”<br>
-161 . : ""<br>
+161 . : “QIAamp”<br>
 162 . : “QIAamp”<br>
-163 . : ""<br>
+163 . : “QIAamp”<br>
 164 . : “QIAamp”<br>
 165 . : “QIAamp”<br>
 166 . : “QIAamp”<br>
@@ -5669,22 +4859,22 @@
 169 . : “QIAamp”<br>
 170 . : “QIAamp”<br>
 171 . : “QIAamp”<br>
-172 . : ""<br>
+172 . : “QIAamp”<br>
 173 . : “QIAamp”<br>
 174 . : “QIAamp”<br>
 175 . : “QIAamp”<br>
 176 . : “QIAamp”<br>
-177 . : ""<br>
+177 . : “QIAamp”<br>
 178 . : “QIAamp”<br>
 179 . : “QIAamp”<br>
 180 . : “QIAamp”<br>
 181 . : “QIAamp”<br>
-182 . : ""<br>
+182 . : “QIAamp”<br>
 183 . : “QIAamp”<br>
 184 . : “QIAamp”<br>
 185 . : “QIAamp”<br>
 186 . : “QIAamp”<br>
-187 . : ""<br>
+187 . : “QIAamp”<br>
 188 . : “QIAamp”<br>
 189 . : “QIAamp”<br>
 190 . : “QIAamp”<br>
@@ -5693,7 +4883,7 @@
 193 . : “QIAamp”<br>
 194 . : “QIAamp”<br>
 195 . : “QIAamp”<br>
-196 . : ""<br>
+196 . : “QIAamp”<br>
 197 . : “QIAamp”<br>
 198 . : “QIAamp”<br>
 199 . : “QIAamp”<br>
@@ -5702,7 +4892,7 @@
 202 . : “QIAamp”<br>
 203 . : “QIAamp”<br>
 204 . : “QIAamp”<br>
-205 . : ""<br>
+205 . : “QIAamp”<br>
 206 . : “QIAamp”<br>
 207 . : “QIAamp”<br>
 208 . : “QIAamp”<br>
@@ -5717,498 +4907,16 @@
 217 . : “QIAamp”<br>
 218 . : “QIAamp”<br>
 219 . : “QIAamp”<br>
-220 . : ""<br>
+220 . : “QIAamp”<br>
 221 . : “QIAamp”<br>
 222 . : “QIAamp”<br>
 223 . : “QIAamp”<br>
 224 . : “QIAamp”<br>
 225 . : “QIAamp”<br>
 226 . : “QIAamp”<br>
-227 . : ""<br>
+227 . : “QIAamp”<br>
 228 . : “QIAamp”<br>
-229 . : “QIAamp”<br>
-230 . : “QIAamp”<br>
-231 . : “QIAamp”<br>
-232 . : “QIAamp”<br>
-233 . : “QIAamp”<br>
-234 . : ""<br>
-235 . : “QIAamp”<br>
-236 . : “QIAamp”<br>
-237 . : “QIAamp”<br>
-238 . : “QIAamp”<br>
-239 . : “QIAamp”<br>
-240 . : “QIAamp”<br>
-241 . : ""<br>
-242 . : “QIAamp”<br>
-243 . : “QIAamp”<br>
-244 . : “QIAamp”<br>
-245 . : “QIAamp”<br>
-246 . : “QIAamp”<br>
-247 . : “QIAamp”<br>
-248 . : “QIAamp”<br>
-249 . : “QIAamp”<br>
-250 . : “QIAamp”<br>
-251 . : “QIAamp”<br>
-252 . : “QIAamp”<br>
-253 . : “QIAamp”<br>
-254 . : “QIAamp”<br>
-255 . : “QIAamp”<br>
-256 . : “QIAamp”<br>
-257 . : “QIAamp”<br>
-258 . : “QIAamp”<br>
-259 . : “QIAamp”<br>
-260 . : “QIAamp”<br>
-261 . : “QIAamp”<br>
-262 . : “QIAamp”<br>
-263 . : “QIAamp”<br>
-264 . : ""<br>
-265 . : “QIAamp”<br>
-266 . : “QIAamp”<br>
-267 . : “QIAamp”<br>
-268 . : “QIAamp”<br>
-269 . : “QIAamp”<br>
-270 . : “QIAamp”<br>
-271 . : “QIAamp”<br>
-272 . : “QIAamp”<br>
-273 . : “QIAamp”<br>
-274 . : “QIAamp”<br>
-275 . : “QIAamp”<br>
-276 . : “QIAamp”<br>
-277 . : “QIAamp”<br>
-278 . : “QIAamp”<br>
-279 . : “QIAamp”<br>
-280 . : “QIAamp”<br>
-281 . : “QIAamp”<br>
-282 . : “QIAamp”<br>
-283 . : “QIAamp”<br>
-284 . : “QIAamp”<br>
-285 . : “QIAamp”<br>
-286 . : “QIAamp”<br>
-287 . : ""<br>
-288 . : “QIAamp”<br>
-289 . : “QIAamp”<br>
-290 . : “QIAamp”<br>
-291 . : “QIAamp”<br>
-292 . : “QIAamp”<br>
-293 . : “QIAamp”<br>
-294 . : “QIAamp”<br>
-295 . : “QIAamp”<br>
-296 . : “QIAamp”<br>
-297 . : “QIAamp”<br>
-298 . : “QIAamp”<br>
-299 . : “QIAamp”<br>
-300 . : “QIAamp”<br>
-301 . : “QIAamp”<br>
-302 . : “QIAamp”<br>
-303 . : “QIAamp”<br>
-304 . : “QIAamp”<br>
-305 . : ""<br>
-306 . : “QIAamp”<br>
-307 . : ""<br>
-308 . : “QIAamp”<br>
-309 . : ""<br>
-310 . : “QIAamp”<br>
-311 . : “QIAamp”<br>
-312 . : “QIAamp”<br>
-313 . : “QIAamp”<br>
-314 . : “QIAamp”<br>
-315 . : “QIAamp”<br>
-316 . : “QIAamp”<br>
-317 . : “QIAamp”<br>
-318 . : “QIAamp”<br>
-319 . : “QIAamp”<br>
-320 . : “QIAamp”</p>
-</div>
-<div class="section level4">
-<h4 id="number_reads">number_reads<a class="anchor" aria-label="anchor" href="#number_reads"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: integer<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : “NA”<br>
-15 . : “NA”<br>
-21 . : “NA”<br>
-38 . : “NA”<br>
-40 . : “NA”<br>
-42 . : “NA”<br>
-59 . : “NA”<br>
-64 . : “NA”<br>
-69 . : “NA”<br>
-80 . : “NA”<br>
-86 . : “NA”<br>
-92 . : “NA”<br>
-140 . : “NA”<br>
-142 . : “NA”<br>
-144 . : “NA”<br>
-159 . : “NA”<br>
-161 . : “NA”<br>
-163 . : “NA”<br>
-172 . : “NA”<br>
-177 . : “NA”<br>
-182 . : “NA”<br>
-187 . : “NA”<br>
-196 . : “NA”<br>
-205 . : “NA”<br>
-220 . : “NA”<br>
-227 . : “NA”<br>
-234 . : “NA”<br>
-241 . : “NA”<br>
-264 . : “NA”<br>
-287 . : “NA”<br>
-305 . : “NA”<br>
-307 . : “NA”<br>
-309 . : “NA”</p>
-</div>
-<div class="section level4">
-<h4 id="number_bases">number_bases<a class="anchor" aria-label="anchor" href="#number_bases"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: double<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : “NA”<br>
-15 . : “NA”<br>
-21 . : “NA”<br>
-38 . : “NA”<br>
-40 . : “NA”<br>
-42 . : “NA”<br>
-59 . : “NA”<br>
-64 . : “NA”<br>
-69 . : “NA”<br>
-80 . : “NA”<br>
-86 . : “NA”<br>
-92 . : “NA”<br>
-140 . : “NA”<br>
-142 . : “NA”<br>
-144 . : “NA”<br>
-159 . : “NA”<br>
-161 . : “NA”<br>
-163 . : “NA”<br>
-172 . : “NA”<br>
-177 . : “NA”<br>
-182 . : “NA”<br>
-187 . : “NA”<br>
-196 . : “NA”<br>
-205 . : “NA”<br>
-220 . : “NA”<br>
-227 . : “NA”<br>
-234 . : “NA”<br>
-241 . : “NA”<br>
-264 . : “NA”<br>
-287 . : “NA”<br>
-305 . : “NA”<br>
-307 . : “NA”<br>
-309 . : “NA”</p>
-</div>
-<div class="section level4">
-<h4 id="minimum_read_length">minimum_read_length<a class="anchor" aria-label="anchor" href="#minimum_read_length"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: integer<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : “NA”<br>
-15 . : “NA”<br>
-21 . : “NA”<br>
-38 . : “NA”<br>
-40 . : “NA”<br>
-42 . : “NA”<br>
-59 . : “NA”<br>
-64 . : “NA”<br>
-69 . : “NA”<br>
-80 . : “NA”<br>
-86 . : “NA”<br>
-92 . : “NA”<br>
-140 . : “NA”<br>
-142 . : “NA”<br>
-144 . : “NA”<br>
-159 . : “NA”<br>
-161 . : “NA”<br>
-163 . : “NA”<br>
-172 . : “NA”<br>
-177 . : “NA”<br>
-182 . : “NA”<br>
-187 . : “NA”<br>
-196 . : “NA”<br>
-205 . : “NA”<br>
-220 . : “NA”<br>
-227 . : “NA”<br>
-234 . : “NA”<br>
-241 . : “NA”<br>
-264 . : “NA”<br>
-287 . : “NA”<br>
-305 . : “NA”<br>
-307 . : “NA”<br>
-309 . : “NA”</p>
-</div>
-<div class="section level4">
-<h4 id="median_read_length">median_read_length<a class="anchor" aria-label="anchor" href="#median_read_length"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: integer<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : “NA”<br>
-15 . : “NA”<br>
-21 . : “NA”<br>
-38 . : “NA”<br>
-40 . : “NA”<br>
-42 . : “NA”<br>
-59 . : “NA”<br>
-64 . : “NA”<br>
-69 . : “NA”<br>
-80 . : “NA”<br>
-86 . : “NA”<br>
-92 . : “NA”<br>
-140 . : “NA”<br>
-142 . : “NA”<br>
-144 . : “NA”<br>
-159 . : “NA”<br>
-161 . : “NA”<br>
-163 . : “NA”<br>
-172 . : “NA”<br>
-177 . : “NA”<br>
-182 . : “NA”<br>
-187 . : “NA”<br>
-196 . : “NA”<br>
-205 . : “NA”<br>
-220 . : “NA”<br>
-227 . : “NA”<br>
-234 . : “NA”<br>
-241 . : “NA”<br>
-264 . : “NA”<br>
-287 . : “NA”<br>
-305 . : “NA”<br>
-307 . : “NA”<br>
-309 . : “NA”</p>
-</div>
-<div class="section level4">
-<h4 id="ncbi_accession">NCBI_accession<a class="anchor" aria-label="anchor" href="#ncbi_accession"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [ES]R[SR][0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-10 . : “SRR2566049”<br>
-11 . : “SRR2566060”<br>
-12 . : “SRR2565535”<br>
-13 . : “SRR2565546”<br>
-14 . : “SRR2565557”<br>
-15 . : ""<br>
-16 . : “SRR2566049”<br>
-17 . : “SRR2566060”<br>
-18 . : “SRR2565535”<br>
-19 . : “SRR2565546”<br>
-20 . : “SRR2565557”<br>
-21 . : ""<br>
-38 . : ""<br>
-39 . : “SRR2565991”<br>
-40 . : ""<br>
-41 . : “SRR2565991”<br>
-42 . : ""<br>
-59 . : ""<br>
-60 . : “SRR2566010”<br>
-61 . : “SRR2566011”<br>
-62 . : “SRR2566012”<br>
-63 . : “SRR2566013”<br>
-64 . : ""<br>
-65 . : “SRR2566010”<br>
-66 . : “SRR2566011”<br>
-67 . : “SRR2566012”<br>
-68 . : “SRR2566013”<br>
-69 . : ""<br>
-80 . : ""<br>
-81 . : “SRR2566027”<br>
-82 . : “SRR2566028”<br>
-83 . : “SRR2566029”<br>
-84 . : “SRR2566030”<br>
-85 . : “SRR2583969;SRR2583981”<br>
-86 . : ""<br>
-87 . : “SRR2566027”<br>
-88 . : “SRR2566028”<br>
-89 . : “SRR2566029”<br>
-90 . : “SRR2566030”<br>
-91 . : “SRR2583969;SRR2583981”<br>
-92 . : ""<br>
-140 . : ""<br>
-141 . : “SRR2565549”<br>
-142 . : ""<br>
-143 . : “SRR2565549”<br>
-144 . : ""<br>
-159 . : ""<br>
-160 . : “SRR2565742”<br>
-161 . : ""<br>
-162 . : “SRR2565742”<br>
-163 . : ""<br>
-172 . : ""<br>
-173 . : “SRR2583971;SRR2583983”<br>
-174 . : “SRR2565717”<br>
-175 . : “SRR2565770”<br>
-176 . : “SRR2565790”<br>
-177 . : ""<br>
-178 . : “SRR2583971;SRR2583983”<br>
-179 . : “SRR2565717”<br>
-180 . : “SRR2565770”<br>
-181 . : “SRR2565790”<br>
-182 . : ""<br>
-187 . : ""<br>
-188 . : “SRR2565816”<br>
-189 . : “SRR2565817”<br>
-190 . : “SRR2565818”<br>
-191 . : “SRR2565819”<br>
-192 . : “SRR2583972;SRR2583984”<br>
-193 . : “SRR2583973;SRR2583985”<br>
-194 . : “SRR2565824”<br>
-195 . : “SRR2565825”<br>
-196 . : ""<br>
-197 . : “SRR2565816”<br>
-198 . : “SRR2565817”<br>
-199 . : “SRR2565818”<br>
-200 . : “SRR2565819”<br>
-201 . : “SRR2583972;SRR2583984”<br>
-202 . : “SRR2583973;SRR2583985”<br>
-203 . : “SRR2565824”<br>
-204 . : “SRR2565825”<br>
-205 . : ""<br>
-220 . : ""<br>
-221 . : “SRR2565841”<br>
-222 . : “SRR2565842”<br>
-223 . : “SRR2565843”<br>
-224 . : “SRR2565844”<br>
-225 . : “SRR2565846”<br>
-226 . : “SRR2565847”<br>
-227 . : ""<br>
-228 . : “SRR2565841”<br>
-229 . : “SRR2565842”<br>
-230 . : “SRR2565843”<br>
-231 . : “SRR2565844”<br>
-232 . : “SRR2565846”<br>
-233 . : “SRR2565847”<br>
-234 . : ""<br>
-241 . : ""<br>
-242 . : “SRR2565925”<br>
-243 . : “SRR2565926”<br>
-244 . : “SRR2565928”<br>
-245 . : “SRR2565929”<br>
-246 . : “SRR2565930”<br>
-247 . : “SRR2565931”<br>
-248 . : “SRR2565932”<br>
-249 . : “SRR2565933”<br>
-250 . : “SRR2565934”<br>
-251 . : “SRR2565935”<br>
-252 . : “SRR2565936”<br>
-253 . : “SRR2565937”<br>
-254 . : “SRR2565939”<br>
-255 . : “SRR2565941”<br>
-256 . : “SRR2565942”<br>
-257 . : “SRR2565943”<br>
-258 . : “SRR2565944”<br>
-259 . : “SRR2565945”<br>
-260 . : “SRR2565946”<br>
-261 . : “SRR2565947”<br>
-262 . : “SRR2583974;SRR2583986”<br>
-263 . : “SRR2565949”<br>
-264 . : ""<br>
-265 . : “SRR2565925”<br>
-266 . : “SRR2565926”<br>
-267 . : “SRR2565928”<br>
-268 . : “SRR2565929”<br>
-269 . : “SRR2565930”<br>
-270 . : “SRR2565931”<br>
-271 . : “SRR2565932”<br>
-272 . : “SRR2565933”<br>
-273 . : “SRR2565934”<br>
-274 . : “SRR2565935”<br>
-275 . : “SRR2565936”<br>
-276 . : “SRR2565937”<br>
-277 . : “SRR2565939”<br>
-278 . : “SRR2565941”<br>
-279 . : “SRR2565942”<br>
-280 . : “SRR2565943”<br>
-281 . : “SRR2565944”<br>
-282 . : “SRR2565945”<br>
-283 . : “SRR2565946”<br>
-284 . : “SRR2565947”<br>
-285 . : “SRR2583974;SRR2583986”<br>
-286 . : “SRR2565949”<br>
-287 . : ""<br>
-305 . : ""<br>
-306 . : “SRR2565971”<br>
-307 . : ""<br>
-308 . : “SRR2565971”<br>
-309 . : ""</p>
+229 . : “QIAamp”</p>
 </div>
 <div class="section level4">
 <h4 id="treatment-4">treatment<a class="anchor" aria-label="anchor" href="#treatment-4"></a>
@@ -6232,111 +4940,21 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>2 . : “opioids;laxatives”<br>
-9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-30 . : “opioids;laxatives”<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-103 . : “opioids;laxatives”<br>
-110 . : “opioids”<br>
-111 . : “opioids”<br>
-126 . : “laxatives”<br>
-127 . : “laxatives”<br>
-128 . : “laxatives”<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-206 . : “opioids”<br>
-207 . : “opioids;laxatives”<br>
-214 . : “opioids”<br>
-215 . : “opioids”<br>
-220 . : ""<br>
-221 . : “antineoplastics”<br>
-227 . : ""<br>
-228 . : “antineoplastics”<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-306 . : “antineoplastics”<br>
-307 . : ""<br>
-308 . : “antineoplastics”<br>
-309 . : ""<br>
-310 . : “antineoplastics”<br>
-311 . : “antineoplastics”</p>
-</div>
-<div class="section level4">
-<h4 id="curator">curator<a class="anchor" aria-label="anchor" href="#curator"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Anna_Pedrotti;Paolo_Manghi|Mireia_VallesColomer|Andrew_Malthez_Thomas|Andrea_Zen</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>9 . : ""<br>
-15 . : ""<br>
-21 . : ""<br>
-38 . : ""<br>
-40 . : ""<br>
-42 . : ""<br>
-59 . : ""<br>
-64 . : ""<br>
-69 . : ""<br>
-80 . : ""<br>
-86 . : ""<br>
-92 . : ""<br>
-140 . : ""<br>
-142 . : ""<br>
-144 . : ""<br>
-159 . : ""<br>
-161 . : ""<br>
-163 . : ""<br>
-172 . : ""<br>
-177 . : ""<br>
-182 . : ""<br>
-187 . : ""<br>
-196 . : ""<br>
-205 . : ""<br>
-220 . : ""<br>
-227 . : ""<br>
-234 . : ""<br>
-241 . : ""<br>
-264 . : ""<br>
-287 . : ""<br>
-305 . : ""<br>
-307 . : ""<br>
-309 . : ""</p>
+22 . : “opioids;laxatives”<br>
+76 . : “opioids;laxatives”<br>
+83 . : “opioids”<br>
+84 . : “opioids”<br>
+99 . : “laxatives”<br>
+100 . : “laxatives”<br>
+101 . : “laxatives”<br>
+153 . : “opioids”<br>
+154 . : “opioids;laxatives”<br>
+161 . : “opioids”<br>
+162 . : “opioids”<br>
+167 . : “antineoplastics”<br>
+218 . : “antineoplastics”<br>
+219 . : “antineoplastics”<br>
+220 . : “antineoplastics”</p>
 </div>
 </div>
 </div>
