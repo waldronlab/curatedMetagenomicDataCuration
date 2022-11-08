@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-11-08 13:29:18 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-11-08 13:30:02 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4669,29 +4669,6 @@
 18 . : “MM008.2 MM008”</p>
 </div>
 <div class="section level4">
-<h4 id="subject_id-1">subject_id<a class="anchor" aria-label="anchor" href="#subject_id-1"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9a-zA-Z]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>14 . : “stool yes cephalosporins control healthy 78 senior male CAN no”</p>
-</div>
-<div class="section level4">
 <h4 id="body_site">body_site<a class="anchor" aria-label="anchor" href="#body_site"></a>
 </h4>
 <p><strong>Template definition</strong></p>
@@ -4712,8 +4689,7 @@
 <em>allowedvalues</em>: stool|skin|vagina|oralcavity|nasalcavity|lung|milk</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>13 . : “stool no NA control healthy 66 senior female CAN no 4 IlluminaHiSeq QIAamp 26975510 15717746 2357661900 150 150 no SRR2565557 Paolo_Manghi;Andrea_Zen”<br>
-14 . : “0 IlluminaHiSeq QIAamp”<br>
+<p>14 . : “yes cephalosporins control healthy 78 senior male CAN no”<br>
 15 . : “yes”<br>
 16 . : “yes”<br>
 17 . : “yes”<br>
@@ -4740,8 +4716,8 @@
 <em>allowedvalues</em>: yes|no</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>13 . : ""<br>
-14 . : “26975510”<br>
+<p>13 . : “no NA control healthy 66 senior female CAN no 4 IlluminaHiSeq QIAamp 26975510 15717746 2357661900 150 150 no SRR2565557 Paolo_Manghi;Andrea_Zen”<br>
+14 . : “0 IlluminaHiSeq QIAamp”<br>
 15 . : “cephalosporins”<br>
 16 . : “cephalosporins”<br>
 17 . : “cephalosporins”<br>
@@ -4770,7 +4746,7 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>13 . : ""<br>
-14 . : “12840247”<br>
+14 . : “26975510”<br>
 15 . : “control”<br>
 16 . : “control”<br>
 17 . : “control”<br>
@@ -4803,7 +4779,7 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>13 . : ""<br>
-14 . : “1926037050”<br>
+14 . : “12840247”<br>
 15 . : “healthy”<br>
 16 . : “healthy”<br>
 17 . : “healthy”<br>
@@ -4832,7 +4808,7 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>13 . : ""<br>
-14 . : “150”<br>
+14 . : “1926037050”<br>
 15 . : “78”<br>
 16 . : “79”<br>
 17 . : “84”<br>
@@ -4889,7 +4865,7 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>13 . : ""<br>
-14 . : “no”<br>
+14 . : “150”<br>
 15 . : “male”<br>
 16 . : “female”<br>
 17 . : “male”<br>
@@ -4918,7 +4894,7 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>13 . : ""<br>
-14 . : “SRR2565647”<br>
+14 . : “no”<br>
 15 . : “CAN”<br>
 16 . : “CAN”<br>
 17 . : “CAN”<br>
@@ -4947,7 +4923,7 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>13 . : ""<br>
-14 . : “Paolo_Manghi;Andrea_Zen”<br>
+14 . : “SRR2565647”<br>
 15 . : “no”<br>
 16 . : “no”<br>
 17 . : “no”<br>
@@ -4976,7 +4952,7 @@
 </ul>
 <p><strong>Errors</strong></p>
 <p>13 . : ""<br>
-14 . : ""<br>
+14 . : “Paolo_Manghi;Andrea_Zen”<br>
 15 . : “1”<br>
 16 . : “0”<br>
 17 . : “0”<br>
