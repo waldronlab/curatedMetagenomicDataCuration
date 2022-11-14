@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2022-11-14 11:46:51 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2022-11-14 11:53:41 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -686,90 +686,45 @@
 <p><strong>Errors</strong></p>
 <p>1 . : “0”<br>
 2 . : “0”<br>
-3 . : “1”<br>
-4 . : “4”<br>
 5 . : “0”<br>
 6 . : “0”<br>
 7 . : “0”<br>
 8 . : “0”<br>
 9 . : “0”<br>
 10 . : “0”<br>
-11 . : “4”<br>
-12 . : “3”<br>
-13 . : “2”<br>
+12 . : “III”<br>
 14 . : “0”<br>
-15 . : “3”<br>
-16 . : “1”<br>
+15 . : “III”<br>
 17 . : “0”<br>
 18 . : “0”<br>
-19 . : “2”<br>
 20 . : “0”<br>
 21 . : “0”<br>
-22 . : “1”<br>
-23 . : “1”<br>
-24 . : “1”<br>
-25 . : “4”<br>
-26 . : “2”<br>
-27 . : “1”<br>
-28 . : “4”<br>
-29 . : “4”<br>
-30 . : “2”<br>
 31 . : “0”<br>
-32 . : “2”<br>
-33 . : “1”<br>
-34 . : “1”<br>
 35 . : “0”<br>
-36 . : “4”<br>
 37 . : “0”<br>
 38 . : “0”<br>
 39 . : “0”<br>
 40 . : “0”<br>
-41 . : “1”<br>
-42 . : “3”<br>
-43 . : “1”<br>
+42 . : “III”<br>
 44 . : “0”<br>
 45 . : “0”<br>
-46 . : “1”<br>
-47 . : “4”<br>
-48 . : “1”<br>
-49 . : “3”<br>
+49 . : “III”<br>
 50 . : “0”<br>
-51 . : “1”<br>
 52 . : “0”<br>
-53 . : “3”<br>
+53 . : “III”<br>
 54 . : “0”<br>
-55 . : “1”<br>
-56 . : “1”<br>
-57 . : “1”<br>
-58 . : “2”<br>
-59 . : “2”<br>
-60 . : “1”<br>
-61 . : “1”<br>
 62 . : “0”<br>
-63 . : “2”<br>
-64 . : “4”<br>
 65 . : “0”<br>
-66 . : “4”<br>
-67 . : “1”<br>
 68 . : “0”<br>
 69 . : “0”<br>
-70 . : “1”<br>
-71 . : “1”<br>
-72 . : “1”<br>
 73 . : “0”<br>
-74 . : “1”<br>
 75 . : “0”<br>
 76 . : “0”<br>
 77 . : “0”<br>
-78 . : “1”<br>
 79 . : “0”<br>
-80 . : “1”<br>
-81 . : “1”<br>
 82 . : “0”<br>
 83 . : “0”<br>
-84 . : “2”<br>
-85 . : “0”<br>
-86 . : “1”</p>
+85 . : “0”</p>
 </div>
 </div>
 </div>
