@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-02 19:45:18 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-02 20:34:33 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -5628,6 +5628,347 @@
 <p>All checks OK.</p>
 </div>
 <div class="section level2">
+<h2 id="xuq_2021_metadata-tsv">XuQ_2021_metadata.tsv<a class="anchor" aria-label="anchor" href="#xuq_2021_metadata-tsv"></a>
+</h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/XuQ_2021/XuQ_2021_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/XuQ_2021/XuQ_2021_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
+<div class="section level3">
+<h3 id="column-name-errors-8">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-8"></a>
+</h3>
+<ul>
+<li><p>“HDL” is not defined in the template.</p></li>
+<li><p>“LDL” is not defined in the template.</p></li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="entry-errors-10">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-10"></a>
+</h3>
+<div class="section level4">
+<h4 id="subject_id-1">subject_id<a class="anchor" aria-label="anchor" href="#subject_id-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: [0-9a-zA-Z]+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : ""</p>
+</div>
+<div class="section level4">
+<h4 id="country-1">country<a class="anchor" aria-label="anchor" href="#country-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : ""</p>
+</div>
+<div class="section level4">
+<h4 id="location">location<a class="anchor" aria-label="anchor" href="#location"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: .+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : ""</p>
+</div>
+<div class="section level4">
+<h4 id="non_westernized">non_westernized<a class="anchor" aria-label="anchor" href="#non_westernized"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: yes|no</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : ""</p>
+</div>
+<div class="section level4">
+<h4 id="number_reads">number_reads<a class="anchor" aria-label="anchor" href="#number_reads"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: [0-9]+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : “NA”</p>
+</div>
+<div class="section level4">
+<h4 id="number_bases">number_bases<a class="anchor" aria-label="anchor" href="#number_bases"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: double<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: [0-9]+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : “NA”</p>
+</div>
+<div class="section level4">
+<h4 id="minimum_read_length">minimum_read_length<a class="anchor" aria-label="anchor" href="#minimum_read_length"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: [0-9]+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : “NA”</p>
+</div>
+<div class="section level4">
+<h4 id="median_read_length">median_read_length<a class="anchor" aria-label="anchor" href="#median_read_length"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: integer<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: [0-9]+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : “NA”</p>
+</div>
+<div class="section level4">
+<h4 id="family">family<a class="anchor" aria-label="anchor" href="#family"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: .+</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>331 . : ""</p>
+</div>
+<div class="section level4">
+<h4 id="treatment-3">treatment<a class="anchor" aria-label="anchor" href="#treatment-3"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>4 . : “antihypertensive”<br>
+7 . : “antihypertensive”<br>
+8 . : “antihypertensive”<br>
+9 . : “antihypertensive”<br>
+11 . : “antihypertensive”<br>
+12 . : “antihypertensive”<br>
+23 . : “antihypertensive”<br>
+27 . : “antihypertensive”<br>
+29 . : “antihypertensive”<br>
+30 . : “antihypertensive”<br>
+37 . : “antihypertensive”<br>
+38 . : “antihypertensive”<br>
+45 . : “antihypertensive”<br>
+47 . : “antihypertensive”<br>
+48 . : “antihypertensive”<br>
+51 . : “antihypertensive”<br>
+58 . : “antihypertensive”<br>
+66 . : “antihypertensive”<br>
+67 . : “antihypertensive”<br>
+74 . : “antihypertensive”<br>
+79 . : “antihypertensive”<br>
+81 . : “antihypertensive”<br>
+96 . : “antihypertensive”<br>
+97 . : “antihypertensive”<br>
+98 . : “antihypertensive”<br>
+99 . : “antihypertensive”<br>
+101 . : “antihypertensive”<br>
+103 . : “antihypertensive”<br>
+104 . : “antihypertensive”<br>
+108 . : “antihypertensive”<br>
+112 . : “antihypertensive”<br>
+117 . : “antihypertensive”<br>
+120 . : “antihypertensive”<br>
+121 . : “antihypertensive”<br>
+126 . : “antihypertensive”<br>
+128 . : “antihypertensive”<br>
+130 . : “antihypertensive”<br>
+145 . : “antihypertensive”<br>
+148 . : “antihypertensive”<br>
+153 . : “antihypertensive”<br>
+155 . : “antihypertensive”<br>
+159 . : “antihypertensive”<br>
+165 . : “antihypertensive”<br>
+166 . : “antihypertensive”<br>
+170 . : “antihypertensive”<br>
+172 . : “antihypertensive”<br>
+173 . : “antihypertensive”<br>
+174 . : “antihypertensive”<br>
+175 . : “antihypertensive”<br>
+179 . : “antihypertensive”<br>
+180 . : “antihypertensive”<br>
+185 . : “antihypertensive”<br>
+186 . : “antihypertensive”<br>
+187 . : “antihypertensive”<br>
+190 . : “antihypertensive”<br>
+199 . : “antihypertensive”<br>
+206 . : “antihypertensive”<br>
+207 . : “antihypertensive”<br>
+208 . : “antihypertensive”<br>
+210 . : “antihypertensive”<br>
+214 . : “antihypertensive”<br>
+215 . : “antihypertensive”<br>
+221 . : “antihypertensive”<br>
+223 . : “antihypertensive”<br>
+225 . : “antihypertensive”<br>
+228 . : “antihypertensive”<br>
+229 . : “antihypertensive”<br>
+237 . : “antihypertensive”<br>
+241 . : “antihypertensive”<br>
+246 . : “antihypertensive”<br>
+249 . : “antihypertensive”<br>
+257 . : “antihypertensive”<br>
+261 . : “antihypertensive”<br>
+265 . : “antihypertensive”<br>
+268 . : “antihypertensive”<br>
+272 . : “antihypertensive”<br>
+274 . : “antihypertensive”<br>
+275 . : “antihypertensive”<br>
+276 . : “antihypertensive”<br>
+277 . : “antihypertensive”<br>
+281 . : “antihypertensive”<br>
+282 . : “antihypertensive”<br>
+293 . : “antihypertensive”<br>
+295 . : “antihypertensive”<br>
+296 . : “antihypertensive”<br>
+302 . : “antihypertensive”<br>
+309 . : “antihypertensive”<br>
+316 . : “antihypertensive”<br>
+321 . : “antihypertensive”<br>
+328 . : “antihypertensive”<br>
+329 . : “antihypertensive”<br>
+336 . : “antihypertensive”<br>
+338 . : “antihypertensive”<br>
+339 . : “antihypertensive”<br>
+343 . : “antihypertensive”</p>
+</div>
+</div>
+</div>
+<div class="section level2">
 <h2 id="yachidas_2019_metadata-tsv">YachidaS_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#yachidas_2019_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
@@ -5674,7 +6015,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-10">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-10"></a>
+<h3 id="entry-errors-11">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-11"></a>
 </h3>
 <div class="section level4">
 <h4 id="study_condition-3">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-3"></a>
