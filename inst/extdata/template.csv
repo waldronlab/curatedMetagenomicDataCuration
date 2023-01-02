@@ -83,7 +83,7 @@ glutamate_decarboxylase_2_antibody,double,non-unique,optional,FALSE,[0-9]+\.?[0-
 creatinine,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
 creatine,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Curators must use micro-mol/l.
 albumine,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Albumine level; curators must use g/l.
-bilubirin,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Bilubirin; curators must use mg/dl.
+bilirubin,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Bilirubin; curators must use mg/dl.
 prothrombin_time,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Prothrombin time in seconds.
 dyastolic_p,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Measured in mm/Hg.
 systolic_p,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Measured in mm/Hg.
