@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-02 16:51:37 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-02 17:02:32 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4517,11 +4517,6 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Valles-ColomerM_2023/Valles-ColomerM_2023_a_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Valles-ColomerM_2023/Valles-ColomerM_2023_a_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="required-columns-that-are-missing-2">Required columns that are missing<a class="anchor" aria-label="anchor" href="#required-columns-that-are-missing-2"></a>
-</h3>
-<p>curator</p>
-</div>
-<div class="section level3">
 <h3 id="column-name-errors-5">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-5"></a>
 </h3>
 <ul>
@@ -5088,6 +5083,84 @@
 522 . : “IlluminaNoveSeq”<br>
 523 . : “IlluminaNoveSeq”<br>
 524 . : “IlluminaNoveSeq”</p>
+</div>
+<div class="section level4">
+<h4 id="curator">curator<a class="anchor" aria-label="anchor" href="#curator"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: Paolo_Manghi|Valentina_Giunchiglia|Pamela_Ferretti|Marisa_Metzger|Giacomo_DAmato|Jacob_Wirbel|Arianna_Bonetti|Anna_Pedrotti|Francesca_DeFilippis|Aitor_Blanco_Miguez|Arianna_Bonetti;Anna_Pedrotti|Francesco_Asnicar;Paolo_Manghi|Ilya_Likhotkin;Paolo_Manghi|Aitor_Blanco_Miguez;Paolo_Manghi|Giacomo_Damato;Paolo_Manghi|Anna_Pedrotti;Paolo_Manghi|Mireia_VallesColomer|Andrew_Malthez_Thomas|Andrea_Zen</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>469 . : “NA”<br>
+470 . : “NA”<br>
+471 . : “NA”<br>
+472 . : “NA”<br>
+473 . : “NA”<br>
+474 . : “NA”<br>
+475 . : “NA”<br>
+476 . : “NA”<br>
+477 . : “NA”<br>
+478 . : “NA”<br>
+479 . : “NA”<br>
+480 . : “NA”<br>
+481 . : “NA”<br>
+482 . : “NA”<br>
+483 . : “NA”<br>
+484 . : “NA”<br>
+485 . : “NA”<br>
+486 . : “NA”<br>
+487 . : “NA”<br>
+488 . : “NA”<br>
+489 . : “NA”<br>
+490 . : “NA”<br>
+491 . : “NA”<br>
+492 . : “NA”<br>
+493 . : “NA”<br>
+494 . : “NA”<br>
+495 . : “NA”<br>
+496 . : “NA”<br>
+497 . : “NA”<br>
+498 . : “NA”<br>
+499 . : “NA”<br>
+500 . : “NA”<br>
+501 . : “NA”<br>
+502 . : “NA”<br>
+503 . : “NA”<br>
+504 . : “NA”<br>
+505 . : “NA”<br>
+506 . : “NA”<br>
+507 . : “NA”<br>
+508 . : “NA”<br>
+509 . : “NA”<br>
+510 . : “NA”<br>
+511 . : “NA”<br>
+512 . : “NA”<br>
+513 . : “NA”<br>
+514 . : “NA”<br>
+515 . : “NA”<br>
+516 . : “NA”<br>
+517 . : “NA”<br>
+518 . : “NA”<br>
+519 . : “NA”<br>
+520 . : “NA”<br>
+521 . : “NA”<br>
+522 . : “NA”<br>
+523 . : “NA”<br>
+524 . : “NA”</p>
 </div>
 </div>
 </div>
