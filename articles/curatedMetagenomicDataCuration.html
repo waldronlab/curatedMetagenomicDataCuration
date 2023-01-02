@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-02 17:47:54 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-02 19:28:43 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4520,7 +4520,6 @@
 <h3 id="column-name-errors-5">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-5"></a>
 </h3>
 <ul>
-<li><p>“mode_delivery” is not defined in the template.</p></li>
 <li><p>“zygosity” is not defined in the template.</p></li>
 <li><p>“bristol_scale” is not defined in the template.</p></li>
 </ul>
@@ -5083,6 +5082,86 @@
 522 . : “IlluminaNoveSeq”<br>
 523 . : “IlluminaNoveSeq”<br>
 524 . : “IlluminaNoveSeq”</p>
+</div>
+<div class="section level4">
+<h4 id="born_method">born_method<a class="anchor" aria-label="anchor" href="#born_method"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: c_section|vaginal</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>4 . : “C_section”<br>
+8 . : “C_section”<br>
+17 . : “C_section”<br>
+20 . : “C_section”<br>
+26 . : “C_section”<br>
+28 . : “C_section”<br>
+32 . : “C_section”<br>
+41 . : “C_section”<br>
+45 . : “C_section”<br>
+46 . : “C_section”<br>
+50 . : “C_section”<br>
+65 . : “C_section”<br>
+69 . : “C_section”<br>
+71 . : “C_section”<br>
+421 . : “C_section”<br>
+422 . : “C_section”<br>
+423 . : “C_section”<br>
+424 . : “C_section”<br>
+425 . : “C_section”<br>
+426 . : “C_section”<br>
+427 . : “C_section”<br>
+428 . : “C_section”<br>
+429 . : “C_section”<br>
+456 . : “C_section”<br>
+457 . : “C_section”<br>
+458 . : “C_section”<br>
+459 . : “C_section”<br>
+460 . : “C_section”<br>
+461 . : “C_section”<br>
+462 . : “C_section”<br>
+463 . : “C_section”<br>
+464 . : “C_section”<br>
+465 . : “C_section”<br>
+466 . : “C_section”<br>
+467 . : “C_section”<br>
+471 . : “C_section”<br>
+472 . : “C_section”<br>
+477 . : “C_section”<br>
+482 . : “C_section”<br>
+483 . : “C_section”<br>
+485 . : “C_section”<br>
+486 . : “C_section”<br>
+487 . : “C_section”<br>
+488 . : “C_section”<br>
+489 . : “C_section”<br>
+493 . : “C_section”<br>
+494 . : “C_section”<br>
+499 . : “C_section”<br>
+500 . : “C_section”<br>
+502 . : “C_section”<br>
+508 . : “C_section”<br>
+509 . : “C_section”<br>
+510 . : “C_section”<br>
+513 . : “C_section”<br>
+517 . : “C_section”<br>
+518 . : “C_section”<br>
+522 . : “C_section”<br>
+523 . : “C_section”</p>
 </div>
 <div class="section level4">
 <h4 id="curator">curator<a class="anchor" aria-label="anchor" href="#curator"></a>
