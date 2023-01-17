@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-17 10:20:25 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-17 10:23:52 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -301,62 +301,7 @@
 <h2 id="guptaa_2019_metadata-tsv">GuptaA_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#guptaa_2019_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/GuptaA_2019/GuptaA_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
-</h3>
-<div class="section level4">
-<h4 id="disease_location">disease_location<a class="anchor" aria-label="anchor" href="#disease_location"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: right_sided|left_sided|transverse</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “rectum”<br>
-2 . : “colon”<br>
-3 . : “colon”<br>
-4 . : “rectum”<br>
-5 . : “rectum”<br>
-6 . : “sigmoid colon”<br>
-7 . : “colon”<br>
-8 . : “sigmoid colon”<br>
-9 . : “sigmoid colon”<br>
-10 . : “rectum”<br>
-11 . : “colon”<br>
-12 . : “rectum”<br>
-13 . : “colon”<br>
-14 . : “sigmoid colon”<br>
-15 . : “rectum”<br>
-16 . : “rectum”<br>
-17 . : “rectum”<br>
-18 . : “rectum”<br>
-19 . : “rectum”<br>
-20 . : “colon”<br>
-21 . : “colon”<br>
-22 . : “colon”<br>
-23 . : “rectum”<br>
-24 . : “rectum”<br>
-25 . : “sigmoid colon”<br>
-26 . : “colon”<br>
-27 . : “rectum”<br>
-28 . : “sigmoid colon”<br>
-29 . : “rectum”<br>
-30 . : “rectum”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="hallab_2017_metadata-tsv">HallAB_2017_metadata.tsv<a class="anchor" aria-label="anchor" href="#hallab_2017_metadata-tsv"></a>
@@ -430,7 +375,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
+<h3 id="entry-errors-1">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-1"></a>
 </h3>
 <div class="section level4">
 <h4 id="subject_id">subject_id<a class="anchor" aria-label="anchor" href="#subject_id"></a>
@@ -592,10 +537,10 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/IjazUZ_2017/IjazUZ_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/IjazUZ_2017/IjazUZ_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
 </h3>
 <div class="section level4">
-<h4 id="disease_location-1">disease_location<a class="anchor" aria-label="anchor" href="#disease_location-1"></a>
+<h4 id="disease_location">disease_location<a class="anchor" aria-label="anchor" href="#disease_location"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -612,7 +557,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: right_sided|left_sided|transverse</li>
+<em>allowedvalues</em>: right_sided|left_sided|transverse|sigmoid_colon|colon|rectum</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . : “L3”<br>
@@ -679,7 +624,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/JieZ_2017/JieZ_2017_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
 <div class="section level4">
 <h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
@@ -834,7 +779,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
 </h3>
 <div class="section level4">
 <h4 id="ajcc">ajcc<a class="anchor" aria-label="anchor" href="#ajcc"></a>
@@ -982,7 +927,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease-2">disease<a class="anchor" aria-label="anchor" href="#disease-2"></a>
@@ -3791,7 +3736,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
 <h4 id="antibiotics_current_use">antibiotics_current_use<a class="anchor" aria-label="anchor" href="#antibiotics_current_use"></a>
@@ -4448,7 +4393,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
+<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
 </h3>
 <div class="section level4">
 <h4 id="antibiotics_family">antibiotics_family<a class="anchor" aria-label="anchor" href="#antibiotics_family"></a>
@@ -4816,7 +4761,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-9">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-9"></a>
+<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
 </h3>
 <div class="section level4">
 <h4 id="age">age<a class="anchor" aria-label="anchor" href="#age"></a>
@@ -4967,290 +4912,7 @@
 <h2 id="yachidas_2019_metadata-tsv">YachidaS_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#yachidas_2019_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YachidaS_2019/YachidaS_2019_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-10">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-10"></a>
-</h3>
-<div class="section level4">
-<h4 id="disease_location-2">disease_location<a class="anchor" aria-label="anchor" href="#disease_location-2"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: right_sided|left_sided|transverse</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “left_colon”<br>
-6 . : “rectum”<br>
-13 . : “left_colon”<br>
-16 . : “left_colon”<br>
-18 . : “rectum”<br>
-22 . : “right_colon”<br>
-23 . : “left_colon”<br>
-24 . : “left_colon”<br>
-29 . : “right_colon”<br>
-32 . : “left_colon”<br>
-35 . : “left_colon”<br>
-36 . : “rectum”<br>
-38 . : “rectum”<br>
-46 . : “left_colon”<br>
-47 . : “left_colon”<br>
-49 . : “rectum”<br>
-50 . : “rectum”<br>
-52 . : “rectum”<br>
-55 . : “right_colon”<br>
-57 . : “left_colon”<br>
-60 . : “right_colon”<br>
-61 . : “left_colon”<br>
-64 . : “left_colon_and_right_colon”<br>
-65 . : “rectum”<br>
-67 . : “left_colon”<br>
-68 . : “rectum”<br>
-69 . : “rectum”<br>
-72 . : “right_colon”<br>
-74 . : “rectum_and_left_colon”<br>
-76 . : “right_colon”<br>
-77 . : “right_colon”<br>
-78 . : “rectum”<br>
-80 . : “right_colon”<br>
-81 . : “right_colon”<br>
-87 . : “rectum”<br>
-97 . : “rectum”<br>
-100 . : “rectum”<br>
-101 . : “right_colon”<br>
-106 . : “rectum”<br>
-107 . : “rectum”<br>
-116 . : “right_colon”<br>
-119 . : “rectum”<br>
-120 . : “right_colon”<br>
-121 . : “right_colon”<br>
-128 . : “rectum”<br>
-133 . : “rectum”<br>
-142 . : “right_colon”<br>
-144 . : “right_colon”<br>
-145 . : “left_colon”<br>
-146 . : “left_colon”<br>
-147 . : “right_colon”<br>
-154 . : “left_colon_and_right_colon”<br>
-155 . : “rectum”<br>
-156 . : “left_colon”<br>
-160 . : “rectum”<br>
-161 . : “left_colon_and_right_colon”<br>
-162 . : “rectum”<br>
-163 . : “rectum”<br>
-166 . : “right_colon”<br>
-170 . : “right_colon”<br>
-177 . : “right_colon”<br>
-180 . : “left_colon”<br>
-182 . : “left_colon”<br>
-184 . : “right_colon”<br>
-186 . : “rectum”<br>
-187 . : “left_colon”<br>
-188 . : “rectum”<br>
-190 . : “rectum”<br>
-191 . : “rectum”<br>
-192 . : “rectum”<br>
-194 . : “rectum”<br>
-196 . : “rectum”<br>
-197 . : “left_colon”<br>
-201 . : “right_colon”<br>
-202 . : “rectum”<br>
-203 . : “rectum”<br>
-209 . : “rectum”<br>
-210 . : “right_colon”<br>
-211 . : “rectum”<br>
-214 . : “right_colon”<br>
-215 . : “right_colon”<br>
-217 . : “rectum”<br>
-218 . : “rectum”<br>
-219 . : “right_colon”<br>
-220 . : “left_colon”<br>
-223 . : “rectum”<br>
-225 . : “rectum”<br>
-227 . : “rectum”<br>
-228 . : “rectum”<br>
-230 . : “left_colon”<br>
-235 . : "rectum,_left_colon_and_right_colon"<br>
-238 . : “right_colon”<br>
-245 . : “rectum”<br>
-246 . : “left_colon”<br>
-248 . : “right_colon”<br>
-251 . : “right_colon”<br>
-252 . : “rectum”<br>
-259 . : “right_colon”<br>
-263 . : “right_colon”<br>
-266 . : “rectum”<br>
-267 . : “rectum”<br>
-268 . : “rectum”<br>
-270 . : “left_colon”<br>
-271 . : “rectum”<br>
-274 . : “rectum”<br>
-277 . : “rectum”<br>
-278 . : “left_colon”<br>
-279 . : “rectum”<br>
-280 . : “rectum”<br>
-281 . : “left_colon”<br>
-282 . : “rectum”<br>
-283 . : “rectum”<br>
-286 . : “rectum”<br>
-288 . : “rectum”<br>
-290 . : “right_colon”<br>
-292 . : “rectum”<br>
-293 . : “right_colon”<br>
-294 . : “left_colon”<br>
-295 . : “right_colon”<br>
-297 . : “right_colon”<br>
-298 . : “rectum”<br>
-299 . : “right_colon”<br>
-300 . : “right_colon”<br>
-301 . : “rectum”<br>
-302 . : “rectum”<br>
-305 . : “rectum”<br>
-308 . : “right_colon”<br>
-309 . : “rectum”<br>
-310 . : “right_colon”<br>
-311 . : “rectum”<br>
-312 . : “rectum”<br>
-314 . : “left_colon”<br>
-315 . : “left_colon”<br>
-316 . : “right_colon”<br>
-317 . : “right_colon”<br>
-319 . : “left_colon”<br>
-320 . : “rectum”<br>
-321 . : “rectum”<br>
-322 . : “left_colon”<br>
-325 . : “right_colon”<br>
-333 . : “rectum”<br>
-334 . : “rectum”<br>
-335 . : “rectum”<br>
-336 . : “right_colon”<br>
-338 . : “left_colon”<br>
-340 . : “right_colon”<br>
-341 . : “rectum”<br>
-344 . : “rectum”<br>
-345 . : “right_colon”<br>
-347 . : “left_colon”<br>
-348 . : “rectum”<br>
-349 . : “right_colon”<br>
-354 . : “rectum”<br>
-361 . : “rectum”<br>
-372 . : “rectum”<br>
-376 . : “left_colon”<br>
-377 . : “right_colon”<br>
-378 . : “right_colon”<br>
-379 . : “left_colon”<br>
-381 . : “rectum”<br>
-384 . : “rectum”<br>
-385 . : “left_colon”<br>
-386 . : “rectum”<br>
-387 . : “rectum”<br>
-397 . : “right_colon”<br>
-400 . : “right_colon”<br>
-401 . : “left_colon”<br>
-403 . : “right_colon”<br>
-404 . : “left_colon”<br>
-405 . : “left_colon”<br>
-409 . : “left_colon”<br>
-412 . : “left_colon_and_rectum”<br>
-413 . : “right_colon”<br>
-414 . : “right_colon”<br>
-415 . : “rectum”<br>
-417 . : “right_colon”<br>
-419 . : “right_colon”<br>
-421 . : “right_colon”<br>
-422 . : “rectum”<br>
-424 . : “left_colon”<br>
-425 . : “right_colon”<br>
-426 . : “left_colon_and_right_colon”<br>
-427 . : “rectum”<br>
-428 . : “rectum”<br>
-429 . : “right_colon”<br>
-430 . : “left_colon”<br>
-433 . : “left_colon”<br>
-434 . : “left_colon_and_right_colon”<br>
-435 . : “right_colon”<br>
-437 . : “left_colon”<br>
-441 . : “right_colon”<br>
-442 . : “left_colon”<br>
-443 . : “right_colon”<br>
-444 . : “left_colon”<br>
-446 . : “right_colon”<br>
-447 . : “right_colon”<br>
-449 . : “right_colon”<br>
-450 . : “left_colon”<br>
-451 . : “rectum”<br>
-452 . : “rectum”<br>
-454 . : “left_colon”<br>
-463 . : “right_colon”<br>
-466 . : “right_colon”<br>
-467 . : “right_colon”<br>
-468 . : “left_colon”<br>
-472 . : “left_colon”<br>
-486 . : “left_colon”<br>
-488 . : “left_colon”<br>
-490 . : “rectum”<br>
-493 . : “left_colon”<br>
-495 . : “rectum”<br>
-496 . : “right_colon”<br>
-502 . : “left_colon”<br>
-511 . : “left_colon”<br>
-515 . : “left_colon”<br>
-520 . : “left_colon”<br>
-523 . : “rectum”<br>
-527 . : “right_colon”<br>
-529 . : “right_colon”<br>
-551 . : “left_colon”<br>
-553 . : “left_colon”<br>
-554 . : “right_colon”<br>
-557 . : “right_colon”<br>
-558 . : “left_colon”<br>
-559 . : “rectum”<br>
-560 . : “rectum”<br>
-561 . : “right_colon”<br>
-562 . : “right_colon”<br>
-563 . : “left_colon_and_right_colon”<br>
-564 . : “left_colon”<br>
-565 . : “rectum”<br>
-567 . : “right_colon”<br>
-568 . : “left_colon”<br>
-570 . : “left_colon”<br>
-571 . : “left_colon”<br>
-572 . : “left_colon_and_right_colon”<br>
-573 . : “left_colon”<br>
-574 . : “rectum”<br>
-575 . : “left_colon”<br>
-576 . : “left_colon”<br>
-577 . : “right_colon”<br>
-578 . : “rectum”<br>
-580 . : “rectum”<br>
-581 . : “rectum”<br>
-583 . : “right_colon”<br>
-585 . : “rectum”<br>
-586 . : “rectum”<br>
-588 . : “left_colon”<br>
-589 . : “right_colon”<br>
-590 . : “right_colon”<br>
-592 . : “right_colon”<br>
-594 . : “right_colon”<br>
-595 . : “right_colon”<br>
-597 . : “left_colon_and_rectum”<br>
-599 . : “left_colon”<br>
-600 . : “right_colon”<br>
-601 . : “right_colon”<br>
-602 . : “left_colon”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="yassourm_2016_metadata-tsv">YassourM_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#yassourm_2016_metadata-tsv"></a>
@@ -5275,10 +4937,10 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-11">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-11"></a>
+<h3 id="entry-errors-9">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-9"></a>
 </h3>
 <div class="section level4">
-<h4 id="disease_location-3">disease_location<a class="anchor" aria-label="anchor" href="#disease_location-3"></a>
+<h4 id="disease_location-1">disease_location<a class="anchor" aria-label="anchor" href="#disease_location-1"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -5295,44 +4957,27 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: right_sided|left_sided|transverse</li>
+<em>allowedvalues</em>: right_sided|left_sided|transverse|sigmoid_colon|colon|rectum</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>1 . : “rectum”<br>
-2 . : “rectum”<br>
-3 . : “lc”<br>
-4 . : “rectum”<br>
+<p>3 . : “lc”<br>
 5 . : “lc”<br>
 6 . : “lc”<br>
-7 . : “rectum”<br>
-8 . : “rectum”<br>
 10 . : “rc”<br>
 12 . : “lc”<br>
-13 . : “rectum”<br>
-14 . : “rectum”<br>
-15 . : “rectum”<br>
 16 . : “lc”<br>
 17 . : “lc”<br>
 18 . : “rc”<br>
-20 . : “rectum”<br>
 22 . : “lc”<br>
 23 . : “lc”<br>
 24 . : “rc”<br>
-26 . : “rectum”<br>
 27 . : “lc”<br>
-28 . : “rectum”<br>
-29 . : “rectum”<br>
 30 . : “lc”<br>
-32 . : “rectum”<br>
 34 . : “rc”<br>
-37 . : “rectum”<br>
 38 . : “lc”<br>
 39 . : “lc”<br>
 40 . : “lc”<br>
-41 . : “rectum”<br>
 42 . : “lc”<br>
-43 . : “rectum”<br>
-44 . : “rectum”<br>
 45 . : “lc”<br>
 46 . : “lc”<br>
 47 . : “lc”<br>
@@ -5342,24 +4987,13 @@
 101 . : “lc”<br>
 102 . : “lc”<br>
 104 . : “lc”<br>
-106 . : “rectum”<br>
-107 . : “rectum”<br>
-108 . : “rectum”<br>
-109 . : “rectum”<br>
 110 . : “lc”<br>
 111 . : “rc”<br>
-112 . : “rectum”<br>
-113 . : “rectum”<br>
-114 . : “rectum”<br>
 115 . : “rc”<br>
-116 . : “rectum”<br>
 117 . : “rc”<br>
-118 . : “rectum”<br>
-119 . : “rectum”<br>
 120 . : “lc”<br>
 121 . : “rc”<br>
 122 . : “rc”<br>
-123 . : “rectum”<br>
 126 . : “lc”<br>
 127 . : “lc”<br>
 128 . : “lc”</p>
@@ -5383,7 +5017,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-12">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-12"></a>
+<h3 id="entry-errors-10">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-10"></a>
 </h3>
 <div class="section level4">
 <h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
