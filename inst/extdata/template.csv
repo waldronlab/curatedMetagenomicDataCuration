@@ -15,7 +15,7 @@ age_category,character,non-unique,optional,FALSE,newborn|child|schoolage|adult|s
 gender,character,non-unique,optional,FALSE,female|male|other,Subject gender.
 visit_number,integer,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repeated visits.
 BMI,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,character,non-unique,required,FALSE,LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+country,character,non-unique,required,FALSE,ARG|GNB|LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,character,non-unique,optional,FALSE,.+,Free-form additional location information.
 population,character,non-unique,optional,FALSE,[a-zA-Z]\S+,can describe the belonging to a specific population
 travel_destination,character,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
@@ -107,7 +107,7 @@ age_T1D_diagnosis,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Age at which 
 disease_stage,character,non-unique,optional,FALSE,0|I|II|III|IV,Stage information for diseases that can be divided into multiple stages.
 disease_location,character,non-unique,optional,TRUE,right_sided|left_sided|transverse|sigmoid_colon|colon|rectum,Can be used for diseases which occur on different body parts like CD.
 calprotectin,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Higher calprotectin is an indicator for inflammation in the gastrointestinal tract.
-treatment,character,non-unique,optional,TRUE,no|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh,Medications or treatments against the diseases.
+treatment,character,non-unique,optional,TRUE,no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh,Medications or treatments against the diseases.
 remission,character,non-unique,optional,FALSE,no|yes,Remission of the disease.
 anti_PD_1,character,non-unique,optional,FALSE,responder|non_responder,The patient results to be a responder/non-responder to the anti-PD1 treatment.
 wbc,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,White blood cells count; curators must use *1000counts/µL
