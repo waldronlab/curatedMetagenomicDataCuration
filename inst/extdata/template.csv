@@ -31,6 +31,7 @@ number_bases,double,non-unique,required,FALSE,[0-9]+,Total number of bases seque
 minimum_read_length,integer,non-unique,required,FALSE,[0-9]+|NA,Minimum read length - calculated from raw data.
 median_read_length,integer,non-unique,required,FALSE,[0-9]+|NA,Median read length - calculated from raw data.
 NCBI_accession,character,unique,optional,TRUE,[ES]R[SR][0-9]+,Semicolon-separated vector of NCBI accessions.
+bristol_score,double,non-unique,optional,FALSE,[0-9]+,The Brisol scale (feces-consistentcy scale) for the stool sample collected.
 pregnant,character,non-unique,optional,FALSE,yes|no,Pregnancy of the subject (men: no).
 lactating,character,non-unique,optional,FALSE,yes|no,Lactating subjects (men: no).
 birth_control_pil,character,non-unique,optional,FALSE,yes|no,Use of the birth-control-pils at the sampling time (men: no).
