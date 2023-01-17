@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-17 10:35:37 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-17 10:39:27 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4500,14 +4500,11 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|at2_inhib|glp_1|ctrblock|thiazidique|ca2_cbl|antilipid|asa|clopidogrel|diuranse|statin|antidiab|antihypertension|urinaryalkalinizer|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
+<em>allowedvalues</em>: no|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>56 . : “cumarine;ppi”<br>
-77 . : “ppi”<br>
+<p>77 . : “ppi”<br>
 130 . : “antihta;ace_inhib”<br>
-132 . : “cumarine”<br>
-153 . : “cumarine;ppi”<br>
 181 . : “antihta;ace_inhib”<br>
 182 . : “ppi”<br>
 184 . : “ppi”<br>
@@ -4523,22 +4520,13 @@
 608 . : “ppi”<br>
 663 . : “ppi”<br>
 761 . : “ppi”<br>
-767 . : “antihta;ace_inhib;kspdiur;beta_blockers;xantoxinh”<br>
-770 . : “xantoxinh”<br>
 780 . : “ppi”<br>
 817 . : “ppi”<br>
 845 . : “ppi”<br>
-847 . : “xantoxinh”<br>
-859 . : “antihta;beta_blockers;ppi”<br>
 864 . : “ppi”<br>
 886 . : “antihta;ace_inhib”<br>
-905 . : “antihta;beta_blockers;ppi”<br>
 921 . : “ppi”<br>
-948 . : “antihta;beta_blockers;cumarine;ppi”<br>
 961 . : “ppi”<br>
-974 . : “antihta;ace_inhib;beta_blockers;xantoxinh”<br>
-991 . : “antihta;ace_inhib;beta_blockers;ppi”<br>
-1019 . : “antihta;beta_blockers;ppi”<br>
 1024 . : “antihta;ace_inhib”<br>
 1034 . : “antihta;ace_inhib”<br>
 1051 . : “antihta;ace_inhib”<br>
@@ -4547,38 +4535,27 @@
 1083 . : “antihta;ace_inhib”<br>
 1084 . : “antihta;ace_inhib”<br>
 1093 . : “antihta;ace_inhib”<br>
-1096 . : “antihta;beta_blockers;cumarine”<br>
 1101 . : “ppi”<br>
-1109 . : “cumarine”<br>
-1117 . : “antihta;beta_blockers;ppi”<br>
 1119 . : “antihta;ace_inhib”<br>
 1131 . : “ppi”<br>
 1139 . : “antihta;ace_inhib”<br>
 1163 . : “antihta;ace_inhib”<br>
-1177 . : “antihta;beta_blockers;xantoxinh”<br>
 1180 . : “antihta;ace_inhib”<br>
 1227 . : “antihta;ace_inhib”<br>
 1235 . : “antihta;ace_inhib”<br>
 1236 . : “antihta;ace_inhib”<br>
-1247 . : “antihta;ace_inhib;beta_blockers;cumarine;ppi”<br>
 1267 . : “antihta;ace_inhib”<br>
-1268 . : “antihta;ace_inhib;beta_blockers;ppi”<br>
-1272 . : “antihta;ace_inhib;cumarine”<br>
 1278 . : “ppi”<br>
-1281 . : “antihta;ace_inhib;cumarine”<br>
 1319 . : “ppi”<br>
-1329 . : “ppi;xantoxinh”<br>
 1333 . : “ppi”<br>
 1385 . : “ppi”<br>
 1436 . : “antihta;ace_inhib”<br>
 1466 . : “ppi”<br>
 1475 . : “ppi”<br>
-1558 . : “cumarine”<br>
 1600 . : “antihta;ace_inhib”<br>
 1651 . : “ppi”<br>
 1683 . : “ppi”<br>
 1686 . : “ppi”<br>
-1726 . : “antihta;beta_blockers;antithombo”<br>
 1730 . : “ppi”<br>
 1755 . : “ppi”<br>
 1761 . : “antihta;ace_inhib”<br>
@@ -5715,7 +5692,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|at2_inhib|glp_1|ctrblock|thiazidique|ca2_cbl|antilipid|asa|clopidogrel|diuranse|statin|antidiab|antihypertension|urinaryalkalinizer|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
+<em>allowedvalues</em>: no|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>2 . : “opioids;laxatives”<br>
@@ -5832,7 +5809,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|at2_inhib|glp_1|ctrblock|thiazidique|ca2_cbl|antilipid|asa|clopidogrel|diuranse|statin|antidiab|antihypertension|urinaryalkalinizer|sulphonylurea|EEN|5-ASA|aza|modulen_suppl|iron|folate|forceval|methotrexate|Lactulose|probiotic|NSAID|anthelmintics|albendazole|metformin|sitagliptin|lantus|solostar|novorapid|CTLA4|PD1|steroids|PPI|ipilumumab|nivolumab|pembrolizumab|sulphonylurea|psychotropics|antacids|H2RA|antiandrogens|aspirin|insulin|statins|beta_blockers</li>
+<em>allowedvalues</em>: no|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . : “antihypertensive”<br>
