@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-17 10:48:36 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-17 10:50:57 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4482,52 +4482,6 @@
 1830 . : “NA”<br>
 1831 . : “NA”</p>
 </div>
-<div class="section level4">
-<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>130 . : “antihta;ace_inhib”<br>
-181 . : “antihta;ace_inhib”<br>
-215 . : “antihta;ace_inhib”<br>
-242 . : “antihta;ace_inhib”<br>
-329 . : “antihta;ace_inhib”<br>
-886 . : “antihta;ace_inhib”<br>
-1024 . : “antihta;ace_inhib”<br>
-1034 . : “antihta;ace_inhib”<br>
-1051 . : “antihta;ace_inhib”<br>
-1059 . : “antihta;ace_inhib”<br>
-1083 . : “antihta;ace_inhib”<br>
-1084 . : “antihta;ace_inhib”<br>
-1093 . : “antihta;ace_inhib”<br>
-1119 . : “antihta;ace_inhib”<br>
-1139 . : “antihta;ace_inhib”<br>
-1163 . : “antihta;ace_inhib”<br>
-1180 . : “antihta;ace_inhib”<br>
-1227 . : “antihta;ace_inhib”<br>
-1235 . : “antihta;ace_inhib”<br>
-1236 . : “antihta;ace_inhib”<br>
-1267 . : “antihta;ace_inhib”<br>
-1436 . : “antihta;ace_inhib”<br>
-1600 . : “antihta;ace_inhib”<br>
-1761 . : “antihta;ace_inhib”</p>
-</div>
 </div>
 </div>
 <div class="section level2">
@@ -4788,37 +4742,10 @@
 <em>multiplevalues</em>: FALSE<br>
 </li>
 <li>
-<em>allowedvalues</em>: LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR</li>
+<em>allowedvalues</em>: ARG|GNB|LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR</li>
 </ul>
 <p><strong>Errors</strong></p>
-<p>1 . : “ARG”<br>
-2 . : “ARG”<br>
-3 . : “ARG”<br>
-4 . : “ARG”<br>
-5 . : “ARG”<br>
-6 . : “ARG”<br>
-7 . : “ARG”<br>
-8 . : “ARG”<br>
-9 . : “ARG”<br>
-10 . : “ARG”<br>
-11 . : “ARG”<br>
-12 . : “ARG”<br>
-13 . : “ARG”<br>
-14 . : “ARG”<br>
-15 . : “ARG”<br>
-16 . : “ARG”<br>
-17 . : “ARG”<br>
-18 . : “ARG”<br>
-19 . : “ARG”<br>
-20 . : “ARG”<br>
-21 . : “ARG”<br>
-22 . : “ARG”<br>
-23 . : “ARG”<br>
-24 . : “ARG”<br>
-25 . : “ARG”<br>
-26 . : “ARG”<br>
-27 . : “ARG”<br>
-55 . : “COL”<br>
+<p>55 . : “COL”<br>
 56 . : “COL”<br>
 57 . : “COL”<br>
 58 . : “COL”<br>
@@ -4841,427 +4768,7 @@
 75 . : “COL”<br>
 76 . : “COL”<br>
 77 . : “COL”<br>
-78 . : “COL”<br>
-79 . : “GNB”<br>
-80 . : “GNB”<br>
-81 . : “GNB”<br>
-82 . : “GNB”<br>
-83 . : “GNB”<br>
-84 . : “GNB”<br>
-85 . : “GNB”<br>
-86 . : “GNB”<br>
-87 . : “GNB”<br>
-88 . : “GNB”<br>
-89 . : “GNB”<br>
-90 . : “GNB”<br>
-91 . : “GNB”<br>
-92 . : “GNB”<br>
-93 . : “GNB”<br>
-94 . : “GNB”<br>
-95 . : “GNB”<br>
-96 . : “GNB”<br>
-97 . : “GNB”<br>
-98 . : “GNB”<br>
-99 . : “GNB”<br>
-100 . : “GNB”<br>
-101 . : “GNB”<br>
-102 . : “GNB”<br>
-103 . : “GNB”<br>
-104 . : “GNB”<br>
-105 . : “GNB”<br>
-106 . : “GNB”<br>
-107 . : “GNB”<br>
-108 . : “GNB”<br>
-109 . : “GNB”<br>
-110 . : “GNB”<br>
-111 . : “GNB”<br>
-112 . : “GNB”<br>
-113 . : “GNB”<br>
-114 . : “GNB”<br>
-115 . : “GNB”<br>
-116 . : “GNB”<br>
-117 . : “GNB”<br>
-118 . : “GNB”<br>
-119 . : “GNB”<br>
-120 . : “GNB”<br>
-121 . : “GNB”<br>
-122 . : “GNB”<br>
-123 . : “GNB”<br>
-124 . : “GNB”<br>
-125 . : “GNB”<br>
-126 . : “GNB”<br>
-127 . : “GNB”<br>
-128 . : “GNB”<br>
-129 . : “GNB”<br>
-130 . : “GNB”<br>
-131 . : “GNB”<br>
-132 . : “GNB”<br>
-133 . : “GNB”<br>
-134 . : “GNB”<br>
-135 . : “GNB”<br>
-136 . : “GNB”<br>
-137 . : “GNB”<br>
-138 . : “GNB”<br>
-139 . : “GNB”<br>
-140 . : “GNB”<br>
-141 . : “GNB”<br>
-142 . : “GNB”<br>
-143 . : “GNB”<br>
-144 . : “GNB”<br>
-145 . : “GNB”<br>
-146 . : “GNB”<br>
-147 . : “GNB”<br>
-148 . : “GNB”<br>
-149 . : “GNB”<br>
-150 . : “GNB”<br>
-151 . : “GNB”<br>
-152 . : “GNB”<br>
-153 . : “GNB”<br>
-154 . : “GNB”<br>
-155 . : “GNB”<br>
-156 . : “GNB”<br>
-157 . : “GNB”<br>
-158 . : “GNB”<br>
-159 . : “GNB”<br>
-160 . : “GNB”<br>
-161 . : “GNB”<br>
-162 . : “GNB”<br>
-163 . : “GNB”<br>
-164 . : “GNB”<br>
-165 . : “GNB”<br>
-166 . : “GNB”<br>
-167 . : “GNB”<br>
-168 . : “GNB”<br>
-169 . : “GNB”<br>
-170 . : “GNB”<br>
-171 . : “GNB”<br>
-172 . : “GNB”<br>
-173 . : “GNB”<br>
-174 . : “GNB”<br>
-175 . : “GNB”<br>
-176 . : “GNB”<br>
-177 . : “GNB”<br>
-178 . : “GNB”<br>
-179 . : “GNB”<br>
-180 . : “GNB”<br>
-181 . : “GNB”<br>
-182 . : “GNB”<br>
-183 . : “GNB”<br>
-184 . : “GNB”<br>
-185 . : “GNB”<br>
-186 . : “GNB”<br>
-187 . : “GNB”<br>
-188 . : “GNB”<br>
-189 . : “GNB”<br>
-190 . : “GNB”<br>
-191 . : “GNB”<br>
-192 . : “GNB”<br>
-193 . : “GNB”<br>
-194 . : “GNB”<br>
-195 . : “GNB”<br>
-196 . : “GNB”<br>
-197 . : “GNB”<br>
-198 . : “GNB”<br>
-199 . : “GNB”<br>
-200 . : “GNB”<br>
-201 . : “GNB”<br>
-202 . : “GNB”<br>
-203 . : “GNB”<br>
-204 . : “GNB”<br>
-205 . : “GNB”<br>
-206 . : “GNB”<br>
-207 . : “GNB”<br>
-208 . : “GNB”<br>
-209 . : “GNB”<br>
-210 . : “GNB”<br>
-211 . : “GNB”<br>
-212 . : “GNB”<br>
-213 . : “GNB”<br>
-214 . : “GNB”<br>
-215 . : “GNB”<br>
-216 . : “GNB”<br>
-217 . : “GNB”<br>
-218 . : “GNB”<br>
-219 . : “GNB”<br>
-220 . : “GNB”<br>
-221 . : “GNB”<br>
-222 . : “GNB”<br>
-223 . : “GNB”<br>
-224 . : “GNB”<br>
-225 . : “GNB”<br>
-226 . : “GNB”<br>
-227 . : “GNB”<br>
-228 . : “GNB”<br>
-229 . : “GNB”<br>
-230 . : “GNB”<br>
-231 . : “GNB”<br>
-232 . : “GNB”<br>
-233 . : “GNB”<br>
-234 . : “GNB”<br>
-235 . : “GNB”<br>
-236 . : “GNB”<br>
-237 . : “GNB”<br>
-238 . : “GNB”<br>
-239 . : “GNB”<br>
-240 . : “GNB”<br>
-241 . : “GNB”<br>
-242 . : “GNB”<br>
-243 . : “GNB”<br>
-244 . : “GNB”<br>
-245 . : “GNB”<br>
-246 . : “GNB”<br>
-247 . : “GNB”<br>
-248 . : “GNB”<br>
-249 . : “GNB”<br>
-250 . : “GNB”<br>
-251 . : “GNB”<br>
-252 . : “GNB”<br>
-253 . : “GNB”<br>
-254 . : “GNB”<br>
-255 . : “GNB”<br>
-256 . : “GNB”<br>
-257 . : “GNB”<br>
-258 . : “GNB”<br>
-259 . : “GNB”<br>
-260 . : “GNB”<br>
-261 . : “GNB”<br>
-262 . : “GNB”<br>
-263 . : “GNB”<br>
-264 . : “GNB”<br>
-265 . : “GNB”<br>
-266 . : “GNB”<br>
-267 . : “GNB”<br>
-268 . : “GNB”<br>
-269 . : “GNB”<br>
-270 . : “GNB”<br>
-271 . : “GNB”<br>
-272 . : “GNB”<br>
-273 . : “GNB”<br>
-274 . : “GNB”<br>
-275 . : “GNB”<br>
-276 . : “GNB”<br>
-277 . : “GNB”<br>
-278 . : “GNB”<br>
-279 . : “GNB”<br>
-280 . : “GNB”<br>
-281 . : “GNB”<br>
-282 . : “GNB”<br>
-283 . : “GNB”<br>
-284 . : “GNB”<br>
-285 . : “GNB”<br>
-286 . : “GNB”<br>
-287 . : “GNB”<br>
-288 . : “GNB”<br>
-289 . : “GNB”<br>
-290 . : “GNB”<br>
-291 . : “GNB”<br>
-292 . : “GNB”<br>
-293 . : “GNB”<br>
-294 . : “GNB”<br>
-295 . : “GNB”<br>
-296 . : “GNB”<br>
-297 . : “GNB”<br>
-298 . : “GNB”<br>
-299 . : “GNB”<br>
-300 . : “GNB”<br>
-301 . : “GNB”<br>
-302 . : “GNB”<br>
-303 . : “GNB”<br>
-304 . : “GNB”<br>
-305 . : “GNB”<br>
-306 . : “GNB”<br>
-307 . : “GNB”<br>
-308 . : “GNB”<br>
-309 . : “GNB”<br>
-310 . : “GNB”<br>
-311 . : “GNB”<br>
-312 . : “GNB”<br>
-313 . : “GNB”<br>
-314 . : “GNB”<br>
-315 . : “GNB”<br>
-316 . : “GNB”<br>
-317 . : “GNB”<br>
-318 . : “GNB”<br>
-319 . : “GNB”<br>
-320 . : “GNB”<br>
-321 . : “GNB”<br>
-322 . : “GNB”<br>
-323 . : “GNB”<br>
-324 . : “GNB”<br>
-325 . : “GNB”<br>
-326 . : “GNB”<br>
-327 . : “GNB”<br>
-328 . : “GNB”<br>
-329 . : “GNB”<br>
-330 . : “GNB”<br>
-331 . : “GNB”<br>
-332 . : “GNB”<br>
-333 . : “GNB”<br>
-334 . : “GNB”<br>
-335 . : “GNB”<br>
-336 . : “GNB”<br>
-337 . : “GNB”<br>
-338 . : “GNB”<br>
-339 . : “GNB”<br>
-340 . : “GNB”<br>
-341 . : “GNB”<br>
-342 . : “GNB”<br>
-343 . : “GNB”<br>
-344 . : “GNB”<br>
-345 . : “GNB”<br>
-346 . : “GNB”<br>
-347 . : “GNB”<br>
-348 . : “GNB”<br>
-349 . : “GNB”<br>
-350 . : “GNB”<br>
-351 . : “GNB”<br>
-352 . : “GNB”<br>
-353 . : “GNB”<br>
-354 . : “GNB”<br>
-355 . : “GNB”<br>
-356 . : “GNB”<br>
-357 . : “GNB”<br>
-358 . : “GNB”<br>
-359 . : “GNB”<br>
-360 . : “GNB”<br>
-361 . : “GNB”<br>
-362 . : “GNB”<br>
-363 . : “GNB”<br>
-364 . : “GNB”<br>
-365 . : “GNB”<br>
-366 . : “GNB”<br>
-367 . : “GNB”<br>
-368 . : “GNB”<br>
-369 . : “GNB”<br>
-370 . : “GNB”<br>
-371 . : “GNB”<br>
-372 . : “GNB”<br>
-373 . : “GNB”<br>
-374 . : “GNB”<br>
-375 . : “GNB”<br>
-376 . : “GNB”<br>
-377 . : “GNB”<br>
-378 . : “GNB”<br>
-379 . : “GNB”<br>
-380 . : “GNB”<br>
-381 . : “GNB”<br>
-382 . : “GNB”<br>
-383 . : “GNB”<br>
-384 . : “GNB”<br>
-385 . : “GNB”<br>
-386 . : “GNB”<br>
-387 . : “GNB”<br>
-388 . : “GNB”<br>
-389 . : “GNB”<br>
-390 . : “GNB”<br>
-391 . : “GNB”<br>
-392 . : “GNB”<br>
-393 . : “GNB”<br>
-394 . : “GNB”<br>
-395 . : “GNB”<br>
-396 . : “GNB”<br>
-397 . : “GNB”<br>
-398 . : “GNB”<br>
-399 . : “GNB”<br>
-400 . : “GNB”<br>
-401 . : “GNB”<br>
-402 . : “GNB”<br>
-403 . : “GNB”<br>
-404 . : “GNB”<br>
-405 . : “GNB”<br>
-406 . : “GNB”<br>
-407 . : “GNB”<br>
-408 . : “GNB”<br>
-409 . : “GNB”<br>
-410 . : “GNB”<br>
-411 . : “GNB”<br>
-412 . : “GNB”<br>
-413 . : “GNB”<br>
-414 . : “GNB”<br>
-415 . : “GNB”<br>
-416 . : “GNB”<br>
-417 . : “GNB”<br>
-418 . : “GNB”<br>
-419 . : “GNB”<br>
-420 . : “GNB”</p>
-</div>
-<div class="section level4">
-<h4 id="sequencing_platform">sequencing_platform<a class="anchor" aria-label="anchor" href="#sequencing_platform"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: required<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq|IlluminaNovaSeq|IonProton</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>469 . : “IlluminaNoveSeq”<br>
-470 . : “IlluminaNoveSeq”<br>
-471 . : “IlluminaNoveSeq”<br>
-472 . : “IlluminaNoveSeq”<br>
-473 . : “IlluminaNoveSeq”<br>
-474 . : “IlluminaNoveSeq”<br>
-475 . : “IlluminaNoveSeq”<br>
-476 . : “IlluminaNoveSeq”<br>
-477 . : “IlluminaNoveSeq”<br>
-478 . : “IlluminaNoveSeq”<br>
-479 . : “IlluminaNoveSeq”<br>
-480 . : “IlluminaNoveSeq”<br>
-481 . : “IlluminaNoveSeq”<br>
-482 . : “IlluminaNoveSeq”<br>
-483 . : “IlluminaNoveSeq”<br>
-484 . : “IlluminaNoveSeq”<br>
-485 . : “IlluminaNoveSeq”<br>
-486 . : “IlluminaNoveSeq”<br>
-487 . : “IlluminaNoveSeq”<br>
-488 . : “IlluminaNoveSeq”<br>
-489 . : “IlluminaNoveSeq”<br>
-490 . : “IlluminaNoveSeq”<br>
-491 . : “IlluminaNoveSeq”<br>
-492 . : “IlluminaNoveSeq”<br>
-493 . : “IlluminaNoveSeq”<br>
-494 . : “IlluminaNoveSeq”<br>
-495 . : “IlluminaNoveSeq”<br>
-496 . : “IlluminaNoveSeq”<br>
-497 . : “IlluminaNoveSeq”<br>
-498 . : “IlluminaNoveSeq”<br>
-499 . : “IlluminaNoveSeq”<br>
-500 . : “IlluminaNoveSeq”<br>
-501 . : “IlluminaNoveSeq”<br>
-502 . : “IlluminaNoveSeq”<br>
-503 . : “IlluminaNoveSeq”<br>
-504 . : “IlluminaNoveSeq”<br>
-505 . : “IlluminaNoveSeq”<br>
-506 . : “IlluminaNoveSeq”<br>
-507 . : “IlluminaNoveSeq”<br>
-508 . : “IlluminaNoveSeq”<br>
-509 . : “IlluminaNoveSeq”<br>
-510 . : “IlluminaNoveSeq”<br>
-511 . : “IlluminaNoveSeq”<br>
-512 . : “IlluminaNoveSeq”<br>
-513 . : “IlluminaNoveSeq”<br>
-514 . : “IlluminaNoveSeq”<br>
-515 . : “IlluminaNoveSeq”<br>
-516 . : “IlluminaNoveSeq”<br>
-517 . : “IlluminaNoveSeq”<br>
-518 . : “IlluminaNoveSeq”<br>
-519 . : “IlluminaNoveSeq”<br>
-520 . : “IlluminaNoveSeq”<br>
-521 . : “IlluminaNoveSeq”<br>
-522 . : “IlluminaNoveSeq”<br>
-523 . : “IlluminaNoveSeq”<br>
-524 . : “IlluminaNoveSeq”</p>
+78 . : “COL”</p>
 </div>
 <div class="section level4">
 <h4 id="born_method">born_method<a class="anchor" aria-label="anchor" href="#born_method"></a>
@@ -5642,7 +5149,7 @@
 229 . : “QIAamp”</p>
 </div>
 <div class="section level4">
-<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
+<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -5659,7 +5166,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
+<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>2 . : “opioids;laxatives”<br>
@@ -5759,7 +5266,7 @@
 230 . : “-9223372036854775808”</p>
 </div>
 <div class="section level4">
-<h4 id="treatment-2">treatment<a class="anchor" aria-label="anchor" href="#treatment-2"></a>
+<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -5776,7 +5283,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
+<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . : “antihypertensive”<br>
