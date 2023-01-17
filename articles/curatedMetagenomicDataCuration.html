@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-17 10:54:16 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-17 11:00:34 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -617,6 +617,29 @@
 92 . : “L2L4”<br>
 93 . : “L2L4”</p>
 </div>
+<div class="section level4">
+<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|antineoplastics|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|lactulose|lantus|laxatives|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|opioids|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>73 . : “Lactulose”</p>
+</div>
 </div>
 </div>
 <div class="section level2">
@@ -679,6 +702,197 @@
 <li><p>“performance_status” is not defined in the template.</p></li>
 <li><p>“toxicity_above_zero” is not defined in the template.</p></li>
 </ul>
+</div>
+<div class="section level3">
+<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+</h3>
+<div class="section level4">
+<h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep|thermo_fisheri|QIAamp</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “thermo_fisher”<br>
+2 . : “thermo_fisher”<br>
+3 . : “thermo_fisher”<br>
+4 . : “thermo_fisher”<br>
+5 . : “thermo_fisher”<br>
+6 . : “thermo_fisher”<br>
+7 . : “thermo_fisher”<br>
+8 . : “thermo_fisher”<br>
+9 . : “thermo_fisher”<br>
+10 . : “thermo_fisher”<br>
+11 . : “thermo_fisher”<br>
+12 . : “thermo_fisher”<br>
+13 . : “thermo_fisher”<br>
+14 . : “thermo_fisher”<br>
+15 . : “thermo_fisher”<br>
+16 . : “thermo_fisher”<br>
+17 . : “thermo_fisher”<br>
+18 . : “thermo_fisher”<br>
+19 . : “thermo_fisher”<br>
+20 . : “thermo_fisher”<br>
+21 . : “thermo_fisher”<br>
+22 . : “thermo_fisher”<br>
+23 . : “thermo_fisher”<br>
+24 . : “thermo_fisher”<br>
+25 . : “thermo_fisher”<br>
+26 . : “thermo_fisher”<br>
+27 . : “thermo_fisher”<br>
+28 . : “thermo_fisher”<br>
+29 . : “thermo_fisher”<br>
+30 . : “thermo_fisher”<br>
+31 . : “thermo_fisher”<br>
+32 . : “thermo_fisher”<br>
+33 . : “thermo_fisher”<br>
+34 . : “thermo_fisher”<br>
+35 . : “thermo_fisher”<br>
+36 . : “thermo_fisher”<br>
+37 . : “thermo_fisher”<br>
+38 . : “thermo_fisher”<br>
+39 . : “thermo_fisher”<br>
+40 . : “thermo_fisher”<br>
+41 . : “thermo_fisher”<br>
+42 . : “thermo_fisher”<br>
+43 . : “thermo_fisher”<br>
+44 . : “thermo_fisher”<br>
+45 . : “thermo_fisher”<br>
+46 . : “thermo_fisher”<br>
+47 . : “thermo_fisher”<br>
+48 . : “thermo_fisher”<br>
+49 . : “thermo_fisher”<br>
+50 . : “thermo_fisher”<br>
+51 . : “thermo_fisher”<br>
+52 . : “thermo_fisher”<br>
+53 . : “thermo_fisher”<br>
+54 . : “thermo_fisher”<br>
+55 . : “thermo_fisher”<br>
+56 . : “thermo_fisher”<br>
+57 . : “thermo_fisher”<br>
+58 . : “thermo_fisher”<br>
+59 . : “thermo_fisher”<br>
+60 . : “thermo_fisher”<br>
+61 . : “thermo_fisher”<br>
+62 . : “thermo_fisher”<br>
+63 . : “thermo_fisher”<br>
+64 . : “thermo_fisher”<br>
+65 . : “thermo_fisher”<br>
+66 . : “thermo_fisher”<br>
+67 . : “thermo_fisher”<br>
+68 . : “thermo_fisher”<br>
+69 . : “thermo_fisher”<br>
+70 . : “thermo_fisher”<br>
+71 . : “thermo_fisher”<br>
+72 . : “thermo_fisher”<br>
+73 . : “thermo_fisher”<br>
+74 . : “thermo_fisher”<br>
+75 . : “thermo_fisher”<br>
+76 . : “thermo_fisher”<br>
+77 . : “thermo_fisher”<br>
+78 . : “thermo_fisher”<br>
+79 . : “thermo_fisher”<br>
+80 . : “thermo_fisher”<br>
+81 . : “thermo_fisher”<br>
+82 . : “thermo_fisher”<br>
+83 . : “thermo_fisher”<br>
+84 . : “thermo_fisher”<br>
+85 . : “thermo_fisher”<br>
+86 . : “thermo_fisher”<br>
+87 . : “thermo_fisher”<br>
+88 . : “thermo_fisher”<br>
+89 . : “thermo_fisher”<br>
+90 . : “thermo_fisher”<br>
+91 . : “thermo_fisher”<br>
+92 . : “thermo_fisher”<br>
+93 . : “thermo_fisher”<br>
+94 . : “thermo_fisher”<br>
+95 . : “thermo_fisher”<br>
+96 . : “thermo_fisher”<br>
+97 . : “thermo_fisher”<br>
+98 . : “thermo_fisher”<br>
+99 . : “thermo_fisher”<br>
+100 . : “thermo_fisher”<br>
+101 . : “thermo_fisher”<br>
+102 . : “thermo_fisher”<br>
+103 . : “thermo_fisher”<br>
+104 . : “thermo_fisher”<br>
+105 . : “thermo_fisher”<br>
+106 . : “thermo_fisher”<br>
+107 . : “thermo_fisher”<br>
+108 . : “thermo_fisher”<br>
+109 . : “thermo_fisher”<br>
+110 . : “thermo_fisher”<br>
+111 . : “thermo_fisher”<br>
+112 . : “thermo_fisher”<br>
+113 . : “thermo_fisher”<br>
+114 . : “thermo_fisher”<br>
+115 . : “thermo_fisher”<br>
+116 . : “thermo_fisher”<br>
+117 . : “thermo_fisher”<br>
+118 . : “thermo_fisher”<br>
+119 . : “thermo_fisher”<br>
+120 . : “thermo_fisher”<br>
+121 . : “thermo_fisher”<br>
+122 . : “thermo_fisher”<br>
+123 . : “thermo_fisher”<br>
+124 . : “thermo_fisher”<br>
+125 . : “thermo_fisher”<br>
+126 . : “thermo_fisher”<br>
+127 . : “thermo_fisher”<br>
+128 . : “thermo_fisher”<br>
+129 . : “thermo_fisher”<br>
+130 . : “thermo_fisher”<br>
+131 . : “thermo_fisher”<br>
+132 . : “thermo_fisher”<br>
+133 . : “thermo_fisher”<br>
+134 . : “thermo_fisher”<br>
+135 . : “thermo_fisher”<br>
+136 . : “thermo_fisher”<br>
+137 . : “thermo_fisher”<br>
+138 . : “thermo_fisher”<br>
+139 . : “thermo_fisher”<br>
+140 . : “thermo_fisher”<br>
+141 . : “thermo_fisher”<br>
+142 . : “thermo_fisher”<br>
+143 . : “thermo_fisher”<br>
+144 . : “thermo_fisher”<br>
+145 . : “thermo_fisher”<br>
+146 . : “thermo_fisher”<br>
+147 . : “thermo_fisher”<br>
+148 . : “thermo_fisher”<br>
+149 . : “thermo_fisher”<br>
+150 . : “thermo_fisher”<br>
+151 . : “thermo_fisher”<br>
+152 . : “thermo_fisher”<br>
+153 . : “thermo_fisher”<br>
+154 . : “thermo_fisher”<br>
+155 . : “thermo_fisher”<br>
+156 . : “thermo_fisher”<br>
+157 . : “thermo_fisher”<br>
+158 . : “thermo_fisher”<br>
+159 . : “thermo_fisher”<br>
+160 . : “thermo_fisher”<br>
+161 . : “thermo_fisher”<br>
+162 . : “thermo_fisher”<br>
+163 . : “thermo_fisher”<br>
+164 . : “thermo_fisher”<br>
+165 . : “thermo_fisher”</p>
+</div>
 </div>
 </div>
 <div class="section level2">
@@ -774,7 +988,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
 </h3>
 <div class="section level4">
 <h4 id="minimum_read_length">minimum_read_length<a class="anchor" aria-label="anchor" href="#minimum_read_length"></a>
@@ -4659,7 +4873,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
 <div class="section level4">
 <h4 id="antibiotics_current_use">antibiotics_current_use<a class="anchor" aria-label="anchor" href="#antibiotics_current_use"></a>
@@ -4788,325 +5002,7 @@
 <h2 id="vincentc_2016_metadata-tsv">VincentC_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vincentc_2016_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/VincentC_2016/VincentC_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
-<div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
-</h3>
-<div class="section level4">
-<h4 id="antibiotics_family">antibiotics_family<a class="anchor" aria-label="anchor" href="#antibiotics_family"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: dopamine_antagonists|phenylpiperidines|thienobenzodiazepines|blood_pressure_medication|diabetes_oral_medication|anti_retrovirals|beta_blockers|reverse_transcriptase_inhibitors|anti_virals|cephalosporins|penicillins|macrolides|beta_lactamase_inhibitors|nitrofurans|sulphonamides|aminoglycosides|carbapenems|fluoroquinolones|laxatives|none</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>86 . : “metronidazole”<br>
-119 . : “clindamycin;vancomycin”<br>
-120 . : “clindamycin;vancomycin”<br>
-185 . : “cotrimoxazole”</p>
-</div>
-<div class="section level4">
-<h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep|thermo_fisher</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “QIAamp”<br>
-2 . : “QIAamp”<br>
-3 . : “QIAamp”<br>
-4 . : “QIAamp”<br>
-5 . : “QIAamp”<br>
-6 . : “QIAamp”<br>
-7 . : “QIAamp”<br>
-8 . : “QIAamp”<br>
-9 . : “QIAamp”<br>
-10 . : “QIAamp”<br>
-11 . : “QIAamp”<br>
-12 . : “QIAamp”<br>
-13 . : “QIAamp”<br>
-14 . : “QIAamp”<br>
-15 . : “QIAamp”<br>
-16 . : “QIAamp”<br>
-17 . : “QIAamp”<br>
-18 . : “QIAamp”<br>
-19 . : “QIAamp”<br>
-20 . : “QIAamp”<br>
-21 . : “QIAamp”<br>
-22 . : “QIAamp”<br>
-23 . : “QIAamp”<br>
-24 . : “QIAamp”<br>
-25 . : “QIAamp”<br>
-26 . : “QIAamp”<br>
-27 . : “QIAamp”<br>
-28 . : “QIAamp”<br>
-29 . : “QIAamp”<br>
-30 . : “QIAamp”<br>
-31 . : “QIAamp”<br>
-32 . : “QIAamp”<br>
-33 . : “QIAamp”<br>
-34 . : “QIAamp”<br>
-35 . : “QIAamp”<br>
-36 . : “QIAamp”<br>
-37 . : “QIAamp”<br>
-38 . : “QIAamp”<br>
-39 . : “QIAamp”<br>
-40 . : “QIAamp”<br>
-41 . : “QIAamp”<br>
-42 . : “QIAamp”<br>
-43 . : “QIAamp”<br>
-44 . : “QIAamp”<br>
-45 . : “QIAamp”<br>
-46 . : “QIAamp”<br>
-47 . : “QIAamp”<br>
-48 . : “QIAamp”<br>
-49 . : “QIAamp”<br>
-50 . : “QIAamp”<br>
-51 . : “QIAamp”<br>
-52 . : “QIAamp”<br>
-53 . : “QIAamp”<br>
-54 . : “QIAamp”<br>
-55 . : “QIAamp”<br>
-56 . : “QIAamp”<br>
-57 . : “QIAamp”<br>
-58 . : “QIAamp”<br>
-59 . : “QIAamp”<br>
-60 . : “QIAamp”<br>
-61 . : “QIAamp”<br>
-62 . : “QIAamp”<br>
-63 . : “QIAamp”<br>
-64 . : “QIAamp”<br>
-65 . : “QIAamp”<br>
-66 . : “QIAamp”<br>
-67 . : “QIAamp”<br>
-68 . : “QIAamp”<br>
-69 . : “QIAamp”<br>
-70 . : “QIAamp”<br>
-71 . : “QIAamp”<br>
-72 . : “QIAamp”<br>
-73 . : “QIAamp”<br>
-74 . : “QIAamp”<br>
-75 . : “QIAamp”<br>
-76 . : “QIAamp”<br>
-77 . : “QIAamp”<br>
-78 . : “QIAamp”<br>
-79 . : “QIAamp”<br>
-80 . : “QIAamp”<br>
-81 . : “QIAamp”<br>
-82 . : “QIAamp”<br>
-83 . : “QIAamp”<br>
-84 . : “QIAamp”<br>
-85 . : “QIAamp”<br>
-86 . : “QIAamp”<br>
-87 . : “QIAamp”<br>
-88 . : “QIAamp”<br>
-89 . : “QIAamp”<br>
-90 . : “QIAamp”<br>
-91 . : “QIAamp”<br>
-92 . : “QIAamp”<br>
-93 . : “QIAamp”<br>
-94 . : “QIAamp”<br>
-95 . : “QIAamp”<br>
-96 . : “QIAamp”<br>
-97 . : “QIAamp”<br>
-98 . : “QIAamp”<br>
-99 . : “QIAamp”<br>
-100 . : “QIAamp”<br>
-101 . : “QIAamp”<br>
-102 . : “QIAamp”<br>
-103 . : “QIAamp”<br>
-104 . : “QIAamp”<br>
-105 . : “QIAamp”<br>
-106 . : “QIAamp”<br>
-107 . : “QIAamp”<br>
-108 . : “QIAamp”<br>
-109 . : “QIAamp”<br>
-110 . : “QIAamp”<br>
-111 . : “QIAamp”<br>
-112 . : “QIAamp”<br>
-113 . : “QIAamp”<br>
-114 . : “QIAamp”<br>
-115 . : “QIAamp”<br>
-116 . : “QIAamp”<br>
-117 . : “QIAamp”<br>
-118 . : “QIAamp”<br>
-119 . : “QIAamp”<br>
-120 . : “QIAamp”<br>
-121 . : “QIAamp”<br>
-122 . : “QIAamp”<br>
-123 . : “QIAamp”<br>
-124 . : “QIAamp”<br>
-125 . : “QIAamp”<br>
-126 . : “QIAamp”<br>
-127 . : “QIAamp”<br>
-128 . : “QIAamp”<br>
-129 . : “QIAamp”<br>
-130 . : “QIAamp”<br>
-131 . : “QIAamp”<br>
-132 . : “QIAamp”<br>
-133 . : “QIAamp”<br>
-134 . : “QIAamp”<br>
-135 . : “QIAamp”<br>
-136 . : “QIAamp”<br>
-137 . : “QIAamp”<br>
-138 . : “QIAamp”<br>
-139 . : “QIAamp”<br>
-140 . : “QIAamp”<br>
-141 . : “QIAamp”<br>
-142 . : “QIAamp”<br>
-143 . : “QIAamp”<br>
-144 . : “QIAamp”<br>
-145 . : “QIAamp”<br>
-146 . : “QIAamp”<br>
-147 . : “QIAamp”<br>
-148 . : “QIAamp”<br>
-149 . : “QIAamp”<br>
-150 . : “QIAamp”<br>
-151 . : “QIAamp”<br>
-152 . : “QIAamp”<br>
-153 . : “QIAamp”<br>
-154 . : “QIAamp”<br>
-155 . : “QIAamp”<br>
-156 . : “QIAamp”<br>
-157 . : “QIAamp”<br>
-158 . : “QIAamp”<br>
-159 . : “QIAamp”<br>
-160 . : “QIAamp”<br>
-161 . : “QIAamp”<br>
-162 . : “QIAamp”<br>
-163 . : “QIAamp”<br>
-164 . : “QIAamp”<br>
-165 . : “QIAamp”<br>
-166 . : “QIAamp”<br>
-167 . : “QIAamp”<br>
-168 . : “QIAamp”<br>
-169 . : “QIAamp”<br>
-170 . : “QIAamp”<br>
-171 . : “QIAamp”<br>
-172 . : “QIAamp”<br>
-173 . : “QIAamp”<br>
-174 . : “QIAamp”<br>
-175 . : “QIAamp”<br>
-176 . : “QIAamp”<br>
-177 . : “QIAamp”<br>
-178 . : “QIAamp”<br>
-179 . : “QIAamp”<br>
-180 . : “QIAamp”<br>
-181 . : “QIAamp”<br>
-182 . : “QIAamp”<br>
-183 . : “QIAamp”<br>
-184 . : “QIAamp”<br>
-185 . : “QIAamp”<br>
-186 . : “QIAamp”<br>
-187 . : “QIAamp”<br>
-188 . : “QIAamp”<br>
-189 . : “QIAamp”<br>
-190 . : “QIAamp”<br>
-191 . : “QIAamp”<br>
-192 . : “QIAamp”<br>
-193 . : “QIAamp”<br>
-194 . : “QIAamp”<br>
-195 . : “QIAamp”<br>
-196 . : “QIAamp”<br>
-197 . : “QIAamp”<br>
-198 . : “QIAamp”<br>
-199 . : “QIAamp”<br>
-200 . : “QIAamp”<br>
-201 . : “QIAamp”<br>
-202 . : “QIAamp”<br>
-203 . : “QIAamp”<br>
-204 . : “QIAamp”<br>
-205 . : “QIAamp”<br>
-206 . : “QIAamp”<br>
-207 . : “QIAamp”<br>
-208 . : “QIAamp”<br>
-209 . : “QIAamp”<br>
-210 . : “QIAamp”<br>
-211 . : “QIAamp”<br>
-212 . : “QIAamp”<br>
-213 . : “QIAamp”<br>
-214 . : “QIAamp”<br>
-215 . : “QIAamp”<br>
-216 . : “QIAamp”<br>
-217 . : “QIAamp”<br>
-218 . : “QIAamp”<br>
-219 . : “QIAamp”<br>
-220 . : “QIAamp”<br>
-221 . : “QIAamp”<br>
-222 . : “QIAamp”<br>
-223 . : “QIAamp”<br>
-224 . : “QIAamp”<br>
-225 . : “QIAamp”<br>
-226 . : “QIAamp”<br>
-227 . : “QIAamp”<br>
-228 . : “QIAamp”<br>
-229 . : “QIAamp”</p>
-</div>
-<div class="section level4">
-<h4 id="treatment">treatment<a class="anchor" aria-label="anchor" href="#treatment"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>2 . : “opioids;laxatives”<br>
-22 . : “opioids;laxatives”<br>
-76 . : “opioids;laxatives”<br>
-83 . : “opioids”<br>
-84 . : “opioids”<br>
-99 . : “laxatives”<br>
-100 . : “laxatives”<br>
-101 . : “laxatives”<br>
-153 . : “opioids”<br>
-154 . : “opioids;laxatives”<br>
-161 . : “opioids”<br>
-162 . : “opioids”<br>
-167 . : “antineoplastics”<br>
-218 . : “antineoplastics”<br>
-219 . : “antineoplastics”<br>
-220 . : “antineoplastics”</p>
-</div>
-</div>
+<p>All checks OK.</p>
 </div>
 <div class="section level2">
 <h2 id="vogtmanne_2016_metadata-tsv">VogtmannE_2016_metadata.tsv<a class="anchor" aria-label="anchor" href="#vogtmanne_2016_metadata-tsv"></a>
@@ -5203,7 +5099,7 @@
 <em>multiplevalues</em>: TRUE<br>
 </li>
 <li>
-<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|Lactulose|lantus|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
+<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|antineoplastics|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|lactulose|lantus|laxatives|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|opioids|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
 </ul>
 <p><strong>Errors</strong></p>
 <p>1 . : “antihypertensive”<br>
