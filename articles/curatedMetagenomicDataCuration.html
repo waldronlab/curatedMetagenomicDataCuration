@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-17 11:00:34 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
+<p>This vignette was built on 2023-01-17 11:04:23 based on <code>curatedMetagenomicDataCuration</code> version 0.99.6.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -5052,153 +5052,6 @@
 <li><p>“LDL” is not defined in the template.</p></li>
 </ul>
 </div>
-<div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
-</h3>
-<div class="section level4">
-<h4 id="age">age<a class="anchor" aria-label="anchor" href="#age"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: integer<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>111 . : “-9223372036854775808”<br>
-112 . : “-9223372036854775808”<br>
-113 . : “-9223372036854775808”<br>
-230 . : “-9223372036854775808”</p>
-</div>
-<div class="section level4">
-<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|antineoplastics|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|lactulose|lantus|laxatives|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|opioids|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>1 . : “antihypertensive”<br>
-3 . : “antihypertensive”<br>
-6 . : “antihypertensive”<br>
-11 . : “antihypertensive”<br>
-14 . : “antihypertensive”<br>
-15 . : “antihypertensive”<br>
-23 . : “antihypertensive”<br>
-26 . : “antihypertensive”<br>
-30 . : “antihypertensive”<br>
-32 . : “antihypertensive”<br>
-36 . : “antihypertensive”<br>
-41 . : “antihypertensive”<br>
-45 . : “antihypertensive”<br>
-47 . : “antihypertensive”<br>
-50 . : “antihypertensive”<br>
-53 . : “antihypertensive”<br>
-54 . : “antihypertensive”<br>
-61 . : “antihypertensive”<br>
-63 . : “antihypertensive”<br>
-64 . : “antihypertensive”<br>
-65 . : “antihypertensive”<br>
-67 . : “antihypertensive”<br>
-74 . : “antihypertensive”<br>
-78 . : “antihypertensive”<br>
-81 . : “antihypertensive”<br>
-83 . : “antihypertensive”<br>
-84 . : “antihypertensive”<br>
-85 . : “antihypertensive”<br>
-90 . : “antihypertensive”<br>
-91 . : “antihypertensive”<br>
-93 . : “antihypertensive”<br>
-98 . : “antihypertensive”<br>
-103 . : “antihypertensive”<br>
-108 . : “antihypertensive”<br>
-109 . : “antihypertensive”<br>
-115 . : “antihypertensive”<br>
-119 . : “antihypertensive”<br>
-120 . : “antihypertensive”<br>
-121 . : “antihypertensive”<br>
-128 . : “antihypertensive”<br>
-129 . : “antihypertensive”<br>
-134 . : “antihypertensive”<br>
-137 . : “antihypertensive”<br>
-140 . : “antihypertensive”<br>
-142 . : “antihypertensive”<br>
-145 . : “antihypertensive”<br>
-150 . : “antihypertensive”<br>
-161 . : “antihypertensive”<br>
-166 . : “antihypertensive”<br>
-174 . : “antihypertensive”<br>
-180 . : “antihypertensive”<br>
-187 . : “antihypertensive”<br>
-190 . : “antihypertensive”<br>
-197 . : “antihypertensive”<br>
-200 . : “antihypertensive”<br>
-202 . : “antihypertensive”<br>
-205 . : “antihypertensive”<br>
-206 . : “antihypertensive”<br>
-210 . : “antihypertensive”<br>
-211 . : “antihypertensive”<br>
-212 . : “antihypertensive”<br>
-217 . : “antihypertensive”<br>
-218 . : “antihypertensive”<br>
-226 . : “antihypertensive”<br>
-227 . : “antihypertensive”<br>
-233 . : “antihypertensive”<br>
-234 . : “antihypertensive”<br>
-244 . : “antihypertensive”<br>
-248 . : “antihypertensive”<br>
-253 . : “antihypertensive”<br>
-257 . : “antihypertensive”<br>
-260 . : “antihypertensive”<br>
-261 . : “antihypertensive”<br>
-264 . : “antihypertensive”<br>
-267 . : “antihypertensive”<br>
-270 . : “antihypertensive”<br>
-278 . : “antihypertensive”<br>
-281 . : “antihypertensive”<br>
-282 . : “antihypertensive”<br>
-284 . : “antihypertensive”<br>
-290 . : “antihypertensive”<br>
-291 . : “antihypertensive”<br>
-293 . : “antihypertensive”<br>
-304 . : “antihypertensive”<br>
-305 . : “antihypertensive”<br>
-307 . : “antihypertensive”<br>
-309 . : “antihypertensive”<br>
-311 . : “antihypertensive”<br>
-312 . : “antihypertensive”<br>
-320 . : “antihypertensive”<br>
-323 . : “antihypertensive”<br>
-326 . : “antihypertensive”<br>
-333 . : “antihypertensive”<br>
-336 . : “antihypertensive”<br>
-345 . : “antihypertensive”</p>
-</div>
-</div>
 </div>
 <div class="section level2">
 <h2 id="yachidas_2019_metadata-tsv">YachidaS_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#yachidas_2019_metadata-tsv"></a>
@@ -5229,7 +5082,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/YuJ_2015/YuJ_2015_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
 <h4 id="disease_location-1">disease_location<a class="anchor" aria-label="anchor" href="#disease_location-1"></a>
@@ -5309,7 +5162,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/ZhuF_2020/ZhuF_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-8">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-8"></a>
+<h3 id="entry-errors-7">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-7"></a>
 </h3>
 <div class="section level4">
 <h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
