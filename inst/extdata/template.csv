@@ -15,7 +15,7 @@ age_category,character,non-unique,optional,FALSE,newborn|child|schoolage|adult|s
 gender,character,non-unique,optional,FALSE,female|male|other,Subject gender.
 visit_number,integer,non-unique,optional,FALSE,[0-9]+,Visit number for studies with repeated visits.
 BMI,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,Body mass index (kg/m2).
-country,character,non-unique,required,FALSE,ARG|GNB|LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
+country,character,non-unique,required,FALSE,COL|ARG|GNB|LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR,Country of acquisition using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
 location,character,non-unique,optional,FALSE,.+,Free-form additional location information.
 population,character,non-unique,optional,FALSE,[a-zA-Z]\S+,can describe the belonging to a specific population
 travel_destination,character,non-unique,optional,FALSE,CMR|ETH|KEN|TZA|RWA|IND|LKA|NPL,travel destination using ISO3 code from http://www.fao.org/countryprofiles/iso3list/en/.
@@ -24,7 +24,7 @@ lifestyle,character,non-unique,optional,FALSE,Hunter-gatherer|Agriculturalist|Ag
 brinkman_index,double,non-unique,optional,FALSE,[0-9]+\.?[0-9]*,The Brinkman index if provided
 days_from_first_collection,integer,non-unique,optional,FALSE,[0-9]+,Used for time series studies.
 sequencing_platform,character,non-unique,required,FALSE,IlluminaHiSeq|IlluminaMiSeq|IlluminaNextSeq|IlluminaNovaSeq|IonProton,This will be modified as new sequencing platforms are added to the database.
-DNA_extraction_kit,character,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep|thermo_fisheri|QIAamp,DNA extraction kit.
+DNA_extraction_kit,character,non-unique,optional,FALSE,Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep|thermo_fisher|QIAamp,DNA extraction kit.
 PMID,character,non-unique,optional,FALSE,[0-9]{8}|NA,Identifier of the main publication in PubMed.
 number_reads,integer,non-unique,required,FALSE,[0-9]+,Number of final reads - calculated from raw data.
 number_bases,double,non-unique,required,FALSE,[0-9]+,Total number of bases sequenced in the sample - calculated from raw data.
