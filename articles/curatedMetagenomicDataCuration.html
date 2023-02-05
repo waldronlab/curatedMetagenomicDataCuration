@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-01-24 19:50:20 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
+<p>This vignette was built on 2023-02-05 20:59:43 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4645,6 +4645,127 @@
 1302 . : “1.0”<br>
 1303 . : “1.0”<br>
 1307 . : “1.0”</p>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="nagatan_2022_metadata-tsv">NagataN_2022_metadata.tsv<a class="anchor" aria-label="anchor" href="#nagatan_2022_metadata-tsv"></a>
+</h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/NagataN_2022/NagataN_2022_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/NagataN_2022/NagataN_2022_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
+<div class="section level3">
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+</h3>
+<div class="section level4">
+<h4 id="study_condition-1">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: control|abdominalhernia|acute_diarrhoea|ACVD|AD|adenoma|AR|arthritis|AS|ascites|asthma|BD|bronchitis|CAD|carcinoma_surgery_history|CDI|cellulitis|cephalosporins|chorioamnionitis|cirrhosis|CMV|coeliac|cough|CRC|cystitis|fatty_liver|fever|FMT|gangrene|generic_diabetes|gestational_diabetes|HF|hypertension|IBD|IGT|infectiousgastroenteritis|ME/CFS|melanoma|metabolic_syndrome|migraine|MS|mucositis|NK|osteoarthritis|otitis|PD|peri-implantitis|periodontitis|pneumonia|pre-eclampsia|pre-hypertension|premature_born|psoriasis|pyelonefritis|pyelonephritis|RA|respiratoryinf|salmonellosis|schizophrenia|sepsis|skininf|SRP|STEC|STH|stomatitis|suspinf|T1D|T2D|tonsillitis|wilson</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>471 . : “PDAC”<br>
+472 . : “PDAC”<br>
+473 . : “PDAC”<br>
+474 . : “PDAC”<br>
+475 . : “PDAC”<br>
+476 . : “PDAC”<br>
+477 . : “PDAC”<br>
+478 . : “PDAC”<br>
+479 . : “PDAC”<br>
+480 . : “PDAC”<br>
+481 . : “PDAC”<br>
+482 . : “PDAC”<br>
+483 . : “PDAC”<br>
+484 . : “PDAC”<br>
+485 . : “PDAC”<br>
+486 . : “PDAC”<br>
+487 . : “PDAC”<br>
+488 . : “PDAC”<br>
+489 . : “PDAC”<br>
+490 . : “PDAC”<br>
+491 . : “PDAC”<br>
+492 . : “PDAC”<br>
+493 . : “PDAC”<br>
+494 . : “PDAC”<br>
+495 . : “PDAC”<br>
+496 . : “PDAC”<br>
+497 . : “PDAC”<br>
+498 . : “PDAC”<br>
+499 . : “PDAC”<br>
+500 . : “PDAC”<br>
+501 . : “PDAC”<br>
+502 . : “PDAC”<br>
+503 . : “PDAC”<br>
+504 . : “PDAC”<br>
+505 . : “PDAC”<br>
+506 . : “PDAC”<br>
+507 . : “PDAC”<br>
+508 . : “PDAC”<br>
+509 . : “PDAC”<br>
+510 . : “PDAC”<br>
+511 . : “PDAC”<br>
+512 . : “PDAC”<br>
+513 . : “PDAC”<br>
+514 . : “PDAC”<br>
+515 . : “PDAC”<br>
+516 . : “PDAC”<br>
+517 . : “PDAC”<br>
+518 . : “PDAC”<br>
+519 . : “PDAC”<br>
+520 . : “PDAC”<br>
+521 . : “PDAC”<br>
+522 . : “PDAC”<br>
+523 . : “PDAC”<br>
+524 . : “PDAC”<br>
+525 . : “PDAC”<br>
+526 . : “PDAC”<br>
+527 . : “PDAC”<br>
+528 . : “PDAC”<br>
+529 . : “PDAC”<br>
+530 . : “PDAC”<br>
+531 . : “PDAC”<br>
+532 . : “PDAC”<br>
+533 . : “PDAC”<br>
+534 . : “PDAC”<br>
+535 . : “PDAC”<br>
+536 . : “PDAC”<br>
+537 . : “PDAC”<br>
+538 . : “PDAC”<br>
+539 . : “PDAC”<br>
+540 . : “PDAC”<br>
+541 . : “PDAC”<br>
+542 . : “PDAC”<br>
+543 . : “PDAC”<br>
+544 . : “PDAC”<br>
+545 . : “PDAC”<br>
+546 . : “PDAC”<br>
+547 . : “PDAC”<br>
+548 . : “PDAC”<br>
+549 . : “PDAC”<br>
+550 . : “PDAC”<br>
+551 . : “PDAC”<br>
+552 . : “PDAC”<br>
+553 . : “PDAC”<br>
+554 . : “PDAC”<br>
+555 . : “PDAC”<br>
+556 . : “PDAC”<br>
+557 . : “PDAC”<br>
+558 . : “PDAC”<br>
+559 . : “PDAC”<br>
+560 . : “PDAC”</p>
 </div>
 </div>
 </div>
