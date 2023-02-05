@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-02-05 20:59:43 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
+<p>This vignette was built on 2023-02-05 21:19:12 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -4810,6 +4810,414 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PehrssonE_2016/PehrssonE_2016_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <p>All checks OK.</p>
+</div>
+<div class="section level2">
+<h2 id="pernigonin_2021_metadata-tsv">PernigoniN_2021_metadata.tsv<a class="anchor" aria-label="anchor" href="#pernigonin_2021_metadata-tsv"></a>
+</h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PernigoniN_2021/PernigoniN_2021_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PernigoniN_2021/PernigoniN_2021_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
+<div class="section level3">
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+</h3>
+<div class="section level4">
+<h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: control|abdominalhernia|acute_diarrhoea|ACVD|AD|adenoma|AR|arthritis|AS|ascites|asthma|BD|bronchitis|CAD|carcinoma_surgery_history|CDI|cellulitis|cephalosporins|chorioamnionitis|cirrhosis|CMV|coeliac|cough|CRC|cystitis|fatty_liver|fever|FMT|gangrene|generic_diabetes|gestational_diabetes|HF|hypertension|IBD|IGT|infectiousgastroenteritis|ME/CFS|melanoma|metabolic_syndrome|migraine|MS|mucositis|NK|osteoarthritis|otitis|PD|peri-implantitis|periodontitis|pneumonia|pre-eclampsia|pre-hypertension|premature_born|psoriasis|pyelonefritis|pyelonephritis|RA|respiratoryinf|salmonellosis|schizophrenia|sepsis|skininf|SRP|STEC|STH|stomatitis|suspinf|T1D|T2D|tonsillitis|wilson</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “PC”<br>
+2 . : “PC”<br>
+3 . : “PC”<br>
+4 . : “PC”<br>
+5 . : “PC”<br>
+6 . : “PC”<br>
+7 . : “PC”<br>
+8 . : “PC”<br>
+9 . : “PC”<br>
+10 . : “PC”<br>
+11 . : “PC”<br>
+12 . : “PC”<br>
+13 . : “PC”<br>
+14 . : “PC”<br>
+15 . : “PC”<br>
+16 . : “PC”<br>
+17 . : “PC”<br>
+18 . : “PC”<br>
+19 . : “PC”<br>
+20 . : “PC”<br>
+21 . : “PC”<br>
+22 . : “PC”<br>
+23 . : “PC”<br>
+24 . : “PC”<br>
+25 . : “PC”<br>
+26 . : “PC”<br>
+27 . : “PC”<br>
+28 . : “PC”<br>
+29 . : “PC”<br>
+30 . : “PC”<br>
+31 . : “PC”<br>
+32 . : “PC”<br>
+33 . : “PC”<br>
+34 . : “PC”<br>
+35 . : “PC”<br>
+36 . : “PC”<br>
+37 . : “PC”<br>
+38 . : “PC”<br>
+39 . : “PC”<br>
+40 . : “PC”<br>
+41 . : “PC”<br>
+42 . : “PC”<br>
+43 . : “PC”<br>
+44 . : “PC”<br>
+45 . : “PC”<br>
+46 . : “PC”<br>
+47 . : “PC”<br>
+48 . : “PC”<br>
+49 . : “PC”<br>
+50 . : “PC”<br>
+51 . : “PC”<br>
+52 . : “PC”<br>
+53 . : “PC”<br>
+54 . : “PC”<br>
+55 . : “PC”<br>
+56 . : “PC”<br>
+57 . : “PC”<br>
+58 . : “PC”<br>
+59 . : “PC”<br>
+60 . : “PC”<br>
+61 . : “PC”<br>
+62 . : “PC”<br>
+63 . : “PC”<br>
+64 . : “PC”<br>
+65 . : “PC”<br>
+66 . : “PC”<br>
+67 . : “PC”<br>
+68 . : “PC”<br>
+69 . : “PC”<br>
+70 . : “PC”<br>
+71 . : “PC”<br>
+72 . : “PC”<br>
+73 . : “PC”<br>
+74 . : “PC”</p>
+</div>
+<div class="section level4">
+<h4 id="disease-1">disease<a class="anchor" aria-label="anchor" href="#disease-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: healthy|abdominalhernia|acute_diarrhoea|ACVD|AD|adenoma|AR|arthritis|ascites|asthma|BD|bronchitis|CAD|carcinoma_surgery_history|CDI|cellulitis|chorioamnionitis|cirrhosis|CMV|coeliac|cough|CRC|cystitis|fatty_liver|fever|few_polyps|gangrene|generic_diabetes|gestational_diabetes|hepatitis|HF|hypercholesterolemia|hypertension|IBD|IGT|infectiousgastroenteritis|ME/CFS|melanoma|metabolic_syndrome|metastases|migraine|MS|mucositis|NK|osteoarthritis|otitis|PD|peri-implantitis|periodontitis|pneumonia|pre-eclampsia|premature_born|psoriasis|pyelonefritis|pyelonephritis|RA|respiratoryinf|salmonellosis|schizophrenia|sepsis|skininf|STEC|STH|stomatitis|suspinf|T1D|T2D|tonsillitis|uveitis|VKH|wilson</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “PC”<br>
+2 . : “PC”<br>
+4 . : “PC”<br>
+13 . : “PC”<br>
+15 . : “PC”<br>
+18 . : “PC”<br>
+19 . : “PC”<br>
+20 . : “PC”<br>
+33 . : “PC”<br>
+39 . : “PC”<br>
+61 . : “PC”</p>
+</div>
+<div class="section level4">
+<h4 id="disease_subtype">disease_subtype<a class="anchor" aria-label="anchor" href="#disease_subtype"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: healthy|CD|UC|HBV|HDV|HEV|cirrhosis|adenoma|smalladenoma|largeadenoma|advancedadenoma|adenocarcinoma|carcinoma|AS|cholera|T1D_nonconverter|T1D_seroconverter|NAFLD|undetermined_colitis|ascaris_lumbricoides|necator_americanus|trichuris_trichiura|hookworm|microfilaria_spp|plasmodium_falciparum|microfilaria_loa_loa|entamoeba_histolytica|mansonella_perstans|first_episode_schizophrenia|repeated_episodes_schizophrenia|MMC|HC|UMCC</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “HSPC”<br>
+2 . : “HSPC”<br>
+3 . : “HSPC”<br>
+4 . : “HSPC”<br>
+5 . : “HSPC”<br>
+6 . : “HSPC”<br>
+7 . : “HSPC”<br>
+8 . : “HSPC”<br>
+9 . : “HSPC”<br>
+10 . : “HSPC”<br>
+11 . : “HSPC”<br>
+12 . : “HSPC”<br>
+13 . : “HSPC”<br>
+14 . : “HSPC”<br>
+15 . : “HSPC”<br>
+16 . : “HSPC”<br>
+17 . : “HSPC”<br>
+18 . : “HSPC”<br>
+19 . : “HSPC”<br>
+20 . : “CRPC”<br>
+21 . : “CRPC”<br>
+22 . : “CRPC”<br>
+23 . : “CRPC”<br>
+24 . : “CRPC”<br>
+25 . : “CRPC”<br>
+26 . : “CRPC”<br>
+27 . : “CRPC”<br>
+28 . : “CRPC”<br>
+29 . : “CRPC”<br>
+30 . : “CRPC”<br>
+31 . : “CRPC”<br>
+32 . : “CRPC”<br>
+33 . : “CRPC”<br>
+34 . : “CRPC”<br>
+35 . : “CRPC”<br>
+36 . : “CRPC”<br>
+37 . : “CRPC”<br>
+38 . : “CRPC”<br>
+39 . : “CRPC”<br>
+40 . : “CRPC”<br>
+41 . : “CRPC”<br>
+42 . : “CRPC”<br>
+43 . : “CRPC”<br>
+44 . : “CRPC”<br>
+45 . : “CRPC”<br>
+46 . : “CRPC”<br>
+47 . : “CRPC”<br>
+48 . : “CRPC”<br>
+49 . : “CRPC”<br>
+50 . : “CRPC”<br>
+51 . : “CRPC”<br>
+52 . : “CRPC”<br>
+53 . : “CRPC”<br>
+54 . : “CRPC”<br>
+55 . : “CRPC”<br>
+56 . : “CRPC”<br>
+57 . : “CRPC”<br>
+58 . : “CRPC”<br>
+59 . : “CRPC”<br>
+60 . : “CRPC”<br>
+61 . : “CRPC”<br>
+62 . : “CRPC”<br>
+63 . : “CRPC”<br>
+64 . : “CRPC”<br>
+65 . : “CRPC”<br>
+66 . : “CRPC”<br>
+67 . : “CRPC”<br>
+68 . : “CRPC”<br>
+69 . : “CRPC”<br>
+70 . : “CRPC”<br>
+71 . : “CRPC”<br>
+72 . : “CRPC”<br>
+73 . : “CRPC”<br>
+74 . : “CRPC”</p>
+</div>
+<div class="section level4">
+<h4 id="country">country<a class="anchor" aria-label="anchor" href="#country"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: required<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: COL|ARG|GNB|LBR|SLV|CAN|DNK|EST|FJI|FIN|FRA|DEU|ITA|MNG|NLD|NOR|JPN|ESP|KOR|BRA|IRL|PHL|SWE|USA|GBR|CHN|RUS|LUX|AUT|TZA|PER|MDG|ISL|BRN|IDN|MYS|HUN|SVK|SGP|ISR|BGD|KAZ|IND|GHA|ETH|JPN|CMR</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>3 . : “CHE”<br>
+4 . : “CHE”<br>
+5 . : “CHE”<br>
+6 . : “CHE”<br>
+7 . : “CHE”<br>
+8 . : “CHE”<br>
+9 . : “CHE”<br>
+10 . : “CHE”<br>
+11 . : “CHE”<br>
+12 . : “CHE”<br>
+13 . : “CHE”<br>
+14 . : “CHE”<br>
+15 . : “CHE”<br>
+16 . : “CHE”<br>
+17 . : “CHE”<br>
+18 . : “CHE”<br>
+19 . : “CHE”<br>
+63 . : “CHE”<br>
+64 . : “CHE”<br>
+65 . : “CHE”<br>
+66 . : “CHE”<br>
+67 . : “CHE”<br>
+68 . : “CHE”<br>
+69 . : “CHE”<br>
+70 . : “CHE”<br>
+71 . : “CHE”<br>
+72 . : “CHE”<br>
+73 . : “CHE”<br>
+74 . : “CHE”</p>
+</div>
+<div class="section level4">
+<h4 id="dna_extraction_kit">DNA_extraction_kit<a class="anchor" aria-label="anchor" href="#dna_extraction_kit"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: Qiagen|Gnome|MoBio|MPBio|NorgenBiotek|Illuminakit|Maxwell_LEV|PSP_Spin_Stool|Tiangen|PowerSoil|Chemagen|other|PowerSoilPro|ZR_Fecal_DNA_MiniPrep|KAMA_Hyper_Prep|thermo_fisher|QIAamp</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “QIAamp_fast”<br>
+2 . : “QIAamp_fast”<br>
+3 . : “QIAamp_fast”<br>
+4 . : “QIAamp_fast”<br>
+5 . : “QIAamp_fast”<br>
+6 . : “QIAamp_fast”<br>
+7 . : “QIAamp_fast”<br>
+8 . : “QIAamp_fast”<br>
+9 . : “QIAamp_fast”<br>
+10 . : “QIAamp_fast”<br>
+11 . : “QIAamp_fast”<br>
+12 . : “QIAamp_fast”<br>
+13 . : “QIAamp_fast”<br>
+14 . : “QIAamp_fast”<br>
+15 . : “QIAamp_fast”<br>
+16 . : “QIAamp_fast”<br>
+17 . : “QIAamp_fast”<br>
+18 . : “QIAamp_fast”<br>
+19 . : “QIAamp_fast”<br>
+20 . : “QIAamp_fast”<br>
+21 . : “QIAamp_fast”<br>
+22 . : “QIAamp_fast”<br>
+23 . : “QIAamp_fast”<br>
+24 . : “QIAamp_fast”<br>
+25 . : “QIAamp_fast”<br>
+26 . : “QIAamp_fast”<br>
+27 . : “QIAamp_fast”<br>
+28 . : “QIAamp_fast”<br>
+29 . : “QIAamp_fast”<br>
+30 . : “QIAamp_fast”<br>
+31 . : “QIAamp_fast”<br>
+32 . : “QIAamp_fast”<br>
+33 . : “QIAamp_fast”<br>
+34 . : “QIAamp_fast”<br>
+35 . : “QIAamp_fast”<br>
+36 . : “QIAamp_fast”<br>
+37 . : “QIAamp_fast”<br>
+38 . : “QIAamp_fast”<br>
+39 . : “QIAamp_fast”<br>
+40 . : “QIAamp_fast”<br>
+41 . : “QIAamp_fast”<br>
+42 . : “QIAamp_fast”<br>
+43 . : “QIAamp_fast”<br>
+44 . : “QIAamp_fast”<br>
+45 . : “QIAamp_fast”<br>
+46 . : “QIAamp_fast”<br>
+47 . : “QIAamp_fast”<br>
+48 . : “QIAamp_fast”<br>
+49 . : “QIAamp_fast”<br>
+50 . : “QIAamp_fast”<br>
+51 . : “QIAamp_fast”<br>
+52 . : “QIAamp_fast”<br>
+53 . : “QIAamp_fast”<br>
+54 . : “QIAamp_fast”<br>
+55 . : “QIAamp_fast”<br>
+56 . : “QIAamp_fast”<br>
+57 . : “QIAamp_fast”<br>
+58 . : “QIAamp_fast”<br>
+59 . : “QIAamp_fast”<br>
+60 . : “QIAamp_fast”<br>
+61 . : “QIAamp_fast”<br>
+62 . : “QIAamp_fast”<br>
+63 . : “QIAamp_fast”<br>
+64 . : “QIAamp_fast”<br>
+65 . : “QIAamp_fast”<br>
+66 . : “QIAamp_fast”<br>
+67 . : “QIAamp_fast”<br>
+68 . : “QIAamp_fast”<br>
+69 . : “QIAamp_fast”<br>
+70 . : “QIAamp_fast”<br>
+71 . : “QIAamp_fast”<br>
+72 . : “QIAamp_fast”<br>
+73 . : “QIAamp_fast”<br>
+74 . : “QIAamp_fast”</p>
+</div>
+<div class="section level4">
+<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|antineoplastics|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|lactulose|lantus|laxatives|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|opioids|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>23 . : “antineoplastic”<br>
+28 . : “antineoplastic”<br>
+31 . : “antineoplastic”<br>
+43 . : “antineoplastic”<br>
+68 . : “antineoplastic”</p>
+</div>
+</div>
 </div>
 <div class="section level2">
 <h2 id="petersba_2019_metadata-tsv">PetersBA_2019_metadata.tsv<a class="anchor" aria-label="anchor" href="#petersba_2019_metadata-tsv"></a>
