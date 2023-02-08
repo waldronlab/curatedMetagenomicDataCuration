@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-02-05 21:19:12 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
+<p>This vignette was built on 2023-02-08 14:06:57 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -573,6 +573,313 @@
 <p>All checks OK.</p>
 </div>
 <div class="section level2">
+<h2 id="kartale_2022_metadata-tsv">KartalE_2022_metadata.tsv<a class="anchor" aria-label="anchor" href="#kartale_2022_metadata-tsv"></a>
+</h2>
+<p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KartalE_2022/KartalE_2022_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KartalE_2022/KartalE_2022_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
+<div class="section level3">
+<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
+</h3>
+<div class="section level4">
+<h4 id="study_condition-1">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: FALSE<br>
+</li>
+<li>
+<em>allowedvalues</em>: control|abdominalhernia|acute_diarrhoea|ACVD|AD|adenoma|AR|arthritis|AS|ascites|asthma|BD|bronchitis|CAD|carcinoma_surgery_history|CDI|cellulitis|cephalosporins|chorioamnionitis|cirrhosis|CMV|coeliac|cough|CRC|cystitis|fatty_liver|fever|FMT|gangrene|generic_diabetes|gestational_diabetes|HF|hypertension|IBD|IGT|infectiousgastroenteritis|ME/CFS|melanoma|metabolic_syndrome|migraine|MS|mucositis|NK|osteoarthritis|otitis|PD|peri-implantitis|periodontitis|pneumonia|pre-eclampsia|pre-hypertension|premature_born|psoriasis|pyelonefritis|pyelonephritis|RA|respiratoryinf|salmonellosis|schizophrenia|sepsis|skininf|SRP|STEC|STH|stomatitis|suspinf|T1D|T2D|tonsillitis|wilson</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>4 . : “pancreatitis”<br>
+5 . : “pancreatitis”<br>
+6 . : “pancreatitis”<br>
+7 . : “pancreatitis”<br>
+8 . : “pancreatitis”<br>
+9 . : “pancreatitis”<br>
+10 . : “pancreatitis”<br>
+11 . : “pancreatitis”<br>
+12 . : “pancreatitis”<br>
+13 . : “pancreatitis”<br>
+14 . : “pancreatitis”<br>
+116 . : “pancreatitis”<br>
+117 . : “pancreatitis”<br>
+118 . : “pancreatitis”<br>
+119 . : “pancreatitis”<br>
+122 . : “PDAC”<br>
+123 . : “PDAC”<br>
+124 . : “PDAC”<br>
+125 . : “PDAC”<br>
+126 . : “PDAC”<br>
+127 . : “PDAC”<br>
+128 . : “PDAC”<br>
+129 . : “PDAC”<br>
+130 . : “PDAC”<br>
+131 . : “PDAC”<br>
+132 . : “PDAC”<br>
+133 . : “PDAC”<br>
+134 . : “PDAC”<br>
+135 . : “PDAC”<br>
+136 . : “PDAC”<br>
+137 . : “PDAC”<br>
+138 . : “PDAC”<br>
+139 . : “PDAC”<br>
+140 . : “PDAC”<br>
+141 . : “PDAC”<br>
+142 . : “PDAC”<br>
+143 . : “PDAC”<br>
+144 . : “PDAC”<br>
+145 . : “PDAC”<br>
+146 . : “PDAC”<br>
+147 . : “PDAC”<br>
+148 . : “PDAC”<br>
+149 . : “PDAC”<br>
+150 . : “PDAC”<br>
+151 . : “PDAC”<br>
+152 . : “PDAC”<br>
+153 . : “PDAC”<br>
+154 . : “PDAC”<br>
+155 . : “PDAC”<br>
+156 . : “PDAC”<br>
+157 . : “PDAC”<br>
+158 . : “PDAC”<br>
+159 . : “PDAC”<br>
+160 . : “PDAC”<br>
+161 . : “PDAC”<br>
+162 . : “PDAC”<br>
+163 . : “PDAC”<br>
+164 . : “PDAC”<br>
+165 . : “PDAC”<br>
+166 . : “PDAC”<br>
+167 . : “PDAC”<br>
+168 . : “PDAC”<br>
+169 . : “PDAC”<br>
+170 . : “PDAC”<br>
+171 . : “PDAC”<br>
+172 . : “PDAC”<br>
+173 . : “PDAC”<br>
+174 . : “PDAC”<br>
+175 . : “PDAC”<br>
+176 . : “PDAC”<br>
+177 . : “PDAC”<br>
+178 . : “PDAC”<br>
+179 . : “PDAC”<br>
+180 . : “PDAC”<br>
+181 . : “PDAC”<br>
+182 . : “PDAC”<br>
+183 . : “PDAC”<br>
+184 . : “PDAC”<br>
+185 . : “PDAC”<br>
+186 . : “PDAC”<br>
+187 . : “PDAC”<br>
+188 . : “PDAC”<br>
+189 . : “PDAC”<br>
+190 . : “PDAC”<br>
+191 . : “PDAC”<br>
+192 . : “PDAC”<br>
+193 . : “PDAC”<br>
+194 . : “PDAC”<br>
+195 . : “PDAC”<br>
+196 . : “PDAC”<br>
+197 . : “PDAC”<br>
+198 . : “PDAC”<br>
+199 . : “PDAC”<br>
+200 . : “PDAC”<br>
+201 . : “PDAC”<br>
+202 . : “PDAC”<br>
+203 . : “PDAC”<br>
+204 . : “PDAC”<br>
+205 . : “PDAC”<br>
+206 . : “PDAC”<br>
+207 . : “PDAC”<br>
+208 . : “PDAC”<br>
+209 . : “PDAC”<br>
+210 . : “PDAC”<br>
+211 . : “PDAC”<br>
+212 . : “PDAC”<br>
+213 . : “PDAC”<br>
+214 . : “PDAC”<br>
+215 . : “PDAC”<br>
+216 . : “PDAC”<br>
+217 . : “PDAC”<br>
+218 . : “PDAC”<br>
+219 . : “PDAC”<br>
+220 . : “PDAC”<br>
+221 . : “PDAC”<br>
+222 . : “PDAC”<br>
+223 . : “PDAC”<br>
+224 . : “PDAC”<br>
+225 . : “PDAC”<br>
+226 . : “PDAC”<br>
+227 . : “PDAC”<br>
+228 . : “PDAC”<br>
+229 . : “PDAC”<br>
+230 . : “PDAC”<br>
+231 . : “PDAC”<br>
+232 . : “PDAC”<br>
+233 . : “PDAC”<br>
+234 . : “PDAC”<br>
+235 . : “PDAC”<br>
+236 . : “PDAC”<br>
+237 . : “PDAC”<br>
+238 . : “PDAC”<br>
+239 . : “PDAC”<br>
+240 . : “PDAC”<br>
+241 . : “PDAC”<br>
+242 . : “PDAC”<br>
+243 . : “PDAC”<br>
+244 . : “PDAC”<br>
+245 . : “PDAC”<br>
+246 . : “PDAC”<br>
+247 . : “PDAC”<br>
+248 . : “PDAC”<br>
+249 . : “PDAC”<br>
+250 . : “PDAC”<br>
+251 . : “PDAC”<br>
+252 . : “PDAC”<br>
+253 . : “PDAC”<br>
+254 . : “PDAC”<br>
+255 . : “PDAC”<br>
+256 . : “PDAC”<br>
+257 . : “PDAC”<br>
+258 . : “PDAC”<br>
+259 . : “PDAC”<br>
+260 . : “PDAC”<br>
+261 . : “PDAC”<br>
+262 . : “PDAC”<br>
+263 . : “PDAC”<br>
+264 . : “PDAC”<br>
+265 . : “PDAC”<br>
+266 . : “PDAC”<br>
+267 . : “PDAC”<br>
+268 . : “PDAC”<br>
+269 . : “PDAC”<br>
+270 . : “PDAC”<br>
+271 . : “PDAC”<br>
+272 . : “PDAC”<br>
+273 . : “PDAC”<br>
+274 . : “PDAC”<br>
+275 . : “PDAC”<br>
+291 . : “pancreatitis”<br>
+292 . : “pancreatitis”<br>
+293 . : “pancreatitis”<br>
+294 . : “pancreatitis”<br>
+299 . : “pancreatitis”<br>
+300 . : “pancreatitis”<br>
+301 . : “pancreatitis”<br>
+302 . : “pancreatitis”<br>
+303 . : “pancreatitis”<br>
+304 . : “pancreatitis”<br>
+305 . : “pancreatitis”<br>
+306 . : “pancreatitis”<br>
+307 . : “pancreatitis”<br>
+308 . : “pancreatitis”<br>
+309 . : “pancreatitis”<br>
+310 . : “pancreatitis”<br>
+311 . : “pancreatitis”<br>
+312 . : “pancreatitis”<br>
+313 . : “pancreatitis”<br>
+314 . : “pancreatitis”<br>
+315 . : “pancreatitis”<br>
+322 . : “pancreatitis”<br>
+323 . : “pancreatitis”<br>
+324 . : “pancreatitis”<br>
+325 . : “pancreatitis”<br>
+326 . : “pancreatitis”<br>
+327 . : “pancreatitis”</p>
+</div>
+<div class="section level4">
+<h4 id="disease-1">disease<a class="anchor" aria-label="anchor" href="#disease-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: healthy|abdominalhernia|acute_diarrhoea|ACVD|AD|adenoma|AR|arthritis|ascites|asthma|BD|bronchitis|CAD|carcinoma_surgery_history|CDI|cellulitis|chorioamnionitis|cirrhosis|CMV|coeliac|cough|CRC|cystitis|fatty_liver|fever|few_polyps|gangrene|generic_diabetes|gestational_diabetes|hepatitis|HF|hypercholesterolemia|hypertension|IBD|IGT|infectiousgastroenteritis|ME/CFS|melanoma|metabolic_syndrome|metastases|migraine|MS|mucositis|NK|osteoarthritis|otitis|PD|peri-implantitis|periodontitis|pneumonia|pre-eclampsia|premature_born|psoriasis|pyelonefritis|pyelonephritis|RA|respiratoryinf|salmonellosis|schizophrenia|sepsis|skininf|STEC|STH|stomatitis|suspinf|T1D|T2D|tonsillitis|uveitis|VKH|wilson</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>1 . : “acute_pancreatitis”<br>
+2 . : “acute_pancreatitis”<br>
+4 . : “chronic_pancreatitis”<br>
+5 . : “chronic_pancreatitis”<br>
+6 . : “chronic_pancreatitis”<br>
+7 . : “chronic_pancreatitis”<br>
+8 . : “chronic_pancreatitis”<br>
+9 . : “chronic_pancreatitis”<br>
+10 . : “chronic_pancreatitis”<br>
+12 . : “chronic_pancreatitis”<br>
+13 . : “chronic_pancreatitis”<br>
+14 . : “chronic_pancreatitis”<br>
+98 . : “obese”<br>
+99 . : “obese”<br>
+100 . : “obese”<br>
+101 . : “obese”<br>
+102 . : “obese”<br>
+103 . : “obese”<br>
+104 . : “obese”<br>
+105 . : “obese”<br>
+106 . : “obese”<br>
+107 . : “obese”<br>
+108 . : “obese”<br>
+109 . : “obese”<br>
+110 . : “obese”<br>
+111 . : “obese”<br>
+112 . : “obese”<br>
+116 . : “obese;chronic_pancreatitis”<br>
+117 . : “obese;chronic_pancreatitis”<br>
+118 . : “obese;chronic_pancreatitis”<br>
+119 . : “obese;chronic_pancreatitis”<br>
+120 . : “obese”<br>
+121 . : “obese”</p>
+</div>
+<div class="section level4">
+<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
+</h4>
+<p><strong>Template definition</strong></p>
+<ul>
+<li>
+<em>col.class</em>: character<br>
+</li>
+<li>
+<em>uniqueness</em>: non-unique<br>
+</li>
+<li>
+<em>requiredness</em>: optional<br>
+</li>
+<li>
+<em>multiplevalues</em>: TRUE<br>
+</li>
+<li>
+<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|antineoplastics|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|lactulose|lantus|laxatives|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|opioids|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
+</ul>
+<p><strong>Errors</strong></p>
+<p>296 . : “diabetes_oral_medication”<br>
+297 . : “diabetes_oral_medication”<br>
+298 . : “diabetes_oral_medication”</p>
+</div>
+</div>
+</div>
+<div class="section level2">
 <h2 id="kaurk_2020_metadata-tsv">KaurK_2020_metadata.tsv<a class="anchor" aria-label="anchor" href="#kaurk_2020_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/KaurK_2020/KaurK_2020_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
@@ -621,7 +928,7 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="entry-errors-2">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-2"></a>
+<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
 <div class="section level4">
 <h4 id="history_of_therapy">history_of_therapy<a class="anchor" aria-label="anchor" href="#history_of_therapy"></a>
@@ -731,7 +1038,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/MetaCardis_2020_a/MetaCardis_2020_a_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/MetaCardis_2020_a/MetaCardis_2020_a_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
+<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
 </h3>
 <div class="section level4">
 <h4 id="minimum_read_length">minimum_read_length<a class="anchor" aria-label="anchor" href="#minimum_read_length"></a>
@@ -4653,10 +4960,10 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/NagataN_2022/NagataN_2022_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/NagataN_2022/NagataN_2022_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-4">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-4"></a>
+<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
 </h3>
 <div class="section level4">
-<h4 id="study_condition-1">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-1"></a>
+<h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -4816,10 +5123,10 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/PernigoniN_2021/PernigoniN_2021_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/PernigoniN_2021/PernigoniN_2021_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="entry-errors-5">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-5"></a>
+<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
 </h3>
 <div class="section level4">
-<h4 id="study_condition-2">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-2"></a>
+<h4 id="study_condition-3">study_condition<a class="anchor" aria-label="anchor" href="#study_condition-3"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -4915,7 +5222,7 @@
 74 . : “PC”</p>
 </div>
 <div class="section level4">
-<h4 id="disease-1">disease<a class="anchor" aria-label="anchor" href="#disease-1"></a>
+<h4 id="disease-2">disease<a class="anchor" aria-label="anchor" href="#disease-2"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
@@ -5191,7 +5498,7 @@
 74 . : “QIAamp_fast”</p>
 </div>
 <div class="section level4">
-<h4 id="treatment-1">treatment<a class="anchor" aria-label="anchor" href="#treatment-1"></a>
+<h4 id="treatment-2">treatment<a class="anchor" aria-label="anchor" href="#treatment-2"></a>
 </h4>
 <p><strong>Template definition</strong></p>
 <ul>
