@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-02-09 13:51:25 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
+<p>This vignette was built on 2023-02-09 13:55:08 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -5576,194 +5576,13 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SpencerCN_2021/SpencerCN_2021_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SpencerCN_2021/SpencerCN_2021_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="required-columns-that-are-missing-1">Required columns that are missing<a class="anchor" aria-label="anchor" href="#required-columns-that-are-missing-1"></a>
-</h3>
-<p>number_reads number_bases minimum_read_length median_read_length</p>
-</div>
-<div class="section level3">
 <h3 id="column-name-errors-4">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-4"></a>
 </h3>
 <ul>
+<li><p>“previous_therapy” is not defined in the template.</p></li>
 <li><p>“PFS03” is not defined in the template.</p></li>
 <li><p>“PFS06” is not defined in the template.</p></li>
 </ul>
-</div>
-<div class="section level3">
-<h3 id="entry-errors-6">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-6"></a>
-</h3>
-<div class="section level4">
-<h4 id="age">age<a class="anchor" aria-label="anchor" href="#age"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: integer<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: [0-9]+</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>126 . : “&gt;89”</p>
-</div>
-<div class="section level4">
-<h4 id="treatment-3">treatment<a class="anchor" aria-label="anchor" href="#treatment-3"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: TRUE<br>
-</li>
-<li>
-<em>allowedvalues</em>: no|antihta|5-ASA|acarbose|albendazole|amiodaron|antacids|anthelmintics|antiandrogens|antidiab|antihypertension|antilipid|antineoplastics|asa|aspirin|at2_inhib|aza|beta_blockers|ca2_cbl|clopidogrel|CTLA4|ctrblock|cumarine|diuranse|EEN|folate|forceval|glp_1|H2RA|insulin|ipilumumab|iron|kspdiur|lactulose|lantus|laxatives|metformin|methotrexate|modulen_suppl|nivolumab|novorapid|NSAID|opioids|PD1|pembrolizumab|PPI|probiotic|psychotropics|sitagliptin|solostar|statin|statins|steroids|su|sulphonylurea|thiazidique|urinaryalkalinizer|xantoxinh</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>46 . : “other ICB”<br>
-51 . : “other ICB”<br>
-54 . : “other systemic”<br>
-55 . : “other ICB”<br>
-56 . : “other ICB”<br>
-57 . : “other ICB”<br>
-58 . : “other ICB”<br>
-61 . : “other ICB”<br>
-65 . : “other systemic”<br>
-66 . : “other ICB”<br>
-82 . : “other ICB”<br>
-118 . : “other systemic”</p>
-</div>
-<div class="section level4">
-<h4 id="diet">diet<a class="anchor" aria-label="anchor" href="#diet"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: omnivore|vegan|vegetarian|high_fibers|low_fibers|high_gluten|low_gluten</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>2 . : “low_fiber”<br>
-3 . : “low_fiber”<br>
-4 . : “low_fiber”<br>
-5 . : “high_fiber”<br>
-10 . : “high_fiber”<br>
-11 . : “low_fiber”<br>
-12 . : “low_fiber”<br>
-13 . : “low_fiber”<br>
-14 . : “low_fiber”<br>
-19 . : “low_fiber”<br>
-21 . : “low_fiber”<br>
-23 . : “low_fiber”<br>
-24 . : “low_fiber”<br>
-25 . : “low_fiber”<br>
-26 . : “low_fiber”<br>
-28 . : “low_fiber”<br>
-29 . : “low_fiber”<br>
-31 . : “high_fiber”<br>
-33 . : “low_fiber”<br>
-35 . : “high_fiber”<br>
-38 . : “low_fiber”<br>
-39 . : “low_fiber”<br>
-40 . : “low_fiber”<br>
-44 . : “low_fiber”<br>
-47 . : “low_fiber”<br>
-48 . : “high_fiber”<br>
-50 . : “low_fiber”<br>
-51 . : “low_fiber”<br>
-55 . : “low_fiber”<br>
-56 . : “high_fiber”<br>
-57 . : “low_fiber”<br>
-61 . : “low_fiber”<br>
-63 . : “low_fiber”<br>
-64 . : “low_fiber”<br>
-66 . : “low_fiber”<br>
-68 . : “low_fiber”<br>
-70 . : “high_fiber”<br>
-71 . : “high_fiber”<br>
-72 . : “high_fiber”<br>
-73 . : “low_fiber”<br>
-74 . : “low_fiber”<br>
-78 . : “high_fiber”<br>
-79 . : “low_fiber”<br>
-82 . : “high_fiber”<br>
-85 . : “high_fiber”<br>
-91 . : “high_fiber”<br>
-92 . : “high_fiber”<br>
-93 . : “low_fiber”<br>
-94 . : “low_fiber”<br>
-95 . : “low_fiber”<br>
-96 . : “low_fiber”<br>
-97 . : “low_fiber”<br>
-98 . : “low_fiber”<br>
-100 . : “low_fiber”<br>
-101 . : “low_fiber”<br>
-102 . : “low_fiber”<br>
-103 . : “low_fiber”<br>
-104 . : “low_fiber”<br>
-105 . : “low_fiber”<br>
-106 . : “low_fiber”<br>
-108 . : “low_fiber”<br>
-110 . : “low_fiber”<br>
-111 . : “low_fiber”<br>
-117 . : “high_fiber”<br>
-120 . : “high_fiber”<br>
-124 . : “low_fiber”<br>
-125 . : “low_fiber”<br>
-126 . : “high_fiber”<br>
-127 . : “low_fiber”<br>
-128 . : “low_fiber”<br>
-129 . : “low_fiber”<br>
-130 . : “low_fiber”<br>
-131 . : “high_fiber”<br>
-132 . : “high_fiber”<br>
-133 . : “low_fiber”<br>
-134 . : “low_fiber”<br>
-135 . : “low_fiber”<br>
-136 . : “low_fiber”<br>
-137 . : “high_fiber”<br>
-138 . : “low_fiber”<br>
-139 . : “low_fiber”<br>
-141 . : “low_fiber”<br>
-145 . : “high_fiber”<br>
-147 . : “low_fiber”<br>
-149 . : “low_fiber”<br>
-152 . : “low_fiber”<br>
-156 . : “low_fiber”<br>
-159 . : “high_fiber”<br>
-160 . : “low_fiber”<br>
-162 . : “low_fiber”<br>
-164 . : “high_fiber”<br>
-165 . : “low_fiber”<br>
-166 . : “low_fiber”<br>
-167 . : “low_fiber”</p>
-</div>
 </div>
 </div>
 <div class="section level2">
