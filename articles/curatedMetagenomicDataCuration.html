@@ -80,7 +80,7 @@
       <p>This vignette checks every file under inst/curated that ends in <code>_metadata.tsv</code> against the template file <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">inst/extdata/template.csv</a>, and shows problems found. Two types of errors can appear: 1) A “column name error” means a column name is not found at all in <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template.csv</a>. 2) An “entry error” means at least one value in a column does not match the rules defined for that column. This script will list the illegal values next to the row name they were found in. Entries are checked against the following rules: a) <em>uniqueness</em> - if “non-unique”, then duplicate are allowed in the column, if “unique”, then each duplicated value is an error and will be listed. b) <em>requiredness</em> - if “optional” then <strong>NA</strong> values are allowed, if “required” then any <strong>NA</strong> value is an error. c) <em>multiplevalues</em> - if TRUE, then multiple semicolon-separated are allowed in a single cell, if FALSE, no semicolon is allowed. d) <em>allowedvalues</em> is a regular expression definining legal values. These are assumed to be POSIX 1003.2 extended regular expressions (see <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">?grep</a></code>). Finally, the <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv" class="external-link">template file</a> contains a free-form “description” field explaining what that column should contain, sometimes including units of measurement. The source repository for this document is <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" class="external-link uri">https://github.com/waldronlab/curatedMetagenomicDataCuration</a>.</p>
     </div>
     
-<p>This vignette was built on 2023-02-09 13:55:08 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
+<p>This vignette was built on 2023-02-09 15:29:11 based on <code>curatedMetagenomicDataCuration</code> version 0.99.7.</p>
 <p>Define base GitHub URLs for viewing / editing in place:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">baseurl</span> <span class="op">&lt;-</span> <span class="st">"https://github.com/waldronlab/curatedMetagenomicDataCuration"</span></span>
@@ -1010,6 +1010,13 @@
 <h2 id="metacardis_2020_a_metadata-tsv">MetaCardis_2020_a_metadata.tsv<a class="anchor" aria-label="anchor" href="#metacardis_2020_a_metadata-tsv"></a>
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/MetaCardis_2020_a/MetaCardis_2020_a_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/MetaCardis_2020_a/MetaCardis_2020_a_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
+<div class="section level3">
+<h3 id="column-name-errors-4">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-4"></a>
+</h3>
+<ul>
+<li>"" is not defined in the template.</li>
+</ul>
+</div>
 <div class="section level3">
 <h3 id="entry-errors-3">Entry errors<a class="anchor" aria-label="anchor" href="#entry-errors-3"></a>
 </h3>
@@ -4719,213 +4726,6 @@
 1830 . : “NA”<br>
 1831 . : “NA”</p>
 </div>
-<div class="section level4">
-<h4 id="smoker">smoker<a class="anchor" aria-label="anchor" href="#smoker"></a>
-</h4>
-<p><strong>Template definition</strong></p>
-<ul>
-<li>
-<em>col.class</em>: character<br>
-</li>
-<li>
-<em>uniqueness</em>: non-unique<br>
-</li>
-<li>
-<em>requiredness</em>: optional<br>
-</li>
-<li>
-<em>multiplevalues</em>: FALSE<br>
-</li>
-<li>
-<em>allowedvalues</em>: yes|no</li>
-</ul>
-<p><strong>Errors</strong></p>
-<p>3 . : “1.0”<br>
-22 . : “1.0”<br>
-23 . : “1.0”<br>
-31 . : “1.0”<br>
-50 . : “1.0”<br>
-78 . : “1.0”<br>
-79 . : “1.0”<br>
-89 . : “1.0”<br>
-102 . : “1.0”<br>
-104 . : “1.0”<br>
-114 . : “1.0”<br>
-116 . : “1.0”<br>
-121 . : “1.0”<br>
-137 . : “1.0”<br>
-143 . : “1.0”<br>
-150 . : “1.0”<br>
-164 . : “1.0”<br>
-174 . : “1.0”<br>
-175 . : “1.0”<br>
-178 . : “1.0”<br>
-186 . : “1.0”<br>
-194 . : “1.0”<br>
-208 . : “1.0”<br>
-214 . : “1.0”<br>
-218 . : “1.0”<br>
-230 . : “1.0”<br>
-245 . : “1.0”<br>
-247 . : “1.0”<br>
-265 . : “1.0”<br>
-266 . : “1.0”<br>
-287 . : “1.0”<br>
-292 . : “1.0”<br>
-304 . : “1.0”<br>
-322 . : “1.0”<br>
-323 . : “1.0”<br>
-328 . : “1.0”<br>
-329 . : “1.0”<br>
-346 . : “1.0”<br>
-354 . : “1.0”<br>
-357 . : “1.0”<br>
-359 . : “1.0”<br>
-364 . : “1.0”<br>
-388 . : “1.0”<br>
-399 . : “1.0”<br>
-404 . : “1.0”<br>
-451 . : “1.0”<br>
-468 . : “1.0”<br>
-473 . : “1.0”<br>
-479 . : “1.0”<br>
-480 . : “1.0”<br>
-483 . : “1.0”<br>
-492 . : “1.0”<br>
-496 . : “1.0”<br>
-500 . : “1.0”<br>
-504 . : “1.0”<br>
-505 . : “1.0”<br>
-506 . : “1.0”<br>
-511 . : “1.0”<br>
-514 . : “1.0”<br>
-522 . : “1.0”<br>
-524 . : “1.0”<br>
-528 . : “1.0”<br>
-530 . : “1.0”<br>
-534 . : “1.0”<br>
-535 . : “1.0”<br>
-541 . : “1.0”<br>
-542 . : “1.0”<br>
-570 . : “1.0”<br>
-577 . : “1.0”<br>
-578 . : “1.0”<br>
-579 . : “1.0”<br>
-582 . : “1.0”<br>
-586 . : “1.0”<br>
-602 . : “1.0”<br>
-610 . : “1.0”<br>
-619 . : “1.0”<br>
-626 . : “1.0”<br>
-627 . : “1.0”<br>
-641 . : “1.0”<br>
-644 . : “1.0”<br>
-647 . : “1.0”<br>
-659 . : “1.0”<br>
-697 . : “1.0”<br>
-718 . : “1.0”<br>
-737 . : “1.0”<br>
-746 . : “1.0”<br>
-766 . : “1.0”<br>
-779 . : “1.0”<br>
-789 . : “1.0”<br>
-790 . : “1.0”<br>
-814 . : “1.0”<br>
-824 . : “1.0”<br>
-826 . : “1.0”<br>
-828 . : “1.0”<br>
-829 . : “1.0”<br>
-838 . : “1.0”<br>
-842 . : “1.0”<br>
-843 . : “1.0”<br>
-845 . : “1.0”<br>
-855 . : “1.0”<br>
-856 . : “1.0”<br>
-857 . : “1.0”<br>
-858 . : “1.0”<br>
-860 . : “1.0”<br>
-864 . : “1.0”<br>
-883 . : “1.0”<br>
-884 . : “1.0”<br>
-891 . : “1.0”<br>
-893 . : “1.0”<br>
-897 . : “1.0”<br>
-899 . : “1.0”<br>
-911 . : “1.0”<br>
-913 . : “1.0”<br>
-929 . : “1.0”<br>
-938 . : “1.0”<br>
-954 . : “1.0”<br>
-960 . : “1.0”<br>
-961 . : “1.0”<br>
-962 . : “1.0”<br>
-965 . : “1.0”<br>
-976 . : “1.0”<br>
-979 . : “1.0”<br>
-988 . : “1.0”<br>
-992 . : “1.0”<br>
-1001 . : “1.0”<br>
-1002 . : “1.0”<br>
-1005 . : “1.0”<br>
-1008 . : “1.0”<br>
-1012 . : “1.0”<br>
-1016 . : “1.0”<br>
-1029 . : “1.0”<br>
-1035 . : “1.0”<br>
-1041 . : “1.0”<br>
-1044 . : “1.0”<br>
-1049 . : “1.0”<br>
-1051 . : “1.0”<br>
-1055 . : “1.0”<br>
-1058 . : “1.0”<br>
-1063 . : “1.0”<br>
-1067 . : “1.0”<br>
-1069 . : “1.0”<br>
-1073 . : “1.0”<br>
-1084 . : “1.0”<br>
-1100 . : “1.0”<br>
-1107 . : “1.0”<br>
-1114 . : “1.0”<br>
-1130 . : “1.0”<br>
-1131 . : “1.0”<br>
-1141 . : “1.0”<br>
-1153 . : “1.0”<br>
-1154 . : “1.0”<br>
-1161 . : “1.0”<br>
-1166 . : “1.0”<br>
-1174 . : “1.0”<br>
-1178 . : “1.0”<br>
-1187 . : “1.0”<br>
-1193 . : “1.0”<br>
-1197 . : “1.0”<br>
-1208 . : “1.0”<br>
-1211 . : “1.0”<br>
-1212 . : “1.0”<br>
-1213 . : “1.0”<br>
-1214 . : “1.0”<br>
-1217 . : “1.0”<br>
-1220 . : “1.0”<br>
-1223 . : “1.0”<br>
-1225 . : “1.0”<br>
-1233 . : “1.0”<br>
-1236 . : “1.0”<br>
-1241 . : “1.0”<br>
-1249 . : “1.0”<br>
-1257 . : “1.0”<br>
-1258 . : “1.0”<br>
-1260 . : “1.0”<br>
-1269 . : “1.0”<br>
-1274 . : “1.0”<br>
-1276 . : “1.0”<br>
-1282 . : “1.0”<br>
-1284 . : “1.0”<br>
-1288 . : “1.0”<br>
-1289 . : “1.0”<br>
-1291 . : “1.0”<br>
-1302 . : “1.0”<br>
-1303 . : “1.0”<br>
-1307 . : “1.0”</p>
-</div>
 </div>
 </div>
 <div class="section level2">
@@ -5576,7 +5376,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/SpencerCN_2021/SpencerCN_2021_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/SpencerCN_2021/SpencerCN_2021_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="column-name-errors-4">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-4"></a>
+<h3 id="column-name-errors-5">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-5"></a>
 </h3>
 <ul>
 <li><p>“previous_therapy” is not defined in the template.</p></li>
@@ -5632,7 +5432,7 @@
 </h2>
 <p><a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated/Valles-ColomerM_2023_a/Valles-ColomerM_2023_a_metadata.tsv" class="external-link">View</a> or <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration/edit/master/inst/curated/Valles-ColomerM_2023_a/Valles-ColomerM_2023_a_metadata.tsv" class="external-link">edit</a> this file directly on github.com.</p>
 <div class="section level3">
-<h3 id="column-name-errors-5">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-5"></a>
+<h3 id="column-name-errors-6">Column name errors<a class="anchor" aria-label="anchor" href="#column-name-errors-6"></a>
 </h3>
 <ul>
 <li>“zygosity” is not defined in the template.</li>
