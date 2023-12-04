@@ -29,3 +29,20 @@ left_ear,left ear,http://purl.obolibrary.org/obo/UBERON_0035295
 right_elbow,elbow,http://purl.obolibrary.org/obo/UBERON_0001461
 rectal_swab,rectal swab specimen,http://purl.obolibrary.org/obo/NCIT_C173641
 chest,chest,http://purl.obolibrary.org/obo/UBERON_0001443
+teeth,dentition,http://purl.obolibrary.org/obo/UBERON_0003672
+implant,implant,http://purl.obolibrary.org/obo/NCIT_C41075
+rectum,rectum,http://purl.obolibrary.org/obo/UBERON_0001052
+colon,colon,http://purl.obolibrary.org/obo/UBERON_0001155
+sigmoid colon,sigmoid colon,http://purl.obolibrary.org/obo/UBERON_0001159
+L3,lumbar vertebra 3,http://purl.obolibrary.org/obo/UBERON_0004619
+L3L4,lumbar vertebra 3;lumbar vertebra 4,http://purl.obolibrary.org/obo/UBERON_0004619;http://purl.obolibrary.org/obo/UBERON_0004620
+L2,lumbar vertebra 2,http://purl.obolibrary.org/obo/UBERON_0004618
+L2L4,lumbar vertebra 2;lumbar vertebra 4,http://purl.obolibrary.org/obo/UBERON_0004618;http://purl.obolibrary.org/obo/UBERON_0004620
+left_colon,left colon,http://purl.obolibrary.org/obo/UBERON_0008971
+right_colon,right colon,http://purl.obolibrary.org/obo/UBERON_0008972
+left_colon_and_right_colon,left colon;right colon,http://purl.obolibrary.org/obo/UBERON_0008971;http://purl.obolibrary.org/obo/UBERON_0008972
+rectum_and_left_colon,rectum;left colon,http://purl.obolibrary.org/obo/UBERON_0001052;http://purl.obolibrary.org/obo/UBERON_0008971
+"rectum,_left_colon_and_right_colon",rectum;left colon;right colon,http://purl.obolibrary.org/obo/UBERON_0001052;http://purl.obolibrary.org/obo/UBERON_0008971;http://purl.obolibrary.org/obo/UBERON_0008972
+left_colon_and_rectum,rectum;left colon,http://purl.obolibrary.org/obo/UBERON_0001052;http://purl.obolibrary.org/obo/UBERON_0008971
+lc,left colon,http://purl.obolibrary.org/obo/UBERON_0008971
+rc,right colon,http://purl.obolibrary.org/obo/UBERON_0008972
