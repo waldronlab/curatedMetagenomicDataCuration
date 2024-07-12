@@ -1,0 +1,79 @@
+study_name	sample_id	subject_id	curator	control	target_condition	age	age_unit	age_group	westernized	body_site	sex	country	location	disease	ncbi_accession	sequencing_platform	dna_extraction_kit	number_bases	number_reads	minimum_read_length	median_read_length
+MaoL_2021	Mao_PD_25	PD_25	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	52	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403533	BGISEQ-500	NA	17214387000	172143870	100	100.0
+MaoL_2021	Mao_PD_27	PD_27	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	59	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403530	BGISEQ-500	NA	9598750800	95987508	100	100.0
+MaoL_2021	Mao_PD_47	PD_47	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	64	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403517	BGISEQ-500	NA	12654485800	126544858	100	100.0
+MaoL_2021	Mao_PD_21	PD_21	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	75	year	Elderly	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403536	BGISEQ-500	NA	10457562200	104575622	100	100.0
+MaoL_2021	Mao_PD_1	PD_1	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	60	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403544	BGISEQ-500	NA	13807387200	138073872	100	100.0
+MaoL_2021	Mao_PD_34	PD_34	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	61	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403525	BGISEQ-500	NA	16556903600	165569036	100	100.0
+MaoL_2021	Mao_PD_30	PD_30	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	70	year	Elderly	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403528	BGISEQ-500	NA	11025304000	110253040	100	100.0
+MaoL_2021	Mao_PD_22	PD_22	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	63	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403535	BGISEQ-500	NA	15910850400	159108504	100	100.0
+MaoL_2021	Mao_PD_13	PD_13	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	58	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403542	BGISEQ-500	NA	10729500000	107295000	100	100.0
+MaoL_2021	Mao_PD_37	PD_37	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	55	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403524	BGISEQ-500	NA	21234582800	212345828	100	100.0
+MaoL_2021	Mao_PD_38	PD_38	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	54	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403523	BGISEQ-500	NA	10740922200	107409222	100	100.0
+MaoL_2021	Mao_PD_51	PD_51	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	58	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403570	BGISEQ-500	NA	9042345800	90423458	100	100.0
+MaoL_2021	Mao_PD_7	PD_7	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	62	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403555	BGISEQ-500	NA	11086146400	110861464	100	100.0
+MaoL_2021	Mao_PD_17	PD_17	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	65	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403538	BGISEQ-500	NA	18629936200	186299362	100	100.0
+MaoL_2021	Mao_PD_15	PD_15	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	56	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403540	BGISEQ-500	NA	10409185600	104091856	100	100.0
+MaoL_2021	Mao_PD_5	PD_5	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	64	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403521	BGISEQ-500	NA	10363721800	103637218	100	100.0
+MaoL_2021	Mao_PD_8	PD_8	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	70	year	Elderly	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403516	BGISEQ-500	NA	18153555000	181535550	100	100.0
+MaoL_2021	Mao_PD_32	PD_32	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	65	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403526	BGISEQ-500	NA	11929948400	119299484	100	100.0
+MaoL_2021	Mao_PD_26	PD_26	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	70	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403531	BGISEQ-500	NA	11453791600	114537916	100	100.0
+MaoL_2021	Mao_PD_2	PD_2	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	46	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403543	BGISEQ-500	NA	10574383400	105743834	100	100.0
+MaoL_2021	Mao_PD_56	PD_56	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	66	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403568	BGISEQ-500	NA	11733754000	117337540	100	100.0
+MaoL_2021	Mao_PD_28	PD_28	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	70	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403529	BGISEQ-500	NA	11341014200	113410142	100	100.0
+MaoL_2021	Mao_PD_20	PD_20	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	72	year	Elderly	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403537	BGISEQ-500	NA	11125898800	111258988	100	100.0
+MaoL_2021	Mao_PD_52	PD_52	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	70	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403569	BGISEQ-500	NA	16243985400	162439854	100	100.0
+MaoL_2021	Mao_PD_40	PD_40	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	78	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403520	BGISEQ-500	NA	13005894200	130058942	100	100.0
+MaoL_2021	Mao_PD_11	PD_11	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	60	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403495	BGISEQ-500	NA	9663840800	96638408	100	100.0
+MaoL_2021	Mao_PD_42	PD_42	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	68	year	Elderly	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403519	BGISEQ-500	NA	14820274400	148202744	100	100.0
+MaoL_2021	Mao_PD_6	PD_6	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	60	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403566	BGISEQ-500	NA	15313760400	153137604	100	100.0
+MaoL_2021	Mao_PD_31	PD_31	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	60	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403527	BGISEQ-500	NA	14589710200	145897102	100	100.0
+MaoL_2021	Mao_PD_48	PD_48	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	60	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403572	BGISEQ-500	NA	12212340200	122123402	100	100.0
+MaoL_2021	Mao_PD_45	PD_45	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	63	year	Adult	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403518	BGISEQ-500	NA	10162971200	101629712	100	100.0
+MaoL_2021	Mao_PD_23	PD_23	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	72	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403534	BGISEQ-500	NA	14773074000	147730740	100	100.0
+MaoL_2021	Mao_PD_4	PD_4	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	58	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403532	BGISEQ-500	NA	9486909200	94869092	100	100.0
+MaoL_2021	Mao_PD_16	PD_16	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	68	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403539	BGISEQ-500	NA	10590559800	105905598	100	100.0
+MaoL_2021	Mao_PD_10	PD_10	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	70	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403496	BGISEQ-500	NA	14438179800	144381798	100	100.0
+MaoL_2021	Mao_PD_49	PD_49	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	69	year	Elderly	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403571	BGISEQ-500	NA	14976729000	149767290	100	100.0
+MaoL_2021	Mao_PD_9	PD_9	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	59	year	Adult	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403505	BGISEQ-500	NA	12253351800	122533518	100	100.0
+MaoL_2021	Mao_PD_14	PD_14	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	73	year	Elderly	Yes	feces	Male	China	Xiangyang	Parkinson disease	SRR10403541	BGISEQ-500	NA	23096359200	230963592	100	100.0
+MaoL_2021	Mao_PD_39	PD_39	Alice_Bassetto;Paolo_Manghi	Case	Parkinson disease	71	year	Elderly	Yes	feces	Female	China	Xiangyang	Parkinson disease	SRR10403522	BGISEQ-500	NA	10866337800	108663378	100	100.0
+MaoL_2021	Mao_unknown_0	Mao_unknown_0	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403567	BGISEQ-500	NA	14676746000	146767460	100	100.0
+MaoL_2021	Mao_unknown_1	Mao_unknown_1	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403565	BGISEQ-500	NA	12753148400	127531484	100	100.0
+MaoL_2021	Mao_unknown_2	Mao_unknown_2	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403564	BGISEQ-500	NA	12648847800	126488478	100	100.0
+MaoL_2021	Mao_unknown_3	Mao_unknown_3	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403563	BGISEQ-500	NA	9323353000	93233530	100	100.0
+MaoL_2021	Mao_unknown_4	Mao_unknown_4	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403562	BGISEQ-500	NA	11091685600	110916856	100	100.0
+MaoL_2021	Mao_unknown_5	Mao_unknown_5	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403561	BGISEQ-500	NA	12580256800	125802568	100	100.0
+MaoL_2021	Mao_unknown_6	Mao_unknown_6	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403560	BGISEQ-500	NA	13412929600	134129296	100	100.0
+MaoL_2021	Mao_unknown_7	Mao_unknown_7	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403559	BGISEQ-500	NA	11315710600	113157106	100	100.0
+MaoL_2021	Mao_unknown_8	Mao_unknown_8	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403558	BGISEQ-500	NA	16275320600	162753206	100	100.0
+MaoL_2021	Mao_unknown_9	Mao_unknown_9	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403557	BGISEQ-500	NA	6869879000	68698790	100	100.0
+MaoL_2021	Mao_unknown_10	Mao_unknown_10	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403556	BGISEQ-500	NA	9274700800	92747008	100	100.0
+MaoL_2021	Mao_unknown_11	Mao_unknown_11	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403554	BGISEQ-500	NA	13996991800	139969918	100	100.0
+MaoL_2021	Mao_unknown_12	Mao_unknown_12	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403553	BGISEQ-500	NA	8778440600	87784406	100	100.0
+MaoL_2021	Mao_unknown_13	Mao_unknown_13	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403552	BGISEQ-500	NA	16034058800	160340588	100	100.0
+MaoL_2021	Mao_unknown_14	Mao_unknown_14	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403551	BGISEQ-500	NA	18772708600	187727086	100	100.0
+MaoL_2021	Mao_unknown_15	Mao_unknown_15	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403550	BGISEQ-500	NA	7512945000	75129450	100	100.0
+MaoL_2021	Mao_unknown_16	Mao_unknown_16	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403549	BGISEQ-500	NA	12569453400	125694534	100	100.0
+MaoL_2021	Mao_unknown_17	Mao_unknown_17	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403548	BGISEQ-500	NA	10531843200	105318432	100	100.0
+MaoL_2021	Mao_unknown_18	Mao_unknown_18	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403547	BGISEQ-500	NA	8509617200	85096172	100	100.0
+MaoL_2021	Mao_unknown_19	Mao_unknown_19	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403546	BGISEQ-500	NA	24010664800	240106648	100	100.0
+MaoL_2021	Mao_unknown_20	Mao_unknown_20	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403545	BGISEQ-500	NA	6013061000	60130610	100	100.0
+MaoL_2021	Mao_unknown_21	Mao_unknown_21	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403515	BGISEQ-500	NA	24072285600	240722856	100	100.0
+MaoL_2021	Mao_unknown_22	Mao_unknown_22	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403514	BGISEQ-500	NA	18396186800	183961868	100	100.0
+MaoL_2021	Mao_unknown_23	Mao_unknown_23	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403513	BGISEQ-500	NA	14997520200	149975202	100	100.0
+MaoL_2021	Mao_unknown_24	Mao_unknown_24	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403512	BGISEQ-500	NA	7948652600	79486526	100	100.0
+MaoL_2021	Mao_unknown_25	Mao_unknown_25	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403511	BGISEQ-500	NA	21067957800	210679578	100	100.0
+MaoL_2021	Mao_unknown_26	Mao_unknown_26	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403510	BGISEQ-500	NA	8084495200	80844952	100	100.0
+MaoL_2021	Mao_unknown_27	Mao_unknown_27	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403509	BGISEQ-500	NA	19687055600	196870556	100	100.0
+MaoL_2021	Mao_unknown_28	Mao_unknown_28	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403508	BGISEQ-500	NA	6046399600	60463996	100	100.0
+MaoL_2021	Mao_unknown_29	Mao_unknown_29	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403507	BGISEQ-500	NA	18254282400	182542824	100	100.0
+MaoL_2021	Mao_unknown_30	Mao_unknown_30	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403506	BGISEQ-500	NA	12698996400	126989964	100	100.0
+MaoL_2021	Mao_unknown_31	Mao_unknown_31	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403504	BGISEQ-500	NA	5471169200	54711692	100	100.0
+MaoL_2021	Mao_unknown_32	Mao_unknown_32	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403503	BGISEQ-500	NA	9022903200	90229032	100	100.0
+MaoL_2021	Mao_unknown_33	Mao_unknown_33	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403502	BGISEQ-500	NA	14091855800	140918558	100	100.0
+MaoL_2021	Mao_unknown_34	Mao_unknown_34	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403501	BGISEQ-500	NA	12837098400	128370984	100	100.0
+MaoL_2021	Mao_unknown_35	Mao_unknown_35	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403500	BGISEQ-500	NA	9725622400	97256224	100	100.0
+MaoL_2021	Mao_unknown_36	Mao_unknown_36	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403499	BGISEQ-500	NA	7246505800	72465058	100	100.0
+MaoL_2021	Mao_unknown_37	Mao_unknown_37	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403498	BGISEQ-500	NA	21475175000	214751750	100	100.0
+MaoL_2021	Mao_unknown_38	Mao_unknown_38	Alice_Bassetto;Paolo_Manghi	Study control	Parkinson disease	NA		Elderly	Yes	feces	NA	China	Xiangyang	NA	SRR10403497	BGISEQ-500	NA	10695466000	106954660	100	100.0
