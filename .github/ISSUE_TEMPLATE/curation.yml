@@ -37,17 +37,28 @@ body:
       description: Enter the SRA accession number(s) for this dataset
       placeholder: ex. SRX123456 or multiple separated by commas
     validations:
+      required: false
+      
+  - type: dropdown
+    id: curation_status
+    attributes:
+      label: Curation Status
+      description: Select the current curation status of this dataset
+      options:
+        - ready
+        - ongoing
+        - done
+    validations:
       required: true
       
   - type: dropdown
-    id: status
+    id: processing_status
     attributes:
-      label: Current Status
-      description: Select the current status of this dataset
+      label: Processing Status
+      description: Select the current processing status of this dataset
       options:
         - ready
-        - curation ongoing
-        - processing ongoing
+        - ongoing
         - done
     validations:
       required: true
