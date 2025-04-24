@@ -1,0 +1,144 @@
+name: Data for curatedMetagenomicData Curation by DOI
+on:
+  issues:
+    types: [opened] 
+
+jobs:
+
+  curation-comment:
+    permissions:
+      issues: write
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    container: bioconductor/bioconductor_docker:devel
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            /usr/local/lib/R/site-library
+            /usr/local/lib/R/library
+          key: ${{ runner.os }}-curatedmetagenomicdata-curation
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+         Rscript -e "install.packages(c('stringr', 'httr2'), repos = 'https://cloud.r-project.org', dependencies = c('Depends', 'Imports'))"
+
+      - name: Get DOI
+        id: get-doi
+        run: |
+          encodeQuotes <- function(s) {
+            s <- stringr::str_replace_all(s, "'", "&apos;")
+            s <- stringr::str_replace_all(s, '"', "&quot;")
+            s
+          }
+
+          # https://stackoverflow.com/questions/17227294/removing-html-tags-from-a-string-in-r#answer-17227415
+          cleanHtml <- function(s) {
+            stringr::str_squish(gsub("(<.*?>|\n)", "", s))
+          }
+
+          encodeAndClean <- function(s) {
+            cleanHtml(encodeQuotes(s))
+          }
+
+          doi <- ""
+          comments <- stringr::str_split("${{ github.event.issue.body }}", "\n", simplify = TRUE)
+          for (comment in comments) {
+            doi <- stringr::str_squish(comment) |> stringr::str_extract("[0-9.]+/[A-Za-z0-9.-]+")
+            if (!is.na(doi))
+              break
+          }
+
+          crossref <- paste("https://api.crossref.org/works", doi, sep = "/")
+          cr <- httr2::request(crossref) |>
+            httr2::req_perform() |>
+            httr2::resp_body_json(simplifyVector = TRUE)
+
+          title <- ifelse("title" %in% names(cr$message),
+            encodeAndClean(cr$message$title),
+            "")
+
+          year <- ifelse("published" %in% names(cr$message),
+            cr$message$published$`date-parts`[1],
+            "")
+
+          journal <- ifelse("container-title" %in% names(cr$message),
+            encodeAndClean(cr$message$`container-title`[[1]]),
+            "")
+
+          author <- ""
+          if ('author' %in% names(cr$message)) {
+            author <- paste(encodeAndClean(cr$message$author$given[1]),
+                            encodeAndClean(cr$message$author$family[1]),
+                            sep = " ")
+          }
+
+          source <- ifelse("resource" %in% names(cr$message),
+                           encodeAndClean(cr$message$resource$primary$URL),
+                           "")
+          
+          eutils <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+                           "esearch.fcgi?db=pubmed&term=",
+                           doi, "[DOI]&retmode=json")
+          
+          er <- httr2::request(eutils) |>
+            httr2::req_perform() |>
+            httr2::resp_body_json(simplifyVector = TRUE)
+          
+          pmid <- ifelse(length(er$esearchresult$idlist) != 0,
+                         er$esearchresult$idlist,
+                         "NA")
+
+          system(paste0("echo DOI='https://doi.org/", doi, "' >> $GITHUB_OUTPUT"))
+          system(paste0("echo AUTHOR='", author, "' >> $GITHUB_OUTPUT"))
+          system(paste0("echo TITLE='", title, "' >> $GITHUB_OUTPUT"))
+          system(paste0("echo JOURNAL='", journal, "' >> $GITHUB_OUTPUT"))
+          system(paste0("echo YEAR=", year, " >> $GITHUB_OUTPUT"))
+          system(paste0("echo PMID=", pmid, " >> $GITHUB_OUTPUT"))
+
+          print(paste("DOI:", doi, "PMID:", pmid, "TITLE:", title, "AUTHOR:", author, "JOURNAL:", journal, "YEAR:", year))
+        shell: Rscript {0}
+
+      - uses: actions/github-script@v7
+        if: steps.get-doi.outputs.DOI != ''
+        with:
+          script: |
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "[Study]: ${{ steps.get-doi.outputs.TITLE }}"
+            })
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 
+              `
+              ### Title
+              ${{ steps.get-doi.outputs.TITLE }}
+
+              ### DOI
+              ${{ steps.get-doi.outputs.DOI }}
+
+              ### PMID
+              ${{ steps.get-doi.outputs.PMID }}
+
+              ### Author
+              ${{ steps.get-doi.outputs.AUTHOR }}
+
+              ### Journal
+              ${{ steps.get-doi.outputs.JOURNAL }}
+
+              ### Year
+              ${{ steps.get-doi.outputs.YEAR }}
+
+              👋 Thanks for submitting!
+              `
+            })

@@ -1,0 +1,35 @@
+name: curatedMetagenomicData study curation by DOI
+description: |
+  File a study curation by DOI. Attempts to automatically fetch study
+  information.
+title: "[Study]: New Curation"
+labels: ["paper to curate"]
+projects: ["curatedMetagenomicData"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting this study for curation!
+        
+        When you submit this form, a GitHub Action will attempt to find the
+        title, first author, year of publication, and PMID. If it fails, you
+        can manually submit a study curation.
+  - type: input
+    id: doi
+    attributes:
+      label: The Digital Object Identifier (DOI)
+      description: |
+        Enter the DOI or prefix and suffix. For example, if your DOI is
+        https://doi.org/10.1000/182, you may enter
+        "https://doi.org/10.1000/182" or "10.1000/182".
+      placeholder: https://doi.org/xxxxx
+    validations:
+      required: true
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct Agreement
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Bioconductor/bioc_coc_multilingual). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
