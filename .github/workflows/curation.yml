@@ -1,5 +1,8 @@
 name: Data for curatedMetagenomicData Curation by DOI
+
+
 on:
+  workflow_dispatch:
   issues:
     types: [opened] 
 
