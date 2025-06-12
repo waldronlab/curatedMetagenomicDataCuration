@@ -8,10 +8,17 @@ jobs:
   curation-comment:
     permissions:
       issues: write
+
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
     container: bioconductor/bioconductor_docker:devel
+
     runs-on: ubuntu-latest
+
+    outputs:
+      author: ${{ steps.get-doi.outputs.AUTHOR }}
+      year: ${{ steps.get-doi.outputs.YEAR }}
 
     steps:
 
@@ -142,3 +149,33 @@ jobs:
               👋 Thanks for submitting!
               `
             })
+
+  create-template:
+
+    needs: curation-comment
+    
+    permissions:
+      issues: write
+      contents: write
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    container: bioconductor/bioconductor_docker:devel
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        id: checkout-repository
+        uses: actions/checkout@v4
+ 
+      - name: Create template 
+        id: create-template 
+        run: |
+          lastname=$(echo ${{ needs.curation-comment.outputs.author }} | awk -F ' ' '{print $2}')
+          echo $lastname
+          echo pwd
+          #mkdir -p $GITHUB_WORKSPACE/$lastname_${{ needs.curation-comment.outputs.author }}
+ 
