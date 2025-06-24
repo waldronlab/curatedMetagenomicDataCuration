@@ -245,6 +245,6 @@ jobs:
               repo: context.repo.repo,
               body: 
               `
-              ${{ steps.create-templates.outputs.MESSAGE }} ${{ steps.create-templates.outputs.BASE }}.
+              ${{ steps.create-templates.outputs.MESSAGE }} ${{ steps.create-templates.outputs.BASE }}
               `
             })
