@@ -202,13 +202,15 @@ jobs:
           if (!dir.exists(full_path)) {
               dir.create(full_path)
               study_df <- data.frame("Study Title" = character(),
-                                     target_condition = character())
+                                     target_condition = character(),
+                                     check.names = FALSE)
               write.table(study_df, sep = "\t", quote = FALSE,
                           file.path(full_path, paste0(BASE, "_study.tsv")))
               sample_df <- data.frame(study_name = character(),
                                       target_condition = character(),
                                       pmid = numeric(),
-                                      doi = character())
+                                      doi = character(),
+                                      check.names = FALSE)
               write.table(sample_df, sep = "\t", quote = FALSE,
                           file.path(full_path, paste0(BASE, "_sample.tsv")))
               system(paste0("echo BASE=", BASE, " >> $GITHUB_OUTPUT"))
