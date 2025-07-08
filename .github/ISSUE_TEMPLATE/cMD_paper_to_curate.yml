@@ -1,0 +1,82 @@
+name: curatedMetagenomicData study curation
+description: File a study curation.
+title: "[Study]: "
+labels: ["paper to curate"]
+projects: ["curatedMetagenomicData"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this curation report!
+  - type: textarea
+    id: study-title
+    attributes:
+      label: Study Title
+      description: Which study are you going to curate?
+      placeholder: ex. Characteristics of the intestinal flora in patients with peripheral neuropathy associated with type 2 diabetes
+    validations:
+      required: true
+  - type: input
+    id: pmid
+    attributes:
+      label: Pubmed ID
+      description: Enter the Pubmed ID if it is available
+      placeholder: A pubmed ID (digits only)
+    validations:
+      required: false
+  - type: input
+    id: doi
+    attributes:
+      label: The Digital Object Identifier (DOI)
+      description: Enter the DOI
+      placeholder: https://doi.org/xxxxx
+    validations:
+      required: true
+  - type: textarea
+    id: first-author
+    attributes:
+      label: First Author
+      description: Who is the first author of the study?
+      placeholder: ex. Wang Y.
+    validations:
+      required: true
+  - type: textarea
+    id: journal
+    attributes:
+      label: Journal
+      description: In which journal the study is published?
+      placeholder: ex. Journal of International Medical Research
+    validations:
+      required: true
+  - type: textarea
+    id: publication-year
+    attributes:
+      label: Year
+      description: When the study is published?
+      placeholder: ex. 2020
+    validations:
+      required: true
+  - type: textarea
+    id: study-source
+    attributes:
+      label: Study Source
+      description: Where is the study published?
+      placeholder: Enter URL to identify the source.
+    validations:
+      required: true
+  - type: input
+    id: bioproject-id
+    attributes:
+      label: BioProject ID
+      description: Enter the BioProject ID associated with the study
+      placeholder: ex. PRJNAxxxxxx, PRJDBxxxx, PRJEBxxxx
+    validations:
+      required: false
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct Agreement
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Bioconductor/bioc_coc_multilingual). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

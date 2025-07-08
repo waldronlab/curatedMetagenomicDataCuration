@@ -105,14 +105,24 @@ jobs:
                          er$esearchresult$idlist,
                          "NA")
 
+          # Extract BioProject ID from issue body
+          bioproject_id <- ""
+          for (comment in comments) {
+            bioproject_id <- stringr::str_squish(comment) |> stringr::str_extract("PRJ[A-Z]{2}[0-9]+")
+            if (!is.na(bioproject_id))
+              break
+          }
+          bioproject_id <- ifelse(is.na(bioproject_id), "NA", bioproject_id)
+
           system(paste0("echo DOI='https://doi.org/", doi, "' >> $GITHUB_OUTPUT"))
           system(paste0("echo AUTHOR='", author, "' >> $GITHUB_OUTPUT"))
           system(paste0("echo TITLE='", title, "' >> $GITHUB_OUTPUT"))
           system(paste0("echo JOURNAL='", journal, "' >> $GITHUB_OUTPUT"))
           system(paste0("echo YEAR=", year, " >> $GITHUB_OUTPUT"))
           system(paste0("echo PMID=", pmid, " >> $GITHUB_OUTPUT"))
+          system(paste0("echo BIOPROJECT_ID='", bioproject_id, "' >> $GITHUB_OUTPUT"))
 
-          print(paste("DOI:", doi, "PMID:", pmid, "TITLE:", title, "AUTHOR:", author, "JOURNAL:", journal, "YEAR:", year))
+          print(paste("DOI:", doi, "PMID:", pmid, "TITLE:", title, "AUTHOR:", author, "JOURNAL:", journal, "YEAR:", year, "BIOPROJECT_ID:", bioproject_id))
         shell: Rscript {0}
 
       - uses: actions/github-script@v7
@@ -148,6 +158,9 @@ jobs:
 
               ### Year
               ${{ steps.get-doi.outputs.YEAR }}
+
+              ### BioProject ID
+              ${{ steps.get-doi.outputs.BIOPROJECT_ID }}
 
               👋 Thanks for submitting! Attempting to generate templates (may take a few minutes).
               `
