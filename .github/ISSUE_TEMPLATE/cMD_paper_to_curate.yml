@@ -64,6 +64,14 @@ body:
       placeholder: Enter URL to identify the source.
     validations:
       required: true
+  - type: input
+    id: bioproject-id
+    attributes:
+      label: BioProject ID
+      description: Enter the BioProject ID associated with the study
+      placeholder: ex. PRJNAxxxxxx, PRJDBxxxx, PRJEBxxxx
+    validations:
+      required: false
   - type: checkboxes
     id: code-of-conduct
     attributes:
