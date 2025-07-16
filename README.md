@@ -1,20 +1,40 @@
 # Quick Start
 
-This package checks metadata curation for curatedMetagenomicData. To use it:
+This package orchestrate cMD metadata curation processes, including 
+initiation, status check, and deploy. To contribute a new data to cMD,
 
-1. Look at the [template](https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/template.csv) and [already curated files](https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated) to see what curated files should look like.
-2. Place a tab-separated file ending in "_metadata.tsv" in a directory under inst/curation. Commit and create a pull 
-request.  Or if you don't like git, use Github.com's ["Upload Files" button](https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated) to upload to create a pull request without the need to use git.
-3. Does the new dataset pass all checks? It takes 3-4 minutes for the check to be completed (TODO: add overall badge)
-4. See the [detailed syntax-checking report](https://waldronlab.io/curatedMetagenomicDataCuration/articles/curatedMetagenomicDataCuration.html).
+1. Look at the [template][] and [already curated studies][] to see what curated files should look like.
+2. To add a new study, open an issue using the template _**'curatedMetagenomicData study curation by DOI'**_. 
+This will create two curation template files in a directory under `inst/curation`.
+  + the name of the dedicated directory for your study is `{last name of the first author}{initial of the first author’s first name}_{year published}` (e.g., 'AsnicarF_2017')
+  + two files in this directories are `{dir_name}_study.tsv` and `{dir_name}_sample.tsv`
 
-If you don't want to wait for GitHub Actions to finish checking, you can check on your own computer:
+3. Starting from these templates, please curate your metadata. Commit and 
+create a pull request. Or if you don't like git, use Github.com's 
+["Upload Files" button](https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated) 
+to upload to create a pull request without the need to use git.
+(Note: For cMD curation team, ODM should handle this process.)
 
-```
-BiocManager::install("waldronlab/curatedMetagenomicDataCuration", build_vignettes=TRUE)
-browseVignettes("curatedMetagenomicDataCuration")
-```
+4. Add a 'ready to review' label if your metadata is ready for the team's final 
+review. cMD curation team will review/validate your metadata. If it passes, it 
+will be added into cMD package. Any validation fails will be reported back to
+you for your revision/update.
+
+[template]: https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_data_dictionary.csv
+[already curated studies]: https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated
+
+
+# Announcement
+Starting from the upcoming cMD4 release (expected Fall 2025), we are 
+implementing new metadata schema. To help you understand this change, here 
+are the metadata tables for 93 cMD3 studies following the current and new 
+metadata schema.
+
++ [current version][https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/sampleMetadata.csv]
++ [new version][https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_curated_metadata_release.csv]
+
 
 # More complete introduction
 
-The complete reference for curators is provided at this page's [wiki](https://github.com/waldronlab/curatedMetagenomicDataCuration/wiki).
+The complete reference for curators is provided at this page's 
+[wiki](https://github.com/waldronlab/curatedMetagenomicDataCuration/wiki).
