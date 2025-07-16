@@ -7,7 +7,8 @@ initiation, status check, and deploy. To contribute a new data to cMD,
 2. To add a new study, open an issue using the template _**'curatedMetagenomicData study curation by DOI'**_. 
 This will create two curation template files in a directory under `inst/curation`.
   + the name of the dedicated directory for your study is `{last name of the first author}{initial of the first author’s first name}_{year published}` (e.g., 'AsnicarF_2017')
-  + two files in this directories are `{dir_name}_study.tsv` and `{dir_name}_sample.tsv`
+  + two files in this directories are `{dir_name}_study.tsv` and `{dir_name}_sample.tsv` 
+  (e.g., 'AsnicarF_2017_study.tsv' and 'AsnicarF_2017_sample.tsv')
 
 3. Starting from these templates, please curate your metadata. Commit and 
 create a pull request. Or if you don't like git, use Github.com's 
@@ -30,8 +31,8 @@ implementing new metadata schema. To help you understand this change, here
 are the metadata tables for 93 cMD3 studies following the current and new 
 metadata schema.
 
-+ [current version][https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/sampleMetadata.csv]
-+ [new version][https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_curated_metadata_release.csv]
++ [current version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/sampleMetadata.csv)
++ [new version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_curated_metadata_release.csv)
 
 
 # More complete introduction
