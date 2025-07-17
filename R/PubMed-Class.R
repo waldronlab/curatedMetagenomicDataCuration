@@ -5,7 +5,6 @@
 #' @slot affiliations a data.frame containing author affiliations
 #'
 #' @return A PubMed-class object with a list of three data frames 
-#' @export checkCuration
 #' @details A helper class for \code{\link{PubMed}}
 
 setClass("PubMed", list(pubinfo="data.frame", authors="data.frame", affiliations="data.frame"))

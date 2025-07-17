@@ -32,7 +32,7 @@ clean_field_name <- function(field_name) {
 #' @return A data frame containing sample metadata. A message shows how many 
 #' samples are retrieved out of the total samples.
 #' 
-#' 
+#' @export
 odm_get_samples <- function(host = "https://odm.drylab.tech",
                             token,
                             study_id = NULL,

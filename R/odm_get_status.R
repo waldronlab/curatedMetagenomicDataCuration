@@ -26,7 +26,7 @@
 #' The validation information includes attributes with invalid values, error types,
 #' error messages, and the count of samples with each error.
 #' 
-#' 
+#' @export
 odm_get_status <- function(host, 
                            token, 
                            study_id = NULL, 

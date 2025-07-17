@@ -94,9 +94,11 @@ create_study_table <- function(study_data) {
 
 #' Get the list of studies in ODM
 #' 
+#' @param api_token ODM API token
+#' @return A data frame containing study-level metadata for all the studies 
+#' a user as access to in ODM.
 #' 
-#' 
-#' 
+#' @export
 odm_get_studies <- function(api_token) {
   # Load required library
   if (!require("httr")) {

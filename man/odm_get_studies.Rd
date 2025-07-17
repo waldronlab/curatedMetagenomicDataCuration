@@ -6,6 +6,13 @@
 \usage{
 odm_get_studies(api_token)
 }
+\arguments{
+\item{api_token}{ODM API token}
+}
+\value{
+A data frame containing study-level metadata for all the studies 
+a user as access to in ODM.
+}
 \description{
 Get the list of studies in ODM
 }

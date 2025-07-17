@@ -15,6 +15,7 @@
 #' # Get only 10 completed runs
 #' runs <- nf_get_completed_run(limit = 10)
 #' 
+#' @export
 nf_get_completed_run <- function(limit = 250) {
     # Construct the API URL with the limit parameter
     api_url <- paste0(
