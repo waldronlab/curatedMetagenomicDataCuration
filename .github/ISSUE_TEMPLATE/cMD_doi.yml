@@ -1,4 +1,4 @@
-name: name: New study for curation
+name: New study for curation
 description: |
   File a study curation by DOI. Attempts to automatically fetch study
   information.
