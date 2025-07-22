@@ -1,4 +1,4 @@
-name: curatedMetagenomicData study curation by DOI
+name: name: New study for curation
 description: |
   File a study curation by DOI. Attempts to automatically fetch study
   information.
@@ -32,7 +32,7 @@ body:
       description: Enter the BioProject ID associated with the study
       placeholder: ex. PRJNAxxxxxx, PRJDBxxxx, PRJEBxxxx
     validations:
-      required: false
+      required: true
   - type: checkboxes
     id: code-of-conduct
     attributes:
