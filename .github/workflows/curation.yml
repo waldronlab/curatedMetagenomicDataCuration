@@ -208,7 +208,7 @@ jobs:
           year <- "${{ needs.curation-comment.outputs.year }}"
           first_last <- unlist(strsplit(stringr::str_to_title(author), " "))
           first_name <- first_last[1]
-          last_name <- first_last[2]
+          last_name <- first_last[length(first_last)]
           github_workspace <- Sys.getenv("GITHUB_WORKSPACE")
           BASE <- paste0(last_name, substr(first_name, 1, 1), "_", year)
           system(paste0("echo BASE=", BASE, " >> $GITHUB_OUTPUT"))
