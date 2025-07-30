@@ -1,4 +1,4 @@
-name: curatedMetagenomicData study curation by DOI
+name: New study for curation
 description: |
   File a study curation by DOI. Attempts to automatically fetch study
   information.
