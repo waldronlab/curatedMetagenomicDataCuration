@@ -25,6 +25,9 @@ jobs:
 
     steps:
 
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Cache
         id: cache
         uses: actions/cache@v4
@@ -36,12 +39,13 @@ jobs:
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-         Rscript -e "install.packages(c('stringr', 'httr2'), repos = 'https://cloud.r-project.org', dependencies = c('Depends', 'Imports'))"
+        run: "devtools::install()"
+        shell: Rscript {0}
 
       - name: Get DOI
         id: get-doi
         run: |
+          library(curatedMetagenomicDataCuration)
           doi <- getPattern("${{ github.event.issue.body }}", "doi")
           bioproject_id <- getPattern("${{ github.event.issue.body }}",
                                       "bioproject")
@@ -136,6 +140,7 @@ jobs:
       - name: Create templates
         id: create-templates
         run: |
+          library(curatedMetagenomicDataCuration)
           BASE <- baseName("${{ needs.curation-comment.outputs.author }}",
                            "${{ needs.curation-comment.outputs.year }}")
           system(paste0("echo BASE=", BASE, " >> $GITHUB_OUTPUT"))
