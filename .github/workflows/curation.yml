@@ -128,15 +128,6 @@ jobs:
             /usr/local/lib/R/library
           key: ${{ runner.os }}-curatedmetagenomicdata-curation
 
-      - name: Install dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-         Rscript -e "install.packages('stringr'), repos = 'https://cloud.r-project.org', dependencies = c('Depends', 'Imports'))"
-
-      - name: Checkout repository
-        id: checkout-repository
-        uses: actions/checkout@v4
- 
       - name: Create templates
         id: create-templates
         run: |
@@ -146,7 +137,7 @@ jobs:
           system(paste0("echo BASE=", BASE, " >> $GITHUB_OUTPUT"))
           path <- paste(Sys.getenv("GITHUB_WORKSPACE"), "inst/curated", sep = "/")
           template_exists <- createTemplate(BASE, path)
-          if (template_created) {
+          if (template_exists) {
               system(paste0("echo CREATED='true' >> $GITHUB_OUTPUT"))
               system(paste0("echo MESSAGE='Success: Created' >> $GITHUB_OUTPUT"))
           } else {
