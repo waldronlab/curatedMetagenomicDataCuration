@@ -1,7 +1,7 @@
 Package: curatedMetagenomicDataCuration
 Type: Package
 Title: Curated Metagenomic Data of the Human Microbiome
-Version: 0.99.7
+Version: 0.99.8
 Author:
     Paolo Manghi <paolomanghi1974@gmail.com>,
     Lucas Schiffer <schiffer.lucas@gmail.com>,
@@ -30,8 +30,10 @@ Imports:
 Suggests:
     testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    stringr,
+    httr2
 Remotes:
     waldronlab/omicidxClientR
 VignetteBuilder: knitr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2

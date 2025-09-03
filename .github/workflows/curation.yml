@@ -25,6 +25,9 @@ jobs:
 
     steps:
 
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Cache
         id: cache
         uses: actions/cache@v4
@@ -36,93 +39,26 @@ jobs:
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-         Rscript -e "install.packages(c('stringr', 'httr2'), repos = 'https://cloud.r-project.org', dependencies = c('Depends', 'Imports'))"
+        run: "devtools::install()"
+        shell: Rscript {0}
 
       - name: Get DOI
         id: get-doi
         run: |
-          encodeQuotes <- function(s) {
-            s <- stringr::str_replace_all(s, "'", "&apos;")
-            s <- stringr::str_replace_all(s, '"', "&quot;")
-            s
-          }
-
-          # https://stackoverflow.com/questions/17227294/removing-html-tags-from-a-string-in-r#answer-17227415
-          cleanHtml <- function(s) {
-            stringr::str_squish(gsub("(<.*?>|\n)", "", s))
-          }
-
-          encodeAndClean <- function(s) {
-            cleanHtml(encodeQuotes(s))
-          }
-
-          doi <- ""
-          comments <- stringr::str_split("${{ github.event.issue.body }}", "\n", simplify = TRUE)
-          for (comment in comments) {
-            doi <- stringr::str_squish(comment) |> stringr::str_extract("[0-9.]+/[A-Za-z0-9.-]+")
-            if (!is.na(doi))
-              break
-          }
-
-          crossref <- paste("https://api.crossref.org/works", doi, sep = "/")
-          cr <- httr2::request(crossref) |>
-            httr2::req_perform() |>
-            httr2::resp_body_json(simplifyVector = TRUE)
-
-          title <- ifelse("title" %in% names(cr$message),
-            encodeAndClean(cr$message$title),
-            "")
-
-          year <- ifelse("published" %in% names(cr$message),
-            cr$message$published$`date-parts`[1],
-            "")
-
-          journal <- ifelse("container-title" %in% names(cr$message),
-            encodeAndClean(cr$message$`container-title`[[1]]),
-            "")
-
-          author <- ""
-          if ('author' %in% names(cr$message)) {
-            author <- paste(encodeAndClean(cr$message$author$given[1]),
-                            encodeAndClean(cr$message$author$family[1]),
-                            sep = " ")
-          }
-
-          source <- ifelse("resource" %in% names(cr$message),
-                           encodeAndClean(cr$message$resource$primary$URL),
-                           "")
-          
-          eutils <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
-                           "esearch.fcgi?db=pubmed&term=",
-                           doi, "[DOI]&retmode=json")
-          
-          er <- httr2::request(eutils) |>
-            httr2::req_perform() |>
-            httr2::resp_body_json(simplifyVector = TRUE)
-          
-          pmid <- ifelse(length(er$esearchresult$idlist) != 0,
-                         er$esearchresult$idlist,
-                         "NA")
-
-          # Extract BioProject ID from issue body
-          bioproject_id <- ""
-          for (comment in comments) {
-            bioproject_id <- stringr::str_squish(comment) |> stringr::str_extract("PRJ[A-Z]{2}[0-9]+")
-            if (!is.na(bioproject_id))
-              break
-          }
-          bioproject_id <- ifelse(is.na(bioproject_id), "NA", bioproject_id)
+          library(curatedMetagenomicDataCuration)
+          doi <- getPattern("${{ github.event.issue.body }}", "doi")
+          bioproject_id <- getPattern("${{ github.event.issue.body }}",
+                                      "bioproject")
+          crossref <- getCrossref(doi)
+          pmid <- getPmid(doi)
 
           system(paste0("echo DOI='https://doi.org/", doi, "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo AUTHOR='", author, "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo TITLE='", title, "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo JOURNAL='", journal, "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo YEAR=", year, " >> $GITHUB_OUTPUT"))
+          system(paste0("echo AUTHOR='", crossref["author"], "' >> $GITHUB_OUTPUT"))
+          system(paste0("echo TITLE='", crossref["title"], "' >> $GITHUB_OUTPUT"))
+          system(paste0("echo JOURNAL='", crossref["journal"], "' >> $GITHUB_OUTPUT"))
+          system(paste0("echo YEAR=", crossref["year"], " >> $GITHUB_OUTPUT"))
           system(paste0("echo PMID=", pmid, " >> $GITHUB_OUTPUT"))
           system(paste0("echo BIOPROJECT_ID='", bioproject_id, "' >> $GITHUB_OUTPUT"))
-
-          print(paste("DOI:", doi, "PMID:", pmid, "TITLE:", title, "AUTHOR:", author, "JOURNAL:", journal, "YEAR:", year, "BIOPROJECT_ID:", bioproject_id))
         shell: Rscript {0}
 
       - uses: actions/github-script@v7
@@ -183,6 +119,9 @@ jobs:
 
     steps:
 
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Cache
         id: cache
         uses: actions/cache@v4
@@ -192,41 +131,16 @@ jobs:
             /usr/local/lib/R/library
           key: ${{ runner.os }}-curatedmetagenomicdata-curation
 
-      - name: Install dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-         Rscript -e "install.packages('stringr'), repos = 'https://cloud.r-project.org', dependencies = c('Depends', 'Imports'))"
-
-      - name: Checkout repository
-        id: checkout-repository
-        uses: actions/checkout@v4
- 
       - name: Create templates
         id: create-templates
         run: |
-          author <- "${{ needs.curation-comment.outputs.author }}"
-          year <- "${{ needs.curation-comment.outputs.year }}"
-          first_last <- unlist(strsplit(stringr::str_to_title(author), " "))
-          first_name <- first_last[1]
-          last_name <- first_last[length(first_last)]
-          github_workspace <- Sys.getenv("GITHUB_WORKSPACE")
-          BASE <- paste0(last_name, substr(first_name, 1, 1), "_", year)
+          library(curatedMetagenomicDataCuration)
+          BASE <- baseName("${{ needs.curation-comment.outputs.author }}",
+                           "${{ needs.curation-comment.outputs.year }}")
           system(paste0("echo BASE=", BASE, " >> $GITHUB_OUTPUT"))
-          full_path <- file.path(github_workspace, "inst/curated", BASE)
-          if (!dir.exists(full_path)) {
-              dir.create(full_path)
-              study_df <- data.frame("Study Title" = character(),
-                                     target_condition = character(),
-                                     check.names = FALSE)
-              write.table(study_df, sep = "\t", quote = FALSE,
-                          file.path(full_path, paste0(BASE, "_study.tsv")))
-              sample_df <- data.frame(study_name = character(),
-                                      target_condition = character(),
-                                      pmid = numeric(),
-                                      doi = character(),
-                                      check.names = FALSE)
-              write.table(sample_df, sep = "\t", quote = FALSE,
-                          file.path(full_path, paste0(BASE, "_sample.tsv")))
+          path <- paste(Sys.getenv("GITHUB_WORKSPACE"), "inst/curated", sep = "/")
+          template_exists <- createTemplate(BASE, path)
+          if (template_exists) {
               system(paste0("echo CREATED='true' >> $GITHUB_OUTPUT"))
               system(paste0("echo MESSAGE='Success: Created' >> $GITHUB_OUTPUT"))
           } else {
