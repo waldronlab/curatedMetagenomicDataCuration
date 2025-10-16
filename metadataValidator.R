@@ -53,27 +53,47 @@ validateMetadata <- function(data_table, template_list) {
     unvalidated_cols <- setdiff(colnames(data_table), names(template_list))
     missing_cols <- setdiff(names(template_list), colnames(data_table))
 
-    template_list[missing_cols] <- NULL
+    effective_template <- template_list
+    effective_template[missing_cols] <- NULL
 
     ## Get validation classes
-    template_classes <- lapply(template_list, class)
+    template_classes <- lapply(effective_template, class)
 
     ## Validate columns
-    # NA?
+    # Non-matching columns
+    nm_cols <- c(unvalidated_cols, missing_cols)
+    nm_results <- sapply(nm_cols, function(x) list(rejected_values = NA,
+                                                   rejected_ids = NA),
+                         simplify = FALSE)
+
+    # NA columns
+    na_cols <- effective_template[names(which(is.na(effective_template)))]
+    na_results <- sapply(na_cols, function(x) list(rejected_values = as.character(),
+                                                   rejected_ids = as.integer()),
+                         simplify = FALSE)
 
     # character columns
-    character_cols <- template_list[names(which(template_classes == "character"))]
+    character_cols <- effective_template[names(which(template_classes == "character"))]
     character_results <- sapply(names(character_cols), function(x) {
         validate_column("character", character_cols[[x]], data_table[,x])
     },
     simplify = FALSE)
 
     # function columns
-    function_cols <- template_list[names(which(template_classes == "function"))]
+    function_cols <- effective_template[names(which(template_classes == "function"))]
     function_results <- sapply(names(function_cols), function(x) {
         validate_column("function", function_cols[[x]], data_table[,x])
     },
     simplify = FALSE)
 
     ## Create report
+    all_results <- c(nm_results, na_results, character_results, function_results)
+    report <- data.frame(column = c(names(template_list), unvalidated_cols)) %>%
+        rowwise() %>%
+        dplyr::mutate(template = column %in% names(template_list),
+                      data = column %in% colnames(data_table)) %>%
+        dplyr::mutate(rejected_values = list(all_results[[column]]$rejected_values),
+                      rejected_ids = list(all_results[[column]]$rejected_ids))
+
+    return(report)
 }
