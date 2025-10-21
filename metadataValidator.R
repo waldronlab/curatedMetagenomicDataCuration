@@ -1,5 +1,7 @@
 library(ontologyIndex)
 library(xml2)
+library(validate)
+library(dplyr)
 
 t <- get_ontology(file = "dictionaries/cmd_age_group.owl")
 t <- read_xml("dictionaries/cmd_age_group.owl")
@@ -17,17 +19,26 @@ validate_age <- function(x) {
     return(TRUE)
 }
 
-template <- list(id = NA,
+template <- list(id = function(x) !is.na(x),
                  dietary_restriction = diet_dict$label,
                  color = color_dict,
-                 age = validate_age,
+                 age = function(x) {in_range(x, 0, 120) & abs(x)-round(x) == 0},
                  species = is.character)
 
-ddata <- data.frame(id = c(1, 2, 3, 4, 5),
+ttemplate <- validator(!is.na(id),
+                       color %in% color_dict,
+                       dietary_restriction %in% diet_dict$label,
+                       in_range(age, 0, 120) & abs(age)-round(age) == 0)
+names(ttemplate) <- c("id_exists", "color_dictionary", "diet_dictionary", "age_integer_in_range")
+
+ddata <- data.frame(id = c(1, 2, NA, 4, 5),
                     color = c("red", "green", "blue", "blue", "red"),
                     dietary_restriction = c("vegan", NA, "gluten", 1, "gluten"),
-                    age = c(27, 48, 34, 23.5, 199),
-                    country = rep("Ukraine", ))
+                    age = c(27, 48, 34, 23.5, 199))
+
+out <- confront(ddata, ttemplate)
+
+out2 <- validateMetadata(ddata, template)
 
 validate_column <- function(validation_type, allowed, data) {
     if (validation_type == "character") {
