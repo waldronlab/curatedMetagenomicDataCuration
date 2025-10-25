@@ -20,6 +20,9 @@ invisible NULL
 Create template
 }
 \details{
+Note: the provided path must already exist otherwise the function
+will fail.
+
 The name is the author's last name plus the first initial
 }
 \examples{

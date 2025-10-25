@@ -10,7 +10,7 @@ getCrossref(doi)
 \item{doi}{A string representing a DOI}
 }
 \value{
-vector with data associated with the DOI
+list with data associated with the DOI
 }
 \description{
 Get data from Crossref
