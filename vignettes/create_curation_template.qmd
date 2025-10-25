@@ -1,0 +1,126 @@
+---
+title: "Create curation template"
+author: "Sehyun Oh"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+    html:
+        fontsize: 14pxs
+        toc: true
+        top-depth: 3
+---
+
+```{r message=FALSE}
+devtools::load_all("~/Projects/curatedMetagenomicDataCuration/")
+source("~/Projects/curatedMetagenomicDataCuration/R/bioproject_to_biosample_metadata.R")
+```
+
+```{r}
+doi <- "10.1016/j.cels.2016.10.004"
+bioproject_id <- "PRJEB9576"
+```
+
+```{r}
+cross_ref <- getCrossref(doi)
+cross_ref
+```
+
+```{r}
+template_name <- baseName(cross_ref$author, cross_ref$year)
+template_name
+```
+
+```{r eval=FALSE}
+path <- "~/Projects/curatedMetagenomicDataCuration/inst/harmonized"
+createTemplate(template_name, path)
+```
+
+
+
+
+
+
+# Programmatic Metadata Extraction
+```
+SRA (Submission)
+  └── SRP (Study/Project)
+       └── SRS (Sample)
+            └── SRX (Experiment)
+                 └── SRR (Run) - actual data files
+```
+
+## AsnicarF_2017 paper
+```{r}
+## AsnicarF_2017 paper
+studyName <- "AsnicarF_2017"
+pmid <- "28144631"
+bioproject <- "PRJNA339914"
+doi <- "10.1128/mSystems.00164-16"
+```
+
+### PMID to BioProjectID
+```{r}
+## PMID to BioProjectID
+pattern_match <- extract_pattern_from_fulltext(pmid, common_patterns$bioproject)
+bpid <- pattern_match$matches
+bpid
+```
+
+### BioProjectID to SRA metadata
+```{r}
+## BioProjectID to SRA metadata
+sra_per_bioproject <- bioproject_to_sra_metadata(bpid)
+```
+
+```{r}
+names(sra_per_bioproject)
+head(sra_per_bioproject)
+head(sra_per_bioproject$sra_run_ids)
+head(sra_per_bioproject$full_metadata)
+```
+
+### BioProjectID to BioSample metadata
+```{r}
+## BioProjectID to BioSample metadata
+metadata <- bioproject_to_biosample_metadata(bpid)
+metadata
+```
+
+
+
+## XieH_2016 paper
+```{r}
+## XieH_2016 paper
+studyName <- "XieH_2016"
+pmid <- "27818083"
+bioproject <- "PRJEB9576"
+doi <- "10.1016/j.cels.2016.10.004"
+```
+
+### PMID to BioProjectID
+Can't find BioProject ID from the text
+```{r}
+## PMID to BioProjectID
+pattern_match <- extract_pattern_from_fulltext(pmid, common_patterns$bioproject)
+bpid2 <- pattern_match$matches
+bpid2
+```
+
+### BioProjectID to SRA metadata
+```{r}
+## BioProjectID to SRA metadata
+sra_per_bioproject <- bioproject_to_sra_metadata(bioproject)
+```
+
+```{r}
+names(sra_per_bioproject)
+head(sra_per_bioproject)
+head(sra_per_bioproject$sra_run_ids)
+head(sra_per_bioproject$full_metadata)
+```
+
+### BioProjectID to BioSample metadata
+```{r}
+## BioProjectID to BioSample metadata
+metadata <- bioproject_to_biosample_metadata(bioproject)
+metadata
+```

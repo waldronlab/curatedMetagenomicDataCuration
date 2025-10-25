@@ -12,6 +12,9 @@ format:
 # Setup
 ## Load library
 ```{r include=FALSE, results="hide", message=FALSE, warning=FALSE}
+if (!require("curatedMetagenomicDataCuration", quietly = TRUE))
+    devtools::install_github("shbrief/curatedMetagenomicDataCuration")
+
 library(curatedMetagenomicDataCuration)
 ```
 
@@ -63,24 +66,4 @@ odm_get_status(host = host,
 odm_get_status(host = host, 
                token = token,
                study_id = "GSF000293")
-```
-
-# Processing 
-## Nextflow-processed datasets
-Swagger for NF telemetry: https://nf-telemetry-819875667022.us-central1.run.app/docs
-
-```{r}
-nf_res <- nf_get_completed_run(100)
-head(nf_res)
-```
-
-```{r echo=FALSE, eval=FALSE}
-## Check the processed data among cMD3 studies
-catalog <- readr::read_csv("biosamples_catalog.csv")
-processed <- dplyr::left_join(nf_res, catalog, by = "sample_id")
-cmd <- OmicsMLRepoR::getMetadata("cMD")
-procssed_study_names <- cmd %>%
-  dplyr::filter(ncbi_accession %in% processed$sra_study) %>%
-  dplyr::pull(study_name) %>%
-  unique
 ```

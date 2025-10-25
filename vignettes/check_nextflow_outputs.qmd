@@ -1,0 +1,78 @@
+---
+title: "Check Nextflow Outputs"
+author: "Sehyun Oh"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+    html:
+        fontsize: 14pxs
+        toc: true
+        top-depth: 3
+---
+
+# Setup
+## Load library
+```{r include=FALSE, results="hide", message=FALSE, warning=FALSE}
+if (!require("curatedMetagenomicDataCuration", quietly = TRUE))
+    devtools::install_github("shbrief/curatedMetagenomicDataCuration")
+
+library(curatedMetagenomicDataCuration)
+```
+
+## Load cMD3 metadata
+```{r}
+cmd <- OmicsMLRepoR::getMetadata("cMD")
+```
+
+
+# Processing 
+## Nextflow-processed datasets
+Swagger for NF telemetry: https://nf-telemetry-819875667022.us-central1.run.app/docs
+
+```{r eval=FALSE}
+nf_res <- nf_get_completed_run(5000)
+head(nf_res)
+```
+
+## Processed studies
+```{r message=FALSE, eval=FALSE}
+## Check the processed data among cMD3 studies
+catalog <- readr::read_csv("biosamples_catalog.csv")
+processed <- dplyr::left_join(nf_res, catalog, by = "sample_id")
+procssed_study_names <- cmd %>%
+  dplyr::filter(ncbi_accession %in% processed$sra_study) %>%
+  dplyr::pull(study_name) %>%
+  unique
+
+length(procssed_study_names)
+procssed_study_names
+```
+
+```{r}
+url <- "https://nf-telemetry-819875667022.us-central1.run.app/dashboard/study_progress"
+dat <- jsonlite::fromJSON(url)
+head(dat, 3)
+```
+
+```{r}
+length(intersect(cmd$study_name, dat$study_name))
+setdiff(cmd$study_name, dat$study_name)
+```
+
+## Processed samples
+```{r message=FALSE}
+cmgd <- readr::read_csv("cmgd_completed_samples_202510241703.csv")
+head(cmgd)
+```
+
+```{r}
+cmd <- OmicsMLRepoR::getMetadata("cMD")
+procssed_study_names <- cmd %>%
+  dplyr::filter(ncbi_accession %in% cmgd$sample_name) %>%
+  dplyr::pull(study_name) %>%
+  unique
+procssed_study_names
+
+cmd3_processed <- intersect(cmgd$study_name, cmd$study_name)
+length(cmd3_processed)
+cmd3_processed
+```
