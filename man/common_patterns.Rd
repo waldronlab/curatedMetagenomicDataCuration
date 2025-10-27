@@ -30,16 +30,20 @@ database accession numbers and identifiers from text. Use with
 }
 \examples{
 \dontrun{
-# Use predefined patterns
-pmid <- "25359968"
+# Use predefined patterns with multiple PMIDs
+pmids <- c("25359968", "26819408", "27924034")
 
 # Extract BioProject accessions
-result <- extract_pattern_from_fulltext(pmid, common_patterns$bioproject)
+result <- extract_pattern_from_fulltext(pmids, common_patterns$bioproject)
 
 # Extract multiple types at once
-all_results <- lapply(common_patterns, function(pattern) {
-  extract_pattern_from_fulltext(pmid, pattern)
+all_results <- lapply(names(common_patterns), function(pattern_name) {
+  df <- extract_pattern_from_fulltext(pmids, common_patterns[[pattern_name]])
+  df$pattern_type <- pattern_name
+  return(df)
 })
+
+combined_results <- do.call(rbind, all_results)
 }
 
 }
