@@ -4,20 +4,41 @@
 \alias{extract_pattern_from_fulltext}
 \title{Extract Pattern Matches from PubMed Central Full Text Articles}
 \usage{
-extract_pattern_from_fulltext(pmid, pattern)
+extract_pattern_from_fulltext(
+  pmid,
+  pattern,
+  return_format = "auto",
+  progress = TRUE,
+  rate_limit = 0.34
+)
 }
 \arguments{
-\item{pmid}{Character string or numeric. The PubMed ID (PMID) of the article
-to search. Must be a valid NCBI PubMed identifier.}
+\item{pmid}{Character string/numeric or character vector. The PubMed ID(s) 
+(PMID) of the article(s) to search. Must be valid NCBI PubMed identifier(s).}
 
 \item{pattern}{Character string. A regular expression pattern to search for
 in the full text. Common patterns include accession numbers for BioProject,
 BioSample, SRA, GEO, GenBank, and other biological databases. See Examples
 for common patterns.}
+
+\item{return_format}{Character string. Format of the return value. Options:
+\itemize{
+  \item \code{"auto"} (default): Returns a list for single PMID, data frame for multiple PMIDs
+  \item \code{"list"}: Always returns a list (original format)
+  \item \code{"dataframe"}: Always returns a data frame
+}}
+
+\item{progress}{Logical. If TRUE, displays progress messages when processing
+multiple PMIDs. Default is TRUE.}
+
+\item{rate_limit}{Numeric. Number of seconds to wait between API calls when
+processing multiple PMIDs. Default is 0.34 (approximately 3 requests/second).}
 }
 \value{
+For a single PMID (when \code{return_format = "list"} or \code{"auto"}):
 A list containing:
   \itemize{
+    \item \code{pmid}: The input PMID
     \item \code{found}: Logical. TRUE if PMC full text was available and 
       searched, FALSE if no full text was found
     \item \code{matches}: Character vector of unique pattern matches found 
@@ -29,13 +50,25 @@ A list containing:
     \item \code{source}: Character string. Description of the data source
       ("PMC full text" if successful, "No PMC full text" if unavailable)
   }
+  
+For multiple PMIDs (when \code{return_format = "dataframe"} or \code{"auto"}):
+A data frame with columns:
+  \itemize{
+    \item \code{pmid}: The input PMID
+    \item \code{found}: Logical indicating if full text was available
+    \item \code{match}: Individual pattern matches (one row per match)
+    \item \code{pmcid}: The PMC ID (if available)
+    \item \code{source}: Description of data source
+    \item \code{total_matches}: Total count of matches for this PMID
+    \item \code{error}: Error message if processing failed (NA otherwise)
+  }
 }
 \description{
 Searches for and extracts all occurrences of a specified pattern (e.g., 
-database accession numbers, identifiers, DOIs) from the full text of a 
-PubMed Central (PMC) article. This is useful for finding biological database
+database accession numbers, identifiers, DOIs) from the full text of 
+PubMed Central (PMC) articles. This is useful for finding biological database
 accessions, identifiers, or other structured text that may not be captured
-in article abstracts or metadata.
+in article abstracts or metadata. Can process a single PMID or multiple PMIDs.
 }
 \details{
 This function performs the following steps:
@@ -46,6 +79,9 @@ This function performs the following steps:
   \item Searches for all matches of the provided regex pattern
   \item Returns unique matches along with metadata
 }
+
+When processing multiple PMIDs, the function includes rate limiting and
+error handling to ensure robust processing of large batches.
 
 Note that only open access articles in PubMed Central can be accessed. 
 Articles that are not in PMC or are behind paywalls will return 
@@ -87,54 +123,74 @@ Here are useful patterns for extracting common biological database identifiers:
 
 \examples{
 \dontrun{
-# Example 1: Search for BioProject accessions
+# Example 1: Single PMID (returns list)
 pmid <- "25359968"
 result <- extract_pattern_from_fulltext(pmid, "PRJ[NED][A-Z][0-9]+")
 
 if (result$found) {
   cat("Found", result$count, "BioProject accession(s):\n")
   print(result$matches)
-} else {
-  cat(result$source, "\n")
 }
 
-# Example 2: Search for multiple types of accessions
+# Example 2: Multiple PMIDs (returns data frame)
+pmids <- c("25359968", "26819408", "27924034")
+results_df <- extract_pattern_from_fulltext(pmids, "PRJ[NED][A-Z][0-9]+")
+
+# View results
+print(results_df)
+
+# Get PMIDs with matches
+pmids_with_matches <- unique(results_df$pmid[!is.na(results_df$match)])
+
+# Count matches per PMID
+library(dplyr)
+match_summary <- results_df \%>\%
+  group_by(pmid) \%>\%
+  summarize(
+    found = first(found),
+    n_matches = sum(!is.na(match)),
+    matches = paste(na.omit(match), collapse = ", ")
+  )
+print(match_summary)
+
+# Example 3: Multiple PMIDs with multiple patterns
+pmids <- c("25359968", "26819408")
 patterns <- list(
   bioproject = "PRJ[NED][A-Z][0-9]+",
-  biosample = "SAM[NED][A-Z]?[0-9]+",
   sra = "SRR[0-9]{6,}",
   geo = "GSE[0-9]+"
 )
 
-results <- lapply(patterns, function(p) {
-  extract_pattern_from_fulltext(pmid, p)
-})
-
-# Display results for each pattern type
-for (name in names(results)) {
-  if (results[[name]]$found && length(results[[name]]$matches) > 0) {
-    cat("\n", toupper(name), "accessions found:\n", sep = "")
-    print(results[[name]]$matches)
-  }
+all_results <- list()
+for (pattern_name in names(patterns)) {
+  cat("\nSearching for", pattern_name, "...\n")
+  all_results[[pattern_name]] <- extract_pattern_from_fulltext(
+    pmids, 
+    patterns[[pattern_name]]
+  )
 }
 
-# Example 3: Extract DOIs from references
-result <- extract_pattern_from_fulltext(pmid, "10\\\\.\\\\d{4,}/[-._;()/:A-Za-z0-9]+")
-if (result$found) {
-  cat("DOIs found:", length(result$matches), "\n")
-  print(head(result$matches))
-}
+# Combine results
+combined_df <- bind_rows(all_results, .id = "pattern_type")
 
-# Example 4: Case-insensitive search using regex flags
-# Search for gene names (example: TP53, BRCA1)
-gene_pattern <- "(?i)\\\\b(TP53|BRCA1|EGFR)\\\\b"
-result <- extract_pattern_from_fulltext(pmid, gene_pattern)
+# Example 4: Force data frame output for single PMID
+result_df <- extract_pattern_from_fulltext(
+  "25359968", 
+  "PRJ[NED][A-Z][0-9]+",
+  return_format = "dataframe"
+)
 
-# Example 5: Handle article without full text
-result <- extract_pattern_from_fulltext("99999999", "PRJ[NED][A-Z][0-9]+")
-if (!result$found) {
-  cat("Error:", result$source, "\n")
-}
+# Example 5: Process with custom rate limiting
+pmids <- c("25359968", "26819408", "27924034", "28949297")
+results <- extract_pattern_from_fulltext(
+  pmids, 
+  "PRJ[NED][A-Z][0-9]+",
+  rate_limit = 0.5,  # Slower rate
+  progress = TRUE
+)
+
+# Save results
+write.csv(results, "pattern_extraction_results.csv", row.names = FALSE)
 }
 
 }
