@@ -1,0 +1,68 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+```{r}
+cmd <- OmicsMLRepoR::getMetadata("cMD")
+```
+
+```{r}
+idCols <- c("study_name", "subject_id", "sample_id", "pmid", "ncbi_accession")
+dat <- cmd %>%
+  filter(is.na(ncbi_accession)) %>%
+  select(all_of(idCols))
+```
+
+```{r}
+pmids <- unique(dat$pmid)
+length(pmids)
+```
+
+### PMID to BioProjectID
+
+```{r}
+all_results <- extract_pattern_from_fulltext(pmids, common_patterns$bioproject)
+
+sample_num <- cmd %>%
+    select(study_name, pmid) %>%
+    group_by(study_name) %>%
+    summarise(sample_number_in_cMD3 = n(),
+              pmid = unique(pmid)) %>%
+    filter(pmid %in% pmids)
+
+sample_num$pmid <- as.character(sample_num$pmid)
+
+dplyr::left_join(all_results[c("pmid", "match")],
+                 sample_num,
+                 by = "pmid")
+```
+
+### BioProjectID to SRA metadata
+
+```{r}
+bioprojects <- na.omit(all_results$match) %>% as.character
+bioprojects
+```
+
+
+```{r}
+## BioProjectID to SRA metadata
+sra_per_bioproject <- sapply(bioprojects, bioproject_to_sra_metadata)
+metaAll <- bind_rows(sra_per_bioproject[5,])
+```
+
+```{r eval=FALSE}
+write.csv(metaAll, "sra_meta.csv", row.names = FALSE)
+```
+
+
+### BioProjectID to BioSample metadata
+
+No BioSample metadata available
+
+```{r}
+## BioProjectID to BioSample metadata
+metadata <- sapply(bioprojects, bioproject_to_biosample_metadata)
+```
