@@ -9,6 +9,7 @@
 #' 
 #' @param bioproject_id Character string. The BioProject accession ID 
 #'   (e.g., "PRJNA123456"). Must be a valid NCBI BioProject identifier.
+#' @param fetch_size Integer. 
 #'
 #' @return A list containing:
 #'   \itemize{
@@ -93,7 +94,7 @@
 #'
 #' @author Your Name
 #' @export
-bioproject_to_sra_metadata <- function(bioproject_id) {
+bioproject_to_sra_metadata <- function(bioproject_id, fetch_size = 100) {
   
   # Input validation
   if (!is.character(bioproject_id) || length(bioproject_id) != 1) {
@@ -153,7 +154,7 @@ bioproject_to_sra_metadata <- function(bioproject_id) {
   cat("Fetching metadata...\n")
   
   # Fetch metadata in batches (NCBI recommends max 500 per fetch)
-  fetch_batch_size <- 500
+  fetch_batch_size <- fetch_size
   all_metadata <- list()
   
   for (i in seq(1, length(all_ids), by = fetch_batch_size)) {
