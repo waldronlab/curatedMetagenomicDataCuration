@@ -2,37 +2,106 @@
 % Please edit documentation in R/odm_get_samples.R
 \name{odm_get_samples}
 \alias{odm_get_samples}
-\title{Get samples by Genestack study accession}
+\title{Fetch and Parse Data from Genestack ODM API}
 \usage{
 odm_get_samples(
-  host = "https://odm.drylab.tech",
-  token,
-  study_id = NULL,
+  study_id,
+  api_token,
+  base_url = "https://odm.drylab.tech/api/v1/as-user/integration/link/samples/by/study",
+  response_format = "term_id",
   page_limit = 100,
-  offset = 0
+  off_set = 0,
+  metadata_fields = "extended_data_included"
 )
 }
 \arguments{
-\item{host}{The host URL for the Genestack API}
+\item{study_id}{Character. The unique identifier for the study in Genestack 
+ODM (e.g., "GSF004467").}
 
-\item{token}{The API token for authentication}
+\item{api_token}{Character. Your Genestack API authentication token.}
 
-\item{study_id}{A character(1). Genestack accession id for the study.}
+\item{base_url}{Character. The base URL for the API endpoint. Default is
+"https://odm.drylab.tech/api/v1/as-user/integration/link/samples/by/study"
+for exporting sample-level metadata for study}
 
-\item{page_limit}{The number of samples to retrieve per page 
-(default: 100). The maximum is 2,000.}
+\item{response_format}{Character. Format for the API response. Default is 
+"term_id" which includes ontology term identifiers. (No other options are
+available at this point.)}
 
-\item{offset}{Show the page {pageOffset+1} results from the start of 
-the results. (e.g., 100 will show a page of results starting from the 
-101st result (default: 0). To return all results iterate through pages 
-using `offset` values of `n * page_limit` until it surpaces the total
-number of samples.}
+\item{page_limit}{Integer. Maximum number of records to return per page. 
+Default is 100. The maximum is 2,000.}
+
+\item{metadata_fields}{Character. Specifies which metadata fields to include
+in the response. Valid options are:
+\itemize{
+  \item \code{"minimal_data"} - Returns only metadata in accordance with 
+        the default template
+  \item \code{"extended_data_included"} - Returns metadata in accordance 
+        with the applied template (default)
+  \item \code{"original_data_included"} - Returns all metadata attributes
+}
+Note: Legacy values "template" (equivalent to "extended_data_included") and 
+"all" (equivalent to "original_data_included") are still supported for 
+backwards compatibility.}
 }
 \value{
-A data frame containing sample metadata. A message shows how many 
-samples are retrieved out of the total samples.
+A list containing two elements:
+  \itemize{
+    \item \code{metadata}: API response metadata including pagination info
+    \item \code{data}: A data frame in wide format with samples as rows and 
+          attributes as columns. Ontology terms are stored in separate columns
+          with "_ontology_term_id" suffix
+  }
 }
 \description{
-This function retrieves samples from the Genestack API, filters them by 
-Genestack study accession.
+Retrieves sample data for a specified study from the Genestack ODM API and
+parses the JSON response into a structured wide-format data frame. The function
+handles API authentication, response validation, and automatic parsing of 
+nested JSON structures including ontology terms.
+}
+\details{
+The function performs the following steps:
+\enumerate{
+  \item Constructs the API URL with the provided study_id
+  \item Makes an authenticated GET request with specified query parameters
+  \item Validates the response status code
+  \item Parses the JSON response into a structured format
+  \item Converts nested field structures into wide-format columns
+  \item Extracts and formats ontology term IDs (converting underscore to colon)
+}
+
+For fields with multiple values, column names are suffixed with sequential 
+numbers (e.g., "field_name_2", "field_name_3").
+}
+\examples{
+\dontrun{
+# Basic usage
+api_token <- "your_api_token_here"
+study_id <- "GSF004467"
+
+result <- odm_get_samples(
+  study_id = study_id,
+  api_token = api_token
+)
+
+# Access the data
+df <- result$data
+metadata <- result$metadata
+
+# View summary
+head(df)
+str(df)
+
+# Custom parameters
+result <- odm_get_samples(
+  study_id = "GSF004467",
+  api_token = api_token,
+  page_limit = 200,
+  response_format = "term_id"
+)
+}
+
+}
+\seealso{
+\code{\link{parse_response_data}} for the internal parsing logic
 }
