@@ -7,7 +7,7 @@ format:
 server: shiny
 ---
 
-```{text echo=FALSE, eval=FALSE}
+```{bash echo=FALSE, eval=FALSE}
 https://claude.ai/chat/5bd5716b-2b27-4f62-8c34-8eafa620a69b
 ```
 
@@ -20,23 +20,26 @@ library(plotly)
 library(DT)
 library(shiny)
 library(leaflet)
+library(readr)
 
 # Read the data
-data <- read_csv("cMD_status.csv")
+dir <- system.file("extdata", package = "curatedMetagenomicDataCuration")
+data <- read_csv(file.path(dir, "cMD_status.csv"))
 
 # Clean and prepare data
 data <- data %>%
-  mutate(
-    Year = as.numeric(Year),
-    Samples = as.numeric(Samples),
-    Has_infants = ifelse(Has_infants == "Yes", "Yes", "No"),
-    `Nextflow Profiling` = ifelse(is.na(`Nextflow Profiling`) | `Nextflow Profiling` == "", 
+    filter(!is.na(DatasetName)) %>%
+    mutate(
+        Year = as.numeric(Year),
+        Samples = as.numeric(Samples),
+        HasInfants = ifelse(HasInfants == "Yes", "Yes", "No"),
+        NextflowProfiling = ifelse(is.na(NextflowProfiling) | NextflowProfiling == "", 
                                    "Not Started", 
-                                   as.character(`Nextflow Profiling`)),
-    `ODM Curation` = ifelse(is.na(`ODM Curation`) | `ODM Curation` == "", 
+                                   as.character(NextflowProfiling)),
+        ODMCuration = ifelse(is.na(ODMCuration) | ODMCuration == "", 
                             "Not Started", 
-                            as.character(`ODM Curation`)),
-    Version = ifelse(is.na(Version) | Version == "", 
+                            as.character(ODMCuration)),
+        Version = ifelse(is.na(Version) | Version == "", 
                      "Unknown", 
                      as.character(Version))
   )
@@ -92,13 +95,13 @@ country_coords <- tribble(
 ```{r}
 checkboxGroupInput("nextflow_filter", 
                    "Nextflow Profiling Status:",
-                   choices = unique(data$`Nextflow Profiling`),
-                   selected = unique(data$`Nextflow Profiling`))
+                   choices = unique(data$NextflowProfiling),
+                   selected = unique(data$NextflowProfiling))
 
 checkboxGroupInput("odm_filter", 
                    "ODM Curation Status:",
-                   choices = unique(data$`ODM Curation`),
-                   selected = unique(data$`ODM Curation`))
+                   choices = unique(data$ODMCuration),
+                   selected = unique(data$ODMCuration))
 
 checkboxGroupInput("version_filter", 
                    "Version:",
@@ -116,8 +119,8 @@ actionButton("reset", "Reset Filters",
 filtered_data <- reactive({
   data %>%
     filter(
-      `Nextflow Profiling` %in% input$nextflow_filter,
-      `ODM Curation` %in% input$odm_filter,
+      NextflowProfiling %in% input$nextflow_filter,
+      ODMCuration %in% input$odm_filter,
       Version %in% input$version_filter
     )
 })
@@ -125,9 +128,9 @@ filtered_data <- reactive({
 # Reset button
 observeEvent(input$reset, {
   updateCheckboxGroupInput(session, "nextflow_filter", 
-                           selected = unique(data$`Nextflow Profiling`))
+                           selected = unique(data$NextflowProfiling))
   updateCheckboxGroupInput(session, "odm_filter", 
-                           selected = unique(data$`ODM Curation`))
+                           selected = unique(data$ODMCuration))
   updateCheckboxGroupInput(session, "version_filter", 
                            selected = unique(data$Version))
 })
@@ -197,7 +200,7 @@ textOutput("infant_studies_box")
 ```{r}
 #| context: server
 output$infant_studies_box <- renderText({
-  as.character(sum(filtered_data()$Has_infants == "Yes", na.rm = TRUE))
+  as.character(sum(filtered_data()$HasInfants == "Yes", na.rm = TRUE))
 })
 ```
 
@@ -206,31 +209,32 @@ output$infant_studies_box <- renderText({
 ### Column {width=50%}
 
 ```{r}
-#| title: "Sample Size Distribution"
-plotlyOutput("sample_dist_chart", height = "100%")
+#| title: "Nextflow Profiling Status"
+plotlyOutput("nextflow_status_chart", height = "100%")
 ```
 
 ```{r}
 #| context: server
-output$sample_dist_chart <- renderPlotly({
-  sample_data <- filtered_data() %>%
-    filter(!is.na(Samples)) %>%
-    mutate(Sample_Range = case_when(
-      Samples < 50 ~ "< 50",
-      Samples < 100 ~ "50-99",
-      Samples < 200 ~ "100-199",
-      Samples < 500 ~ "200-499",
-      Samples < 1000 ~ "500-999",
-      TRUE ~ "1000+"
-    )) %>%
-    mutate(Sample_Range = factor(Sample_Range, 
-                                  levels = c("< 50", "50-99", "100-199", 
-                                           "200-499", "500-999", "1000+")))
+output$nextflow_status_chart <- renderPlotly({
+  p <- plot_ly(filtered_data(), 
+               labels = ~NextflowProfiling, 
+               type = 'pie',
+               hole = 0,
+               marker = list(colors = c('#667eea', '#764ba2', '#f093fb')),
+               textposition = 'inside',
+               textinfo = 'label+percent',
+               domain = list(x = c(0.2, 0.8), y = c(0.1, 0.9))) %>%
+    layout(title = "Nextflow Profiling Status",
+           showlegend = TRUE,
+           legend = list(
+             orientation = "h",
+             xanchor = "center",
+             x = 0.5,
+             yanchor = "bottom",
+             y = -0.1
+           ))
   
-  plot_ly(sample_data, x = ~Sample_Range, type = 'histogram',
-          marker = list(color = '#667eea')) %>%
-    layout(xaxis = list(title = "Sample Size Range"),
-           yaxis = list(title = "Number of Studies"))
+  p
 })
 ```
 
@@ -245,11 +249,11 @@ plotlyOutput("status_plot", height = "100%")
 #| context: server
 output$status_plot <- renderPlotly({
   status_data <- filtered_data() %>%
-    group_by(`Nextflow Profiling`, `ODM Curation`, Version) %>%
+    group_by(NextflowProfiling, ODMCuration, Version) %>%
     summarise(Count = n(), .groups = "drop")
   
   p <- plot_ly(filtered_data(), 
-               labels = ~`ODM Curation`, 
+               labels = ~ODMCuration, 
                type = 'pie',
                hole = 0,
                marker = list(colors = c('#667eea', '#764ba2', '#f093fb')),
@@ -383,6 +387,37 @@ output$country_chart <- renderPlotly({
 ## Row
 
 ```{r}
+#| title: "Sample Size Distribution"
+plotlyOutput("sample_dist_chart")
+```
+
+```{r}
+#| context: server
+output$sample_dist_chart <- renderPlotly({
+  sample_data <- filtered_data() %>%
+    filter(!is.na(Samples)) %>%
+    mutate(Sample_Range = case_when(
+      Samples < 50 ~ "< 50",
+      Samples < 100 ~ "50-99",
+      Samples < 200 ~ "100-199",
+      Samples < 500 ~ "200-499",
+      Samples < 1000 ~ "500-999",
+      TRUE ~ "1000+"
+    )) %>%
+    mutate(Sample_Range = factor(Sample_Range, 
+                                  levels = c("< 50", "50-99", "100-199", 
+                                           "200-499", "500-999", "1000+")))
+  
+  plot_ly(sample_data, x = ~Sample_Range, type = 'histogram',
+          marker = list(color = '#667eea')) %>%
+    layout(xaxis = list(title = "Sample Size Range"),
+           yaxis = list(title = "Number of Studies"))
+})
+```
+
+## Row
+
+```{r}
 #| title: "Studies by Bodysite"
 plotlyOutput("bodysite_chart")
 ```
@@ -422,8 +457,8 @@ DTOutput("data_table")
 #| context: server
 output$data_table <- renderDT({
   filtered_data() %>%
-    select(`Dataset Name`, Year, Samples, Bodysite, Countries, 
-           Has_infants, `Nextflow Profiling`, `ODM Curation`, Version, Title) %>%
+    select(DatasetName, Year, Samples, Bodysite, Countries, 
+           HasInfants, NextflowProfiling, ODMCuration, Version, Title) %>%
     arrange(desc(Year)) %>%
     datatable(
       options = list(
