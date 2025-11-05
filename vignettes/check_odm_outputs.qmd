@@ -32,6 +32,21 @@ studies <- odm_get_studies(token)
 studies
 ```
 
+## Check metadata curation status
+`valid` means all the required fields are entered and all the values are 
+validated against the schema.
+```{r}
+## An example of 'valid' study, `AsnicarF_2017`
+odm_get_status(host = host, 
+               token = token,
+               study_id = "GSF004467") 
+
+## An example of 'invalid' study, `PiccinnoG_2024`
+odm_get_status(host = host, 
+               token = token,
+               study_id = "GSF000293")
+```
+
 ## Get sample metadata per study
 
 For `odm_get_samples()`, 
@@ -40,12 +55,14 @@ For `odm_get_samples()`,
   need to be removed for cMD.
 
 ```{r}
-dat <- odm_get_samples(token = token, study_id = "GSF000293")
-dat <- odm_get_samples(token = token, study_id = "GSF004195")
+dat <- odm_get_samples(study_id = "GSF004467", 
+                       api_token = token, 
+                       metadata_fields = "original_data_included")
+colnames(dat$data)
 ```
 
 ```{r}
-head(dat)
+head(dat$data)
 ```
 
 ```{bash echo=FALSE, eval=FALSE}
@@ -53,17 +70,3 @@ head(dat)
 odm-delete-study --accession GSF004080 -H https://odm.drylab.tech
 ```
 
-## Check metadata curation status
-`valid` means all the required fields are entered and all the values are 
-validated against the schema.
-```{r}
-## An example of 'valid' study, `AsnicarF_2017`
-odm_get_status(host = host, 
-               token = token,
-               study_id = "GSF004195") 
-
-## An example of 'invalid' study, `PiccinnoG_2024`
-odm_get_status(host = host, 
-               token = token,
-               study_id = "GSF000293")
-```

@@ -4,7 +4,7 @@
 \alias{createTemplate}
 \title{Create template}
 \usage{
-createTemplate(base, path)
+createTemplate(base, path, overwrite = FALSE)
 }
 \arguments{
 \item{path}{a string}

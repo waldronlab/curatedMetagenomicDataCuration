@@ -68,14 +68,14 @@ bpid
 ### BioProjectID to SRA metadata
 ```{r}
 ## BioProjectID to SRA metadata
-sra_per_bioproject <- bioproject_to_sra_metadata(bpid)
+sra_meta_from_bp <- bioproject_to_sra_metadata(bpid)
 ```
 
 ```{r}
-names(sra_per_bioproject)
-head(sra_per_bioproject)
-head(sra_per_bioproject$sra_run_ids)
-head(sra_per_bioproject$full_metadata)
+names(sra_meta_from_bp)
+head(sra_meta_from_bp)
+head(sra_meta_from_bp$sra_run_ids)
+head(sra_meta_from_bp$full_metadata)
 ```
 
 ### BioProjectID to BioSample metadata
@@ -108,14 +108,14 @@ bpid2
 ### BioProjectID to SRA metadata
 ```{r}
 ## BioProjectID to SRA metadata
-sra_per_bioproject <- bioproject_to_sra_metadata(bioproject)
+sra_meta_from_bp <- bioproject_to_sra_metadata(bioproject)
 ```
 
 ```{r}
-names(sra_per_bioproject)
-head(sra_per_bioproject)
-head(sra_per_bioproject$sra_run_ids)
-head(sra_per_bioproject$full_metadata)
+names(sra_meta_from_bp)
+head(sra_meta_from_bp)
+head(sra_meta_from_bp$sra_run_ids)
+head(sra_meta_from_bp$full_metadata)
 ```
 
 ### BioProjectID to BioSample metadata

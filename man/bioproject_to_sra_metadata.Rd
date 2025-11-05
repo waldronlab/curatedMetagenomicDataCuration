@@ -4,11 +4,13 @@
 \alias{bioproject_to_sra_metadata}
 \title{Get SRA Accessions and Metadata from BioProject ID}
 \usage{
-bioproject_to_sra_metadata(bioproject_id)
+bioproject_to_sra_metadata(bioproject_id, fetch_size = 100)
 }
 \arguments{
 \item{bioproject_id}{Character string. The BioProject accession ID 
 (e.g., "PRJNA123456"). Must be a valid NCBI BioProject identifier.}
+
+\item{fetch_size}{Integer.}
 }
 \value{
 A list containing:
