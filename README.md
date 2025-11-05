@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/95220777.svg)](https://doi.org/10.5281/zenodo.17498347)
+
 # Quick Start
 
 This package orchestrate cMD metadata curation processes, including 
