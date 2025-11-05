@@ -103,16 +103,12 @@ odm_get_samples <- function(study_id,
                             base_url = "https://odm.drylab.tech/api/v1/as-user/integration/link/samples/by/study",
                             response_format = "term_id",
                             page_limit = 100,
-                            off_set = 0,
                             metadata_fields = "extended_data_included") {
   
   # Construct the full URL
   url <- paste0(base_url, "/", study_id)
   
   # Make the API call
-  cat("Fetching data from API...\n")
-  cat("URL:", url, "\n")
-  
   response <- GET(
     url = url,
     query = list(
@@ -131,18 +127,16 @@ odm_get_samples <- function(study_id,
     stop(paste("API request failed with status code:", status_code(response),
                "\nResponse:", content(response, "text")))
   }
-  
-  cat("API call successful! Status code:", status_code(response), "\n")
-  
+
   # Parse the response
   data <- content(response, "parsed", simplifyVector = FALSE)
   
   # Parse using the internal parsing logic
   result <- parse_response_data(data)
   
-  cat("Data parsed successfully!\n")
-  cat("Number of records:", nrow(result$data), "\n")
-  cat("Number of columns:", ncol(result$data), "\n")
+  # cat("Data parsed successfully!\n")
+  # cat("Number of records:", nrow(result$data), "\n")
+  # cat("Number of columns:", ncol(result$data), "\n")
   
   return(result)
 }

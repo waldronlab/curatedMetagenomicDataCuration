@@ -10,7 +10,6 @@ odm_get_samples(
   base_url = "https://odm.drylab.tech/api/v1/as-user/integration/link/samples/by/study",
   response_format = "term_id",
   page_limit = 100,
-  off_set = 0,
   metadata_fields = "extended_data_included"
 )
 }
