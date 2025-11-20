@@ -24,7 +24,8 @@ library(readr)
 
 # Read the data
 dir <- system.file("extdata", package = "curatedMetagenomicDataCuration")
-data <- read_csv(file.path(dir, "cMD_status.csv"))
+data <- read_csv(file.path(dir, "cMD_status.csv")) %>%
+  tidyr::separate_longer_delim(cols = Version, delim = ", ")
 
 # Clean and prepare data
 data <- data %>%
