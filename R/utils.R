@@ -135,6 +135,31 @@ baseName <- function(author, year) {
     paste0(last_name, substr(first_name, 1, 1), "_", year)
 }
 
+# Create tables
+# 
+.createTables <- function(fpath, required) {
+  study_df <- data.frame("Study Title" = character(),
+                         target_condition = character(),
+                         check.names = FALSE)
+  study_df_created <- tryCatch({
+    write.table(study_df, sep = "\t", quote = FALSE,
+                file.path(full_path, paste0(base, "_study.tsv")))
+    TRUE
+  }, error = function(e) FALSE)
+  sample_df <- data.frame("Study Source" = character(),
+                          "Study Source ID" = character(),
+                          study_name = character(),
+                          pmid = numeric(),
+                          doi = character(),
+                          check.names = FALSE) %>% cbind(., required)
+  sample_df_created <- tryCatch({
+    write.table(sample_df, sep = "\t", quote = FALSE,
+                file.path(full_path, paste0(base, "_sample.tsv")))
+    TRUE
+  }, error = function(e) FALSE)
+  study_df_created & sample_df_created
+}      
+
 #' Create template
 #'
 #' @details Note: the provided path must already exist otherwise the function
@@ -150,29 +175,34 @@ baseName <- function(author, year) {
 #'
 #' @examples
 #' createTemplate("HopperG_2025", tempdir())
-createTemplate <- function(base, path) {
+createTemplate <- function(base, path, overwrite = FALSE) {
     full_path <- file.path(path, base)
+    
+    required <- data.frame(
+        subject_id = character(),
+        sample_id = character(),
+        target_condition = character(),
+        control = character(),
+        country = character(),
+        body_site = character(),
+        ancestry = character(),
+        ancestry_details = character(),
+        curator = character(),
+        median_read_length = integer(),
+        minimum_read_length = integer(),
+        number_bases = double(),
+        number_reads = integer(),
+        sequencing_platform = character(),
+        stringsAsFactors = FALSE
+    )
+    
     if (!dir.exists(full_path)) {
         dir.create(full_path, recursive = TRUE)
-        study_df <- data.frame("Study Title" = character(),
-                               target_condition = character(),
-                               check.names = FALSE)
-        study_df_created <- tryCatch({
-            write.table(study_df, sep = "\t", quote = FALSE,
-                        file.path(full_path, paste0(base, "_study.tsv")))
-            TRUE
-            }, error = function(e) FALSE)
-        sample_df <- data.frame(study_name = character(),
-                                target_condition = character(),
-                                pmid = numeric(),
-                                doi = character(),
-                                check.names = FALSE)
-        sample_df_created <- tryCatch({
-            write.table(sample_df, sep = "\t", quote = FALSE,
-                        file.path(full_path, paste0(base, "_sample.tsv")))
-            TRUE
-            }, error = function(e) FALSE)
-        study_df_created & sample_df_created
-    } else
+        .createTables(full_path, required)
+    } else {
+      if (isTRUE(overwrite)) {
+        .createTables(full_path, required) 
+      } else 
         FALSE
+    }
 }

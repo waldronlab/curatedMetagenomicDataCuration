@@ -1,0 +1,72 @@
+---
+title: "Retrieve information from ODM"
+author: "Sehyun Oh"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+    html:
+        fontsize: 14pxs
+        toc: true
+        top-depth: 3
+---
+
+# Setup
+## Load library
+```{r include=FALSE, results="hide", message=FALSE, warning=FALSE}
+if (!require("curatedMetagenomicDataCuration", quietly = TRUE))
+    devtools::install_github("shbrief/curatedMetagenomicDataCuration")
+
+library(curatedMetagenomicDataCuration)
+```
+
+## Load ODM API token
+```{r}
+host <- "https://odm.drylab.tech" # ODM
+token <- readLines("token") # save the token in the vignette directory
+```
+
+# Metadata processing
+## Get all the studies
+These are the studies you have access to and their study-level metadata.
+```{r}
+studies <- odm_get_studies(token)
+studies
+```
+
+## Check metadata curation status
+`valid` means all the required fields are entered and all the values are 
+validated against the schema.
+```{r}
+## An example of 'valid' study, `AsnicarF_2017`
+odm_get_status(host = host, 
+               token = token,
+               study_id = "GSF004467") 
+
+## An example of 'invalid' study, `PiccinnoG_2024`
+odm_get_status(host = host, 
+               token = token,
+               study_id = "GSF000293")
+```
+
+## Get sample metadata per study
+
+For `odm_get_samples()`, 
+  + `study_id` (one of the arguments) is `genestack_accession`, which starts with `GSF`.\
+  + It returns Genestack-specific ID columns (`genestack:accession`, `groupId`), which 
+  need to be removed for cMD.
+
+```{r}
+dat <- odm_get_samples(study_id = "GSF004467", 
+                       api_token = token, 
+                       metadata_fields = "original_data_included")
+colnames(dat$data)
+```
+
+```{r}
+head(dat$data)
+```
+
+```{bash echo=FALSE, eval=FALSE}
+## How to delete a study
+odm-delete-study --accession GSF004080 -H https://odm.drylab.tech
+```
+

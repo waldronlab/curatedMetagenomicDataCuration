@@ -1,0 +1,214 @@
+---
+title: "cMD curation pipeline"
+author: "Sehyun Oh"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+    html:
+        fontsize: 14pxs
+        toc: true
+        top-depth: 3
+---
+
+```{r}
+library(curatedMetagenomicDataCuration)
+```
+
+# Create new study
+DOI is required to create new study for curation
+
+```{r}
+doi <- "10.1128/mSystems.00164-16"
+```
+
+```{r}
+cross_ref <- getCrossref(doi)
+cross_ref
+```
+
+Get PMID from DOI. If PMID is provided, double-check whether extracted and 
+provided PMID agree.
+
+```{r}
+pmid <- doi_to_pmid(doi)
+```
+
+Get BioProjectID from PMID. This process scan the literature to find out
+BioProjectID. If BioProjectID is provided, double-check whether extracted and 
+provided BioProjectID agree.
+
+```{r}
+pattern_match <- extract_pattern_from_fulltext(pmid, common_patterns$bioproject)
+bpid <- pattern_match$matches
+bpid
+```
+
+Get SRA metadata from BioProjectID
+
+```{r}
+sra_meta <- bioproject_to_sra_metadata(bpid)
+head(sra_meta$full_metadata, 3)
+```
+
+
+```{r echo=FALSE, eval=FALSE}
+## Get BioSample metadata from BioProjectID
+biosample_meta <- bioproject_to_biosample_metadata(bpid)
+biosample_meta
+```
+
+Crate a directory for new study
+
+```{r}
+## Name of new directory
+template_name <- baseName(cross_ref$author, cross_ref$year)
+template_name
+```
+
+```{r}
+path <- "~/Projects/curatedMetagenomicDataCuration/inst/harmonized"
+createTemplate(template_name, path, TRUE)
+```
+
+```{r}
+## Add this step into `createTemplate`
+if (!is.null(sra_meta)) {
+  write.table(sra_meta, sep = "\t", quote = FALSE,
+              file.path(path, template_name, paste0(template_name, "_sra_meta.tsv")))
+}
+```
+
+
+
+# Manual curation
+## Import curation template
+```{r}
+host <- "https://odm.drylab.tech" # ODM
+token <- readLines("token") # save the token in the vignette directory
+```
+
+### Through ODM API
+Currently not working
+```{r eval=FALSE}
+genestackRepo <- "https://public-nexus.devops.gs.team/repository/r-releases"
+install.packages("odmApi", repos = genestackRepo)
+```
+
+```{r}
+library(odmApi)
+```
+
+```{bash eval=FALSE}
+odm-import-data --token [token] --host https://odm.drylab.tech --study https://raw.githubusercontent.com/shbrief/curatedMetagenomicDataCuration/refs/heads/master/inst/harmonized/AsnicarF_2017/AsnicarF_2017_study.tsv --samples https://raw.githubusercontent.com/shbrief/curatedMetagenomicDataCuration/refs/heads/master/inst/harmonized/AsnicarF_2017/AsnicarF_2017_sample.tsv --allow-duplicates
+```
+
+### Manual uplaod
+Format for ODM
+```{r message=FALSE}
+cmd <- OmicsMLRepoR::getMetadata("cMD")
+```
+
+```{r}
+path <- "~/Projects/curatedMetagenomicDataCuration/inst/harmonized"
+studyNames <- unique(cmd$study_name)
+
+## `AsnicarF_2017` example
+study_meta <- cmd %>% 
+  filter(study_name == "AsnicarF_2017") %>%
+  summarise(`Study Title` = "AsnicarF_2017",
+            target_condition = unique(target_condition))
+
+sample_meta <- cmd %>% 
+  filter(study_name == "AsnicarF_2017") %>%
+  select_if(function(x) !all(is.na(x))) %>%
+  rename(`Sample Source ID` = sample_id) %>%
+  select(-curation_id)
+
+
+study_path <- file.path(path, "AsnicarF_2017")
+write.table(study_meta, 
+            file.path(study_path, paste0("AsnicarF_2017", "_study.tsv")), 
+            sep = "\t", row.names = FALSE, quote = FALSE)
+write.table(sample_meta, 
+            file.path(study_path, paste0("AsnicarF_2017", "_sample.tsv")), 
+            sep = "\t", row.names = FALSE, quote = FALSE)
+```
+
+```{r echo=FALSE, eval=FALSE}
+cmd <- OmicsMLRepoR::getMetadata("cMD")
+path <- "~/Projects/curatedMetagenomicDataCuration/inst/harmonized"
+studyNames <- unique(cmd$study_name)
+
+for (studyName in studyNames) {
+  study_meta <- cmd %>% 
+    filter(study_name == studyName) %>%
+    summarise(`Study Title` = studyName,
+              target_condition = unique(target_condition))
+
+  sample_meta <- cmd %>% 
+    filter(study_name == studyName) %>%
+    select_if(function(x) !all(is.na(x))) %>%
+    rename(`Sample Source ID` = sample_id) %>%
+    select(-curation_id)
+
+  study_path <- file.path(path, studyName)
+  
+  if(!dir.exists(study_path)) {dir.create(study_path)}
+  write.table(study_meta, 
+              file.path(study_path, paste0(studyName, "_study.tsv")), 
+              sep = "\t", row.names = FALSE, quote = FALSE)
+  write.table(sample_meta, 
+              file.path(study_path, paste0(studyName, "_sample.tsv")), 
+              sep = "\t", row.names = FALSE, quote = FALSE)
+  
+  ## SRA meta if available
+  pmid <- unique(sample_meta$pmid)
+  pattern_match <- extract_pattern_from_fulltext(pmid, common_patterns$bioproject)
+  bpid <- pattern_match$matches  
+  sra_meta <- as.data.frame(matrix(nrow = 0, ncol = 0))
+  
+  if (!is.null(bpid)) {
+    for (i in seq_along(bpid)) {
+      res <- bioproject_to_sra_metadata(bpid[i])
+      sra_meta <- rbind(sra_meta, res$full_metadata)
+    }
+  }
+  if (nrow(sra_meta) != 0) {
+    write.table(sra_meta, 
+               file.path(study_path, paste0(studyName, "_sra_meta.tsv")), 
+               sep = "\t", row.names = FALSE, quote = FALSE)
+  }
+}
+```
+
+
+
+## Export curated metadata
+List all the studies to find `genestack_accession`
+```{r}
+studies <- odm_get_studies(token)
+studies
+```
+
+Check the metadata curation status
+```{r}
+study_accession <- "GSF004467"
+odm_get_status(host = host, 
+               token = token,
+               study_id = study_accession)
+```
+
+Download 'Valid' metadata
+```{r message=FALSE}
+dat <- odm_get_samples(study_id = study_accession, 
+                       api_token = token)
+```
+
+Confirm that any important value not covered by template exist:
+```{r message=FALSE}
+dat_with_original <- odm_get_samples(study_id = study_accession, 
+                                     api_token = token, 
+                                     metadata_fields = "original_data_included")
+setdiff(colnames(dat_with_original$data), colnames(dat$data))
+```
+
+
