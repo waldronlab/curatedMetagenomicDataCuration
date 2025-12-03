@@ -1,0 +1,475 @@
+---
+title: "cMD Processing Status"
+format: 
+  dashboard:
+    theme: cosmo
+    orientation: rows
+server: shiny
+---
+
+```{bash echo=FALSE, eval=FALSE}
+https://claude.ai/chat/5bd5716b-2b27-4f62-8c34-8eafa620a69b
+```
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(plotly)
+library(DT)
+library(shiny)
+library(leaflet)
+library(readr)
+
+# Read the data
+dir <- system.file("extdata", package = "curatedMetagenomicDataCuration")
+data <- read_csv(file.path(dir, "cMD_status.csv")) %>%
+  tidyr::separate_longer_delim(cols = Version, delim = ", ")
+
+# Clean and prepare data
+data <- data %>%
+    filter(!is.na(DatasetName)) %>%
+    mutate(
+        Year = as.numeric(Year),
+        Samples = as.numeric(Samples),
+        HasInfants = ifelse(HasInfants == "Yes", "Yes", "No"),
+        NextflowProfiling = ifelse(is.na(NextflowProfiling) | NextflowProfiling == "", 
+                                   "Not Started", 
+                                   as.character(NextflowProfiling)),
+        ODMCuration = ifelse(is.na(ODMCuration) | ODMCuration == "", 
+                            "Not Started", 
+                            as.character(ODMCuration)),
+        Version = ifelse(is.na(Version) | Version == "", 
+                     "Unknown", 
+                     as.character(Version))
+  )
+
+# Country coordinates
+country_coords <- tribble(
+  ~Country, ~lat, ~lon,
+  "Italy", 41.9, 12.5,
+  "UK", 55.4, -3.4,
+  "USA", 37.1, -95.7,
+  "Sweden", 60.1, 18.6,
+  "Fiji", -17.7, 178.1,
+  "China", 35.9, 104.2,
+  "Singapore", 1.4, 103.8,
+  "Germany", 51.2, 10.5,
+  "Kazakhstan", 48.0, 66.9,
+  "Kazakistan", 48.0, 66.9,
+  "Bangladesh", 23.7, 90.4,
+  "India", 20.6, 78.9,
+  "Austria", 47.5, 14.6,
+  "Canada", 56.1, -106.3,
+  "Denmark", 56.3, 9.5,
+  "Luxembourg", 49.8, 6.1,
+  "Luxemburg", 49.8, 6.1,
+  "France", 46.2, 2.2,
+  "Finland", 61.9, 25.7,
+  "Estonia", 58.6, 25.0,
+  "Estony", 58.6, 25.0,
+  "Philippines", 12.9, 121.8,
+  "Netherlands", 52.1, 5.3,
+  "Spain", 40.5, -3.7,
+  "Mongolia", 46.9, 103.8,
+  "Mongoly", 46.9, 103.8,
+  "Cameroon", 7.4, 12.4,
+  "Ireland", 53.4, -8.2,
+  "Russia", 61.5, 105.3,
+  "Zimbabwe", -19.0, 29.2,
+  "Mexico", 23.6, -102.6,
+  "Malaysia", 4.2, 101.9,
+  "Argentina", -38.4, -63.6,
+  "Ecuador", -1.8, -78.2,
+  "Guinea Bissau", 11.8, -15.2,
+  "Colombia", 4.6, -74.3,
+  "Czech Republic", 49.8, 15.5,
+  "Switzerland", 46.8, 8.2,
+  "Australia", -25.3, 133.8,
+  "Burkina Faso", 12.2, -1.6
+)
+```
+
+# Filters {.sidebar}
+
+```{r}
+checkboxGroupInput("nextflow_filter", 
+                   "Nextflow Profiling Status:",
+                   choices = unique(data$NextflowProfiling),
+                   selected = unique(data$NextflowProfiling))
+
+checkboxGroupInput("odm_filter", 
+                   "ODM Curation Status:",
+                   choices = unique(data$ODMCuration),
+                   selected = unique(data$ODMCuration))
+
+checkboxGroupInput("version_filter", 
+                   "Version:",
+                   choices = unique(data$Version),
+                   selected = unique(data$Version))
+
+actionButton("reset", "Reset Filters", 
+             style = "background-color: #667eea; color: white; width: 100%;")
+```
+
+```{r}
+#| context: server
+
+# Reactive filtered data
+filtered_data <- reactive({
+  data %>%
+    filter(
+      NextflowProfiling %in% input$nextflow_filter,
+      ODMCuration %in% input$odm_filter,
+      Version %in% input$version_filter
+    )
+})
+
+# Reset button
+observeEvent(input$reset, {
+  updateCheckboxGroupInput(session, "nextflow_filter", 
+                           selected = unique(data$NextflowProfiling))
+  updateCheckboxGroupInput(session, "odm_filter", 
+                           selected = unique(data$ODMCuration))
+  updateCheckboxGroupInput(session, "version_filter", 
+                           selected = unique(data$Version))
+})
+```
+
+# Overview
+
+## Row {height=25%}
+
+```{r}
+#| content: valuebox
+#| title: "Total Studies"
+#| color: primary
+textOutput("total_studies_box")
+```
+
+```{r}
+#| context: server
+output$total_studies_box <- renderText({
+  as.character(nrow(filtered_data()))
+})
+```
+
+```{r}
+#| content: valuebox
+#| title: "Total Samples"
+#| color: success
+textOutput("total_samples_box")
+```
+
+```{r}
+#| context: server
+output$total_samples_box <- renderText({
+  scales::comma(sum(filtered_data()$Samples, na.rm = TRUE))
+})
+```
+
+```{r}
+#| content: valuebox
+#| title: "Countries"
+#| color: info
+uiOutput("total_countries_box")
+```
+
+```{r}
+#| context: server
+output$total_countries_box <- renderText({
+  as.character(
+    filtered_data() %>%
+      pull(Countries) %>%
+      str_split(",") %>%
+      unlist() %>%
+      str_trim() %>%
+      unique() %>%
+      length()
+  )
+})
+```
+
+```{r}
+#| content: valuebox
+#| title: "With Infants"
+#| color: warning
+textOutput("infant_studies_box")
+```
+
+```{r}
+#| context: server
+output$infant_studies_box <- renderText({
+  as.character(sum(filtered_data()$HasInfants == "Yes", na.rm = TRUE))
+})
+```
+
+## Row {height=75%}
+
+### Column {width=50%}
+
+```{r}
+#| title: "Nextflow Profiling Status"
+plotlyOutput("nextflow_status_chart", height = "100%")
+```
+
+```{r}
+#| context: server
+output$nextflow_status_chart <- renderPlotly({
+  p <- plot_ly(filtered_data(), 
+               labels = ~NextflowProfiling, 
+               type = 'pie',
+               hole = 0,
+               marker = list(colors = c('#667eea', '#764ba2', '#f093fb')),
+               textposition = 'inside',
+               textinfo = 'label+percent',
+               domain = list(x = c(0.2, 0.8), y = c(0.1, 0.9))) %>%
+    layout(title = "Nextflow Profiling Status",
+           showlegend = TRUE,
+           legend = list(
+             orientation = "h",
+             xanchor = "center",
+             x = 0.5,
+             yanchor = "bottom",
+             y = -0.1
+           ))
+  
+  p
+})
+```
+
+### Column {width=50%}
+
+```{r}
+#| title: "Status Distribution"
+plotlyOutput("status_plot", height = "100%")
+```
+
+```{r}
+#| context: server
+output$status_plot <- renderPlotly({
+  status_data <- filtered_data() %>%
+    group_by(NextflowProfiling, ODMCuration, Version) %>%
+    summarise(Count = n(), .groups = "drop")
+  
+  p <- plot_ly(filtered_data(), 
+               labels = ~ODMCuration, 
+               type = 'pie',
+               hole = 0,
+               marker = list(colors = c('#667eea', '#764ba2', '#f093fb')),
+               textposition = 'inside',
+               textinfo = 'label+percent',
+               domain = list(x = c(0.2, 0.8), y = c(0.1, 0.9))) %>%
+    layout(title = "ODM Curation Status",
+           showlegend = TRUE,
+           legend = list(
+             orientation = "h",
+             xanchor = "center",
+             x = 0.5,
+             yanchor = "bottom",
+             y = -0.1
+           ))
+  
+  p
+})
+```
+
+# Geographic & Temporal Analysis
+
+## Row {height=50%}
+
+```{r}
+#| title: "Geographic Distribution"
+leafletOutput("map", height = "100%")
+```
+
+```{r}
+#| context: server
+output$map <- renderLeaflet({
+  country_data <- filtered_data() %>%
+    filter(!is.na(Countries)) %>%
+    separate_rows(Countries, sep = ",") %>%
+    mutate(Countries = str_trim(Countries)) %>%
+    group_by(Countries) %>%
+    summarise(
+      Studies = n(),
+      Samples = sum(Samples, na.rm = TRUE)
+    ) %>%
+    left_join(country_coords, by = c("Countries" = "Country")) %>%
+    filter(!is.na(lat))
+  
+  if (nrow(country_data) == 0) {
+    leaflet() %>% addTiles()
+  } else {
+    leaflet(country_data) %>%
+      addTiles() %>%
+      addCircleMarkers(
+        lng = ~lon,
+        lat = ~lat,
+        radius = ~sqrt(Studies) * 3 + 3,
+        color = "#667eea",
+        fillColor = "#667eea",
+        fillOpacity = 0.6,
+        weight = 2,
+        popup = ~paste0(
+          "<strong>", Countries, "</strong><br>",
+          "Studies: ", Studies, "<br>",
+          "Samples: ", scales::comma(Samples)
+        )
+      )
+  }
+})
+```
+
+## Row {height=50%}
+
+### Column {width=50%}
+
+```{r}
+#| title: "Studies Over Time"
+plotlyOutput("year_chart")
+```
+
+```{r}
+#| context: server
+output$year_chart <- renderPlotly({
+  yearly_data <- filtered_data() %>%
+    filter(!is.na(Year)) %>%
+    group_by(Year) %>%
+    summarise(Count = n(), Total_Samples = sum(Samples, na.rm = TRUE))
+  
+  plot_ly(yearly_data, x = ~Year, y = ~Count, type = 'bar',
+          marker = list(color = '#667eea'),
+          hovertemplate = paste('<b>Year:</b> %{x}',
+                              '<br><b>Studies:</b> %{y}',
+                              '<extra></extra>')) %>%
+    layout(xaxis = list(title = "Year"),
+           yaxis = list(title = "Number of Studies"))
+})
+```
+
+### Column {width=50%}
+
+```{r}
+#| title: "Top Countries"
+plotlyOutput("country_chart")
+```
+
+```{r}
+#| context: server
+output$country_chart <- renderPlotly({
+  country_data <- filtered_data() %>%
+    filter(!is.na(Countries) & Countries != "") %>%
+    separate_rows(Countries, sep = ",") %>%
+    mutate(Countries = str_trim(Countries)) %>%
+    group_by(Countries) %>%
+    summarise(Studies = n(), Samples = sum(Samples, na.rm = TRUE)) %>%
+    arrange(desc(Studies)) %>%
+    top_n(15, Studies)
+  
+  plot_ly(country_data, 
+          y = ~reorder(Countries, Studies), 
+          x = ~Studies,
+          type = 'bar',
+          orientation = 'h',
+          marker = list(color = '#764ba2'),
+          hovertemplate = paste('<b>%{y}</b>',
+                              '<br><b>Studies:</b> %{x}',
+                              '<extra></extra>')) %>%
+    layout(yaxis = list(title = ""),
+           xaxis = list(title = "Number of Studies"),
+           margin = list(l = 150))
+})
+```
+
+# Analysis
+
+## Row
+
+```{r}
+#| title: "Sample Size Distribution"
+plotlyOutput("sample_dist_chart")
+```
+
+```{r}
+#| context: server
+output$sample_dist_chart <- renderPlotly({
+  sample_data <- filtered_data() %>%
+    filter(!is.na(Samples)) %>%
+    mutate(Sample_Range = case_when(
+      Samples < 50 ~ "< 50",
+      Samples < 100 ~ "50-99",
+      Samples < 200 ~ "100-199",
+      Samples < 500 ~ "200-499",
+      Samples < 1000 ~ "500-999",
+      TRUE ~ "1000+"
+    )) %>%
+    mutate(Sample_Range = factor(Sample_Range, 
+                                  levels = c("< 50", "50-99", "100-199", 
+                                           "200-499", "500-999", "1000+")))
+  
+  plot_ly(sample_data, x = ~Sample_Range, type = 'histogram',
+          marker = list(color = '#667eea')) %>%
+    layout(xaxis = list(title = "Sample Size Range"),
+           yaxis = list(title = "Number of Studies"))
+})
+```
+
+## Row
+
+```{r}
+#| title: "Studies by Bodysite"
+plotlyOutput("bodysite_chart")
+```
+
+```{r}
+#| context: server
+output$bodysite_chart <- renderPlotly({
+  bodysite_data <- filtered_data() %>%
+    separate_rows(Bodysite, sep = ",") %>%
+    mutate(Bodysite = str_trim(Bodysite)) %>%
+    filter(!is.na(Bodysite) & Bodysite != "") %>%
+    group_by(Bodysite) %>%
+    summarise(Studies = n()) %>%
+    arrange(desc(Studies)) %>%
+    top_n(10, Studies)
+  
+  plot_ly(bodysite_data, 
+          x = ~reorder(Bodysite, Studies), 
+          y = ~Studies, 
+          type = 'bar',
+          marker = list(color = '#f093fb')) %>%
+    layout(xaxis = list(title = "Bodysite", tickangle = -45),
+           yaxis = list(title = "Number of Studies"))
+})
+```
+
+# Data Table
+
+## Row
+
+```{r}
+#| title: "Filtered Dataset"
+DTOutput("data_table")
+```
+
+```{r}
+#| context: server
+output$data_table <- renderDT({
+  filtered_data() %>%
+    select(DatasetName, Year, Samples, Bodysite, Countries, 
+           HasInfants, NextflowProfiling, ODMCuration, Version, Title) %>%
+    arrange(desc(Year)) %>%
+    datatable(
+      options = list(
+        pageLength = 15,
+        scrollX = TRUE,
+        searchHighlight = TRUE
+      ),
+      filter = 'top',
+      rownames = FALSE,
+      class = 'cell-border stripe hover'
+    )
+})
+```
