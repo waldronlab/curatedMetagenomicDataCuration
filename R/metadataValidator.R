@@ -402,6 +402,13 @@ ts <- read.delim("inst/curated/ArtachoA_2021/ArtachoA_2021_metadata.tsv",
                  colClasses = "character")
 
 report <- dplyr::bind_rows(
+  check_required(cdd, ts),
+  check_class(cdd, ts),
+  check_unique(cdd, ts),
+  check_allowed_values(cdd, ts)
+)
+
+full_report <- dplyr::bind_rows(
   check_required(cdd, ts, include_all = TRUE),
   check_class(cdd, ts, include_all = TRUE),
   check_unique(cdd, ts, include_all = TRUE),
