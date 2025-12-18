@@ -327,8 +327,15 @@ check_unique <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
-check_multiple <- function(x) {
+# Do we need this function?
+# If multiple not allowed, we just check if the full string is an allowed value.
+# If multiple allowed, we just split on the delimiter.
+check_multiple <- function(dict, data, include_all = FALSE) {
+  # Which columns do not allow multiple values
+  svals <- dict$ColName[dict$MultipleValues == FALSE]
   
+  # Find intersecting columns
+  cols_to_check <- intersect(avals, colnames(data))
 }
 
 check_allowed_values <- function(dict, data, include_all = FALSE) {
@@ -343,6 +350,7 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
     pattern <- dict$AllowedValues[dict$ColName == col]
     required <- dict$Required[dict$ColName == col]
+    delim <- dict$Delimiter[dict$ColName == col]
     
     na_allowed <- required == "optional"
     
@@ -350,7 +358,80 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
       val <- data[[col]][i]
       if (is.na(val) && na_allowed) return(TRUE)
       if (pattern == "") return(TRUE)
-      grepl(paste0("^", pattern, "$"), val)
+      vals <- unlist(strsplit(val, delim))
+      all(grepl(paste0("^", gsub(";", "|", pattern), "$"), vals))
+    })
+    
+    if (include_all) {
+      col_res <- data.frame(
+        column = col,
+        row = seq_along(ok),
+        value = data[[col]],
+        check_type = "allowed_values",
+        expected = pattern,
+        valid = ok
+      )
+    } else {
+      bad <- which(!ok)
+      
+      if (length(bad) == 0) {
+        col_res <- data.frame(
+          column = character(0),
+          row = integer(0),
+          value = character(0),
+          check_type = character(0),
+          expected = character(0),
+          valid = logical(0)
+        )
+      } else {
+        col_res <- data.frame(
+          column = col,
+          row = bad,
+          value = data[[col]][bad],
+          check_type = "allowed_values",
+          expected = pattern,
+          valid = FALSE
+        )
+      }
+    }
+    
+    return(col_res)
+  }))
+  
+  return(results)
+}
+
+check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
+  # List available dictionary files
+  owl_files <- list.files(file_dir, pattern = ".owl")
+  csv_files <- list.files(file_dir, pattern = ".csv")
+  
+  # Get columns that have dictionary files
+  ovals <- sapply(dict$ColName, function(x) owl_files[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), owl_files)])
+  cvals <- sapply(dict$ColName, function(x) csv_files[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), csv_files)])
+  
+  ofiles <- ovals[which(lengths(ovals) > 0)]
+  cfiles <- cvals[which(lengths(cvals) > 0)]
+  
+  # Find intersecting columns
+  cols_to_check <- intersect(unique(c(names(ofiles), names(cfiles))),
+                             colnames(data)) 
+  
+  # Check values
+  results <- do.call(rbind, lapply(cols_to_check, function(col) {
+    ofile <- ofiles[[col]]
+    pattern <- dict$AllowedValues[dict$ColName == col]
+    required <- dict$Required[dict$ColName == col]
+    delim <- dict$Delimiter[dict$ColName == col]
+    
+    na_allowed <- required == "optional"
+    
+    ok <- sapply(seq_along(data[[col]]), function(i) {
+      val <- data[[col]][i]
+      if (is.na(val) && na_allowed) return(TRUE)
+      if (pattern == "") return(TRUE)
+      vals <- unlist(strsplit(val, delim))
+      all(grepl(paste0("^", gsub(";", "|", pattern), "$"), vals))
     })
     
     if (include_all) {
@@ -397,9 +478,16 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
 cdd <- read.csv("inst/extdata/cMD_data_dictionary.csv",
                 colClasses = "character")
 
-# Load in test study
+# Load in test studies
 ts <- read.delim("inst/curated/ArtachoA_2021/ArtachoA_2021_metadata.tsv",
                  colClasses = "character")
+
+as_names <- list.files("inst/curated", pattern = "_metadata.tsv",
+                       recursive = TRUE, full.names = TRUE)
+as <- lapply(as_names, function(x) read.delim(x, colClasses = "character"))
+names(as) <- gsub("_metadata.tsv", "", basename(as_names))
+
+data <- as[[3]]
 
 report <- dplyr::bind_rows(
   check_required(cdd, ts),
