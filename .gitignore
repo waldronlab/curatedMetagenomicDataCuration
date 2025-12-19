@@ -34,3 +34,4 @@ vignettes/*.pdf
 .Rproj.user
 
 *.dcf
+inst/doc
