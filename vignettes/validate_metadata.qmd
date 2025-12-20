@@ -23,15 +23,16 @@ library(curatedMetagenomicDataCuration)
 ```{r}
 ## Run test validation
 # Import cMD data dictionary
-cdd <- read.csv("inst/extdata/cMD_data_dictionary.csv",
+dictpath <- system.file("extdata", "cMD_data_dictionary.csv",
+                        package = "curatedMetagenomicDataCuration")
+
+cdd <- read.csv(dictpath,
                 colClasses = "character")
 
 # Load in test studies
-as_names <- list.files("inst/curated", pattern = "_metadata.tsv",
+curpath <- system.file("curated", package = "curatedMetagenomicDataCuration")
+as_names <- list.files(curpath, pattern = "_metadata.tsv",
                        recursive = TRUE, full.names = TRUE)
-as <- lapply(as_names, function(x) read.delim(x, colClasses = "character"))
-names(as) <- gsub("_metadata.tsv", "", basename(as_names))
-
 ts <- as[[1]]
 
 # Two options for validating a single study

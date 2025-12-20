@@ -151,7 +151,7 @@ check_unique <- function(dict, data, include_all = FALSE) {
     if (include_all) {
       col_res <- data.frame(
         column = col,
-        row = seq_along(ok),
+        row = seq_along(dup),
         value = data[[col]],
         check_type = "unique",
         expected = "unique",
