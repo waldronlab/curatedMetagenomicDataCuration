@@ -1,27 +1,34 @@
 # Function for validating curated metadata
 
 import_owl_id_label <- function(path) {
-  ## Load info from file
-  g <- rdflib::rdf_parse(path, format = "rdfxml")
+  # Read in OWL file
+  doc <- xml2::read_xml(path, options = c("HUGE", "RECOVER"))
   
-  ## Query with SPARQL
-  query <- "
-    SELECT ?id ?label
-    WHERE {
-      ?id a <http://www.w3.org/2002/07/owl#Class> .
-      ?id <http://www.w3.org/2000/01/rdf-schema#label> ?label .
-    }
-  "
-  df <- rdflib::rdf_query(g, query)
+  # Parse classes
+  classes <- xml2::xml_find_all(
+    doc,
+    ".//owl:Class",
+    xml2::xml_ns(doc)
+  )
   
-  ## Format fields
-  df$id <- df$id |>
-    basename() |>
-    stringr::str_replace("_", ":")
-  df$label <- as.character(df$label)
-  dplyr::distinct(df)
+  id <- xml2::xml_attr(classes, "about")
+  label <- xml2::xml_text(
+    xml2::xml_find_first(classes, "rdfs:label", xml2::xml_ns(doc))
+  )
   
-  return(df)
+  # Present results
+  results <- tibble::tibble(
+    id = id,
+    label = label,
+    id_short = base::basename(id) |>
+      stringr::str_replace("_", ":")
+  )
+  
+  # Give back memory
+  rm(doc, classes)
+  gc(FALSE)
+  
+  return(results)
 }
 
 check_required <- function(dict, data, include_all = FALSE) {
@@ -267,25 +274,27 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
                              colnames(data)) 
   
   # Load preferred file for each column
-  patt_list <- lapply(cols_to_check, function(col) {
+  pref_files <- list()
+  aval_list <- lapply(cols_to_check, function(col) {
     ofile <- ofiles[[col]]
     cfile <- cfiles[[col]]
     
     if (!is.null(ofile)) {
-      pattern <- paste(import_owl_id_label(paste0(file_dir, ofile))$label,
-                       collapse = "|")
+      avals <- import_owl_id_label(paste0(file_dir, ofile))$label
+      pref_files[[col]] <<- ofile
     } else if (!is.null(cfile)) {
-      pattern <- paste(read.csv(paste0(file_dir, cfile))$label,
-                       collapse = "|")
+      avals <- read.csv(paste0(file_dir, cfile))$label
+      pref_files[[col]] <<- cfile
     }
     
-    return(pattern)
+    return(avals)
   })
+  names(aval_list) <- cols_to_check
   
   # Check values
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
-
-    
+    avals <- patt_list[[col]]
+    val_file <- pref_files[[col]]
     required <- dict$Required[dict$ColName == col]
     delim <- dict$Delimiter[dict$ColName == col]
     
@@ -293,10 +302,13 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
     
     ok <- sapply(seq_along(data[[col]]), function(i) {
       val <- data[[col]][i]
+      
       if (is.na(val) && na_allowed) return(TRUE)
-      if (pattern == "") return(TRUE)
+      if (length(avals) == 0) return(TRUE)
+
       vals <- unlist(strsplit(val, delim))
-      all(grepl(paste0("^", pattern, "$"), vals))
+      #all(grepl(paste0("^", pattern, "$"), vals))
+      all(vals %in% avals)
     })
     
     if (include_all) {
@@ -305,7 +317,7 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
         row = seq_along(ok),
         value = data[[col]],
         check_type = "allowed_values",
-        expected = pattern,
+        expected = paste0("See \'", val_file, "\'"),
         valid = ok
       )
     } else {
@@ -326,7 +338,7 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
           row = bad,
           value = data[[col]][bad],
           check_type = "allowed_values",
-          expected = pattern,
+          expected = paste0("See \'", val_file, "\'"),
           valid = FALSE
         )
       }
@@ -337,3 +349,4 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
   
   return(results)
 }
+

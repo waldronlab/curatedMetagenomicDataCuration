@@ -33,6 +33,9 @@ cdd <- read.csv(dictpath,
 curpath <- system.file("curated", package = "curatedMetagenomicDataCuration")
 as_names <- list.files(curpath, pattern = "_metadata.tsv",
                        recursive = TRUE, full.names = TRUE)
+as <- lapply(as_names, function(x) read.delim(x, colClasses = "character"))
+names(as) <- gsub("_metadata.tsv", "", basename(as_names))
+
 ts <- as[[1]]
 
 # Two options for validating a single study
@@ -60,5 +63,11 @@ check_all <- lapply(as, function(x) {
     check_allowed_values(cdd, x)
   )
 })
+
+# If dictionary files (OWL or CSV format) exist elsewhere, you can use the function `check_dictionary_values`
+
+owl_dir <- "/home/kaelyn/Desktop/Work/curatedMetagenomicDataODM/dictionaries_owl/"
+
+t <- check_dictionary_values(owl_dir, cdd, ts)
 ```
 
