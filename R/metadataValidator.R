@@ -293,7 +293,7 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
   
   # Check values
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
-    avals <- patt_list[[col]]
+    avals <- aval_list[[col]]
     val_file <- pref_files[[col]]
     required <- dict$Required[dict$ColName == col]
     delim <- dict$Delimiter[dict$ColName == col]
