@@ -307,7 +307,6 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
       if (length(avals) == 0) return(TRUE)
 
       vals <- unlist(strsplit(val, delim))
-      #all(grepl(paste0("^", pattern, "$"), vals))
       all(vals %in% avals)
     })
     
