@@ -274,21 +274,31 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
                              colnames(data)) 
   
   # Load preferred file for each column
-  pref_files <- list()
-  aval_list <- lapply(cols_to_check, function(col) {
+  aval_pref_list <- lapply(cols_to_check, function(col) {
     ofile <- ofiles[[col]]
     cfile <- cfiles[[col]]
     
     if (!is.null(ofile)) {
       avals <- import_owl_id_label(paste0(file_dir, ofile))$label
-      pref_files[[col]] <<- ofile
+      val_file <- ofile
     } else if (!is.null(cfile)) {
       avals <- read.csv(paste0(file_dir, cfile))$label
-      pref_files[[col]] <<- cfile
+      val_file <- cfile
+    } else {
+      # Fallback in case neither an OWL nor CSV file is found
+      avals <- character(0)
+      val_file <- NA_character_
     }
     
-    return(avals)
+    list(
+      avals = avals,
+      val_file = val_file
+    )
   })
+  names(aval_pref_list) <- cols_to_check
+  
+  aval_list <- lapply(aval_pref_list, `[[`, "avals")
+  pref_files <- lapply(aval_pref_list, `[[`, "val_file")
   names(aval_list) <- cols_to_check
   
   # Check values
