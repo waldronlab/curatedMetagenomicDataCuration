@@ -64,6 +64,9 @@ check_all <- lapply(as, function(x) {
   )
 })
 
+```
+
+```{r, eval=FALSE}
 # If dictionary files (OWL or CSV format) exist elsewhere, you can use the function `check_dictionary_values`
 
 owl_dir <- "/home/kaelyn/Desktop/Work/curatedMetagenomicDataODM/dictionaries_owl/"

@@ -99,6 +99,19 @@ check_class <- function(dict, data, include_all = FALSE) {
   )
   
   # Run appropriate string parsers and combine results
+  if (length(cols_to_check) == 0) {
+    col_res <- data.frame(
+      column = character(0),
+      row = integer(0),
+      value = character(0),
+      check_type = character(0),
+      expected = character(0),
+      valid = logical(0)
+    )
+
+    return(col_res)
+  }
+  
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
     type <- dict$ColClass[dict$ColName == col]
     fn <- class_functions[[type]]
@@ -151,6 +164,19 @@ check_unique <- function(dict, data, include_all = FALSE) {
   cols_to_check <- intersect(u_colnames, colnames(data))
   
   # Which unique columns have duplicated values
+  if (length(cols_to_check) == 0) {
+    col_res <- data.frame(
+      column = character(0),
+      row = integer(0),
+      value = character(0),
+      check_type = character(0),
+      expected = character(0),
+      valid = logical(0)
+    )
+    
+    return(col_res)
+  }
+  
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
     dup <- duplicated(data[[col]]) | duplicated(data[[col]], fromLast = TRUE)
     dup[is.na(data[[col]])] <- FALSE
@@ -203,6 +229,19 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
   cols_to_check <- intersect(avals, colnames(data))
   
   # Check values
+  if (length(cols_to_check) == 0) {
+    col_res <- data.frame(
+      column = character(0),
+      row = integer(0),
+      value = character(0),
+      check_type = character(0),
+      expected = character(0),
+      valid = logical(0)
+    )
+    
+    return(col_res)
+  }
+  
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
     pattern <- dict$AllowedValues[dict$ColName == col]
     required <- dict$Required[dict$ColName == col]
@@ -292,6 +331,19 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
   names(aval_list) <- cols_to_check
   
   # Check values
+  if (length(cols_to_check) == 0) {
+    col_res <- data.frame(
+      column = character(0),
+      row = integer(0),
+      value = character(0),
+      check_type = character(0),
+      expected = character(0),
+      valid = logical(0)
+    )
+    
+    return(col_res)
+  }
+  
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
     avals <- aval_list[[col]]
     val_file <- pref_files[[col]]
