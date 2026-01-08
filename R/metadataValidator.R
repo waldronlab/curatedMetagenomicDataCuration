@@ -1,32 +1,48 @@
 # Function for validating curated metadata
 
 import_owl_id_label <- function(path) {
-  # Read in OWL file
-  doc <- xml2::read_xml(path, options = c("HUGE", "RECOVER"))
-  
-  # Parse classes
-  classes <- xml2::xml_find_all(
-    doc,
-    ".//owl:Class",
-    xml2::xml_ns(doc)
+  results <- tryCatch(
+    {
+      # Read in OWL file
+      doc <- xml2::read_xml(path, options = c("HUGE", "RECOVER"))
+      
+      # Parse classes
+      classes <- xml2::xml_find_all(
+        doc,
+        ".//owl:Class",
+        xml2::xml_ns(doc)
+      )
+      
+      id <- xml2::xml_attr(classes, "about")
+      label <- xml2::xml_text(
+        xml2::xml_find_first(classes, "rdfs:label", xml2::xml_ns(doc))
+      )
+      
+      # Present results
+      results <- tibble::tibble(
+        id = id,
+        label = label,
+        id_short = base::basename(id) |>
+          stringr::str_replace("_", ":")
+      )
+      
+      # Give back memory
+      rm(doc, classes)
+      gc(FALSE)
+      
+      results
+    },
+    error = function(e) {
+      stop(
+        sprintf(
+          "Error while importing OWL file '%s': %s",
+          path,
+          conditionMessage(e)
+        ),
+        call. = FALSE
+      )
+    }
   )
-  
-  id <- xml2::xml_attr(classes, "about")
-  label <- xml2::xml_text(
-    xml2::xml_find_first(classes, "rdfs:label", xml2::xml_ns(doc))
-  )
-  
-  # Present results
-  results <- tibble::tibble(
-    id = id,
-    label = label,
-    id_short = base::basename(id) |>
-      stringr::str_replace("_", ":")
-  )
-  
-  # Give back memory
-  rm(doc, classes)
-  gc(FALSE)
   
   return(results)
 }
@@ -75,6 +91,7 @@ check_required <- function(dict, data, include_all = FALSE) {
 
 is_integer_str <- function(x) grepl("^-?[0-9]+$", x)
 is_number_str <- function(x) !is.na(suppressWarnings(as.numeric(x)))
+# Note: kept for potential future boolean string validation rules (e.g., in check_class).
 is_bool_str <- function(x) tolower(x) %in% c("true", "false", "t", "f", "yes", "no", "1", "0")
 
 allow_na <- function(fn) {
@@ -115,7 +132,17 @@ check_class <- function(dict, data, include_all = FALSE) {
   results <- do.call(rbind, lapply(cols_to_check, function(col) {
     type <- dict$ColClass[dict$ColName == col]
     fn <- class_functions[[type]]
-     
+
+    if (is.null(fn)) {
+      stop(
+        sprintf(
+          "Unrecognized column class '%s' for column '%s' in dict$ColClass. ",
+          type,
+          col
+        ),
+        call. = FALSE
+      )
+    }
     ok <- fn(data[[col]])
     
     if (include_all) {
@@ -248,12 +275,27 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
     delim <- dict$Delimiter[dict$ColName == col]
     
     na_allowed <- required == "optional"
+    # Normalize delimiter: treat NA and literal "NA" as no delimiter
+    if (length(delim) == 0L || is.na(delim[1L])) {
+      delim_use <- NA_character_
+    } else {
+      delim_use <- as.character(delim[1L])
+      if (!is.na(delim_use) && identical(delim_use, "NA")) {
+        delim_use <- NA_character_
+      }
+    }
+    
+    na_allowed <- required == "optional"
     
     ok <- sapply(seq_along(data[[col]]), function(i) {
       val <- data[[col]][i]
       if (is.na(val) && na_allowed) return(TRUE)
       if (pattern == "") return(TRUE)
-      vals <- unlist(strsplit(val, delim))
+      if (is.na(delim_use)) {
+        vals <- val
+      } else {
+        vals <- unlist(strsplit(val, delim_use, fixed = TRUE))
+      }
       all(grepl(paste0("^", gsub(";", "|", pattern), "$"), vals))
     })
     
@@ -313,21 +355,31 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
                              colnames(data)) 
   
   # Load preferred file for each column
-  pref_files <- list()
-  aval_list <- lapply(cols_to_check, function(col) {
+  aval_pref_list <- lapply(cols_to_check, function(col) {
     ofile <- ofiles[[col]]
     cfile <- cfiles[[col]]
     
     if (!is.null(ofile)) {
-      avals <- import_owl_id_label(paste0(file_dir, ofile))$label
+      avals <- import_owl_id_label(file.path(file_dir, ofile))$label
       pref_files[[col]] <<- ofile
     } else if (!is.null(cfile)) {
-      avals <- read.csv(paste0(file_dir, cfile))$label
-      pref_files[[col]] <<- cfile
+      avals <- read.csv(file.path(file_dir, cfile))$label
+      val_file <- cfile
+    } else {
+      # Fallback in case neither an OWL nor CSV file is found
+      avals <- character(0)
+      val_file <- NA_character_
     }
     
-    return(avals)
+    list(
+      avals = avals,
+      val_file = val_file
+    )
   })
+  names(aval_pref_list) <- cols_to_check
+  
+  aval_list <- lapply(aval_pref_list, `[[`, "avals")
+  pref_files <- lapply(aval_pref_list, `[[`, "val_file")
   names(aval_list) <- cols_to_check
   
   # Check values
@@ -358,8 +410,12 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
       if (is.na(val) && na_allowed) return(TRUE)
       if (length(avals) == 0) return(TRUE)
 
-      vals <- unlist(strsplit(val, delim))
-      #all(grepl(paste0("^", pattern, "$"), vals))
+      # Handle missing or sentinel delimiters ("NA") by not splitting
+      if (length(delim) == 0L || is.na(delim) || identical(delim, "NA")) {
+        vals <- val
+      } else {
+        vals <- unlist(strsplit(val, delim, fixed = TRUE))
+      }
       all(vals %in% avals)
     })
     

@@ -4,7 +4,7 @@ author: "Kaelyn Long"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
     html:
-        fontsize: 14pxs
+        fontsize: 14px
         toc: true
         top-depth: 3
 ---
