@@ -213,6 +213,7 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
     ok <- sapply(seq_along(data[[col]]), function(i) {
       val <- data[[col]][i]
       if (is.na(val) && na_allowed) return(TRUE)
+      if (is.na(val)) return(FALSE)
       if (pattern == "") return(TRUE)
       vals <- unlist(strsplit(val, delim))
       all(grepl(paste0("^", gsub(";", "|", pattern), "$"), vals))
