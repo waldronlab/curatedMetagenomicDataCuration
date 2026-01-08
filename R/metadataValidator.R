@@ -1,5 +1,29 @@
 # Function for validating curated metadata
 
+#' @title Read ontology term IDs and labels from an OWL file
+#' @description 'import_owl_id_label' parses ontology term IDs and labels from
+#' an OWL file.
+#' @param path String: path to OWL file to parse
+#' @return A tibble with columns "id", "label", and "id_short"
+#' @details 'import_owl_id_label' additionally includes explicit calls to rm()
+#' and gc() due to the fact that OWL files can be extremely large.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @seealso 
+#'  \code{\link[xml2]{read_xml}}, \code{\link[xml2]{xml_find_all}}, \code{\link[xml2]{xml_ns}}, \code{\link[xml2]{xml_attr}}, \code{\link[xml2]{xml_text}}
+#'  \code{\link[tibble]{tibble}}
+#'  \code{\link[base]{basename}}
+#'  \code{\link[stringr]{str_replace}}
+#' @rdname import_owl_id_label
+#' @export 
+#' @importFrom xml2 read_xml xml_find_all xml_ns xml_attr xml_text xml_find_first
+#' @importFrom tibble tibble
+#' @importFrom base basename
+#' @importFrom stringr str_replace
 import_owl_id_label <- function(path) {
   results <- tryCatch(
     {
@@ -47,6 +71,32 @@ import_owl_id_label <- function(path) {
   return(results)
 }
 
+#' @title Check if required columns are present in the provided data
+#' @description 'check_required' takes a data dictionary with 'ColName' and
+#' 'Required' columns and a metadata table. Any columns that are marked as
+#' required in the data dictionary are checked to make sure that they are
+#' present in the metadata table. The function can return a report on all
+#' required columns or only the noncompliant columns.
+#' @param dict A table or data.frame: a data dictionary with 'ColName' and
+#' 'Required' columns
+#' @param data A table or data.frame: a table of metadata to check
+#' @param include_all Boolean: should the function return a report on all
+#' required columns (TRUE) or only the noncompliant columns (FALSE),
+#' Default: FALSE
+#' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
+#' 'expected', and 'valid'.
+#' @details Some of the columns in the returned data.frame will be filled with
+#' NA as they do not apply to the concept of checking column requiredness
+#' (e.g. 'row', 'value'). These are included for consistency with other
+#' 'check...' functions.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @rdname check_required
+#' @export 
 check_required <- function(dict, data, include_all = FALSE) {
   # Which columns are required
   r_colnames <- dict$ColName[dict$Required == "required"]
@@ -89,11 +139,82 @@ check_required <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
+#' @title Check if a string can be parsed as an integer
+#' @description 'is_integer_str' takes a string and checks it against a regular
+#' expression that identifies integers.
+#' @param x String: string to check
+#' @return Boolean
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  is_integer_str("test")
+#'  is_integer_str("100")
+#'  is_integer_str("100.5")
+#'  is_integer_str("test100")
+#'  }
+#' }
+#' @rdname is_integer_str
+#' @export 
 is_integer_str <- function(x) grepl("^-?[0-9]+$", x)
+
+#' @title Check if a string can be parsed as a numeric value
+#' @description 'is_number_str' takes a string and checks if it can be parsed by
+#' as.numeric().
+#' @param x String: string to check
+#' @return Boolean
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  is_number_str("test")
+#'  is_number_str("100")
+#'  is_number_str("100.5")
+#'  is_number_str("test100.5")
+#'  }
+#' }
+#' @rdname is_number_str
+#' @export 
 is_number_str <- function(x) !is.na(suppressWarnings(as.numeric(x)))
-# Note: kept for potential future boolean string validation rules (e.g., in check_class).
+
+#' @title Check if a string can be parsed as a Boolean
+#' @description 'is_bool_str' takes a string and checks if it can be parsed as a
+#' Boolean value.
+#' @param x String: string to check
+#' @return Boolean
+#' @details This function is not currently in use but is kept for potential
+#' future Boolean string validation rules (e.g., in check_class).
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  is_bool_str("test")
+#'  is_bool_str("true")
+#'  is_bool_str("FALSE")
+#'  is_bool_str("1")
+#'  is_bool_str("no")
+#'  }
+#' }
+#' @rdname is_bool_str
+#' @export 
 is_bool_str <- function(x) tolower(x) %in% c("true", "false", "t", "f", "yes", "no", "1", "0")
 
+#' @title Interpret NA values as compliant regardless of the internal validation
+#' function
+#' @description 'allow_na' is a wrapper function for simple validation functions
+#' (e.g. is_number_str()) that allows NA values to return TRUE even if they
+#' would otherwise be interpreted as FALSE.
+#' @param fn Function: function to bypass validation for
+#' @return 
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  new_fx <- allow_na(is_integer_str)
+#'  
+#'  new_fx("100")
+#'  new_fx("test")
+#'  new_fx(NA)
+#'  }
+#' }
+#' @rdname allow_na
+#' @export 
 allow_na <- function(fn) {
   function(x) {
     is_na <- is.na(x)
@@ -103,6 +224,27 @@ allow_na <- function(fn) {
   }
 }
 
+#' @title Check if columns are of the specified class
+#' @description 'check_class' takes a data dictionary with 'ColName' and
+#' 'ColClass' columns and a metadata table. Columns present in the metadata
+#' table and represented in the data dictionary are checked to make sure that
+#' they are of the specified class. The function can return a report on all
+#' columns or only the noncompliant columns.
+#' @param dict A table or data.frame: a data dictionary with 'ColName' and
+#' 'ColClass' columns
+#' @param data A table or data.frame: a table of metadata to check
+#' @param include_all Boolean: should the function return a report on all
+#' columns (TRUE) or only the noncompliant columns (FALSE), Default: FALSE
+#' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
+#' 'expected', and 'valid'.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @rdname check_class
+#' @export 
 check_class <- function(dict, data, include_all = FALSE) {
   # Find intersecting columns
   cols_to_check <- intersect(dict$ColName, colnames(data))
@@ -183,6 +325,27 @@ check_class <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
+#' @title Check if columns that require uniqueness are unique
+#' @description 'check_unique' takes a data dictionary with 'ColName' and
+#' 'Unique' columns and a metadata table. Any columns that are marked as
+#' unique in the data dictionary and present in the metadata table are checked
+#' to make sure that their values are unique. The function can return a report
+#' on all columns or only the noncompliant columns.
+#' @param dict A table or data.frame: a data dictionary with 'ColName' and
+#' 'Unique' columns
+#' @param data A table or data.frame: a table of metadata to check
+#' @param include_all Boolean: should the function return a report on all
+#' columns (TRUE) or only the noncompliant columns (FALSE), Default: FALSE
+#' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
+#' 'expected', and 'valid'.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @rdname check_unique
+#' @export 
 check_unique <- function(dict, data, include_all = FALSE) {
   # Which columns require uniqueness
   u_colnames <- dict$ColName[dict$Unique == "unique"]
