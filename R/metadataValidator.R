@@ -330,12 +330,12 @@ check_class <- function(dict, data, include_all = FALSE) {
 #' 'Unique' columns and a metadata table. Any columns that are marked as
 #' unique in the data dictionary and present in the metadata table are checked
 #' to make sure that their values are unique. The function can return a report
-#' on all columns or only the noncompliant columns.
+#' on all cells or only the noncompliant cells.
 #' @param dict A table or data.frame: a data dictionary with 'ColName' and
 #' 'Unique' columns
 #' @param data A table or data.frame: a table of metadata to check
 #' @param include_all Boolean: should the function return a report on all
-#' columns (TRUE) or only the noncompliant columns (FALSE), Default: FALSE
+#' cells (TRUE) or only the noncompliant cells (FALSE), Default: FALSE
 #' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
 #' 'expected', and 'valid'.
 #' @examples 
@@ -410,6 +410,27 @@ check_unique <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
+#' @title Check if column values are in an allowed values list
+#' @description 'check_allowed_values' takes a data dictionary with 'ColName'
+#' and 'AllowedValues' columns and a metadata table. Any columns that have a
+#' non-NA value for 'AllowedValues' and are present in the metadata table are
+#' checked to make sure that their values are allowed. The function can return a
+#' report on all cells or only the noncompliant cells.
+#' @param dict A table or data.frame: a data dictionary with 'ColName' and
+#' 'AllowedValues' columns
+#' @param data A table or data.frame: a table of metadata to check
+#' @param include_all Boolean: should the function return a report on all
+#' cells (TRUE) or only the noncompliant cells (FALSE), Default: FALSE
+#' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
+#' 'expected', and 'valid'.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @rdname check_allowed_values
+#' @export 
 check_allowed_values <- function(dict, data, include_all = FALSE) {
   # Get columns with valid allowed values
   avals <- dict$ColName[!is.na(dict$AllowedValues) &
@@ -501,6 +522,28 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
+#' @title Check if column values are in a matching dictionary file
+#' @description 'check_dictionary_values' takes a directory of files that are
+#' dictionaries of allowed values either in CSV or OWL format, a data dictionary
+#' with a 'ColName' column, and a metadata table. Any columns that are found to
+#' have a matching CSV or OWL reference file and be present in the metadata
+#' table are checked to make sure that their values are allowed. The function
+#' can return a report on all cells or only the noncompliant cells.
+#' @param file_dir String: a path to a directory containing CSV/OWL files
+#' @param dict A table or data.frame: a data dictionary with a 'ColName' column
+#' @param data A table or data.frame: a table of metadata to check
+#' @param include_all Boolean: should the function return a report on all
+#' cells (TRUE) or only the noncompliant cells (FALSE), Default: FALSE
+#' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
+#' 'expected', and 'valid'.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @rdname check_dictionary_values
+#' @export 
 check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
   # List available dictionary files
   owl_files <- list.files(file_dir, pattern = ".owl")
