@@ -1,4 +1,4 @@
-# Function for validating curated metadata
+# Functions for validating curated metadata
 
 #' @title Read ontology term IDs and labels from an OWL file
 #' @description 'import_owl_id_label' parses ontology term IDs and labels from
@@ -522,14 +522,13 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
-#' @title Check if column values are in a matching dictionary file
-#' @description 'check_dictionary_values' takes a directory of files that are
-#' dictionaries of allowed values either in CSV or OWL format, a data dictionary
+#' @title Check if column values are found in a dictionary file
+#' @description 'check_dictionary_values' takes a data dictionary
 #' with a 'ColName' column, and a metadata table. Any columns that are found to
-#' have a matching CSV or OWL reference file and be present in the metadata
+#' have a matching CSV or OWL reference file in the
+#' curatedMetagenomicDataCuration file cache and be present in the metadata
 #' table are checked to make sure that their values are allowed. The function
 #' can return a report on all cells or only the noncompliant cells.
-#' @param file_dir String: a path to a directory containing CSV/OWL files
 #' @param dict A table or data.frame: a data dictionary with a 'ColName' column
 #' @param data A table or data.frame: a table of metadata to check
 #' @param include_all Boolean: should the function return a report on all
@@ -544,14 +543,18 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
 #' }
 #' @rdname check_dictionary_values
 #' @export 
-check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
+#' @importFrom BiocFileCache bfcinfo
+check_dictionary_values <- function(dict, data, include_all = FALSE) {
   # List available dictionary files
-  owl_files <- list.files(file_dir, pattern = ".owl")
-  csv_files <- list.files(file_dir, pattern = ".csv")
+  bfc <- cMDC_get_cache()
+  cache_info <- BiocFileCache::bfcinfo(bfc)
+  
+  owl_files <- cache_info[grepl(".owl", cache_info$rname),]
+  csv_files <- cache_info[grepl(".csv", cache_info$rname),]
   
   # Get columns that have dictionary files
-  ovals <- sapply(dict$ColName, function(x) owl_files[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), owl_files)])
-  cvals <- sapply(dict$ColName, function(x) csv_files[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), csv_files)])
+  ovals <- sapply(dict$ColName, function(x) owl_files$rpath[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), owl_files$rname)])
+  cvals <- sapply(dict$ColName, function(x) csv_files$rpath[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), csv_files$rname)])
   
   ofiles <- ovals[which(lengths(ovals) > 0)]
   cfiles <- cvals[which(lengths(cvals) > 0)]
@@ -566,10 +569,10 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
     cfile <- cfiles[[col]]
     
     if (!is.null(ofile)) {
-      avals <- import_owl_id_label(file.path(file_dir, ofile))$label
-      pref_files[[col]] <<- ofile
+      avals <- import_owl_id_label(ofile)$label
+      val_file <- ofile
     } else if (!is.null(cfile)) {
-      avals <- read.csv(file.path(file_dir, cfile))$label
+      avals <- read.csv(cfile)$label
       val_file <- cfile
     } else {
       # Fallback in case neither an OWL nor CSV file is found
@@ -587,6 +590,9 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
   aval_list <- lapply(aval_pref_list, `[[`, "avals")
   pref_files <- lapply(aval_pref_list, `[[`, "val_file")
   names(aval_list) <- cols_to_check
+  
+  lookup <- cache_info$rname |> setNames(cache_info$rpath)
+  pref_files[] <- lapply(pref_files, function(x) unname(lookup[x]))
   
   # Check values
   if (length(cols_to_check) == 0) {
