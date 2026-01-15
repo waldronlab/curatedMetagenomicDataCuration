@@ -10,8 +10,8 @@
 #' re-download a file that is already present in the cache, Default: 'no'
 #' @param custom_cache BiocFileCache object: a custom cache object may be
 #' specified instead of the default created by cMDC_get_cache(), Default: NULL
-#' @return A tibble with information on the cached files, including UUID, data
-#' type, Google Cloud Bucket object name, local cache ID, and cached file path
+#' @return A tibble with information on the cached files, Google Cloud Bucket
+#' object name, local cache ID, and cached file path
 #' @examples
 #' \dontrun{
 #' if(interactive()){
