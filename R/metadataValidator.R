@@ -22,7 +22,6 @@
 #' @export 
 #' @importFrom xml2 read_xml xml_find_all xml_ns xml_attr xml_text xml_find_first
 #' @importFrom tibble tibble
-#' @importFrom base basename
 #' @importFrom stringr str_replace
 import_owl_id_label <- function(path) {
   results <- tryCatch(
@@ -202,7 +201,7 @@ is_bool_str <- function(x) tolower(x) %in% c("true", "false", "t", "f", "yes", "
 #' (e.g. is_number_str()) that allows NA values to return TRUE even if they
 #' would otherwise be interpreted as FALSE.
 #' @param fn Function: function to bypass validation for
-#' @return 
+#' @return Boolean
 #' @examples 
 #' \dontrun{
 #' if(interactive()){
