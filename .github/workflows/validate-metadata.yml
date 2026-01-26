@@ -72,12 +72,13 @@ jobs:
           restore-keys: ${{ runner.os }}-r-
       
       - name: Install OmicsMLRepoCuration (latest from GitHub)
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           install.packages("remotes")
-          remotes::install_github("shbrief/OmicsMLRepoCuration", upgrade = "always")
-        shell: Rscript {0}
-      
-      - name: Get schema version info
+          Sys.setenv(GITHUB_PAT = Sys.getenv("GITHUB_PAT"))
+          remotes::install_github("shbrief/OmicsMLRepoCuration", upgrade = "always", auth_token = Sys.getenv("GITHUB_PAT"))
+        shell: Rscript {0}      - name: Get schema version info
         id: schema_info
         run: |
           SCHEMA_COMMIT=$(Rscript -e "cat(system('git ls-remote https://github.com/shbrief/OmicsMLRepoCuration HEAD | cut -f1', intern = TRUE))")
