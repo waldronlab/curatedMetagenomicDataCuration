@@ -1,0 +1,267 @@
+# GitHub Actions Workflow for curatedMetagenomicDataCuration
+# 
+# INSTALLATION INSTRUCTIONS:
+# 1. Copy this file to: .github/workflows/validate-metadata.yml
+#    in the waldronlab/curatedMetagenomicDataCuration repository
+# 
+# 2. Create a Personal Access Token (PAT) in OmicsMLRepoCuration repo:
+#    - Go to Settings > Secrets and variables > Actions
+#    - Create new secret: DEPENDENT_REPO_TOKEN
+#    - Give it 'repo' scope to trigger workflows in other repos
+# 
+# 3. Enable workflow permissions:
+#    - Go to Settings > Actions > General
+#    - Under "Workflow permissions", select "Read and write permissions"
+# 
+# 4. Configure branch protection (optional but recommended):
+#    - Go to Settings > Branches
+#    - Add rule for 'master' branch
+#    - Enable "Require status checks to pass before merging"
+#    - Select "validate" as required check
+
+name: Validate Metadata Against Latest Schema
+
+on:
+  # Validate on every push to main branches
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - 'inst/harmonized/**/*.tsv'
+  
+  # Validate on pull requests
+  pull_request:
+    paths:
+      - 'inst/harmonized/**/*.tsv'
+  
+  # Run daily at 2 AM UTC to catch upstream schema changes
+  schedule:
+    - cron: '0 2 * * *'
+  
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+  
+  # Triggered by OmicsMLRepoCuration when schema updates
+  repository_dispatch:
+    types: [schema-updated]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout metadata repository
+        uses: actions/checkout@v3
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev
+      
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('DESCRIPTION') }}
+          restore-keys: ${{ runner.os }}-r-
+      
+      - name: Install OmicsMLRepoCuration (latest from GitHub)
+        run: |
+          install.packages("remotes")
+          remotes::install_github("waldronlab/OmicsMLRepoCuration", upgrade = "always")
+        shell: Rscript {0}
+      
+      - name: Get schema version info
+        id: schema_info
+        run: |
+          SCHEMA_COMMIT=$(Rscript -e "cat(system('git ls-remote https://github.com/waldronlab/OmicsMLRepoCuration HEAD | cut -f1', intern = TRUE))")
+          SCHEMA_COMMIT_SHORT="${SCHEMA_COMMIT:0:7}"
+          echo "commit=$SCHEMA_COMMIT" >> $GITHUB_OUTPUT
+          echo "commit_short=$SCHEMA_COMMIT_SHORT" >> $GITHUB_OUTPUT
+      
+      - name: Find all metadata files
+        id: find_files
+        run: |
+          FILES=$(find inst/harmonized -name "*_sample.tsv" -type f)
+          COUNT=$(echo "$FILES" | wc -l)
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+          echo "Found $COUNT metadata files to validate"
+          echo "$FILES"
+      
+      - name: Validate all metadata files
+        id: validate
+        run: |
+          library(OmicsMLRepoCuration)
+          
+          # Load latest schema
+          cat("Loading schema from OmicsMLRepoCuration...\n")
+          schema <- load_metadata_schema()
+          cat("✓ Schema loaded successfully\n\n")
+          
+          # Find all *_sample.tsv files
+          metadata_files <- list.files(
+            path = "inst/harmonized/",
+            pattern = "_sample\\.tsv$",
+            full.names = TRUE,
+            recursive = TRUE
+          )
+          
+          cat("Found", length(metadata_files), "metadata files to validate\n\n")
+          
+          # Track validation results
+          results <- list()
+          all_valid <- TRUE
+          total_errors <- 0
+          total_warnings <- 0
+          
+          # Validate each file
+          for (file in metadata_files) {
+            study_name <- basename(dirname(file))
+            cat("\n", rep("=", 70), "\n", sep = "")
+            cat("Validating:", study_name, "\n")
+            cat("File:", file, "\n")
+            cat(rep("=", 70), "\n\n", sep = "")
+            
+            tryCatch({
+              # Read TSV file
+              data <- read.delim(file, stringsAsFactors = FALSE, check.names = FALSE)
+              cat("  Rows:", nrow(data), "\n")
+              cat("  Columns:", ncol(data), "\n\n")
+              
+              # Validate against schema
+              result <- validate_data_against_schema(data, schema)
+              
+              # Store results
+              results[[study_name]] <- result
+              
+              # Report errors
+              if (length(result$errors) > 0) {
+                cat("  ❌ ERRORS (", length(result$errors), "):\n", sep = "")
+                for (i in seq_along(result$errors)) {
+                  cat("    ", i, ". ", result$errors[i], "\n", sep = "")
+                }
+                all_valid <- FALSE
+                total_errors <- total_errors + length(result$errors)
+              } else {
+                cat("  ✅ No errors\n")
+              }
+              
+              # Report warnings
+              if (length(result$warnings) > 0) {
+                cat("  ⚠️  WARNINGS (", length(result$warnings), "):\n", sep = "")
+                for (i in seq_along(result$warnings)) {
+                  cat("    ", i, ". ", result$warnings[i], "\n", sep = "")
+                }
+                total_warnings <- total_warnings + length(result$warnings)
+              }
+              
+            }, error = function(e) {
+              cat("  ❌ VALIDATION ERROR:", conditionMessage(e), "\n")
+              all_valid <- FALSE
+              total_errors <- total_errors + 1
+            })
+          }
+          
+          # Summary
+          cat("\n", rep("=", 70), "\n", sep = "")
+          cat("VALIDATION SUMMARY\n")
+          cat(rep("=", 70), "\n", sep = "")
+          cat("Total files validated:", length(metadata_files), "\n")
+          cat("Total errors:", total_errors, "\n")
+          cat("Total warnings:", total_warnings, "\n")
+          cat("Status:", if(all_valid) "✅ PASS" else "❌ FAIL", "\n")
+          cat(rep("=", 70), "\n\n", sep = "")
+          
+          # Save summary for GitHub Actions
+          cat("::set-output name=total_files::", length(metadata_files), "\n", sep = "")
+          cat("::set-output name=total_errors::", total_errors, "\n", sep = "")
+          cat("::set-output name=total_warnings::", total_warnings, "\n", sep = "")
+          
+          # Fail workflow if validation failed
+          if (!all_valid) {
+            cat("\n🚨 VALIDATION FAILED!\n\n")
+            cat("Please update your metadata to match the latest schema from:\n")
+            cat("https://github.com/waldronlab/OmicsMLRepoCuration\n\n")
+            cat("Schema commit: ${{ steps.schema_info.outputs.commit_short }}\n\n")
+            stop("Metadata validation failed! See errors above.")
+          }
+          
+          cat("\n✅ All metadata files are valid against the latest schema!\n")
+        shell: Rscript {0}
+        continue-on-error: false
+      
+      - name: Generate validation badge
+        if: always()
+        run: |
+          if [ "${{ steps.validate.outcome }}" == "success" ]; then
+            echo "![Validation Status](https://img.shields.io/badge/validation-passing-brightgreen)" > validation_badge.md
+          else
+            echo "![Validation Status](https://img.shields.io/badge/validation-failing-red)" > validation_badge.md
+          fi
+      
+      - name: Create validation report
+        if: always()
+        run: |
+          cat << EOF > validation_report.md
+          # Metadata Validation Report
+          
+          **Date:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          **Trigger:** ${{ github.event_name }}
+          **Branch:** ${{ github.ref_name }}
+          
+          ## Schema Information
+          - **Repository:** waldronlab/OmicsMLRepoCuration
+          - **Commit:** ${{ steps.schema_info.outputs.commit_short }}
+          
+          ## Results
+          - **Total Files:** ${{ steps.find_files.outputs.count }}
+          - **Status:** ${{ steps.validate.outcome == 'success' && '✅ PASS' || '❌ FAIL' }}
+          
+          EOF
+          
+          if [ "${{ github.event_name }}" == "repository_dispatch" ]; then
+            cat << EOF >> validation_report.md
+          ## Schema Update Details
+          - **Triggered by:** Schema update in OmicsMLRepoCuration
+          - **Schema Commit:** ${{ github.event.client_payload.schema_commit_short }}
+          - **Changed Files:** ${{ github.event.client_payload.changed_files }}
+          
+          EOF
+          fi
+          
+          cat validation_report.md
+      
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: validation-report
+          path: validation_report.md
+      
+      - name: Comment on PR (if applicable)
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('validation_report.md', 'utf8');
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });
+      
+      - name: Notification on failure
+        if: failure() && github.event_name == 'repository_dispatch'
+        run: |
+          echo "🚨 Validation failed after schema update!"
+          echo "Schema was updated in OmicsMLRepoCuration commit ${{ github.event.client_payload.schema_commit_short }}"
+          echo "Action required: Update metadata files to match new schema"
