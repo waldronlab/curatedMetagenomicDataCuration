@@ -74,13 +74,13 @@ jobs:
       - name: Install OmicsMLRepoCuration (latest from GitHub)
         run: |
           install.packages("remotes")
-          remotes::install_github("waldronlab/OmicsMLRepoCuration", upgrade = "always")
+          remotes::install_github("shbrief/OmicsMLRepoCuration", upgrade = "always")
         shell: Rscript {0}
       
       - name: Get schema version info
         id: schema_info
         run: |
-          SCHEMA_COMMIT=$(Rscript -e "cat(system('git ls-remote https://github.com/waldronlab/OmicsMLRepoCuration HEAD | cut -f1', intern = TRUE))")
+          SCHEMA_COMMIT=$(Rscript -e "cat(system('git ls-remote https://github.com/shbrief/OmicsMLRepoCuration HEAD | cut -f1', intern = TRUE))")
           SCHEMA_COMMIT_SHORT="${SCHEMA_COMMIT:0:7}"
           echo "commit=$SCHEMA_COMMIT" >> $GITHUB_OUTPUT
           echo "commit_short=$SCHEMA_COMMIT_SHORT" >> $GITHUB_OUTPUT
@@ -101,7 +101,8 @@ jobs:
           
           # Load latest schema
           cat("Loading schema from OmicsMLRepoCuration...\n")
-          schema <- load_metadata_schema()
+          schema_file <- system.file("schema", "cmd_data_dictionary.yaml", package = "OmicsMLRepoCuration")
+          schema <- load_metadata_schema(schema_file)
           cat("✓ Schema loaded successfully\n\n")
           
           # Find all *_sample.tsv files
@@ -187,7 +188,7 @@ jobs:
           if (!all_valid) {
             cat("\n🚨 VALIDATION FAILED!\n\n")
             cat("Please update your metadata to match the latest schema from:\n")
-            cat("https://github.com/waldronlab/OmicsMLRepoCuration\n\n")
+            cat("https://github.com/shbrief/OmicsMLRepoCuration\n\n")
             cat("Schema commit: ${{ steps.schema_info.outputs.commit_short }}\n\n")
             stop("Metadata validation failed! See errors above.")
           }
@@ -216,7 +217,7 @@ jobs:
           **Branch:** ${{ github.ref_name }}
           
           ## Schema Information
-          - **Repository:** waldronlab/OmicsMLRepoCuration
+          - **Repository:** shbrief/OmicsMLRepoCuration
           - **Commit:** ${{ steps.schema_info.outputs.commit_short }}
           
           ## Results
