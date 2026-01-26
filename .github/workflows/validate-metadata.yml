@@ -79,7 +79,6 @@ jobs:
           Sys.setenv(GITHUB_PAT = Sys.getenv("GITHUB_PAT"))
           
           # Install dependencies first
-          remotes::install_github("shbrief/OmicsMLRepoData", upgrade = "always", auth_token = Sys.getenv("GITHUB_PAT"))
           remotes::install_github("shbrief/OmicsMLRepoR", upgrade = "always", auth_token = Sys.getenv("GITHUB_PAT"))
     
           # Install rols from Bioconductor if needed
