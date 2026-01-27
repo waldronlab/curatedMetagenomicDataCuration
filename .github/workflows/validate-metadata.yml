@@ -84,7 +84,10 @@ jobs:
           BiocManager::install("rols", update = FALSE, ask = FALSE)
     
           # Now install OmicsMLRepoCuration
-          remotes::install_github("shbrief/OmicsMLRepoCuration", upgrade = "always", auth_token = Sys.getenv("GITHUB_PAT"))
+          remotes::install_github("shbrief/OmicsMLRepoCuration", 
+                                   dependencies = TRUE,
+                                   upgrade = "always", 
+                                   auth_token = Sys.getenv("GITHUB_PAT"))
         shell: Rscript {0}     
         
       - name: Get schema version info
