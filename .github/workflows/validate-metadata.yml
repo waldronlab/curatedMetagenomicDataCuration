@@ -151,19 +151,15 @@ jobs:
           total_errors <- 0
           total_warnings <- 0
           
+          studies_with_issues <- list()
+          
           # Validate each file
           for (file in metadata_files) {
             study_name <- basename(dirname(file))
-            cat("\n", rep("=", 70), "\n", sep = "")
-            cat("Validating:", study_name, "\n")
-            cat("File:", file, "\n")
-            cat(rep("=", 70), "\n\n", sep = "")
             
             tryCatch({
               # Read TSV file
               data <- read.delim(file, stringsAsFactors = FALSE, check.names = FALSE)
-              cat("  Rows:", nrow(data), "\n")
-              cat("  Columns:", ncol(data), "\n\n")
               
               # Validate against schema
               result <- validate_data_against_schema(data, schema)
@@ -171,32 +167,77 @@ jobs:
               # Store results
               results[[study_name]] <- result
               
-              # Report errors
-              if (length(result$errors) > 0) {
-                cat("  ❌ ERRORS (", length(result$errors), "):\n", sep = "")
-                for (i in seq_along(result$errors)) {
-                  cat("    ", i, ". ", result$errors[i], "\n", sep = "")
-                }
-                all_valid <- FALSE
-                total_errors <- total_errors + length(result$errors)
-              } else {
-                cat("  ✅ No errors\n")
-              }
+              # Check if there are errors or warnings
+              has_errors <- length(result$errors) > 0
+              has_warnings <- length(result$warnings) > 0
               
-              # Report warnings
-              if (length(result$warnings) > 0) {
-                cat("  ⚠️  WARNINGS (", length(result$warnings), "):\n", sep = "")
-                for (i in seq_along(result$warnings)) {
-                  cat("    ", i, ". ", result$warnings[i], "\n", sep = "")
+              if (has_errors || has_warnings) {
+                # Store study with issues for reporting
+                studies_with_issues[[study_name]] <- list(
+                  file = file,
+                  rows = nrow(data),
+                  cols = ncol(data),
+                  errors = result$errors,
+                  warnings = result$warnings
+                )
+                
+                if (has_errors) {
+                  all_valid <- FALSE
+                  total_errors <- total_errors + length(result$errors)
                 }
-                total_warnings <- total_warnings + length(result$warnings)
+                
+                if (has_warnings) {
+                  total_warnings <- total_warnings + length(result$warnings)
+                }
               }
               
             }, error = function(e) {
-              cat("  ❌ VALIDATION ERROR:", conditionMessage(e), "\n")
+              studies_with_issues[[study_name]] <- list(
+                file = file,
+                rows = NA,
+                cols = NA,
+                errors = paste("VALIDATION ERROR:", conditionMessage(e)),
+                warnings = character(0)
+              )
               all_valid <- FALSE
               total_errors <- total_errors + 1
             })
+          }
+          
+          # Report only studies with issues
+          if (length(studies_with_issues) > 0) {
+            cat("\n", rep("=", 70), "\n", sep = "")
+            cat("STUDIES WITH ERRORS/WARNINGS (", length(studies_with_issues), " of ", length(metadata_files), ")\n", sep = "")
+            cat(rep("=", 70), "\n", sep = "")
+            
+            for (study_name in names(studies_with_issues)) {
+              study <- studies_with_issues[[study_name]]
+              cat("\n", rep("-", 70), "\n", sep = "")
+              cat("Study:", study_name, "\n")
+              cat("File:", study$file, "\n")
+              if (!is.na(study$rows)) {
+                cat("Rows:", study$rows, " | Columns:", study$cols, "\n")
+              }
+              cat(rep("-", 70), "\n", sep = "")
+              
+              # Report errors
+              if (length(study$errors) > 0) {
+                cat("❌ ERRORS (", length(study$errors), "):\n", sep = "")
+                for (i in seq_along(study$errors)) {
+                  cat("  ", i, ". ", study$errors[i], "\n", sep = "")
+                }
+              }
+              
+              # Report warnings
+              if (length(study$warnings) > 0) {
+                cat("⚠️  WARNINGS (", length(study$warnings), "):\n", sep = "")
+                for (i in seq_along(study$warnings)) {
+                  cat("  ", i, ". ", study$warnings[i], "\n", sep = "")
+                }
+              }
+            }
+          } else {
+            cat("\n✅ All studies passed validation without errors or warnings!\n")
           }
           
           # Summary
