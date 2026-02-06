@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata Validation Dashboard - curatedMetagenomicDataCuration</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔬 Metadata Validation Dashboard</h1>
+            <p class="subtitle">curatedMetagenomicDataCuration</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Loading State -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading validation results...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="error-message" style="display: none;">
+            <h2>⚠️ Unable to Load Validation Results</h2>
+            <p id="error-text"></p>
+            <p>Please ensure the GitHub Actions workflow has run at least once.</p>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content" style="display: none;">
+            <!-- Summary Cards -->
+            <section class="summary-section">
+                <div class="summary-cards">
+                    <div class="card status-card" id="status-card">
+                        <div class="card-icon">📊</div>
+                        <div class="card-content">
+                            <h3>Overall Status</h3>
+                            <div class="status-badge" id="overall-status">Loading...</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">📁</div>
+                        <div class="card-content">
+                            <h3>Files Validated</h3>
+                            <div class="card-value" id="total-files">-</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">❌</div>
+                        <div class="card-content">
+                            <h3>Total Errors</h3>
+                            <div class="card-value error-count" id="total-errors">-</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">⚠️</div>
+                        <div class="card-content">
+                            <h3>Total Warnings</h3>
+                            <div class="card-value warning-count" id="total-warnings">-</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Metadata Section -->
+            <section class="metadata-section">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Last Updated:</span>
+                        <span id="last-updated">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Trigger:</span>
+                        <span id="trigger">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Branch:</span>
+                        <span id="branch">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Schema Commit:</span>
+                        <span id="schema-commit">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Workflow Run:</span>
+                        <a id="workflow-link" href="#" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Studies with Issues -->
+            <section id="issues-section" style="display: none;">
+                <h2>Studies with Issues</h2>
+                <div id="studies-list"></div>
+            </section>
+
+            <!-- Success Message -->
+            <section id="success-section" style="display: none;">
+                <div class="success-message">
+                    <div class="success-icon">✅</div>
+                    <h2>All Studies Passed Validation!</h2>
+                    <p>No errors or warnings found in any metadata files.</p>
+                </div>
+            </section>
+
+            <!-- Recent History -->
+            <section class="history-section">
+                <h2>Recent Validation History</h2>
+                <div id="history-list" class="history-container">
+                    <p class="info-text">History tracking coming soon...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                <a href="https://github.com/waldronlab/curatedMetagenomicDataCuration" target="_blank">View Repository</a> |
+                <a href="https://github.com/shbrief/OmicsMLRepoCuration" target="_blank">Schema Repository</a> |
+                Generated by GitHub Actions
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/validation.js"></script>
+</body>
+</html>
