@@ -128,6 +128,7 @@ jobs:
         id: validate
         run: |
           library(OmicsMLRepoCuration)
+          library(jsonlite)
           
           # Load latest schema
           cat("Loading schema from OmicsMLRepoCuration...\n")
@@ -152,6 +153,7 @@ jobs:
           total_warnings <- 0
           
           studies_with_issues <- list()
+          studies_with_issues_json <- list()
           
           # Validate each file
           for (file in metadata_files) {
@@ -181,6 +183,16 @@ jobs:
                   warnings = result$warnings
                 )
                 
+                # Store for JSON output
+                studies_with_issues_json[[length(studies_with_issues_json) + 1]] <- list(
+                  name = study_name,
+                  file = file,
+                  rows = nrow(data),
+                  cols = ncol(data),
+                  errors = as.list(result$errors),
+                  warnings = as.list(result$warnings)
+                )
+                
                 if (has_errors) {
                   all_valid <- FALSE
                   total_errors <- total_errors + length(result$errors)
@@ -199,6 +211,16 @@ jobs:
                 errors = paste("VALIDATION ERROR:", conditionMessage(e)),
                 warnings = character(0)
               )
+              
+              studies_with_issues_json[[length(studies_with_issues_json) + 1]] <- list(
+                name = study_name,
+                file = file,
+                rows = NA,
+                cols = NA,
+                errors = list(paste("VALIDATION ERROR:", conditionMessage(e))),
+                warnings = list()
+              )
+              
               all_valid <- FALSE
               total_errors <- total_errors + 1
             })
@@ -254,6 +276,30 @@ jobs:
           cat("::set-output name=total_files::", length(metadata_files), "\n", sep = "")
           cat("::set-output name=total_errors::", total_errors, "\n", sep = "")
           cat("::set-output name=total_warnings::", total_warnings, "\n", sep = "")
+          
+          # Generate JSON report for GitHub Pages
+          json_report <- list(
+            status = if(all_valid) "PASS" else "FAIL",
+            summary = list(
+              total_files = length(metadata_files),
+              total_errors = total_errors,
+              total_warnings = total_warnings,
+              files_with_issues = length(studies_with_issues)
+            ),
+            metadata = list(
+              timestamp = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"),
+              trigger = "${{ github.event_name }}",
+              branch = "${{ github.ref_name }}",
+              schema_commit = "${{ steps.schema_info.outputs.commit }}",
+              schema_commit_short = "${{ steps.schema_info.outputs.commit_short }}",
+              run_id = "${{ github.run_id }}"
+            ),
+            studies_with_issues = studies_with_issues_json
+          )
+          
+          # Write JSON to file
+          writeLines(toJSON(json_report, auto_unbox = TRUE, pretty = TRUE), "docs/validation_results.json")
+          cat("\n✅ JSON report generated: docs/validation_results.json\n")
           
           # Fail workflow if validation failed
           if (!all_valid) {
@@ -315,6 +361,15 @@ jobs:
         with:
           name: validation-report
           path: validation_report.md
+      
+      - name: Deploy to GitHub Pages
+        if: always() && github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          commit_message: 'Update validation results'
       
       - name: Comment on PR (if applicable)
         if: github.event_name == 'pull_request'

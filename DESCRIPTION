@@ -1,12 +1,13 @@
 Package: curatedMetagenomicDataCuration
 Type: Package
 Title: Curated Metagenomic Data of the Human Microbiome
-Version: 0.99.8
+Version: 0.99.10
 Author:
     Paolo Manghi <paolomanghi1974@gmail.com>,
     Lucas Schiffer <schiffer.lucas@gmail.com>,
     Nicola Segata <nicola.segata@gmail.com>,
     Levi Waldron <lwaldron.research@gmail.com>,
+    Sehyun Oh <shbrief@gmail.com>
 Maintainer: Levi Waldron <lwaldron.research@gmail.com>
 Description:
     Syntax checking for curatedMetagenomicData.
@@ -36,4 +37,4 @@ Suggests:
 Remotes:
     waldronlab/omicidxClientR
 VignetteBuilder: knitr
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
