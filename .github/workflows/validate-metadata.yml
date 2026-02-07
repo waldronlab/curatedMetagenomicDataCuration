@@ -374,10 +374,100 @@ jobs:
           cat("Status:", if(all_valid) "✅ PASS" else "❌ FAIL", "\n")
           cat(rep("=", 70), "\n\n", sep = "")
           
-          # Save summary for GitHub Actions
-          cat("::set-output name=total_files::", length(metadata_files), "\n", sep = "")
-          cat("::set-output name=total_errors::", total_errors, "\n", sep = "")
-          cat("::set-output name=total_warnings::", total_warnings, "\n", sep = "")
+          # Save summary for GitHub Actions (via environment file)
+          gh_output <- Sys.getenv("GITHUB_OUTPUT")
+          if (nzchar(gh_output)) {
+            cat("total_files=", length(metadata_files), "\n", sep = "", file = gh_output, append = TRUE)
+            cat("total_errors=", total_errors, "\n", sep = "", file = gh_output, append = TRUE)
+            cat("total_warnings=", total_warnings, "\n", sep = "", file = gh_output, append = TRUE)
+            cat("files_with_issues=", length(studies_with_issues), "\n", sep = "", file = gh_output, append = TRUE)
+          }
+
+          # Generate Markdown summary for GITHUB_STEP_SUMMARY
+          summary_lines <- c(
+            "# \U0001F52C Metadata Validation Summary",
+            "",
+            paste0("**Status:** ", if(all_valid) "\u2705 PASS" else "\u274C FAIL"),
+            paste0("**Date:** ", format(Sys.time(), "%Y-%m-%d %H:%M:%S UTC", tz = "UTC")),
+            "",
+            "## Validation Results",
+            "",
+            "| Metric | Value |",
+            "|--------|------:|",
+            paste0("| Files validated | ", length(metadata_files), " |"),
+            paste0("| Files with issues | ", length(studies_with_issues), " |"),
+            paste0("| Total errors | ", total_errors, " |"),
+            paste0("| Total warnings | ", total_warnings, " |"),
+            "",
+            "## Harmonized Metadata Statistics",
+            "",
+            "| Metric | Value |",
+            "|--------|------:|",
+            paste0("| Total studies | ", length(metadata_files), " |"),
+            paste0("| Total samples | ", total_samples, " |"),
+            paste0("| Distinct species | ", length(species_counts), " |"),
+            paste0("| Distinct countries | ", length(country_counts), " |"),
+            paste0("| Distinct diseases | ", length(disease_counts), " |"),
+            paste0("| Distinct body sites | ", length(body_site_counts), " |"),
+            ""
+          )
+
+          # Top distributions helper
+          format_top <- function(counts, title, n = 5) {
+            if (length(counts) == 0) return(character(0))
+            counts <- sort(counts, decreasing = TRUE)
+            top <- head(counts, n)
+            c(
+              paste0("### ", title, " (top ", min(n, length(top)), ")"),
+              "",
+              "| Name | Count |",
+              "|------|------:|",
+              vapply(names(top), function(nm) {
+                paste0("| ", nm, " | ", top[[nm]], " |")
+              }, character(1)),
+              ""
+            )
+          }
+
+          summary_lines <- c(summary_lines,
+            format_top(body_site_counts, "\U0001F9EC Body Site"),
+            format_top(disease_counts, "\U0001F3E5 Disease"),
+            format_top(country_counts, "\U0001F30D Country"),
+            format_top(sex_counts, "\U0001F464 Sex"),
+            format_top(age_group_counts, "\U0001F4C5 Age Group"),
+            format_top(species_counts, "\U0001F9AB Species")
+          )
+
+          # Studies with issues details (collapsible)
+          if (length(studies_with_issues) > 0) {
+            summary_lines <- c(summary_lines,
+              "## Studies with Issues",
+              "",
+              "<details>",
+              paste0("<summary>\u26A0\uFE0F ", length(studies_with_issues), " studies have errors or warnings (click to expand)</summary>"),
+              ""
+            )
+            for (study_name in names(studies_with_issues)) {
+              study <- studies_with_issues[[study_name]]
+              summary_lines <- c(summary_lines,
+                paste0("#### ", study_name)
+              )
+              if (length(study$errors) > 0) {
+                for (err in study$errors) {
+                  summary_lines <- c(summary_lines, paste0("- \u274C ", err))
+                }
+              }
+              if (length(study$warnings) > 0) {
+                for (wrn in study$warnings) {
+                  summary_lines <- c(summary_lines, paste0("- \u26A0\uFE0F ", wrn))
+                }
+              }
+              summary_lines <- c(summary_lines, "")
+            }
+            summary_lines <- c(summary_lines, "</details>", "")
+          }
+
+          writeLines(summary_lines, "validation_summary.md")
           
           # Generate JSON report for GitHub Pages
           json_report <- list(
@@ -439,10 +529,10 @@ jobs:
             echo "![Validation Status](https://img.shields.io/badge/validation-failing-red)" > validation_badge.md
           fi
       
-      - name: Create validation report
+      - name: Create validation report and job summary
         if: always()
         run: |
-          cat << EOF > validation_report.md
+          cat << 'REPORT' > validation_report.md
           # Metadata Validation Report
           
           **Date:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")
@@ -457,19 +547,36 @@ jobs:
           - **Total Files:** ${{ steps.find_files.outputs.count }}
           - **Status:** ${{ steps.validate.outcome == 'success' && '✅ PASS' || '❌ FAIL' }}
           
-          EOF
+          REPORT
           
           if [ "${{ github.event_name }}" == "repository_dispatch" ]; then
-            cat << EOF >> validation_report.md
+            cat << 'REPORT' >> validation_report.md
           ## Schema Update Details
           - **Triggered by:** Schema update in OmicsMLRepoCuration
           - **Schema Commit:** ${{ github.event.client_payload.schema_commit_short }}
           - **Changed Files:** ${{ github.event.client_payload.changed_files }}
           
-          EOF
+          REPORT
           fi
           
           cat validation_report.md
+          
+          # Write the rich summary to the GitHub Actions Summary tab
+          if [ -f validation_summary.md ]; then
+            cat validation_summary.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "## ⚠️ Validation summary was not generated" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "The R validation step may have failed before producing a summary." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          
+          # Append schema & trigger metadata to the summary tab
+          {
+            echo ""
+            echo "---"
+            echo "**Schema:** [OmicsMLRepoCuration @ ${{ steps.schema_info.outputs.commit_short }}](https://github.com/shbrief/OmicsMLRepoCuration/commit/${{ steps.schema_info.outputs.commit }})"
+            echo "**Trigger:** \`${{ github.event_name }}\` on branch \`${{ github.ref_name }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
       
       - name: Upload validation report
         if: always()
