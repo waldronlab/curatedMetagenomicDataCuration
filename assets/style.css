@@ -364,6 +364,77 @@ section h2 {
 }
 
 /* Studies with Issues */
+#issues-summary-section {
+    margin-bottom: 2rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.issues-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.issues-table thead {
+    background: var(--color-bg);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.issues-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.issues-table td {
+    padding: 0.65rem 1rem;
+    border-top: 1px solid var(--color-border);
+    vertical-align: middle;
+}
+
+.issues-table tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.issues-table .study-name-cell {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.issues-table .num-cell {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.col-tag {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4338ca;
+    border: 1px solid #c7d2fe;
+    border-radius: 4px;
+    padding: 0.1rem 0.45rem;
+    font-size: 0.8rem;
+    margin: 0.1rem;
+    white-space: nowrap;
+}
+
+.col-tags-cell {
+    max-width: 300px;
+    line-height: 1.8;
+}
+
 #issues-section {
     margin-bottom: 2rem;
 }

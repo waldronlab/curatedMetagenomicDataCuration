@@ -56,10 +56,13 @@ function displayResults(data) {
     
     // Display studies with issues
     if (data.studies_with_issues && data.studies_with_issues.length > 0) {
+        displayIssuesSummaryTable(data.studies_with_issues);
         displayStudiesWithIssues(data.studies_with_issues);
+        document.getElementById('issues-summary-section').style.display = 'block';
         document.getElementById('issues-section').style.display = 'block';
         document.getElementById('success-section').style.display = 'none';
     } else {
+        document.getElementById('issues-summary-section').style.display = 'none';
         document.getElementById('issues-section').style.display = 'none';
         document.getElementById('success-section').style.display = 'block';
     }
@@ -112,6 +115,139 @@ function renderDistribution(prefix, distribution) {
             <span class="stat-count">${item.count}</span>
         `;
         listEl.appendChild(li);
+    });
+}
+
+function parseIssueMessages(messages) {
+    const types = new Set();
+    const columns = new Set();
+
+    (messages || []).forEach(msg => {
+        // "Missing required fields: col1, col2, col3"
+        const missingMatch = msg.match(/^Missing required fields:\s*(.+)$/);
+        if (missingMatch) {
+            types.add('Missing required');
+            missingMatch[1].split(/,\s*/).forEach(c => columns.add(c.trim()));
+            return;
+        }
+
+        // "VALIDATION ERROR: ..."
+        if (/^VALIDATION ERROR:/.test(msg)) {
+            types.add('Validation error');
+            return;
+        }
+
+        // "Field '<col>' expected type '<expected>' but found '<actual>'"
+        const typeMatch = msg.match(/^Field '([^']+)'.*expected type/);
+        if (typeMatch) {
+            types.add('Type mismatch');
+            columns.add(typeMatch[1]);
+            return;
+        }
+
+        // "Field '<col>' ... invalid values:"
+        const enumMatch = msg.match(/^Field '([^']+)'.*invalid values?:/);
+        if (enumMatch) {
+            types.add('Invalid values');
+            columns.add(enumMatch[1]);
+            return;
+        }
+
+        // "Field '<col>' ... not matching pattern:"
+        const patternMatch = msg.match(/^Field '([^']+)'.*not matching pattern/);
+        if (patternMatch) {
+            types.add('Pattern violation');
+            columns.add(patternMatch[1]);
+            return;
+        }
+
+        // "Row N: '<col>' has a value but '<col2>' is missing"
+        const combinedMissing = msg.match(/^Row \d+: '([^']+)' has a value but '([^']+)' is missing/);
+        if (combinedMissing) {
+            types.add('Missing paired field');
+            columns.add(combinedMissing[1]);
+            columns.add(combinedMissing[2]);
+            return;
+        }
+
+        // "Row N: '<col>' has N value(s) but '<col2>' has N value(s)"
+        const combinedCount = msg.match(/^Row \d+: '([^']+)' has \d+ value\(s\) but '([^']+)'/);
+        if (combinedCount) {
+            types.add('Count mismatch');
+            columns.add(combinedCount[1]);
+            columns.add(combinedCount[2]);
+            return;
+        }
+
+        // "Row N: '<col>' has invalid values:"
+        const rowEnum = msg.match(/^Row \d+: '([^']+)' has invalid values?:/);
+        if (rowEnum) {
+            types.add('Invalid values');
+            columns.add(rowEnum[1]);
+            return;
+        }
+
+        // "Row N: '<col>' value ... does not match pattern"
+        const rowPattern = msg.match(/^Row \d+: '([^']+)' value .* does not match pattern/);
+        if (rowPattern) {
+            types.add('Pattern violation');
+            columns.add(rowPattern[1]);
+            return;
+        }
+
+        // Fallback — try to grab Field '<col>'
+        const fallback = msg.match(/Field '([^']+)'/);
+        if (fallback) {
+            types.add('Other');
+            columns.add(fallback[1]);
+        } else {
+            types.add('Other');
+        }
+    });
+
+    return { types, columns };
+}
+
+function displayIssuesSummaryTable(studies) {
+    const tbody = document.getElementById('issues-summary-body');
+    tbody.innerHTML = '';
+
+    const sorted = [...studies].sort((a, b) => {
+        const aE = a.errors ? a.errors.length : 0;
+        const bE = b.errors ? b.errors.length : 0;
+        return bE - aE;
+    });
+
+    sorted.forEach(study => {
+        const allMessages = [
+            ...(study.errors || []),
+            ...(study.warnings || [])
+        ];
+        const { types, columns } = parseIssueMessages(allMessages);
+
+        const errorCount = study.errors ? study.errors.length : 0;
+        const warningCount = study.warnings ? study.warnings.length : 0;
+        const samples = (study.rows !== null && study.rows !== undefined) ? study.rows : '—';
+
+        const typeBadges = [...types].map(t => {
+            const cls = errorCount > 0 ? 'badge-error' : 'badge-warning';
+            return `<span class="badge ${cls}">${escapeHtml(t)}</span>`;
+        }).join(' ');
+
+        const colTags = [...columns].sort().map(c =>
+            `<code class="col-tag">${escapeHtml(c)}</code>`
+        ).join(' ');
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="study-name-cell">${escapeHtml(study.name)}</td>
+            <td class="num-cell">${samples}</td>
+            <td class="num-cell">${errorCount > 0 ? `<span class="error-count">${errorCount}</span>` : '0'}</td>
+            <td class="num-cell">${warningCount > 0 ? `<span class="warning-count">${warningCount}</span>` : '0'}</td>
+            <td>${typeBadges}</td>
+            <td class="col-tags-cell">${colTags || '—'}</td>
+        `;
+        tbody.appendChild(tr);
     });
 }
 
