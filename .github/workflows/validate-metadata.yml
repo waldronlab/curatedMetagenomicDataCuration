@@ -157,7 +157,6 @@ jobs:
 
           # Track harmonized metadata stats
           total_samples <- 0
-          species_counts <- integer(0)
           age_group_counts <- integer(0)
           body_site_counts <- integer(0)
           published_year_counts <- integer(0)
@@ -225,11 +224,6 @@ jobs:
               total_samples <- total_samples + nrow(data)
               cols <- colnames(data)
 
-              species_col <- find_col(cols, c("species", "host_species"))
-              if (!is.na(species_col)) {
-                species_counts <- update_counts(species_counts, data[[species_col]])
-              }
-
               age_group_col <- find_col(cols, c("age_group", "agegroup"))
               if (!is.na(age_group_col)) {
                 age_group_counts <- update_counts(age_group_counts, data[[age_group_col]])
@@ -240,9 +234,11 @@ jobs:
                 body_site_counts <- update_counts(body_site_counts, data[[body_site_col]])
               }
 
-              published_year_col <- find_col(cols, c("published_year", "publication_year", "pub_year", "year"))
-              if (!is.na(published_year_col)) {
-                published_year_counts <- update_counts(published_year_counts, data[[published_year_col]])
+              # Extract published year from study directory name (Author_Year pattern)
+              year_match <- regmatches(study_name, regexpr("\\d{4}$", study_name))
+              if (length(year_match) == 1 && nzchar(year_match)) {
+                yr <- year_match
+                published_year_counts[yr] <- if (!is.na(published_year_counts[yr])) published_year_counts[yr] + as.integer(nrow(data)) else as.integer(nrow(data))
               }
 
               country_col <- find_col(cols, c("country", "host_country", "location", "geo_loc_name"))
@@ -405,7 +401,6 @@ jobs:
             "|--------|------:|",
             paste0("| Total studies | ", length(metadata_files), " |"),
             paste0("| Total samples | ", total_samples, " |"),
-            paste0("| Distinct species | ", length(species_counts), " |"),
             paste0("| Distinct countries | ", length(country_counts), " |"),
             paste0("| Distinct diseases | ", length(disease_counts), " |"),
             paste0("| Distinct body sites | ", length(body_site_counts), " |"),
@@ -434,8 +429,7 @@ jobs:
             format_top(disease_counts, "\U0001F3E5 Disease"),
             format_top(country_counts, "\U0001F30D Country"),
             format_top(sex_counts, "\U0001F464 Sex"),
-            format_top(age_group_counts, "\U0001F4C5 Age Group"),
-            format_top(species_counts, "\U0001F9AB Species")
+            format_top(age_group_counts, "\U0001F4C5 Age Group")
           )
 
           # Studies with issues details (collapsible)
@@ -482,7 +476,6 @@ jobs:
               total_studies = length(metadata_files),
               total_samples = as.integer(total_samples),
               distributions = list(
-                species = build_distribution(species_counts),
                 age_group = build_distribution(age_group_counts),
                 body_site = build_distribution(body_site_counts),
                 published_year = build_distribution(published_year_counts),

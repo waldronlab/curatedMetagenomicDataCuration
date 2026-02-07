@@ -69,8 +69,10 @@ function displayResults(data) {
         displayStats(data.stats);
     }
     
-    // Show content
+    // Show content and header tabs
     document.getElementById('content').style.display = 'block';
+    const headerTabs = document.getElementById('header-tabs');
+    if (headerTabs) headerTabs.style.display = '';
 }
 
 function displayStats(stats) {
@@ -78,7 +80,6 @@ function displayStats(stats) {
     document.getElementById('total-samples').textContent = stats.total_samples ?? 0;
 
     const distributions = stats.distributions || {};
-    renderDistribution('species', distributions.species);
     renderDistribution('age-group', distributions.age_group);
     renderDistribution('body-site', distributions.body_site);
     renderDistribution('published-year', distributions.published_year);
