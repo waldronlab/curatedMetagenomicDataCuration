@@ -9,8 +9,16 @@
 <body>
     <header>
         <div class="container">
-            <h1>🔬 Metadata Validation Dashboard</h1>
-            <p class="subtitle">curatedMetagenomicDataCuration</p>
+            <div class="header-row">
+                <div>
+                    <h1>🔬 Metadata Validation Dashboard</h1>
+                    <p class="subtitle">curatedMetagenomicDataCuration</p>
+                </div>
+                <div class="tabs" id="header-tabs" style="display: none;">
+                    <button class="tab-button active" data-tab="validation">Validation</button>
+                    <button class="tab-button" data-tab="harmonized">Summary</button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -30,11 +38,6 @@
 
         <!-- Main Content -->
         <div id="content" style="display: none;">
-            <!-- Tabs -->
-            <div class="tabs">
-                <button class="tab-button active" data-tab="validation">Validation</button>
-                <button class="tab-button" data-tab="harmonized">Harmonized Stats</button>
-            </div>
 
             <div class="tab-panel active" id="tab-validation">
             <!-- Summary Cards -->
@@ -147,12 +150,6 @@
                 </div>
 
                 <div class="stat-grid">
-                    <div class="stat-panel">
-                        <h3>Species</h3>
-                        <div class="stat-meta" id="species-meta">-</div>
-                        <ul class="stat-list" id="species-list"></ul>
-                    </div>
-
                     <div class="stat-panel">
                         <h3>Age Group</h3>
                         <div class="stat-meta" id="age-group-meta">-</div>

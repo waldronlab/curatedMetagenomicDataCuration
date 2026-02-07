@@ -10,11 +10,6 @@
     "total_studies": 93,
     "total_samples": 22588,
     "distributions": {
-      "species": {
-        "top": [],
-        "total_distinct": 0,
-        "total_count": 0
-      },
       "age_group": {
         "top": [
           {
@@ -84,9 +79,50 @@
         "total_count": 20041
       },
       "published_year": {
-        "top": [],
-        "total_distinct": 0,
-        "total_count": 0
+        "top": [
+          {
+            "name": "2016",
+            "count": 4068
+          },
+          {
+            "name": "2019",
+            "count": 2836
+          },
+          {
+            "name": "2018",
+            "count": 2343
+          },
+          {
+            "name": "2017",
+            "count": 2301
+          },
+          {
+            "name": "2015",
+            "count": 2032
+          },
+          {
+            "name": "2014",
+            "count": 1340
+          },
+          {
+            "name": "2012",
+            "count": 1111
+          },
+          {
+            "name": "2021",
+            "count": 1098
+          },
+          {
+            "name": "2020",
+            "count": 514
+          },
+          {
+            "name": "2013",
+            "count": 479
+          }
+        ],
+        "total_distinct": 11,
+        "total_count": 18452
       },
       "country": {
         "top": [
@@ -235,12 +271,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-02-07T03:03:42Z",
-    "trigger": "schedule",
+    "timestamp": "2026-02-07T03:20:34Z",
+    "trigger": "workflow_dispatch",
     "branch": "master",
     "schema_commit": "49d5dd8dd94fb957757d53327384564735ec4170",
     "schema_commit_short": "49d5dd8",
-    "run_id": "21773071527"
+    "run_id": "21773297889"
   },
   "studies_with_issues": [
     {
