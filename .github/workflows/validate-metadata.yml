@@ -154,6 +154,64 @@ jobs:
           
           studies_with_issues <- list()
           studies_with_issues_json <- list()
+
+          # Track harmonized metadata stats
+          total_samples <- 0
+          species_counts <- integer(0)
+          age_group_counts <- integer(0)
+          body_site_counts <- integer(0)
+          published_year_counts <- integer(0)
+          country_counts <- integer(0)
+          ancestry_counts <- integer(0)
+          disease_counts <- integer(0)
+          sex_counts <- integer(0)
+
+          normalize_values <- function(x) {
+            x <- as.character(x)
+            x <- trimws(x)
+            x <- x[!is.na(x) & nzchar(x)]
+            x
+          }
+
+          split_values <- function(x) {
+            x <- normalize_values(x)
+            if (length(x) == 0) return(character(0))
+            x <- unlist(strsplit(x, "\\s*[;|,]\\s*"))
+            normalize_values(x)
+          }
+
+          update_counts <- function(counts, values) {
+            vals <- split_values(values)
+            if (length(vals) == 0) return(counts)
+            tbl <- table(vals)
+            for (n in names(tbl)) {
+              counts[n] <- if (!is.na(counts[n])) counts[n] + tbl[[n]] else tbl[[n]]
+            }
+            counts
+          }
+
+          find_col <- function(cols, candidates) {
+            idx <- which(tolower(cols) %in% tolower(candidates))
+            if (length(idx) > 0) cols[idx[1]] else NA_character_
+          }
+
+          build_distribution <- function(counts, top_n = 10) {
+            if (length(counts) == 0) {
+              return(list(top = list(), total_distinct = 0, total_count = 0))
+            }
+            counts <- sort(counts, decreasing = TRUE)
+            total_count <- sum(counts)
+            total_distinct <- length(counts)
+            top <- head(counts, top_n)
+            top_list <- lapply(names(top), function(n) {
+              list(name = n, count = as.integer(top[[n]]))
+            })
+            list(
+              top = top_list,
+              total_distinct = as.integer(total_distinct),
+              total_count = as.integer(total_count)
+            )
+          }
           
           # Validate each file
           for (file in metadata_files) {
@@ -162,6 +220,50 @@ jobs:
             tryCatch({
               # Read TSV file
               data <- read.delim(file, stringsAsFactors = FALSE, check.names = FALSE)
+
+              # Update harmonized metadata stats
+              total_samples <- total_samples + nrow(data)
+              cols <- colnames(data)
+
+              species_col <- find_col(cols, c("species", "host_species"))
+              if (!is.na(species_col)) {
+                species_counts <- update_counts(species_counts, data[[species_col]])
+              }
+
+              age_group_col <- find_col(cols, c("age_group", "agegroup"))
+              if (!is.na(age_group_col)) {
+                age_group_counts <- update_counts(age_group_counts, data[[age_group_col]])
+              }
+
+              body_site_col <- find_col(cols, c("body_site", "bodysite", "body_site_ontology"))
+              if (!is.na(body_site_col)) {
+                body_site_counts <- update_counts(body_site_counts, data[[body_site_col]])
+              }
+
+              published_year_col <- find_col(cols, c("published_year", "publication_year", "pub_year", "year"))
+              if (!is.na(published_year_col)) {
+                published_year_counts <- update_counts(published_year_counts, data[[published_year_col]])
+              }
+
+              country_col <- find_col(cols, c("country", "host_country", "location", "geo_loc_name"))
+              if (!is.na(country_col)) {
+                country_counts <- update_counts(country_counts, data[[country_col]])
+              }
+
+              ancestry_col <- find_col(cols, c("ancestry", "ethnicity", "race"))
+              if (!is.na(ancestry_col)) {
+                ancestry_counts <- update_counts(ancestry_counts, data[[ancestry_col]])
+              }
+
+              disease_col <- find_col(cols, c("disease", "study_condition", "diagnosis", "disease_type"))
+              if (!is.na(disease_col)) {
+                disease_counts <- update_counts(disease_counts, data[[disease_col]])
+              }
+
+              sex_col <- find_col(cols, c("sex", "gender", "host_sex"))
+              if (!is.na(sex_col)) {
+                sex_counts <- update_counts(sex_counts, data[[sex_col]])
+              }
               
               # Validate against schema
               result <- validate_data_against_schema(data, schema)
@@ -285,6 +387,20 @@ jobs:
               total_errors = total_errors,
               total_warnings = total_warnings,
               files_with_issues = length(studies_with_issues)
+            ),
+            stats = list(
+              total_studies = length(metadata_files),
+              total_samples = as.integer(total_samples),
+              distributions = list(
+                species = build_distribution(species_counts),
+                age_group = build_distribution(age_group_counts),
+                body_site = build_distribution(body_site_counts),
+                published_year = build_distribution(published_year_counts),
+                country = build_distribution(country_counts),
+                ancestry = build_distribution(ancestry_counts),
+                disease = build_distribution(disease_counts),
+                sex = build_distribution(sex_counts)
+              )
             ),
             metadata = list(
               timestamp = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"),
