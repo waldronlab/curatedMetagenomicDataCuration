@@ -63,9 +63,55 @@ function displayResults(data) {
         document.getElementById('issues-section').style.display = 'none';
         document.getElementById('success-section').style.display = 'block';
     }
+
+    // Display harmonized metadata stats
+    if (data.stats) {
+        displayStats(data.stats);
+    }
     
     // Show content
     document.getElementById('content').style.display = 'block';
+}
+
+function displayStats(stats) {
+    document.getElementById('total-studies').textContent = stats.total_studies ?? 0;
+    document.getElementById('total-samples').textContent = stats.total_samples ?? 0;
+
+    const distributions = stats.distributions || {};
+    renderDistribution('species', distributions.species);
+    renderDistribution('age-group', distributions.age_group);
+    renderDistribution('body-site', distributions.body_site);
+    renderDistribution('published-year', distributions.published_year);
+    renderDistribution('country', distributions.country);
+    renderDistribution('ancestry', distributions.ancestry);
+    renderDistribution('disease', distributions.disease);
+    renderDistribution('sex', distributions.sex);
+}
+
+function renderDistribution(prefix, distribution) {
+    const metaEl = document.getElementById(`${prefix}-meta`);
+    const listEl = document.getElementById(`${prefix}-list`);
+
+    if (!distribution || !Array.isArray(distribution.top)) {
+        metaEl.textContent = 'No data available';
+        listEl.innerHTML = '';
+        return;
+    }
+
+    const totalDistinct = distribution.total_distinct ?? 0;
+    const totalCount = distribution.total_count ?? 0;
+    metaEl.textContent = `${totalDistinct} distinct values • ${totalCount} total`;
+
+    listEl.innerHTML = '';
+    distribution.top.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'stat-item';
+        li.innerHTML = `
+            <span class="stat-label">${escapeHtml(item.name)}</span>
+            <span class="stat-count">${item.count}</span>
+        `;
+        listEl.appendChild(li);
+    });
 }
 
 function displayStudiesWithIssues(studies) {
@@ -166,5 +212,30 @@ function showError(message) {
     document.getElementById('error-text').textContent = message;
 }
 
+function initTabs() {
+    const buttons = document.querySelectorAll('.tab-button');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    if (!buttons.length || !panels.length) return;
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tabName = button.getAttribute('data-tab');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            panels.forEach(panel => panel.classList.remove('active'));
+
+            button.classList.add('active');
+            const panel = document.getElementById(`tab-${tabName}`);
+            if (panel) {
+                panel.classList.add('active');
+            }
+        });
+    });
+}
+
 // Initialize when page loads
-document.addEventListener('DOMContentLoaded', loadValidationResults);
+document.addEventListener('DOMContentLoaded', () => {
+    initTabs();
+    loadValidationResults();
+});

@@ -6,13 +6,241 @@
     "total_warnings": 13,
     "files_with_issues": 18
   },
+  "stats": {
+    "total_studies": 93,
+    "total_samples": 22588,
+    "distributions": {
+      "species": {
+        "top": [],
+        "total_distinct": 0,
+        "total_count": 0
+      },
+      "age_group": {
+        "top": [
+          {
+            "name": "Adult",
+            "count": 13323
+          },
+          {
+            "name": "Infant",
+            "count": 3426
+          },
+          {
+            "name": "Elderly",
+            "count": 1975
+          },
+          {
+            "name": "Adolescent",
+            "count": 714
+          },
+          {
+            "name": "Children 2-11 Years Old",
+            "count": 332
+          },
+          {
+            "name": "Child",
+            "count": 212
+          },
+          {
+            "name": "Adult 18-65 Years Old",
+            "count": 58
+          },
+          {
+            "name": "Not applicable",
+            "count": 1
+          }
+        ],
+        "total_distinct": 8,
+        "total_count": 20041
+      },
+      "body_site": {
+        "top": [
+          {
+            "name": "feces",
+            "count": 18596
+          },
+          {
+            "name": "oral cavity",
+            "count": 744
+          },
+          {
+            "name": "skin epidermis",
+            "count": 504
+          },
+          {
+            "name": "vagina",
+            "count": 96
+          },
+          {
+            "name": "nasal cavity",
+            "count": 93
+          },
+          {
+            "name": "milk",
+            "count": 8
+          }
+        ],
+        "total_distinct": 6,
+        "total_count": 20041
+      },
+      "published_year": {
+        "top": [],
+        "total_distinct": 0,
+        "total_count": 0
+      },
+      "country": {
+        "top": [
+          {
+            "name": "United States",
+            "count": 5145
+          },
+          {
+            "name": "United Kingdom",
+            "count": 2743
+          },
+          {
+            "name": "Netherlands",
+            "count": 2091
+          },
+          {
+            "name": "China",
+            "count": 1673
+          },
+          {
+            "name": "Israel",
+            "count": 900
+          },
+          {
+            "name": "Denmark",
+            "count": 787
+          },
+          {
+            "name": "Italy",
+            "count": 740
+          },
+          {
+            "name": "Japan",
+            "count": 696
+          },
+          {
+            "name": "Finland",
+            "count": 652
+          },
+          {
+            "name": "Sweden",
+            "count": 600
+          }
+        ],
+        "total_distinct": 44,
+        "total_count": 20212
+      },
+      "ancestry": {
+        "top": [
+          {
+            "name": "European",
+            "count": 1691
+          },
+          {
+            "name": "African",
+            "count": 169
+          },
+          {
+            "name": "Asian",
+            "count": 106
+          },
+          {
+            "name": "Not applicable",
+            "count": 69
+          },
+          {
+            "name": "African American or Afro-Caribbean",
+            "count": 24
+          },
+          {
+            "name": "Hispanic or Latin American",
+            "count": 21
+          },
+          {
+            "name": "Latin or Admixed American",
+            "count": 15
+          }
+        ],
+        "total_distinct": 7,
+        "total_count": 2095
+      },
+      "disease": {
+        "top": [
+          {
+            "name": "Healthy",
+            "count": 13986
+          },
+          {
+            "name": "Inflammatory Bowel Disease",
+            "count": 1850
+          },
+          {
+            "name": "Crohn Disease",
+            "count": 1062
+          },
+          {
+            "name": "Ulcerative Colitis",
+            "count": 763
+          },
+          {
+            "name": "Colorectal Carcinoma",
+            "count": 701
+          },
+          {
+            "name": "Preterm Birth",
+            "count": 448
+          },
+          {
+            "name": "Type 2 Diabetes Mellitus",
+            "count": 405
+          },
+          {
+            "name": "Melanoma",
+            "count": 315
+          },
+          {
+            "name": "Glucose Intolerance",
+            "count": 288
+          },
+          {
+            "name": "Hypertension",
+            "count": 261
+          }
+        ],
+        "total_distinct": 85,
+        "total_count": 23412
+      },
+      "sex": {
+        "top": [
+          {
+            "name": "Male",
+            "count": 9289
+          },
+          {
+            "name": "Female",
+            "count": 9163
+          },
+          {
+            "name": "Not applicable",
+            "count": 459
+          }
+        ],
+        "total_distinct": 3,
+        "total_count": 18911
+      }
+    }
+  },
   "metadata": {
-    "timestamp": "2026-02-07T00:55:45Z",
+    "timestamp": "2026-02-07T02:45:22Z",
     "trigger": "workflow_dispatch",
     "branch": "master",
     "schema_commit": "49d5dd8dd94fb957757d53327384564735ec4170",
     "schema_commit_short": "49d5dd8",
-    "run_id": "21768382811"
+    "run_id": "21772824798"
   },
   "studies_with_issues": [
     {

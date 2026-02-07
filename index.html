@@ -30,6 +30,13 @@
 
         <!-- Main Content -->
         <div id="content" style="display: none;">
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="validation">Validation</button>
+                <button class="tab-button" data-tab="harmonized">Harmonized Stats</button>
+            </div>
+
+            <div class="tab-panel active" id="tab-validation">
             <!-- Summary Cards -->
             <section class="summary-section">
                 <div class="summary-cards">
@@ -115,6 +122,81 @@
                     <p class="info-text">History tracking coming soon...</p>
                 </div>
             </section>
+            </div>
+
+            <div class="tab-panel" id="tab-harmonized">
+            <!-- Harmonized Metadata Overview -->
+            <section class="overview-section">
+                <h2>Harmonized Metadata Overview</h2>
+                <div class="summary-cards">
+                    <div class="card">
+                        <div class="card-icon">🧪</div>
+                        <div class="card-content">
+                            <h3>Total Studies</h3>
+                            <div class="card-value" id="total-studies">-</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">👥</div>
+                        <div class="card-content">
+                            <h3>Total Samples</h3>
+                            <div class="card-value" id="total-samples">-</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-grid">
+                    <div class="stat-panel">
+                        <h3>Species</h3>
+                        <div class="stat-meta" id="species-meta">-</div>
+                        <ul class="stat-list" id="species-list"></ul>
+                    </div>
+
+                    <div class="stat-panel">
+                        <h3>Age Group</h3>
+                        <div class="stat-meta" id="age-group-meta">-</div>
+                        <ul class="stat-list" id="age-group-list"></ul>
+                    </div>
+
+                    <div class="stat-panel">
+                        <h3>Body Site</h3>
+                        <div class="stat-meta" id="body-site-meta">-</div>
+                        <ul class="stat-list" id="body-site-list"></ul>
+                    </div>
+
+                    <div class="stat-panel">
+                        <h3>Published Year</h3>
+                        <div class="stat-meta" id="published-year-meta">-</div>
+                        <ul class="stat-list" id="published-year-list"></ul>
+                    </div>
+
+                    <div class="stat-panel">
+                        <h3>Country</h3>
+                        <div class="stat-meta" id="country-meta">-</div>
+                        <ul class="stat-list" id="country-list"></ul>
+                    </div>
+
+                    <div class="stat-panel">
+                        <h3>Ancestry</h3>
+                        <div class="stat-meta" id="ancestry-meta">-</div>
+                        <ul class="stat-list" id="ancestry-list"></ul>
+                    </div>
+
+                    <div class="stat-panel">
+                        <h3>Disease</h3>
+                        <div class="stat-meta" id="disease-meta">-</div>
+                        <ul class="stat-list" id="disease-list"></ul>
+                    </div>
+
+                    <div class="stat-panel">
+                        <h3>Sex</h3>
+                        <div class="stat-meta" id="sex-meta">-</div>
+                        <ul class="stat-list" id="sex-list"></ul>
+                    </div>
+                </div>
+            </section>
+            </div>
         </div>
     </main>
 
