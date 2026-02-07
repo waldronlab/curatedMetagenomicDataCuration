@@ -29,6 +29,8 @@ on:
       - main
     paths:
       - 'inst/harmonized/**/*.tsv'
+      - 'docs/**'
+      - '.github/workflows/validate-metadata.yml'
   
   # Validate on pull requests
   pull_request:
