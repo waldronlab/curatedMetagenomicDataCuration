@@ -21,14 +21,20 @@ async function loadValidationResults() {
 }
 
 function displayResults(data) {
+    // Calculate validation success percentage
+    const totalFiles = data.summary.total_files || 0;
+    const filesWithIssues = data.summary.files_with_issues || 0;
+    const successfulFiles = totalFiles - filesWithIssues;
+    const successPercentage = totalFiles > 0 ? Math.round((successfulFiles / totalFiles) * 100) : 0;
+
     // Update summary cards
-    document.getElementById('overall-status').textContent = data.status;
+    document.getElementById('overall-status').textContent = `${successPercentage}% Pass`;
     document.getElementById('overall-status').className = `status-badge status-${data.status.toLowerCase()}`;
-    
-    document.getElementById('total-files').textContent = data.summary.total_files || 0;
+
+    document.getElementById('total-files').textContent = totalFiles;
     document.getElementById('total-errors').textContent = data.summary.total_errors || 0;
     document.getElementById('total-warnings').textContent = data.summary.total_warnings || 0;
-    
+
     // Update status card color
     const statusCard = document.getElementById('status-card');
     if (data.status === 'PASS') {
@@ -223,7 +229,7 @@ function displayIssuesSummaryTable(studies) {
             ...(study.errors || []),
             ...(study.warnings || [])
         ];
-        const { types, columns } = parseIssueMessages(allMessages);
+        const { types } = parseIssueMessages(allMessages);
 
         const errorCount = study.errors ? study.errors.length : 0;
         const warningCount = study.warnings ? study.warnings.length : 0;
@@ -234,10 +240,6 @@ function displayIssuesSummaryTable(studies) {
             return `<span class="badge ${cls}">${escapeHtml(t)}</span>`;
         }).join(' ');
 
-        const colTags = [...columns].sort().map(c =>
-            `<code class="col-tag">${escapeHtml(c)}</code>`
-        ).join(' ');
-
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td class="study-name-cell">${escapeHtml(study.name)}</td>
@@ -245,7 +247,6 @@ function displayIssuesSummaryTable(studies) {
             <td class="num-cell">${errorCount > 0 ? `<span class="error-count">${errorCount}</span>` : '0'}</td>
             <td class="num-cell">${warningCount > 0 ? `<span class="warning-count">${warningCount}</span>` : '0'}</td>
             <td>${typeBadges}</td>
-            <td class="col-tags-cell">${colTags || '—'}</td>
         `;
         tbody.appendChild(tr);
     });

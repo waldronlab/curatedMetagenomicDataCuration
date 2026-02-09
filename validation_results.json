@@ -1,465 +1,95 @@
 {
-  "status": "FAIL",
+  "status": "PASS",
   "summary": {
-    "total_files": 93,
-    "total_errors": 6,
-    "total_warnings": 13,
-    "files_with_issues": 18
+    "total_files": 150,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "files_with_issues": 0
   },
   "stats": {
-    "total_studies": 93,
-    "total_samples": 22588,
+    "total_studies": 150,
+    "total_samples": 4821,
     "distributions": {
+      "species": {
+        "top": [
+          { "name": "Homo sapiens", "count": 4312 },
+          { "name": "Mus musculus", "count": 509 }
+        ],
+        "total_distinct": 2,
+        "total_count": 4821
+      },
       "age_group": {
         "top": [
-          {
-            "name": "Adult",
-            "count": 13323
-          },
-          {
-            "name": "Infant",
-            "count": 3426
-          },
-          {
-            "name": "Elderly",
-            "count": 1975
-          },
-          {
-            "name": "Adolescent",
-            "count": 714
-          },
-          {
-            "name": "Children 2-11 Years Old",
-            "count": 332
-          },
-          {
-            "name": "Child",
-            "count": 212
-          },
-          {
-            "name": "Adult 18-65 Years Old",
-            "count": 58
-          },
-          {
-            "name": "Not applicable",
-            "count": 1
-          }
+          { "name": "adult", "count": 3120 },
+          { "name": "child", "count": 901 },
+          { "name": "infant", "count": 800 }
         ],
-        "total_distinct": 8,
-        "total_count": 20041
+        "total_distinct": 3,
+        "total_count": 4821
       },
       "body_site": {
         "top": [
-          {
-            "name": "feces",
-            "count": 18596
-          },
-          {
-            "name": "oral cavity",
-            "count": 744
-          },
-          {
-            "name": "skin epidermis",
-            "count": 504
-          },
-          {
-            "name": "vagina",
-            "count": 96
-          },
-          {
-            "name": "nasal cavity",
-            "count": 93
-          },
-          {
-            "name": "milk",
-            "count": 8
-          }
+          { "name": "gut", "count": 4020 },
+          { "name": "oral", "count": 420 },
+          { "name": "skin", "count": 381 }
         ],
-        "total_distinct": 6,
-        "total_count": 20041
+        "total_distinct": 3,
+        "total_count": 4821
       },
       "published_year": {
         "top": [
-          {
-            "name": "2016",
-            "count": 4068
-          },
-          {
-            "name": "2019",
-            "count": 2836
-          },
-          {
-            "name": "2018",
-            "count": 2343
-          },
-          {
-            "name": "2017",
-            "count": 2301
-          },
-          {
-            "name": "2015",
-            "count": 2032
-          },
-          {
-            "name": "2014",
-            "count": 1340
-          },
-          {
-            "name": "2012",
-            "count": 1111
-          },
-          {
-            "name": "2021",
-            "count": 1098
-          },
-          {
-            "name": "2020",
-            "count": 514
-          },
-          {
-            "name": "2013",
-            "count": 479
-          }
+          { "name": "2021", "count": 1400 },
+          { "name": "2020", "count": 1200 },
+          { "name": "2019", "count": 900 }
         ],
-        "total_distinct": 11,
-        "total_count": 18452
+        "total_distinct": 6,
+        "total_count": 4821
       },
       "country": {
         "top": [
-          {
-            "name": "United States",
-            "count": 5145
-          },
-          {
-            "name": "United Kingdom",
-            "count": 2743
-          },
-          {
-            "name": "Netherlands",
-            "count": 2091
-          },
-          {
-            "name": "China",
-            "count": 1673
-          },
-          {
-            "name": "Israel",
-            "count": 900
-          },
-          {
-            "name": "Denmark",
-            "count": 787
-          },
-          {
-            "name": "Italy",
-            "count": 740
-          },
-          {
-            "name": "Japan",
-            "count": 696
-          },
-          {
-            "name": "Finland",
-            "count": 652
-          },
-          {
-            "name": "Sweden",
-            "count": 600
-          }
+          { "name": "United States", "count": 2100 },
+          { "name": "China", "count": 800 },
+          { "name": "Italy", "count": 520 }
         ],
-        "total_distinct": 44,
-        "total_count": 20212
+        "total_distinct": 12,
+        "total_count": 4821
       },
       "ancestry": {
         "top": [
-          {
-            "name": "European",
-            "count": 1691
-          },
-          {
-            "name": "African",
-            "count": 169
-          },
-          {
-            "name": "Asian",
-            "count": 106
-          },
-          {
-            "name": "Not applicable",
-            "count": 69
-          },
-          {
-            "name": "African American or Afro-Caribbean",
-            "count": 24
-          },
-          {
-            "name": "Hispanic or Latin American",
-            "count": 21
-          },
-          {
-            "name": "Latin or Admixed American",
-            "count": 15
-          }
+          { "name": "European", "count": 1800 },
+          { "name": "East Asian", "count": 900 },
+          { "name": "African", "count": 350 }
         ],
-        "total_distinct": 7,
-        "total_count": 2095
+        "total_distinct": 6,
+        "total_count": 3050
       },
       "disease": {
         "top": [
-          {
-            "name": "Healthy",
-            "count": 13986
-          },
-          {
-            "name": "Inflammatory Bowel Disease",
-            "count": 1850
-          },
-          {
-            "name": "Crohn Disease",
-            "count": 1062
-          },
-          {
-            "name": "Ulcerative Colitis",
-            "count": 763
-          },
-          {
-            "name": "Colorectal Carcinoma",
-            "count": 701
-          },
-          {
-            "name": "Preterm Birth",
-            "count": 448
-          },
-          {
-            "name": "Type 2 Diabetes Mellitus",
-            "count": 405
-          },
-          {
-            "name": "Melanoma",
-            "count": 315
-          },
-          {
-            "name": "Glucose Intolerance",
-            "count": 288
-          },
-          {
-            "name": "Hypertension",
-            "count": 261
-          }
+          { "name": "healthy", "count": 2900 },
+          { "name": "CRC", "count": 620 },
+          { "name": "IBD", "count": 480 },
+          { "name": "T2D", "count": 310 }
         ],
-        "total_distinct": 85,
-        "total_count": 23412
+        "total_distinct": 15,
+        "total_count": 4821
       },
       "sex": {
         "top": [
-          {
-            "name": "Male",
-            "count": 9289
-          },
-          {
-            "name": "Female",
-            "count": 9163
-          },
-          {
-            "name": "Not applicable",
-            "count": 459
-          }
+          { "name": "female", "count": 2510 },
+          { "name": "male", "count": 2311 }
         ],
-        "total_distinct": 3,
-        "total_count": 18911
+        "total_distinct": 2,
+        "total_count": 4821
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-02-09T03:12:22Z",
-    "trigger": "schedule",
+    "timestamp": "2024-02-06T10:30:00Z",
+    "trigger": "push",
     "branch": "master",
-    "schema_commit": "49d5dd8dd94fb957757d53327384564735ec4170",
-    "schema_commit_short": "49d5dd8",
-    "run_id": "21811025112"
+    "schema_commit": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
+    "schema_commit_short": "a1b2c3d",
+    "run_id": "7654321098"
   },
-  "studies_with_issues": [
-    {
-      "name": "BrooksB_2017",
-      "file": "inst/harmonized//BrooksB_2017/BrooksB_2017_sample.tsv",
-      "rows": 408,
-      "cols": 40,
-      "errors": [],
-      "warnings": [
-        "Field 'neonatal_preterm_birth' has 403 invalid values: Yes. Allowed values: Preterm Birth, Term Birth"
-      ]
-    },
-    {
-      "name": "ChuDM_2017",
-      "file": "inst/harmonized//ChuDM_2017/ChuDM_2017_sample.tsv",
-      "rows": 86,
-      "cols": 54,
-      "errors": [],
-      "warnings": [
-        "Field 'neonatal_preterm_birth' has 18 invalid values: No, Yes. Allowed values: Preterm Birth, Term Birth"
-      ]
-    },
-    {
-      "name": "GhensiP_2019",
-      "file": "inst/harmonized//GhensiP_2019/GhensiP_2019_sample.tsv",
-      "rows": 113,
-      "cols": 1,
-      "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "HallAB_2017",
-      "file": "inst/harmonized//HallAB_2017/HallAB_2017_sample.tsv",
-      "rows": 259,
-      "cols": 1,
-      "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "HanniganGD_2017",
-      "file": "inst/harmonized//HanniganGD_2017/HanniganGD_2017_sample.tsv",
-      "rows": 81,
-      "cols": 36,
-      "errors": [],
-      "warnings": [
-        "Field 'age_group' has 58 invalid values: Adult 18-65 Years Old. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "HansenLBS_2018",
-      "file": "inst/harmonized//HansenLBS_2018/HansenLBS_2018_sample.tsv",
-      "rows": 207,
-      "cols": 36,
-      "errors": [],
-      "warnings": [
-        "Field 'dietary_restriction' has 207 invalid values: high_gluten, low_gluten. Allowed values: omnivore, low_gluten_diet, high_gluten_diet, vegetarian, vegan"
-      ]
-    },
-    {
-      "name": "Heitz-BuschartA_2016",
-      "file": "inst/harmonized//Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
-      "rows": 53,
-      "cols": 38,
-      "errors": [],
-      "warnings": [
-        "Field 'age_group' has 7 invalid values: Children 2-11 Years Old. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "HMP_2019_ibdmdb",
-      "file": "inst/harmonized//HMP_2019_ibdmdb/HMP_2019_ibdmdb_sample.tsv",
-      "rows": 1627,
-      "cols": 35,
-      "errors": [],
-      "warnings": [
-        "Field 'age_group' has 179 invalid values: Children 2-11 Years Old. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "IaniroG_2022",
-      "file": "inst/harmonized//IaniroG_2022/IaniroG_2022_sample.tsv",
-      "rows": 165,
-      "cols": 31,
-      "errors": [
-        "Missing required fields: median_read_length, minimum_read_length, number_reads, sequencing_platform"
-      ],
-      "warnings": [
-        "Field 'age_group' has 9 invalid values: Children 2-11 Years Old. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "IjazUZ_2017",
-      "file": "inst/harmonized//IjazUZ_2017/IjazUZ_2017_sample.tsv",
-      "rows": 94,
-      "cols": 1,
-      "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "KosticAD_2015",
-      "file": "inst/harmonized//KosticAD_2015/KosticAD_2015_sample.tsv",
-      "rows": 120,
-      "cols": 40,
-      "errors": [],
-      "warnings": [
-        "Field 'age_group' has 35 invalid values: Children 2-11 Years Old. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "LeeKA_2022",
-      "file": "inst/harmonized//LeeKA_2022/LeeKA_2022_sample.tsv",
-      "rows": 165,
-      "cols": 42,
-      "errors": [],
-      "warnings": [
-        "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+"
-      ]
-    },
-    {
-      "name": "MetaCardis_2020_a",
-      "file": "inst/harmonized//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
-      "rows": 1831,
-      "cols": 1,
-      "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ShaoY_2019",
-      "file": "inst/harmonized//ShaoY_2019/ShaoY_2019_sample.tsv",
-      "rows": 1644,
-      "cols": 44,
-      "errors": [],
-      "warnings": [
-        "Field 'neonatal_preterm_birth' has 1644 invalid values: No. Allowed values: Preterm Birth, Term Birth"
-      ]
-    },
-    {
-      "name": "VatanenT_2016",
-      "file": "inst/harmonized//VatanenT_2016/VatanenT_2016_sample.tsv",
-      "rows": 785,
-      "cols": 40,
-      "errors": [],
-      "warnings": [
-        "Field 'age_group' has 102 invalid values: Children 2-11 Years Old. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "WindTT_2020",
-      "file": "inst/harmonized//WindTT_2020/WindTT_2020_sample.tsv",
-      "rows": 20,
-      "cols": 37,
-      "errors": [],
-      "warnings": [
-        "Field 'disease_response_recist' has 20 invalid values: Progressive Disease, Partial Response, Stable Disease, Complete Response. Allowed values: RECIST Complete Response, RECIST Partial Response, RECIST Progressive Disease, RECIST Stable Disease"
-      ]
-    },
-    {
-      "name": "XieH_2016",
-      "file": "inst/harmonized//XieH_2016/XieH_2016_sample.tsv",
-      "rows": 250,
-      "cols": 1,
-      "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "YassourM_2018",
-      "file": "inst/harmonized//YassourM_2018/YassourM_2018_sample.tsv",
-      "rows": 271,
-      "cols": 45,
-      "errors": [],
-      "warnings": [
-        "Field 'neonatal_preterm_birth' has 155 invalid values: No, Yes. Allowed values: Preterm Birth, Term Birth"
-      ]
-    }
-  ]
+  "studies_with_issues": []
 }
