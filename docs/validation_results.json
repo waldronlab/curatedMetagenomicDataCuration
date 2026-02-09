@@ -1,95 +1,23 @@
 {
-  "status": "PASS",
+  "status": "PENDING",
   "summary": {
-    "total_files": 150,
+    "total_files": 0,
     "total_errors": 0,
     "total_warnings": 0,
     "files_with_issues": 0
   },
   "stats": {
-    "total_studies": 150,
-    "total_samples": 4821,
-    "distributions": {
-      "species": {
-        "top": [
-          { "name": "Homo sapiens", "count": 4312 },
-          { "name": "Mus musculus", "count": 509 }
-        ],
-        "total_distinct": 2,
-        "total_count": 4821
-      },
-      "age_group": {
-        "top": [
-          { "name": "adult", "count": 3120 },
-          { "name": "child", "count": 901 },
-          { "name": "infant", "count": 800 }
-        ],
-        "total_distinct": 3,
-        "total_count": 4821
-      },
-      "body_site": {
-        "top": [
-          { "name": "gut", "count": 4020 },
-          { "name": "oral", "count": 420 },
-          { "name": "skin", "count": 381 }
-        ],
-        "total_distinct": 3,
-        "total_count": 4821
-      },
-      "published_year": {
-        "top": [
-          { "name": "2021", "count": 1400 },
-          { "name": "2020", "count": 1200 },
-          { "name": "2019", "count": 900 }
-        ],
-        "total_distinct": 6,
-        "total_count": 4821
-      },
-      "country": {
-        "top": [
-          { "name": "United States", "count": 2100 },
-          { "name": "China", "count": 800 },
-          { "name": "Italy", "count": 520 }
-        ],
-        "total_distinct": 12,
-        "total_count": 4821
-      },
-      "ancestry": {
-        "top": [
-          { "name": "European", "count": 1800 },
-          { "name": "East Asian", "count": 900 },
-          { "name": "African", "count": 350 }
-        ],
-        "total_distinct": 6,
-        "total_count": 3050
-      },
-      "disease": {
-        "top": [
-          { "name": "healthy", "count": 2900 },
-          { "name": "CRC", "count": 620 },
-          { "name": "IBD", "count": 480 },
-          { "name": "T2D", "count": 310 }
-        ],
-        "total_distinct": 15,
-        "total_count": 4821
-      },
-      "sex": {
-        "top": [
-          { "name": "female", "count": 2510 },
-          { "name": "male", "count": 2311 }
-        ],
-        "total_distinct": 2,
-        "total_count": 4821
-      }
-    }
+    "total_studies": 0,
+    "total_samples": 0,
+    "distributions": {}
   },
   "metadata": {
-    "timestamp": "2024-02-06T10:30:00Z",
-    "trigger": "push",
-    "branch": "master",
-    "schema_commit": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
-    "schema_commit_short": "a1b2c3d",
-    "run_id": "7654321098"
+    "timestamp": null,
+    "trigger": "pending",
+    "branch": "pending",
+    "schema_commit": null,
+    "schema_commit_short": null,
+    "run_id": null
   },
   "studies_with_issues": []
 }

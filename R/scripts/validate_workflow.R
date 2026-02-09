@@ -1,9 +1,13 @@
 #!/usr/bin/env Rscript
 
 # Load required libraries
-library(curatedMetagenomicDataCuration)
 library(OmicsMLRepoCuration)
 library(jsonlite)
+
+# Source package functions (not installed in CI)
+source("R/workflow_validation_helpers.R")
+source("R/workflow_statistics_collectors.R")
+source("R/workflow_report_generators.R")
 
 main <- function() {
   cat("🔬 Starting metadata validation workflow\n\n")
@@ -72,15 +76,17 @@ main <- function() {
   writeLines(json_report, "docs/validation_results.json")
   cat("✓ JSON report saved to docs/validation_results.json\n\n")
 
-  # 10. Exit with appropriate status
-  if (!validation_summary$all_valid) {
-    cat("\n🚨 VALIDATION FAILED!\n\n")
-    cat("Please update your metadata to match the latest schema from:\n")
-    cat("https://github.com/shbrief/OmicsMLRepoCuration\n\n")
-    stop("Metadata validation failed! See errors above.")
+  # 10. Write pass/fail flag for downstream workflow steps
+  if (nzchar(gh_output)) {
+    cat("validation_passed=", tolower(as.character(validation_summary$all_valid)),
+        "\n", sep = "", file = gh_output, append = TRUE)
   }
 
-  cat("\n✅ All metadata files are valid against the latest schema!\n")
+  if (!validation_summary$all_valid) {
+    cat("\n🚨 VALIDATION FOUND ISSUES — see report above.\n")
+  } else {
+    cat("\n✅ All metadata files are valid against the latest schema!\n")
+  }
 }
 
 # Run main function

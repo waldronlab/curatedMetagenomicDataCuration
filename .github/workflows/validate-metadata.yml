@@ -140,7 +140,7 @@ jobs:
       - name: Generate validation badge
         if: always()
         run: |
-          if [ "${{ steps.validate.outcome }}" == "success" ]; then
+          if [ "${{ steps.validate.outputs.validation_passed }}" == "true" ]; then
             echo "![Validation Status](https://img.shields.io/badge/validation-passing-brightgreen)" > validation_badge.md
           else
             echo "![Validation Status](https://img.shields.io/badge/validation-failing-red)" > validation_badge.md
@@ -162,7 +162,7 @@ jobs:
           
           ## Results
           - **Total Files:** ${{ steps.find_files.outputs.count }}
-          - **Status:** ${{ steps.validate.outcome == 'success' && '✅ PASS' || '❌ FAIL' }}
+          - **Status:** ${{ steps.validate.outputs.validation_passed == 'true' && '✅ PASS' || '❌ FAIL' }}
           
           REPORT
           
@@ -203,7 +203,7 @@ jobs:
           path: validation_report.md
       
       - name: Deploy to GitHub Pages
-        if: always() && github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master' && steps.validate.outcome == 'success'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -226,9 +226,9 @@ jobs:
               body: report
             });
       
-      - name: Notification on failure
-        if: failure() && github.event_name == 'repository_dispatch'
+      - name: Fail workflow if validation found issues
+        if: steps.validate.outputs.validation_passed != 'true'
         run: |
-          echo "🚨 Validation failed after schema update!"
-          echo "Schema was updated in OmicsMLRepoCuration commit ${{ github.event.client_payload.schema_commit_short }}"
-          echo "Action required: Update metadata files to match new schema"
+          echo "🚨 Validation found issues in metadata files!"
+          echo "See the dashboard or workflow summary for details."
+          exit 1
