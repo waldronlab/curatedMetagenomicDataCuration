@@ -27,13 +27,16 @@ Imports:
     curl,
     jsonlite,
     omicidxClientR,
-    tibble
+    tibble,
+    stringr,
+    httr,
+    httr2,
+    rentrez,
+    xml2
 Suggests:
     testthat,
     knitr,
-    rmarkdown,
-    stringr,
-    httr2
+    rmarkdown
 Remotes:
     waldronlab/omicidxClientR
 VignetteBuilder: knitr

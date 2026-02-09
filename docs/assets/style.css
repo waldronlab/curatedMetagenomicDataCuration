@@ -70,6 +70,27 @@ header h1 {
     font-size: 1rem;
 }
 
+.header-title-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.github-link {
+    color: var(--color-text);
+    opacity: 0.7;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.github-link:hover {
+    opacity: 1;
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
 /* Main Content */
 main {
     flex: 1;
@@ -134,8 +155,9 @@ main {
     border: 1px solid var(--color-border);
     background: var(--color-surface);
     color: var(--color-text);
-    padding: 0.6rem 1.25rem;
+    padding: 0.85rem 2rem;
     border-radius: 999px;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);

@@ -7,8 +7,21 @@
 makeCombinedMetadata()
 }
 \value{
-A data.table containing metadata for all studies in inst/curated
+A \code{\link[data.table]{data.table}} containing sample-level
+  metadata for all studies, with columns filled with \code{NA} where a
+  study does not include a particular field.
 }
 \description{
-Make a combined metadata table from individual TSVs
+Reads all harmonized sample metadata TSV files from
+\code{inst/harmonized/} and combines them into a single
+\code{data.table}. A \code{dataset_name} column is added to each
+table, derived from the filename (e.g. \code{StudyA_2021_sample.tsv}
+becomes \code{StudyA_2021}).
+}
+\examples{
+\dontrun{
+meta <- makeCombinedMetadata()
+meta[, .N, by = dataset_name]
+}
+
 }
