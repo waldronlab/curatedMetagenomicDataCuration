@@ -297,10 +297,49 @@ main {
     box-shadow: var(--shadow-sm);
 }
 
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
 .stat-panel h3 {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     color: var(--color-text);
+}
+
+.sort-toggle {
+    display: flex;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.sort-btn {
+    background: var(--color-surface);
+    border: none;
+    padding: 0.2rem 0.55rem;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.sort-btn:first-child {
+    border-right: 1px solid var(--color-border);
+}
+
+.sort-btn:hover {
+    background: var(--color-bg);
+}
+
+.sort-btn.active {
+    background: var(--color-primary);
+    color: #fff;
 }
 
 .stat-meta {
