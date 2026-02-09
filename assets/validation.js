@@ -3,6 +3,9 @@ const VALIDATION_DATA_URL = 'validation_results.json';
 const REPO_OWNER = 'waldronlab';
 const REPO_NAME = 'curatedMetagenomicDataCuration';
 
+// Store distribution data for re-sorting
+const distributionData = {};
+
 // Load and display validation results
 async function loadValidationResults() {
     try {
@@ -108,12 +111,31 @@ function renderDistribution(prefix, distribution) {
         return;
     }
 
+    // Store original data for re-sorting
+    distributionData[prefix] = distribution.top.slice();
+
     const totalDistinct = distribution.total_distinct ?? 0;
     const totalCount = distribution.total_count ?? 0;
     metaEl.textContent = `${totalDistinct} distinct values • ${totalCount} total`;
 
+    // Default sort is by count (descending)
+    renderDistributionList(prefix, 'count');
+}
+
+function renderDistributionList(prefix, sortBy) {
+    const listEl = document.getElementById(`${prefix}-list`);
+    const items = distributionData[prefix];
+    if (!items) return;
+
+    const sorted = [...items].sort((a, b) => {
+        if (sortBy === 'value') {
+            return String(a.name).localeCompare(String(b.name));
+        }
+        return b.count - a.count;
+    });
+
     listEl.innerHTML = '';
-    distribution.top.forEach(item => {
+    sorted.forEach(item => {
         const li = document.createElement('li');
         li.className = 'stat-item';
         li.innerHTML = `
@@ -121,6 +143,21 @@ function renderDistribution(prefix, distribution) {
             <span class="stat-count">${item.count}</span>
         `;
         listEl.appendChild(li);
+    });
+}
+
+function initSortToggles() {
+    document.querySelectorAll('.stat-panel[data-dist]').forEach(panel => {
+        const prefix = panel.getAttribute('data-dist');
+        panel.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const sortBy = btn.getAttribute('data-sort');
+                // Update active state within this panel
+                panel.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderDistributionList(prefix, sortBy);
+            });
+        });
     });
 }
 
@@ -375,5 +412,6 @@ function initTabs() {
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', () => {
     initTabs();
+    initSortToggles();
     loadValidationResults();
 });
