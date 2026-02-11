@@ -63,8 +63,7 @@ validate_single_study <- function(file, schema) {
 aggregate_validation_results <- function(results) {
   total_errors <- sum(sapply(results, function(r) length(r$errors)))
   total_warnings <- sum(sapply(results, function(r) length(r$warnings)))
-  all_valid <- all(sapply(results, function(r)
-    length(r$errors) == 0 && length(r$warnings) == 0))
+  all_valid <- all(sapply(results, function(r) length(r$errors) == 0))
 
   studies_with_issues <- results[sapply(results, function(r)
     length(r$errors) > 0 || length(r$warnings) > 0)]
