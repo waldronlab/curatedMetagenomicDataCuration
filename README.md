@@ -23,7 +23,7 @@ review. cMD curation team will review/validate your metadata. If it passes, it
 will be added into cMD package. Any validation fails will be reported back to
 you for your revision/update.
 
-[template]: https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_data_dictionary.csv
+[template]: https://github.com/shbrief/OmicsMLRepoCuration/tree/main/inst/schema
 [already curated studies]: https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated
 
 
