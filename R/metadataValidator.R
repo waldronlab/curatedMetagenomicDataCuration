@@ -1,4 +1,4 @@
-# Function for validating curated metadata
+# Functions for validating curated metadata
 
 #' @title Read ontology term IDs and labels from an OWL file
 #' @description 'import_owl_id_label' parses ontology term IDs and labels from
@@ -22,7 +22,6 @@
 #' @export 
 #' @importFrom xml2 read_xml xml_find_all xml_ns xml_attr xml_text xml_find_first
 #' @importFrom tibble tibble
-#' @importFrom base basename
 #' @importFrom stringr str_replace
 import_owl_id_label <- function(path) {
   results <- tryCatch(
@@ -202,7 +201,7 @@ is_bool_str <- function(x) tolower(x) %in% c("true", "false", "t", "f", "yes", "
 #' (e.g. is_number_str()) that allows NA values to return TRUE even if they
 #' would otherwise be interpreted as FALSE.
 #' @param fn Function: function to bypass validation for
-#' @return 
+#' @return Boolean
 #' @examples 
 #' \dontrun{
 #' if(interactive()){
@@ -330,12 +329,12 @@ check_class <- function(dict, data, include_all = FALSE) {
 #' 'Unique' columns and a metadata table. Any columns that are marked as
 #' unique in the data dictionary and present in the metadata table are checked
 #' to make sure that their values are unique. The function can return a report
-#' on all columns or only the noncompliant columns.
+#' on all cells or only the noncompliant cells.
 #' @param dict A table or data.frame: a data dictionary with 'ColName' and
 #' 'Unique' columns
 #' @param data A table or data.frame: a table of metadata to check
 #' @param include_all Boolean: should the function return a report on all
-#' columns (TRUE) or only the noncompliant columns (FALSE), Default: FALSE
+#' cells (TRUE) or only the noncompliant cells (FALSE), Default: FALSE
 #' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
 #' 'expected', and 'valid'.
 #' @examples 
@@ -410,6 +409,27 @@ check_unique <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
+#' @title Check if column values are in an allowed values list
+#' @description 'check_allowed_values' takes a data dictionary with 'ColName'
+#' and 'AllowedValues' columns and a metadata table. Any columns that have a
+#' non-NA value for 'AllowedValues' and are present in the metadata table are
+#' checked to make sure that their values are allowed. The function can return a
+#' report on all cells or only the noncompliant cells.
+#' @param dict A table or data.frame: a data dictionary with 'ColName' and
+#' 'AllowedValues' columns
+#' @param data A table or data.frame: a table of metadata to check
+#' @param include_all Boolean: should the function return a report on all
+#' cells (TRUE) or only the noncompliant cells (FALSE), Default: FALSE
+#' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
+#' 'expected', and 'valid'.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @rdname check_allowed_values
+#' @export 
 check_allowed_values <- function(dict, data, include_all = FALSE) {
   # Get columns with valid allowed values
   avals <- dict$ColName[!is.na(dict$AllowedValues) &
@@ -501,14 +521,39 @@ check_allowed_values <- function(dict, data, include_all = FALSE) {
   return(results)
 }
 
-check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
+#' @title Check if column values are found in a dictionary file
+#' @description 'check_dictionary_values' takes a data dictionary
+#' with a 'ColName' column, and a metadata table. Any columns that are found to
+#' have a matching CSV or OWL reference file in the
+#' curatedMetagenomicDataCuration file cache and be present in the metadata
+#' table are checked to make sure that their values are allowed. The function
+#' can return a report on all cells or only the noncompliant cells.
+#' @param dict A table or data.frame: a data dictionary with a 'ColName' column
+#' @param data A table or data.frame: a table of metadata to check
+#' @param include_all Boolean: should the function return a report on all
+#' cells (TRUE) or only the noncompliant cells (FALSE), Default: FALSE
+#' @return A data.frame with columns 'column', 'row', 'value', 'check_type',
+#' 'expected', and 'valid'.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  }
+#' }
+#' @rdname check_dictionary_values
+#' @export 
+#' @importFrom BiocFileCache bfcinfo
+check_dictionary_values <- function(dict, data, include_all = FALSE) {
   # List available dictionary files
-  owl_files <- list.files(file_dir, pattern = ".owl")
-  csv_files <- list.files(file_dir, pattern = ".csv")
+  bfc <- cMDC_get_cache()
+  cache_info <- BiocFileCache::bfcinfo(bfc)
+  
+  owl_files <- cache_info[grepl(".owl", cache_info$rname),]
+  csv_files <- cache_info[grepl(".csv", cache_info$rname),]
   
   # Get columns that have dictionary files
-  ovals <- sapply(dict$ColName, function(x) owl_files[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), owl_files)])
-  cvals <- sapply(dict$ColName, function(x) csv_files[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), csv_files)])
+  ovals <- sapply(dict$ColName, function(x) owl_files$rpath[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), owl_files$rname)])
+  cvals <- sapply(dict$ColName, function(x) csv_files$rpath[grep(paste0("^cmd_", x, "(_enums|_metric|\\.)"), csv_files$rname)])
   
   ofiles <- ovals[which(lengths(ovals) > 0)]
   cfiles <- cvals[which(lengths(cvals) > 0)]
@@ -523,10 +568,10 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
     cfile <- cfiles[[col]]
     
     if (!is.null(ofile)) {
-      avals <- import_owl_id_label(file.path(file_dir, ofile))$label
-      pref_files[[col]] <<- ofile
+      avals <- import_owl_id_label(ofile)$label
+      val_file <- ofile
     } else if (!is.null(cfile)) {
-      avals <- read.csv(file.path(file_dir, cfile))$label
+      avals <- read.csv(cfile)$label
       val_file <- cfile
     } else {
       # Fallback in case neither an OWL nor CSV file is found
@@ -544,6 +589,9 @@ check_dictionary_values <- function(file_dir, dict, data, include_all = FALSE) {
   aval_list <- lapply(aval_pref_list, `[[`, "avals")
   pref_files <- lapply(aval_pref_list, `[[`, "val_file")
   names(aval_list) <- cols_to_check
+  
+  lookup <- cache_info$rname |> setNames(cache_info$rpath)
+  pref_files[] <- lapply(pref_files, function(x) unname(lookup[x]))
   
   # Check values
   if (length(cols_to_check) == 0) {
