@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 93,
     "total_errors": 6,
-    "total_warnings": 1,
-    "files_with_issues": 7
+    "total_warnings": 94,
+    "files_with_issues": 93
   },
   "stats": {
     "total_studies": 93,
@@ -263,14 +263,194 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-02-13T03:15:21Z",
+    "timestamp": "2026-02-14T03:06:17Z",
     "trigger": "schedule",
     "branch": "master",
-    "schema_commit": "739646a07328e6ae0934e6946fd91ea0f1cf9bd7",
-    "schema_commit_short": "739646a",
-    "run_id": "21973178435"
+    "schema_commit": "49e16b53e6d2bd3317a69a642e4c2767e7f439a4",
+    "schema_commit_short": "49e16b5",
+    "run_id": "22009993822"
   },
   "studies_with_issues": [
+    {
+      "name": "AsnicarF_2017",
+      "file": "inst/harmonized//AsnicarF_2017/AsnicarF_2017_sample.tsv",
+      "rows": 24,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "AsnicarF_2021",
+      "file": "inst/harmonized//AsnicarF_2021/AsnicarF_2021_sample.tsv",
+      "rows": 1098,
+      "cols": 39,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "BackhedF_2015",
+      "file": "inst/harmonized//BackhedF_2015/BackhedF_2015_sample.tsv",
+      "rows": 400,
+      "cols": 40,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "BedarfJR_2017",
+      "file": "inst/harmonized//BedarfJR_2017/BedarfJR_2017_sample.tsv",
+      "rows": 59,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "Bengtsson-PalmeJ_2015",
+      "file": "inst/harmonized//Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_sample.tsv",
+      "rows": 70,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "BritoIL_2016",
+      "file": "inst/harmonized//BritoIL_2016/BritoIL_2016_sample.tsv",
+      "rows": 312,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "BrooksB_2017",
+      "file": "inst/harmonized//BrooksB_2017/BrooksB_2017_sample.tsv",
+      "rows": 408,
+      "cols": 40,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, neonatal_preterm_birth_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "Castro-NallarE_2015",
+      "file": "inst/harmonized//Castro-NallarE_2015/Castro-NallarE_2015_sample.tsv",
+      "rows": 32,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ChengpingW_2017",
+      "file": "inst/harmonized//ChengpingW_2017/ChengpingW_2017_sample.tsv",
+      "rows": 97,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ChngKR_2016",
+      "file": "inst/harmonized//ChngKR_2016/ChngKR_2016_sample.tsv",
+      "rows": 78,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ChuDM_2017",
+      "file": "inst/harmonized//ChuDM_2017/ChuDM_2017_sample.tsv",
+      "rows": 86,
+      "cols": 54,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_ontology_term_id, disease_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, neonatal_preterm_birth_ontology_term_id, obgyn_menopause_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "CosteaPI_2017",
+      "file": "inst/harmonized//CosteaPI_2017/CosteaPI_2017_sample.tsv",
+      "rows": 279,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "DavidLA_2015",
+      "file": "inst/harmonized//DavidLA_2015/DavidLA_2015_sample.tsv",
+      "rows": 47,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_details_ontology_term_id, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "DeFilippisF_2019",
+      "file": "inst/harmonized//DeFilippisF_2019/DeFilippisF_2019_sample.tsv",
+      "rows": 97,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "DhakanDB_2019",
+      "file": "inst/harmonized//DhakanDB_2019/DhakanDB_2019_sample.tsv",
+      "rows": 110,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "FengQ_2015",
+      "file": "inst/harmonized//FengQ_2015/FengQ_2015_sample.tsv",
+      "rows": 154,
+      "cols": 39,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "FerrettiP_2018",
+      "file": "inst/harmonized//FerrettiP_2018/FerrettiP_2018_sample.tsv",
+      "rows": 214,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, body_site_details_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "FrankelAE_2017",
+      "file": "inst/harmonized//FrankelAE_2017/FrankelAE_2017_sample.tsv",
+      "rows": 39,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, disease_response_recist_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
     {
       "name": "GhensiP_2019",
       "file": "inst/harmonized//GhensiP_2019/GhensiP_2019_sample.tsv",
@@ -279,7 +459,29 @@
       "errors": [
         "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
       ],
-      "warnings": []
+      "warnings": [
+        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,body_site_details,body_site_details_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,curator,disease,disease_details,disease_details_ontology_term_id,disease_ontology_term_id,median_read_length,minimum_read_length,ncbi_accession,number_bases,number_reads,pmid,probing_pocket_depth,probing_pocket_depth_value,probing_pocket_depth_ontology_term_id,sequencing_platform,smoker,smoker_ontology_term_id,westernized,package,last_updated"
+      ]
+    },
+    {
+      "name": "GopalakrishnanV_2018",
+      "file": "inst/harmonized//GopalakrishnanV_2018/GopalakrishnanV_2018_sample.tsv",
+      "rows": 25,
+      "cols": 28,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "GuptaA_2019",
+      "file": "inst/harmonized//GuptaA_2019/GuptaA_2019_sample.tsv",
+      "rows": 60,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
     },
     {
       "name": "HallAB_2017",
@@ -289,7 +491,69 @@
       "errors": [
         "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
       ],
-      "warnings": []
+      "warnings": [
+        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,curator,days_from_first_collection,disease,disease_ontology_term_id,dna_extraction_kit,feces_phenotype,feces_phenotype_value,feces_phenotype_ontology_term_id,location,median_read_length,minimum_read_length,ncbi_accession,number_bases,number_reads,pmid,sequencing_platform,uncurated_metadata,westernized,package,last_updated"
+      ]
+    },
+    {
+      "name": "HanniganGD_2017",
+      "file": "inst/harmonized//HanniganGD_2017/HanniganGD_2017_sample.tsv",
+      "rows": 81,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "HansenLBS_2018",
+      "file": "inst/harmonized//HansenLBS_2018/HansenLBS_2018_sample.tsv",
+      "rows": 207,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "Heitz-BuschartA_2016",
+      "file": "inst/harmonized//Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
+      "rows": 53,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "HMP_2012",
+      "file": "inst/harmonized//HMP_2012/HMP_2012_sample.tsv",
+      "rows": 748,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, body_site_details_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "HMP_2019_ibdmdb",
+      "file": "inst/harmonized//HMP_2019_ibdmdb/HMP_2019_ibdmdb_sample.tsv",
+      "rows": 1627,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "HMP_2019_t2d",
+      "file": "inst/harmonized//HMP_2019_t2d/HMP_2019_t2d_sample.tsv",
+      "rows": 296,
+      "cols": 41,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
     },
     {
       "name": "IaniroG_2022",
@@ -299,7 +563,9 @@
       "errors": [
         "Missing required fields: median_read_length, minimum_read_length, number_reads, sequencing_platform"
       ],
-      "warnings": []
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_details_ontology_term_id, disease_ontology_term_id, package, last_updated"
+      ]
     },
     {
       "name": "IjazUZ_2017",
@@ -309,7 +575,89 @@
       "errors": [
         "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
       ],
-      "warnings": []
+      "warnings": [
+        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,age_years,antibiotics_current_use,curator,days_from_first_collection,disease,disease_ontology_term_id,family,family_role,feces_phenotype,feces_phenotype_value,feces_phenotype_ontology_term_id,median_read_length,minimum_read_length,ncbi_accession,number_bases,number_reads,pmid,sequencing_platform,sex,sex_ontology_term_id,treatment,treatment_ontology_term_id,westernized,package,last_updated"
+      ]
+    },
+    {
+      "name": "JieZ_2017",
+      "file": "inst/harmonized//JieZ_2017/JieZ_2017_sample.tsv",
+      "rows": 385,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "KarlssonFH_2013",
+      "file": "inst/harmonized//KarlssonFH_2013/KarlssonFH_2013_sample.tsv",
+      "rows": 145,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "KaurK_2020",
+      "file": "inst/harmonized//KaurK_2020/KaurK_2020_sample.tsv",
+      "rows": 31,
+      "cols": 42,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "KeohaneDM_2020",
+      "file": "inst/harmonized//KeohaneDM_2020/KeohaneDM_2020_sample.tsv",
+      "rows": 117,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "KieserS_2018",
+      "file": "inst/harmonized//KieserS_2018/KieserS_2018_sample.tsv",
+      "rows": 27,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_details_ontology_term_id, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "KosticAD_2015",
+      "file": "inst/harmonized//KosticAD_2015/KosticAD_2015_sample.tsv",
+      "rows": 120,
+      "cols": 40,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, hla_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LassalleF_2017",
+      "file": "inst/harmonized//LassalleF_2017/LassalleF_2017_sample.tsv",
+      "rows": 23,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LeChatelierE_2013",
+      "file": "inst/harmonized//LeChatelierE_2013/LeChatelierE_2013_sample.tsv",
+      "rows": 292,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
     },
     {
       "name": "LeeKA_2022",
@@ -318,7 +666,118 @@
       "cols": 42,
       "errors": [],
       "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, disease_response_recist_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated",
         "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+"
+      ]
+    },
+    {
+      "name": "LifeLinesDeep_2016",
+      "file": "inst/harmonized//LifeLinesDeep_2016/LifeLinesDeep_2016_sample.tsv",
+      "rows": 1135,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LiJ_2014",
+      "file": "inst/harmonized//LiJ_2014/LiJ_2014_sample.tsv",
+      "rows": 260,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LiJ_2017",
+      "file": "inst/harmonized//LiJ_2017/LiJ_2017_sample.tsv",
+      "rows": 196,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LiSS_2016",
+      "file": "inst/harmonized//LiSS_2016/LiSS_2016_sample.tsv",
+      "rows": 55,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LiuW_2016",
+      "file": "inst/harmonized//LiuW_2016/LiuW_2016_sample.tsv",
+      "rows": 110,
+      "cols": 30,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LokmerA_2019",
+      "file": "inst/harmonized//LokmerA_2019/LokmerA_2019_sample.tsv",
+      "rows": 57,
+      "cols": 39,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LomanNJ_2013",
+      "file": "inst/harmonized//LomanNJ_2013/LomanNJ_2013_sample.tsv",
+      "rows": 42,
+      "cols": 31,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_details_ontology_term_id, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LoombaR_2017",
+      "file": "inst/harmonized//LoombaR_2017/LoombaR_2017_sample.tsv",
+      "rows": 86,
+      "cols": 30,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "LouisS_2016",
+      "file": "inst/harmonized//LouisS_2016/LouisS_2016_sample.tsv",
+      "rows": 92,
+      "cols": 31,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "MatsonV_2018",
+      "file": "inst/harmonized//MatsonV_2018/MatsonV_2018_sample.tsv",
+      "rows": 39,
+      "cols": 29,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "MehtaRS_2018",
+      "file": "inst/harmonized//MehtaRS_2018/MehtaRS_2018_sample.tsv",
+      "rows": 928,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
       ]
     },
     {
@@ -329,7 +788,339 @@
       "errors": [
         "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
       ],
-      "warnings": []
+      "warnings": [
+        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,antibiotics_current_use,biomarker,bmi,curator,disease,disease_ontology_term_id,feces_phenotype,feces_phenotype_value,feces_phenotype_ontology_term_id,location,ncbi_accession,number_bases,pmid,sequencing_platform,sex,sex_ontology_term_id,smoker,smoker_ontology_term_id,treatment,treatment_ontology_term_id,westernized,package,last_updated"
+      ]
+    },
+    {
+      "name": "NagySzakalD_2017",
+      "file": "inst/harmonized//NagySzakalD_2017/NagySzakalD_2017_sample.tsv",
+      "rows": 100,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "NielsenHB_2014",
+      "file": "inst/harmonized//NielsenHB_2014/NielsenHB_2014_sample.tsv",
+      "rows": 396,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "Obregon-TitoAJ_2015",
+      "file": "inst/harmonized//Obregon-TitoAJ_2015/Obregon-TitoAJ_2015_sample.tsv",
+      "rows": 58,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "OhJ_2014",
+      "file": "inst/harmonized//OhJ_2014/OhJ_2014_sample.tsv",
+      "rows": 291,
+      "cols": 31,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "OlmMR_2017",
+      "file": "inst/harmonized//OlmMR_2017/OlmMR_2017_sample.tsv",
+      "rows": 45,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "PasolliE_2019",
+      "file": "inst/harmonized//PasolliE_2019/PasolliE_2019_sample.tsv",
+      "rows": 112,
+      "cols": 39,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "PehrssonE_2016",
+      "file": "inst/harmonized//PehrssonE_2016/PehrssonE_2016_sample.tsv",
+      "rows": 191,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "PetersBA_2019",
+      "file": "inst/harmonized//PetersBA_2019/PetersBA_2019_sample.tsv",
+      "rows": 27,
+      "cols": 40,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "QinJ_2012",
+      "file": "inst/harmonized//QinJ_2012/QinJ_2012_sample.tsv",
+      "rows": 363,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "QinN_2014",
+      "file": "inst/harmonized//QinN_2014/QinN_2014_sample.tsv",
+      "rows": 237,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "RampelliS_2015",
+      "file": "inst/harmonized//RampelliS_2015/RampelliS_2015_sample.tsv",
+      "rows": 38,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "RaymondF_2016",
+      "file": "inst/harmonized//RaymondF_2016/RaymondF_2016_sample.tsv",
+      "rows": 72,
+      "cols": 42,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "RosaBA_2018",
+      "file": "inst/harmonized//RosaBA_2018/RosaBA_2018_sample.tsv",
+      "rows": 24,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_details_ontology_term_id, disease_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "RubelMA_2020",
+      "file": "inst/harmonized//RubelMA_2020/RubelMA_2020_sample.tsv",
+      "rows": 175,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "SankaranarayananK_2015",
+      "file": "inst/harmonized//SankaranarayananK_2015/SankaranarayananK_2015_sample.tsv",
+      "rows": 37,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "SchirmerM_2016",
+      "file": "inst/harmonized//SchirmerM_2016/SchirmerM_2016_sample.tsv",
+      "rows": 471,
+      "cols": 41,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ShaoY_2019",
+      "file": "inst/harmonized//ShaoY_2019/ShaoY_2019_sample.tsv",
+      "rows": 1644,
+      "cols": 44,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, neonatal_preterm_birth_ontology_term_id, obgyn_menopause_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ShiB_2015",
+      "file": "inst/harmonized//ShiB_2015/ShiB_2015_sample.tsv",
+      "rows": 48,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, body_site_details_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "SmitsSA_2017",
+      "file": "inst/harmonized//SmitsSA_2017/SmitsSA_2017_sample.tsv",
+      "rows": 40,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "TettAJ_2016",
+      "file": "inst/harmonized//TettAJ_2016/TettAJ_2016_sample.tsv",
+      "rows": 89,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, body_site_details_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "TettAJ_2019_a",
+      "file": "inst/harmonized//TettAJ_2019_a/TettAJ_2019_a_sample.tsv",
+      "rows": 68,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "TettAJ_2019_b",
+      "file": "inst/harmonized//TettAJ_2019_b/TettAJ_2019_b_sample.tsv",
+      "rows": 44,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "TettAJ_2019_c",
+      "file": "inst/harmonized//TettAJ_2019_c/TettAJ_2019_c_sample.tsv",
+      "rows": 50,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ThomasAM_2018a",
+      "file": "inst/harmonized//ThomasAM_2018a/ThomasAM_2018a_sample.tsv",
+      "rows": 80,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ThomasAM_2018b",
+      "file": "inst/harmonized//ThomasAM_2018b/ThomasAM_2018b_sample.tsv",
+      "rows": 60,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ThomasAM_2019_c",
+      "file": "inst/harmonized//ThomasAM_2019_c/ThomasAM_2019_c_sample.tsv",
+      "rows": 80,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "VatanenT_2016",
+      "file": "inst/harmonized//VatanenT_2016/VatanenT_2016_sample.tsv",
+      "rows": 785,
+      "cols": 40,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, hla_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "VilaAV_2018",
+      "file": "inst/harmonized//VilaAV_2018/VilaAV_2018_sample.tsv",
+      "rows": 355,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "VincentC_2016",
+      "file": "inst/harmonized//VincentC_2016/VincentC_2016_sample.tsv",
+      "rows": 229,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "VogtmannE_2016",
+      "file": "inst/harmonized//VogtmannE_2016/VogtmannE_2016_sample.tsv",
+      "rows": 110,
+      "cols": 33,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "WampachL_2018",
+      "file": "inst/harmonized//WampachL_2018/WampachL_2018_sample.tsv",
+      "rows": 63,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "WindTT_2020",
+      "file": "inst/harmonized//WindTT_2020/WindTT_2020_sample.tsv",
+      "rows": 20,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, disease_response_recist_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "WirbelJ_2018",
+      "file": "inst/harmonized//WirbelJ_2018/WirbelJ_2018_sample.tsv",
+      "rows": 125,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
     },
     {
       "name": "XieH_2016",
@@ -339,7 +1130,89 @@
       "errors": [
         "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition"
       ],
-      "warnings": []
+      "warnings": [
+        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,age_years,antibiotics_current_use,bmi,curator,disease,disease_ontology_term_id,dna_extraction_kit,family,location,median_read_length,minimum_read_length,ncbi_accession,neonatal_delivery_procedure,neonatal_delivery_procedure_ontology_term_id,number_bases,number_reads,obgyn_lactating,obgyn_menopause,obgyn_menopause_ontology_term_id,obgyn_pregnancy,obgyn_pregnancy_ontology_term_id,pmid,sequencing_platform,sex,sex_ontology_term_id,smoker,smoker_ontology_term_id,treatment,treatment_ontology_term_id,uncurated_metadata,westernized,zigosity,package,last_updated"
+      ]
+    },
+    {
+      "name": "YachidaS_2019",
+      "file": "inst/harmonized//YachidaS_2019/YachidaS_2019_sample.tsv",
+      "rows": 616,
+      "cols": 34,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "YassourM_2016",
+      "file": "inst/harmonized//YassourM_2016/YassourM_2016_sample.tsv",
+      "rows": 36,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "YassourM_2018",
+      "file": "inst/harmonized//YassourM_2018/YassourM_2018_sample.tsv",
+      "rows": 271,
+      "cols": 45,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, neonatal_delivery_procedure_ontology_term_id, neonatal_preterm_birth_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "YeZ_2018",
+      "file": "inst/harmonized//YeZ_2018/YeZ_2018_sample.tsv",
+      "rows": 65,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "YuJ_2015",
+      "file": "inst/harmonized//YuJ_2015/YuJ_2015_sample.tsv",
+      "rows": 128,
+      "cols": 40,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ZeeviD_2015",
+      "file": "inst/harmonized//ZeeviD_2015/ZeeviD_2015_sample.tsv",
+      "rows": 900,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ZellerG_2014",
+      "file": "inst/harmonized//ZellerG_2014/ZellerG_2014_sample.tsv",
+      "rows": 156,
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+      ]
+    },
+    {
+      "name": "ZhuF_2020",
+      "file": "inst/harmonized//ZhuF_2020/ZhuF_2020_sample.tsv",
+      "rows": 171,
+      "cols": 39,
+      "errors": [],
+      "warnings": [
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+      ]
     }
   ]
 }
