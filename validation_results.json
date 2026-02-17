@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-02-16T03:11:55Z",
+    "timestamp": "2026-02-17T03:10:21Z",
     "trigger": "schedule",
     "branch": "master",
     "schema_commit": "49e16b53e6d2bd3317a69a642e4c2767e7f439a4",
     "schema_commit_short": "49e16b5",
-    "run_id": "22048805472"
+    "run_id": "22084549104"
   },
   "studies_with_issues": [
     {
