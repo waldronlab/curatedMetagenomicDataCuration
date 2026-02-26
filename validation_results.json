@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-02-26T00:36:23Z",
+    "timestamp": "2026-02-26T00:44:51Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "49e16b53e6d2bd3317a69a642e4c2767e7f439a4",
     "schema_commit_short": "49e16b5",
-    "run_id": "22422469684"
+    "run_id": "22422679150"
   },
   "studies_with_issues": [
     {
@@ -365,10 +365,10 @@
       "name": "ChngKR_2016",
       "file": "inst/harmonized//ChngKR_2016/ChngKR_2016_sample.tsv",
       "rows": 78,
-      "cols": 33,
+      "cols": 36,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -704,10 +704,10 @@
       "name": "LassalleF_2017",
       "file": "inst/harmonized//LassalleF_2017/LassalleF_2017_sample.tsv",
       "rows": 23,
-      "cols": 37,
+      "cols": 40,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -795,10 +795,10 @@
       "name": "LomanNJ_2013",
       "file": "inst/harmonized//LomanNJ_2013/LomanNJ_2013_sample.tsv",
       "rows": 42,
-      "cols": 31,
+      "cols": 34,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_details_ontology_term_id, disease_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_details_ontology_term_id, disease_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -815,10 +815,10 @@
       "name": "LouisS_2016",
       "file": "inst/harmonized//LouisS_2016/LouisS_2016_sample.tsv",
       "rows": 92,
-      "cols": 31,
+      "cols": 34,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -1277,10 +1277,10 @@
       "name": "YeZ_2018",
       "file": "inst/harmonized//YeZ_2018/YeZ_2018_sample.tsv",
       "rows": 65,
-      "cols": 35,
+      "cols": 38,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
