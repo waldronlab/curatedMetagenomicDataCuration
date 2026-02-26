@@ -3,7 +3,7 @@
   "summary": {
     "total_files": 93,
     "total_errors": 6,
-    "total_warnings": 94,
+    "total_warnings": 204,
     "files_with_issues": 93
   },
   "stats": {
@@ -240,7 +240,7 @@
           }
         ],
         "total_distinct": 85,
-        "total_count": 23412
+        "total_count": 23483
       },
       "sex": {
         "top": [
@@ -254,31 +254,31 @@
           },
           {
             "name": "Not applicable",
-            "count": 459
+            "count": 495
           }
         ],
         "total_distinct": 3,
-        "total_count": 18911
+        "total_count": 18947
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-02-25T03:10:08Z",
-    "trigger": "schedule",
+    "timestamp": "2026-02-26T00:36:23Z",
+    "trigger": "push",
     "branch": "master",
     "schema_commit": "49e16b53e6d2bd3317a69a642e4c2767e7f439a4",
     "schema_commit_short": "49e16b5",
-    "run_id": "22380417480"
+    "run_id": "22422469684"
   },
   "studies_with_issues": [
     {
       "name": "AsnicarF_2017",
       "file": "inst/harmonized//AsnicarF_2017/AsnicarF_2017_sample.tsv",
       "rows": 24,
-      "cols": 35,
+      "cols": 38,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -425,10 +425,11 @@
       "name": "FengQ_2015",
       "file": "inst/harmonized//FengQ_2015/FengQ_2015_sample.tsv",
       "rows": 154,
-      "cols": 39,
+      "cols": 41,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated",
+        "Field 'dietary_restriction' has 6 invalid values: . Allowed values: omnivore, low_gluten_diet, high_gluten_diet, vegetarian, vegan"
       ]
     },
     {
@@ -583,40 +584,100 @@
       "name": "JieZ_2017",
       "file": "inst/harmonized//JieZ_2017/JieZ_2017_sample.tsv",
       "rows": 385,
-      "cols": 38,
+      "cols": 40,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, biomarker_name, biomarker_unit, biomarker_value, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, treatment_ontology_term_id, package, last_updated"
       ]
     },
     {
       "name": "KarlssonFH_2013",
       "file": "inst/harmonized//KarlssonFH_2013/KarlssonFH_2013_sample.tsv",
       "rows": 145,
-      "cols": 36,
+      "cols": 38,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
       ]
     },
     {
       "name": "KaurK_2020",
       "file": "inst/harmonized//KaurK_2020/KaurK_2020_sample.tsv",
       "rows": 31,
-      "cols": 42,
+      "cols": 45,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
       "name": "KeohaneDM_2020",
       "file": "inst/harmonized//KeohaneDM_2020/KeohaneDM_2020_sample.tsv",
       "rows": 117,
-      "cols": 36,
+      "cols": 38,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated",
+        "Field 'smoker' row 4 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 5 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 8 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 9 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 11 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 14 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 15 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 17 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 22 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 27 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 28 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 29 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 31 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 34 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 37 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 38 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 41 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 42 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 43 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 44 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 47 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 49 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 50 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 51 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 52 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 53 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 54 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 55 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 58 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 62 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 63 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 65 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 72 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 73 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 74 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 75 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 77 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 78 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 79 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 80 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 85 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 86 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 87 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 88 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 89 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 90 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 93 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 96 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 97 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 100 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 101 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 102 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 103 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 104 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 105 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 108 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 110 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 113 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 114 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 115 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)"
       ]
     },
     {
@@ -684,50 +745,50 @@
       "name": "LiJ_2014",
       "file": "inst/harmonized//LiJ_2014/LiJ_2014_sample.tsv",
       "rows": 260,
-      "cols": 35,
+      "cols": 37,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, biomarker_name, biomarker_unit, biomarker_value, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
       ]
     },
     {
       "name": "LiJ_2017",
       "file": "inst/harmonized//LiJ_2017/LiJ_2017_sample.tsv",
       "rows": 196,
-      "cols": 33,
+      "cols": 36,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, smoker_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
       "name": "LiSS_2016",
       "file": "inst/harmonized//LiSS_2016/LiSS_2016_sample.tsv",
       "rows": 55,
-      "cols": 32,
+      "cols": 35,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
       "name": "LiuW_2016",
       "file": "inst/harmonized//LiuW_2016/LiuW_2016_sample.tsv",
       "rows": 110,
-      "cols": 30,
+      "cols": 33,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
       "name": "LokmerA_2019",
       "file": "inst/harmonized//LokmerA_2019/LokmerA_2019_sample.tsv",
       "rows": 57,
-      "cols": 39,
+      "cols": 42,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -796,10 +857,10 @@
       "name": "NagySzakalD_2017",
       "file": "inst/harmonized//NagySzakalD_2017/NagySzakalD_2017_sample.tsv",
       "rows": 100,
-      "cols": 34,
+      "cols": 37,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -846,10 +907,10 @@
       "name": "PasolliE_2019",
       "file": "inst/harmonized//PasolliE_2019/PasolliE_2019_sample.tsv",
       "rows": 112,
-      "cols": 39,
+      "cols": 42,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, ancestry_details_ontology_term_id, ancestry_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -866,30 +927,30 @@
       "name": "PetersBA_2019",
       "file": "inst/harmonized//PetersBA_2019/PetersBA_2019_sample.tsv",
       "rows": 27,
-      "cols": 40,
+      "cols": 43,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
       "name": "QinJ_2012",
       "file": "inst/harmonized//QinJ_2012/QinJ_2012_sample.tsv",
       "rows": 363,
-      "cols": 35,
+      "cols": 37,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, biomarker_name, biomarker_unit, biomarker_value, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
       ]
     },
     {
       "name": "QinN_2014",
       "file": "inst/harmonized//QinN_2014/QinN_2014_sample.tsv",
       "rows": 237,
-      "cols": 38,
+      "cols": 40,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
       ]
     },
     {
@@ -966,10 +1027,58 @@
       "name": "ShiB_2015",
       "file": "inst/harmonized//ShiB_2015/ShiB_2015_sample.tsv",
       "rows": 48,
-      "cols": 34,
+      "cols": 37,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, body_site_details_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, body_site_details_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, smoker_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value",
+        "Field 'smoker' row 1 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 2 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 3 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 4 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 5 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 6 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 7 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 8 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 9 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 10 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 11 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 12 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 13 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 14 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 15 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 16 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 17 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 18 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 19 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 20 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 21 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 22 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 23 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 24 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 25 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 26 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 27 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 28 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 29 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 30 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 31 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 32 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 33 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 34 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 35 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 36 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 37 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 38 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 39 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 40 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 41 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 42 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 43 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 44 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 45 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 46 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 47 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
+        "Field 'smoker' row 48 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)"
       ]
     },
     {
@@ -1076,10 +1185,10 @@
       "name": "VincentC_2016",
       "file": "inst/harmonized//VincentC_2016/VincentC_2016_sample.tsv",
       "rows": 229,
-      "cols": 36,
+      "cols": 39,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_ontology_term_id, sex_ontology_term_id, treatment_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -1148,10 +1257,10 @@
       "name": "YassourM_2016",
       "file": "inst/harmonized//YassourM_2016/YassourM_2016_sample.tsv",
       "rows": 36,
-      "cols": 35,
+      "cols": 38,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, disease_ontology_term_id, obgyn_pregnancy_ontology_term_id, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
       ]
     },
     {
@@ -1208,10 +1317,11 @@
       "name": "ZhuF_2020",
       "file": "inst/harmonized//ZhuF_2020/ZhuF_2020_sample.tsv",
       "rows": 171,
-      "cols": 39,
+      "cols": 41,
       "errors": [],
       "warnings": [
-        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated"
+        "Columns not covered by schema: target_condition_ontology_term_id, control_ontology_term_id, country_ontology_term_id, body_site_ontology_term_id, age_group_ontology_term_id, age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, disease_details_ontology_term_id, disease_ontology_term_id, sex_ontology_term_id, smoker_ontology_term_id, package, last_updated",
+        "Field 'smoker' row 147 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)"
       ]
     }
   ]
