@@ -29,6 +29,7 @@ on:
       - main
     paths:
       - 'inst/curated/**/*.tsv'
+      - 'inst/extdata/**'
       - 'docs/**'
       - '.github/workflows/validate-metadata.yml'
 
@@ -36,17 +37,10 @@ on:
   pull_request:
     paths:
       - 'inst/curated/**/*.tsv'
-  
-  # Run daily at 2 AM UTC to catch upstream schema changes
-  schedule:
-    - cron: '0 2 * * *'
-  
+      - 'inst/extdata/**'
+
   # Allow manual trigger from Actions tab
   workflow_dispatch:
-  
-  # Triggered by OmicsMLRepoCuration when schema updates
-  repository_dispatch:
-    types: [schema-updated]
 
 jobs:
   validate:
@@ -165,16 +159,6 @@ jobs:
           - **Status:** ${{ steps.validate.outputs.validation_passed == 'true' && '✅ PASS' || '❌ FAIL' }}
           
           REPORT
-          
-          if [ "${{ github.event_name }}" == "repository_dispatch" ]; then
-            cat << 'REPORT' >> validation_report.md
-          ## Schema Update Details
-          - **Triggered by:** Schema update in OmicsMLRepoCuration
-          - **Schema Commit:** ${{ github.event.client_payload.schema_commit_short }}
-          - **Changed Files:** ${{ github.event.client_payload.changed_files }}
-          
-          REPORT
-          fi
           
           cat validation_report.md
           
