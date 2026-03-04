@@ -4,11 +4,17 @@
 \alias{load_validation_schema}
 \title{Load Validation Schema}
 \usage{
-load_validation_schema()
+load_validation_schema(package = "curatedMetagenomicDataCuration")
+}
+\arguments{
+\item{package}{Package whose \code{inst/extdata} contains the data
+dictionary CSV.}
 }
 \value{
 List containing the loaded schema
 }
 \description{
-Load the metadata schema from OmicsMLRepoCuration package
+Load a \code{*_data_dictionary.csv} from a package's
+  \code{inst/extdata} and convert it to a validation schema via
+  \code{\link[OmicsMLRepoCuration]{table_to_yaml_schema}}.
 }

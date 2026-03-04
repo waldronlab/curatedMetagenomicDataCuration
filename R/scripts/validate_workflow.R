@@ -1,4 +1,7 @@
 #!/usr/bin/env Rscript
+# Metadata validation workflow
+# Works both locally (Rscript R/scripts/validate_workflow.R) and in GitHub Actions CI.
+# CI-specific outputs (GITHUB_OUTPUT, schema metadata) are skipped when run locally.
 
 # Load required libraries
 library(OmicsMLRepoCuration)
@@ -13,7 +16,7 @@ main <- function() {
   cat("🔬 Starting metadata validation workflow\n\n")
 
   # 1. Load schema
-  cat("Loading schema from OmicsMLRepoCuration...\n")
+  cat("Loading schema from local data dictionary...\n")
   schema <- load_validation_schema()
   cat("✓ Schema loaded successfully\n\n")
 

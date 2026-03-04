@@ -1,11 +1,31 @@
 #' @title Load Validation Schema
-#' @description Load the metadata schema from OmicsMLRepoCuration package
+#' @description Load a \code{*_data_dictionary.csv} from a package's
+#'   \code{inst/extdata} and convert it to a validation schema via
+#'   \code{\link[OmicsMLRepoCuration]{table_to_yaml_schema}}.
+#' @param package Package whose \code{inst/extdata} contains the data
+#'   dictionary CSV.
 #' @return List containing the loaded schema
 #' @export
-load_validation_schema <- function() {
-  schema_file <- system.file("schema", "cmd_data_dictionary.yaml",
-                            package = "OmicsMLRepoCuration")
-  OmicsMLRepoCuration::load_metadata_schema(schema_file)
+load_validation_schema <- function(package = "curatedMetagenomicDataCuration") {
+  dict_file <- ""
+  # First try local dev tree (inst/extdata/)
+  local_dir <- here::here("inst", "extdata")
+  if (dir.exists(local_dir)) {
+    hits <- list.files(local_dir, pattern = "_data_dictionary\\.csv$",
+                       full.names = TRUE)
+    if (length(hits) > 0) dict_file <- hits[1]
+  }
+  # Fallback to the installed package
+  if (!nzchar(dict_file) || !file.exists(dict_file)) {
+    pkg_dir <- system.file("extdata", package = package)
+    hits <- list.files(pkg_dir, pattern = "_data_dictionary\\.csv$",
+                       full.names = TRUE)
+    if (length(hits) == 0)
+      stop("No *_data_dictionary.csv found in package '", package, "'")
+    dict_file <- hits[1]
+  }
+  schema_table <- read.csv(dict_file, stringsAsFactors = FALSE)
+  OmicsMLRepoCuration::table_to_yaml_schema(schema_table)
 }
 
 #' @title Find Metadata Files
