@@ -4,14 +4,14 @@
 \alias{find_metadata_files}
 \title{Find Metadata Files}
 \usage{
-find_metadata_files(path = "inst/harmonized/")
+find_metadata_files(path = "inst/curated/")
 }
 \arguments{
-\item{path}{Base path to search (default: "inst/harmonized/")}
+\item{path}{Base path to search (default: "inst/curated/")}
 }
 \value{
 Character vector of file paths
 }
 \description{
-Find all *_sample.tsv files in harmonized directory
+Find all *_sample.tsv files in curated directory
 }

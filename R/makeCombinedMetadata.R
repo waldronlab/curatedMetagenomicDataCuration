@@ -1,7 +1,7 @@
 #' Make a combined metadata table from individual TSVs
 #'
-#' Reads all harmonized sample metadata TSV files from
-#' \code{inst/harmonized/} and combines them into a single
+#' Reads all curated sample metadata TSV files from
+#' \code{inst/curated/} and combines them into a single
 #' \code{data.table}. A \code{dataset_name} column is added to each
 #' table, derived from the filename (e.g. \code{StudyA_2021_sample.tsv}
 #' becomes \code{StudyA_2021}).
@@ -20,7 +20,7 @@
 #' @export
 makeCombinedMetadata <- function() {
   tsv_files <- list.files(
-    system.file("harmonized", package = "curatedMetagenomicDataCuration"),
+    system.file("curated", package = "curatedMetagenomicDataCuration"),
     recursive = TRUE,
     pattern = "_sample\\.tsv$",
     full.names = TRUE

@@ -5,7 +5,7 @@ test_that("load_validation_schema works", {
 })
 
 test_that("find_metadata_files finds TSV files", {
-  skip_if_not(dir.exists("../../inst/harmonized"), "inst/harmonized directory not found")
+  skip_if_not(dir.exists("../../inst/curated"), "inst/curated directory not found")
   files <- find_metadata_files()
   expect_true(length(files) > 0)
   expect_true(all(grepl("_sample\\.tsv$", files)))

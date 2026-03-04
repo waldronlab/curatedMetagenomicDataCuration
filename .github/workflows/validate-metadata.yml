@@ -28,14 +28,14 @@ on:
       - master
       - main
     paths:
-      - 'inst/harmonized/**/*.tsv'
+      - 'inst/curated/**/*.tsv'
       - 'docs/**'
       - '.github/workflows/validate-metadata.yml'
-  
+
   # Validate on pull requests
   pull_request:
     paths:
-      - 'inst/harmonized/**/*.tsv'
+      - 'inst/curated/**/*.tsv'
   
   # Run daily at 2 AM UTC to catch upstream schema changes
   schedule:
@@ -120,7 +120,7 @@ jobs:
       - name: Find all metadata files
         id: find_files
         run: |
-          FILES=$(find inst/harmonized -name "*_sample.tsv" -type f)
+          FILES=$(find inst/curated -name "*_sample.tsv" -type f)
           COUNT=$(echo "$FILES" | wc -l)
           echo "count=$COUNT" >> $GITHUB_OUTPUT
           echo "Found $COUNT metadata files to validate"

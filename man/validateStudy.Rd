@@ -2,13 +2,13 @@
 % Please edit documentation in R/workflow_validation_helpers.R
 \name{validateStudy}
 \alias{validateStudy}
-\title{Validate a single study's harmonized metadata}
+\title{Validate a single study's curated metadata}
 \usage{
 validateStudy(study, verbose = TRUE)
 }
 \arguments{
 \item{study}{A study name (e.g. \code{"LeeKA_2022"}) to look up in the
-package's \code{inst/harmonized/} directory, or a full path to a
+package's \code{inst/curated/} directory, or a full path to a
 \code{*_sample.tsv} file.}
 
 \item{verbose}{Logical. If \code{TRUE} (default), print errors and warnings
@@ -34,7 +34,7 @@ readable summary to the console.
 }
 \examples{
 \dontrun{
-# By study name (looks up inst/harmonized/LeeKA_2022/LeeKA_2022_sample.tsv)
+# By study name (looks up inst/curated/LeeKA_2022/LeeKA_2022_sample.tsv)
 validateStudy("LeeKA_2022")
 
 # By explicit file path

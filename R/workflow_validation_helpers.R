@@ -9,11 +9,11 @@ load_validation_schema <- function() {
 }
 
 #' @title Find Metadata Files
-#' @description Find all *_sample.tsv files in harmonized directory
-#' @param path Base path to search (default: "inst/harmonized/")
+#' @description Find all *_sample.tsv files in curated directory
+#' @param path Base path to search (default: "inst/curated/")
 #' @return Character vector of file paths
 #' @export
-find_metadata_files <- function(path = "inst/harmonized/") {
+find_metadata_files <- function(path = "inst/curated/") {
   list.files(path, pattern = "_sample\\.tsv$",
              full.names = TRUE, recursive = TRUE)
 }
@@ -55,7 +55,7 @@ validate_single_study <- function(file, schema) {
   })
 }
 
-#' Validate a single study's harmonized metadata
+#' Validate a single study's curated metadata
 #'
 #' A user-friendly wrapper around the internal validation pipeline.
 #' Accepts a study name (e.g. \code{"LeeKA_2022"}) or a direct path to a
@@ -63,7 +63,7 @@ validate_single_study <- function(file, schema) {
 #' readable summary to the console.
 #'
 #' @param study A study name (e.g. \code{"LeeKA_2022"}) to look up in the
-#'   package's \code{inst/harmonized/} directory, or a full path to a
+#'   package's \code{inst/curated/} directory, or a full path to a
 #'   \code{*_sample.tsv} file.
 #' @param verbose Logical. If \code{TRUE} (default), print errors and warnings
 #'   in full after the summary header.
@@ -81,7 +81,7 @@ validate_single_study <- function(file, schema) {
 #'
 #' @examples
 #' \dontrun{
-#' # By study name (looks up inst/harmonized/LeeKA_2022/LeeKA_2022_sample.tsv)
+#' # By study name (looks up inst/curated/LeeKA_2022/LeeKA_2022_sample.tsv)
 #' validateStudy("LeeKA_2022")
 #'
 #' # By explicit file path
@@ -94,13 +94,13 @@ validateStudy <- function(study, verbose = TRUE) {
   if (file.exists(study)) {
     file <- study
   } else {
-    # Treat `study` as a study name; look it up in inst/harmonized/
-    harmonized_dir <- system.file("harmonized", package = "curatedMetagenomicDataCuration")
-    if (!nzchar(harmonized_dir)) {
+    # Treat `study` as a study name; look it up in inst/curated/
+    curated_dir <- system.file("curated", package = "curatedMetagenomicDataCuration")
+    if (!nzchar(curated_dir)) {
       # Fall back to working-directory layout (development use)
-      harmonized_dir <- file.path("inst", "harmonized")
+      curated_dir <- file.path("inst", "curated")
     }
-    file <- file.path(harmonized_dir, study, paste0(study, "_sample.tsv"))
+    file <- file.path(curated_dir, study, paste0(study, "_sample.tsv"))
     if (!file.exists(file)) {
       stop(
         "Could not find metadata file for study '", study, "'.\n",
