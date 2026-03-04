@@ -1,6 +1,13 @@
 ### cMD_data_dictionary.csv
-The data dictionary for cMD4.
+The most up-to-date data dictionary/schema for curatedMetagenomicDataCuration. 
+Validation is done based on this dictionary/schema.
+
 
 ### cMD_curated_metadata_release.csv
-The curated/harmonized version of cMD3 metadata, following the 
-`cMD_data_dictionary.csv` in this directory. 
+The curated metadata, following the newest schema (`cMD_data_dictionary.csv`) 
+in this directory. 
+
+
+### sampleMetadata.csv
+The curated sample-level metadata available through cMD3 package. This metadata
+is following the cMD3 data schema (before harmonization). 
