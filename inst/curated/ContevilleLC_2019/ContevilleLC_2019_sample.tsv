@@ -1,4 +1,4 @@
-study_name	sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_category	gender	country	location	non_westernized	lifestyle	sequencing_platform	DNA_extraction_kit	PMID	number_reads	number_bases	minimum_read_length	median_read_length	NCBI_accession	curator
+study_name	sample_id	subject_id	body_site	antibiotics_current_use	study_condition	disease	age	age_group	sex	country	location	non_westernized	lifestyle	sequencing_platform	dna_extraction_kit	pmid	number_reads	number_bases	minimum_read_length	median_read_length	ncbi_accession	curator
 ContevilleLC_2019	Y1	Y1	feces	No	control	healthy	NA	senior	NA	BRA	Amazon	yes	Hunter-gatherer	IlluminaHiSeq	MPBio	31417531	10854444	2724604317	60	261	SRR8732220	Aitor_Blanco_Miguez
 ContevilleLC_2019	Y2	Y2	feces	No	control	healthy	NA	senior	NA	BRA	Amazon	yes	Hunter-gatherer	IlluminaHiSeq	MPBio	31417531	5569888	1836490636	60	383	SRR8732219	Aitor_Blanco_Miguez
 ContevilleLC_2019	Y3	Y3	feces	No	control	healthy	NA	senior	NA	BRA	Amazon	yes	Hunter-gatherer	IlluminaHiSeq	MPBio	31417531	4860926	1218444004	60	261	SRR8732222	Aitor_Blanco_Miguez
