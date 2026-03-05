@@ -48,7 +48,10 @@ validate_single_study <- function(file, schema) {
   study_name <- basename(dirname(file))
 
   tryCatch({
-    data <- read.delim(file, stringsAsFactors = FALSE, check.names = FALSE)
+    first_line <- readLines(file, n = 1L)
+    sep <- if (grepl("\t", first_line)) "\t" else ","
+    data <- read.delim(file, sep = sep, stringsAsFactors = FALSE,
+                       check.names = FALSE)
     result <- OmicsMLRepoCuration::validate_data_against_schema(data, schema)
 
     list(
