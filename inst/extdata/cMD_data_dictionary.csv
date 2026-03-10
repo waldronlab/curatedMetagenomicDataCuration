@@ -4,7 +4,7 @@
 "age_min","double","non-unique","optional",FALSE,"Minimum possible age. For samples only with 'age_group' information, this represents the definition of a given age group. For specific age information, 'age_min' and 'age_max' are identical.","[0-9]+\.?[0-9]*",NA,NA,NA,NA,NA,"regexp"
 "age_max","double","non-unique","optional",FALSE,"Maximum possible age. For samples only with 'age_group' information, this represents the definition of a given age group. For specific age information, 'age_min' and 'age_max' are identical.","[0-9]+\.?[0-9]*",NA,NA,NA,NA,NA,"regexp"
 "age_unit","character","non-unique","optional",FALSE,"Unit of the subject's age specified under 'age' column","Day|Week|Month|Year","NCIT:C25301|NCIT:C29844|NCIT:C29846|NCIT:C29848",NA,NA,NA,NA,"static_enum"
-"age_year","double","non-unique","optional",FALSE,"Age in year","[0-9]+\.?[0-9]*",NA,NA,NA,NA,NA,"regexp"
+"age_years","double","non-unique","optional",FALSE,"Age in years","[0-9]+\.?[0-9]*",NA,NA,NA,NA,NA,"regexp"
 "ancestry","character","non-unique","optional",FALSE,"Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data (children of HANCESTRO:0004)",NA,NA,"HANCESTRO:0004","children",NA,NA,"dynamic_enum"
 "ancestry_details","character","non-unique","optional",TRUE,"Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data (descendants of `ancestry`)",NA,NA,"HANCESTRO:0004","descendant",";",NA,"dynamic_enum"
 "antibiotics_current_use","character","non-unique","optional",FALSE,"Antibiotics current usage.  `Yes` for currently using and `No` for not using","Yes|No",NA,NA,NA,NA,NA,"binary"
