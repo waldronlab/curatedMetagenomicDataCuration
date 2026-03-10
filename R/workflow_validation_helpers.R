@@ -9,7 +9,7 @@
 load_validation_schema <- function(package = "curatedMetagenomicDataCuration") {
   dict_file <- ""
   # First try local dev tree (inst/extdata/)
-  local_dir <- here::here("inst", "extdata")
+  local_dir <- file.path("inst", "extdata")
   if (dir.exists(local_dir)) {
     hits <- list.files(local_dir, pattern = "_data_dictionary\\.csv$",
                        full.names = TRUE)
