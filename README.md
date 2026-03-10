@@ -3,11 +3,14 @@
 # Curation
 ## Currently avaialble curated metadata
 We are actively adding new curated microbiome metadata into curatedMetagenomicData.
-You can check currently avialable sample-level metadata using the script below.
+You can check currently available sample-level metadata using the script below.
 
 ```
-meta <- curatedMetagenomicDataCuration::makeCombinedMetadata()
-meta
+## Complete studies
+harmonized_meta <- curatedMetagenomicDataCuration::makeCombinedMetadata()
+
+## Both complete and under-harmonization studies
+all_meta <- curatedMetagenomicDataCuration::makeCombinedMetadata(TRUE)
 ```
 
 You can review the high-level details of them in [this page](https://waldronlab.io/curatedMetagenomicDataCuration/).
