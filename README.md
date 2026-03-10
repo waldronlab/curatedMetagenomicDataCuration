@@ -22,8 +22,8 @@ principle. To help you understand this change, we linked the metadata tables
 for 93 studies in the prvious schema (`cMD3 version`) and in the updated 
 schema (`cMD4 version`).
 
-+ [cMD3 version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/sampleMetadata.csv)
-+ [cMD4 version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_curated_metadata_release.csv)
++ [cMD3 version](https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/sampleMetadata.csv)
++ [cMD4 version](https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_curated_metadata_release.csv)
 
 
 # Local validation
