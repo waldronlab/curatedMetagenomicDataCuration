@@ -1,6 +1,34 @@
 [![DOI](https://zenodo.org/badge/95220777.svg)](https://doi.org/10.5281/zenodo.17498347)
 
-# Quick Start
+# Curation
+## Currently avaialble curated metadata
+We are actively adding new curated microbiome metadata into curatedMetagenomicData.
+You can check currently avialable sample-level metadata using the script below.
+
+```
+meta <- curatedMetagenomicDataCuration::makeCombinedMetadata()
+meta
+```
+
+You can review the high-level details of them in [this page](https://waldronlab.io/curatedMetagenomicDataCuration/).
+
+
+## Schema updating
+We are implementing new metadata schema that is more compliant to FAIR 
+principle. To help you understand this change, we linked the metadata tables 
+for 93 studies in the prvious schema (`cMD3 version`) and in the updated 
+schema (`cMD4 version`).
+
++ [cMD3 version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/sampleMetadata.csv)
++ [cMD4 version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_curated_metadata_release.csv)
+
+
+# Local validation
+```
+Rscript R/scripts/validate_workflow.R
+```
+
+# To contribute
 
 This package orchestrate cMD metadata curation processes, including 
 initiation, status check, and deploy. To contribute a new data to cMD,
@@ -29,17 +57,8 @@ validateStudy("/path/to/your/metadata.tsv")
 ```
 
 [data dictionary]: https://github.com/waldronlab/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_data_dictionary.csv
-[already curated studies]: https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/harmonized
+[already curated studies]: https://github.com/waldronlab/curatedMetagenomicDataCuration/tree/master/inst/curated
 
-
-# Announcement
-Starting from the upcoming cMD4 release (expected in Spring 2026), we are 
-implementing new metadata schema. To help you understand this change, here 
-are the metadata tables for 93 cMD3 studies following the current and new 
-metadata schema.
-
-+ [cMD3 version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/sampleMetadata.csv)
-+ [cMD4 version](https://github.com/shbrief/curatedMetagenomicDataCuration/blob/master/inst/extdata/cMD_curated_metadata_release.csv)
 
 
 # More complete introduction
