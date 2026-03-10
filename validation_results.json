@@ -1,58 +1,78 @@
 {
   "status": "FAIL",
   "summary": {
-    "total_files": 93,
-    "total_errors": 99,
-    "total_warnings": 111,
-    "files_with_issues": 93
+    "total_files": 130,
+    "total_errors": 73,
+    "total_warnings": 38,
+    "files_with_issues": 57
   },
   "stats": {
-    "total_studies": 93,
-    "total_samples": 22588,
+    "total_studies": 130,
+    "total_samples": 31742,
     "distributions": {
       "age_group": {
         "top": [
           {
             "name": "Adult",
-            "count": 13381
+            "count": 16899
           },
           {
-            "name": "Infant",
-            "count": 3426
+            "name": "adult",
+            "count": 4498
           },
           {
             "name": "Elderly",
-            "count": 1975
+            "count": 3146
           },
           {
-            "name": "Adolescent",
-            "count": 714
+            "name": "Newborn",
+            "count": 1852
+          },
+          {
+            "name": "Infant",
+            "count": 1619
+          },
+          {
+            "name": "senior",
+            "count": 1346
           },
           {
             "name": "Child",
-            "count": 544
+            "count": 990
           },
           {
-            "name": "Not applicable",
-            "count": 1
+            "name": "Adolescent",
+            "count": 832
+          },
+          {
+            "name": "child",
+            "count": 168
+          },
+          {
+            "name": "schoolage",
+            "count": 124
           }
         ],
-        "total_distinct": 6,
-        "total_count": 20041
+        "total_distinct": 12,
+        "total_count": 31556
       },
       "body_site": {
         "top": [
           {
             "name": "feces",
-            "count": 18596
+            "count": 29343
           },
           {
             "name": "oral cavity",
-            "count": 744
+            "count": 1242
           },
           {
             "name": "skin epidermis",
             "count": 504
+          },
+          {
+            "name": "median vaginal canal",
+            "count": 258
           },
           {
             "name": "vagina",
@@ -63,68 +83,72 @@
             "count": 93
           },
           {
+            "name": "endocervix",
+            "count": 92
+          },
+          {
             "name": "milk",
             "count": 8
           }
         ],
-        "total_distinct": 6,
-        "total_count": 20041
+        "total_distinct": 8,
+        "total_count": 31636
       },
       "published_year": {
         "top": [
+          {
+            "name": "2022",
+            "count": 5877
+          },
           {
             "name": "2016",
             "count": 4068
           },
           {
             "name": "2019",
-            "count": 2836
-          },
-          {
-            "name": "2018",
-            "count": 2343
+            "count": 2851
           },
           {
             "name": "2017",
-            "count": 2301
+            "count": 2591
+          },
+          {
+            "name": "2018",
+            "count": 2400
           },
           {
             "name": "2015",
-            "count": 2032
+            "count": 2264
+          },
+          {
+            "name": "2021",
+            "count": 2089
           },
           {
             "name": "2014",
             "count": 1340
           },
           {
+            "name": "2020",
+            "count": 1182
+          },
+          {
             "name": "2012",
             "count": 1111
-          },
-          {
-            "name": "2021",
-            "count": 1098
-          },
-          {
-            "name": "2020",
-            "count": 514
-          },
-          {
-            "name": "2013",
-            "count": 479
           }
         ],
-        "total_distinct": 11,
-        "total_count": 18452
+        "total_distinct": 14,
+        "total_count": 27082
       },
       "country": {
         "top": [
           {
             "name": "United States",
-            "count": 5145
+            "count": 5631
           },
           {
             "name": "United Kingdom",
-            "count": 2743
+            "count": 3087
           },
           {
             "name": "Netherlands",
@@ -132,35 +156,35 @@
           },
           {
             "name": "China",
-            "count": 1673
+            "count": 1870
           },
           {
-            "name": "Israel",
-            "count": 900
+            "name": "USA",
+            "count": 1686
           },
           {
             "name": "Denmark",
-            "count": 787
+            "count": 1301
           },
           {
-            "name": "Italy",
-            "count": 740
+            "name": "CHN",
+            "count": 1192
           },
           {
-            "name": "Japan",
-            "count": 696
+            "name": "ARG",
+            "count": 1117
           },
           {
-            "name": "Finland",
-            "count": 652
+            "name": "Germany",
+            "count": 988
           },
           {
-            "name": "Sweden",
-            "count": 600
+            "name": "France",
+            "count": 915
           }
         ],
-        "total_distinct": 44,
-        "total_count": 20212
+        "total_distinct": 83,
+        "total_count": 31787
       },
       "ancestry": {
         "top": [
@@ -200,57 +224,57 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 13986
+            "count": 15446
+          },
+          {
+            "name": "control",
+            "count": 3344
           },
           {
             "name": "Inflammatory Bowel Disease",
-            "count": 1850
+            "count": 2107
+          },
+          {
+            "name": "MS",
+            "count": 1591
           },
           {
             "name": "Crohn Disease",
-            "count": 1062
+            "count": 1208
+          },
+          {
+            "name": "Type 2 Diabetes Mellitus",
+            "count": 1206
           },
           {
             "name": "Ulcerative Colitis",
-            "count": 763
+            "count": 860
           },
           {
             "name": "Colorectal Carcinoma",
             "count": 701
           },
           {
-            "name": "Preterm Birth",
-            "count": 448
+            "name": "Metabolic Syndrome",
+            "count": 681
           },
           {
-            "name": "Type 2 Diabetes Mellitus",
-            "count": 405
-          },
-          {
-            "name": "Melanoma",
-            "count": 315
-          },
-          {
-            "name": "Glucose Intolerance",
-            "count": 288
-          },
-          {
-            "name": "Hypertension",
-            "count": 261
+            "name": "Parkinson disease",
+            "count": 648
           }
         ],
-        "total_distinct": 85,
-        "total_count": 23483
+        "total_distinct": 144,
+        "total_count": 36286
       },
       "sex": {
         "top": [
           {
-            "name": "Male",
-            "count": 9289
+            "name": "Female",
+            "count": 14882
           },
           {
-            "name": "Female",
-            "count": 9163
+            "name": "Male",
+            "count": 14205
           },
           {
             "name": "Not applicable",
@@ -258,1069 +282,665 @@
           }
         ],
         "total_distinct": 3,
-        "total_count": 18947
+        "total_count": 29582
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-03-10T03:30:05Z",
-    "trigger": "push",
+    "timestamp": "2026-03-10T04:22:05Z",
+    "trigger": "workflow_dispatch",
     "branch": "master",
     "schema_commit": "3e11ba33521de720a0d6ac53445b968e2b7c2488",
     "schema_commit_short": "3e11ba3",
-    "run_id": "22422679150"
+    "run_id": "22886935149"
   },
   "studies_with_issues": [
     {
-      "name": "AsnicarF_2017",
-      "file": "inst/harmonized//AsnicarF_2017/AsnicarF_2017_sample.tsv",
-      "rows": 24,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "AsnicarF_2021",
-      "file": "inst/harmonized//AsnicarF_2021/AsnicarF_2021_sample.tsv",
-      "rows": 1098,
-      "cols": 39,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BackhedF_2015",
-      "file": "inst/harmonized//BackhedF_2015/BackhedF_2015_sample.tsv",
-      "rows": 400,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BedarfJR_2017",
-      "file": "inst/harmonized//BedarfJR_2017/BedarfJR_2017_sample.tsv",
-      "rows": 59,
+      "name": "ArtachoA_2021",
+      "file": "inst/curated//ArtachoA_2021/ArtachoA_2021_sample.tsv",
+      "rows": 69,
       "cols": 34,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Bengtsson-PalmeJ_2015",
-      "file": "inst/harmonized//Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_sample.tsv",
-      "rows": 70,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BritoIL_2016",
-      "file": "inst/harmonized//BritoIL_2016/BritoIL_2016_sample.tsv",
-      "rows": 312,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BrooksB_2017",
-      "file": "inst/harmonized//BrooksB_2017/BrooksB_2017_sample.tsv",
-      "rows": 408,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Castro-NallarE_2015",
-      "file": "inst/harmonized//Castro-NallarE_2015/Castro-NallarE_2015_sample.tsv",
-      "rows": 32,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ChengpingW_2017",
-      "file": "inst/harmonized//ChengpingW_2017/ChengpingW_2017_sample.tsv",
-      "rows": 97,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ChngKR_2016",
-      "file": "inst/harmonized//ChngKR_2016/ChngKR_2016_sample.tsv",
-      "rows": 78,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ChuDM_2017",
-      "file": "inst/harmonized//ChuDM_2017/ChuDM_2017_sample.tsv",
-      "rows": 86,
-      "cols": 54,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "CosteaPI_2017",
-      "file": "inst/harmonized//CosteaPI_2017/CosteaPI_2017_sample.tsv",
-      "rows": 279,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "DavidLA_2015",
-      "file": "inst/harmonized//DavidLA_2015/DavidLA_2015_sample.tsv",
-      "rows": 47,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "DeFilippisF_2019",
-      "file": "inst/harmonized//DeFilippisF_2019/DeFilippisF_2019_sample.tsv",
-      "rows": 97,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "DhakanDB_2019",
-      "file": "inst/harmonized//DhakanDB_2019/DhakanDB_2019_sample.tsv",
-      "rows": 110,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "FengQ_2015",
-      "file": "inst/harmonized//FengQ_2015/FengQ_2015_sample.tsv",
-      "rows": 154,
-      "cols": 41,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, hscrp, ESR, anti_ccp_antibody, rheumatoid_factor, nationality, responsive_to_treatment, prescribed_treatment, DAS28_baseline, DAS28_t4, tjc, sjc"
       ],
       "warnings": [
-        "Field 'dietary_restriction' has 6 invalid values: . Allowed values: omnivore, low_gluten_diet, high_gluten_diet, vegetarian, vegan"
+        "Field 'age_group' has 67 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "FerrettiP_2018",
-      "file": "inst/harmonized//FerrettiP_2018/FerrettiP_2018_sample.tsv",
-      "rows": 214,
-      "cols": 36,
+      "name": "AverinaOV_2020",
+      "file": "inst/curated//AverinaOV_2020/AverinaOV_2020_sample.tsv",
+      "rows": 78,
+      "cols": 33,
       "errors": [
-        "Columns not covered by schema: body_site_details_ontology_term_id, age_max, age_min, package, last_updated"
+        "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
     },
     {
-      "name": "FrankelAE_2017",
-      "file": "inst/harmonized//FrankelAE_2017/FrankelAE_2017_sample.tsv",
-      "rows": 39,
+      "name": "BaiX_2021",
+      "file": "inst/curated//BaiX_2021/BaiX_2021_sample.tsv",
+      "rows": 24,
+      "cols": 26,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, ART_treatment_duration, HIV_transmission_mode, CD4_cell_count, CD4_nadir"
+      ],
+      "warnings": [
+        "Field 'age_group' has 24 invalid values: adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "BoktorJC_2023",
+      "file": "inst/curated//BoktorJC_2023/BoktorJC_2023_sample.tsv",
+      "rows": 227,
+      "cols": 33,
+      "errors": [
+        "Columns not covered by schema: feces_phenotype_metric, (uncurated)having_pets, (uncurated)caffeine_consumption"
+      ],
+      "warnings": [
+        "Field 'dna_extraction_kit' has 227 invalid values: Qiagen MagAttract PowerSoil gDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
+      ]
+    },
+    {
+      "name": "BommanaS_2023",
+      "file": "inst/curated//BommanaS_2023/BommanaS_2023_sample.tsv",
+      "rows": 350,
+      "cols": 21,
+      "errors": [
+        "Missing required fields: median_read_length, minimum_read_length, number_bases, number_reads",
+        "Columns not covered by schema: n_of_bases, n_of_reads, min_read_len, median_read_len"
+      ],
+      "warnings": [
+        "Field 'body_site' has 350 invalid values: median vaginal canal, endocervix. Allowed values: feces, oral cavity, skin epidermis, vagina, nasal cavity, milk"
+      ]
+    },
+    {
+      "name": "ChengpingW_2017",
+      "file": "inst/curated//ChengpingW_2017/ChengpingW_2017_sample.tsv",
+      "rows": 97,
       "cols": 37,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Columns not covered by schema: biomarker"
       ],
       "warnings": []
+    },
+    {
+      "name": "ContevilleLC_2019",
+      "file": "inst/curated//ContevilleLC_2019/ContevilleLC_2019_sample.tsv",
+      "rows": 15,
+      "cols": 23,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized"
+      ],
+      "warnings": [
+        "Field 'age_group' has 15 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "FanY_2023",
+      "file": "inst/curated//FanY_2023/FanY_2023_sample.tsv",
+      "rows": 147,
+      "cols": 30,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, hdl, ldl, fasting_insulin, fasting_glucose, creatinine, hscrp"
+      ],
+      "warnings": [
+        "Field 'age_group' has 147 invalid values: schoolage, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "FengQ_2015",
+      "file": "inst/curated//FengQ_2015/FengQ_2015_sample.tsv",
+      "rows": 154,
+      "cols": 41,
+      "errors": [],
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
+        "Field 'dietary_restriction' has 6 invalid values: . Allowed values: omnivore, low_gluten, high_gluten, gluten_free, vegetarian, vegan, pescatarian, high_fiber, low_fiber, paleo, equal_protein_fat_carbs, high_complex_carbs"
+      ]
     },
     {
       "name": "GhensiP_2019",
-      "file": "inst/harmonized//GhensiP_2019/GhensiP_2019_sample.tsv",
+      "file": "inst/curated//GhensiP_2019/GhensiP_2019_sample.tsv",
       "rows": 113,
-      "cols": 1,
+      "cols": 37,
       "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition",
-        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,body_site_details,body_site_details_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,curator,disease,disease_details,disease_details_ontology_term_id,disease_ontology_term_id,median_read_length,minimum_read_length,ncbi_accession,number_bases,number_reads,pmid,probing_pocket_depth,probing_pocket_depth_value,probing_pocket_depth_ontology_term_id,sequencing_platform,smoker,smoker_ontology_term_id,westernized,package,last_updated"
+        "Columns not covered by schema: package, last_updated"
       ],
       "warnings": []
     },
     {
-      "name": "GopalakrishnanV_2018",
-      "file": "inst/harmonized//GopalakrishnanV_2018/GopalakrishnanV_2018_sample.tsv",
-      "rows": 25,
-      "cols": 28,
+      "name": "GunjurA_2024",
+      "file": "inst/curated//GunjurA_2024/GunjurA_2024_sample.tsv",
+      "rows": 106,
+      "cols": 32,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Missing required fields: body_site, control, target_condition",
+        "Columns not covered by schema: treatments, ECOG Performance Status, Tumor_Size_measurement, Neutrophil_to_Lymphocyte_Ratio_Measurement, (uncurated)platelets, Albumin_in_g/dL, Lactate_Dehydrogenase_measurement_in_U/L, concentration"
       ],
-      "warnings": []
-    },
-    {
-      "name": "GuptaA_2019",
-      "file": "inst/harmonized//GuptaA_2019/GuptaA_2019_sample.tsv",
-      "rows": 60,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
+      "warnings": [
+        "Field 'dna_extraction_kit' has 106 invalid values: FastDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
+      ]
     },
     {
       "name": "HallAB_2017",
-      "file": "inst/harmonized//HallAB_2017/HallAB_2017_sample.tsv",
+      "file": "inst/curated//HallAB_2017/HallAB_2017_sample.tsv",
       "rows": 259,
-      "cols": 1,
+      "cols": 35,
       "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition",
-        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,curator,days_from_first_collection,disease,disease_ontology_term_id,dna_extraction_kit,feces_phenotype,feces_phenotype_value,feces_phenotype_ontology_term_id,location,median_read_length,minimum_read_length,ncbi_accession,number_bases,number_reads,pmid,sequencing_platform,uncurated_metadata,westernized,package,last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "HanniganGD_2017",
-      "file": "inst/harmonized//HanniganGD_2017/HanniganGD_2017_sample.tsv",
-      "rows": 81,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "HansenLBS_2018",
-      "file": "inst/harmonized//HansenLBS_2018/HansenLBS_2018_sample.tsv",
-      "rows": 207,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Columns not covered by schema: package, last_updated"
       ],
       "warnings": []
     },
     {
       "name": "Heitz-BuschartA_2016",
-      "file": "inst/harmonized//Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
+      "file": "inst/curated//Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
       "rows": 53,
       "cols": 38,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Columns not covered by schema: biomarker"
       ],
       "warnings": []
     },
     {
-      "name": "HMP_2012",
-      "file": "inst/harmonized//HMP_2012/HMP_2012_sample.tsv",
-      "rows": 748,
-      "cols": 35,
+      "name": "HeQ_2017",
+      "file": "inst/curated//HeQ_2017/HeQ_2017_sample.tsv",
+      "rows": 122,
+      "cols": 25,
       "errors": [
-        "Columns not covered by schema: body_site_details_ontology_term_id, age_max, age_min, age_years, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, disease_subtype, non_westernized"
       ],
-      "warnings": []
-    },
-    {
-      "name": "HMP_2019_ibdmdb",
-      "file": "inst/harmonized//HMP_2019_ibdmdb/HMP_2019_ibdmdb_sample.tsv",
-      "rows": 1627,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 122 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
     },
     {
       "name": "HMP_2019_t2d",
-      "file": "inst/harmonized//HMP_2019_t2d/HMP_2019_t2d_sample.tsv",
+      "file": "inst/curated//HMP_2019_t2d/HMP_2019_t2d_sample.tsv",
       "rows": 296,
       "cols": 41,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Columns not covered by schema: biomarker"
       ],
       "warnings": []
     },
     {
       "name": "IaniroG_2022",
-      "file": "inst/harmonized//IaniroG_2022/IaniroG_2022_sample.tsv",
+      "file": "inst/curated//IaniroG_2022/IaniroG_2022_sample.tsv",
       "rows": 165,
-      "cols": 31,
+      "cols": 29,
       "errors": [
-        "Missing required fields: median_read_length, minimum_read_length, number_reads, sequencing_platform",
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Missing required fields: median_read_length, minimum_read_length, number_reads, sequencing_platform"
       ],
       "warnings": []
     },
     {
       "name": "IjazUZ_2017",
-      "file": "inst/harmonized//IjazUZ_2017/IjazUZ_2017_sample.tsv",
+      "file": "inst/curated//IjazUZ_2017/IjazUZ_2017_sample.tsv",
       "rows": 94,
-      "cols": 1,
+      "cols": 43,
       "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition",
-        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,age_years,antibiotics_current_use,curator,days_from_first_collection,disease,disease_ontology_term_id,family,family_role,feces_phenotype,feces_phenotype_value,feces_phenotype_ontology_term_id,median_read_length,minimum_read_length,ncbi_accession,number_bases,number_reads,pmid,sequencing_platform,sex,sex_ontology_term_id,treatment,treatment_ontology_term_id,westernized,package,last_updated"
+        "Columns not covered by schema: V1, package, last_updated"
+      ],
+      "warnings": []
+    },
+    {
+      "name": "iMSMS_2022",
+      "file": "inst/curated//iMSMS_2022/iMSMS_2022_sample.tsv",
+      "rows": 3190,
+      "cols": 43,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, birth_control_pil, ever_smoker, born_method, diet, years_after_onset, ms_family, allergic, vitaminD_IU, children_number, roommates, recreational_drug, pets, education, occupation, collection_method"
+      ],
+      "warnings": [
+        "Field 'age_group' has 3190 invalid values: senior, adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "JacobsonDK_2021",
+      "file": "inst/curated//JacobsonDK_2021/JacobsonDK_2021_sample.tsv",
+      "rows": 90,
+      "cols": 34,
+      "errors": [
+        "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
     },
     {
       "name": "JieZ_2017",
-      "file": "inst/harmonized//JieZ_2017/JieZ_2017_sample.tsv",
+      "file": "inst/curated//JieZ_2017/JieZ_2017_sample.tsv",
       "rows": 385,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "KarlssonFH_2013",
-      "file": "inst/harmonized//KarlssonFH_2013/KarlssonFH_2013_sample.tsv",
-      "rows": 145,
       "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "KaurK_2020",
-      "file": "inst/harmonized//KaurK_2020/KaurK_2020_sample.tsv",
-      "rows": 31,
-      "cols": 45,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "KeohaneDM_2020",
-      "file": "inst/harmonized//KeohaneDM_2020/KeohaneDM_2020_sample.tsv",
-      "rows": 117,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
-      ],
+      "errors": [],
       "warnings": [
-        "Field 'smoker' row 4 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 5 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 8 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 9 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 11 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 14 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 15 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 17 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 22 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 27 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 28 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 29 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 31 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 34 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 37 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 38 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 41 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 42 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 43 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 44 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 47 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 49 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 50 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 51 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 52 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 53 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 54 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 55 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 58 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 62 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 63 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 65 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 72 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 73 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 74 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 75 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 77 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 78 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 79 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 80 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 85 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 86 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 87 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 88 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 89 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 90 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 93 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 96 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 97 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 100 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 101 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 102 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 103 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 104 has invalid values: Non-smoker (finding),Ex-smoker (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 105 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 108 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 110 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 113 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 114 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 115 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)"
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
-      "name": "KieserS_2018",
-      "file": "inst/harmonized//KieserS_2018/KieserS_2018_sample.tsv",
-      "rows": 27,
-      "cols": 33,
+      "name": "KarlssonFH_2013",
+      "file": "inst/curated//KarlssonFH_2013/KarlssonFH_2013_sample.tsv",
+      "rows": 145,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
+    },
+    {
+      "name": "KartalE_2022",
+      "file": "inst/curated//KartalE_2022/KartalE_2022_sample.tsv",
+      "rows": 329,
+      "cols": 27,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: body_subsite, study_condition, non_westernized, ever_smoker, alcohol, disease_stage"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 329 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "KeohaneDM_2020",
+      "file": "inst/curated//KeohaneDM_2020/KeohaneDM_2020_sample.tsv",
+      "rows": 117,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
     },
     {
       "name": "KosticAD_2015",
-      "file": "inst/harmonized//KosticAD_2015/KosticAD_2015_sample.tsv",
+      "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
       "cols": 40,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LassalleF_2017",
-      "file": "inst/harmonized//LassalleF_2017/LassalleF_2017_sample.tsv",
-      "rows": 23,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LeChatelierE_2013",
-      "file": "inst/harmonized//LeChatelierE_2013/LeChatelierE_2013_sample.tsv",
-      "rows": 292,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Columns not covered by schema: biomarker"
       ],
       "warnings": []
     },
     {
       "name": "LeeKA_2022",
-      "file": "inst/harmonized//LeeKA_2022/LeeKA_2022_sample.tsv",
+      "file": "inst/curated//LeeKA_2022/LeeKA_2022_sample.tsv",
       "rows": 165,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
+      "cols": 40,
+      "errors": [],
       "warnings": [
         "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+"
       ]
     },
     {
-      "name": "LifeLinesDeep_2016",
-      "file": "inst/harmonized//LifeLinesDeep_2016/LifeLinesDeep_2016_sample.tsv",
-      "rows": 1135,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
       "name": "LiJ_2014",
-      "file": "inst/harmonized//LiJ_2014/LiJ_2014_sample.tsv",
+      "file": "inst/curated//LiJ_2014/LiJ_2014_sample.tsv",
       "rows": 260,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LiJ_2017",
-      "file": "inst/harmonized//LiJ_2017/LiJ_2017_sample.tsv",
-      "rows": 196,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LiSS_2016",
-      "file": "inst/harmonized//LiSS_2016/LiSS_2016_sample.tsv",
-      "rows": 55,
       "cols": 35,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
+      "errors": [],
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
     },
     {
-      "name": "LiuW_2016",
-      "file": "inst/harmonized//LiuW_2016/LiuW_2016_sample.tsv",
-      "rows": 110,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
+      "name": "MaoL_2021",
+      "file": "inst/curated//MaoL_2021/MaoL_2021_sample.tsv",
+      "rows": 78,
+      "cols": 22,
+      "errors": [],
+      "warnings": [
+        "Field 'sequencing_platform' has 78 invalid values: BGISEQ-500. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq"
+      ]
     },
     {
-      "name": "LokmerA_2019",
-      "file": "inst/harmonized//LokmerA_2019/LokmerA_2019_sample.tsv",
-      "rows": 57,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LomanNJ_2013",
-      "file": "inst/harmonized//LomanNJ_2013/LomanNJ_2013_sample.tsv",
-      "rows": 42,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LoombaR_2017",
-      "file": "inst/harmonized//LoombaR_2017/LoombaR_2017_sample.tsv",
-      "rows": 86,
+      "name": "McCullochJA_2022",
+      "file": "inst/curated//McCullochJA_2022/McCullochJA_2022_sample.tsv",
+      "rows": 94,
       "cols": 30,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, ajcc, RECIST, ORR, PFS12, previous_therapy"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 94 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
     },
     {
-      "name": "LouisS_2016",
-      "file": "inst/harmonized//LouisS_2016/LouisS_2016_sample.tsv",
-      "rows": 92,
-      "cols": 34,
+      "name": "MejiaR_2020",
+      "file": "inst/curated//MejiaR_2020/MejiaR_2020_sample.tsv",
+      "rows": 35,
+      "cols": 33,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "MatsonV_2018",
-      "file": "inst/harmonized//MatsonV_2018/MatsonV_2018_sample.tsv",
-      "rows": 39,
-      "cols": 29,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "MehtaRS_2018",
-      "file": "inst/harmonized//MehtaRS_2018/MehtaRS_2018_sample.tsv",
-      "rows": 928,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
     },
     {
       "name": "MetaCardis_2020_a",
-      "file": "inst/harmonized//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
+      "file": "inst/curated//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
       "rows": 1831,
-      "cols": 1,
+      "cols": 38,
       "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition",
-        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,antibiotics_current_use,biomarker,bmi,curator,disease,disease_ontology_term_id,feces_phenotype,feces_phenotype_value,feces_phenotype_ontology_term_id,location,ncbi_accession,number_bases,pmid,sequencing_platform,sex,sex_ontology_term_id,smoker,smoker_ontology_term_id,treatment,treatment_ontology_term_id,westernized,package,last_updated"
+        "Missing required fields: median_read_length, minimum_read_length, number_reads",
+        "Columns not covered by schema: biomarker, package, last_updated"
       ],
       "warnings": []
     },
     {
-      "name": "NagySzakalD_2017",
-      "file": "inst/harmonized//NagySzakalD_2017/NagySzakalD_2017_sample.tsv",
-      "rows": 100,
-      "cols": 37,
+      "name": "NagataN_2022",
+      "file": "inst/curated//NagataN_2022/NagataN_2022_sample.tsv",
+      "rows": 560,
+      "cols": 22,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: body_subsite, study_condition, non_westernized"
+      ],
+      "warnings": [
+        "Field 'age_group' has 560 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "NayakRR_2021",
+      "file": "inst/curated//NayakRR_2021/NayakRR_2021_sample.tsv",
+      "rows": 34,
+      "cols": 26,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, anti_ccp_antibody, rheumatoid_factor, responsive_to_treatment"
+      ],
+      "warnings": [
+        "Field 'age_group' has 34 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
+        "Field 'dna_extraction_kit' has 34 invalid values: ZymoBIOMICS96MagBead. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
+      ]
+    },
+    {
+      "name": "OsakunorDNM_2020",
+      "file": "inst/curated//OsakunorDNM_2020/OsakunorDNM_2020_sample.tsv",
+      "rows": 113,
+      "cols": 41,
+      "errors": [
+        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, history_of_therapy, breastfeeding_duration"
       ],
       "warnings": []
     },
     {
-      "name": "NielsenHB_2014",
-      "file": "inst/harmonized//NielsenHB_2014/NielsenHB_2014_sample.tsv",
-      "rows": 396,
-      "cols": 33,
+      "name": "PallejaA_2018",
+      "file": "inst/curated//PallejaA_2018/PallejaA_2018_sample.tsv",
+      "rows": 57,
+      "cols": 23,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: antibiotics_family, study_condition, visit_number, non_westernized"
       ],
       "warnings": []
     },
     {
-      "name": "Obregon-TitoAJ_2015",
-      "file": "inst/harmonized//Obregon-TitoAJ_2015/Obregon-TitoAJ_2015_sample.tsv",
-      "rows": 58,
-      "cols": 34,
+      "name": "PernigoniN_2021",
+      "file": "inst/curated//PernigoniN_2021/PernigoniN_2021_sample.tsv",
+      "rows": 74,
+      "cols": 24,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: body_subsite, study_condition, disease_subtype, non_westernized"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 74 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
+        "Field 'dna_extraction_kit' has 74 invalid values: QIAamp_fast. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
+      ]
     },
     {
-      "name": "OhJ_2014",
-      "file": "inst/harmonized//OhJ_2014/OhJ_2014_sample.tsv",
-      "rows": 291,
-      "cols": 31,
+      "name": "PiccinnoG_2025",
+      "file": "inst/curated//PiccinnoG_2025/PiccinnoG_2025_sample.tsv",
+      "rows": 0,
+      "cols": 4,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "OlmMR_2017",
-      "file": "inst/harmonized//OlmMR_2017/OlmMR_2017_sample.tsv",
-      "rows": 45,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "PasolliE_2019",
-      "file": "inst/harmonized//PasolliE_2019/PasolliE_2019_sample.tsv",
-      "rows": 112,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "PehrssonE_2016",
-      "file": "inst/harmonized//PehrssonE_2016/PehrssonE_2016_sample.tsv",
-      "rows": 191,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "PetersBA_2019",
-      "file": "inst/harmonized//PetersBA_2019/PetersBA_2019_sample.tsv",
-      "rows": 27,
-      "cols": 43,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
+        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, sample_id, sequencing_platform, subject_id",
+        "Columns not covered by schema: doi"
       ],
       "warnings": []
     },
     {
       "name": "QinJ_2012",
-      "file": "inst/harmonized//QinJ_2012/QinJ_2012_sample.tsv",
+      "file": "inst/curated//QinJ_2012/QinJ_2012_sample.tsv",
       "rows": 363,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "QinN_2014",
-      "file": "inst/harmonized//QinN_2014/QinN_2014_sample.tsv",
-      "rows": 237,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "RampelliS_2015",
-      "file": "inst/harmonized//RampelliS_2015/RampelliS_2015_sample.tsv",
-      "rows": 38,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "RaymondF_2016",
-      "file": "inst/harmonized//RaymondF_2016/RaymondF_2016_sample.tsv",
-      "rows": 72,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "RosaBA_2018",
-      "file": "inst/harmonized//RosaBA_2018/RosaBA_2018_sample.tsv",
-      "rows": 24,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "RubelMA_2020",
-      "file": "inst/harmonized//RubelMA_2020/RubelMA_2020_sample.tsv",
-      "rows": 175,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "SankaranarayananK_2015",
-      "file": "inst/harmonized//SankaranarayananK_2015/SankaranarayananK_2015_sample.tsv",
-      "rows": 37,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "SchirmerM_2016",
-      "file": "inst/harmonized//SchirmerM_2016/SchirmerM_2016_sample.tsv",
-      "rows": 471,
-      "cols": 41,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ShaoY_2019",
-      "file": "inst/harmonized//ShaoY_2019/ShaoY_2019_sample.tsv",
-      "rows": 1644,
-      "cols": 44,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ShiB_2015",
-      "file": "inst/harmonized//ShiB_2015/ShiB_2015_sample.tsv",
-      "rows": 48,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: body_site_details_ontology_term_id, age_max, age_min, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
+      "cols": 35,
+      "errors": [],
       "warnings": [
-        "Field 'smoker' row 1 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 2 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 3 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 4 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 5 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 6 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 7 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 8 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 9 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 10 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 11 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 12 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 13 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 14 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 15 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 16 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 17 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 18 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 19 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 20 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 21 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 22 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 23 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 24 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 25 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 26 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 27 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 28 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 29 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 30 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 31 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 32 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 33 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 34 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 35 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 36 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 37 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 38 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 39 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 40 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 41 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 42 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 43 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 44 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 45 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 46 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 47 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)",
-        "Field 'smoker' row 48 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)"
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
-      "name": "SmitsSA_2017",
-      "file": "inst/harmonized//SmitsSA_2017/SmitsSA_2017_sample.tsv",
-      "rows": 40,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2016",
-      "file": "inst/harmonized//TettAJ_2016/TettAJ_2016_sample.tsv",
-      "rows": 89,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: body_site_details_ontology_term_id, age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2019_a",
-      "file": "inst/harmonized//TettAJ_2019_a/TettAJ_2019_a_sample.tsv",
-      "rows": 68,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2019_b",
-      "file": "inst/harmonized//TettAJ_2019_b/TettAJ_2019_b_sample.tsv",
-      "rows": 44,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2019_c",
-      "file": "inst/harmonized//TettAJ_2019_c/TettAJ_2019_c_sample.tsv",
-      "rows": 50,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ThomasAM_2018a",
-      "file": "inst/harmonized//ThomasAM_2018a/ThomasAM_2018a_sample.tsv",
-      "rows": 80,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ThomasAM_2018b",
-      "file": "inst/harmonized//ThomasAM_2018b/ThomasAM_2018b_sample.tsv",
-      "rows": 60,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ThomasAM_2019_c",
-      "file": "inst/harmonized//ThomasAM_2019_c/ThomasAM_2019_c_sample.tsv",
-      "rows": 80,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "VatanenT_2016",
-      "file": "inst/harmonized//VatanenT_2016/VatanenT_2016_sample.tsv",
-      "rows": 785,
+      "name": "QinN_2014",
+      "file": "inst/curated//QinN_2014/QinN_2014_sample.tsv",
+      "rows": 237,
       "cols": 40,
+      "errors": [],
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
+    },
+    {
+      "name": "Soto-GironMJ_2021",
+      "file": "inst/curated//Soto-GironMJ_2021/Soto-GironMJ_2021_sample.tsv",
+      "rows": 86,
+      "cols": 36,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, population"
       ],
       "warnings": []
     },
     {
-      "name": "VilaAV_2018",
-      "file": "inst/harmonized//VilaAV_2018/VilaAV_2018_sample.tsv",
-      "rows": 355,
-      "cols": 34,
+      "name": "SpencerCN_2021",
+      "file": "inst/curated//SpencerCN_2021/SpencerCN_2021_sample.tsv",
+      "rows": 167,
+      "cols": 29,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, diet, ORR, PFS12, previous_therapy, PFS03, PFS06"
+      ],
+      "warnings": [
+        "Field 'age_group' has 167 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "TeeMZ_2022",
+      "file": "inst/curated//TeeMZ_2022/TeeMZ_2022_sample.tsv",
+      "rows": 650,
+      "cols": 41,
+      "errors": [
+        "Columns not covered by schema: disease_subtype, population, non_westernized, remission, pregnant, lactating"
       ],
       "warnings": []
     },
     {
-      "name": "VincentC_2016",
-      "file": "inst/harmonized//VincentC_2016/VincentC_2016_sample.tsv",
-      "rows": 229,
-      "cols": 39,
+      "name": "Valles-ColomerM_2023_a",
+      "file": "inst/curated//Valles-ColomerM_2023_a/Valles-ColomerM_2023_a_sample.tsv",
+      "rows": 27,
+      "cols": 31,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+      ],
+      "warnings": [
+        "Field 'age_group' has 27 invalid values: adult, newborn, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "Valles-ColomerM_2023_b",
+      "file": "inst/curated//Valles-ColomerM_2023_b/Valles-ColomerM_2023_b_sample.tsv",
+      "rows": 27,
+      "cols": 31,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+      ],
+      "warnings": [
+        "Field 'age_group' has 27 invalid values: newborn, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "Valles-ColomerM_2023_c",
+      "file": "inst/curated//Valles-ColomerM_2023_c/Valles-ColomerM_2023_c_sample.tsv",
+      "rows": 24,
+      "cols": 31,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+      ],
+      "warnings": [
+        "Field 'age_group' has 24 invalid values: newborn, adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "Valles-ColomerM_2023_d",
+      "file": "inst/curated//Valles-ColomerM_2023_d/Valles-ColomerM_2023_d_sample.tsv",
+      "rows": 342,
+      "cols": 31,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+      ],
+      "warnings": [
+        "Field 'age_group' has 342 invalid values: adult, schoolage, child, senior, newborn. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "Valles-ColomerM_2023_e",
+      "file": "inst/curated//Valles-ColomerM_2023_e/Valles-ColomerM_2023_e_sample.tsv",
+      "rows": 104,
+      "cols": 31,
+      "errors": [
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+      ],
+      "warnings": [
+        "Field 'age_group' has 104 invalid values: newborn, child, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "WallenZD_2022",
+      "file": "inst/curated//WallenZD_2022/WallenZD_2022_sample.tsv",
+      "rows": 724,
+      "cols": 30,
+      "errors": [
+        "Columns not covered by schema: feces_phenotype_metric, cigarette_smoked_ever, (uncurated)drink_caffeinate_beverages"
       ],
       "warnings": []
     },
     {
-      "name": "VogtmannE_2016",
-      "file": "inst/harmonized//VogtmannE_2016/VogtmannE_2016_sample.tsv",
-      "rows": 110,
-      "cols": 33,
+      "name": "WenC_2017",
+      "file": "inst/curated//WenC_2017/WenC_2017_sample.tsv",
+      "rows": 168,
+      "cols": 36,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, creatinine, albumine, hscrp, ESR, wbc, rbc, blood_platelet, hemoglobinometry, ast, alt, globulin, urea_nitrogen, ASO, anti_ccp_antibody, rheumatoid_factor"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 162 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
     },
     {
-      "name": "WampachL_2018",
-      "file": "inst/harmonized//WampachL_2018/WampachL_2018_sample.tsv",
-      "rows": 63,
+      "name": "WibowoMC_2021",
+      "file": "inst/curated//WibowoMC_2021/WibowoMC_2021_sample.tsv",
+      "rows": 22,
       "cols": 37,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "WindTT_2020",
-      "file": "inst/harmonized//WindTT_2020/WindTT_2020_sample.tsv",
-      "rows": 20,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "WirbelJ_2018",
-      "file": "inst/harmonized//WirbelJ_2018/WirbelJ_2018_sample.tsv",
-      "rows": 125,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Columns not covered by schema: disease_subtype, population, non_westernized, diet"
       ],
       "warnings": []
     },
     {
       "name": "XieH_2016",
-      "file": "inst/harmonized//XieH_2016/XieH_2016_sample.tsv",
+      "file": "inst/curated//XieH_2016/XieH_2016_sample.tsv",
       "rows": 250,
-      "cols": 1,
+      "cols": 51,
       "errors": [
-        "Missing required fields: body_site, control, median_read_length, minimum_read_length, number_bases, number_reads, Sample Source ID, sequencing_platform, subject_id, target_condition",
-        "Columns not covered by schema: study_name,subject_id,Sample.Source.ID,target_condition,target_condition_ontology_term_id,control,control_ontology_term_id,country,country_ontology_term_id,body_site,body_site_ontology_term_id,age_group,age_group_ontology_term_id,age_max,age_min,age_years,antibiotics_current_use,bmi,curator,disease,disease_ontology_term_id,dna_extraction_kit,family,location,median_read_length,minimum_read_length,ncbi_accession,neonatal_delivery_procedure,neonatal_delivery_procedure_ontology_term_id,number_bases,number_reads,obgyn_lactating,obgyn_menopause,obgyn_menopause_ontology_term_id,obgyn_pregnancy,obgyn_pregnancy_ontology_term_id,pmid,sequencing_platform,sex,sex_ontology_term_id,smoker,smoker_ontology_term_id,treatment,treatment_ontology_term_id,uncurated_metadata,westernized,zigosity,package,last_updated"
+        "Columns not covered by schema: package, last_updated"
       ],
       "warnings": []
     },
     {
-      "name": "YachidaS_2019",
-      "file": "inst/harmonized//YachidaS_2019/YachidaS_2019_sample.tsv",
-      "rows": 616,
-      "cols": 34,
+      "name": "XuQ_2021",
+      "file": "inst/curated//XuQ_2021/XuQ_2021_sample.tsv",
+      "rows": 347,
+      "cols": 33,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: non_westernized, study_condition, bilirubin, creatinine, glucose, cholesterol, triglycerides, hdl, ldl, alcohol"
+      ],
+      "warnings": [
+        "Field 'age_group' has 347 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
+    },
+    {
+      "name": "YangJ_2020",
+      "file": "inst/curated//YangJ_2020/YangJ_2020_sample.tsv",
+      "rows": 193,
+      "cols": 41,
+      "errors": [
+        "Missing required fields: median_read_length, minimum_read_length, number_bases, number_reads",
+        "Columns not covered by schema: disease_location, disease_stage, non_westernized, tnm, ajcc, alt, ast, albumine, creatinine, fasting_glucose, hemoglobinometry, fobt"
       ],
       "warnings": []
     },
     {
-      "name": "YassourM_2016",
-      "file": "inst/harmonized//YassourM_2016/YassourM_2016_sample.tsv",
-      "rows": 36,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "YassourM_2018",
-      "file": "inst/harmonized//YassourM_2018/YassourM_2018_sample.tsv",
-      "rows": 271,
-      "cols": 45,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "YeZ_2018",
-      "file": "inst/harmonized//YeZ_2018/YeZ_2018_sample.tsv",
-      "rows": 65,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated, biomarker_name, biomarker_unit, biomarker_value"
-      ],
-      "warnings": []
+      "name": "YeZ_2020",
+      "file": "inst/curated//YeZ_2020/YeZ_2020_sample.tsv",
+      "rows": 119,
+      "cols": 23,
+      "errors": [],
+      "warnings": [
+        "Field 'sequencing_platform' has 119 invalid values: Illumina TruSeq. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq"
+      ]
     },
     {
       "name": "YuJ_2015",
-      "file": "inst/harmonized//YuJ_2015/YuJ_2015_sample.tsv",
+      "file": "inst/curated//YuJ_2015/YuJ_2015_sample.tsv",
       "rows": 128,
       "cols": 40,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Columns not covered by schema: biomarker"
       ],
       "warnings": []
     },
     {
-      "name": "ZeeviD_2015",
-      "file": "inst/harmonized//ZeeviD_2015/ZeeviD_2015_sample.tsv",
-      "rows": 900,
-      "cols": 37,
+      "name": "ZhangX_2015",
+      "file": "inst/curated//ZhangX_2015/ZhangX_2015_sample.tsv",
+      "rows": 232,
+      "cols": 46,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, pregnant, lactating, triglycerides, cholesterol, hdl, ldl, glucose, creatinine, hscrp, wbc, blood_platelet, hemoglobinometry, alt, anti_ccp_antibody, rheumatoid_factor, time_after_onset, CDAI, HAQ, DAS28, IGG, IGA, IGM"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 231 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
     },
     {
-      "name": "ZellerG_2014",
-      "file": "inst/harmonized//ZellerG_2014/ZellerG_2014_sample.tsv",
-      "rows": 156,
-      "cols": 36,
+      "name": "ZhouC_2020",
+      "file": "inst/curated//ZhouC_2020/ZhouC_2020_sample.tsv",
+      "rows": 130,
+      "cols": 42,
       "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, package, last_updated"
+        "Missing required fields: control, target_condition",
+        "Columns not covered by schema: study_condition, non_westernized, creatinine, hscrp, ESR, wbc, blood_platelet, hemoglobinometry, alt, urea_nitrogen, BASDAI, BASFI, years_after_onset, IGG, IGA, IGM, back_ache, HLA_B27, ASDAS_ESR, ASDAS_CRP, BASMI"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 130 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
+      ]
     },
     {
       "name": "ZhuF_2020",
-      "file": "inst/harmonized//ZhuF_2020/ZhuF_2020_sample.tsv",
+      "file": "inst/curated//ZhuF_2020/ZhuF_2020_sample.tsv",
       "rows": 171,
       "cols": 41,
-      "errors": [
-        "Columns not covered by schema: age_max, age_min, age_years, biomarker_name, biomarker_unit, biomarker_value, package, last_updated"
-      ],
+      "errors": [],
       "warnings": [
-        "Field 'smoker' row 147 has invalid values: Non-smoker (finding),Never smoked tobacco (finding). Allowed values: Smoker (finding), Non-smoker (finding), Ex-smoker (finding), Never smoked tobacco (finding)"
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     }
   ]
