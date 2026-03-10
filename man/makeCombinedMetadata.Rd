@@ -4,7 +4,12 @@
 \alias{makeCombinedMetadata}
 \title{Make a combined metadata table from individual TSVs}
 \usage{
-makeCombinedMetadata()
+makeCombinedMetadata(include_before_harmonized = FALSE)
+}
+\arguments{
+\item{include_before_harmonized}{If it is set to `TRUE`, the returned 
+table will include not-harmonized (i.e., not-covered by the schema) 
+attributes as well. Default is `FALSE`.}
 }
 \value{
 A \code{\link[data.table]{data.table}} containing sample-level
