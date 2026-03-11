@@ -58,6 +58,17 @@ test_that("generate_validation_lists builds enum lists from dictionary", {
   expect_true(length(lists$body_site) > 0)
 })
 
+test_that("generate_validation_lists includes binary corpus.type columns", {
+  lists <- generate_validation_lists(
+    dict_file = system.file("extdata", "cMD_data_dictionary.csv", package = "curatedMetagenomicDataCuration"),
+    metadata_file = system.file("extdata", "cMD_curated_metadata_release.csv", package = "curatedMetagenomicDataCuration"),
+    ols_size_threshold = 1
+  )
+
+  expect_true("antibiotics_current_use" %in% names(lists))
+  expect_equal(sort(lists$antibiotics_current_use), c("No", "Yes"))
+})
+
 test_that("create_data_entry_excel writes workbook with deterministic local inputs", {
   skip_if_not_installed("openxlsx2")
 

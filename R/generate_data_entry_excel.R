@@ -196,8 +196,8 @@ generate_validation_lists <- function(
     col_name <- dict$col.name[i]
     corpus_type <- dict$corpus.type[i]
 
-    # Skip if not an enum type
-    if (is.na(corpus_type) || !grepl("enum", corpus_type)) {
+    # Skip if not an enum or binary type
+    if (is.na(corpus_type) || (!grepl("enum", corpus_type) && corpus_type != "binary")) {
       next
     }
 
