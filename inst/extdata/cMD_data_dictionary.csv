@@ -1,6 +1,6 @@
 col.name,col.class,unique,required,multiplevalues,description,allowedvalues,static.enum,dynamic.enum,dynamic.enum.property,delimiter,separator,corpus.type,display.order,display.group
 study_name,character,non-unique,required,FALSE,Canonical study identifier (for example EinsteinA_YYYY).,[a-zA-Z-]+_[0-9]{4}|[a-zA-Z-]+_[0-9]{4}[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z0-9]+,NA,NA,NA,NA,NA,regexp,1,00 Identifiers
-subject_id,character,non-unique,required,FALSE,Unique identifier for a participant within a study.,[0-9a-zA-Z]\S+,NA,NA,NA,NA,NA,regexp,2,00 Identifiers
+subject_id,character,non-unique,required,FALSE,Unique identifier for a participant within a study. Values may be non-unique e.g. when there are repeated measures for a participant.,[0-9a-zA-Z]\S+,NA,NA,NA,NA,NA,regexp,2,00 Identifiers
 sample_id,character,unique,required,FALSE,Unique identifier for a biospecimen/sample.,[0-9a-zA-Z]\S+,NA,NA,NA,NA,NA,regexp,3,00 Identifiers
 curator,character,non-unique,optional,TRUE,Name(s) of curator(s) responsible for this entry.,NA,NA,NA,NA,;,NA,any,4,00 Identifiers
 pmid,integer,non-unique,optional,FALSE,PubMed identifier of the primary publication for the study.,[0-9]{8},NA,NA,NA,NA,NA,integer,5,00 Identifiers
