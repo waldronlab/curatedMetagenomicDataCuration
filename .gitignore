@@ -35,3 +35,6 @@ vignettes/*.pdf
 
 *.dcf
 inst/doc
+*.html
+R/temp/*
+*.yml.*
