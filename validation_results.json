@@ -3,7 +3,7 @@
   "summary": {
     "total_files": 130,
     "total_errors": 155,
-    "total_warnings": 38,
+    "total_warnings": 63,
     "files_with_issues": 130
   },
   "stats": {
@@ -287,12 +287,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-03-11T22:04:30Z",
+    "timestamp": "2026-03-14T00:51:55Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "52cdc8e07055be138678fa78afb42e795d06d542",
     "schema_commit_short": "52cdc8e",
-    "run_id": "22976572444"
+    "run_id": "23076519735"
   },
   "studies_with_issues": [
     {
@@ -439,11 +439,13 @@
       "name": "ChengpingW_2017",
       "file": "inst/curated//ChengpingW_2017/ChengpingW_2017_sample.tsv",
       "rows": 97,
-      "cols": 37,
+      "cols": 39,
       "errors": [
-        "Columns not covered by schema: biomarker, median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
     },
     {
       "name": "ChngKR_2016",
@@ -641,11 +643,13 @@
       "name": "Heitz-BuschartA_2016",
       "file": "inst/curated//Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
       "rows": 53,
-      "cols": 38,
+      "cols": 40,
       "errors": [
-        "Columns not covered by schema: biomarker, median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
     },
     {
       "name": "HeQ_2017",
@@ -684,11 +688,13 @@
       "name": "HMP_2019_t2d",
       "file": "inst/curated//HMP_2019_t2d/HMP_2019_t2d_sample.tsv",
       "rows": 296,
-      "cols": 41,
+      "cols": 43,
       "errors": [
-        "Columns not covered by schema: biomarker, median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
     },
     {
       "name": "IaniroG_2022",
@@ -807,11 +813,32 @@
       "name": "KosticAD_2015",
       "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
-      "cols": 40,
+      "cols": 42,
       "errors": [
-        "Columns not covered by schema: biomarker, median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
+        "Field 'biomarker_value' row 7 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 8 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 9 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 25 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 26 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 31 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 32 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 37 has value 'IAA;ICA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 38 has value 'IAA;ICA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 45 has value 'IAA;ICA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 46 has value 'IAA;ICA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 50 has value 'IAA;ICA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 51 has value 'IAA;ICA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 57 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 58 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 63 has value 'IAA;ICA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 68 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 69 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 70 has value 'IAA;GADA' not matching pattern: [0-9]+\\.?[0-9]*"
+      ]
     },
     {
       "name": "LassalleF_2017",
@@ -996,11 +1023,13 @@
       "name": "MetaCardis_2020_a",
       "file": "inst/curated//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
       "rows": 1831,
-      "cols": 38,
+      "cols": 40,
       "errors": [
-        "Columns not covered by schema: biomarker, number_bases, package, last_updated"
+        "Columns not covered by schema: number_bases, package, last_updated"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
     },
     {
       "name": "NagataN_2022",
@@ -1629,11 +1658,13 @@
       "name": "YuJ_2015",
       "file": "inst/curated//YuJ_2015/YuJ_2015_sample.tsv",
       "rows": 128,
-      "cols": 40,
+      "cols": 42,
       "errors": [
-        "Columns not covered by schema: biomarker, median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
+      ]
     },
     {
       "name": "ZeeviD_2015",
