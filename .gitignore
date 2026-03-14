@@ -1,3 +1,7 @@
+inst/extdata/cMD_data_entry_generated.xlsx
+.gitignore
+.vscode/settings.json
+
 # History files
 .Rhistory
 .Rapp.history

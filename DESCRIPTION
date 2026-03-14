@@ -36,7 +36,8 @@ Imports:
 Suggests:
     testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    openxlsx2
 Remotes:
     waldronlab/omicidxClientR
 VignetteBuilder: knitr
