@@ -2,9 +2,9 @@
   "status": "FAIL",
   "summary": {
     "total_files": 130,
-    "total_errors": 65,
+    "total_errors": 63,
     "total_warnings": 235,
-    "files_with_issues": 57
+    "files_with_issues": 56
   },
   "stats": {
     "total_studies": 130,
@@ -287,12 +287,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-03-16T17:19:43Z",
+    "timestamp": "2026-03-16T17:56:54Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "52cdc8e07055be138678fa78afb42e795d06d542",
     "schema_commit_short": "52cdc8e",
-    "run_id": "23156602398"
+    "run_id": "23158171115"
   },
   "studies_with_issues": [
     {
@@ -406,9 +406,9 @@
       "name": "GhensiP_2019",
       "file": "inst/curated//GhensiP_2019/GhensiP_2019_sample.tsv",
       "rows": 113,
-      "cols": 37,
+      "cols": 35,
       "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads, package, last_updated"
+        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
       ],
       "warnings": []
     },
@@ -429,9 +429,9 @@
       "name": "HallAB_2017",
       "file": "inst/curated//HallAB_2017/HallAB_2017_sample.tsv",
       "rows": 259,
-      "cols": 35,
+      "cols": 33,
       "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads, package, last_updated"
+        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
       ],
       "warnings": []
     },
@@ -482,9 +482,9 @@
       "name": "IjazUZ_2017",
       "file": "inst/curated//IjazUZ_2017/IjazUZ_2017_sample.tsv",
       "rows": 94,
-      "cols": 39,
+      "cols": 37,
       "errors": [
-        "Columns not covered by schema: V1, package, last_updated"
+        "Columns not covered by schema: V1"
       ],
       "warnings": []
     },
@@ -812,10 +812,8 @@
       "name": "MetaCardis_2020_a",
       "file": "inst/curated//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
       "rows": 1831,
-      "cols": 39,
-      "errors": [
-        "Columns not covered by schema: package, last_updated"
-      ],
+      "cols": 37,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
@@ -1041,16 +1039,6 @@
       "cols": 33,
       "errors": [
         "Columns not covered by schema: disease_subtype, population, non_westernized, diet"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "XieH_2016",
-      "file": "inst/curated//XieH_2016/XieH_2016_sample.tsv",
-      "rows": 250,
-      "cols": 47,
-      "errors": [
-        "Columns not covered by schema: package, last_updated"
       ],
       "warnings": []
     },
