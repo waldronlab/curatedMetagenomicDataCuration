@@ -2,9 +2,9 @@
   "status": "FAIL",
   "summary": {
     "total_files": 130,
-    "total_errors": 155,
+    "total_errors": 65,
     "total_warnings": 235,
-    "files_with_issues": 130
+    "files_with_issues": 57
   },
   "stats": {
     "total_studies": 130,
@@ -287,64 +287,34 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-03-14T01:17:39Z",
+    "timestamp": "2026-03-16T17:19:43Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "52cdc8e07055be138678fa78afb42e795d06d542",
     "schema_commit_short": "52cdc8e",
-    "run_id": "23077026503"
+    "run_id": "23156602398"
   },
   "studies_with_issues": [
     {
       "name": "ArtachoA_2021",
       "file": "inst/curated//ArtachoA_2021/ArtachoA_2021_sample.tsv",
       "rows": 69,
-      "cols": 34,
+      "cols": 30,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, hscrp, ESR, anti_ccp_antibody, rheumatoid_factor, nationality, responsive_to_treatment, prescribed_treatment, DAS28_baseline, DAS28_t4, tjc, sjc"
+        "Columns not covered by schema: study_condition, non_westernized, hscrp, ESR, anti_ccp_antibody, rheumatoid_factor, nationality, responsive_to_treatment, prescribed_treatment, DAS28_baseline, DAS28_t4, tjc, sjc"
       ],
       "warnings": [
         "Field 'age_group' has 67 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "AsnicarF_2017",
-      "file": "inst/curated//AsnicarF_2017/AsnicarF_2017_sample.tsv",
-      "rows": 24,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "AsnicarF_2021",
-      "file": "inst/curated//AsnicarF_2021/AsnicarF_2021_sample.tsv",
-      "rows": 1098,
-      "cols": 39,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "AverinaOV_2020",
       "file": "inst/curated//AverinaOV_2020/AverinaOV_2020_sample.tsv",
       "rows": 78,
-      "cols": 33,
+      "cols": 29,
       "errors": [
-        "Columns not covered by schema: disease_subtype, non_westernized, number_bases, number_reads, minimum_read_length, median_read_length"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BackhedF_2015",
-      "file": "inst/curated//BackhedF_2015/BackhedF_2015_sample.tsv",
-      "rows": 400,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
     },
@@ -352,42 +322,22 @@
       "name": "BaiX_2021",
       "file": "inst/curated//BaiX_2021/BaiX_2021_sample.tsv",
       "rows": 24,
-      "cols": 26,
+      "cols": 22,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, ART_treatment_duration, HIV_transmission_mode, CD4_cell_count, CD4_nadir"
+        "Columns not covered by schema: study_condition, non_westernized, ART_treatment_duration, HIV_transmission_mode, CD4_cell_count, CD4_nadir"
       ],
       "warnings": [
         "Field 'age_group' has 24 invalid values: adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "BedarfJR_2017",
-      "file": "inst/curated//BedarfJR_2017/BedarfJR_2017_sample.tsv",
-      "rows": 59,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Bengtsson-PalmeJ_2015",
-      "file": "inst/curated//Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_sample.tsv",
-      "rows": 70,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "BoktorJC_2023",
       "file": "inst/curated//BoktorJC_2023/BoktorJC_2023_sample.tsv",
       "rows": 227,
-      "cols": 33,
+      "cols": 29,
       "errors": [
-        "Columns not covered by schema: feces_phenotype_metric, (uncurated)having_pets, (uncurated)caffeine_consumption, number_bases, number_reads, minimum_read_length, median_read_length"
+        "Columns not covered by schema: feces_phenotype_metric, (uncurated)having_pets, (uncurated)caffeine_consumption"
       ],
       "warnings": [
         "Field 'dna_extraction_kit' has 227 invalid values: Qiagen MagAttract PowerSoil gDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
@@ -406,128 +356,36 @@
       ]
     },
     {
-      "name": "BritoIL_2016",
-      "file": "inst/curated//BritoIL_2016/BritoIL_2016_sample.tsv",
-      "rows": 312,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BrooksB_2017",
-      "file": "inst/curated//BrooksB_2017/BrooksB_2017_sample.tsv",
-      "rows": 408,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Castro-NallarE_2015",
-      "file": "inst/curated//Castro-NallarE_2015/Castro-NallarE_2015_sample.tsv",
-      "rows": 32,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "ChengpingW_2017",
       "file": "inst/curated//ChengpingW_2017/ChengpingW_2017_sample.tsv",
       "rows": 97,
-      "cols": 39,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 35,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
-      "name": "ChngKR_2016",
-      "file": "inst/curated//ChngKR_2016/ChngKR_2016_sample.tsv",
-      "rows": 78,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ChuDM_2017",
-      "file": "inst/curated//ChuDM_2017/ChuDM_2017_sample.tsv",
-      "rows": 86,
-      "cols": 54,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "ContevilleLC_2019",
       "file": "inst/curated//ContevilleLC_2019/ContevilleLC_2019_sample.tsv",
       "rows": 15,
-      "cols": 23,
+      "cols": 19,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
+        "Columns not covered by schema: study_condition, non_westernized"
       ],
       "warnings": [
         "Field 'age_group' has 15 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "CosteaPI_2017",
-      "file": "inst/curated//CosteaPI_2017/CosteaPI_2017_sample.tsv",
-      "rows": 279,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "DavidLA_2015",
-      "file": "inst/curated//DavidLA_2015/DavidLA_2015_sample.tsv",
-      "rows": 47,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "DeFilippisF_2019",
-      "file": "inst/curated//DeFilippisF_2019/DeFilippisF_2019_sample.tsv",
-      "rows": 97,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "DhakanDB_2019",
-      "file": "inst/curated//DhakanDB_2019/DhakanDB_2019_sample.tsv",
-      "rows": 110,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "FanY_2023",
       "file": "inst/curated//FanY_2023/FanY_2023_sample.tsv",
       "rows": 147,
-      "cols": 30,
+      "cols": 26,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, hdl, ldl, fasting_insulin, fasting_glucose, creatinine, hscrp"
+        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, hdl, ldl, fasting_insulin, fasting_glucose, creatinine, hscrp"
       ],
       "warnings": [
         "Field 'age_group' has 147 invalid values: schoolage, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -537,34 +395,12 @@
       "name": "FengQ_2015",
       "file": "inst/curated//FengQ_2015/FengQ_2015_sample.tsv",
       "rows": 154,
-      "cols": 41,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 37,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
         "Field 'dietary_restriction' has 6 invalid values: . Allowed values: omnivore, low_gluten, high_gluten, gluten_free, vegetarian, vegan, pescatarian, high_fiber, low_fiber, paleo, equal_protein_fat_carbs, high_complex_carbs"
       ]
-    },
-    {
-      "name": "FerrettiP_2018",
-      "file": "inst/curated//FerrettiP_2018/FerrettiP_2018_sample.tsv",
-      "rows": 214,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "FrankelAE_2017",
-      "file": "inst/curated//FrankelAE_2017/FrankelAE_2017_sample.tsv",
-      "rows": 39,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
     },
     {
       "name": "GhensiP_2019",
@@ -577,37 +413,17 @@
       "warnings": []
     },
     {
-      "name": "GopalakrishnanV_2018",
-      "file": "inst/curated//GopalakrishnanV_2018/GopalakrishnanV_2018_sample.tsv",
-      "rows": 25,
-      "cols": 26,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "GunjurA_2024",
       "file": "inst/curated//GunjurA_2024/GunjurA_2024_sample.tsv",
       "rows": 106,
-      "cols": 32,
+      "cols": 28,
       "errors": [
         "Missing required fields: target_condition, control, body_site",
-        "Columns not covered by schema: treatments, ECOG Performance Status, Tumor_Size_measurement, Neutrophil_to_Lymphocyte_Ratio_Measurement, (uncurated)platelets, Albumin_in_g/dL, Lactate_Dehydrogenase_measurement_in_U/L, concentration, number_bases, number_reads, minimum_read_length, median_read_length"
+        "Columns not covered by schema: treatments, ECOG Performance Status, Tumor_Size_measurement, Neutrophil_to_Lymphocyte_Ratio_Measurement, (uncurated)platelets, Albumin_in_g/dL, Lactate_Dehydrogenase_measurement_in_U/L, concentration"
       ],
       "warnings": [
         "Field 'dna_extraction_kit' has 106 invalid values: FastDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
       ]
-    },
-    {
-      "name": "GuptaA_2019",
-      "file": "inst/curated//GuptaA_2019/GuptaA_2019_sample.tsv",
-      "rows": 60,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
     },
     {
       "name": "HallAB_2017",
@@ -620,33 +436,11 @@
       "warnings": []
     },
     {
-      "name": "HanniganGD_2017",
-      "file": "inst/curated//HanniganGD_2017/HanniganGD_2017_sample.tsv",
-      "rows": 81,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "HansenLBS_2018",
-      "file": "inst/curated//HansenLBS_2018/HansenLBS_2018_sample.tsv",
-      "rows": 207,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "Heitz-BuschartA_2016",
       "file": "inst/curated//Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
       "rows": 53,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 36,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
@@ -655,43 +449,21 @@
       "name": "HeQ_2017",
       "file": "inst/curated//HeQ_2017/HeQ_2017_sample.tsv",
       "rows": 122,
-      "cols": 25,
+      "cols": 21,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
+        "Columns not covered by schema: study_condition, disease_subtype, non_westernized"
       ],
       "warnings": [
         "Field 'age_group' has 122 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "HMP_2012",
-      "file": "inst/curated//HMP_2012/HMP_2012_sample.tsv",
-      "rows": 748,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "HMP_2019_ibdmdb",
-      "file": "inst/curated//HMP_2019_ibdmdb/HMP_2019_ibdmdb_sample.tsv",
-      "rows": 1627,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "HMP_2019_t2d",
       "file": "inst/curated//HMP_2019_t2d/HMP_2019_t2d_sample.tsv",
       "rows": 296,
-      "cols": 43,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 39,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
@@ -700,10 +472,9 @@
       "name": "IaniroG_2022",
       "file": "inst/curated//IaniroG_2022/IaniroG_2022_sample.tsv",
       "rows": 165,
-      "cols": 29,
+      "cols": 28,
       "errors": [
-        "Missing required fields: sequencing_platform",
-        "Columns not covered by schema: number_bases"
+        "Missing required fields: sequencing_platform"
       ],
       "warnings": []
     },
@@ -711,9 +482,9 @@
       "name": "IjazUZ_2017",
       "file": "inst/curated//IjazUZ_2017/IjazUZ_2017_sample.tsv",
       "rows": 94,
-      "cols": 43,
+      "cols": 39,
       "errors": [
-        "Columns not covered by schema: V1, median_read_length, minimum_read_length, number_bases, number_reads, package, last_updated"
+        "Columns not covered by schema: V1, package, last_updated"
       ],
       "warnings": []
     },
@@ -721,10 +492,10 @@
       "name": "iMSMS_2022",
       "file": "inst/curated//iMSMS_2022/iMSMS_2022_sample.tsv",
       "rows": 3190,
-      "cols": 43,
+      "cols": 39,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, birth_control_pil, ever_smoker, born_method, diet, years_after_onset, ms_family, allergic, vitaminD_IU, children_number, roommates, recreational_drug, pets, education, occupation, collection_method"
+        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, birth_control_pil, ever_smoker, born_method, diet, years_after_onset, ms_family, allergic, vitaminD_IU, children_number, roommates, recreational_drug, pets, education, occupation, collection_method"
       ],
       "warnings": [
         "Field 'age_group' has 3190 invalid values: senior, adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -734,9 +505,9 @@
       "name": "JacobsonDK_2021",
       "file": "inst/curated//JacobsonDK_2021/JacobsonDK_2021_sample.tsv",
       "rows": 90,
-      "cols": 34,
+      "cols": 30,
       "errors": [
-        "Columns not covered by schema: disease_subtype, non_westernized, number_bases, number_reads, minimum_read_length, median_read_length"
+        "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
     },
@@ -744,10 +515,8 @@
       "name": "JieZ_2017",
       "file": "inst/curated//JieZ_2017/JieZ_2017_sample.tsv",
       "rows": 385,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 34,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
@@ -756,10 +525,8 @@
       "name": "KarlssonFH_2013",
       "file": "inst/curated//KarlssonFH_2013/KarlssonFH_2013_sample.tsv",
       "rows": 145,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 34,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
@@ -768,55 +535,31 @@
       "name": "KartalE_2022",
       "file": "inst/curated//KartalE_2022/KartalE_2022_sample.tsv",
       "rows": 329,
-      "cols": 27,
+      "cols": 23,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: body_subsite, study_condition, non_westernized, ever_smoker, alcohol, disease_stage, number_reads, number_bases, minimum_read_length, median_read_length"
+        "Columns not covered by schema: body_subsite, study_condition, non_westernized, ever_smoker, alcohol, disease_stage"
       ],
       "warnings": [
         "Field 'age_group' has 329 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "KaurK_2020",
-      "file": "inst/curated//KaurK_2020/KaurK_2020_sample.tsv",
-      "rows": 31,
-      "cols": 45,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "KeohaneDM_2020",
       "file": "inst/curated//KeohaneDM_2020/KeohaneDM_2020_sample.tsv",
       "rows": 117,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 34,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
-      "name": "KieserS_2018",
-      "file": "inst/curated//KieserS_2018/KieserS_2018_sample.tsv",
-      "rows": 27,
-      "cols": 31,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "KosticAD_2015",
       "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 38,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
         "Field 'biomarker_value' row 1 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
@@ -1013,181 +756,55 @@
       ]
     },
     {
-      "name": "LassalleF_2017",
-      "file": "inst/curated//LassalleF_2017/LassalleF_2017_sample.tsv",
-      "rows": 23,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LeChatelierE_2013",
-      "file": "inst/curated//LeChatelierE_2013/LeChatelierE_2013_sample.tsv",
-      "rows": 292,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "LeeKA_2022",
       "file": "inst/curated//LeeKA_2022/LeeKA_2022_sample.tsv",
       "rows": 165,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 36,
+      "errors": [],
       "warnings": [
         "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+"
       ]
     },
     {
-      "name": "LifeLinesDeep_2016",
-      "file": "inst/curated//LifeLinesDeep_2016/LifeLinesDeep_2016_sample.tsv",
-      "rows": 1135,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "LiJ_2014",
       "file": "inst/curated//LiJ_2014/LiJ_2014_sample.tsv",
       "rows": 260,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 31,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
-      "name": "LiJ_2017",
-      "file": "inst/curated//LiJ_2017/LiJ_2017_sample.tsv",
-      "rows": 196,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LiSS_2016",
-      "file": "inst/curated//LiSS_2016/LiSS_2016_sample.tsv",
-      "rows": 55,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LiuW_2016",
-      "file": "inst/curated//LiuW_2016/LiuW_2016_sample.tsv",
-      "rows": 110,
-      "cols": 31,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LokmerA_2019",
-      "file": "inst/curated//LokmerA_2019/LokmerA_2019_sample.tsv",
-      "rows": 57,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LomanNJ_2013",
-      "file": "inst/curated//LomanNJ_2013/LomanNJ_2013_sample.tsv",
-      "rows": 42,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LoombaR_2017",
-      "file": "inst/curated//LoombaR_2017/LoombaR_2017_sample.tsv",
-      "rows": 86,
-      "cols": 28,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "LouisS_2016",
-      "file": "inst/curated//LouisS_2016/LouisS_2016_sample.tsv",
-      "rows": 92,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "MaoL_2021",
       "file": "inst/curated//MaoL_2021/MaoL_2021_sample.tsv",
       "rows": 78,
-      "cols": 22,
-      "errors": [
-        "Columns not covered by schema: number_bases, number_reads, minimum_read_length, median_read_length"
-      ],
+      "cols": 18,
+      "errors": [],
       "warnings": [
         "Field 'sequencing_platform' has 78 invalid values: BGISEQ-500. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq"
       ]
     },
     {
-      "name": "MatsonV_2018",
-      "file": "inst/curated//MatsonV_2018/MatsonV_2018_sample.tsv",
-      "rows": 39,
-      "cols": 27,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "McCullochJA_2022",
       "file": "inst/curated//McCullochJA_2022/McCullochJA_2022_sample.tsv",
       "rows": 94,
-      "cols": 30,
+      "cols": 26,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, ajcc, RECIST, ORR, PFS12, previous_therapy"
+        "Columns not covered by schema: study_condition, non_westernized, ajcc, RECIST, ORR, PFS12, previous_therapy"
       ],
       "warnings": [
         "Field 'age_group' has 94 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "MehtaRS_2018",
-      "file": "inst/curated//MehtaRS_2018/MehtaRS_2018_sample.tsv",
-      "rows": 928,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "MejiaR_2020",
       "file": "inst/curated//MejiaR_2020/MejiaR_2020_sample.tsv",
       "rows": 35,
-      "cols": 33,
+      "cols": 29,
       "errors": [
-        "Columns not covered by schema: disease_subtype, non_westernized, number_bases, number_reads, minimum_read_length, median_read_length"
+        "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
     },
@@ -1195,9 +812,9 @@
       "name": "MetaCardis_2020_a",
       "file": "inst/curated//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
       "rows": 1831,
-      "cols": 40,
+      "cols": 39,
       "errors": [
-        "Columns not covered by schema: number_bases, package, last_updated"
+        "Columns not covered by schema: package, last_updated"
       ],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
@@ -1207,33 +824,23 @@
       "name": "NagataN_2022",
       "file": "inst/curated//NagataN_2022/NagataN_2022_sample.tsv",
       "rows": 560,
-      "cols": 22,
+      "cols": 18,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: body_subsite, study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
+        "Columns not covered by schema: body_subsite, study_condition, non_westernized"
       ],
       "warnings": [
         "Field 'age_group' has 560 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "NagySzakalD_2017",
-      "file": "inst/curated//NagySzakalD_2017/NagySzakalD_2017_sample.tsv",
-      "rows": 100,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "NayakRR_2021",
       "file": "inst/curated//NayakRR_2021/NayakRR_2021_sample.tsv",
       "rows": 34,
-      "cols": 26,
+      "cols": 22,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, anti_ccp_antibody, rheumatoid_factor, responsive_to_treatment"
+        "Columns not covered by schema: study_condition, non_westernized, anti_ccp_antibody, rheumatoid_factor, responsive_to_treatment"
       ],
       "warnings": [
         "Field 'age_group' has 34 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
@@ -1241,52 +848,12 @@
       ]
     },
     {
-      "name": "NielsenHB_2014",
-      "file": "inst/curated//NielsenHB_2014/NielsenHB_2014_sample.tsv",
-      "rows": 396,
-      "cols": 31,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Obregon-TitoAJ_2015",
-      "file": "inst/curated//Obregon-TitoAJ_2015/Obregon-TitoAJ_2015_sample.tsv",
-      "rows": 58,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "OhJ_2014",
-      "file": "inst/curated//OhJ_2014/OhJ_2014_sample.tsv",
-      "rows": 291,
-      "cols": 29,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "OlmMR_2017",
-      "file": "inst/curated//OlmMR_2017/OlmMR_2017_sample.tsv",
-      "rows": 45,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "OsakunorDNM_2020",
       "file": "inst/curated//OsakunorDNM_2020/OsakunorDNM_2020_sample.tsv",
       "rows": 113,
-      "cols": 41,
+      "cols": 37,
       "errors": [
-        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, history_of_therapy, breastfeeding_duration, number_bases, number_reads, minimum_read_length, median_read_length"
+        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, history_of_therapy, breastfeeding_duration"
       ],
       "warnings": []
     },
@@ -1294,30 +861,10 @@
       "name": "PallejaA_2018",
       "file": "inst/curated//PallejaA_2018/PallejaA_2018_sample.tsv",
       "rows": 57,
-      "cols": 23,
+      "cols": 19,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: antibiotics_family, study_condition, visit_number, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "PasolliE_2019",
-      "file": "inst/curated//PasolliE_2019/PasolliE_2019_sample.tsv",
-      "rows": 112,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "PehrssonE_2016",
-      "file": "inst/curated//PehrssonE_2016/PehrssonE_2016_sample.tsv",
-      "rows": 191,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: antibiotics_family, study_condition, visit_number, non_westernized"
       ],
       "warnings": []
     },
@@ -1325,25 +872,15 @@
       "name": "PernigoniN_2021",
       "file": "inst/curated//PernigoniN_2021/PernigoniN_2021_sample.tsv",
       "rows": 74,
-      "cols": 24,
+      "cols": 20,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: body_subsite, study_condition, disease_subtype, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
+        "Columns not covered by schema: body_subsite, study_condition, disease_subtype, non_westernized"
       ],
       "warnings": [
         "Field 'age_group' has 74 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
         "Field 'dna_extraction_kit' has 74 invalid values: QIAamp_fast. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
       ]
-    },
-    {
-      "name": "PetersBA_2019",
-      "file": "inst/curated//PetersBA_2019/PetersBA_2019_sample.tsv",
-      "rows": 27,
-      "cols": 43,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
     },
     {
       "name": "PiccinnoG_2025",
@@ -1360,10 +897,8 @@
       "name": "QinJ_2012",
       "file": "inst/curated//QinJ_2012/QinJ_2012_sample.tsv",
       "rows": 363,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 31,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
@@ -1372,111 +907,19 @@
       "name": "QinN_2014",
       "file": "inst/curated//QinN_2014/QinN_2014_sample.tsv",
       "rows": 237,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 36,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
-      "name": "RampelliS_2015",
-      "file": "inst/curated//RampelliS_2015/RampelliS_2015_sample.tsv",
-      "rows": 38,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "RaymondF_2016",
-      "file": "inst/curated//RaymondF_2016/RaymondF_2016_sample.tsv",
-      "rows": 72,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "RosaBA_2018",
-      "file": "inst/curated//RosaBA_2018/RosaBA_2018_sample.tsv",
-      "rows": 24,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "RubelMA_2020",
-      "file": "inst/curated//RubelMA_2020/RubelMA_2020_sample.tsv",
-      "rows": 175,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "SankaranarayananK_2015",
-      "file": "inst/curated//SankaranarayananK_2015/SankaranarayananK_2015_sample.tsv",
-      "rows": 37,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "SchirmerM_2016",
-      "file": "inst/curated//SchirmerM_2016/SchirmerM_2016_sample.tsv",
-      "rows": 471,
-      "cols": 39,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ShaoY_2019",
-      "file": "inst/curated//ShaoY_2019/ShaoY_2019_sample.tsv",
-      "rows": 1644,
-      "cols": 44,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ShiB_2015",
-      "file": "inst/curated//ShiB_2015/ShiB_2015_sample.tsv",
-      "rows": 48,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "SmitsSA_2017",
-      "file": "inst/curated//SmitsSA_2017/SmitsSA_2017_sample.tsv",
-      "rows": 40,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "Soto-GironMJ_2021",
       "file": "inst/curated//Soto-GironMJ_2021/Soto-GironMJ_2021_sample.tsv",
       "rows": 86,
-      "cols": 36,
+      "cols": 32,
       "errors": [
-        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, population, number_bases, number_reads, minimum_read_length, median_read_length"
+        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, population"
       ],
       "warnings": []
     },
@@ -1484,10 +927,10 @@
       "name": "SpencerCN_2021",
       "file": "inst/curated//SpencerCN_2021/SpencerCN_2021_sample.tsv",
       "rows": 167,
-      "cols": 29,
+      "cols": 25,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, diet, ORR, PFS12, previous_therapy, PFS03, PFS06"
+        "Columns not covered by schema: study_condition, non_westernized, diet, ORR, PFS12, previous_therapy, PFS03, PFS06"
       ],
       "warnings": [
         "Field 'age_group' has 167 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1497,79 +940,9 @@
       "name": "TeeMZ_2022",
       "file": "inst/curated//TeeMZ_2022/TeeMZ_2022_sample.tsv",
       "rows": 650,
-      "cols": 41,
+      "cols": 37,
       "errors": [
-        "Columns not covered by schema: disease_subtype, population, non_westernized, remission, pregnant, lactating, number_bases, number_reads, minimum_read_length, median_read_length"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2016",
-      "file": "inst/curated//TettAJ_2016/TettAJ_2016_sample.tsv",
-      "rows": 89,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2019_a",
-      "file": "inst/curated//TettAJ_2019_a/TettAJ_2019_a_sample.tsv",
-      "rows": 68,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2019_b",
-      "file": "inst/curated//TettAJ_2019_b/TettAJ_2019_b_sample.tsv",
-      "rows": 44,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TettAJ_2019_c",
-      "file": "inst/curated//TettAJ_2019_c/TettAJ_2019_c_sample.tsv",
-      "rows": 50,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ThomasAM_2018a",
-      "file": "inst/curated//ThomasAM_2018a/ThomasAM_2018a_sample.tsv",
-      "rows": 80,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ThomasAM_2018b",
-      "file": "inst/curated//ThomasAM_2018b/ThomasAM_2018b_sample.tsv",
-      "rows": 60,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ThomasAM_2019_c",
-      "file": "inst/curated//ThomasAM_2019_c/ThomasAM_2019_c_sample.tsv",
-      "rows": 80,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: disease_subtype, population, non_westernized, remission, pregnant, lactating"
       ],
       "warnings": []
     },
@@ -1577,10 +950,10 @@
       "name": "Valles-ColomerM_2023_a",
       "file": "inst/curated//Valles-ColomerM_2023_a/Valles-ColomerM_2023_a_sample.tsv",
       "rows": 27,
-      "cols": 31,
+      "cols": 27,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
       "warnings": [
         "Field 'age_group' has 27 invalid values: adult, newborn, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1590,10 +963,10 @@
       "name": "Valles-ColomerM_2023_b",
       "file": "inst/curated//Valles-ColomerM_2023_b/Valles-ColomerM_2023_b_sample.tsv",
       "rows": 27,
-      "cols": 31,
+      "cols": 27,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
       "warnings": [
         "Field 'age_group' has 27 invalid values: newborn, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1603,10 +976,10 @@
       "name": "Valles-ColomerM_2023_c",
       "file": "inst/curated//Valles-ColomerM_2023_c/Valles-ColomerM_2023_c_sample.tsv",
       "rows": 24,
-      "cols": 31,
+      "cols": 27,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
       "warnings": [
         "Field 'age_group' has 24 invalid values: newborn, adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1616,10 +989,10 @@
       "name": "Valles-ColomerM_2023_d",
       "file": "inst/curated//Valles-ColomerM_2023_d/Valles-ColomerM_2023_d_sample.tsv",
       "rows": 342,
-      "cols": 31,
+      "cols": 27,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
       "warnings": [
         "Field 'age_group' has 342 invalid values: adult, schoolage, child, senior, newborn. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1629,72 +1002,22 @@
       "name": "Valles-ColomerM_2023_e",
       "file": "inst/curated//Valles-ColomerM_2023_e/Valles-ColomerM_2023_e_sample.tsv",
       "rows": 104,
-      "cols": 31,
+      "cols": 27,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
+        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
       "warnings": [
         "Field 'age_group' has 104 invalid values: newborn, child, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
-      "name": "VatanenT_2016",
-      "file": "inst/curated//VatanenT_2016/VatanenT_2016_sample.tsv",
-      "rows": 785,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "VilaAV_2018",
-      "file": "inst/curated//VilaAV_2018/VilaAV_2018_sample.tsv",
-      "rows": 355,
-      "cols": 32,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "VincentC_2016",
-      "file": "inst/curated//VincentC_2016/VincentC_2016_sample.tsv",
-      "rows": 229,
-      "cols": 39,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "VogtmannE_2016",
-      "file": "inst/curated//VogtmannE_2016/VogtmannE_2016_sample.tsv",
-      "rows": 110,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "WallenZD_2022",
       "file": "inst/curated//WallenZD_2022/WallenZD_2022_sample.tsv",
       "rows": 724,
-      "cols": 30,
+      "cols": 26,
       "errors": [
-        "Columns not covered by schema: feces_phenotype_metric, cigarette_smoked_ever, (uncurated)drink_caffeinate_beverages, number_bases, number_reads, minimum_read_length, median_read_length"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "WampachL_2018",
-      "file": "inst/curated//WampachL_2018/WampachL_2018_sample.tsv",
-      "rows": 63,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: feces_phenotype_metric, cigarette_smoked_ever, (uncurated)drink_caffeinate_beverages"
       ],
       "warnings": []
     },
@@ -1702,10 +1025,10 @@
       "name": "WenC_2017",
       "file": "inst/curated//WenC_2017/WenC_2017_sample.tsv",
       "rows": 168,
-      "cols": 36,
+      "cols": 32,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, creatinine, albumine, hscrp, ESR, wbc, rbc, blood_platelet, hemoglobinometry, ast, alt, globulin, urea_nitrogen, ASO, anti_ccp_antibody, rheumatoid_factor"
+        "Columns not covered by schema: study_condition, non_westernized, creatinine, albumine, hscrp, ESR, wbc, rbc, blood_platelet, hemoglobinometry, ast, alt, globulin, urea_nitrogen, ASO, anti_ccp_antibody, rheumatoid_factor"
       ],
       "warnings": [
         "Field 'age_group' has 162 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1715,29 +1038,9 @@
       "name": "WibowoMC_2021",
       "file": "inst/curated//WibowoMC_2021/WibowoMC_2021_sample.tsv",
       "rows": 22,
-      "cols": 37,
+      "cols": 33,
       "errors": [
-        "Columns not covered by schema: disease_subtype, population, non_westernized, diet, number_bases, number_reads, minimum_read_length, median_read_length"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "WindTT_2020",
-      "file": "inst/curated//WindTT_2020/WindTT_2020_sample.tsv",
-      "rows": 20,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "WirbelJ_2018",
-      "file": "inst/curated//WirbelJ_2018/WirbelJ_2018_sample.tsv",
-      "rows": 125,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
+        "Columns not covered by schema: disease_subtype, population, non_westernized, diet"
       ],
       "warnings": []
     },
@@ -1745,9 +1048,9 @@
       "name": "XieH_2016",
       "file": "inst/curated//XieH_2016/XieH_2016_sample.tsv",
       "rows": 250,
-      "cols": 51,
+      "cols": 47,
       "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads, package, last_updated"
+        "Columns not covered by schema: package, last_updated"
       ],
       "warnings": []
     },
@@ -1755,24 +1058,14 @@
       "name": "XuQ_2021",
       "file": "inst/curated//XuQ_2021/XuQ_2021_sample.tsv",
       "rows": 347,
-      "cols": 33,
+      "cols": 29,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, study_condition, bilirubin, creatinine, glucose, cholesterol, triglycerides, hdl, ldl, alcohol"
+        "Columns not covered by schema: non_westernized, study_condition, bilirubin, creatinine, glucose, cholesterol, triglycerides, hdl, ldl, alcohol"
       ],
       "warnings": [
         "Field 'age_group' has 347 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
-    },
-    {
-      "name": "YachidaS_2019",
-      "file": "inst/curated//YachidaS_2019/YachidaS_2019_sample.tsv",
-      "rows": 616,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
     },
     {
       "name": "YangJ_2020",
@@ -1785,43 +1078,11 @@
       "warnings": []
     },
     {
-      "name": "YassourM_2016",
-      "file": "inst/curated//YassourM_2016/YassourM_2016_sample.tsv",
-      "rows": 36,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "YassourM_2018",
-      "file": "inst/curated//YassourM_2018/YassourM_2018_sample.tsv",
-      "rows": 271,
-      "cols": 45,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "YeZ_2018",
-      "file": "inst/curated//YeZ_2018/YeZ_2018_sample.tsv",
-      "rows": 65,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "YeZ_2020",
       "file": "inst/curated//YeZ_2020/YeZ_2020_sample.tsv",
       "rows": 119,
-      "cols": 23,
-      "errors": [
-        "Columns not covered by schema: number_reads, number_bases, minimum_read_length, median_read_length"
-      ],
+      "cols": 19,
+      "errors": [],
       "warnings": [
         "Field 'sequencing_platform' has 119 invalid values: Illumina TruSeq. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq"
       ]
@@ -1830,42 +1091,20 @@
       "name": "YuJ_2015",
       "file": "inst/curated//YuJ_2015/YuJ_2015_sample.tsv",
       "rows": 128,
-      "cols": 42,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 38,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
-      "name": "ZeeviD_2015",
-      "file": "inst/curated//ZeeviD_2015/ZeeviD_2015_sample.tsv",
-      "rows": 900,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "ZellerG_2014",
-      "file": "inst/curated//ZellerG_2014/ZellerG_2014_sample.tsv",
-      "rows": 156,
-      "cols": 36,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "ZhangX_2015",
       "file": "inst/curated//ZhangX_2015/ZhangX_2015_sample.tsv",
       "rows": 232,
-      "cols": 46,
+      "cols": 42,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, pregnant, lactating, triglycerides, cholesterol, hdl, ldl, glucose, creatinine, hscrp, wbc, blood_platelet, hemoglobinometry, alt, anti_ccp_antibody, rheumatoid_factor, time_after_onset, CDAI, HAQ, DAS28, IGG, IGA, IGM"
+        "Columns not covered by schema: study_condition, non_westernized, pregnant, lactating, triglycerides, cholesterol, hdl, ldl, glucose, creatinine, hscrp, wbc, blood_platelet, hemoglobinometry, alt, anti_ccp_antibody, rheumatoid_factor, time_after_onset, CDAI, HAQ, DAS28, IGG, IGA, IGM"
       ],
       "warnings": [
         "Field 'age_group' has 231 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1875,10 +1114,10 @@
       "name": "ZhouC_2020",
       "file": "inst/curated//ZhouC_2020/ZhouC_2020_sample.tsv",
       "rows": 130,
-      "cols": 42,
+      "cols": 38,
       "errors": [
         "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, creatinine, hscrp, ESR, wbc, blood_platelet, hemoglobinometry, alt, urea_nitrogen, BASDAI, BASFI, years_after_onset, IGG, IGA, IGM, back_ache, HLA_B27, ASDAS_ESR, ASDAS_CRP, BASMI"
+        "Columns not covered by schema: study_condition, non_westernized, creatinine, hscrp, ESR, wbc, blood_platelet, hemoglobinometry, alt, urea_nitrogen, BASDAI, BASFI, years_after_onset, IGG, IGA, IGM, back_ache, HLA_B27, ASDAS_ESR, ASDAS_CRP, BASMI"
       ],
       "warnings": [
         "Field 'age_group' has 130 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
@@ -1888,10 +1127,8 @@
       "name": "ZhuF_2020",
       "file": "inst/curated//ZhuF_2020/ZhuF_2020_sample.tsv",
       "rows": 171,
-      "cols": 41,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
+      "cols": 37,
+      "errors": [],
       "warnings": [
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
