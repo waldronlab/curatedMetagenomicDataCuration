@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 130,
     "total_errors": 63,
-    "total_warnings": 235,
-    "files_with_issues": 56
+    "total_warnings": 222,
+    "files_with_issues": 44
   },
   "stats": {
     "total_studies": 130,
@@ -287,12 +287,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-03-16T17:56:54Z",
+    "timestamp": "2026-03-18T18:17:27Z",
     "trigger": "push",
     "branch": "master",
-    "schema_commit": "52cdc8e07055be138678fa78afb42e795d06d542",
-    "schema_commit_short": "52cdc8e",
-    "run_id": "23158171115"
+    "schema_commit": "1f82124ddeb448e825250cd8dcfe08544635716e",
+    "schema_commit_short": "1f82124",
+    "run_id": "23260108489"
   },
   "studies_with_issues": [
     {
@@ -356,16 +356,6 @@
       ]
     },
     {
-      "name": "ChengpingW_2017",
-      "file": "inst/curated//ChengpingW_2017/ChengpingW_2017_sample.tsv",
-      "rows": 97,
-      "cols": 35,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
-    },
-    {
       "name": "ContevilleLC_2019",
       "file": "inst/curated//ContevilleLC_2019/ContevilleLC_2019_sample.tsv",
       "rows": 15,
@@ -398,7 +388,6 @@
       "cols": 37,
       "errors": [],
       "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
         "Field 'dietary_restriction' has 6 invalid values: . Allowed values: omnivore, low_gluten, high_gluten, gluten_free, vegetarian, vegan, pescatarian, high_fiber, low_fiber, paleo, equal_protein_fat_carbs, high_complex_carbs"
       ]
     },
@@ -436,16 +425,6 @@
       "warnings": []
     },
     {
-      "name": "Heitz-BuschartA_2016",
-      "file": "inst/curated//Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
-      "rows": 53,
-      "cols": 36,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
-    },
-    {
       "name": "HeQ_2017",
       "file": "inst/curated//HeQ_2017/HeQ_2017_sample.tsv",
       "rows": 122,
@@ -456,16 +435,6 @@
       ],
       "warnings": [
         "Field 'age_group' has 122 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "HMP_2019_t2d",
-      "file": "inst/curated//HMP_2019_t2d/HMP_2019_t2d_sample.tsv",
-      "rows": 296,
-      "cols": 39,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
@@ -512,26 +481,6 @@
       "warnings": []
     },
     {
-      "name": "JieZ_2017",
-      "file": "inst/curated//JieZ_2017/JieZ_2017_sample.tsv",
-      "rows": 385,
-      "cols": 34,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
-    },
-    {
-      "name": "KarlssonFH_2013",
-      "file": "inst/curated//KarlssonFH_2013/KarlssonFH_2013_sample.tsv",
-      "rows": 145,
-      "cols": 34,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
-    },
-    {
       "name": "KartalE_2022",
       "file": "inst/curated//KartalE_2022/KartalE_2022_sample.tsv",
       "rows": 329,
@@ -542,16 +491,6 @@
       ],
       "warnings": [
         "Field 'age_group' has 329 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "KeohaneDM_2020",
-      "file": "inst/curated//KeohaneDM_2020/KeohaneDM_2020_sample.tsv",
-      "rows": 117,
-      "cols": 34,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     },
     {
@@ -766,16 +705,6 @@
       ]
     },
     {
-      "name": "LiJ_2014",
-      "file": "inst/curated//LiJ_2014/LiJ_2014_sample.tsv",
-      "rows": 260,
-      "cols": 31,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
-    },
-    {
       "name": "MaoL_2021",
       "file": "inst/curated//MaoL_2021/MaoL_2021_sample.tsv",
       "rows": 78,
@@ -807,16 +736,6 @@
         "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
-    },
-    {
-      "name": "MetaCardis_2020_a",
-      "file": "inst/curated//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
-      "rows": 1831,
-      "cols": 37,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
     },
     {
       "name": "NagataN_2022",
@@ -890,26 +809,6 @@
         "Columns not covered by schema: doi"
       ],
       "warnings": []
-    },
-    {
-      "name": "QinJ_2012",
-      "file": "inst/curated//QinJ_2012/QinJ_2012_sample.tsv",
-      "rows": 363,
-      "cols": 31,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
-    },
-    {
-      "name": "QinN_2014",
-      "file": "inst/curated//QinN_2014/QinN_2014_sample.tsv",
-      "rows": 237,
-      "cols": 36,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
     },
     {
       "name": "Soto-GironMJ_2021",
@@ -1076,16 +975,6 @@
       ]
     },
     {
-      "name": "YuJ_2015",
-      "file": "inst/curated//YuJ_2015/YuJ_2015_sample.tsv",
-      "rows": 128,
-      "cols": 38,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
-      ]
-    },
-    {
       "name": "ZhangX_2015",
       "file": "inst/curated//ZhangX_2015/ZhangX_2015_sample.tsv",
       "rows": 232,
@@ -1109,16 +998,6 @@
       ],
       "warnings": [
         "Field 'age_group' has 130 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
-    },
-    {
-      "name": "ZhuF_2020",
-      "file": "inst/curated//ZhuF_2020/ZhuF_2020_sample.tsv",
-      "rows": 171,
-      "cols": 37,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric"
       ]
     }
   ]
