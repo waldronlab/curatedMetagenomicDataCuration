@@ -3,7 +3,7 @@
   "summary": {
     "total_files": 130,
     "total_errors": 63,
-    "total_warnings": 222,
+    "total_warnings": 221,
     "files_with_issues": 44
   },
   "stats": {
@@ -14,15 +14,15 @@
         "top": [
           {
             "name": "Adult",
-            "count": 16899
+            "count": 17060
           },
           {
             "name": "adult",
-            "count": 4498
+            "count": 4337
           },
           {
             "name": "Elderly",
-            "count": 3146
+            "count": 3147
           },
           {
             "name": "Newborn",
@@ -34,7 +34,7 @@
           },
           {
             "name": "senior",
-            "count": 1346
+            "count": 1345
           },
           {
             "name": "Child",
@@ -287,12 +287,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-03-18T18:17:27Z",
+    "timestamp": "2026-03-23T18:55:15Z",
     "trigger": "push",
     "branch": "master",
-    "schema_commit": "1f82124ddeb448e825250cd8dcfe08544635716e",
-    "schema_commit_short": "1f82124",
-    "run_id": "23260108489"
+    "schema_commit": "a9b71578b5125ccaa971a6e5525578342401bece",
+    "schema_commit_short": "a9b7157",
+    "run_id": "23454679740"
   },
   "studies_with_issues": [
     {
@@ -927,9 +927,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, creatinine, albumine, hscrp, ESR, wbc, rbc, blood_platelet, hemoglobinometry, ast, alt, globulin, urea_nitrogen, ASO, anti_ccp_antibody, rheumatoid_factor"
       ],
-      "warnings": [
-        "Field 'age_group' has 162 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "WibowoMC_2021",
