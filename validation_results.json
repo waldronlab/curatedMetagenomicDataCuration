@@ -3,7 +3,7 @@
   "summary": {
     "total_files": 130,
     "total_errors": 63,
-    "total_warnings": 221,
+    "total_warnings": 202,
     "files_with_issues": 44
   },
   "stats": {
@@ -14,46 +14,42 @@
         "top": [
           {
             "name": "Adult",
-            "count": 17060
-          },
-          {
-            "name": "adult",
-            "count": 4337
+            "count": 21389
           },
           {
             "name": "Elderly",
-            "count": 3147
+            "count": 4496
           },
           {
             "name": "Newborn",
-            "count": 1852
+            "count": 1933
           },
           {
             "name": "Infant",
-            "count": 1619
-          },
-          {
-            "name": "senior",
-            "count": 1345
+            "count": 1628
           },
           {
             "name": "Child",
-            "count": 990
+            "count": 1149
           },
           {
             "name": "Adolescent",
-            "count": 832
+            "count": 926
           },
           {
-            "name": "child",
-            "count": 168
+            "name": "adult",
+            "count": 32
           },
           {
-            "name": "schoolage",
-            "count": 124
+            "name": "senior",
+            "count": 2
+          },
+          {
+            "name": "Not applicable",
+            "count": 1
           }
         ],
-        "total_distinct": 12,
+        "total_distinct": 9,
         "total_count": 31556
       },
       "body_site": {
@@ -287,12 +283,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-03-23T18:55:15Z",
+    "timestamp": "2026-03-23T21:41:09Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "a9b71578b5125ccaa971a6e5525578342401bece",
     "schema_commit_short": "a9b7157",
-    "run_id": "23454679740"
+    "run_id": "23461462542"
   },
   "studies_with_issues": [
     {
@@ -304,9 +300,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, hscrp, ESR, anti_ccp_antibody, rheumatoid_factor, nationality, responsive_to_treatment, prescribed_treatment, DAS28_baseline, DAS28_t4, tjc, sjc"
       ],
-      "warnings": [
-        "Field 'age_group' has 67 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "AverinaOV_2020",
@@ -327,9 +321,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, ART_treatment_duration, HIV_transmission_mode, CD4_cell_count, CD4_nadir"
       ],
-      "warnings": [
-        "Field 'age_group' has 24 invalid values: adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "BoktorJC_2023",
@@ -364,9 +356,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized"
       ],
-      "warnings": [
-        "Field 'age_group' has 15 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "FanY_2023",
@@ -377,9 +367,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, disease_subtype, non_westernized, hdl, ldl, fasting_insulin, fasting_glucose, creatinine, hscrp"
       ],
-      "warnings": [
-        "Field 'age_group' has 147 invalid values: schoolage, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "FengQ_2015",
@@ -433,9 +421,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, disease_subtype, non_westernized"
       ],
-      "warnings": [
-        "Field 'age_group' has 122 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "IaniroG_2022",
@@ -466,9 +452,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, disease_subtype, non_westernized, birth_control_pil, ever_smoker, born_method, diet, years_after_onset, ms_family, allergic, vitaminD_IU, children_number, roommates, recreational_drug, pets, education, occupation, collection_method"
       ],
-      "warnings": [
-        "Field 'age_group' has 3190 invalid values: senior, adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "JacobsonDK_2021",
@@ -489,9 +473,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: body_subsite, study_condition, non_westernized, ever_smoker, alcohol, disease_stage"
       ],
-      "warnings": [
-        "Field 'age_group' has 329 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "KosticAD_2015",
@@ -723,9 +705,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, ajcc, RECIST, ORR, PFS12, previous_therapy"
       ],
-      "warnings": [
-        "Field 'age_group' has 94 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "MejiaR_2020",
@@ -746,9 +726,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: body_subsite, study_condition, non_westernized"
       ],
-      "warnings": [
-        "Field 'age_group' has 560 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "NayakRR_2021",
@@ -795,7 +773,6 @@
         "Columns not covered by schema: body_subsite, study_condition, disease_subtype, non_westernized"
       ],
       "warnings": [
-        "Field 'age_group' has 74 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
         "Field 'dna_extraction_kit' has 74 invalid values: QIAamp_fast. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
       ]
     },
@@ -829,9 +806,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, diet, ORR, PFS12, previous_therapy, PFS03, PFS06"
       ],
-      "warnings": [
-        "Field 'age_group' has 167 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "TeeMZ_2022",
@@ -852,9 +827,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
-      "warnings": [
-        "Field 'age_group' has 27 invalid values: adult, newborn, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "Valles-ColomerM_2023_b",
@@ -865,9 +838,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
-      "warnings": [
-        "Field 'age_group' has 27 invalid values: newborn, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "Valles-ColomerM_2023_c",
@@ -878,9 +849,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
-      "warnings": [
-        "Field 'age_group' has 24 invalid values: newborn, adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "Valles-ColomerM_2023_d",
@@ -891,9 +860,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
-      "warnings": [
-        "Field 'age_group' has 342 invalid values: adult, schoolage, child, senior, newborn. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "Valles-ColomerM_2023_e",
@@ -904,9 +871,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
       ],
-      "warnings": [
-        "Field 'age_group' has 104 invalid values: newborn, child, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "WallenZD_2022",
@@ -948,9 +913,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: non_westernized, study_condition, bilirubin, creatinine, glucose, cholesterol, triglycerides, hdl, ldl, alcohol"
       ],
-      "warnings": [
-        "Field 'age_group' has 347 invalid values: senior, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "YangJ_2020",
@@ -981,9 +944,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, pregnant, lactating, triglycerides, cholesterol, hdl, ldl, glucose, creatinine, hscrp, wbc, blood_platelet, hemoglobinometry, alt, anti_ccp_antibody, rheumatoid_factor, time_after_onset, CDAI, HAQ, DAS28, IGG, IGA, IGM"
       ],
-      "warnings": [
-        "Field 'age_group' has 231 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     },
     {
       "name": "ZhouC_2020",
@@ -994,9 +955,7 @@
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, creatinine, hscrp, ESR, wbc, blood_platelet, hemoglobinometry, alt, urea_nitrogen, BASDAI, BASFI, years_after_onset, IGG, IGA, IGM, back_ache, HLA_B27, ASDAS_ESR, ASDAS_CRP, BASMI"
       ],
-      "warnings": [
-        "Field 'age_group' has 130 invalid values: adult, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
-      ]
+      "warnings": []
     }
   ]
 }
