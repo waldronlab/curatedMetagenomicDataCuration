@@ -2,9 +2,9 @@
   "status": "FAIL",
   "summary": {
     "total_files": 130,
-    "total_errors": 61,
-    "total_warnings": 203,
-    "files_with_issues": 43
+    "total_errors": 52,
+    "total_warnings": 204,
+    "files_with_issues": 38
   },
   "stats": {
     "total_studies": 130,
@@ -224,7 +224,7 @@
           },
           {
             "name": "control",
-            "count": 3318
+            "count": 2725
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -260,7 +260,7 @@
           }
         ],
         "total_distinct": 144,
-        "total_count": 36286
+        "total_count": 35726
       },
       "sex": {
         "top": [
@@ -283,12 +283,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-03-26T19:58:28Z",
+    "timestamp": "2026-04-15T22:09:29Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "a9b71578b5125ccaa971a6e5525578342401bece",
     "schema_commit_short": "a9b7157",
-    "run_id": "23615110029"
+    "run_id": "24480884117"
   },
   "studies_with_issues": [
     {
@@ -350,17 +350,6 @@
       ]
     },
     {
-      "name": "FanY_2023",
-      "file": "inst/curated//FanY_2023/FanY_2023_sample.tsv",
-      "rows": 147,
-      "cols": 26,
-      "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, hdl, ldl, fasting_insulin, fasting_glucose, creatinine, hscrp"
-      ],
-      "warnings": []
-    },
-    {
       "name": "FengQ_2015",
       "file": "inst/curated//FengQ_2015/FengQ_2015_sample.tsv",
       "rows": 154,
@@ -404,17 +393,6 @@
       "warnings": []
     },
     {
-      "name": "HeQ_2017",
-      "file": "inst/curated//HeQ_2017/HeQ_2017_sample.tsv",
-      "rows": 122,
-      "cols": 21,
-      "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, disease_subtype, non_westernized"
-      ],
-      "warnings": []
-    },
-    {
       "name": "IaniroG_2022",
       "file": "inst/curated//IaniroG_2022/IaniroG_2022_sample.tsv",
       "rows": 165,
@@ -442,16 +420,6 @@
       "errors": [
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, disease_subtype, non_westernized, birth_control_pil, ever_smoker, born_method, diet, years_after_onset, ms_family, allergic, vitaminD_IU, children_number, roommates, recreational_drug, pets, education, occupation, collection_method"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "JacobsonDK_2021",
-      "file": "inst/curated//JacobsonDK_2021/JacobsonDK_2021_sample.tsv",
-      "rows": 90,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: disease_subtype, non_westernized"
       ],
       "warnings": []
     },
@@ -699,25 +667,14 @@
       "warnings": []
     },
     {
-      "name": "MejiaR_2020",
-      "file": "inst/curated//MejiaR_2020/MejiaR_2020_sample.tsv",
-      "rows": 35,
-      "cols": 29,
-      "errors": [
-        "Columns not covered by schema: disease_subtype, non_westernized"
-      ],
-      "warnings": []
-    },
-    {
       "name": "NagataN_2022",
       "file": "inst/curated//NagataN_2022/NagataN_2022_sample.tsv",
       "rows": 560,
-      "cols": 18,
-      "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: body_subsite, study_condition, non_westernized"
-      ],
-      "warnings": []
+      "cols": 19,
+      "errors": [],
+      "warnings": [
+        "Field 'control' has 470 invalid values: Control. Allowed values: Study Control, Case, Not Used"
+      ]
     },
     {
       "name": "NayakRR_2021",
@@ -882,16 +839,6 @@
       "errors": [
         "Missing required fields: target_condition, control",
         "Columns not covered by schema: study_condition, non_westernized, creatinine, albumine, hscrp, ESR, wbc, rbc, blood_platelet, hemoglobinometry, ast, alt, globulin, urea_nitrogen, ASO, anti_ccp_antibody, rheumatoid_factor"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "WibowoMC_2021",
-      "file": "inst/curated//WibowoMC_2021/WibowoMC_2021_sample.tsv",
-      "rows": 22,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: disease_subtype, population, non_westernized, diet"
       ],
       "warnings": []
     },
