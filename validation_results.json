@@ -2,13 +2,13 @@
   "status": "FAIL",
   "summary": {
     "total_files": 130,
-    "total_errors": 52,
-    "total_warnings": 204,
-    "files_with_issues": 38
+    "total_errors": 48,
+    "total_warnings": 214,
+    "files_with_issues": 34
   },
   "stats": {
     "total_studies": 130,
-    "total_samples": 31742,
+    "total_samples": 32444,
     "distributions": {
       "age_group": {
         "top": [
@@ -37,6 +37,10 @@
             "count": 926
           },
           {
+            "name": "Viti Levu",
+            "count": 350
+          },
+          {
             "name": "adult",
             "count": 32
           },
@@ -49,8 +53,8 @@
             "count": 1
           }
         ],
-        "total_distinct": 9,
-        "total_count": 31556
+        "total_distinct": 11,
+        "total_count": 31907
       },
       "body_site": {
         "top": [
@@ -67,12 +71,12 @@
             "count": 504
           },
           {
-            "name": "median vaginal canal",
-            "count": 258
+            "name": "vagina",
+            "count": 446
           },
           {
-            "name": "vagina",
-            "count": 96
+            "name": "median vaginal canal",
+            "count": 258
           },
           {
             "name": "nasal cavity",
@@ -85,10 +89,14 @@
           {
             "name": "milk",
             "count": 8
+          },
+          {
+            "name": "body_site",
+            "count": 1
           }
         ],
-        "total_distinct": 8,
-        "total_count": 31636
+        "total_distinct": 9,
+        "total_count": 31987
       },
       "published_year": {
         "top": [
@@ -121,20 +129,20 @@
             "count": 2089
           },
           {
+            "name": "2023",
+            "count": 1426
+          },
+          {
             "name": "2014",
             "count": 1340
           },
           {
             "name": "2020",
             "count": 1182
-          },
-          {
-            "name": "2012",
-            "count": 1111
           }
         ],
         "total_distinct": 14,
-        "total_count": 27082
+        "total_count": 27784
       },
       "country": {
         "top": [
@@ -179,8 +187,8 @@
             "count": 915
           }
         ],
-        "total_distinct": 83,
-        "total_count": 31787
+        "total_distinct": 84,
+        "total_count": 32138
       },
       "ancestry": {
         "top": [
@@ -259,8 +267,8 @@
             "count": 648
           }
         ],
-        "total_distinct": 144,
-        "total_count": 35726
+        "total_distinct": 495,
+        "total_count": 36077
       },
       "sex": {
         "top": [
@@ -275,20 +283,48 @@
           {
             "name": "Not applicable",
             "count": 495
+          },
+          {
+            "name": "34",
+            "count": 32
+          },
+          {
+            "name": "23",
+            "count": 28
+          },
+          {
+            "name": "33",
+            "count": 28
+          },
+          {
+            "name": "24",
+            "count": 25
+          },
+          {
+            "name": "32",
+            "count": 25
+          },
+          {
+            "name": "35",
+            "count": 22
+          },
+          {
+            "name": "30",
+            "count": 21
           }
         ],
-        "total_distinct": 3,
-        "total_count": 29582
+        "total_distinct": 27,
+        "total_count": 29933
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-04-15T22:09:29Z",
+    "timestamp": "2026-04-15T22:46:37Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "a9b71578b5125ccaa971a6e5525578342401bece",
     "schema_commit_short": "a9b7157",
-    "run_id": "24480884117"
+    "run_id": "24482221053"
   },
   "studies_with_issues": [
     {
@@ -328,13 +364,22 @@
     {
       "name": "BommanaS_2023",
       "file": "inst/curated//BommanaS_2023/BommanaS_2023_sample.tsv",
-      "rows": 350,
-      "cols": 21,
-      "errors": [
-        "Columns not covered by schema: n_of_bases, n_of_reads, min_read_len, median_read_len"
-      ],
+      "rows": 1052,
+      "cols": 18,
+      "errors": [],
       "warnings": [
-        "Field 'body_site' has 350 invalid values: median vaginal canal, endocervix. Allowed values: feces, oral cavity, skin epidermis, vagina, nasal cavity, milk"
+        "Field 'study_name' has 352 values not matching pattern:  [a-zA-Z-]+_[0-9]{4}|[a-zA-Z-]+_[0-9]{4}[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z0-9]+",
+        "Field 'body_site' has 702 invalid values: body_site, , median vaginal canal, endocervix. Allowed values: feces, oral cavity, skin epidermis, vagina, nasal cavity, milk",
+        "Field 'control' has 702 invalid values: curator, , Alice_Bassetto;Paolo_Manghi. Allowed values: Study Control, Case, Not Used",
+        "Field 'sex' has 702 invalid values: age, , 35, 32, 34, 21, 18, 33, 23, 19, 31, 27, 24, 29, 25, 20, 26, 37, 30, 22, 40, 38, 36, 28, 39. Allowed values: Female, Male",
+        "Field 'age' expected type 'integer' but found 'character' with values that cannot be coerced to integer",
+        "Field 'age' has 702 values not matching pattern:  [0-9]+",
+        "Field 'age_unit' has 702 invalid values: age_group, , Adult. Allowed values: Day, Week, Month, Year",
+        "Field 'age_group' has 702 invalid values: location, , Viti Levu. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
+        "Field 'location' has 351 values not matching pattern:  .+",
+        "Field 'ncbi_accession' has 702 values not matching pattern:  [ES]R[SR][0-9]+",
+        "Field 'sequencing_platform' has 702 invalid values: dna_extraction_kit, , QIAamp. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq",
+        "Field 'dna_extraction_kit' has 702 invalid values: n_of_bases, , 653110958, 355118859, 392104176, 67689914, 1774801646, 737798860, 2811354094, 183986242, 1061684565, 1461652123, 907886849, 177835535, 4973152729, 588269719, 486543083, 145318195, 4621478949, 1327113984, 101079109, 510482433, 1393343337, 90425436, 1657808868, 88343653, 4250895759, 8202013122, 1581854403, 40439358, 243449077, 679233832, 668650966, 74790776, 154386073, 21141109, 176463465, 123638757, 22042569, 29844845, 49669439, 51541092, 4516825141, 2873862939, 2850915856, 3055422876, 700930500, 105048436, 362181259, 1353977076, 230628979, 530716197, 238590822, 83139290, 885732496, 719407811, 1322839217, 7122922101, 1211694215, 727247337, 1310174114, 765243650, 2169814724, 1770190263, 606060432, 447014146, 545240337, 322373774, 89647733, 501623527, 915221622, 76963195, 1143105193, 3149211585, 1176924407, 2661330457, 682920779, 634990196, 4443707162, 1456311558, 177591931, 168890195, 1086161230, 122966548, 11754513250, 5848397751, 786698029, 349922371, 756771401, 520759778, 364215060, 237568296, 559349385, 75113356, 2582795877, 1017110626, 7365208735, 1428713319, 835978537, 72016628, 365423877, 71982612, 219345434, 551041578, 323700459, 109535257, 3279768189, 547938306, 2760687308, 122811225, 407252879, 62897065, 266771683, 75960768, 852603446, 69375818, 1426588935, 336099857, 382570465, 162074831, 1792003433, 341329798, 289261291, 254215519, 178613036, 56517385, 223189654, 72231249, 2525569600, 1787067438, 1195677112, 852580871, 6257800983, 5224646861, 156400739, 466622848, 529373237, 1118822085, 478546261, 118810092, 412167355, 79041287, 7552499504, 2978090153, 971811183, 306352205, 1334301339, 1695101226, 826207413, 6075627712, 15396644076, 720059435, 2435147677, 5395216299, 2308954616, 602321293, 2437544675, 4330281932, 2402117727, 6040606347, 410627429, 634064033, 287470604, 83436358, 1066200317, 964159460, 1214932970, 6004615975, 1778583904, 1633865191, 345375858, 140927480, 156780602, 31717811, 527109951, 114406029, 815482962, 90913025, 1108886129, 528157869, 313862410, 94172448, 1414302648, 1993371163, 6334841720, 85897602, 331583359, 372103005, 618829047, 832894369, 944819192, 280322918, 288109277, 503416099, 545036936, 1465600766, 161031583, 11446747502, 810322833, 635289132, 691151337, 3519907333, 52996296, 766472793, 399081753, 144555779, 6678474530, 672448371, 333716789, 742157086, 199259173, 133035835, 175844841, 12321052709, 10403016355, 1111431608, 10446072936, 370493975, 812244459, 652329935, 681682253, 360251918, 722236278, 2770200619, 6564674510, 839934264, 355750755, 62119062, 1778107780, 2258520929, 1538101454, 568770332, 1776518974, 1559637383, 359172332, 1482779689, 1768578941, 1403887363, 260050990, 328976035, 675673744, 4478722714, 6387694824, 2843465615, 1343933282, 6858782529, 769455740, 205800550, 941073520, 1167275000, 1397762543, 365471560, 836174888, 1647520574, 1175352302, 1515808476, 2516759219, 262337865, 1921899694, 1045965213, 854648614, 966575439, 5571037759, 228855233, 551791574, 223211484, 7395842351, 606486055, 1320948413, 3676914120, 7228042905, 317556068, 608626044, 837502480, 3938334062, 2444316900, 2433618500, 1597003729, 1573500873, 286140069, 126288737, 2690235949, 1120283848, 254479954, 275646817, 689109679, 5274688450, 717224562, 286569699, 1790652508, 1866919284, 186633508, 9233053365, 4744555735, 945168209, 751565656, 292459837, 156677147, 461602967, 491100341, 1453938722, 2428300842, 1826737589, 729366209, 78720830, 88746605, 1580224181, 236388976, 369138187, 265915044, 512156148, 2177913049, 545659676, 69235161, 586735499, 485039579, 122886271, 181592023, 204020867, 5137699889, 5249355349, 2368918009, 5789780267, 855502658, 822170411, 13890663621, 3303323558, 8986449734, 4958837732, 8633905321, 2727089784, 2616048643, 409389744, 2073111119, 457244151, 375725419, 227571407, 315957538, 265359706, 2106921327, 514815169, 4535626451, 1171542614, 285097945, 677191571, 621546627, 567591152, 3765340672, 269387656, 2404508087, 562503381, 445760608. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
       ]
     },
     {
@@ -360,16 +405,6 @@
       ]
     },
     {
-      "name": "GhensiP_2019",
-      "file": "inst/curated//GhensiP_2019/GhensiP_2019_sample.tsv",
-      "rows": 113,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
       "name": "GunjurA_2024",
       "file": "inst/curated//GunjurA_2024/GunjurA_2024_sample.tsv",
       "rows": 106,
@@ -381,26 +416,6 @@
       "warnings": [
         "Field 'dna_extraction_kit' has 106 invalid values: FastDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
       ]
-    },
-    {
-      "name": "HallAB_2017",
-      "file": "inst/curated//HallAB_2017/HallAB_2017_sample.tsv",
-      "rows": 259,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: median_read_length, minimum_read_length, number_bases, number_reads"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "IaniroG_2022",
-      "file": "inst/curated//IaniroG_2022/IaniroG_2022_sample.tsv",
-      "rows": 165,
-      "cols": 28,
-      "errors": [
-        "Missing required fields: sequencing_platform"
-      ],
-      "warnings": []
     },
     {
       "name": "IjazUZ_2017",
@@ -665,16 +680,6 @@
         "Columns not covered by schema: study_condition, non_westernized, ajcc, RECIST, ORR, PFS12, previous_therapy"
       ],
       "warnings": []
-    },
-    {
-      "name": "NagataN_2022",
-      "file": "inst/curated//NagataN_2022/NagataN_2022_sample.tsv",
-      "rows": 560,
-      "cols": 19,
-      "errors": [],
-      "warnings": [
-        "Field 'control' has 470 invalid values: Control. Allowed values: Study Control, Case, Not Used"
-      ]
     },
     {
       "name": "NayakRR_2021",
