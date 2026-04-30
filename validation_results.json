@@ -2,23 +2,23 @@
   "status": "FAIL",
   "summary": {
     "total_files": 130,
-    "total_errors": 48,
-    "total_warnings": 214,
-    "files_with_issues": 34
+    "total_errors": 29,
+    "total_warnings": 478,
+    "files_with_issues": 31
   },
   "stats": {
     "total_studies": 130,
-    "total_samples": 32444,
+    "total_samples": 31742,
     "distributions": {
       "age_group": {
         "top": [
           {
             "name": "Adult",
-            "count": 21389
+            "count": 21474
           },
           {
             "name": "Elderly",
-            "count": 4496
+            "count": 4551
           },
           {
             "name": "Newborn",
@@ -37,30 +37,18 @@
             "count": 926
           },
           {
-            "name": "Viti Levu",
-            "count": 350
-          },
-          {
-            "name": "adult",
-            "count": 32
-          },
-          {
-            "name": "senior",
-            "count": 2
-          },
-          {
             "name": "Not applicable",
             "count": 1
           }
         ],
-        "total_distinct": 11,
-        "total_count": 31907
+        "total_distinct": 7,
+        "total_count": 31662
       },
       "body_site": {
         "top": [
           {
             "name": "feces",
-            "count": 29343
+            "count": 29449
           },
           {
             "name": "oral cavity",
@@ -75,28 +63,16 @@
             "count": 446
           },
           {
-            "name": "median vaginal canal",
-            "count": 258
-          },
-          {
             "name": "nasal cavity",
             "count": 93
           },
           {
-            "name": "endocervix",
-            "count": 92
-          },
-          {
             "name": "milk",
             "count": 8
-          },
-          {
-            "name": "body_site",
-            "count": 1
           }
         ],
-        "total_distinct": 9,
-        "total_count": 31987
+        "total_distinct": 6,
+        "total_count": 31742
       },
       "published_year": {
         "top": [
@@ -129,30 +105,30 @@
             "count": 2089
           },
           {
-            "name": "2023",
-            "count": 1426
-          },
-          {
             "name": "2014",
             "count": 1340
           },
           {
             "name": "2020",
             "count": 1182
+          },
+          {
+            "name": "2012",
+            "count": 1111
           }
         ],
         "total_distinct": 14,
-        "total_count": 27784
+        "total_count": 27082
       },
       "country": {
         "top": [
           {
             "name": "United States",
-            "count": 5631
+            "count": 7116
           },
           {
             "name": "United Kingdom",
-            "count": 3087
+            "count": 3761
           },
           {
             "name": "Netherlands",
@@ -163,10 +139,6 @@
             "count": 1870
           },
           {
-            "name": "USA",
-            "count": 1686
-          },
-          {
             "name": "Denmark",
             "count": 1301
           },
@@ -175,20 +147,24 @@
             "count": 1192
           },
           {
-            "name": "ARG",
-            "count": 1117
+            "name": "Argentina",
+            "count": 1082
           },
           {
             "name": "Germany",
-            "count": 988
+            "count": 1064
           },
           {
             "name": "France",
             "count": 915
+          },
+          {
+            "name": "Israel",
+            "count": 900
           }
         ],
-        "total_distinct": 84,
-        "total_count": 32138
+        "total_distinct": 81,
+        "total_count": 31787
       },
       "ancestry": {
         "top": [
@@ -228,11 +204,11 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 15446
+            "count": 15457
           },
           {
-            "name": "control",
-            "count": 2725
+            "name": "healthy",
+            "count": 2288
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -267,8 +243,8 @@
             "count": 648
           }
         ],
-        "total_distinct": 495,
-        "total_count": 36077
+        "total_distinct": 163,
+        "total_count": 36874
       },
       "sex": {
         "top": [
@@ -283,71 +259,80 @@
           {
             "name": "Not applicable",
             "count": 495
-          },
-          {
-            "name": "34",
-            "count": 32
-          },
-          {
-            "name": "23",
-            "count": 28
-          },
-          {
-            "name": "33",
-            "count": 28
-          },
-          {
-            "name": "24",
-            "count": 25
-          },
-          {
-            "name": "32",
-            "count": 25
-          },
-          {
-            "name": "35",
-            "count": 22
-          },
-          {
-            "name": "30",
-            "count": 21
           }
         ],
-        "total_distinct": 27,
-        "total_count": 29933
+        "total_distinct": 3,
+        "total_count": 29582
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-04-15T22:46:37Z",
+    "timestamp": "2026-04-30T00:16:12Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "a9b71578b5125ccaa971a6e5525578342401bece",
     "schema_commit_short": "a9b7157",
-    "run_id": "24482221053"
+    "run_id": "25140592209"
   },
   "studies_with_issues": [
     {
       "name": "ArtachoA_2021",
       "file": "inst/curated//ArtachoA_2021/ArtachoA_2021_sample.tsv",
       "rows": 69,
-      "cols": 30,
+      "cols": 29,
       "errors": [
-        "Missing required fields: control",
-        "Columns not covered by schema: hscrp, ESR, anti_ccp_antibody, rheumatoid_factor, nationality, responsive_to_treatment, prescribed_treatment, DAS28_baseline, DAS28_t4, tjc, sjc"
+        "Columns not covered by schema: uncurated_nationality, uncurated_DAS28_baseline, uncurated_DAS28_t4, uncurated_tjc, uncurated_sjc"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 2 invalid values: . Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
+        "Field 'sex' has 2 invalid values: . Allowed values: Female, Male",
+        "Field 'location' has 2 values not matching pattern:  .+",
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
+        "Field 'biomarker_value' row 3 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 34 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 43 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 46 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 46 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 51 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 51 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 63 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 64 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 67 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*"
+      ]
     },
     {
       "name": "BaiX_2021",
       "file": "inst/curated//BaiX_2021/BaiX_2021_sample.tsv",
       "rows": 24,
-      "cols": 22,
+      "cols": 24,
       "errors": [
-        "Missing required fields: control",
-        "Columns not covered by schema: ART_treatment_duration, HIV_transmission_mode, CD4_cell_count, CD4_nadir"
+        "Columns not covered by schema: uncurated_ART_treatment_duration, uncurated_HIV_transmission_mode"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
+        "Field 'biomarker_value' row 8 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 8 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 9 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 9 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 10 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 10 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 11 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 11 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 13 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 13 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 14 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 14 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 15 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 15 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 16 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 16 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 17 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 17 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 18 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 18 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 19 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 19 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*"
+      ]
     },
     {
       "name": "BoktorJC_2023",
@@ -355,43 +340,86 @@
       "rows": 227,
       "cols": 29,
       "errors": [
-        "Columns not covered by schema: feces_phenotype_metric, (uncurated)having_pets, (uncurated)caffeine_consumption"
+        "Columns not covered by schema: uncurated_pets, uncurated_caffeine_consumption"
       ],
       "warnings": [
-        "Field 'dna_extraction_kit' has 227 invalid values: Qiagen MagAttract PowerSoil gDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
-      ]
-    },
-    {
-      "name": "BommanaS_2023",
-      "file": "inst/curated//BommanaS_2023/BommanaS_2023_sample.tsv",
-      "rows": 1052,
-      "cols": 18,
-      "errors": [],
-      "warnings": [
-        "Field 'study_name' has 352 values not matching pattern:  [a-zA-Z-]+_[0-9]{4}|[a-zA-Z-]+_[0-9]{4}[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z0-9]+",
-        "Field 'body_site' has 702 invalid values: body_site, , median vaginal canal, endocervix. Allowed values: feces, oral cavity, skin epidermis, vagina, nasal cavity, milk",
-        "Field 'control' has 702 invalid values: curator, , Alice_Bassetto;Paolo_Manghi. Allowed values: Study Control, Case, Not Used",
-        "Field 'sex' has 702 invalid values: age, , 35, 32, 34, 21, 18, 33, 23, 19, 31, 27, 24, 29, 25, 20, 26, 37, 30, 22, 40, 38, 36, 28, 39. Allowed values: Female, Male",
-        "Field 'age' expected type 'integer' but found 'character' with values that cannot be coerced to integer",
-        "Field 'age' has 702 values not matching pattern:  [0-9]+",
-        "Field 'age_unit' has 702 invalid values: age_group, , Adult. Allowed values: Day, Week, Month, Year",
-        "Field 'age_group' has 702 invalid values: location, , Viti Levu. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
-        "Field 'location' has 351 values not matching pattern:  .+",
-        "Field 'ncbi_accession' has 702 values not matching pattern:  [ES]R[SR][0-9]+",
-        "Field 'sequencing_platform' has 702 invalid values: dna_extraction_kit, , QIAamp. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq",
-        "Field 'dna_extraction_kit' has 702 invalid values: n_of_bases, , 653110958, 355118859, 392104176, 67689914, 1774801646, 737798860, 2811354094, 183986242, 1061684565, 1461652123, 907886849, 177835535, 4973152729, 588269719, 486543083, 145318195, 4621478949, 1327113984, 101079109, 510482433, 1393343337, 90425436, 1657808868, 88343653, 4250895759, 8202013122, 1581854403, 40439358, 243449077, 679233832, 668650966, 74790776, 154386073, 21141109, 176463465, 123638757, 22042569, 29844845, 49669439, 51541092, 4516825141, 2873862939, 2850915856, 3055422876, 700930500, 105048436, 362181259, 1353977076, 230628979, 530716197, 238590822, 83139290, 885732496, 719407811, 1322839217, 7122922101, 1211694215, 727247337, 1310174114, 765243650, 2169814724, 1770190263, 606060432, 447014146, 545240337, 322373774, 89647733, 501623527, 915221622, 76963195, 1143105193, 3149211585, 1176924407, 2661330457, 682920779, 634990196, 4443707162, 1456311558, 177591931, 168890195, 1086161230, 122966548, 11754513250, 5848397751, 786698029, 349922371, 756771401, 520759778, 364215060, 237568296, 559349385, 75113356, 2582795877, 1017110626, 7365208735, 1428713319, 835978537, 72016628, 365423877, 71982612, 219345434, 551041578, 323700459, 109535257, 3279768189, 547938306, 2760687308, 122811225, 407252879, 62897065, 266771683, 75960768, 852603446, 69375818, 1426588935, 336099857, 382570465, 162074831, 1792003433, 341329798, 289261291, 254215519, 178613036, 56517385, 223189654, 72231249, 2525569600, 1787067438, 1195677112, 852580871, 6257800983, 5224646861, 156400739, 466622848, 529373237, 1118822085, 478546261, 118810092, 412167355, 79041287, 7552499504, 2978090153, 971811183, 306352205, 1334301339, 1695101226, 826207413, 6075627712, 15396644076, 720059435, 2435147677, 5395216299, 2308954616, 602321293, 2437544675, 4330281932, 2402117727, 6040606347, 410627429, 634064033, 287470604, 83436358, 1066200317, 964159460, 1214932970, 6004615975, 1778583904, 1633865191, 345375858, 140927480, 156780602, 31717811, 527109951, 114406029, 815482962, 90913025, 1108886129, 528157869, 313862410, 94172448, 1414302648, 1993371163, 6334841720, 85897602, 331583359, 372103005, 618829047, 832894369, 944819192, 280322918, 288109277, 503416099, 545036936, 1465600766, 161031583, 11446747502, 810322833, 635289132, 691151337, 3519907333, 52996296, 766472793, 399081753, 144555779, 6678474530, 672448371, 333716789, 742157086, 199259173, 133035835, 175844841, 12321052709, 10403016355, 1111431608, 10446072936, 370493975, 812244459, 652329935, 681682253, 360251918, 722236278, 2770200619, 6564674510, 839934264, 355750755, 62119062, 1778107780, 2258520929, 1538101454, 568770332, 1776518974, 1559637383, 359172332, 1482779689, 1768578941, 1403887363, 260050990, 328976035, 675673744, 4478722714, 6387694824, 2843465615, 1343933282, 6858782529, 769455740, 205800550, 941073520, 1167275000, 1397762543, 365471560, 836174888, 1647520574, 1175352302, 1515808476, 2516759219, 262337865, 1921899694, 1045965213, 854648614, 966575439, 5571037759, 228855233, 551791574, 223211484, 7395842351, 606486055, 1320948413, 3676914120, 7228042905, 317556068, 608626044, 837502480, 3938334062, 2444316900, 2433618500, 1597003729, 1573500873, 286140069, 126288737, 2690235949, 1120283848, 254479954, 275646817, 689109679, 5274688450, 717224562, 286569699, 1790652508, 1866919284, 186633508, 9233053365, 4744555735, 945168209, 751565656, 292459837, 156677147, 461602967, 491100341, 1453938722, 2428300842, 1826737589, 729366209, 78720830, 88746605, 1580224181, 236388976, 369138187, 265915044, 512156148, 2177913049, 545659676, 69235161, 586735499, 485039579, 122886271, 181592023, 204020867, 5137699889, 5249355349, 2368918009, 5789780267, 855502658, 822170411, 13890663621, 3303323558, 8986449734, 4958837732, 8633905321, 2727089784, 2616048643, 409389744, 2073111119, 457244151, 375725419, 227571407, 315957538, 265359706, 2106921327, 514815169, 4535626451, 1171542614, 285097945, 677191571, 621546627, 567591152, 3765340672, 269387656, 2404508087, 562503381, 445760608. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
-      ]
-    },
-    {
-      "name": "ContevilleLC_2019",
-      "file": "inst/curated//ContevilleLC_2019/ContevilleLC_2019_sample.tsv",
-      "rows": 15,
-      "cols": 19,
-      "errors": [
-        "Missing required fields: target_condition"
-      ],
-      "warnings": [
-        "Field 'control' has 15 invalid values: control. Allowed values: Study Control, Case, Not Used"
+        "Field 'family' has 117 values not matching pattern:  .+",
+        "Field 'antibiotics_current_use' has 27 invalid values: . Allowed values: Yes, No",
+        "Field 'obgyn_birth_control' has 132 invalid values: . Allowed values: Yes, No",
+        "Field 'dna_extraction_kit' has 227 invalid values: Qiagen MagAttract PowerSoil gDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp",
+        "Row 14: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 62: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 114: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 115: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 116: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 117: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 118: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 119: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 120: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 121: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 122: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 123: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 124: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 125: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 126: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 127: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 128: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 129: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 130: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 131: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 132: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 133: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 134: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 135: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 136: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 137: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 138: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 139: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 140: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 141: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 142: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 143: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 144: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 145: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 146: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 147: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 148: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 149: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 150: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 151: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 152: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 153: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 154: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 155: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 156: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 157: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 158: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 159: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 160: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 163: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 164: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 165: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 166: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 167: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 170: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 172: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 174: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 176: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 179: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 182: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 183: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 184: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 185: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 215: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 218: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 219: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 220: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 222: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 223: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 224: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 225: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 226: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 227: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing"
       ]
     },
     {
@@ -408,10 +436,9 @@
       "name": "GunjurA_2024",
       "file": "inst/curated//GunjurA_2024/GunjurA_2024_sample.tsv",
       "rows": 106,
-      "cols": 28,
+      "cols": 32,
       "errors": [
-        "Missing required fields: target_condition, control, body_site",
-        "Columns not covered by schema: treatments, ECOG Performance Status, Tumor_Size_measurement, Neutrophil_to_Lymphocyte_Ratio_Measurement, (uncurated)platelets, Albumin_in_g/dL, Lactate_Dehydrogenase_measurement_in_U/L, concentration"
+        "Columns not covered by schema: uncurated_ecog_performance_status, uncurated_tumor_size_measurement, uncurated_platelets, uncurated_concentration"
       ],
       "warnings": [
         "Field 'dna_extraction_kit' has 106 invalid values: FastDNA. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
@@ -421,11 +448,13 @@
       "name": "IjazUZ_2017",
       "file": "inst/curated//IjazUZ_2017/IjazUZ_2017_sample.tsv",
       "rows": 94,
-      "cols": 37,
-      "errors": [
-        "Columns not covered by schema: V1"
-      ],
-      "warnings": []
+      "cols": 36,
+      "errors": [],
+      "warnings": [
+        "Field 'age_unit' has 1 invalid values: . Allowed values: Day, Week, Month, Year",
+        "Field 'family_role' has 27 invalid values: . Allowed values: child, mother, father",
+        "Field 'sex' has 83 invalid values: . Allowed values: Female, Male"
+      ]
     },
     {
       "name": "iMSMS_2022",
@@ -433,10 +462,13 @@
       "rows": 3190,
       "cols": 39,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, disease_subtype, non_westernized, birth_control_pil, ever_smoker, born_method, diet, years_after_onset, ms_family, allergic, vitaminD_IU, children_number, roommates, recreational_drug, pets, education, occupation, collection_method"
+        "Columns not covered by schema: ucurated_years_after_onset, uncurated_ms_family, uncurated_allergic, uncurated_vitaminD_IU, uncurated_children_number, uncurated_roommates, uncurated_recreational_drug, uncurated_pets, uncurated_education, uncurated_occupation, uncurated_collection_method"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'obgyn_birth_control' has 131 invalid values: . Allowed values: Yes, No",
+        "Field 'neonatal_delivery_procedure' has 479 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery",
+        "Field 'dietary_restriction' has 3061 invalid values: , gluten_free,paleo,others, lactose_intolerance, others, lactose_intolerance,gluten_free, gluten_free,vegetarian, pescetarian, lactose_intolerance,gluten_free,pescetarian, pescetarian,vegan,vegetarian, pescetarian,others, gluten_free,paleo, lactose_intolerance,gluten_free,paleo, lactose_intolerance,gluten_free,paleo,others, vegetarian,others, pescetarian,vegan,others, gluten_free,others, gluten_free,pescetarian, pescetarian,vegetarian, lactose_intolerance,gluten_free,vegetarian,others, pescetarian,vegan, lactose_intolerance,others, lactose_intolerance,pescetarian, lactose_intolerance,gluten_free,others. Allowed values: omnivore, low_gluten, high_gluten, gluten_free, vegetarian, vegan, pescatarian, high_fiber, low_fiber, paleo, equal_protein_fat_carbs, high_complex_carbs"
+      ]
     },
     {
       "name": "KartalE_2022",
@@ -444,221 +476,22 @@
       "rows": 329,
       "cols": 23,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: body_subsite, study_condition, non_westernized, ever_smoker, alcohol, disease_stage"
+        "Columns not covered by schema: uncurated_alcohol"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'antibiotics_current_use' has 26 invalid values: . Allowed values: Yes, No",
+        "Field 'tumor_staging_ajcc' has 176 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV"
+      ]
     },
     {
       "name": "KosticAD_2015",
       "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
-      "cols": 38,
-      "errors": [],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
-        "Field 'biomarker_value' row 1 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 1 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 1 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 2 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 2 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 2 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 3 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 3 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 3 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 4 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 4 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 4 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 5 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 5 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 5 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 6 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 6 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 6 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 7 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 7 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 8 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 8 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 9 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 9 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 10 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 10 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 10 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 11 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 11 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 12 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 12 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 12 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 13 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 13 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 13 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 14 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 14 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 14 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 15 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 15 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 15 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 16 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 16 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 16 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 17 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 17 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 17 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 18 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 18 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 18 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 19 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 19 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 19 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 20 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 20 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 20 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 21 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 21 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 21 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 22 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 22 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 22 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 23 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 23 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 23 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 24 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 24 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 24 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 25 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 25 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 26 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 26 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 27 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 27 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 27 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 28 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 28 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 28 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 29 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 29 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 29 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 30 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 30 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 30 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 31 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 31 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 32 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 32 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 33 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 33 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 33 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 34 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 34 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 34 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 35 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 35 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 35 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 36 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 36 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 36 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 37 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 37 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 38 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 38 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 39 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 39 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 39 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 40 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 40 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 40 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 41 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 41 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 42 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 42 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 43 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 43 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 44 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 44 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 44 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 45 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 45 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 46 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 46 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 47 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 47 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 47 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 48 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 48 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 48 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 49 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 49 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 49 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 50 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 50 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 51 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 51 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 52 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 52 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 52 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 53 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 53 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 54 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 54 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 55 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 55 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 55 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 56 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 56 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 56 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 57 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 57 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 58 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 58 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 59 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 59 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 60 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 60 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 61 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 61 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 62 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 62 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 62 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 63 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 63 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 64 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 64 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 64 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 65 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 65 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 65 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 66 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 66 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 66 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 67 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 67 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 67 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 68 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 68 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 69 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 69 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 70 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 70 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 71 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 71 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 71 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 72 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 72 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 72 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 73 has value 'IAA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 73 has value 'GADA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 73 has value 'ICA' not matching pattern: [0-9]+\\.?[0-9]*"
-      ]
-    },
-    {
-      "name": "LeeKA_2022",
-      "file": "inst/curated//LeeKA_2022/LeeKA_2022_sample.tsv",
-      "rows": 165,
-      "cols": 36,
-      "errors": [],
-      "warnings": [
-        "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+"
-      ]
+      "cols": 37,
+      "errors": [
+        "Columns not covered by schema: uncurated_autoantibody_titer_positive_finding, uncurated_serum_positive_autoantibodies"
+      ],
+      "warnings": []
     },
     {
       "name": "MaoL_2021",
@@ -667,17 +500,17 @@
       "cols": 18,
       "errors": [],
       "warnings": [
-        "Field 'sequencing_platform' has 78 invalid values: BGISEQ-500. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq"
+        "Field 'age_unit' has 39 invalid values: . Allowed values: Day, Week, Month, Year",
+        "Field 'sex' has 39 invalid values: . Allowed values: Female, Male"
       ]
     },
     {
       "name": "McCullochJA_2022",
       "file": "inst/curated//McCullochJA_2022/McCullochJA_2022_sample.tsv",
       "rows": 94,
-      "cols": 26,
+      "cols": 28,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, ajcc, RECIST, ORR, PFS12, previous_therapy"
+        "Columns not covered by schema: ajcc_subtype, uncurated_previous_therapy"
       ],
       "warnings": []
     },
@@ -685,13 +518,9 @@
       "name": "NayakRR_2021",
       "file": "inst/curated//NayakRR_2021/NayakRR_2021_sample.tsv",
       "rows": 34,
-      "cols": 22,
-      "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, anti_ccp_antibody, rheumatoid_factor, responsive_to_treatment"
-      ],
+      "cols": 24,
+      "errors": [],
       "warnings": [
-        "Field 'age_group' has 34 invalid values: adult, senior. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
         "Field 'dna_extraction_kit' has 34 invalid values: ZymoBIOMICS96MagBead. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
       ]
     },
@@ -701,18 +530,19 @@
       "rows": 113,
       "cols": 37,
       "errors": [
-        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, history_of_therapy, breastfeeding_duration"
+        "Columns not covered by schema: uncurated_original_age_value, uncurated_original_age_unit, uncurated_history_of_therapy, uncurated_breastfeeding_duration"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'antibiotics_current_use' has 54 invalid values: . Allowed values: Yes, No"
+      ]
     },
     {
       "name": "PallejaA_2018",
       "file": "inst/curated//PallejaA_2018/PallejaA_2018_sample.tsv",
       "rows": 57,
-      "cols": 19,
+      "cols": 20,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: antibiotics_family, study_condition, visit_number, non_westernized"
+        "Columns not covered by schema: uncurated_antibiotics_family, uncurated_visit_number"
       ],
       "warnings": []
     },
@@ -720,11 +550,8 @@
       "name": "PernigoniN_2021",
       "file": "inst/curated//PernigoniN_2021/PernigoniN_2021_sample.tsv",
       "rows": 74,
-      "cols": 20,
-      "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: body_subsite, study_condition, disease_subtype, non_westernized"
-      ],
+      "cols": 21,
+      "errors": [],
       "warnings": [
         "Field 'dna_extraction_kit' has 74 invalid values: QIAamp_fast. Allowed values: Qiagen, Gnome, MoBio, MPBio, NorgenBiotek, Illuminakit, Maxwell_LEV, PSP_Spin_Stool, Tiangen, PowerSoil, Chemagen, other, PowerSoilPro, ZR_Fecal_DNA_MiniPrep, KAMA_Hyper_Prep, thermo_fisher, QIAamp"
       ]
@@ -746,7 +573,7 @@
       "rows": 86,
       "cols": 32,
       "errors": [
-        "Columns not covered by schema: disease_subtype, original_age_value, original_age_unit, non_westernized, population"
+        "Columns not covered by schema: uncurated_original_age_value, uncurated_original_age_unit, uncurated_population"
       ],
       "warnings": []
     },
@@ -754,12 +581,14 @@
       "name": "SpencerCN_2021",
       "file": "inst/curated//SpencerCN_2021/SpencerCN_2021_sample.tsv",
       "rows": 167,
-      "cols": 25,
+      "cols": 27,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: study_condition, non_westernized, diet, ORR, PFS12, previous_therapy, PFS03, PFS06"
+        "Columns not covered by schema: uncurated_PFS12, uncurated_previous_therapy, uncurated_PFS03, uncurated_PFS06"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'antibiotics_current_use' has 56 invalid values: . Allowed values: Yes, No",
+        "Field 'dietary_restriction' has 73 invalid values: . Allowed values: omnivore, low_gluten, high_gluten, gluten_free, vegetarian, vegan, pescatarian, high_fiber, low_fiber, paleo, equal_protein_fat_carbs, high_complex_carbs"
+      ]
     },
     {
       "name": "TeeMZ_2022",
@@ -767,64 +596,342 @@
       "rows": 650,
       "cols": 37,
       "errors": [
-        "Columns not covered by schema: disease_subtype, population, non_westernized, remission, pregnant, lactating"
+        "Columns not covered by schema: uncurated_population, uncurated_remission"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'age_group' has 14 invalid values: . Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
+        "Field 'antibiotics_current_use' has 370 invalid values: . Allowed values: Yes, No",
+        "Field 'subcohort' has 282 values not matching pattern:  [0-9a-zA-Z]\\S+",
+        "Field 'obgyn_pregnancy' has 650 invalid values: No. Allowed values: Pregnant, Not Pregnant"
+      ]
     },
     {
       "name": "Valles-ColomerM_2023_a",
       "file": "inst/curated//Valles-ColomerM_2023_a/Valles-ColomerM_2023_a_sample.tsv",
       "rows": 27,
-      "cols": 27,
+      "cols": 28,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+        "Columns not covered by schema: uncurated_infant_age"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'neonatal_delivery_procedure' has 14 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery",
+        "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+"
+      ]
     },
     {
       "name": "Valles-ColomerM_2023_b",
       "file": "inst/curated//Valles-ColomerM_2023_b/Valles-ColomerM_2023_b_sample.tsv",
       "rows": 27,
-      "cols": 27,
+      "cols": 28,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+        "Columns not covered by schema: uncurated_infant_age"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'neonatal_delivery_procedure' has 8 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery"
+      ]
     },
     {
       "name": "Valles-ColomerM_2023_c",
       "file": "inst/curated//Valles-ColomerM_2023_c/Valles-ColomerM_2023_c_sample.tsv",
       "rows": 24,
-      "cols": 27,
+      "cols": 28,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+        "Columns not covered by schema: uncurated_infant_age"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'neonatal_delivery_procedure' has 12 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery"
+      ]
     },
     {
       "name": "Valles-ColomerM_2023_d",
       "file": "inst/curated//Valles-ColomerM_2023_d/Valles-ColomerM_2023_d_sample.tsv",
       "rows": 342,
-      "cols": 27,
+      "cols": 28,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+        "Columns not covered by schema: uncurated_infant_age"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'sex' has 13 invalid values: . Allowed values: Female, Male",
+        "Field 'ncbi_accession' has 2 values not matching pattern:  [ES]R[SR][0-9]+"
+      ]
     },
     {
       "name": "Valles-ColomerM_2023_e",
       "file": "inst/curated//Valles-ColomerM_2023_e/Valles-ColomerM_2023_e_sample.tsv",
       "rows": 104,
-      "cols": 27,
+      "cols": 29,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, feeding_practice, bristol_score"
+        "Columns not covered by schema: uncurated_infant_age"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'neonatal_delivery_procedure' has 4 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery",
+        "Field 'zigosity' has 60 invalid values: . Allowed values: monozygotic, dizygotic",
+        "Field 'location' has 48 values not matching pattern:  .+",
+        "Field 'neonatal_feeding_method' row 49 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 50 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 51 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 52 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 53 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 54 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 55 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 56 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 57 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 58 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 59 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 60 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 61 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 62 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 63 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 64 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 65 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 66 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 67 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 68 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 69 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 70 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 71 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 72 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 73 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 74 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 75 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 76 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 77 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 78 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 79 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 80 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 81 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 82 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 83 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 84 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 85 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 86 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 87 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 88 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 89 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 90 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 91 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 92 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 93 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 94 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 95 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 96 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 97 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 98 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 99 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 100 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 101 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 102 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 103 has invalid values: exclusively_formula_feeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'neonatal_feeding_method' row 104 has invalid values: exclusively_breastfeeding. Allowed values: Mixed Feeding, Exclusively Breastfeeding, Exclusively Formula Feeding, No Breastfeeding",
+        "Field 'feces_phenotype' row 1 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 2 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 3 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 4 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 5 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 6 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 7 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 8 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 9 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 10 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 11 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 12 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 13 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 14 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 15 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 16 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 17 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 18 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 19 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 20 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 21 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 22 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 23 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 24 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 25 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 26 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 27 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 28 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 29 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 30 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 31 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 32 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 33 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 34 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 35 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 36 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 37 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 38 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 39 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 40 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 41 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 42 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 43 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 44 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 45 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 46 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 47 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 48 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 49 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 50 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 51 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 52 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 53 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 54 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 55 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 56 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 57 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 58 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 59 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 60 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 61 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 62 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 63 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 64 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 65 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 66 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 67 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 68 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 69 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 70 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 71 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 72 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 73 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 74 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 75 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 76 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 77 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 78 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 79 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 80 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 81 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 82 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 83 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 84 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 85 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 86 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 87 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 88 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 89 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 90 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 91 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 92 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 93 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 94 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 95 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 96 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 97 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 98 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 99 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 100 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 101 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 102 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 103 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Field 'feces_phenotype' row 104 has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 1: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 2: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 3: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 4: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 5: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 6: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 7: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 8: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 9: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 10: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 11: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 12: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 13: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 14: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 15: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 16: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 17: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 18: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 19: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 20: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 21: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 22: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 23: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 24: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 25: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 26: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 27: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 28: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 29: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 30: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 31: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 32: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 33: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 34: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 35: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 36: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 37: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 38: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 39: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 40: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 41: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 42: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 43: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 44: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 45: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 46: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 47: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 48: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 49: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 50: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 51: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 52: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 53: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 54: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 55: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 56: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 57: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 58: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 59: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 60: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 61: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 62: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 63: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 64: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 65: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 66: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 67: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 68: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 69: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 70: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 71: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 72: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 73: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 74: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 75: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 76: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 77: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 78: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 79: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 80: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 81: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 82: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 83: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 84: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 85: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 86: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 87: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 88: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 89: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 90: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 91: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 92: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 93: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 94: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 95: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 96: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 97: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 98: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 99: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 100: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 101: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 102: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 103: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification",
+        "Row 104: 'feces_phenotype' has invalid values: Bristol stool from score (observable entity). Allowed values: Bristol stool form score (observable entity), Calprotectin Measurement, Harvey-Bradshaw Index Clinical Classification"
+      ]
     },
     {
       "name": "WallenZD_2022",
@@ -832,9 +939,49 @@
       "rows": 724,
       "cols": 26,
       "errors": [
-        "Columns not covered by schema: feces_phenotype_metric, cigarette_smoked_ever, (uncurated)drink_caffeinate_beverages"
+        "Columns not covered by schema: uncurated_drink_caffeinated_beverages"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'obgyn_birth_control' has 34 invalid values: . Allowed values: Yes, No",
+        "Field 'antibiotics_current_use' has 19 invalid values: . Allowed values: Yes, No",
+        "Row 4: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 12: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 142: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 150: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 156: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 166: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 170: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 198: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 215: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 219: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 224: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 234: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 253: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 290: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 299: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 340: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 356: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 383: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 388: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 407: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 413: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 441: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 462: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 478: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 554: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 563: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 580: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 583: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 586: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 587: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 588: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 652: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 670: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 689: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 699: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 702: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
+        "Row 705: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing"
+      ]
     },
     {
       "name": "WenC_2017",
@@ -851,12 +998,42 @@
       "name": "XuQ_2021",
       "file": "inst/curated//XuQ_2021/XuQ_2021_sample.tsv",
       "rows": 347,
-      "cols": 29,
+      "cols": 26,
       "errors": [
-        "Missing required fields: target_condition, control",
-        "Columns not covered by schema: non_westernized, study_condition, bilirubin, creatinine, glucose, cholesterol, triglycerides, hdl, ldl, alcohol"
+        "Columns not covered by schema: uncurated_alcohol"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'antibiotics_current_use' has 6 invalid values: . Allowed values: Yes, No",
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
+        "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 112 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 112 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 112 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 112 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 112 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 112 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 112 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 113 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 113 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 113 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 113 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 113 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 113 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 113 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 230 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 230 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 230 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 230 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 230 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 230 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 230 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*"
+      ]
     },
     {
       "name": "YangJ_2020",
