@@ -15,10 +15,12 @@ source("R/workflow_report_generators.R")
 main <- function() {
   cat("🔬 Starting metadata validation workflow\n\n")
 
-  # 1. Load schema
+  # 1. Load schema + ontology terms (project-specific artifact)
   cat("Loading schema from local data dictionary...\n")
   schema <- load_validation_schema()
-  cat("✓ Schema loaded successfully\n\n")
+  ontology_terms <- load_ontology_terms()
+  cat("✓ Schema loaded (",
+      length(ontology_terms), "ontology-backed fields)\n\n", sep = "")
 
   # 2. Find metadata files
   cat("Finding metadata files...\n")
@@ -28,7 +30,7 @@ main <- function() {
   # 3. Validate all files
   cat("Validating files...\n")
   results <- lapply(metadata_files, function(file) {
-    validate_single_study(file, schema)
+    validate_single_study(file, schema, ontology_terms)
   })
   cat("✓ Validation complete\n\n")
 

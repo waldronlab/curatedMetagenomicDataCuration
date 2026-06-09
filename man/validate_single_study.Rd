@@ -4,12 +4,16 @@
 \alias{validate_single_study}
 \title{Validate Single Study}
 \usage{
-validate_single_study(file, schema)
+validate_single_study(file, schema, ontology_terms = NULL)
 }
 \arguments{
 \item{file}{Path to TSV file}
 
 \item{schema}{Validation schema object}
+
+\item{ontology_terms}{Named list of precomputed ontology terms (from
+\code{\link{load_ontology_terms}}) used to validate dynamic_enum fields.
+Default \code{NULL} skips ontology-backed value checks.}
 }
 \value{
 List with validation results and metadata
