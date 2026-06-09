@@ -1,0 +1,95 @@
+---
+title: "Case-Control handling"
+author: "Delaney Collins"
+date: "April 9, 2026"
+format:
+    html:
+        fontsize: 14pxs
+        toc: true
+        top-depth: 3
+---
+
+## Overview
+
+This vignette explains how to annotate disease-related metadata fields for curated metagenomic studies.
+
+Required fields:
+`target_condition`,
+`control`,
+`disease`
+
+Optional field:
+`disease_details`
+
+## Definitions
+
+### `target_condition`
+
+Primary phenotype(s) or condition(s) investigated in the study
+
+### `control`
+
+Case-control role of the sample in the study
+
+### `disease`
+
+Reported disease or condition term(s) for the participant; Healthy when no condition is detected
+
+### `disease_details`
+
+More specific disease or condition term(s) for the participant; Healthy when no condition is detected
+
+## Rules for assigning `control`
+
+Subjects where the `target_condition` is detected are always considered cases, even if they also have other conditions.
+
+Subjects where the `target_condition` is not detected are considered controls for the study, including:
+
+- subjects with no reported conditions
+
+- subjects with other reported conditions that are not the target condition
+
+## Why this is useful
+
+This representation preserves the study-specific case/control structure while also allowing users to find all subjects with a given condition across studies, even when that condition is not the main focus of the original study.
+
+
+## Example scenarios
+
+### Example 1: Healthy control in a Parkinson disease study
+
+`study_name`: BoktorJC_2023
+
+`subject_id`: BC002173
+
+`target_condition`: Parkinson disease
+
+`control`: Study Control
+
+`disease`: Healthy
+
+### Example 2: Subject with Parkinson disease and depression in a Parkinson disease study
+
+`study_name`: BoktorJC_2023
+
+`subject_id`: BC002223
+
+`target_condition`: Parkinson disease
+
+`control`: Case
+
+`disease`: Parkinson disease,Depression
+
+### Example 3: Subject with bipolar but not Parkinson disease in a Parkinson disease study
+
+`study_name`: BoktorJC_2023
+
+`subject_id`: BC002201
+
+`target_condition`: Parkinson disease
+
+`control`: Study Control
+
+`disease`: bipolar
+
+---
