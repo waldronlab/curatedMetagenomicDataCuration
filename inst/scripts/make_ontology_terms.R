@@ -61,6 +61,34 @@ dyn <- dict[is_dyn & has_root, , drop = FALSE]
 message("dynamic_enum fields with roots: ",
         paste(dyn[["col.name"]], collapse = ", "))
 
+## Pre-flight: an OBSOLETE ontology root has its hierarchy stripped, so
+## descendants()/children() return NULL and the field silently loses coverage
+## (this is exactly how EFO:0000408 -> MONDO:0000001 went unnoticed). Fail loudly
+## here, before the expensive generation, naming the suggested replacement.
+check_root_not_obsolete <- function(root, field) {
+    onto <- tolower(get_ontologies(root))
+    term <- rols::olsTerm(rols::olsOntology(onto), root)
+    if (isTRUE(term@is_obsolete)) {
+        repl <- term@term_replaced_by
+        repl_txt <- if (length(repl) > 0) {
+            gsub("_", ":", sub(".*/", "", repl[1]))
+        } else {
+            "none recorded"
+        }
+        stop("Dictionary root ", root, " (field '", field, "') is OBSOLETE",
+             " (label '", rols::termLabel(term), "'). Update inst/extdata/",
+             "cMD_data_dictionary.csv; term_replaced_by suggests: ", repl_txt,
+             call. = FALSE)
+    }
+}
+message("Pre-flight: checking roots are not obsolete...")
+for (r in seq_len(nrow(dyn))) {
+    roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], ";", fixed = TRUE)[[1]])
+    for (root in roots[nzchar(roots)]) {
+        check_root_not_obsolete(root, dyn[["col.name"]][r])
+    }
+}
+
 ## Collect (term_id, label, synonyms) for the descendants/children of one root.
 collect_root <- function(root, property) {
     onto <- tolower(get_ontologies(root))
