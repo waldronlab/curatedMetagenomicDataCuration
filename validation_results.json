@@ -3,7 +3,7 @@
   "summary": {
     "total_files": 130,
     "total_errors": 27,
-    "total_warnings": 3421,
+    "total_warnings": 3392,
     "files_with_issues": 115
   },
   "stats": {
@@ -267,12 +267,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-06-09T22:09:23Z",
+    "timestamp": "2026-06-10T00:00:35Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "0957ee113df284b7ebc827dcb4390b19fb154b23",
     "schema_commit_short": "0957ee1",
-    "run_id": "27239000230"
+    "run_id": "27243653792"
   },
   "studies_with_issues": [
     {
@@ -398,8 +398,7 @@
       "cols": 28,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Parkinson's Disease' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (59 rows).",
-        "Field 'disease': 'Parkinson disease' is not a recognized term for this ontology-backed field (31 rows)."
+        "Field 'target_condition': 'Parkinson's Disease' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (59 rows)."
       ]
     },
     {
@@ -421,10 +420,8 @@
         "Columns not covered by schema: uncurated_pets, uncurated_caffeine_consumption"
       ],
       "warnings": [
-        "Field 'target_condition': 'Parkinson disease' is not a recognized term for this ontology-backed field (227 rows).",
         "Field 'family' has 117 values not matching pattern:  .+",
         "Field 'disease': 'Bipolar' is not a recognized term for this ontology-backed field (1 row).",
-        "Field 'disease': 'Parkinson disease' is not a recognized term for this ontology-backed field (86 rows).",
         "Field 'disease': 'Parkinson disease,Depression' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease': 'Parkinson disease,Mild cognitive deficit' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'antibiotics_current_use' has 27 invalid values: . Allowed values: Yes, No",
@@ -889,7 +886,7 @@
         "Field 'target_condition': 'IBD' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (122 rows).",
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (53 rows).",
         "Field 'disease': 'IBD' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (49 rows).",
-        "Field 'disease_details': 'CD' is not a recognized term for this ontology-backed field (49 rows).",
+        "Field 'disease_details': 'CD' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (49 rows).",
         "Field 'country': 'CHN' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (122 rows)."
       ]
     },
@@ -953,22 +950,18 @@
         "Columns not covered by schema: ucurated_years_after_onset, uncurated_ms_family, uncurated_allergic, uncurated_vitaminD_IU, uncurated_children_number, uncurated_roommates, uncurated_recreational_drug, uncurated_pets, uncurated_education, uncurated_occupation, uncurated_collection_method"
       ],
       "warnings": [
-        "Field 'disease': 'anxiety' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (374 rows).",
-        "Field 'disease': 'asthma' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (311 rows).",
-        "Field 'disease': 'bipolar disorder' is not a recognized term for this ontology-backed field (28 rows).",
         "Field 'disease': 'depression' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (413 rows).",
         "Field 'disease': 'eating_disorder' is not a recognized term for this ontology-backed field (28 rows).",
         "Field 'disease': 'eczema' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (259 rows).",
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (1157 rows).",
-        "Field 'disease': 'MS' is not a recognized term for this ontology-backed field (1591 rows).",
+        "Field 'disease': 'MS' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (1591 rows).",
         "Field 'disease': 'NCIT:C92852' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease': 'ocd' is not a recognized term for this ontology-backed field (32 rows).",
         "Field 'disease': 'postpartum_depression' is not a recognized term for this ontology-backed field (75 rows).",
-        "Field 'disease': 'type 2 diabetes mellitus' is not a recognized term for this ontology-backed field (62 rows).",
         "Field 'disease_details': 'healthy' is not a recognized term for this ontology-backed field (1599 rows).",
         "Field 'disease_details': 'PPMS' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (182 rows).",
         "Field 'disease_details': 'RRMS' is not a recognized term for this ontology-backed field (1256 rows).",
-        "Field 'disease_details': 'SPMS' is not a recognized term for this ontology-backed field (153 rows).",
+        "Field 'disease_details': 'SPMS' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (153 rows).",
         "Field 'obgyn_birth_control' has 131 invalid values: . Allowed values: Yes, No",
         "Field 'neonatal_delivery_procedure' has 479 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery",
         "Field 'treatment': 'Dimethyl fumarate' is not a recognized term for this ontology-backed field (232 rows).",
@@ -1185,7 +1178,6 @@
         "Field 'antibiotics_current_use' has 26 invalid values: . Allowed values: Yes, No",
         "Field 'target_condition': 'pacreatitis' is not a recognized term for this ontology-backed field (329 rows).",
         "Field 'disease': 'acute_pancreatitis' is not a recognized term for this ontology-backed field (3 rows).",
-        "Field 'disease': 'asthma' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (16 rows).",
         "Field 'disease': 'chronic_pancreatitis' is not a recognized term for this ontology-backed field (44 rows).",
         "Field 'disease': 'metastases' is not a recognized term for this ontology-backed field (8 rows).",
         "Field 'disease': 'obese' is not a recognized term for this ontology-backed field (65 rows).",
@@ -1376,10 +1368,8 @@
       "cols": 18,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Parkinson disease' is not a recognized term for this ontology-backed field (78 rows).",
         "Field 'age_unit' has 39 invalid values: . Allowed values: Day, Week, Month, Year",
-        "Field 'sex' has 39 invalid values: . Allowed values: Female, Male",
-        "Field 'disease': 'Parkinson disease' is not a recognized term for this ontology-backed field (39 rows)."
+        "Field 'sex' has 39 invalid values: . Allowed values: Female, Male"
       ]
     },
     {
@@ -1401,23 +1391,12 @@
         "Columns not covered by schema: ajcc_subtype, uncurated_previous_therapy"
       ],
       "warnings": [
-        "Field 'target_condition': 'melanoma' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (94 rows).",
         "Field 'disease': 'adrenal_insufficiency' is not a recognized term for this ontology-backed field (5 rows).",
         "Field 'disease': 'arthritis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (4 rows).",
         "Field 'disease': 'bullous_pemphigoid' is not a recognized term for this ontology-backed field (3 rows).",
-        "Field 'disease': 'colitis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (5 rows).",
-        "Field 'disease': 'dermatitis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (10 rows).",
         "Field 'disease': 'diabetes' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (1 row).",
-        "Field 'disease': 'hepatitis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (6 rows).",
-        "Field 'disease': 'hypothyroidism' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (20 rows).",
-        "Field 'disease': 'melanoma' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (94 rows).",
-        "Field 'disease': 'meningitis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (1 row).",
         "Field 'disease': 'myasthenia' is not a recognized term for this ontology-backed field (2 rows).",
-        "Field 'disease': 'nephritis' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease': 'neuropathy' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (2 rows).",
-        "Field 'disease': 'pneumonitis' is not a recognized term for this ontology-backed field (4 rows).",
-        "Field 'disease': 'psoriasis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (2 rows).",
-        "Field 'disease': 'vitiligo' is not a recognized term for this ontology-backed field (3 rows).",
         "Field 'disease': 'VKH_uveitis' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'treatment': 'antacids' is not a recognized term for this ontology-backed field (27 rows).",
         "Field 'treatment': 'anti-PD1' is not a recognized term for this ontology-backed field (2 rows).",
@@ -1828,8 +1807,6 @@
       ],
       "warnings": [
         "Field 'antibiotics_current_use' has 56 invalid values: . Allowed values: Yes, No",
-        "Field 'target_condition': 'melanoma' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (167 rows).",
-        "Field 'disease': 'melanoma' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (167 rows).",
         "Field 'country': 'USA' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (167 rows).",
         "Field 'treatment': 'antihypertensives' is not a recognized term for this ontology-backed field (76 rows).",
         "Field 'treatment': 'beta_blockers' is not a recognized term for this ontology-backed field (31 rows).",
@@ -2035,10 +2012,8 @@
       "cols": 36,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'bronchitis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (785 rows).",
         "Field 'target_condition': 'Infection' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (785 rows).",
         "Field 'target_condition': 'Sepsis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (785 rows).",
-        "Field 'disease': 'bronchitis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (18 rows).",
         "Field 'disease': 'Infection' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (1 row).",
         "Field 'disease': 'Sepsis' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (1 row).",
         "Field 'disease_details': 'Suspected' is not a recognized term for this ontology-backed field (1 row).",
@@ -2141,7 +2116,6 @@
         "Columns not covered by schema: uncurated_drink_caffeinated_beverages"
       ],
       "warnings": [
-        "Field 'target_condition': 'Parkinson disease' is not a recognized term for this ontology-backed field (724 rows).",
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (191 rows).",
         "Field 'disease': 'intestinal disease,Colitis' is not a recognized term for this ontology-backed field (15 rows).",
         "Field 'disease': 'intestinal disease,Inflammatory Bowel Disease' is not a recognized term for this ontology-backed field (2 rows).",
@@ -2152,7 +2126,6 @@
         "Field 'disease': 'intestinal disease,Inflammatory Bowel Syndrom' is not a recognized term for this ontology-backed field (18 rows).",
         "Field 'disease': 'intestinal disease,Inflammatory Bowel Syndrom,Colitis' is not a recognized term for this ontology-backed field (3 rows).",
         "Field 'disease': 'intestinal disease,ulcerative colitis' is not a recognized term for this ontology-backed field (1 row).",
-        "Field 'disease': 'Parkinson disease' is not a recognized term for this ontology-backed field (383 rows).",
         "Field 'disease': 'Parkinson disease,digestive system cancer,intestinal disease' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease': 'Parkinson disease,intestinal disease,celiac disease' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease': 'Parkinson disease,intestinal disease,Colitis' is not a recognized term for this ontology-backed field (48 rows).",
@@ -2765,7 +2738,7 @@
         "Field 'target_condition': 'Type 2 Diabetes' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (347 rows).",
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (221 rows).",
         "Field 'disease': 'hypertension' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (115 rows).",
-        "Field 'disease': 'T2D' is not a recognized term for this ontology-backed field (31 rows).",
+        "Field 'disease': 'T2D' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (31 rows).",
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
         "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
         "Field 'biomarker_value' row 111 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
@@ -2819,9 +2792,7 @@
         "Columns not covered by schema: uncurated_disease_location, uncurated_ajcc_details, uncurated_hemoglobinometry, uncurated_fobt"
       ],
       "warnings": [
-        "Field 'target_condition': 'colorectal cancer' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (193 rows).",
         "Field 'target_condition': 'human gut microbiome' is not a recognized term for this ontology-backed field (193 rows).",
-        "Field 'disease': 'colorectal cancer' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (98 rows).",
         "Field 'tumor_staging_ajcc' has 95 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV",
         "Field 'country': 'CHN' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (193 rows).",
         "Field 'tumor_staging_tnm' has 96 values not matching pattern:  T[X1-4]N[X0-3]M[X0-1]|pTis|Tis"
