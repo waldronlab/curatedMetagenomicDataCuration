@@ -2,13 +2,13 @@
   "status": "FAIL",
   "summary": {
     "total_files": 130,
-    "total_errors": 59,
-    "total_warnings": 1312,
+    "total_errors": 58,
+    "total_warnings": 1314,
     "files_with_issues": 115
   },
   "stats": {
     "total_studies": 130,
-    "total_samples": 35382,
+    "total_samples": 35300,
     "distributions": {
       "age_group": {
         "top": [
@@ -26,7 +26,7 @@
           },
           {
             "name": "Infant",
-            "count": 1574
+            "count": 1575
           },
           {
             "name": "Adolescent",
@@ -34,7 +34,7 @@
           },
           {
             "name": "Child",
-            "count": 567
+            "count": 644
           },
           {
             "name": "Not applicable",
@@ -42,13 +42,13 @@
           }
         ],
         "total_distinct": 7,
-        "total_count": 28058
+        "total_count": 28136
       },
       "body_site": {
         "top": [
           {
             "name": "feces",
-            "count": 26055
+            "count": 26133
           },
           {
             "name": "oral cavity",
@@ -72,7 +72,7 @@
           }
         ],
         "total_distinct": 6,
-        "total_count": 28066
+        "total_count": 28144
       },
       "published_year": {
         "top": [
@@ -106,7 +106,7 @@
           },
           {
             "name": "2020",
-            "count": 1677
+            "count": 1595
           },
           {
             "name": "2014",
@@ -118,7 +118,7 @@
           }
         ],
         "total_distinct": 14,
-        "total_count": 30236
+        "total_count": 30154
       },
       "country": {
         "top": [
@@ -163,8 +163,8 @@
             "count": 853
           }
         ],
-        "total_distinct": 49,
-        "total_count": 28237
+        "total_distinct": 50,
+        "total_count": 28315
       },
       "ancestry": {
         "top": [
@@ -204,7 +204,7 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 14768
+            "count": 14791
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -243,18 +243,18 @@
             "count": 648
           }
         ],
-        "total_distinct": 146,
-        "total_count": 33669
+        "total_distinct": 147,
+        "total_count": 33747
       },
       "sex": {
         "top": [
           {
             "name": "Female",
-            "count": 13073
+            "count": 13087
           },
           {
             "name": "Male",
-            "count": 12388
+            "count": 12452
           },
           {
             "name": "Not applicable",
@@ -262,17 +262,17 @@
           }
         ],
         "total_distinct": 3,
-        "total_count": 25956
+        "total_count": 26034
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-06-15T22:41:46Z",
+    "timestamp": "2026-06-15T22:58:13Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "912ef4c178bfe2e5043041654bc77508fcb2cfee",
     "schema_commit_short": "912ef4c",
-    "run_id": "27581093192"
+    "run_id": "27581836055"
   },
   "studies_with_issues": [
     {
@@ -328,13 +328,15 @@
     {
       "name": "AverinaOV_2020",
       "file": "inst/curated//AverinaOV_2020/AverinaOV_2020_sample.tsv",
-      "rows": 160,
-      "cols": 1,
+      "rows": 78,
+      "cols": 33,
       "errors": [
-        "Missing required fields: study_name, subject_id, sample_id, target_condition, control, body_site, sequencing_platform",
-        "Columns not covered by schema: <<<<<<< Updated upstream"
+        "Columns not covered by schema: disease_subtype, non_westernized, number_bases, number_reads, minimum_read_length, median_read_length"
       ],
-      "warnings": []
+      "warnings": [
+        "Field 'target_condition': 'human gut microbiome' is not a recognized term for this ontology-backed field (78 rows).",
+        "Field 'country': 'Russia' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (78 rows)."
+      ]
     },
     {
       "name": "BackhedF_2015",
