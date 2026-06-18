@@ -69,3 +69,4 @@
 "tumor_size_measurement","numeric","non-unique","optional",FALSE,"Tumor size measurement from clinical assessment or resected specimen (NCIT:C106303).","^[1-9]\d*(\.\d+)?$",NA,NA,NA,NA,NA,"numeric",46,"04 Clinical / Intervention"
 "tumor_size_residual_measurement","character","non-unique","optional",FALSE,"Residual tumor size measurement after treatment/procedure (NCIT:C198194).","^[1-9]\d*(\.\d+)?$",NA,NA,NA,NA,NA,"numeric",47,"04 Clinical / Intervention"
 "uncurated_metadata","character","non-unique","optional",TRUE,"Additional free-text metadata not represented by existing fields.",".+",NA,NA,NA,"<;>",NA,"any",1,"05 Other"
+host_species,character,non-unique,required,FALSE,Host species of the participant.,NA,NA,NCBITaxon:1,descendant,NA,NA,dynamic_enum,5,01 Sampling / Study
