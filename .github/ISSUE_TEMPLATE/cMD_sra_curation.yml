@@ -1,0 +1,48 @@
+name: Metadata curation intake
+description: Submit a study for metadata-assisted curation
+title: "[Metadata Curation]: New intake"
+labels: ["metadata-curation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit either a BioProject/SRA study accession, an uncurated metadata file, or both.
+
+        To include a file, drag and drop a `.csv` or `.tsv` into the textarea below.
+        The workflow will read the generated GitHub attachment URL.
+
+  - type: input
+    id: bioproject-or-sra-id
+    attributes:
+      label: BioProject or SRA study accession
+      description: Example values: PRJNA13, PRJEB9576, SRP012345
+      placeholder: PRJNAxxxxxx or SRPxxxxxx
+    validations:
+      required: false
+
+  - type: textarea
+    id: uncurated-metadata-attachment
+    attributes:
+      label: Uncurated metadata attachment
+      description: Paste text and/or drag a `.csv` or `.tsv` file here.
+      placeholder: Drag and drop metadata file here
+    validations:
+      required: false
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI (optional)
+      description: Optional publication DOI for context
+      placeholder: 10.xxxx/xxxxx
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct Agreement
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Bioconductor/bioc_coc_multilingual).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

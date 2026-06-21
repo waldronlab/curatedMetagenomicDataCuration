@@ -37,7 +37,8 @@ source("R/generate_data_entry_excel.R")
 result <- generate_data_entry_excel(
   dict_file = "inst/extdata/cMD_data_dictionary.csv",
   metadata_file = "inst/extdata/cMD_curated_metadata_release.csv",
-  output_file = "inst/extdata/cMD_data_entry_generated.xlsx"
+  output_file = "inst/extdata/cMD_data_entry_generated.xlsx",
+  prefill_metadata = NULL
 )
 
 # View summary
@@ -154,7 +155,7 @@ lists <- generate_validation_lists(
 print(lists$sex)
 ```
 
-### `generate_data_entry_excel(dict_file, metadata_file, output_file, ols_size_threshold, example_data)`
+### `generate_data_entry_excel(dict_file, metadata_file, output_file, ols_size_threshold, prefill_metadata)`
 
 Main function to create the complete Excel file.
 
@@ -163,7 +164,7 @@ Main function to create the complete Excel file.
 - `metadata_file`: Path to curated metadata
 - `output_file`: Path for output Excel file
 - `ols_size_threshold`: OLS size threshold
-- `example_data`: If `TRUE`, prefill rows 3-6 in `Curator_Entry` with demonstration entries
+- `prefill_metadata`: Optional data.frame or CSV/TSV file path used to prefill `Curator_Entry` rows (default uses package example file; set `NULL` to disable prefill)
 
 **Returns:** List with summary information
 
@@ -174,7 +175,7 @@ result <- generate_data_entry_excel(
   metadata_file = "inst/extdata/cMD_curated_metadata_release.csv",
   output_file = "inst/extdata/cMD_data_entry_generated.xlsx",
   ols_size_threshold = 1000,
-  example_data = TRUE
+  prefill_metadata = NULL
 )
 ```
 
@@ -280,12 +281,14 @@ treatment,dynamic_enum;static_enum,NA,NCIT:C41132,NCIT:C1908,descendant
 ```r
 # More aggressive use of curated metadata (fallback at 50 terms)
 generate_data_entry_excel(
-  ols_size_threshold = 50
+  ols_size_threshold = 50,
+  prefill_metadata = NULL
 )
 
 # More permissive (allow up to 200 OLS terms)
 generate_data_entry_excel(
-  ols_size_threshold = 200
+  ols_size_threshold = 200,
+  prefill_metadata = NULL
 )
 ```
 
@@ -295,7 +298,8 @@ generate_data_entry_excel(
 generate_data_entry_excel(
   dict_file = "path/to/custom_dictionary.csv",
   metadata_file = "path/to/custom_metadata.csv",
-  output_file = "path/to/custom_output.xlsx"
+  output_file = "path/to/custom_output.xlsx",
+  prefill_metadata = NULL
 )
 ```
 
