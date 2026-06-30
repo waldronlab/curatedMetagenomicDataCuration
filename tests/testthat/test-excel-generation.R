@@ -102,7 +102,7 @@ test_that("generate_data_entry_excel writes workbook with deterministic local in
       dict_file = dict_file,
       metadata_file = metadata_file,
       output_file = output_file,
-      example_data = FALSE
+      prefill_metadata = NULL
     )
   )
 
@@ -111,4 +111,53 @@ test_that("generate_data_entry_excel writes workbook with deterministic local in
   expect_equal(result$output_file, output_file)
   expect_equal(result$num_columns, 5)
   expect_true("target_condition" %in% result$validation_columns)
+})
+
+test_that("generate_data_entry_excel accepts data.frame prefill metadata", {
+  skip_if_not_installed("openxlsx2")
+
+  dict_file <- tempfile(fileext = ".csv")
+  metadata_file <- tempfile(fileext = ".csv")
+  output_file <- tempfile(fileext = ".xlsx")
+
+  writeLines(
+    c(
+      "col.name,col.class,unique,required,multiplevalues,description,allowedvalues,static.enum,dynamic.enum,dynamic.enum.property,delimiter,separator,corpus.type,display.group,display.order",
+      "study_name,character,non-unique,required,FALSE,Study name,,NA,NA,NA,NA,NA,any,Identifiers,1",
+      "sample_id,character,non-unique,required,FALSE,Sample id,,NA,NA,NA,NA,NA,any,Identifiers,2",
+      "subject_id,character,non-unique,required,FALSE,Subject id,,NA,NA,NA,NA,NA,any,Identifiers,3",
+      "target_condition,character,non-unique,optional,TRUE,Condition,Case|Control,NCIT:C49152|NCIT:C142703,NA,NA,;,NA,static_enum,Clinical,4"
+    ),
+    con = dict_file
+  )
+
+  writeLines(
+    c(
+      "study_name,sample_id,subject_id,target_condition",
+      "DemoStudy,S1,U1,Case",
+      "DemoStudy,S2,U2,Control"
+    ),
+    con = metadata_file
+  )
+
+  prefill_df <- data.frame(
+    study_name = "PrefilledStudy",
+    sample_id = "SAMP001",
+    subject_id = "SUBJ001",
+    target_condition = "Case;Control",
+    stringsAsFactors = FALSE
+  )
+
+  result <- suppressWarnings(
+    generate_data_entry_excel(
+      dict_file = dict_file,
+      metadata_file = metadata_file,
+      output_file = output_file,
+      prefill_metadata = prefill_df
+    )
+  )
+
+  expect_true(file.exists(output_file))
+  expect_type(result, "list")
+  expect_equal(result$output_file, output_file)
 })

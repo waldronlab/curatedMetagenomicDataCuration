@@ -1,0 +1,5 @@
+study_name,subject_id,sample_id,target_condition,control,body_site,pmid,curator,subcohort
+ExampleStudy_2026,SUBJ001,SAMP001,Intestinal Flora,Study Control,feces,12345678,Anonymous Alligator,Cohort_A
+ExampleStudy_2026,SUBJ002,SAMP002,Intestinal Flora,Study Control,feces,12345678,Bold Badger,Cohort_A
+ExampleStudy_2026,SUBJ003,SAMP003,Type 2 Diabetes Mellitus;Intestinal Flora,Non-control participant,feces,12345678,Curious Coyote,Cohort_B
+ExampleStudy_2026,SUBJ004,SAMP004,healthy;Intestinal Flora,Study Control,feces,12345678,Diligent Dolphin,Cohort_B
