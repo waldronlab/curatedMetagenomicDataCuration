@@ -279,12 +279,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-07-01T13:49:54Z",
+    "timestamp": "2026-07-01T14:01:43Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "912ef4c178bfe2e5043041654bc77508fcb2cfee",
     "schema_commit_short": "912ef4c",
-    "run_id": "28522344688"
+    "run_id": "28523123816"
   },
   "studies_with_issues": [
     {
@@ -1215,7 +1215,7 @@
         "Field 'disease': 'PDAC' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (154 rows).",
         "Field 'disease': 'Type1Diabetes' is not a recognized term for this ontology-backed field (21 rows).",
         "Field 'disease': 'Type2Diabetes' is not a recognized term for this ontology-backed field (52 rows).",
-        "Field 'tumor_staging_ajcc' has 176 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV",
+        "Field 'tumor_staging_ajcc' has 176 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB",
         "Field 'treatment': 'antacids' is not a recognized term for this ontology-backed field (90 rows).",
         "Field 'treatment': 'diabetes_oral_medication' is not a recognized term for this ontology-backed field (46 rows).",
         "Field 'treatment': 'metformin' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (34 rows).",
@@ -2920,7 +2920,7 @@
       "cols": 29,
       "errors": [],
       "warnings": [
-        "Field 'tumor_staging_ajcc' has 39 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV"
+        "Field 'tumor_staging_ajcc' has 39 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB"
       ]
     },
     {
@@ -3766,7 +3766,7 @@
       "warnings": [
         "Field 'disease': 'Polyps' is not a recognized term for this ontology-backed field (5 rows).",
         "Field 'disease_details': 'History of surgery (situation)' is not a recognized term for this ontology-backed field (40 rows).",
-        "Field 'tumor_staging_ajcc' has 358 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV"
+        "Field 'tumor_staging_ajcc' has 358 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB"
       ]
     },
     {
