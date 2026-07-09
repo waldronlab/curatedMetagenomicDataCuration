@@ -3,7 +3,7 @@
   "summary": {
     "total_files": 130,
     "total_errors": 53,
-    "total_warnings": 2467,
+    "total_warnings": 2437,
     "files_with_issues": 120
   },
   "stats": {
@@ -279,12 +279,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-07-08T22:44:45Z",
+    "timestamp": "2026-07-09T02:27:14Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "28980830865"
+    "run_id": "28989676699"
   },
   "studies_with_issues": [
     {
@@ -413,8 +413,7 @@
       "cols": 29,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Parkinson's Disease' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (59 rows).",
-        "Field 'ncbi_accession' has 59 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Parkinson's Disease' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (59 rows)."
       ]
     },
     {
@@ -652,8 +651,7 @@
       "errors": [],
       "warnings": [
         "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (312 rows).",
-        "Field 'target_condition': 'Oral Microbiome' is not a recognized term for this ontology-backed field (312 rows).",
-        "Field 'ncbi_accession' has 312 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Oral Microbiome' is not a recognized term for this ontology-backed field (312 rows)."
       ]
     },
     {
@@ -665,7 +663,6 @@
       "warnings": [
         "Field 'disease': 'Crohn Disease,Schizophrenia' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease': 'Type 2 Diabetes Mellitus,Schizophrenia' is not a recognized term for this ontology-backed field (3 rows).",
-        "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+",
         "Field 'treatment': 'Dopamine Antagonist,Antipsychotic Agent' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'treatment': 'Dopamine Antagonist,Phenylpiperidine derivative (substance)' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'treatment': 'Phenylpiperidine derivative (substance),Antipsychotic Agent' is not a recognized term for this ontology-backed field (1 row)."
@@ -714,7 +711,7 @@
       "rows": 15,
       "cols": 24,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
       ],
       "warnings": [
@@ -729,8 +726,7 @@
       "cols": 27,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (279 rows).",
-        "Field 'ncbi_accession' has 279 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (279 rows)."
       ]
     },
     {
@@ -770,14 +766,13 @@
       "rows": 147,
       "cols": 31,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, disease_subtype, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, hdl, ldl, fasting_insulin, fasting_glucose, creatinine, hscrp"
       ],
       "warnings": [
         "Field 'disease': 'anorexia' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (77 rows).",
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (70 rows).",
         "Field 'age_group' has 147 invalid values: schoolage, adult. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
-        "Field 'ncbi_accession' has 147 values not matching pattern:  [ES]R[SR][0-9]+",
         "Field 'treatment': 'antipsychotics' is not a recognized term for this ontology-backed field (15 rows).",
         "Field 'treatment': 'benzodiazepines' is not a recognized term for this ontology-backed field (5 rows).",
         "Field 'treatment': 'no' is not a recognized term for this ontology-backed field (120 rows).",
@@ -791,8 +786,7 @@
       "cols": 38,
       "errors": [],
       "warnings": [
-        "Field 'disease_details': 'Advanced (qualifier value)' is not a recognized term for this ontology-backed field (47 rows).",
-        "Field 'ncbi_accession' has 154 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'disease_details': 'Advanced (qualifier value)' is not a recognized term for this ontology-backed field (47 rows)."
       ]
     },
     {
@@ -904,7 +898,7 @@
       "rows": 122,
       "cols": 26,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, disease_subtype, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
       ],
       "warnings": [
@@ -921,8 +915,7 @@
       "cols": 32,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Microbiome' is not a recognized term for this ontology-backed field (748 rows).",
-        "Field 'ncbi_accession' has 708 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Microbiome' is not a recognized term for this ontology-backed field (748 rows)."
       ]
     },
     {
@@ -961,8 +954,7 @@
         "Field 'disease': 'Donor' is not a recognized term for this ontology-backed field (9 rows).",
         "Field 'disease': 'Fecal Microbiota Transplantation' is not a recognized term for this ontology-backed field (109 rows).",
         "Field 'disease_details': 'Multidrug-resistant bacteria (organism)' is not a recognized term for this ontology-backed field (11 rows).",
-        "Field 'fmt_role' has 9 invalid values: . Allowed values: Recipient (after procedure), Recipient (before procedure), Donor",
-        "Field 'ncbi_accession' has 54 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'fmt_role' has 9 invalid values: . Allowed values: Recipient (after procedure), Recipient (before procedure), Donor"
       ]
     },
     {
@@ -1002,7 +994,6 @@
         "Field 'disease_details': 'RRMS' is not a recognized term for this ontology-backed field (1256 rows).",
         "Field 'disease_details': 'SPMS' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (153 rows).",
         "Field 'age' has 3 values not matching pattern:  [0-9]+",
-        "Field 'ncbi_accession' has 776 values not matching pattern:  [ES]R[SR][0-9]+",
         "Field 'obgyn_birth_control' has 131 invalid values: . Allowed values: Yes, No",
         "Field 'neonatal_delivery_procedure' has 479 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery",
         "Field 'treatment': 'Dimethyl fumarate' is not a recognized term for this ontology-backed field (232 rows).",
@@ -1230,8 +1221,7 @@
         "Field 'treatment': 'diabetes_oral_medication' is not a recognized term for this ontology-backed field (46 rows).",
         "Field 'treatment': 'metformin' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (34 rows).",
         "Field 'treatment': 'PPI' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (25 rows).",
-        "Field 'treatment': 'probiotics' is not a recognized term for this ontology-backed field (11 rows).",
-        "Field 'ncbi_accession' has 329 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'treatment': 'probiotics' is not a recognized term for this ontology-backed field (11 rows)."
       ]
     },
     {
@@ -1274,8 +1264,7 @@
         "Columns not covered by schema: uncurated_autoantibody_titer_positive_finding, uncurated_serum_positive_autoantibodies"
       ],
       "warnings": [
-        "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (15 rows).",
-        "Field 'ncbi_accession' has 120 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (15 rows)."
       ]
     },
     {
@@ -1297,8 +1286,7 @@
       "cols": 27,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (292 rows).",
-        "Field 'ncbi_accession' has 148 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (292 rows)."
       ]
     },
     {
@@ -1332,8 +1320,7 @@
       "warnings": [
         "Field 'disease': 'Inflammatory Bowel Disease,Anorectal Fistula,Crohn Disease' is not a recognized term for this ontology-backed field (37 rows).",
         "Field 'disease': 'Inflammatory Bowel Disease,Crohn Disease' is not a recognized term for this ontology-backed field (39 rows).",
-        "Field 'disease': 'Inflammatory Bowel Disease,Ulcerative Colitis' is not a recognized term for this ontology-backed field (64 rows).",
-        "Field 'ncbi_accession' has 255 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'disease': 'Inflammatory Bowel Disease,Ulcerative Colitis' is not a recognized term for this ontology-backed field (64 rows)."
       ]
     },
     {
@@ -1353,8 +1340,7 @@
       "cols": 30,
       "errors": [],
       "warnings": [
-        "Field 'disease': 'Metabolic Syndrome,Fecal Microbiota Transplantation' is not a recognized term for this ontology-backed field (40 rows).",
-        "Field 'ncbi_accession' has 55 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'disease': 'Metabolic Syndrome,Fecal Microbiota Transplantation' is not a recognized term for this ontology-backed field (40 rows)."
       ]
     },
     {
@@ -1385,8 +1371,7 @@
       "cols": 29,
       "errors": [],
       "warnings": [
-        "Field 'disease_details': 'Shiga Toxin-producing Escherichia coli' is not a recognized term for this ontology-backed field (42 rows).",
-        "Field 'ncbi_accession' has 9 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'disease_details': 'Shiga Toxin-producing Escherichia coli' is not a recognized term for this ontology-backed field (42 rows)."
       ]
     },
     {
@@ -1491,7 +1476,6 @@
       "errors": [],
       "warnings": [
         "Field 'antibiotics_current_use' has 104 invalid values: . Allowed values: Yes, No",
-        "Field 'ncbi_accession' has 1799 values not matching pattern:  [ES]R[SR][0-9]+",
         "Field 'sex' has 514 invalid values: . Allowed values: Female, Male",
         "Field 'treatment': 'Angiotensin-Converting Enzyme Inhibitors' is not a recognized term for this ontology-backed field (377 rows).",
         "Field 'treatment': 'Anti-Arrhythmia Agents' is not a recognized term for this ontology-backed field (13 rows).",
@@ -2510,7 +2494,7 @@
       "rows": 560,
       "cols": 23,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: body_subsite, study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
       ],
       "warnings": [
@@ -2523,7 +2507,7 @@
       "rows": 34,
       "cols": 27,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, anti_ccp_antibody, rheumatoid_factor, responsive_to_treatment"
       ],
       "warnings": [
@@ -2542,8 +2526,7 @@
       "errors": [],
       "warnings": [
         "Field 'disease': 'Inflammatory Bowel Disease,Crohn Disease' is not a recognized term for this ontology-backed field (21 rows).",
-        "Field 'disease': 'Inflammatory Bowel Disease,Ulcerative Colitis' is not a recognized term for this ontology-backed field (127 rows).",
-        "Field 'ncbi_accession' has 396 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'disease': 'Inflammatory Bowel Disease,Ulcerative Colitis' is not a recognized term for this ontology-backed field (127 rows)."
       ]
     },
     {
@@ -2554,8 +2537,7 @@
       "errors": [],
       "warnings": [
         "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (58 rows).",
-        "Field 'age_unit' has 1 invalid values: . Allowed values: Day, Week, Month, Year",
-        "Field 'ncbi_accession' has 58 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'age_unit' has 1 invalid values: . Allowed values: Day, Week, Month, Year"
       ]
     },
     {
@@ -2565,8 +2547,7 @@
       "cols": 26,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'human skin microbiome interaction' is not a recognized term for this ontology-backed field (291 rows).",
-        "Field 'ncbi_accession' has 177 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'human skin microbiome interaction' is not a recognized term for this ontology-backed field (291 rows)."
       ]
     },
     {
@@ -2605,12 +2586,11 @@
       "rows": 57,
       "cols": 24,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: antibiotics_family, study_condition, visit_number, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
       ],
       "warnings": [
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (57 rows).",
-        "Field 'ncbi_accession' has 57 values not matching pattern:  [ES]R[SR][0-9]+",
         "Field 'treatment': 'gentamicin' is not a recognized term for this ontology-backed field (45 rows).",
         "Field 'treatment': 'meropenem' is not a recognized term for this ontology-backed field (45 rows).",
         "Field 'treatment': 'none' is not a recognized term for this ontology-backed field (12 rows).",
@@ -2635,8 +2615,7 @@
       "cols": 30,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (191 rows).",
-        "Field 'ncbi_accession' has 191 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (191 rows)."
       ]
     },
     {
@@ -2645,7 +2624,7 @@
       "rows": 74,
       "cols": 25,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: body_subsite, study_condition, disease_subtype, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length"
       ],
       "warnings": [
@@ -2675,7 +2654,7 @@
       "rows": 0,
       "cols": 5,
       "errors": [
-        "Missing required fields: subject_id, sample_id, control, body_site, sequencing_platform",
+        "Missing required fields: body_site, control, sample_id, sequencing_platform, subject_id",
         "Columns not covered by schema: doi"
       ],
       "warnings": []
@@ -2704,7 +2683,6 @@
         "Field 'disease_details': 'Schistosoma' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease_details': 'Schistosoma,Hepatitis B Virus' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease_details': 'Schistosoma,Hepatitis E Virus' is not a recognized term for this ontology-backed field (2 rows).",
-        "Field 'ncbi_accession' has 70 values not matching pattern:  [ES]R[SR][0-9]+",
         "Field 'treatment': 'Anti-Retroviral Agent' is not a recognized term for this ontology-backed field (9 rows).",
         "Field 'treatment': 'Anti-Retroviral Agent,Antiviral Agent' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'treatment': 'Anti-Retroviral Agent,Beta-Adrenergic Antagonist,Reverse Transcriptase Inhibitor' is not a recognized term for this ontology-backed field (4 rows).",
@@ -2729,8 +2707,7 @@
       "cols": 39,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Cephalosporin Antibiotic' is not a recognized term for this ontology-backed field (72 rows).",
-        "Field 'ncbi_accession' has 72 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Cephalosporin Antibiotic' is not a recognized term for this ontology-backed field (72 rows)."
       ]
     },
     {
@@ -2804,8 +2781,7 @@
       "cols": 36,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (471 rows).",
-        "Field 'ncbi_accession' has 404 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (471 rows)."
       ]
     },
     {
@@ -2860,7 +2836,7 @@
       "rows": 167,
       "cols": 30,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, diet, ORR, PFS12, previous_therapy, PFS03, PFS06"
       ],
       "warnings": [
@@ -2954,13 +2930,12 @@
       "rows": 27,
       "cols": 32,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
       ],
       "warnings": [
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (27 rows).",
-        "Field 'age_group' has 27 invalid values: adult, newborn, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
-        "Field 'ncbi_accession' has 1 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'age_group' has 27 invalid values: adult, newborn, schoolage. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly"
       ]
     },
     {
@@ -2969,7 +2944,7 @@
       "rows": 27,
       "cols": 32,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
       ],
       "warnings": [
@@ -2983,7 +2958,7 @@
       "rows": 24,
       "cols": 32,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
       ],
       "warnings": [
@@ -2997,14 +2972,13 @@
       "rows": 342,
       "cols": 32,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
       ],
       "warnings": [
         "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (342 rows).",
         "Field 'age_group' has 342 invalid values: adult, schoolage, child, senior, newborn. Allowed values: Newborn, Infant, Child, Adolescent, Adult, Elderly",
-        "Field 'sex' has 13 invalid values: . Allowed values: Female, Male",
-        "Field 'ncbi_accession' has 2 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'sex' has 13 invalid values: . Allowed values: Female, Male"
       ]
     },
     {
@@ -3013,7 +2987,7 @@
       "rows": 104,
       "cols": 32,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: infant_age, study_condition, born_method, zygosity, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, feeding_practice, bristol_score"
       ],
       "warnings": [
@@ -3060,7 +3034,6 @@
         "Field 'disease': 'Clostridium difficile Infection,Osteoarthritis' is not a recognized term for this ontology-backed field (1 row).",
         "Field 'disease': 'Clostridium difficile Infection,Pneumonia' is not a recognized term for this ontology-backed field (15 rows).",
         "Field 'disease': 'Clostridium difficile Infection,Ureterolithiasis' is not a recognized term for this ontology-backed field (1 row).",
-        "Field 'ncbi_accession' has 12 values not matching pattern:  [ES]R[SR][0-9]+",
         "Field 'treatment': 'Antineoplastic Agent,Penicillin Antibiotic,Beta-lactamase Inhibitor' is not a recognized term for this ontology-backed field (2 rows).",
         "Field 'treatment': 'Corticosteroid,Laxative,Proton Pump Inhibitor,Vancomycin,Penicillin Antibiotic,Azithromycin,Beta-lactamase Inhibitor' is not a recognized term for this ontology-backed field (2 rows).",
         "Field 'treatment': 'Corticosteroid,Proton Pump Inhibitor,Cephalosporin Antibiotic' is not a recognized term for this ontology-backed field (4 rows).",
@@ -3132,8 +3105,7 @@
       "cols": 30,
       "errors": [],
       "warnings": [
-        "Field 'age_unit' has 6 invalid values: . Allowed values: Day, Week, Month, Year",
-        "Field 'ncbi_accession' has 110 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'age_unit' has 6 invalid values: . Allowed values: Day, Week, Month, Year"
       ]
     },
     {
@@ -3714,7 +3686,7 @@
       "rows": 168,
       "cols": 33,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, non_westernized, creatinine, albumine, hscrp, ESR, wbc, rbc, blood_platelet, hemoglobinometry, ast, alt, globulin, urea_nitrogen, ASO, anti_ccp_antibody, rheumatoid_factor"
       ],
       "warnings": [
@@ -3771,7 +3743,7 @@
       "rows": 347,
       "cols": 34,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, study_condition, bilirubin, creatinine, glucose, cholesterol, triglycerides, hdl, ldl, alcohol"
       ],
       "warnings": [
@@ -3859,8 +3831,7 @@
       "cols": 32,
       "errors": [],
       "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (900 rows).",
-        "Field 'ncbi_accession' has 311 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (900 rows)."
       ]
     },
     {
@@ -3872,8 +3843,7 @@
       "warnings": [
         "Field 'disease': 'Adenoma,Colorectal Adenoma' is not a recognized term for this ontology-backed field (15 rows).",
         "Field 'disease': 'Adenoma,Small Intestinal Adenoma' is not a recognized term for this ontology-backed field (27 rows).",
-        "Field 'disease': 'Colorectal Carcinoma,Carcinoma' is not a recognized term for this ontology-backed field (53 rows).",
-        "Field 'ncbi_accession' has 156 values not matching pattern:  [ES]R[SR][0-9]+"
+        "Field 'disease': 'Colorectal Carcinoma,Carcinoma' is not a recognized term for this ontology-backed field (53 rows)."
       ]
     },
     {
@@ -3882,7 +3852,7 @@
       "rows": 232,
       "cols": 47,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, pregnant, lactating, triglycerides, cholesterol, hdl, ldl, glucose, creatinine, hscrp, wbc, blood_platelet, hemoglobinometry, alt, anti_ccp_antibody, rheumatoid_factor, time_after_onset, CDAI, HAQ, DAS28, IGG, IGA, IGM"
       ],
       "warnings": [
@@ -3900,7 +3870,7 @@
       "rows": 130,
       "cols": 43,
       "errors": [
-        "Missing required fields: target_condition, control",
+        "Missing required fields: control, target_condition",
         "Columns not covered by schema: study_condition, non_westernized, number_reads, number_bases, minimum_read_length, median_read_length, creatinine, hscrp, ESR, wbc, blood_platelet, hemoglobinometry, alt, urea_nitrogen, BASDAI, BASFI, years_after_onset, IGG, IGA, IGM, back_ache, HLA_B27, ASDAS_ESR, ASDAS_CRP, BASMI"
       ],
       "warnings": [
