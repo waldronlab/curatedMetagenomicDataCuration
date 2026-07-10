@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 130,
     "total_errors": 53,
-    "total_warnings": 2437,
-    "files_with_issues": 120
+    "total_warnings": 2436,
+    "files_with_issues": 119
   },
   "stats": {
     "total_studies": 130,
@@ -279,12 +279,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-07-10T11:53:34Z",
+    "timestamp": "2026-07-10T12:04:20Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "29090717945"
+    "run_id": "29091299088"
   },
   "studies_with_issues": [
     {
@@ -325,16 +325,6 @@
       "errors": [],
       "warnings": [
         "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (24 rows)."
-      ]
-    },
-    {
-      "name": "AsnicarF_2021",
-      "file": "inst/curated//AsnicarF_2021/AsnicarF_2021_sample.tsv",
-      "rows": 1098,
-      "cols": 36,
-      "errors": [],
-      "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (1098 rows)."
       ]
     },
     {
