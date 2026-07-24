@@ -227,13 +227,20 @@ extract_pattern_from_fulltext <- function(pmid,
     tryCatch({
       # Check if full text available in PMC
       links <- entrez_link(dbfrom = "pubmed", id = single_pmid, db = "pmc")
-      
-      if (length(links$links$pubmed_pmc) == 0) {
-        result$source <- "No PMC full text available"
+
+      # Use EXACT indexing (`[[ ]]`), not `$`. R's `$` does partial matching on
+      # lists: when the article is not open-access in PMC, entrez_link returns
+      # only `pubmed_pmc_refs` (the "cited-by in PMC" list), and `links$links$pubmed_pmc`
+      # silently resolves to `pubmed_pmc_refs`. The code would then fetch the first
+      # CITING article and scrape ITS accessions — yielding a completely unrelated
+      # BioProject. Require the article's own `pubmed_pmc` record instead.
+      own_pmc <- links$links[["pubmed_pmc"]]
+      if (is.null(own_pmc) || length(own_pmc) == 0) {
+        result$source <- "No PMC full text available (no own pubmed_pmc record)"
         return(result)
       }
-      
-      pmcid <- links$links$pubmed_pmc[1]
+
+      pmcid <- own_pmc[1]
       result$pmcid <- pmcid
       
       # Fetch full text XML

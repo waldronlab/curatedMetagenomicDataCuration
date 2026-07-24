@@ -173,9 +173,36 @@ for (studyName in studyNames) {
     }
   }
   if (nrow(sra_meta) != 0) {
-    write.table(sra_meta, 
-               file.path(study_path, paste0(studyName, "_sra_meta.tsv")), 
-               sep = "\t", row.names = FALSE, quote = FALSE)
+    # Guard against contaminated manifests. The BioProject is regex-scraped from
+    # full text (extract_pattern_from_fulltext) and can resolve to an unrelated
+    # study's project (e.g. a citing article's, or a referenced dataset's). Only
+    # write the manifest if the fetched runs actually overlap the study's known
+    # SRA accessions. When no accessions are known yet, write but log the project
+    # and run count for manual review.
+    known_acc <- character(0)
+    if ("ncbi_accession" %in% names(sample_meta)) {
+      known_acc <- unique(unlist(regmatches(
+        as.character(sample_meta$ncbi_accession),
+        gregexpr("[SED]RR[0-9]+", as.character(sample_meta$ncbi_accession)))))
+    }
+    fetched_runs <- as.character(sra_meta$Run)
+    n_overlap <- length(intersect(known_acc, fetched_runs))
+    if (length(known_acc) > 0 && n_overlap == 0) {
+      warning(sprintf(
+        paste0("%s: fetched SRA runs (n=%d, e.g. %s) do NOT overlap the study's ",
+               "known accessions (n=%d, e.g. %s). The scraped BioProject is almost ",
+               "certainly wrong; NOT writing %s_sra_meta.tsv."),
+        studyName, length(fetched_runs), fetched_runs[1],
+        length(known_acc), known_acc[1], studyName))
+    } else {
+      if (length(known_acc) == 0) {
+        message(sprintf("%s: writing SRA manifest (%d runs) with no known accessions to validate against — review manually.",
+                        studyName, length(fetched_runs)))
+      }
+      write.table(sra_meta,
+                 file.path(study_path, paste0(studyName, "_sra_meta.tsv")),
+                 sep = "\t", row.names = FALSE, quote = FALSE)
+    }
   }
 }
 ```
