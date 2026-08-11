@@ -82,8 +82,12 @@ validate_single_study <- function(file, schema, ontology_terms = NULL) {
     sep <- if (grepl("\t", first_line)) "\t" else ","
     data <- read.delim(file, sep = sep, stringsAsFactors = FALSE,
                        check.names = FALSE)
+    # Retain uncurated columns in the original metadata, but exclude them
+    # from schema validation because they are intentionally outside the schema
+    uncurated_cols <- startsWith(names(data), "uncurated_")
+    data_to_validate <- data[, !uncurated_cols, drop = FALSE]
     result <- OmicsMLRepoCuration::validate_data_against_schema(
-      data, schema, ontology_terms = ontology_terms)
+      data_to_validate, schema, ontology_terms = ontology_terms)
 
     list(
       study_name = study_name,
@@ -93,6 +97,7 @@ validate_single_study <- function(file, schema, ontology_terms = NULL) {
       data = data,
       errors = result$errors,
       warnings = result$warnings,
+      ignored_columns = names(data)[uncurated_cols],
       success = TRUE
     )
   }, error = function(e) {
@@ -104,6 +109,7 @@ validate_single_study <- function(file, schema, ontology_terms = NULL) {
       data = NULL,
       errors = paste("VALIDATION ERROR:", conditionMessage(e)),
       warnings = character(0),
+      ignored_columns = names(data)[uncurated_cols],
       success = FALSE
     )
   })
