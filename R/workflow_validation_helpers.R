@@ -25,6 +25,15 @@ load_validation_schema <- function(package = "curatedMetagenomicDataCuration") {
     dict_file <- hits[1]
   }
   schema_table <- read.csv(dict_file, stringsAsFactors = FALSE)
+  # Guard against a mis-delimited dictionary (e.g. space- instead of
+  # comma-separated). read.csv silently collapses such a file into a single
+  # column, which later crashes table_to_yaml_schema with an opaque
+  # "$ operator is invalid for atomic vectors". Fail early with a clear message.
+  if (ncol(schema_table) < 2 || !"col.name" %in% names(schema_table)) {
+    stop("Data dictionary '", dict_file, "' parsed into ",
+         ncol(schema_table), " column(s) without a 'col.name' column. ",
+         "The file is likely not comma-delimited — check its field separator.")
+  }
   OmicsMLRepoCuration::table_to_yaml_schema(schema_table)
 }
 
