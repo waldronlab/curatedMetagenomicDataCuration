@@ -1,0 +1,341 @@
+name: Metadata Curation Agent
+
+on:
+  workflow_dispatch:
+  issues:
+    types: [labeled]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  intake-and-map:
+    if: github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'metadata-curation'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install lightweight R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::jsonlite
+            any::httr2
+            any::readr
+            any::dplyr
+            any::openxlsx2
+            local::.
+
+      - name: Extract intake fields from issue body
+        id: extract
+        shell: bash
+        run: |
+          BODY="${{ github.event.issue.body }}"
+
+          BIOPROJECT_ID=$(echo "$BODY" | grep -Eo '(PRJNA|PRJEB|PRJDB|SRP)[0-9]+' | head -n1 || true)
+          DOI=$(echo "$BODY" | grep -Eo '10\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+' | head -n1 || true)
+          ATTACHMENT_URL=$(echo "$BODY" | grep -Eo 'https://github\.com/user-attachments/files/[0-9]+/[^[:space:])"]+' | head -n1 || true)
+
+          echo "BIOPROJECT_ID=$BIOPROJECT_ID" >> "$GITHUB_OUTPUT"
+          echo "DOI=$DOI" >> "$GITHUB_OUTPUT"
+          echo "ATTACHMENT_URL=$ATTACHMENT_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare issue state branch
+        id: branch
+        shell: bash
+        run: |
+          ISSUE_NUMBER="${{ github.event.issue.number }}"
+          STATE_BRANCH="curation-state/issue-${ISSUE_NUMBER}"
+
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
+          git fetch origin "$STATE_BRANCH:$STATE_BRANCH" || true
+          if git show-ref --verify --quiet "refs/heads/$STATE_BRANCH"; then
+            git checkout "$STATE_BRANCH"
+          else
+            git checkout -b "$STATE_BRANCH"
+          fi
+
+          STATE_DIR=".agent/issue-${ISSUE_NUMBER}"
+          mkdir -p "$STATE_DIR"
+
+          echo "STATE_BRANCH=$STATE_BRANCH" >> "$GITHUB_OUTPUT"
+          echo "STATE_DIR=$STATE_DIR" >> "$GITHUB_OUTPUT"
+          echo "STATE_FILE=$STATE_DIR/state.json" >> "$GITHUB_OUTPUT"
+          echo "MERGED_METADATA=$STATE_DIR/merged_metadata.csv" >> "$GITHUB_OUTPUT"
+          echo "LOOKUP_SUMMARY=$STATE_DIR/lookup_summary.json" >> "$GITHUB_OUTPUT"
+          echo "MAPPING_FILE=$STATE_DIR/mapping.json" >> "$GITHUB_OUTPUT"
+          echo "QUESTIONS_FILE=$STATE_DIR/questions.json" >> "$GITHUB_OUTPUT"
+
+      - name: Initialize state file
+        shell: bash
+        run: |
+          Rscript inst/scripts/agent_state.R \
+            --command=init \
+            --state-file="${{ steps.branch.outputs.STATE_FILE }}" \
+            --issue-number="${{ github.event.issue.number }}" \
+            --bioproject-id="${{ steps.extract.outputs.BIOPROJECT_ID }}" \
+            --attachment-url="${{ steps.extract.outputs.ATTACHMENT_URL }}" \
+            --doi="${{ steps.extract.outputs.DOI }}"
+
+      - name: Lookup and merge metadata
+        shell: bash
+        run: |
+          Rscript inst/scripts/agent_metadata_lookup.R \
+            --bioproject-id="${{ steps.extract.outputs.BIOPROJECT_ID }}" \
+            --attachment-url="${{ steps.extract.outputs.ATTACHMENT_URL }}" \
+            --output-metadata="${{ steps.branch.outputs.MERGED_METADATA }}" \
+            --output-summary="${{ steps.branch.outputs.LOOKUP_SUMMARY }}"
+
+      - name: Map metadata columns to dictionary
+        shell: bash
+        run: |
+          Rscript inst/scripts/agent_column_mapping.R \
+            --input-metadata="${{ steps.branch.outputs.MERGED_METADATA }}" \
+            --dict-file="inst/extdata/cMD_data_dictionary.csv" \
+            --output-mapping="${{ steps.branch.outputs.MAPPING_FILE }}" \
+            --output-questions="${{ steps.branch.outputs.QUESTIONS_FILE }}" \
+            --confidence-threshold=0.85
+
+      - name: Update state with mapping output
+        id: state_update
+        shell: bash
+        run: |
+          Rscript inst/scripts/agent_state.R \
+            --command=update_mapping \
+            --state-file="${{ steps.branch.outputs.STATE_FILE }}" \
+            --mapping-file="${{ steps.branch.outputs.MAPPING_FILE }}" \
+            --questions-file="${{ steps.branch.outputs.QUESTIONS_FILE }}" \
+            --metadata-file="${{ steps.branch.outputs.MERGED_METADATA }}" > "$RUNNER_TEMP/state_update.out"
+
+          cat "$RUNNER_TEMP/state_update.out"
+          STATE_STATUS=$(grep '^STATE_STATUS=' "$RUNNER_TEMP/state_update.out" | cut -d'=' -f2)
+          PENDING_COUNT=$(grep '^PENDING_COUNT=' "$RUNNER_TEMP/state_update.out" | cut -d'=' -f2)
+
+          echo "STATE_STATUS=$STATE_STATUS" >> "$GITHUB_OUTPUT"
+          echo "PENDING_COUNT=$PENDING_COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Render HITL question markdown
+        if: steps.state_update.outputs.PENDING_COUNT != '0'
+        shell: bash
+        run: |
+          Rscript -e 's <- jsonlite::fromJSON("${{ steps.branch.outputs.STATE_FILE }}", simplifyVector = FALSE); q <- s$pending_questions; lines <- c("### Human-in-the-loop questions", "", "Reply using `✅ Qn` to confirm or `Qn: <target_col|skip>` to override.", ""); for (i in seq_along(q)) { qi <- q[[i]]; vals <- qi$sample_values; if (is.null(vals)) vals <- list(); sv <- if (length(vals) > 0) paste(unlist(vals), collapse = ", ") else ""; lines <- c(lines, paste0("**", qi$id, "**: map `", qi$input_col, "` -> `", qi$target_col, "` (confidence: ", qi$confidence, ")"), if (sv != "") paste0("Sample values: ", sv) else NULL, ""); }; writeLines(lines, "${{ steps.branch.outputs.STATE_DIR }}/questions.md")'
+
+      - name: Commit and push state
+        shell: bash
+        run: |
+          git add "${{ steps.branch.outputs.STATE_DIR }}"
+          git commit -m "Update curation state for issue #${{ github.event.issue.number }}" || true
+          git push origin "${{ steps.branch.outputs.STATE_BRANCH }}"
+
+      - name: Post HITL questions
+        if: steps.state_update.outputs.PENDING_COUNT != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('${{ steps.branch.outputs.STATE_DIR }}/questions.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['awaiting-curator-response']
+            });
+
+      - name: Generate prefilled Excel when no questions remain
+        if: steps.state_update.outputs.PENDING_COUNT == '0'
+        shell: bash
+        run: |
+          Rscript inst/scripts/agent_prefill_excel.R \
+            --state-file="${{ steps.branch.outputs.STATE_FILE }}" \
+            --input-metadata="${{ steps.branch.outputs.MERGED_METADATA }}" \
+            --dict-file="inst/extdata/cMD_data_dictionary.csv" \
+            --validation-metadata="inst/extdata/cMD_curated_metadata_release.csv" \
+            --output-excel="${{ steps.branch.outputs.STATE_DIR }}/curation_prefilled.xlsx" \
+            --output-prefill="${{ steps.branch.outputs.STATE_DIR }}/prefill.csv"
+
+      - name: Upload prefilled workbook artifact
+        if: steps.state_update.outputs.PENDING_COUNT == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: curation-prefilled-issue-${{ github.event.issue.number }}
+          path: ${{ steps.branch.outputs.STATE_DIR }}/curation_prefilled.xlsx
+
+      - name: Post completion comment
+        if: steps.state_update.outputs.PENDING_COUNT == '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '✅ Metadata mapping complete. Prefilled workbook artifact uploaded for manual curation edits.'
+            });
+
+  process-curator-response:
+    if: github.event_name == 'issue_comment' && github.event.action == 'created'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Guard comment processing to collaborator roles
+        id: guard
+        shell: bash
+        run: |
+          ASSOCIATION="${{ github.event.comment.author_association }}"
+          if [[ "$ASSOCIATION" != "OWNER" && "$ASSOCIATION" != "MEMBER" && "$ASSOCIATION" != "COLLABORATOR" ]]; then
+            echo "allow=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "allow=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout repository
+        if: steps.guard.outputs.allow == 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup R
+        if: steps.guard.outputs.allow == 'true'
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install lightweight R dependencies
+        if: steps.guard.outputs.allow == 'true'
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::jsonlite
+            any::httr2
+            any::readr
+            any::dplyr
+            any::openxlsx2
+            local::.
+
+      - name: Checkout issue state branch
+        if: steps.guard.outputs.allow == 'true'
+        id: branch
+        shell: bash
+        run: |
+          ISSUE_NUMBER="${{ github.event.issue.number }}"
+          STATE_BRANCH="curation-state/issue-${ISSUE_NUMBER}"
+          STATE_DIR=".agent/issue-${ISSUE_NUMBER}"
+
+          git fetch origin "$STATE_BRANCH:$STATE_BRANCH"
+          git checkout "$STATE_BRANCH"
+
+          echo "STATE_BRANCH=$STATE_BRANCH" >> "$GITHUB_OUTPUT"
+          echo "STATE_DIR=$STATE_DIR" >> "$GITHUB_OUTPUT"
+          echo "STATE_FILE=$STATE_DIR/state.json" >> "$GITHUB_OUTPUT"
+          echo "MERGED_METADATA=$STATE_DIR/merged_metadata.csv" >> "$GITHUB_OUTPUT"
+
+      - name: Apply curator response to pending questions
+        if: steps.guard.outputs.allow == 'true'
+        id: apply
+        shell: bash
+        run: |
+          echo "${{ github.event.comment.body }}" > "${{ steps.branch.outputs.STATE_DIR }}/comment.txt"
+
+          Rscript inst/scripts/agent_state.R \
+            --command=apply_response \
+            --state-file="${{ steps.branch.outputs.STATE_FILE }}" \
+            --comment-file="${{ steps.branch.outputs.STATE_DIR }}/comment.txt" \
+            --dict-file="inst/extdata/cMD_data_dictionary.csv" > "$RUNNER_TEMP/response_update.out"
+
+          cat "$RUNNER_TEMP/response_update.out"
+          STATE_STATUS=$(grep '^STATE_STATUS=' "$RUNNER_TEMP/response_update.out" | cut -d'=' -f2)
+          PENDING_COUNT=$(grep '^PENDING_COUNT=' "$RUNNER_TEMP/response_update.out" | cut -d'=' -f2)
+
+          echo "STATE_STATUS=$STATE_STATUS" >> "$GITHUB_OUTPUT"
+          echo "PENDING_COUNT=$PENDING_COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push updated state
+        if: steps.guard.outputs.allow == 'true'
+        shell: bash
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add "${{ steps.branch.outputs.STATE_DIR }}"
+          git commit -m "Process curator response for issue #${{ github.event.issue.number }}" || true
+          git push origin "${{ steps.branch.outputs.STATE_BRANCH }}"
+
+      - name: Render remaining questions
+        if: steps.guard.outputs.allow == 'true' && steps.apply.outputs.PENDING_COUNT != '0'
+        shell: bash
+        run: |
+          Rscript -e 's <- jsonlite::fromJSON("${{ steps.branch.outputs.STATE_FILE }}", simplifyVector = FALSE); q <- s$pending_questions; lines <- c("### Remaining HITL questions", "", "Reply using `✅ Qn` to confirm or `Qn: <target_col|skip>` to override.", ""); for (i in seq_along(q)) { qi <- q[[i]]; vals <- qi$sample_values; if (is.null(vals)) vals <- list(); sv <- if (length(vals) > 0) paste(unlist(vals), collapse = ", ") else ""; lines <- c(lines, paste0("**", qi$id, "**: map `", qi$input_col, "` -> `", qi$target_col, "` (confidence: ", qi$confidence, ")"), if (sv != "") paste0("Sample values: ", sv) else NULL, ""); }; writeLines(lines, "${{ steps.branch.outputs.STATE_DIR }}/remaining_questions.md")'
+
+      - name: Post remaining questions
+        if: steps.guard.outputs.allow == 'true' && steps.apply.outputs.PENDING_COUNT != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('${{ steps.branch.outputs.STATE_DIR }}/remaining_questions.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
+
+      - name: Generate prefilled Excel when all responses resolved
+        if: steps.guard.outputs.allow == 'true' && steps.apply.outputs.PENDING_COUNT == '0'
+        shell: bash
+        run: |
+          Rscript inst/scripts/agent_prefill_excel.R \
+            --state-file="${{ steps.branch.outputs.STATE_FILE }}" \
+            --input-metadata="${{ steps.branch.outputs.MERGED_METADATA }}" \
+            --dict-file="inst/extdata/cMD_data_dictionary.csv" \
+            --validation-metadata="inst/extdata/cMD_curated_metadata_release.csv" \
+            --output-excel="${{ steps.branch.outputs.STATE_DIR }}/curation_prefilled.xlsx" \
+            --output-prefill="${{ steps.branch.outputs.STATE_DIR }}/prefill.csv"
+
+      - name: Upload prefilled workbook artifact
+        if: steps.guard.outputs.allow == 'true' && steps.apply.outputs.PENDING_COUNT == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: curation-prefilled-issue-${{ github.event.issue.number }}
+          path: ${{ steps.branch.outputs.STATE_DIR }}/curation_prefilled.xlsx
+
+      - name: Post completion comment
+        if: steps.guard.outputs.allow == 'true' && steps.apply.outputs.PENDING_COUNT == '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '✅ All HITL decisions resolved. Prefilled workbook artifact uploaded for manual curation edits.'
+            });
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                name: 'awaiting-curator-response'
+              });
+            } catch (e) {}
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['awaiting-manual-curation']
+            });

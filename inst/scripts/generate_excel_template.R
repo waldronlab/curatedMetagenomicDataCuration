@@ -65,7 +65,8 @@ result <- generate_data_entry_excel(
   dict_file = dict_file,
   metadata_file = metadata_file,
   output_file = output_file,
-  ols_size_threshold = 1000
+  ols_size_threshold = 1000,
+  prefill_metadata = NULL
 )
 
 message("")

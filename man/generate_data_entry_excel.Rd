@@ -11,7 +11,8 @@ generate_data_entry_excel(
     "curatedMetagenomicDataCuration"),
   output_file = file.path(getwd(), "cMD_data_entry_generated.xlsx"),
   ols_size_threshold = 1000,
-  example_data = TRUE
+  prefill_metadata = system.file("extdata", "cMD_prefill_example.csv",
+    package = "curatedMetagenomicDataCuration")
 )
 }
 \arguments{
@@ -26,8 +27,10 @@ current working directory.}
 
 \item{ols_size_threshold}{Threshold for switching from OLS to curated values (default: 1000)}
 
-\item{example_data}{Logical; if TRUE, prefill rows 3-6 and columns 1-10 in
-`Curator_Entry` with demonstration values (default: TRUE)}
+\item{prefill_metadata}{Optional metadata used to prefill rows in
+`Curator_Entry`. Accepts either a data.frame or a path to a CSV/TSV file.
+Defaults to the package example file in `extdata`; use `NULL` to disable
+prefilling.}
 }
 \description{
 Create Excel data entry file with data validation

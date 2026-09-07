@@ -311,8 +311,10 @@ generate_validation_lists <- function(
 #' @param output_file Path for the output Excel file. Defaults to a file in the
 #'   current working directory.
 #' @param ols_size_threshold Threshold for switching from OLS to curated values (default: 1000)
-#' @param example_data Logical; if TRUE, prefill rows 3-6 and columns 1-10 in
-#'   `Curator_Entry` with demonstration values (default: TRUE)
+#' @param prefill_metadata Optional metadata used to prefill rows in
+#'   `Curator_Entry`. Accepts either a data.frame or a path to a CSV/TSV file.
+#'   Defaults to the package example file in `extdata`; use `NULL` to disable
+#'   prefilling.
 #' @export
 generate_data_entry_excel <- function(
   dict_file = system.file(
@@ -327,7 +329,11 @@ generate_data_entry_excel <- function(
   ),
   output_file = file.path(getwd(), "cMD_data_entry_generated.xlsx"),
   ols_size_threshold = 1000,
-  example_data = TRUE
+  prefill_metadata = system.file(
+    "extdata",
+    "cMD_prefill_example.csv",
+    package = "curatedMetagenomicDataCuration"
+  )
 ) {
 
   build_dict_github_permalink <- function(path) {
@@ -377,6 +383,68 @@ generate_data_entry_excel <- function(
     paste0(remote_url, "/blob/", commit_sha, "/", rel_path)
   }
 
+  load_prefill_metadata <- function(prefill_input) {
+    if (is.null(prefill_input)) {
+      return(NULL)
+    }
+
+    if (is.data.frame(prefill_input)) {
+      if (nrow(prefill_input) == 0) {
+        return(NULL)
+      }
+      prefill_df <- prefill_input
+      names(prefill_df) <- as.character(names(prefill_df))
+      return(prefill_df)
+    }
+
+    if (!is.character(prefill_input) || length(prefill_input) != 1) {
+      stop("`prefill_metadata` must be NULL, a data.frame, or a single file path")
+    }
+
+    prefill_path <- prefill_input
+    if (identical(prefill_path, "")) {
+      local_example <- "inst/extdata/cMD_prefill_example.csv"
+      if (file.exists(local_example)) {
+        prefill_path <- local_example
+      } else {
+        return(NULL)
+      }
+    }
+
+    if (!file.exists(prefill_path)) {
+      stop("Prefill metadata file not found: ", prefill_path)
+    }
+
+    ext <- tolower(tools::file_ext(prefill_path))
+    if (ext %in% c("tsv", "txt")) {
+      prefill_df <- utils::read.delim(prefill_path, stringsAsFactors = FALSE, check.names = FALSE)
+    } else {
+      prefill_df <- utils::read.csv(prefill_path, stringsAsFactors = FALSE, check.names = FALSE)
+    }
+
+    if (nrow(prefill_df) == 0) {
+      return(NULL)
+    }
+
+    names(prefill_df) <- as.character(names(prefill_df))
+    prefill_df
+  }
+
+  split_prefill_values <- function(value) {
+    if (length(value) == 0 || is.null(value) || is.na(value)) {
+      return(character(0))
+    }
+
+    value_chr <- trimws(as.character(value))
+    if (identical(value_chr, "")) {
+      return(character(0))
+    }
+
+    pieces <- trimws(unlist(strsplit(value_chr, ";", fixed = TRUE), use.names = FALSE))
+    pieces <- pieces[pieces != ""]
+    unique(pieces)
+  }
+
   # Check if openxlsx2 is available
   if (!requireNamespace("openxlsx2", quietly = TRUE)) {
     stop("Package 'openxlsx2' is required. Please install it with: install.packages('openxlsx2')")
@@ -384,6 +452,7 @@ generate_data_entry_excel <- function(
 
   message("Reading data dictionary...")
   dict <- read.csv(dict_file, stringsAsFactors = FALSE)
+  prefill_df <- load_prefill_metadata(prefill_metadata)
 
   # Sort by display.group first, then by display.order within each group
   if ("display.group" %in% colnames(dict) && "display.order" %in% colnames(dict)) {
@@ -576,76 +645,47 @@ generate_data_entry_excel <- function(
   }
   wb$add_data("Curator_Entry", t(as.matrix(column_header_values)), start_row = column_header_row, col_names = FALSE)
 
-  # Add entry rows. Optionally prefill first 10 columns for first 4 example rows.
-  for (row_num in first_data_row:(first_data_row + 7)) {
+  # Add entry rows and optionally prefill with supplied metadata.
+  prefill_rows <- if (is.null(prefill_df)) 0 else nrow(prefill_df)
+  rows_to_write <- max(8, prefill_rows)
+
+  for (row_index in seq_len(rows_to_write)) {
+    row_num <- first_data_row + row_index - 1
     row_values <- rep("", length(curator_cols))
-    example_offset <- row_num - first_data_row
 
-    if (isTRUE(example_data) && example_offset <= 3) {
-      n_prefill <- min(10, length(curator_cols))
-      prefill_values <- rep("", n_prefill)
+    if (!is.null(prefill_df) && row_index <= nrow(prefill_df)) {
+      row_data <- prefill_df[row_index, , drop = FALSE]
 
-      # Demonstration values for core identifier/publication fields.
-      prefill_values[1] <- "EinsteinA_1922"
-      if (n_prefill >= 2) prefill_values[2] <- paste0("SUBJ", sprintf("%03d", example_offset + 1))
-      if (n_prefill >= 3) prefill_values[3] <- paste0("SAMP", sprintf("%03d", example_offset + 1))
-      if (n_prefill >= 9) prefill_values[9] <- "12345678"
-      if (n_prefill >= 10) prefill_values[10] <- "ExampleCohort"
+      for (i in seq_along(curator_cols)) {
+        col_info <- curator_cols[[i]]
+        curator_name <- col_info$curator_name
+        base_name <- col_info$base_name
 
-      # If target_condition dropdown values are available, prefill first pick column.
-      if (n_prefill >= 4 && "target_condition" %in% names(validation_lists)) {
-        tc_values <- validation_lists[["target_condition"]]
-        if (length(tc_values) > 0) {
-          prefill_values[4] <- tc_values[(example_offset %% length(tc_values)) + 1]
-        }
-      }
+        value <- ""
 
-      row_values[seq_len(n_prefill)] <- prefill_values
+        if (curator_name %in% names(row_data)) {
+          value <- row_data[[curator_name]][1]
+        } else if (base_name %in% names(row_data)) {
+          raw_value <- row_data[[base_name]][1]
+          split_values <- split_prefill_values(raw_value)
 
-      # Ensure demo row constants for all study_name / pmid columns.
-      study_name_indices <- which(vapply(curator_cols, function(x) x$base_name, character(1)) == "study_name")
-      if (length(study_name_indices) > 0) {
-        row_values[study_name_indices] <- "EinsteinA_1922"
-      }
-
-      pmid_indices <- which(vapply(curator_cols, function(x) x$base_name, character(1)) == "pmid")
-      if (length(pmid_indices) > 0) {
-        row_values[pmid_indices] <- "12345678"
-      }
-
-      # Fill curator picks with demonstration curator aliases when present.
-      curator_examples <- c(
-        "Anonymous Alligator",
-        "Bold Badger",
-        "Curious Coyote",
-        "Diligent Dolphin",
-        "Eager Eagle"
-      )
-      for (pick_idx in seq_along(curator_examples)) {
-        pick_name <- paste0("curator_pick", pick_idx)
-        col_idx <- which(vapply(curator_cols, function(x) x$curator_name, character(1)) == pick_name)
-        if (length(col_idx) > 0) {
-          row_values[col_idx[1]] <- curator_examples[pick_idx]
-        }
-      }
-
-      # Fill first two target_condition picks with example ontology values when available.
-      if ("target_condition" %in% names(validation_lists)) {
-        tc_values <- validation_lists[["target_condition"]]
-        if (length(tc_values) > 0) {
-          tc_start <- ((example_offset) * 2 %% length(tc_values)) + 1
-          tc_pick1 <- tc_values[tc_start]
-          tc_pick2 <- tc_values[(tc_start %% length(tc_values)) + 1]
-
-          tc_pick1_idx <- which(vapply(curator_cols, function(x) x$curator_name, character(1)) == "target_condition_pick1")
-          if (length(tc_pick1_idx) > 0) {
-            row_values[tc_pick1_idx[1]] <- tc_pick1
+          if (!is.na(col_info$pick_num)) {
+            if (length(split_values) >= col_info$pick_num) {
+              value <- split_values[col_info$pick_num]
+            }
+          } else if (grepl("_pick$", curator_name)) {
+            if (length(split_values) >= 1) {
+              value <- split_values[1]
+            }
+          } else {
+            value <- raw_value
           }
+        }
 
-          tc_pick2_idx <- which(vapply(curator_cols, function(x) x$curator_name, character(1)) == "target_condition_pick2")
-          if (length(tc_pick2_idx) > 0) {
-            row_values[tc_pick2_idx[1]] <- tc_pick2
-          }
+        if (length(value) == 0 || is.na(value)) {
+          row_values[i] <- ""
+        } else {
+          row_values[i] <- as.character(value)
         }
       }
     }
