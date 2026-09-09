@@ -85,15 +85,19 @@ find_metadata_files <- function(path = "inst/curated/") {
 #' @export
 validate_single_study <- function(file, schema, ontology_terms = NULL) {
   study_name <- basename(dirname(file))
-
+  
   tryCatch({
     first_line <- readLines(file, n = 1L)
     sep <- if (grepl("\t", first_line)) "\t" else ","
     data <- read.delim(file, sep = sep, stringsAsFactors = FALSE,
                        check.names = FALSE)
+    # Retain uncurated columns in the original metadata, but exclude them
+    # from schema validation because they are intentionally outside the schema
+    uncurated_cols <- startsWith(names(data), "uncurated_")
+    data_to_validate <- data[, !uncurated_cols, drop = FALSE]
     result <- OmicsMLRepoCuration::validate_data_against_schema(
-      data, schema, ontology_terms = ontology_terms)
-
+      data_to_validate, schema, ontology_terms = ontology_terms)
+    
     list(
       study_name = study_name,
       file = file,
@@ -102,6 +106,7 @@ validate_single_study <- function(file, schema, ontology_terms = NULL) {
       data = data,
       errors = result$errors,
       warnings = result$warnings,
+      ignored_columns = names(data)[uncurated_cols],
       success = TRUE
     )
   }, error = function(e) {
@@ -113,6 +118,7 @@ validate_single_study <- function(file, schema, ontology_terms = NULL) {
       data = NULL,
       errors = paste("VALIDATION ERROR:", conditionMessage(e)),
       warnings = character(0),
+      ignored_columns = names(data)[uncurated_cols],
       success = FALSE
     )
   })
@@ -172,16 +178,16 @@ validateStudy <- function(study, verbose = TRUE) {
       )
     }
   }
-
+  
   # ── Load schema & validate ───────────────────────────────────────────────────
   schema         <- load_validation_schema()
   ontology_terms <- load_ontology_terms()
   res            <- validate_single_study(file, schema, ontology_terms)
-
+  
   n_errors   <- length(res$errors)
   n_warnings <- length(res$warnings)
   passed     <- res$success && n_errors == 0L
-
+  
   # ── Print summary ────────────────────────────────────────────────────────────
   status_icon <- if (passed) "[PASS]" else "[FAIL]"
   cat(rep("-", 60), "\n", sep = "")
@@ -189,7 +195,7 @@ validateStudy <- function(study, verbose = TRUE) {
   if (!is.na(res$rows))
     cat("  File   :", res$file, "\n",
         " Samples :", res$rows, "rows x", res$cols, "columns\n")
-
+  
   if (!res$success) {
     cat("  ERROR  : could not read file\n")
   } else if (passed && n_warnings == 0L) {
@@ -201,7 +207,7 @@ validateStudy <- function(study, verbose = TRUE) {
       cat("  Warnings:", n_warnings, "\n")
   }
   cat(rep("-", 60), "\n", sep = "")
-
+  
   if (verbose) {
     if (n_errors > 0L) {
       cat("Errors:\n")
@@ -212,7 +218,7 @@ validateStudy <- function(study, verbose = TRUE) {
       for (w in res$warnings) cat("  WARN :", w, "\n")
     }
   }
-
+  
   invisible(list(
     study_name = res$study_name,
     file       = res$file,
@@ -233,10 +239,10 @@ aggregate_validation_results <- function(results) {
   total_errors <- sum(sapply(results, function(r) length(r$errors)))
   total_warnings <- sum(sapply(results, function(r) length(r$warnings)))
   all_valid <- all(sapply(results, function(r) length(r$errors) == 0))
-
+  
   studies_with_issues <- results[sapply(results, function(r)
     length(r$errors) > 0 || length(r$warnings) > 0)]
-
+  
   list(
     total_files = length(results),
     total_errors = total_errors,
