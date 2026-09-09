@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 130,
     "total_errors": 27,
-    "total_warnings": 150,
-    "files_with_issues": 47
+    "total_warnings": 131,
+    "files_with_issues": 41
   },
   "stats": {
     "total_studies": 130,
@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-03T13:12:24Z",
+    "timestamp": "2026-09-09T18:12:07Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "33759551911"
+    "run_id": "34387387061"
   },
   "studies_with_issues": [
     {
@@ -310,17 +310,6 @@
         "Columns not covered by schema: uncurated_other_treatment, uncurated_pets, uncurated_caffeine_consumption"
       ],
       "warnings": []
-    },
-    {
-      "name": "DavidLA_2015",
-      "file": "inst/curated//DavidLA_2015/DavidLA_2015_sample.tsv",
-      "rows": 47,
-      "cols": 27,
-      "errors": [],
-      "warnings": [
-        "Field 'disease': 'Diarrhea,Cholera' is not a recognized term for this ontology-backed field (38 rows).",
-        "Field 'disease_details': 'Acute' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (38 rows)."
-      ]
     },
     {
       "name": "FanY_2023",
@@ -378,24 +367,7 @@
       "errors": [
         "Columns not covered by schema: uncurated_years_after_onset, uncurated_ms_family, uncurated_allergic, uncurated_vitaminD_IU, uncurated_children_number, uncurated_roommates, uncurated_recreational_drug, uncurated_pets, uncurated_education, uncurated_occupation, uncurated_collection_method"
       ],
-      "warnings": [
-        "Field 'age' has 3 values not matching pattern:  [0-9]+"
-      ]
-    },
-    {
-      "name": "KarlssonFH_2013",
-      "file": "inst/curated//KarlssonFH_2013/KarlssonFH_2013_sample.tsv",
-      "rows": 145,
-      "cols": 35,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'Metformin,Statin' is not a recognized term for this ontology-backed field (6 rows).",
-        "Field 'treatment': 'Metformin,Statin,Therapeutic Insulin' is not a recognized term for this ontology-backed field (2 rows).",
-        "Field 'treatment': 'Metformin,Therapeutic Insulin' is not a recognized term for this ontology-backed field (2 rows).",
-        "Field 'treatment': 'Statin' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (42 rows).",
-        "Field 'treatment': 'Statin,Statin' is not a recognized term for this ontology-backed field (1 row).",
-        "Field 'treatment': 'Statin,Therapeutic Insulin' is not a recognized term for this ontology-backed field (1 row)."
-      ]
+      "warnings": []
     },
     {
       "name": "KartalE_2022",
@@ -483,16 +455,6 @@
       ]
     },
     {
-      "name": "MetaCardis_2020_a",
-      "file": "inst/curated//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
-      "rows": 1831,
-      "cols": 38,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'None' is not a recognized term for this ontology-backed field (539 rows)."
-      ]
-    },
-    {
       "name": "NagataN_2022",
       "file": "inst/curated//NagataN_2022/NagataN_2022_sample.tsv",
       "rows": 560,
@@ -500,16 +462,6 @@
       "errors": [],
       "warnings": [
         "Field 'subject_id' has 90 values not matching pattern:  [0-9a-zA-Z]\\S+"
-      ]
-    },
-    {
-      "name": "NayakRR_2021",
-      "file": "inst/curated//NayakRR_2021/NayakRR_2021_sample.tsv",
-      "rows": 34,
-      "cols": 25,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'No' is not a recognized term for this ontology-backed field (17 rows)."
       ]
     },
     {
@@ -521,7 +473,7 @@
         "Columns not covered by schema: uncurated_original_age_value, uncurated_original_age_unit, uncurated_history_of_therapy, uncurated_breastfeeding_duration"
       ],
       "warnings": [
-        "Field 'subcohort' has 18 values not matching pattern:  [0-9a-zA-Z]\\S+"
+        "Field 'disease_details': 'Schistosoma haematobium' is not a recognized term for this ontology-backed field (18 rows)."
       ]
     },
     {
@@ -566,16 +518,6 @@
       ]
     },
     {
-      "name": "SmitsSA_2017",
-      "file": "inst/curated//SmitsSA_2017/SmitsSA_2017_sample.tsv",
-      "rows": 40,
-      "cols": 30,
-      "errors": [],
-      "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (40 rows)."
-      ]
-    },
-    {
       "name": "Soto-GironMJ_2021",
       "file": "inst/curated//Soto-GironMJ_2021/Soto-GironMJ_2021_sample.tsv",
       "rows": 86,
@@ -589,9 +531,9 @@
       "name": "SpencerCN_2021",
       "file": "inst/curated//SpencerCN_2021/SpencerCN_2021_sample.tsv",
       "rows": 167,
-      "cols": 28,
+      "cols": 29,
       "errors": [
-        "Columns not covered by schema: uncurated_PFS12, uncurated_previous_therapy, uncurated_PFS03, uncurated_PFS06"
+        "Columns not covered by schema: uncurated_previous_therapy, uncurated_PFS03, uncurated_PFS06"
       ],
       "warnings": []
     },
@@ -644,9 +586,6 @@
         "Columns not covered by schema: uncurated_infant_age"
       ],
       "warnings": [
-        "Field 'neonatal_delivery_procedure' has 4 invalid values: . Allowed values: Elective Cesarean Delivery, Emergency Cesarean Delivery, Cesarean Section, Vaginal Delivery",
-        "Field 'zigosity' has 60 invalid values: . Allowed values: monozygotic, dizygotic",
-        "Field 'location' has 48 values not matching pattern:  .+",
         "Row 1: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
         "Row 2: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
         "Row 3: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
@@ -704,20 +643,7 @@
       "cols": 37,
       "errors": [],
       "warnings": [
-        "Field 'disease_details': 'Suspected' is not a recognized term for this ontology-backed field (1 row).",
-        "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (139 rows).",
-        "Field 'treatment': 'nitrofuran antibiotic' is not a recognized term for this ontology-backed field (7 rows).",
-        "Field 'treatment': 'sulfonamide antibiotic' is not a recognized term for this ontology-backed field (20 rows)."
-      ]
-    },
-    {
-      "name": "VincentC_2016",
-      "file": "inst/curated//VincentC_2016/VincentC_2016_sample.tsv",
-      "rows": 229,
-      "cols": 36,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'None' is not a recognized term for this ontology-backed field (62 rows)."
+        "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (139 rows)."
       ]
     },
     {
