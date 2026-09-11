@@ -1,24 +1,24 @@
 {
   "status": "FAIL",
   "summary": {
-    "total_files": 130,
-    "total_errors": 27,
-    "total_warnings": 131,
-    "files_with_issues": 41
+    "total_files": 141,
+    "total_errors": 28,
+    "total_warnings": 302,
+    "files_with_issues": 46
   },
   "stats": {
-    "total_studies": 130,
-    "total_samples": 31742,
+    "total_studies": 141,
+    "total_samples": 33007,
     "distributions": {
       "age_group": {
         "top": [
           {
             "name": "Adult",
-            "count": 21474
+            "count": 21520
           },
           {
             "name": "Elderly",
-            "count": 4551
+            "count": 4672
           },
           {
             "name": "Newborn",
@@ -42,13 +42,13 @@
           }
         ],
         "total_distinct": 7,
-        "total_count": 31662
+        "total_count": 31829
       },
       "body_site": {
         "top": [
           {
             "name": "feces",
-            "count": 29449
+            "count": 30498
           },
           {
             "name": "oral cavity",
@@ -72,13 +72,13 @@
           }
         ],
         "total_distinct": 6,
-        "total_count": 31742
+        "total_count": 32791
       },
       "published_year": {
         "top": [
           {
             "name": "2022",
-            "count": 5877
+            "count": 6033
           },
           {
             "name": "2016",
@@ -110,21 +110,21 @@
           },
           {
             "name": "2020",
-            "count": 1182
+            "count": 1262
           },
           {
             "name": "2012",
             "count": 1111
           }
         ],
-        "total_distinct": 14,
-        "total_count": 27082
+        "total_distinct": 15,
+        "total_count": 28347
       },
       "country": {
         "top": [
           {
             "name": "United States",
-            "count": 7317
+            "count": 7533
           },
           {
             "name": "United Kingdom",
@@ -132,7 +132,7 @@
           },
           {
             "name": "China",
-            "count": 2894
+            "count": 2998
           },
           {
             "name": "Netherlands",
@@ -144,7 +144,7 @@
           },
           {
             "name": "Japan",
-            "count": 1256
+            "count": 1423
           },
           {
             "name": "Argentina",
@@ -163,8 +163,8 @@
             "count": 900
           }
         ],
-        "total_distinct": 74,
-        "total_count": 31787
+        "total_distinct": 75,
+        "total_count": 32600
       },
       "ancestry": {
         "top": [
@@ -200,7 +200,7 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 17864
+            "count": 18117
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -239,18 +239,18 @@
             "count": 606
           }
         ],
-        "total_distinct": 146,
-        "total_count": 36832
+        "total_distinct": 147,
+        "total_count": 37429
       },
       "sex": {
         "top": [
           {
             "name": "Female",
-            "count": 14882
+            "count": 14917
           },
           {
             "name": "Male",
-            "count": 14205
+            "count": 14508
           },
           {
             "name": "Not applicable",
@@ -258,17 +258,17 @@
           }
         ],
         "total_distinct": 3,
-        "total_count": 29582
+        "total_count": 29920
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-09-09T18:12:07Z",
+    "timestamp": "2026-09-11T19:05:34Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "34387387061"
+    "run_id": "34636730245"
   },
   "studies_with_issues": [
     {
@@ -310,6 +310,16 @@
         "Columns not covered by schema: uncurated_other_treatment, uncurated_pets, uncurated_caffeine_consumption"
       ],
       "warnings": []
+    },
+    {
+      "name": "DumitrescuDG_2023",
+      "file": "inst/curated//DumitrescuDG_2023/DumitrescuDG_2023_sample.tsv",
+      "rows": 28,
+      "cols": 22,
+      "errors": [],
+      "warnings": [
+        "Field 'age' has 17 values not matching pattern:  [0-9]+"
+      ]
     },
     {
       "name": "FanY_2023",
@@ -368,6 +378,17 @@
         "Columns not covered by schema: uncurated_years_after_onset, uncurated_ms_family, uncurated_allergic, uncurated_vitaminD_IU, uncurated_children_number, uncurated_roommates, uncurated_recreational_drug, uncurated_pets, uncurated_education, uncurated_occupation, uncurated_collection_method"
       ],
       "warnings": []
+    },
+    {
+      "name": "JoS_2022",
+      "file": "inst/curated//JoS_2022/JoS_2022_sample.tsv",
+      "rows": 156,
+      "cols": 20,
+      "errors": [],
+      "warnings": [
+        "Field 'subject_id' has 156 values not matching pattern:  [0-9a-zA-Z]\\S+",
+        "Field 'country': 'South Korea' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (156 rows)."
+      ]
     },
     {
       "name": "KartalE_2022",
@@ -465,6 +486,182 @@
       ]
     },
     {
+      "name": "NishiwakiH_2024",
+      "file": "inst/curated//NishiwakiH_2024/NishiwakiH_2024_sample.tsv",
+      "rows": 167,
+      "cols": 24,
+      "errors": [],
+      "warnings": [
+        "Field 'ncbi_accession' row 1 has value 'DRR480283' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 2 has value 'DRR480284' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 3 has value 'DRR480285' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 4 has value 'DRR480286' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 5 has value 'DRR480287' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 6 has value 'DRR480288' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 7 has value 'DRR480289' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 8 has value 'DRR480290' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 9 has value 'DRR480291' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 10 has value 'DRR480292' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 11 has value 'DRR480293' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 12 has value 'DRR480294' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 13 has value 'DRR480295' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 14 has value 'DRR480296' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 15 has value 'DRR480297' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 16 has value 'DRR480298' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 17 has value 'DRR480299' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 18 has value 'DRR480300' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 19 has value 'DRR480301' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 20 has value 'DRR480302' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 21 has value 'DRR480303' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 22 has value 'DRR480304' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 23 has value 'DRR480305' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 24 has value 'DRR480306' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 25 has value 'DRR480307' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 26 has value 'DRR480308' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 27 has value 'DRR480309' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 28 has value 'DRR480310' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 29 has value 'DRR480311' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 30 has value 'DRR480312' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 31 has value 'DRR480313' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 32 has value 'DRR480314' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 33 has value 'DRR480315' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 34 has value 'DRR480316' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 35 has value 'DRR480317' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 36 has value 'DRR480318' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 37 has value 'DRR480319' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 38 has value 'DRR480320' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 39 has value 'DRR480321' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 40 has value 'DRR480322' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 41 has value 'DRR480323' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 42 has value 'DRR480324' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 43 has value 'DRR480325' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 44 has value 'DRR480326' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 45 has value 'DRR480327' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 46 has value 'DRR480328' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 47 has value 'DRR480329' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 48 has value 'DRR480330' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 49 has value 'DRR480331' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 50 has value 'DRR480332' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 51 has value 'DRR480333' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 52 has value 'DRR480334' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 53 has value 'DRR480335' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 54 has value 'DRR480336' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 55 has value 'DRR480337' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 56 has value 'DRR480338' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 57 has value 'DRR480339' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 58 has value 'DRR480340' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 59 has value 'DRR480341' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 60 has value 'DRR480342' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 61 has value 'DRR480343' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 62 has value 'DRR480344' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 63 has value 'DRR480345' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 64 has value 'DRR480346' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 65 has value 'DRR480347' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 66 has value 'DRR480348' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 67 has value 'DRR480349' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 68 has value 'DRR480350' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 69 has value 'DRR480351' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 70 has value 'DRR480352' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 71 has value 'DRR480353' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 72 has value 'DRR480354' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 73 has value 'DRR480355' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 74 has value 'DRR480356' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 75 has value 'DRR480357' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 76 has value 'DRR480358' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 77 has value 'DRR480359' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 78 has value 'DRR480360' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 79 has value 'DRR480361' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 80 has value 'DRR480362' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 81 has value 'DRR480363' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 82 has value 'DRR480364' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 83 has value 'DRR480365' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 84 has value 'DRR480366' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 85 has value 'DRR480367' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 86 has value 'DRR480368' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 87 has value 'DRR480369' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 88 has value 'DRR480370' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 89 has value 'DRR480371' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 90 has value 'DRR480372' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 91 has value 'DRR480373' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 92 has value 'DRR480374' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 93 has value 'DRR480375' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 94 has value 'DRR480376' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 95 has value 'DRR480377' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 96 has value 'DRR480378' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 97 has value 'DRR480379' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 98 has value 'DRR480380' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 99 has value 'DRR480381' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 100 has value 'DRR480382' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 101 has value 'DRR480383' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 102 has value 'DRR480384' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 103 has value 'DRR480385' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 104 has value 'DRR480386' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 105 has value 'DRR480387' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 106 has value 'DRR480388' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 107 has value 'DRR480389' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 108 has value 'DRR480390' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 109 has value 'DRR480391' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 110 has value 'DRR480392' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 111 has value 'DRR480393' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 112 has value 'DRR480394' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 113 has value 'DRR480395' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 114 has value 'DRR480396' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 115 has value 'DRR480397' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 116 has value 'DRR480398' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 117 has value 'DRR480399' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 118 has value 'DRR480400' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 119 has value 'DRR480401' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 120 has value 'DRR480402' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 121 has value 'DRR480403' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 122 has value 'DRR480404' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 123 has value 'DRR480405' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 124 has value 'DRR480406' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 125 has value 'DRR480407' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 126 has value 'DRR480408' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 127 has value 'DRR480409' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 128 has value 'DRR480410' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 129 has value 'DRR480411' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 130 has value 'DRR480412' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 131 has value 'DRR480413' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 132 has value 'DRR480414' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 133 has value 'DRR480415' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 134 has value 'DRR480416' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 135 has value 'DRR480417' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 136 has value 'DRR480418' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 137 has value 'DRR480419' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 138 has value 'DRR480420' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 139 has value 'DRR480421' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 140 has value 'DRR480422' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 141 has value 'DRR480423' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 142 has value 'DRR480424' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 143 has value 'DRR480425' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 144 has value 'DRR480426' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 145 has value 'DRR480427' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 146 has value 'DRR480428' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 147 has value 'DRR480429' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 148 has value 'DRR480430' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 149 has value 'DRR480431' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 150 has value 'DRR480432' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 151 has value 'DRR480433' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 152 has value 'DRR480434' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 153 has value 'DRR480435' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 154 has value 'DRR480436' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 155 has value 'DRR480437' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 156 has value 'DRR480438' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 157 has value 'DRR480439' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 158 has value 'DRR480440' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 159 has value 'DRR480441' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 160 has value 'DRR480442' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 161 has value 'DRR480443' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 162 has value 'DRR480444' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 163 has value 'DRR480445' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 164 has value 'DRR480446' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 165 has value 'DRR480447' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 166 has value 'DRR480448' not matching pattern: [ES]R[SR][0-9]+",
+        "Field 'ncbi_accession' row 167 has value 'DRR480449' not matching pattern: [ES]R[SR][0-9]+"
+      ]
+    },
+    {
       "name": "OsakunorDNM_2020",
       "file": "inst/curated//OsakunorDNM_2020/OsakunorDNM_2020_sample.tsv",
       "rows": 113,
@@ -487,6 +684,16 @@
       "warnings": []
     },
     {
+      "name": "ParkDG_2024",
+      "file": "inst/curated//ParkDG_2024/ParkDG_2024_sample.tsv",
+      "rows": 36,
+      "cols": 20,
+      "errors": [],
+      "warnings": [
+        "Field 'country': 'South Korea' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (36 rows)."
+      ]
+    },
+    {
       "name": "PetersBA_2019",
       "file": "inst/curated//PetersBA_2019/PetersBA_2019_sample.tsv",
       "rows": 27,
@@ -504,6 +711,16 @@
       "errors": [
         "Missing required fields: body_site, control, host_species, sample_id, sequencing_platform, subject_id",
         "Columns not covered by schema: doi"
+      ],
+      "warnings": []
+    },
+    {
+      "name": "SampsonTR_2025",
+      "file": "inst/curated//SampsonTR_2025/SampsonTR_2025_sample.tsv",
+      "rows": 216,
+      "cols": 21,
+      "errors": [
+        "Missing required fields: body_site"
       ],
       "warnings": []
     },
