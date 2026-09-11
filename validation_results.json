@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 141,
     "total_errors": 28,
-    "total_warnings": 302,
-    "files_with_issues": 46
+    "total_warnings": 241,
+    "files_with_issues": 39
   },
   "stats": {
     "total_studies": 141,
@@ -48,7 +48,7 @@
         "top": [
           {
             "name": "feces",
-            "count": 30498
+            "count": 30714
           },
           {
             "name": "oral cavity",
@@ -72,7 +72,7 @@
           }
         ],
         "total_distinct": 6,
-        "total_count": 32791
+        "total_count": 33007
       },
       "published_year": {
         "top": [
@@ -163,8 +163,8 @@
             "count": 900
           }
         ],
-        "total_distinct": 75,
-        "total_count": 32600
+        "total_distinct": 74,
+        "total_count": 32792
       },
       "ancestry": {
         "top": [
@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-11T19:05:34Z",
+    "timestamp": "2026-09-11T21:30:20Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "34636730245"
+    "run_id": "34649559145"
   },
   "studies_with_issues": [
     {
@@ -280,16 +280,6 @@
         "Columns not covered by schema: uncurated_nationality, uncurated_DAS28_baseline, uncurated_DAS28_t4, uncurated_tjc, uncurated_sjc"
       ],
       "warnings": []
-    },
-    {
-      "name": "AsnicarF_2017",
-      "file": "inst/curated//AsnicarF_2017/AsnicarF_2017_sample.tsv",
-      "rows": 24,
-      "cols": 35,
-      "errors": [],
-      "warnings": [
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (24 rows)."
-      ]
     },
     {
       "name": "BaiX_2021",
@@ -310,16 +300,6 @@
         "Columns not covered by schema: uncurated_other_treatment, uncurated_pets, uncurated_caffeine_consumption"
       ],
       "warnings": []
-    },
-    {
-      "name": "DumitrescuDG_2023",
-      "file": "inst/curated//DumitrescuDG_2023/DumitrescuDG_2023_sample.tsv",
-      "rows": 28,
-      "cols": 22,
-      "errors": [],
-      "warnings": [
-        "Field 'age' has 17 values not matching pattern:  [0-9]+"
-      ]
     },
     {
       "name": "FanY_2023",
@@ -358,18 +338,6 @@
       ]
     },
     {
-      "name": "IjazUZ_2017",
-      "file": "inst/curated//IjazUZ_2017/IjazUZ_2017_sample.tsv",
-      "rows": 94,
-      "cols": 37,
-      "errors": [],
-      "warnings": [
-        "Field 'age_unit' has 1 invalid values: . Allowed values: Day, Week, Month, Year",
-        "Field 'family_role' has 27 invalid values: . Allowed values: child, mother, father",
-        "Field 'sex' has 83 invalid values: . Allowed values: Female, Male"
-      ]
-    },
-    {
       "name": "iMSMS_2022",
       "file": "inst/curated//iMSMS_2022/iMSMS_2022_sample.tsv",
       "rows": 3190,
@@ -386,8 +354,7 @@
       "cols": 20,
       "errors": [],
       "warnings": [
-        "Field 'subject_id' has 156 values not matching pattern:  [0-9a-zA-Z]\\S+",
-        "Field 'country': 'South Korea' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (156 rows)."
+        "Field 'subject_id' has 156 values not matching pattern:  [0-9a-zA-Z]\\S+"
       ]
     },
     {
@@ -433,33 +400,12 @@
       ]
     },
     {
-      "name": "LoombaR_2017",
-      "file": "inst/curated//LoombaR_2017/LoombaR_2017_sample.tsv",
-      "rows": 86,
-      "cols": 25,
-      "errors": [],
-      "warnings": [
-        "Field 'target_condition': 'Nonalcoholic Fatty Liver Disease' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (86 rows)."
-      ]
-    },
-    {
-      "name": "MaoL_2021",
-      "file": "inst/curated//MaoL_2021/MaoL_2021_sample.tsv",
-      "rows": 78,
-      "cols": 19,
-      "errors": [],
-      "warnings": [
-        "Field 'age_unit' has 39 invalid values: . Allowed values: Day, Week, Month, Year",
-        "Field 'sex' has 39 invalid values: . Allowed values: Female, Male"
-      ]
-    },
-    {
       "name": "McCullochJA_2022",
       "file": "inst/curated//McCullochJA_2022/McCullochJA_2022_sample.tsv",
       "rows": 94,
       "cols": 29,
       "errors": [
-        "Columns not covered by schema: ajcc_subtype, uncurated_previous_therapy"
+        "Columns not covered by schema: uncurated_ajcc_subtype, uncurated_previous_therapy"
       ],
       "warnings": [
         "Field 'treatment': 'Psychotropic Agent' is not a recognized term for this ontology-backed field (41 rows)."
@@ -684,16 +630,6 @@
       "warnings": []
     },
     {
-      "name": "ParkDG_2024",
-      "file": "inst/curated//ParkDG_2024/ParkDG_2024_sample.tsv",
-      "rows": 36,
-      "cols": 20,
-      "errors": [],
-      "warnings": [
-        "Field 'country': 'South Korea' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (36 rows)."
-      ]
-    },
-    {
       "name": "PetersBA_2019",
       "file": "inst/curated//PetersBA_2019/PetersBA_2019_sample.tsv",
       "rows": 27,
@@ -711,16 +647,6 @@
       "errors": [
         "Missing required fields: body_site, control, host_species, sample_id, sequencing_platform, subject_id",
         "Columns not covered by schema: doi"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "SampsonTR_2025",
-      "file": "inst/curated//SampsonTR_2025/SampsonTR_2025_sample.tsv",
-      "rows": 216,
-      "cols": 21,
-      "errors": [
-        "Missing required fields: body_site"
       ],
       "warnings": []
     },
@@ -802,56 +728,7 @@
       "errors": [
         "Columns not covered by schema: uncurated_infant_age"
       ],
-      "warnings": [
-        "Row 1: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 2: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 3: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 4: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 5: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 6: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 7: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 8: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 9: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 10: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 11: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 12: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 13: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 14: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 15: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 16: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 17: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 18: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 19: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 20: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 21: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 22: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 23: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 24: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 25: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 26: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 27: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 28: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 29: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 30: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 31: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 32: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 33: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 34: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 35: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 36: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 37: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 38: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 39: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 40: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 41: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 42: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 43: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 44: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 45: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 46: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 47: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing",
-        "Row 48: 'feces_phenotype' has a value but 'feces_phenotype_value' is missing"
-      ]
+      "warnings": []
     },
     {
       "name": "VatanenT_2016",
@@ -912,13 +789,11 @@
       "name": "YachidaS_2019",
       "file": "inst/curated//YachidaS_2019/YachidaS_2019_sample.tsv",
       "rows": 616,
-      "cols": 31,
-      "errors": [],
-      "warnings": [
-        "Field 'disease': 'Polyps' is not a recognized term for this ontology-backed field (5 rows).",
-        "Field 'disease_details': 'History of surgery (situation)' is not a recognized term for this ontology-backed field (40 rows).",
-        "Field 'tumor_staging_ajcc' has 358 invalid values: . Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB"
-      ]
+      "cols": 30,
+      "errors": [
+        "Columns not covered by schema: uncurated_history"
+      ],
+      "warnings": []
     },
     {
       "name": "YangJ_2020",
