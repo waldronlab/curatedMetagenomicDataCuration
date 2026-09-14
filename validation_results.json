@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-14T16:27:54Z",
+    "timestamp": "2026-09-14T17:16:19Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "34868587499"
+    "run_id": "34873483358"
   },
   "studies_with_issues": [
     {
@@ -406,7 +406,7 @@
       "cols": 29,
       "errors": [],
       "warnings": [
-        "Field 'subcohort' has 42 values not matching pattern:  [0-9a-zA-Z]\\S+"
+        "Field 'disease_details': 'Shiga Toxin-producing Escherichia coli' is not a recognized term for this ontology-backed field (42 rows)."
       ]
     },
     {
@@ -428,7 +428,7 @@
       "cols": 30,
       "errors": [],
       "warnings": [
-        "Field 'subcohort' has 18 values not matching pattern:  [0-9a-zA-Z]\\S+"
+        "Field 'disease_details': 'Giardia lamblia' is not a recognized term for this ontology-backed field (18 rows)."
       ]
     },
     {
