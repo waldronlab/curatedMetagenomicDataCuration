@@ -14,11 +14,11 @@
         "top": [
           {
             "name": "Adult",
-            "count": 21520
+            "count": 21246
           },
           {
             "name": "Elderly",
-            "count": 4672
+            "count": 4654
           },
           {
             "name": "Newborn",
@@ -42,7 +42,7 @@
           }
         ],
         "total_distinct": 7,
-        "total_count": 31829
+        "total_count": 31537
       },
       "body_site": {
         "top": [
@@ -246,29 +246,29 @@
         "top": [
           {
             "name": "Female",
-            "count": 14917
+            "count": 14827
           },
           {
             "name": "Male",
-            "count": 14508
+            "count": 14435
           },
           {
             "name": "Not applicable",
-            "count": 495
+            "count": 366
           }
         ],
         "total_distinct": 3,
-        "total_count": 29920
+        "total_count": 29628
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-09-15T12:49:37Z",
+    "timestamp": "2026-09-15T13:48:32Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "34970877305"
+    "run_id": "34977225095"
   },
   "studies_with_issues": [
     {
