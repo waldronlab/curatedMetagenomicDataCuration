@@ -1,13 +1,13 @@
 {
   "status": "FAIL",
   "summary": {
-    "total_files": 141,
-    "total_errors": 29,
+    "total_files": 140,
+    "total_errors": 27,
     "total_warnings": 241,
-    "files_with_issues": 40
+    "files_with_issues": 39
   },
   "stats": {
-    "total_studies": 141,
+    "total_studies": 140,
     "total_samples": 33007,
     "distributions": {
       "age_group": {
@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-14T17:16:19Z",
+    "timestamp": "2026-09-15T12:36:58Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "34873483358"
+    "run_id": "34969707632"
   },
   "studies_with_issues": [
     {
@@ -648,17 +648,6 @@
       "warnings": [
         "Field 'treatment': 'Melanoma Surgery' is not a recognized term for this ontology-backed field (11 rows)."
       ]
-    },
-    {
-      "name": "PiccinnoG_2025",
-      "file": "inst/curated//PiccinnoG_2025/PiccinnoG_2025_sample.tsv",
-      "rows": 0,
-      "cols": 4,
-      "errors": [
-        "Missing required fields: body_site, control, host_species, sample_id, sequencing_platform, subject_id",
-        "Columns not covered by schema: doi"
-      ],
-      "warnings": []
     },
     {
       "name": "ShiB_2015",
