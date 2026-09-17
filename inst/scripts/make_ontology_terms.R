@@ -30,18 +30,18 @@
 # -----------------------------------------------------------------------------
 
 suppressPackageStartupMessages({
-    library(rols)
-    library(OmicsMLRepoCuration)  # get_ontologies()
+  library(rols)
+  library(OmicsMLRepoCuration)  # get_ontologies()
 })
 
 ## Resolve project root from this script's location (inst/scripts/<file>).
 .args <- commandArgs(trailingOnly = FALSE)
 .file_arg <- grep("^--file=", .args, value = TRUE)
 if (length(.file_arg)) {
-    script_path <- normalizePath(sub("^--file=", "", .file_arg))
-    proj_root <- dirname(dirname(dirname(script_path)))
+  script_path <- normalizePath(sub("^--file=", "", .file_arg))
+  proj_root <- dirname(dirname(dirname(script_path)))
 } else {
-    proj_root <- getwd()
+  proj_root <- getwd()
 }
 
 ## Locate this project's data dictionary (inst/extdata/*_data_dictionary.csv).
@@ -66,132 +66,132 @@ message("dynamic_enum fields with roots: ",
 ## (this is exactly how EFO:0000408 -> MONDO:0000001 went unnoticed). Fail loudly
 ## here, before the expensive generation, naming the suggested replacement.
 check_root_not_obsolete <- function(root, field) {
-    onto <- tolower(get_ontologies(root))
-    term <- rols::olsTerm(rols::olsOntology(onto), root)
-    if (isTRUE(term@is_obsolete)) {
-        repl <- term@term_replaced_by
-        repl_txt <- if (length(repl) > 0) {
-            gsub("_", ":", sub(".*/", "", repl[1]))
-        } else {
-            "none recorded"
-        }
-        stop("Dictionary root ", root, " (field '", field, "') is OBSOLETE",
-             " (label '", rols::termLabel(term), "'). Update inst/extdata/",
-             "cMD_data_dictionary.csv; term_replaced_by suggests: ", repl_txt,
-             call. = FALSE)
+  onto <- tolower(get_ontologies(root))
+  term <- rols::olsTerm(rols::olsOntology(onto), root)
+  if (isTRUE(term@is_obsolete)) {
+    repl <- term@term_replaced_by
+    repl_txt <- if (length(repl) > 0) {
+      gsub("_", ":", sub(".*/", "", repl[1]))
+    } else {
+      "none recorded"
     }
+    stop("Dictionary root ", root, " (field '", field, "') is OBSOLETE",
+         " (label '", rols::termLabel(term), "'). Update inst/extdata/",
+         "cMD_data_dictionary.csv; term_replaced_by suggests: ", repl_txt,
+         call. = FALSE)
+  }
 }
 message("Pre-flight: checking roots are not obsolete...")
 for (r in seq_len(nrow(dyn))) {
-    roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], ";", fixed = TRUE)[[1]])
-    for (root in roots[nzchar(roots)]) {
-        check_root_not_obsolete(root, dyn[["col.name"]][r])
-    }
+  roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], ";", fixed = TRUE)[[1]])
+  for (root in roots[nzchar(roots)]) {
+    check_root_not_obsolete(root, dyn[["col.name"]][r])
+  }
 }
 
 ## Collect (term_id, label, synonyms) for the descendants/children of one root.
 collect_root <- function(root, property) {
-    onto <- tolower(get_ontologies(root))
-    ont_ob <- rols::olsOntology(onto)
-    root_term <- rols::olsTerm(ont_ob, root)
-
-    terms <- if (identical(property, "children")) {
-        rols::children(root_term)
-    } else {
-        rols::descendants(root_term)
+  onto <- tolower(get_ontologies(root))
+  ont_ob <- rols::olsOntology(onto)
+  root_term <- rols::olsTerm(ont_ob, root)
+  
+  terms <- if (identical(property, "children")) {
+    rols::children(root_term)
+  } else {
+    rols::descendants(root_term)
+  }
+  
+  ids    <- rols::termId(terms)
+  labels <- rols::termLabel(terms)
+  syns   <- rols::termSynonym(terms)
+  
+  rows <- list()
+  for (i in seq_along(ids)) {
+    lab <- unname(labels[i])
+    if (is.na(lab) || !nzchar(lab)) next
+    term_syns <- syns[[i]]
+    term_syns <- term_syns[!is.na(term_syns) & nzchar(term_syns)]
+    rows[[length(rows) + 1L]] <- data.frame(
+      term_id = unname(ids[i]), label = lab, synonym = "",
+      stringsAsFactors = FALSE)
+    for (s in term_syns) {
+      rows[[length(rows) + 1L]] <- data.frame(
+        term_id = unname(ids[i]), label = lab, synonym = s,
+        stringsAsFactors = FALSE)
     }
-
-    ids    <- rols::termId(terms)
-    labels <- rols::termLabel(terms)
-    syns   <- rols::termSynonym(terms)
-
-    rows <- list()
-    for (i in seq_along(ids)) {
-        lab <- unname(labels[i])
-        if (is.na(lab) || !nzchar(lab)) next
-        term_syns <- syns[[i]]
-        term_syns <- term_syns[!is.na(term_syns) & nzchar(term_syns)]
-        rows[[length(rows) + 1L]] <- data.frame(
-            term_id = unname(ids[i]), label = lab, synonym = "",
-            stringsAsFactors = FALSE)
-        for (s in term_syns) {
-            rows[[length(rows) + 1L]] <- data.frame(
-                term_id = unname(ids[i]), label = lab, synonym = s,
-                stringsAsFactors = FALSE)
-        }
-    }
-    if (length(rows) == 0) {
-        return(data.frame(term_id = character(), label = character(),
-                          synonym = character(), stringsAsFactors = FALSE))
-    }
-    do.call(rbind, rows)
+  }
+  if (length(rows) == 0) {
+    return(data.frame(term_id = character(), label = character(),
+                      synonym = character(), stringsAsFactors = FALSE))
+  }
+  do.call(rbind, rows)
 }
 
 ## Collect (term_id, label, synonyms) for a SINGLE term (no descendants). Used
 ## for static.enum entries: explicitly-allowed terms (e.g. Healthy) that are not
 ## descendants of the dynamic root.
 collect_term <- function(id) {
-    onto <- tolower(get_ontologies(id))
-    term <- rols::olsTerm(rols::olsOntology(onto), id)
-    lab <- unname(rols::termLabel(term))
-    if (length(lab) == 0 || is.na(lab) || !nzchar(lab)) {
-        return(data.frame(term_id = character(), label = character(),
-                          synonym = character(), stringsAsFactors = FALSE))
-    }
-    term_syns <- rols::termSynonym(term)
-    term_syns <- term_syns[!is.na(term_syns) & nzchar(term_syns)]
-    rows <- list(data.frame(term_id = id, label = lab, synonym = "",
-                            stringsAsFactors = FALSE))
-    for (s in term_syns) {
-        rows[[length(rows) + 1L]] <- data.frame(
-            term_id = id, label = lab, synonym = s, stringsAsFactors = FALSE)
-    }
-    do.call(rbind, rows)
+  onto <- tolower(get_ontologies(id))
+  term <- rols::olsTerm(rols::olsOntology(onto), id)
+  lab <- unname(rols::termLabel(term))
+  if (length(lab) == 0 || is.na(lab) || !nzchar(lab)) {
+    return(data.frame(term_id = character(), label = character(),
+                      synonym = character(), stringsAsFactors = FALSE))
+  }
+  term_syns <- rols::termSynonym(term)
+  term_syns <- term_syns[!is.na(term_syns) & nzchar(term_syns)]
+  rows <- list(data.frame(term_id = id, label = lab, synonym = "",
+                          stringsAsFactors = FALSE))
+  for (s in term_syns) {
+    rows[[length(rows) + 1L]] <- data.frame(
+      term_id = id, label = lab, synonym = s, stringsAsFactors = FALSE)
+  }
+  do.call(rbind, rows)
 }
 
 all_rows <- list()
 for (r in seq_len(nrow(dyn))) {
-    field <- dyn[["col.name"]][r]
-    roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], ";", fixed = TRUE)[[1]])
-    roots <- roots[nzchar(roots)]
-    property <- dyn[["dynamic.enum.property"]][r]
-    if (is.na(property)) property <- "descendant"
-
-    message("[", field, "] roots: ", paste(roots, collapse = ", "),
-            " (", property, ")")
-    field_rows <- list()
-    for (root in roots) {
-        rt <- tryCatch(collect_root(root, property), error = function(e) {
-            warning("  failed for root ", root, ": ", conditionMessage(e))
-            NULL
-        })
-        if (!is.null(rt) && nrow(rt) > 0) field_rows[[length(field_rows) + 1L]] <- rt
+  field <- dyn[["col.name"]][r]
+  roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], ";", fixed = TRUE)[[1]])
+  roots <- roots[nzchar(roots)]
+  property <- dyn[["dynamic.enum.property"]][r]
+  if (is.na(property)) property <- "descendant"
+  
+  message("[", field, "] roots: ", paste(roots, collapse = ", "),
+          " (", property, ")")
+  field_rows <- list()
+  for (root in roots) {
+    rt <- tryCatch(collect_root(root, property), error = function(e) {
+      warning("  failed for root ", root, ": ", conditionMessage(e))
+      NULL
+    })
+    if (!is.null(rt) && nrow(rt) > 0) field_rows[[length(field_rows) + 1L]] <- rt
+  }
+  
+  ## Also resolve any static.enum terms (exact terms, not descendants).
+  static_ids <- dyn[["static.enum"]][r]
+  if (!is.na(static_ids) && nzchar(static_ids)) {
+    static_ids <- trimws(strsplit(static_ids, "|", fixed = TRUE)[[1]])
+    static_ids <- static_ids[nzchar(static_ids)]
+    for (sid in static_ids) {
+      st <- tryCatch(collect_term(sid), error = function(e) {
+        warning("  failed for static term ", sid, ": ",
+                conditionMessage(e))
+        NULL
+      })
+      if (!is.null(st) && nrow(st) > 0) {
+        message("  + static term ", sid, " -> ", st$label[1])
+        field_rows[[length(field_rows) + 1L]] <- st
+      }
     }
-
-    ## Also resolve any static.enum terms (exact terms, not descendants).
-    static_ids <- dyn[["static.enum"]][r]
-    if (!is.na(static_ids) && nzchar(static_ids)) {
-        static_ids <- trimws(strsplit(static_ids, "|", fixed = TRUE)[[1]])
-        static_ids <- static_ids[nzchar(static_ids)]
-        for (sid in static_ids) {
-            st <- tryCatch(collect_term(sid), error = function(e) {
-                warning("  failed for static term ", sid, ": ",
-                        conditionMessage(e))
-                NULL
-            })
-            if (!is.null(st) && nrow(st) > 0) {
-                message("  + static term ", sid, " -> ", st$label[1])
-                field_rows[[length(field_rows) + 1L]] <- st
-            }
-        }
-    }
-
-    if (length(field_rows) == 0) next
-    tab <- do.call(rbind, field_rows)
-    tab <- unique(tab)
-    tab <- cbind(field = field, tab, stringsAsFactors = FALSE)
-    message("  -> ", nrow(tab), " rows (", length(unique(tab$label)), " labels)")
-    all_rows[[length(all_rows) + 1L]] <- tab
+  }
+  
+  if (length(field_rows) == 0) next
+  tab <- do.call(rbind, field_rows)
+  tab <- unique(tab)
+  tab <- cbind(field = field, tab, stringsAsFactors = FALSE)
+  message("  -> ", nrow(tab), " rows (", length(unique(tab$label)), " labels)")
+  all_rows[[length(all_rows) + 1L]] <- tab
 }
 
 result <- do.call(rbind, all_rows)
@@ -201,12 +201,12 @@ result <- unique(result)
 ## Build the compact per-field lookup consumed at validation time.
 split_tabs <- split(result, result$field)
 ontology_terms <- lapply(split_tabs, function(ft) {
-    labels <- unique(ft$label)
-    syn_rows <- ft[!is.na(ft$synonym) & nzchar(ft$synonym), , drop = FALSE]
-    syn_rows <- syn_rows[!syn_rows$synonym %in% labels, , drop = FALSE]
-    synonym_lookup <- stats::setNames(syn_rows$label, syn_rows$synonym)
-    synonym_lookup <- synonym_lookup[!duplicated(names(synonym_lookup))]
-    list(labels = labels, synonym_lookup = synonym_lookup)
+  labels <- unique(ft$label)
+  syn_rows <- ft[!is.na(ft$synonym) & nzchar(ft$synonym), , drop = FALSE]
+  syn_rows <- syn_rows[!syn_rows$synonym %in% labels, , drop = FALSE]
+  synonym_lookup <- stats::setNames(syn_rows$label, syn_rows$synonym)
+  synonym_lookup <- synonym_lookup[!duplicated(names(synonym_lookup))]
+  list(labels = labels, synonym_lookup = synonym_lookup)
 })
 
 saveRDS(ontology_terms, out_path, compress = "xz")
