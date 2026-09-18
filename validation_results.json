@@ -2,9 +2,9 @@
   "status": "FAIL",
   "summary": {
     "total_files": 140,
-    "total_errors": 28,
+    "total_errors": 2,
     "total_warnings": 241,
-    "files_with_issues": 39
+    "files_with_issues": 20
   },
   "stats": {
     "total_studies": 140,
@@ -263,54 +263,14 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-16T13:09:54Z",
+    "timestamp": "2026-09-18T18:00:02Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "35099969463"
+    "run_id": "35377384405"
   },
   "studies_with_issues": [
-    {
-      "name": "ArtachoA_2021",
-      "file": "inst/curated//ArtachoA_2021/ArtachoA_2021_sample.tsv",
-      "rows": 69,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: uncurated_nationality, uncurated_DAS28_baseline, uncurated_DAS28_t4, uncurated_tjc, uncurated_sjc"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "AsnicarF_2017",
-      "file": "inst/curated//AsnicarF_2017/AsnicarF_2017_sample.tsv",
-      "rows": 24,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: uncurated_timepoint"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BaiX_2021",
-      "file": "inst/curated//BaiX_2021/BaiX_2021_sample.tsv",
-      "rows": 24,
-      "cols": 25,
-      "errors": [
-        "Columns not covered by schema: uncurated_ART_treatment_duration, uncurated_HIV Infection_transmission_mode"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "BoktorJC_2023",
-      "file": "inst/curated//BoktorJC_2023/BoktorJC_2023_sample.tsv",
-      "rows": 227,
-      "cols": 31,
-      "errors": [
-        "Columns not covered by schema: uncurated_other_treatment, uncurated_pets, uncurated_caffeine_consumption"
-      ],
-      "warnings": []
-    },
     {
       "name": "FanY_2023",
       "file": "inst/curated//FanY_2023/FanY_2023_sample.tsv",
@@ -326,9 +286,7 @@
       "file": "inst/curated//GunjurA_2024/GunjurA_2024_sample.tsv",
       "rows": 106,
       "cols": 33,
-      "errors": [
-        "Columns not covered by schema: uncurated_ecog_performance_status, uncurated_tumor_size_measurement, uncurated_platelets, uncurated_concentration"
-      ],
+      "errors": [],
       "warnings": [
         "Field 'treatment': 'Chemoradiotherapy' is not a recognized term for this ontology-backed field (26 rows)."
       ]
@@ -348,16 +306,6 @@
       ]
     },
     {
-      "name": "iMSMS_2022",
-      "file": "inst/curated//iMSMS_2022/iMSMS_2022_sample.tsv",
-      "rows": 3190,
-      "cols": 40,
-      "errors": [
-        "Columns not covered by schema: uncurated_years_after_onset, uncurated_ms_family, uncurated_allergic, uncurated_vitaminD_IU, uncurated_children_number, uncurated_roommates, uncurated_recreational_drug, uncurated_pets, uncurated_education, uncurated_occupation, uncurated_collection_method"
-      ],
-      "warnings": []
-    },
-    {
       "name": "JoS_2022",
       "file": "inst/curated//JoS_2022/JoS_2022_sample.tsv",
       "rows": 156,
@@ -368,23 +316,11 @@
       ]
     },
     {
-      "name": "KartalE_2022",
-      "file": "inst/curated//KartalE_2022/KartalE_2022_sample.tsv",
-      "rows": 329,
-      "cols": 24,
-      "errors": [
-        "Columns not covered by schema: uncurated_alcohol"
-      ],
-      "warnings": []
-    },
-    {
       "name": "KosticAD_2015",
       "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
       "cols": 38,
-      "errors": [
-        "Columns not covered by schema: uncurated_autoantibody_titer_positive_finding, uncurated_serum_positive_autoantibodies"
-      ],
+      "errors": [],
       "warnings": [
         "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (15 rows)."
       ]
@@ -414,9 +350,7 @@
       "file": "inst/curated//McCullochJA_2022/McCullochJA_2022_sample.tsv",
       "rows": 94,
       "cols": 29,
-      "errors": [
-        "Columns not covered by schema: uncurated_ajcc_subtype, uncurated_previous_therapy"
-      ],
+      "errors": [],
       "warnings": [
         "Field 'treatment': 'Psychotropic Agent' is not a recognized term for this ontology-backed field (41 rows)."
       ]
@@ -622,22 +556,10 @@
       "file": "inst/curated//OsakunorDNM_2020/OsakunorDNM_2020_sample.tsv",
       "rows": 113,
       "cols": 38,
-      "errors": [
-        "Columns not covered by schema: uncurated_original_age_value, uncurated_original_age_unit, uncurated_history_of_therapy, uncurated_breastfeeding_duration"
-      ],
+      "errors": [],
       "warnings": [
         "Field 'disease_details': 'Schistosoma haematobium' is not a recognized term for this ontology-backed field (18 rows)."
       ]
-    },
-    {
-      "name": "PallejaA_2018",
-      "file": "inst/curated//PallejaA_2018/PallejaA_2018_sample.tsv",
-      "rows": 57,
-      "cols": 21,
-      "errors": [
-        "Columns not covered by schema: uncurated_antibiotics_family, uncurated_visit_number"
-      ],
-      "warnings": []
     },
     {
       "name": "PetersBA_2019",
@@ -660,96 +582,14 @@
       ]
     },
     {
-      "name": "Soto-GironMJ_2021",
-      "file": "inst/curated//Soto-GironMJ_2021/Soto-GironMJ_2021_sample.tsv",
-      "rows": 86,
-      "cols": 33,
-      "errors": [
-        "Columns not covered by schema: uncurated_original_age_value, uncurated_original_age_unit, uncurated_population"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "SpencerCN_2021",
-      "file": "inst/curated//SpencerCN_2021/SpencerCN_2021_sample.tsv",
-      "rows": 167,
-      "cols": 29,
-      "errors": [
-        "Columns not covered by schema: uncurated_previous_therapy, uncurated_PFS03, uncurated_PFS06"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "TeeMZ_2022",
-      "file": "inst/curated//TeeMZ_2022/TeeMZ_2022_sample.tsv",
-      "rows": 650,
-      "cols": 38,
-      "errors": [
-        "Columns not covered by schema: uncurated_population, uncurated_remission"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Valles-ColomerM_2023_a",
-      "file": "inst/curated//Valles-ColomerM_2023_a/Valles-ColomerM_2023_a_sample.tsv",
-      "rows": 27,
-      "cols": 29,
-      "errors": [
-        "Columns not covered by schema: uncurated_infant_age"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Valles-ColomerM_2023_c",
-      "file": "inst/curated//Valles-ColomerM_2023_c/Valles-ColomerM_2023_c_sample.tsv",
-      "rows": 24,
-      "cols": 29,
-      "errors": [
-        "Columns not covered by schema: uncurated_infant_age"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Valles-ColomerM_2023_d",
-      "file": "inst/curated//Valles-ColomerM_2023_d/Valles-ColomerM_2023_d_sample.tsv",
-      "rows": 342,
-      "cols": 29,
-      "errors": [
-        "Columns not covered by schema: uncurated_infant_age"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "Valles-ColomerM_2023_e",
-      "file": "inst/curated//Valles-ColomerM_2023_e/Valles-ColomerM_2023_e_sample.tsv",
-      "rows": 104,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: uncurated_infant_age"
-      ],
-      "warnings": []
-    },
-    {
       "name": "VatanenT_2016",
       "file": "inst/curated//VatanenT_2016/VatanenT_2016_sample.tsv",
       "rows": 785,
       "cols": 36,
-      "errors": [
-        "Columns not covered by schema: uncurated_age_month"
-      ],
+      "errors": [],
       "warnings": [
         "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (139 rows)."
       ]
-    },
-    {
-      "name": "WallenZD_2022",
-      "file": "inst/curated//WallenZD_2022/WallenZD_2022_sample.tsv",
-      "rows": 724,
-      "cols": 28,
-      "errors": [
-        "Columns not covered by schema: uncurated_drink_caffeinated_beverages, uncurated_other_treatment"
-      ],
-      "warnings": []
     },
     {
       "name": "WenC_2017",
@@ -767,43 +607,11 @@
       ]
     },
     {
-      "name": "WibowoMC_2021",
-      "file": "inst/curated//WibowoMC_2021/WibowoMC_2021_sample.tsv",
-      "rows": 22,
-      "cols": 34,
-      "errors": [
-        "Columns not covered by schema: uncurated_population"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "XuQ_2021",
-      "file": "inst/curated//XuQ_2021/XuQ_2021_sample.tsv",
-      "rows": 347,
-      "cols": 27,
-      "errors": [
-        "Columns not covered by schema: uncurated_alcohol"
-      ],
-      "warnings": []
-    },
-    {
-      "name": "YachidaS_2019",
-      "file": "inst/curated//YachidaS_2019/YachidaS_2019_sample.tsv",
-      "rows": 616,
-      "cols": 30,
-      "errors": [
-        "Columns not covered by schema: uncurated_history"
-      ],
-      "warnings": []
-    },
-    {
       "name": "YangJ_2020",
       "file": "inst/curated//YangJ_2020/YangJ_2020_sample.tsv",
       "rows": 193,
       "cols": 40,
-      "errors": [
-        "Columns not covered by schema: uncurated_disease_location, uncurated_ajcc_details, uncurated_hemoglobinometry, uncurated_fobt"
-      ],
+      "errors": [],
       "warnings": [
         "Field 'subcohort' has 193 values not matching pattern:  [0-9a-zA-Z]\\S+"
       ]
@@ -823,9 +631,7 @@
       "file": "inst/curated//ZhangX_2015/ZhangX_2015_sample.tsv",
       "rows": 232,
       "cols": 34,
-      "errors": [
-        "Columns not covered by schema: uncurated_wbc, uncurated_blood_platelet, uncurated_hemoglobinometry, uncurated_time_after_onset, uncurated_CDAI, uncurated_HAQ, uncurated_DAS28"
-      ],
+      "errors": [],
       "warnings": [
         "Field 'sample_id' has 232 values not matching pattern:  [0-9a-zA-Z]\\S+",
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
@@ -878,16 +684,6 @@
         "Field 'biomarker_value' row 215 has value '<25' not matching pattern: [0-9]+\\.?[0-9]*",
         "Field 'biomarker_value' row 215 has value '<10.1' not matching pattern: [0-9]+\\.?[0-9]*"
       ]
-    },
-    {
-      "name": "ZhouC_2020",
-      "file": "inst/curated//ZhouC_2020/ZhouC_2020_sample.tsv",
-      "rows": 130,
-      "cols": 35,
-      "errors": [
-        "Columns not covered by schema: uncurated_wbc, uncurated_blood_platelet, uncurated_hemoglobinometry, uncurated_BASDAI, uncurated_BASFI, uncurated_years_after_onset, uncurated_back_ache, uncurated_HLA_B27, uncurated_ASDAS_ESR, uncurated_ASDAS_CRP, uncurated_BASMI"
-      ],
-      "warnings": []
     },
     {
       "name": "ZhuF_2020",
