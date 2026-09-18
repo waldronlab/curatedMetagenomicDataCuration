@@ -671,6 +671,15 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* Secondary footer line: explains the manifest links without competing with
+   the primary row above. */
+.footer-note {
+    max-width: 60ch;
+    margin: 0.75rem auto 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    opacity: 0.85;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
