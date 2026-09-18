@@ -79,6 +79,7 @@ find_metadata_files <- function(path = "inst/curated/") {
 #'   alongside the curated fields under this prefix. They are preserved as-is
 #'   and are deliberately exempt from schema validation.
 #' @keywords internal
+#' @noRd
 UNCURATED_PREFIX <- "uncurated_"
 
 #' @title Identify Uncurated Columns
@@ -86,9 +87,10 @@ UNCURATED_PREFIX <- "uncurated_"
 #'   prefix and are therefore outside the validated schema.
 #' @param data A data.frame of curated metadata
 #' @return Character vector of column names (possibly empty)
-#' @export
+#' @keywords internal
+#' @noRd
 uncurated_columns <- function(data) {
-  grep(paste0("^", UNCURATED_PREFIX), names(data), value = TRUE)
+  names(data)[startsWith(names(data), UNCURATED_PREFIX)]
 }
 
 #' @title Validate Single Study
