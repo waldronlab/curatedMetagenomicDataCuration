@@ -19,5 +19,9 @@ Default \code{NULL} skips ontology-backed value checks.}
 List with validation results and metadata
 }
 \description{
-Validate a single metadata file against schema
+Validate a single metadata file against schema.
+  Columns prefixed with \code{uncurated_} preserve original study fields
+  that have no counterpart in the data dictionary. They are withheld from
+  the schema check rather than reported as uncovered columns, and are
+  counted in the returned \code{n_uncurated}.
 }
