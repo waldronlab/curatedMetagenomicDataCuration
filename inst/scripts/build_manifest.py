@@ -30,8 +30,17 @@
 #         here and NOT in study_id, so the manifest stays small and study_id
 #         holds an actual study identifier (BioProject).
 #
-# Telemetry source: https://nf-telemetry.cancerdatasci.org (public, no auth).
-# Pass --offline to rebuild from a previously saved samples.json instead.
+# Sources, in descending order of authority for a study's BioProject:
+#   1. the study's checked-in <study>_sra_meta.tsv   (48 studies have one)
+#   2. the pipeline telemetry at https://nf-telemetry.cancerdatasci.org
+#      (public, no auth)
+#   3. NCBI E-utilities, resolving run accession -> BioProject for whatever
+#      the first two cannot answer. Results are reused from the manifest
+#      already on disk, so a scheduled run does not re-ask NCBI about
+#      accessions that never change; --refresh-ncbi forces a re-query.
+#
+# Pass --offline for no network at all: telemetry from the cached snapshot and
+# no NCBI lookups.
 #
 # Output is deterministic: sorted throughout, LF line endings, and study UUIDs
 # are uuid5 over a fixed namespace. Re-running with unchanged inputs rewrites
@@ -51,11 +60,24 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
+import urllib.parse
 import urllib.request
 import uuid
 import collections
 
 TELEMETRY = "https://nf-telemetry.cancerdatasci.org"
+EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+
+# E-utilities allows 3 requests/second without an API key. Batches are well
+# under the URL length limit at these sizes.
+NCBI_DELAY = 0.4
+NCBI_SEARCH_BATCH = 50
+NCBI_SUMMARY_BATCH = 100
+# Runs tried per study. More than one so a single withdrawn or suppressed run
+# does not leave an otherwise resolvable study blank.
+NCBI_RUNS_PER_STUDY = 3
 CURATED = os.path.join("inst", "curated")
 OUTDIR = os.path.join("inst", "extdata")
 CACHE = os.path.join(OUTDIR, ".telemetry_samples.json")
@@ -81,7 +103,7 @@ SHARED = {"AsnicarF_2021"}
 
 FIELDS = [
     "uuid", "study_name", "study_id", "n_samples", "n_runs",
-    "source_project", "curation_available", "ci_validated",
+    "study_id_source", "source_project", "curation_available", "ci_validated",
     "primary_disease", "body_site", "country", "sequencing_platform", "pmid",
     "metaphlan_version", "metaphlan_location",
     "humann_version", "humann_location",
@@ -222,6 +244,133 @@ def run_bioproject(run, run_map, sra_runs):
     return "", ""
 
 
+def _eutils(endpoint, params, attempts=4):
+    """One E-utilities call, POSTed so long accession lists stay legal.
+
+    Retries on 429 and 5xx with exponential backoff: the 3 req/s limit for
+    unauthenticated callers is shared across everyone on the runner's egress
+    IP, so a burst is throttled occasionally even though this script asks for
+    very little.
+    """
+    data = urllib.parse.urlencode(params).encode()
+    for attempt in range(attempts):
+        try:
+            req = urllib.request.Request(f"{EUTILS}/{endpoint}", data=data)
+            with urllib.request.urlopen(req, timeout=60) as fh:
+                return json.load(fh)
+        except urllib.error.HTTPError as exc:
+            retryable = exc.code == 429 or 500 <= exc.code < 600
+            if not retryable or attempt == attempts - 1:
+                raise
+            time.sleep(NCBI_DELAY * (2 ** (attempt + 1)))
+    raise RuntimeError("unreachable")
+
+
+def ncbi_run_bioprojects(runs):
+    """{run accession -> BioProject} resolved through NCBI E-utilities.
+
+    Two hops, both batched: accessions -> SRA UIDs (esearch), then UIDs ->
+    summaries carrying the run accession and its BioProject (esummary).
+
+    Network failures are swallowed deliberately. A BioProject nobody has
+    filled in is a gap, not a reason to fail a scheduled job and leave the
+    manifest unwritten; the affected rows stay blank and say so.
+    """
+    runs = sorted(runs)
+    if not runs:
+        return {}
+
+    uids = []
+    for i in range(0, len(runs), NCBI_SEARCH_BATCH):
+        batch = runs[i:i + NCBI_SEARCH_BATCH]
+        try:
+            res = _eutils("esearch.fcgi", {
+                "db": "sra", "retmode": "json", "retmax": len(batch) * 2,
+                "term": " OR ".join(batch)})
+            uids += res["esearchresult"].get("idlist", [])
+        except Exception as exc:                       # noqa: BLE001
+            print(f"  NCBI esearch failed ({exc}); {len(batch)} accessions "
+                  "left unresolved")
+        time.sleep(NCBI_DELAY)
+
+    out = {}
+    for i in range(0, len(uids), NCBI_SUMMARY_BATCH):
+        batch = uids[i:i + NCBI_SUMMARY_BATCH]
+        try:
+            res = _eutils("esummary.fcgi", {
+                "db": "sra", "retmode": "json", "id": ",".join(batch)})
+        except Exception as exc:                       # noqa: BLE001
+            print(f"  NCBI esummary failed ({exc}); {len(batch)} UIDs skipped")
+            time.sleep(NCBI_DELAY)
+            continue
+        result = res.get("result", {})
+        for uid in result.get("uids", []):
+            rec = result.get(uid, {})
+            bp = re.search(r"<Bioproject>([^<]+)</Bioproject>",
+                           rec.get("expxml", "") or "")
+            if not bp or not bp.group(1).startswith("PRJ"):
+                continue
+            for run in RUN_RE.findall(rec.get("runs", "") or ""):
+                out[run] = bp.group(1)
+        time.sleep(NCBI_DELAY)
+
+    return out
+
+
+def previous_bioprojects(path):
+    """study -> BioProject from the manifest already on disk.
+
+    Lets a scheduled run reuse what NCBI answered last time instead of asking
+    again every week for accessions that do not change.
+    """
+    if not os.path.exists(path):
+        return {}
+    out = {}
+    for row in read_table(path):
+        if row.get("study_id") and row.get("study_id_source") == "ncbi":
+            out[row["study_name"]] = row["study_id"]
+    return out
+
+
+def fill_missing_bioprojects(rows, study_runs, cached):
+    """Resolve `study_id` for studies the repo and telemetry could not."""
+    wanted, reused = {}, 0
+    for row in rows:
+        if row["study_id"]:
+            continue
+        name = row["study_name"]
+        if name in cached:
+            row["study_id"] = cached[name]
+            row["study_id_source"] = "ncbi"
+            reused += 1
+            continue
+        runs = study_runs.get(name) or []
+        if runs:
+            wanted[name] = runs[:NCBI_RUNS_PER_STUDY]
+
+    if reused:
+        print(f"  reused {reused} BioProject(s) resolved previously")
+    if not wanted:
+        return
+
+    every_run = {r for rs in wanted.values() for r in rs}
+    print(f"  querying NCBI for {len(wanted)} studies "
+          f"({len(every_run)} accessions)...")
+    resolved = ncbi_run_bioprojects(every_run)
+
+    filled = 0
+    for row in rows:
+        found = sorted({resolved[r] for r in wanted.get(row["study_name"], [])
+                        if r in resolved})
+        if found:
+            row["study_id"] = ";".join(found)
+            row["study_id_source"] = "ncbi"
+            row["notes"] = re.sub(r"(^|; )BioProject unresolved(?=;|$)", "",
+                                  row["notes"]).strip("; ")
+            filled += 1
+    print(f"  resolved {filled} of {len(wanted)} from NCBI")
+
+
 def attribute_samples(samples, curated_runs, curated_bioprojects,
                       curated_names):
     """Split telemetry samples into (per-study attribution, orphans).
@@ -304,6 +453,7 @@ def orphan_rows(orphans):
             uuid=str(uuid.uuid5(NS, key)),
             study_name=key,
             study_id=key if key.startswith("PRJ") else "",
+            study_id_source="telemetry" if key.startswith("PRJ") else "",
             n_samples=0,
             n_runs=0,
             source_project="",
@@ -365,8 +515,17 @@ def build_row(study, study_dir, run_map):
     if not validated:
         notes.append("filename not *_sample.tsv - skipped by CI validator")
 
+    study_id = bioproject_for(runs, run_map, sra_runs)
+    if not study_id:
+        study_id_source = ""
+    elif any(r in sra_runs for r in runs) or sra_runs:
+        study_id_source = "sra_meta"
+    else:
+        study_id_source = "telemetry"
+
     blank.update(
-        study_id=bioproject_for(runs, run_map, sra_runs),
+        study_id=study_id,
+        study_id_source=study_id_source,
         n_samples=len(records), n_runs=len(runs),
         curation_available="TRUE",
         ci_validated="TRUE" if validated else "FALSE",
@@ -393,7 +552,11 @@ def build_row(study, study_dir, run_map):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--offline", action="store_true",
-                    help="rebuild from the cached telemetry snapshot")
+                    help="no network at all: telemetry from the cached "
+                         "snapshot, and no NCBI lookups")
+    ap.add_argument("--refresh-ncbi", action="store_true",
+                    help="re-query NCBI for BioProjects already resolved, "
+                         "instead of reusing them from the current manifest")
     args = ap.parse_args()
 
     if not os.path.isdir(CURATED):
@@ -436,9 +599,18 @@ def main():
 
     rows += orphan_rows(orphans)
 
+    status_path = os.path.join(OUTDIR, "studies_status.csv")
+    if args.offline:
+        print("offline: skipping NCBI BioProject resolution")
+    else:
+        study_runs = collections.defaultdict(list)
+        for study, run, *_ in run_rows:
+            study_runs[study].append(run)
+        cached = {} if args.refresh_ncbi else previous_bioprojects(status_path)
+        fill_missing_bioprojects(rows, study_runs, cached)
+
     os.makedirs(OUTDIR, exist_ok=True)
-    with open(os.path.join(OUTDIR, "studies_status.csv"), "w",
-              newline="") as fh:
+    with open(status_path, "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=FIELDS, lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
