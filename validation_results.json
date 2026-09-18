@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 140,
     "total_errors": 2,
-    "total_warnings": 241,
-    "files_with_issues": 20
+    "total_warnings": 234,
+    "files_with_issues": 13
   },
   "stats": {
     "total_studies": 140,
@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-18T22:27:07Z",
+    "timestamp": "2026-09-18T22:40:00Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "35401469107"
+    "run_id": "35402413361"
   },
   "studies_with_issues": [
     {
@@ -279,16 +279,6 @@
       "errors": [],
       "warnings": [
         "Field 'subcohort' has 77 values not matching pattern:  [0-9a-zA-Z]\\S+"
-      ]
-    },
-    {
-      "name": "GunjurA_2024",
-      "file": "inst/curated//GunjurA_2024/GunjurA_2024_sample.tsv",
-      "rows": 106,
-      "cols": 33,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'Chemoradiotherapy' is not a recognized term for this ontology-backed field (26 rows)."
       ]
     },
     {
@@ -326,26 +316,6 @@
       ]
     },
     {
-      "name": "LiSS_2016",
-      "file": "inst/curated//LiSS_2016/LiSS_2016_sample.tsv",
-      "rows": 55,
-      "cols": 31,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'Fecal Microbiota Transplantation' is not a recognized term for this ontology-backed field (40 rows)."
-      ]
-    },
-    {
-      "name": "LomanNJ_2013",
-      "file": "inst/curated//LomanNJ_2013/LomanNJ_2013_sample.tsv",
-      "rows": 42,
-      "cols": 29,
-      "errors": [],
-      "warnings": [
-        "Field 'disease_details': 'Shiga Toxin-producing Escherichia coli' is not a recognized term for this ontology-backed field (42 rows)."
-      ]
-    },
-    {
       "name": "McCullochJA_2022",
       "file": "inst/curated//McCullochJA_2022/McCullochJA_2022_sample.tsv",
       "rows": 94,
@@ -353,16 +323,6 @@
       "errors": [],
       "warnings": [
         "Field 'treatment': 'Psychotropic Agent' is not a recognized term for this ontology-backed field (41 rows)."
-      ]
-    },
-    {
-      "name": "MejiaR_2020",
-      "file": "inst/curated//MejiaR_2020/MejiaR_2020_sample.tsv",
-      "rows": 35,
-      "cols": 30,
-      "errors": [],
-      "warnings": [
-        "Field 'disease_details': 'Giardia lamblia' is not a recognized term for this ontology-backed field (18 rows)."
       ]
     },
     {
@@ -549,36 +509,6 @@
         "Field 'ncbi_accession' row 165 has value 'DRR480447' not matching pattern: [ES]R[SR][0-9]+",
         "Field 'ncbi_accession' row 166 has value 'DRR480448' not matching pattern: [ES]R[SR][0-9]+",
         "Field 'ncbi_accession' row 167 has value 'DRR480449' not matching pattern: [ES]R[SR][0-9]+"
-      ]
-    },
-    {
-      "name": "OsakunorDNM_2020",
-      "file": "inst/curated//OsakunorDNM_2020/OsakunorDNM_2020_sample.tsv",
-      "rows": 113,
-      "cols": 38,
-      "errors": [],
-      "warnings": [
-        "Field 'disease_details': 'Schistosoma haematobium' is not a recognized term for this ontology-backed field (18 rows)."
-      ]
-    },
-    {
-      "name": "PetersBA_2019",
-      "file": "inst/curated//PetersBA_2019/PetersBA_2019_sample.tsv",
-      "rows": 27,
-      "cols": 40,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'Melanoma Surgery' is not a recognized term for this ontology-backed field (11 rows)."
-      ]
-    },
-    {
-      "name": "ShiB_2015",
-      "file": "inst/curated//ShiB_2015/ShiB_2015_sample.tsv",
-      "rows": 48,
-      "cols": 33,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'Periodontal Scaling and Root Planing' is not a recognized term for this ontology-backed field (24 rows)."
       ]
     },
     {
