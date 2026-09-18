@@ -74,8 +74,29 @@ find_metadata_files <- function(path = "inst/curated/") {
              full.names = TRUE, recursive = TRUE)
 }
 
+#' @title Uncurated Column Prefix
+#' @description Columns carrying original, study-specific metadata are kept
+#'   alongside the curated fields under this prefix. They are preserved as-is
+#'   and are deliberately exempt from schema validation.
+#' @keywords internal
+UNCURATED_PREFIX <- "uncurated_"
+
+#' @title Identify Uncurated Columns
+#' @description Return the names of columns that use the \code{uncurated_}
+#'   prefix and are therefore outside the validated schema.
+#' @param data A data.frame of curated metadata
+#' @return Character vector of column names (possibly empty)
+#' @export
+uncurated_columns <- function(data) {
+  grep(paste0("^", UNCURATED_PREFIX), names(data), value = TRUE)
+}
+
 #' @title Validate Single Study
-#' @description Validate a single metadata file against schema
+#' @description Validate a single metadata file against schema.
+#'   Columns prefixed with \code{uncurated_} preserve original study fields
+#'   that have no counterpart in the data dictionary. They are withheld from
+#'   the schema check rather than reported as uncovered columns, and are
+#'   counted in the returned \code{n_uncurated}.
 #' @param file Path to TSV file
 #' @param schema Validation schema object
 #' @param ontology_terms Named list of precomputed ontology terms (from
@@ -91,14 +112,21 @@ validate_single_study <- function(file, schema, ontology_terms = NULL) {
     sep <- if (grepl("\t", first_line)) "\t" else ","
     data <- read.delim(file, sep = sep, stringsAsFactors = FALSE,
                        check.names = FALSE)
+
+    # Withhold uncurated_* columns from the schema check; they are retained in
+    # `data` so downstream statistics and reports see the file as curated.
+    uncurated <- uncurated_columns(data)
+    curated_data <- data[, setdiff(names(data), uncurated), drop = FALSE]
+
     result <- OmicsMLRepoCuration::validate_data_against_schema(
-      data, schema, ontology_terms = ontology_terms)
+      curated_data, schema, ontology_terms = ontology_terms)
 
     list(
       study_name = study_name,
       file = file,
       rows = nrow(data),
       cols = ncol(data),
+      n_uncurated = length(uncurated),
       data = data,
       errors = result$errors,
       warnings = result$warnings,
@@ -110,6 +138,7 @@ validate_single_study <- function(file, schema, ontology_terms = NULL) {
       file = file,
       rows = NA,
       cols = NA,
+      n_uncurated = NA_integer_,
       data = NULL,
       errors = paste("VALIDATION ERROR:", conditionMessage(e)),
       warnings = character(0),

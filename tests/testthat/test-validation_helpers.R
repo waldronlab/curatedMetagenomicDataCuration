@@ -50,3 +50,27 @@ test_that("aggregate_validation_results handles all valid", {
   expect_equal(summary$status, "PASS")
   expect_equal(summary$files_with_issues, 0)
 })
+
+test_that("uncurated_columns identifies prefixed columns only", {
+  d <- data.frame(
+    study_name = "S", age = 1L,
+    uncurated_metadata = "a<;>b",
+    uncurated_DAS28 = 3.1,
+    check.names = FALSE
+  )
+
+  expect_setequal(
+    uncurated_columns(d),
+    c("uncurated_metadata", "uncurated_DAS28")
+  )
+  expect_length(uncurated_columns(d[, c("study_name", "age")]), 0L)
+})
+
+test_that("uncurated_columns does not match partial or infix prefixes", {
+  d <- data.frame(
+    not_uncurated_x = 1L, uncuratedfoo = 2L, uncurated_ok = 3L,
+    check.names = FALSE
+  )
+
+  expect_equal(uncurated_columns(d), "uncurated_ok")
+})
