@@ -87,8 +87,10 @@ UNCURATED_PREFIX <- "uncurated_"
 #'   prefix and are therefore outside the validated schema.
 #' @param data A data.frame of curated metadata
 #' @return Character vector of column names (possibly empty)
-#' @keywords internal
-#' @noRd
+#' @examples
+#' d <- data.frame(age = 1L, uncurated_DAS28 = 3.1, check.names = FALSE)
+#' uncurated_columns(d)
+#' @export
 uncurated_columns <- function(data) {
   names(data)[startsWith(names(data), UNCURATED_PREFIX)]
 }
