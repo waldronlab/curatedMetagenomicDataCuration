@@ -16,15 +16,23 @@
 #         for profile versions/locations that only Sean and Francesco can fill.
 #
 #     inst/extdata/studies_runs.tsv
-#         Long-form study_name -> run_accession lookup. Run accessions live
+#         Long-form study_name -> run_accession lookup, with the BioProject
+#         each run resolves to and which source answered. Run accessions live
 #         here and NOT in study_id, so the manifest stays small and study_id
 #         holds an actual study identifier (BioProject).
 #
 # Telemetry source: https://nf-telemetry.cancerdatasci.org (public, no auth).
 # Pass --offline to rebuild from a previously saved samples.json instead.
 #
+# Output is deterministic: sorted throughout, LF line endings, and study UUIDs
+# are uuid5 over a fixed namespace. Re-running with unchanged inputs rewrites
+# the files byte-for-byte, so a scheduled job commits only on real change.
+#
 # Usage:
-#     python3 inst/scripts/build_manifest.py
+#     python3 inst/scripts/build_manifest.py            # from the repo root
+#
+# Normally you do not need to: .github/workflows/update-manifest.yml runs this
+# on pushes touching inst/curated/** and weekly for telemetry drift.
 #
 # -----------------------------------------------------------------------------
 
@@ -132,11 +140,20 @@ def fetch_telemetry_samples(offline):
 
 
 def index_telemetry(samples):
-    """run accession -> (bioproject, collections)"""
+    """run accession -> (bioproject, collections)
+
+    Telemetry registers collections by BioProject *or* by SRA study accession
+    (its `/api/cohorts` reports both as `source`), so the `bioproject`
+    metadata key is not guaranteed to hold a BioProject. Anything that is not
+    a `PRJ*` accession is dropped here rather than downstream, so `study_id`
+    can only ever contain real BioProjects.
+    """
     run_map = {}
     for s in samples:
         meta = s.get("metadata") or {}
-        bioproject = meta.get("bioproject") or ""
+        bioproject = (meta.get("bioproject") or "").strip()
+        if not bioproject.startswith("PRJ"):
+            bioproject = ""
         collections = ";".join(sorted(
             c for c in (s.get("collections") or []) if isinstance(c, str)))
         for run in RUN_RE.findall(s.get("ncbi_accession") or ""):
@@ -144,18 +161,55 @@ def index_telemetry(samples):
     return run_map
 
 
-def bioproject_for(study, study_dir, runs, run_map):
-    """Prefer the checked-in SRA metadata; fall back to telemetry."""
+def sra_meta_run_map(study, study_dir):
+    """run accession -> BioProject, from the study's checked-in SRA metadata.
+
+    Per-run rather than per-study, so a study spanning several BioProjects
+    attributes each run correctly.
+    """
     sra = os.path.join(study_dir, f"{study}_sra_meta.tsv")
-    if os.path.exists(sra):
-        found = sorted({(x.get("BioProject") or "").strip()
-                        for x in read_table(sra)})
-        found = [b for b in found if b.startswith("PRJ")]
-        if found:
-            return ";".join(found)
+    if not os.path.exists(sra):
+        return {}
+    out = {}
+    for row in read_table(sra):
+        run = (row.get("Run") or "").strip()
+        bioproject = (row.get("BioProject") or "").strip()
+        if run and bioproject.startswith("PRJ"):
+            out[run] = bioproject
+    return out
+
+
+def bioproject_for(runs, run_map, sra_runs):
+    """Study-level BioProject: SRA metadata first, then telemetry.
+
+    Resolution is per-run so a study spanning several BioProjects reports all
+    of them. The last fallback is every BioProject named anywhere in the
+    study's SRA metadata, which is what keeps studies carrying no run
+    accessions at all (`TettAJ_2016`, `YachidaS_2019`) from losing an
+    identifier they demonstrably have.
+    """
+    found = sorted({sra_runs[r] for r in runs if r in sra_runs})
+    if found:
+        return ";".join(found)
     found = sorted({run_map[r][0] for r in runs
                     if r in run_map and run_map[r][0]})
-    return ";".join(found)
+    if found:
+        return ";".join(found)
+    return ";".join(sorted(set(sra_runs.values())))
+
+
+def run_bioproject(run, run_map, sra_runs):
+    """(bioproject, source) for one run.
+
+    The checked-in SRA metadata covers runs telemetry has never seen, so it is
+    tried first; `source` records which one answered, so a consumer can tell a
+    curated mapping from a pipeline-observed one.
+    """
+    if run in sra_runs:
+        return sra_runs[run], "sra_meta"
+    if run in run_map and run_map[run][0]:
+        return run_map[run][0], "telemetry"
+    return "", ""
 
 
 def build_row(study, study_dir, run_map):
@@ -182,6 +236,7 @@ def build_row(study, study_dir, run_map):
     records = read_table(path)
     runs = sorted({m for r in records
                    for m in RUN_RE.findall(r.get("ncbi_accession") or "")})
+    sra_runs = sra_meta_run_map(study, study_dir)
     processed = [r for r in runs if r in run_map]
     collections = sorted({run_map[r][1] for r in processed if run_map[r][1]})
 
@@ -204,7 +259,7 @@ def build_row(study, study_dir, run_map):
         notes.append("filename not *_sample.tsv - skipped by CI validator")
 
     blank.update(
-        study_id=bioproject_for(study, study_dir, runs, run_map),
+        study_id=bioproject_for(runs, run_map, sra_runs),
         n_samples=len(records), n_runs=len(runs),
         curation_available="TRUE",
         ci_validated="TRUE" if validated else "FALSE",
@@ -224,8 +279,8 @@ def build_row(study, study_dir, run_map):
         notes.append("BioProject unresolved")
         blank["notes"] = "; ".join(notes)
 
-    return blank, [(study, r, run_map.get(r, ("", ""))[0],
-                    "TRUE" if r in run_map else "FALSE") for r in runs]
+    return blank, [(study, r) + run_bioproject(r, run_map, sra_runs) +
+                   ("TRUE" if r in run_map else "FALSE",) for r in runs]
 
 
 def main():
@@ -261,7 +316,7 @@ def main():
               newline="") as fh:
         w = csv.writer(fh, delimiter="\t", lineterminator="\n")
         w.writerow(["study_name", "run_accession", "bioproject",
-                    "in_telemetry"])
+                    "bioproject_source", "in_telemetry"])
         w.writerows(run_rows)
 
     def count(status):

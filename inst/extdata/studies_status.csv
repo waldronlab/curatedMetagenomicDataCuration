@@ -11,13 +11,13 @@ f52d4d86-36e4-56c8-be1a-a0599f53a976,BaiX_2021,,24,24,CMD,TRUE,TRUE,HIV Infectio
 8040c386-c3b1-56fc-a433-e7a48ffdf11b,BoktorJC_2023,PRJEB53401,227,227,PMD,TRUE,TRUE,Parkinson disease;Healthy;Bipolar Disorder;Depression;Mild Cognitive Impairment,feces,United States,IlluminaNextSeq;IlluminaNovaSeq,,,,,,113,PRJEB53401,partial,1.00,
 4eca6390-ac39-51ad-a0d0-61421f3299af,BommanaS_2023,,350,350,CMD,TRUE,TRUE,Bacterial Vaginosis;Mycoplasmoides infection;Chlamydial Infection;Gonorrhea;Trichomonas Vaginitis;(+1 more),vagina,Fiji,IlluminaNovaSeq,,,,,,0,,not_processed,1.00,BioProject unresolved
 26fecfdf-8787-5519-8905-9f7cf23f3bf7,BritoIL_2016,PRJNA217052,312,5635,CMD,TRUE,TRUE,Healthy,oral cavity;feces,Fiji,IlluminaHiSeq,27409808,,,,,0,,not_processed,18.06,
-57ee8c36-9d70-5e56-904e-c5c10d67ad45,BrooksB_2017,PRJNA376566;PRJNA376580,408,408,CMD,TRUE,TRUE,Preterm Birth;Healthy,feces,United States,IlluminaHiSeq,29180750,,,,,0,,not_processed,1.00,
+57ee8c36-9d70-5e56-904e-c5c10d67ad45,BrooksB_2017,PRJNA376566,408,408,CMD,TRUE,TRUE,Preterm Birth;Healthy,feces,United States,IlluminaHiSeq,29180750,,,,,0,,not_processed,1.00,
 185eccf8-dfd8-5bd5-9ca3-bf306fa20bcc,Castro-NallarE_2015,PRJNA255439,32,33,CMD,TRUE,TRUE,Schizophrenia;Type 2 Diabetes Mellitus;Healthy;Crohn Disease,oral cavity,United States,IlluminaHiSeq,26336637,,,,,0,,not_processed,1.03,
 ce64789b-7722-5528-b53c-b0586cb0478d,ChengpingW_2017,,97,97,CMD,TRUE,TRUE,Rheumatoid Arthritis;Ankylosing Spondylitis,feces,China,IlluminaHiSeq,28750650,,,,,0,,not_processed,1.00,BioProject unresolved
 e1d9b190-fee6-5ed1-89e7-ae2bc273a638,ChngKR_2016,,78,78,CMD,TRUE,TRUE,Alzheimer's Disease;Allergic Rhinitis;Healthy;Asthma,skin epidermis,Singapore;Indonesia;China;Malaysia;Brunei Darussalam,IlluminaHiSeq,27562258,,,,,25,CMD;ChngKR_2016,partial,1.00,BioProject unresolved
 4408bf46-7348-53c4-89c3-2600a3cf73d6,ChuDM_2017,PRJNA322188,86,86,CMD,TRUE,TRUE,Healthy;Gestational Diabetes;Preeclampsia;Chorioamnionitis,oral cavity;feces,United States,IlluminaHiSeq,28112736,,,,,0,,not_processed,1.00,
 a5d5d0df-d9e6-5a9b-8d3d-b11fed5ea7ba,ContevilleLC_2019,,15,15,CMD,TRUE,TRUE,Healthy,feces,Brazil,IlluminaHiSeq,31417531,,,,,15,CMD;ContevilleLC_2019,processed,1.00,BioProject unresolved
-de699a56-86d4-5bfe-85f7-b4a479483558,CosteaPI_2017,PRJEB1220;PRJEB17632;PRJEB1786;PRJEB4336;PRJEB5224;PRJEB6070;PRJEB7774;PRJEB8347;PRJNA48479,279,2209,CMD,TRUE,TRUE,Healthy,feces,Germany;Kazakhstan,IlluminaHiSeq,29242367,,,,,0,,not_processed,7.92,
+de699a56-86d4-5bfe-85f7-b4a479483558,CosteaPI_2017,PRJEB17632,279,2209,CMD,TRUE,TRUE,Healthy,feces,Germany;Kazakhstan,IlluminaHiSeq,29242367,,,,,0,,not_processed,7.92,
 d41faa3c-ac44-5ed5-8a36-eaa3b86bf3d2,DavarD_2021,,216,216,CMD,TRUE,FALSE,melanoma;metastases_liver,stool,USA,IlluminaNovaSeq;IlluminaNextSeq,33542131,,,,,0,,not_processed,1.00,filename not *_sample.tsv - skipped by CI validator; BioProject unresolved
 d25e3441-e780-53b9-a9c5-312cddbcc830,DavidLA_2015,PRJEB9150,47,47,CMD,TRUE,TRUE,Diarrhea;Cholera;Healthy,feces,Bangladesh,IlluminaHiSeq,25991682,,,,,25,CMD;DavidLA_2015,partial,1.00,
 4e9e1232-0e6e-5a66-9246-69c3db1797a7,DeCastroFonsecaM_2026,,330,0,PMD,TRUE,TRUE,,feces,,IlluminaNovaSeq,41389810,,,,,0,,no_run_accessions,,no run accessions in ncbi_accession; BioProject unresolved
@@ -62,7 +62,7 @@ b9f24044-ee47-5ee6-98d2-5f0a6112e825,LeeKA_2022,PRJEB43119,165,165,CMD,TRUE,TRUE
 f89bca5a-1250-51ab-8250-456e78f77c05,LiSS_2016,,55,430,CMD,TRUE,TRUE,Metabolic Syndrome;Healthy,feces,Netherlands,IlluminaHiSeq,27126044,,,,,198,CMD;LiSS_2016,partial,7.82,BioProject unresolved
 cf12e71e-6b2b-54c8-9ddb-274e4662a595,LifeLinesDeep_2016,,1135,0,CMD,TRUE,TRUE,Healthy,feces,Netherlands,IlluminaHiSeq,27126040,,,,,0,,no_run_accessions,,no run accessions in ncbi_accession; BioProject unresolved
 db12ad3b-9fbe-533b-8610-09d2c2368c3e,LiuW_2016,,110,110,CMD,TRUE,TRUE,Healthy,feces,Mongolia,IlluminaHiSeq,27708392,,,,,0,,not_processed,1.00,BioProject unresolved
-e851c3fd-d7c9-5561-85c4-7e7887a0d68e,LokmerA_2019,PRJEB27005;PRJNA268964;PRJNA278393,57,57,CMD,TRUE,TRUE,Healthy,feces,Cameroon,IlluminaHiSeq,30726303,,,,,0,,not_processed,1.00,
+e851c3fd-d7c9-5561-85c4-7e7887a0d68e,LokmerA_2019,PRJEB27005,57,57,CMD,TRUE,TRUE,Healthy,feces,Cameroon,IlluminaHiSeq,30726303,,,,,0,,not_processed,1.00,
 e5431a7f-83e2-51d9-9ca5-bc4bc424046d,LomanNJ_2013,PRJEB1775,42,51,CMD,TRUE,TRUE,Escherichia coli Infection,feces,Germany,IlluminaHiSeq,23571589,,,,,31,CMD;LomanNJ_2013,partial,1.21,
 7c6fbefd-877f-54c3-8f5c-95d20be2371c,LoombaR_2017,,86,86,CMD,TRUE,TRUE,Hepatic Steatosis;Cirrhosis;Not applicable,feces,United States,IlluminaHiSeq,28467925,,,,,25,CMD;LoombaR_2017,partial,1.00,BioProject unresolved
 4b574593-b846-555d-8f45-f841c2341210,LouisS_2016,PRJNA290729,92,92,CMD,TRUE,TRUE,Healthy,feces,Germany,IlluminaHiSeq,26919743,,,,,0,,not_processed,1.00,
@@ -85,8 +85,8 @@ eac2557e-a974-5318-b5b9-c1a96e5de3ce,Obregon-TitoAJ_2015,PRJNA268964,58,116,CMD,
 e9092fda-186a-51f7-8a67-016dfca42c98,OsakunorDNM_2020,,113,113,CMD,TRUE,TRUE,Hematuria;Growth Retardation;Poor Weight Gain;Healthy;Helminthiasis;(+1 more),feces,Zimbabwe,IlluminaHiSeq,32242065,,,,,0,,not_processed,1.00,BioProject unresolved
 4423d03c-e526-5e6b-a54b-a48a5730fae2,PallejaA_2018,,57,114,CMD,TRUE,TRUE,Healthy,feces,Denmark,IlluminaHiSeq,30349083,,,,,0,,not_processed,2.00,BioProject unresolved
 6319fcff-5822-5657-871c-6c5aa5afb736,ParkDG_2024,PRJNA1043247,36,36,CMD,TRUE,TRUE,Parkinson Disease,feces,Korea;Republic of,IlluminaMiSeq,39218360,,,,,36,PRJNA1043247,processed,1.00,
-8469c093-ffe7-57a0-9121-15e772da1e36,PasolliE_2019,PRJNA485056;PRJNA504891,112,112,CMD,TRUE,TRUE,Healthy,feces,Madagascar,IlluminaHiSeq,30661755,,,,,0,,not_processed,1.00,
-31764130-91a4-5c61-a3bc-37225373d176,PehrssonE_2016,PRJNA268964;PRJNA300541,191,382,CMD,TRUE,TRUE,Healthy,feces,El Salvador;Peru,IlluminaHiSeq;IlluminaNextSeq,27172044,,,,,0,,not_processed,2.00,
+8469c093-ffe7-57a0-9121-15e772da1e36,PasolliE_2019,PRJNA485056,112,112,CMD,TRUE,TRUE,Healthy,feces,Madagascar,IlluminaHiSeq,30661755,,,,,0,,not_processed,1.00,
+31764130-91a4-5c61-a3bc-37225373d176,PehrssonE_2016,PRJNA300541,191,382,CMD,TRUE,TRUE,Healthy,feces,El Salvador;Peru,IlluminaHiSeq;IlluminaNextSeq,27172044,,,,,0,,not_processed,2.00,
 f7ad1487-012f-579f-aecc-a647eb589985,PernigoniN_2021,,74,74,CMD,TRUE,TRUE,Prostate Carcinoma;Metastatic Malignant Neoplasm,feces,United Kingdom;Switzerland,IlluminaNextSeq,34618582,,,,,0,,not_processed,1.00,BioProject unresolved
 81a37310-8cd6-5762-942d-fb93dc20f47c,PetersBA_2019,PRJNA541981,27,27,CMD,TRUE,TRUE,Melanoma;Metastatic Malignant Neoplasm,feces,United States,IlluminaHiSeq,31597568,,,,,0,,not_processed,1.00,
 0e62cdae-52f5-5970-bbd0-96c43837db06,PiccinnoG_2025_a,,163,163,CMD,TRUE,FALSE,Colorectal Carcinoma,feces,Italy,IlluminaHiSeq,40461820,,,,,0,,not_processed,1.00,filename not *_sample.tsv - skipped by CI validator; BioProject unresolved
@@ -114,9 +114,9 @@ d0a8e08b-f622-5fc2-8498-50276d094f64,Soto-GironMJ_2021,,86,86,CMD,TRUE,TRUE,Diar
 3df82c0b-afa3-5edf-9c50-53b4e9369abd,SpencerCN_2021,,167,167,CMD,TRUE,TRUE,melanoma,feces,United States,IlluminaHiSeq,34941392,,,,,0,,not_processed,1.00,BioProject unresolved
 191b7f3c-e92d-5d69-be9f-4f8d727b2a29,TeeMZ_2022,,650,650,CMD,TRUE,TRUE,Helminthiasis;Healthy,feces,Malaysia,IlluminaNovaSeq,36476263,,,,,0,,not_processed,1.00,BioProject unresolved
 244b8ac8-08a0-5f50-b8b3-afb61f02f26d,TettAJ_2016,PRJNA281366,89,0,CMD,TRUE,TRUE,Psoriasis;Arthritis,skin epidermis,Italy,IlluminaHiSeq,28649415,,,,,0,,no_run_accessions,,no run accessions in ncbi_accession
-3864f026-8e5b-5fec-a4da-c4816dfcb017,TettAJ_2019_a,PRJEB31971;PRJNA504891;PRJNA529124;PRJNA529400,68,68,CMD,TRUE,TRUE,Healthy,feces,Tanzania;United Republic of,IlluminaHiSeq,31607556,,,,,0,,not_processed,1.00,
-ff0a13c2-54a4-5efe-9649-dd495863ed23,TettAJ_2019_b,PRJEB31971;PRJNA504891;PRJNA529124;PRJNA529400,44,44,CMD,TRUE,TRUE,Healthy,feces,Ghana,IlluminaHiSeq,31607556,,,,,0,,not_processed,1.00,
-75a46ad2-96f9-5111-856c-33249bc9ec94,TettAJ_2019_c,PRJEB31971;PRJNA504891;PRJNA529124;PRJNA529400,50,50,CMD,TRUE,TRUE,Healthy,feces,Ethiopia,IlluminaHiSeq,31607556,,,,,0,,not_processed,1.00,
+3864f026-8e5b-5fec-a4da-c4816dfcb017,TettAJ_2019_a,PRJNA529400,68,68,CMD,TRUE,TRUE,Healthy,feces,Tanzania;United Republic of,IlluminaHiSeq,31607556,,,,,0,,not_processed,1.00,
+ff0a13c2-54a4-5efe-9649-dd495863ed23,TettAJ_2019_b,PRJNA529124,44,44,CMD,TRUE,TRUE,Healthy,feces,Ghana,IlluminaHiSeq,31607556,,,,,0,,not_processed,1.00,
+75a46ad2-96f9-5111-856c-33249bc9ec94,TettAJ_2019_c,PRJNA504891,50,50,CMD,TRUE,TRUE,Healthy,feces,Ethiopia,IlluminaHiSeq,31607556,,,,,0,,not_processed,1.00,
 4441e76a-4cb5-5fd2-a356-7b5988808245,ThomasAM_2018a,,80,0,CMD,TRUE,TRUE,Metastatic Malignant Neoplasm;Adenoma;Colorectal Carcinoma;Hypercholesterolemia;Adenocarcinoma;(+3 more),feces,Italy,IlluminaHiSeq,30936548,,,,,0,,no_run_accessions,,no run accessions in ncbi_accession; BioProject unresolved
 a593e97f-35a8-58a5-827a-5a5edeacc714,ThomasAM_2018b,,60,0,CMD,TRUE,TRUE,Colorectal Carcinoma;Healthy,feces,Italy,IlluminaHiSeq,30936548,,,,,0,,no_run_accessions,,no run accessions in ncbi_accession; BioProject unresolved
 9e76ba08-de54-5b7c-9688-7902450e8fcd,ThomasAM_2019_c,,80,0,CMD,TRUE,TRUE,Colorectal Carcinoma;Healthy,feces,Japan,IlluminaHiSeq,30936548,,,,,0,,no_run_accessions,,no run accessions in ncbi_accession; BioProject unresolved
@@ -141,7 +141,7 @@ dcfb9e53-cf7b-5aff-b623-d0131f072c38,XuQ_2021,,347,347,CMD,TRUE,TRUE,Hypertensio
 c4226fe7-fe3d-5fc0-a5f3-2e5ffd148b27,YangJ_2020,,193,193,CMD,TRUE,TRUE,colorectal cancer;Healthy,feces,China,IlluminaHiSeq,31971861,,,,,0,,not_processed,1.00,BioProject unresolved
 2a61dad6-eb16-57e6-b71c-45f6bf08445f,YassourM_2016,,36,36,CMD,TRUE,TRUE,Healthy,feces,Korea;Republic of,IlluminaHiSeq,26884067,,,,,0,,not_processed,1.00,BioProject unresolved
 55f10c58-011c-5bb0-9ab3-6d2d4c24885c,YassourM_2018,,271,271,CMD,TRUE,TRUE,Healthy,feces,Finland,IlluminaHiSeq,30001517,,,,,0,,not_processed,1.00,BioProject unresolved
-7cb7f28a-70d1-5b82-a6ba-ae4679d46c63,YeZ_2018,PRJNA356225;PRJNA431482,65,65,CMD,TRUE,TRUE,Behcet Syndrome;Healthy,feces,China,IlluminaHiSeq,30077182,,,,,0,,not_processed,1.00,
+7cb7f28a-70d1-5b82-a6ba-ae4679d46c63,YeZ_2018,PRJNA431482,65,65,CMD,TRUE,TRUE,Behcet Syndrome;Healthy,feces,China,IlluminaHiSeq,30077182,,,,,0,,not_processed,1.00,
 5151a2f9-9fd0-5004-ace5-47efc9e949d5,YeZ_2020,,119,119,CMD,TRUE,TRUE,Uveomeningoencephalitic Syndrome;Healthy,feces,China,Illumina TruSeq,,,,,,0,,not_processed,1.00,BioProject unresolved
 a6e10d4f-4682-58b8-9436-f8caa8f8a199,YuJ_2015,PRJEB10878,128,128,CMD,TRUE,TRUE,Colorectal Carcinoma;Type 2 Diabetes Mellitus;Carcinoma;Healthy,feces,China,IlluminaHiSeq,26408641,,,,,25,CMD;YuJ_2015,partial,1.00,
 9d0e9961-1b14-5530-a6c8-55ae2b7129e3,ZeeviD_2015,,900,1242,CMD,TRUE,TRUE,Healthy,feces,Israel,IlluminaHiSeq,26590418,,,,,0,,not_processed,1.38,BioProject unresolved
