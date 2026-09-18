@@ -42,3 +42,6 @@ inst/doc
 *.html
 R/temp/*
 *.yml.*
+
+# telemetry snapshot cached by inst/scripts/build_manifest.py
+inst/extdata/.telemetry_samples.json
