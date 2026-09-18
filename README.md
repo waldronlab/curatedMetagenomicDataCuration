@@ -18,12 +18,21 @@ You can review the high-level details of them in [this page](https://waldronlab.
 
 ## Study manifest
 
-[`inst/extdata/studies_status.csv`][studies_status] is the canonical list of curated
-studies — one row per study, with its BioProject, sample count, disease, body site,
-PMID, and whether it has been processed through the
-[Nextflow pipeline](https://github.com/seandavi/curatedMetagenomicsNextflow) yet. It is
-reconciled against the live pipeline telemetry, so it answers both "what has been
-curated?" and "what has been processed?" in one place.
+[`inst/extdata/studies_status.csv`][studies_status] is the canonical study list, with
+one row per study, its BioProject, sample count, disease, body site, PMID, and its
+status in the [Nextflow pipeline](https://github.com/seandavi/curatedMetagenomicsNextflow).
+
+It covers **both sides** of the curated/processed comparison, so the two can be
+reconciled from a single file:
+
++ every curated study in `inst/curated/` — `curation_available = TRUE`
++ every study the pipeline has processed that has no curated metadata here —
+  `curation_available = FALSE`, `processing_status = processed_not_curated`
+
+`n_samples` counts curated samples and `n_samples_processed` counts samples the
+pipeline has actually run, so a study where the pipeline is ahead of the curation is
+visible directly (the `notes` column calls these out as *"N processed sample(s) not
+listed in the curated table"*).
 
 + [studies_status.csv][studies_status] — one row per study
 + [studies_runs.tsv][studies_runs] — per-run detail: which run accessions belong to

@@ -11,9 +11,18 @@
 # live pipeline telemetry, and writes:
 #
 #     inst/extdata/studies_status.csv
-#         One row per curated study. Identity (uuid, study_name, study_id),
-#         size, provenance, curation state, pipeline state, and placeholders
-#         for profile versions/locations that only Sean and Francesco can fill.
+#         One row per study on *either* side of the comparison:
+#           - every curated study in inst/curated/, and
+#           - every study the pipeline has processed that has no curated
+#             metadata here (curation_available = FALSE,
+#             processing_status = processed_not_curated).
+#         Carries identity (uuid, study_name, study_id), size, provenance,
+#         curation state, pipeline state, and placeholders for profile
+#         versions/locations that only Sean and Francesco can fill.
+#
+#         Covering both sides is the point: the 2026-09-18 meeting asked to
+#         "make a Venn diagram possible", which needs the processed-only set
+#         as well as the curated one.
 #
 #     inst/extdata/studies_runs.tsv
 #         Long-form study_name -> run_accession lookup, with the BioProject
@@ -44,7 +53,7 @@ import re
 import sys
 import urllib.request
 import uuid
-from collections import defaultdict
+import collections
 
 TELEMETRY = "https://nf-telemetry.cancerdatasci.org"
 CURATED = os.path.join("inst", "curated")
@@ -76,9 +85,10 @@ FIELDS = [
     "primary_disease", "body_site", "country", "sequencing_platform", "pmid",
     "metaphlan_version", "metaphlan_location",
     "humann_version", "humann_location",
-    "n_runs_processed", "telemetry_collections", "processing_status",
-    "runs_per_sample", "notes",
+    "n_samples_processed", "n_runs_processed", "telemetry_collections",
+    "processing_status", "runs_per_sample", "notes",
 ]
+
 
 
 def read_table(path):
@@ -212,6 +222,103 @@ def run_bioproject(run, run_map, sra_runs):
     return "", ""
 
 
+def attribute_samples(samples, curated_runs, curated_bioprojects,
+                      curated_names):
+    """Split telemetry samples into (per-study attribution, orphans).
+
+    Three ways a processed sample is recognised as belonging to a curated
+    study, tried in descending order of confidence:
+
+      1. one of its run accessions is listed in that study's curated table;
+      2. its BioProject is one the study resolves to;
+      3. it was registered under a telemetry collection named after the study
+         (the CMD-sourced collections use study names as labels).
+
+    Arms 2 and 3 matter because the pipeline processes samples that curation
+    has not listed run-by-run. Those are a gap *inside* a known study, which
+    is a different problem from an unknown study, so they are counted
+    separately as `unlisted` rather than treated as orphans.
+
+    Whatever matches none of the three is genuinely processed-but-not-curated.
+    """
+    by_study = collections.defaultdict(
+        lambda: {"samples": 0, "unlisted": 0})
+    orphans = []
+
+    for s in samples:
+        runs = set(RUN_RE.findall(s.get("ncbi_accession") or ""))
+        study = next((curated_runs[r] for r in sorted(runs)
+                      if r in curated_runs), None)
+        if study is not None:
+            by_study[study]["samples"] += 1
+            continue
+
+        bioproject = ((s.get("metadata") or {}).get("bioproject") or "").strip()
+        study = curated_bioprojects.get(bioproject)
+        if study is None:
+            study = next((c for c in sorted(s.get("collections") or [])
+                          if c in curated_names), None)
+        if study is not None:
+            by_study[study]["samples"] += 1
+            by_study[study]["unlisted"] += 1
+            continue
+
+        orphans.append(s)
+
+    return by_study, orphans
+
+
+def orphan_rows(orphans):
+    """One row per processed-but-not-curated study.
+
+    Grouped by BioProject where telemetry knows one, else by the collection
+    it was registered under, because that is the only identifier such a study
+    has until somebody curates it.
+    """
+    groups = collections.defaultdict(
+        lambda: {"samples": 0, "runs": set(), "collections": set(),
+                 "sra_studies": set()})
+
+    for s in orphans:
+        meta = s.get("metadata") or {}
+        bioproject = (meta.get("bioproject") or "").strip()
+        cols = sorted(c for c in (s.get("collections") or [])
+                      if isinstance(c, str))
+        key = bioproject if bioproject.startswith("PRJ") else (
+            cols[0] if cols else "unidentified")
+        g = groups[key]
+        g["samples"] += 1
+        g["runs"] |= set(RUN_RE.findall(s.get("ncbi_accession") or ""))
+        g["collections"] |= set(cols)
+        if meta.get("sra_study"):
+            g["sra_studies"].add(meta["sra_study"])
+
+    rows = []
+    for key, g in sorted(groups.items()):
+        row = dict.fromkeys(FIELDS, "")
+        note = ["processed through the Nextflow pipeline; no curated metadata "
+                "in this repository"]
+        if g["sra_studies"]:
+            note.append("SRA study " + ";".join(sorted(g["sra_studies"])))
+        row.update(
+            uuid=str(uuid.uuid5(NS, key)),
+            study_name=key,
+            study_id=key if key.startswith("PRJ") else "",
+            n_samples=0,
+            n_runs=0,
+            source_project="",
+            curation_available="FALSE",
+            ci_validated="FALSE",
+            n_samples_processed=g["samples"],
+            n_runs_processed=len(g["runs"]),
+            telemetry_collections=";".join(sorted(g["collections"])),
+            processing_status="processed_not_curated",
+            runs_per_sample="",
+            notes="; ".join(note))
+        rows.append(row)
+    return rows
+
+
 def build_row(study, study_dir, run_map):
     path = curated_file(study_dir)
 
@@ -305,6 +412,30 @@ def main():
         rows.append(row)
         run_rows += runs
 
+    # Second pass: work out which processed samples belong to which curated
+    # study, so the ones belonging to none can be listed too. Without this the
+    # manifest only ever shows the curated side of the comparison.
+    curated_runs = {r[1]: r[0] for r in run_rows}
+    curated_bioprojects = {}
+    for row in rows:
+        for bp in row["study_id"].split(";"):
+            if bp:
+                curated_bioprojects.setdefault(bp, row["study_name"])
+
+    curated_names = {r["study_name"] for r in rows}
+    attributed, orphans = attribute_samples(
+        samples, curated_runs, curated_bioprojects, curated_names)
+
+    for row in rows:
+        hit = attributed.get(row["study_name"])
+        row["n_samples_processed"] = hit["samples"] if hit else 0
+        if hit and hit["unlisted"]:
+            note = (f"{hit['unlisted']} processed sample(s) not listed in the "
+                    "curated table")
+            row["notes"] = f"{row['notes']}; {note}" if row["notes"] else note
+
+    rows += orphan_rows(orphans)
+
     os.makedirs(OUTDIR, exist_ok=True)
     with open(os.path.join(OUTDIR, "studies_status.csv"), "w",
               newline="") as fh:
@@ -322,16 +453,26 @@ def main():
     def count(status):
         return sum(1 for r in rows if r["processing_status"] == status)
 
-    print(f"studies:             {len(rows)}")
-    print(f"samples:             {sum(int(r['n_samples']) for r in rows)}")
-    print(f"run accessions:      {len(run_rows)}")
-    print(f"BioProject resolved: {sum(1 for r in rows if r['study_id'])}")
-    print(f"  processed:         {count('processed')}")
-    print(f"  partial:           {count('partial')}")
-    print(f"  not processed:     {count('not_processed')}")
-    print(f"  no run accessions: {count('no_run_accessions')}")
-    print(f"not CI-validated:    "
-          f"{sum(1 for r in rows if r['ci_validated'] == 'FALSE')}")
+    curated = [r for r in rows if r["curation_available"] == "TRUE"]
+    unlisted = sum(v["unlisted"] for v in attributed.values())
+
+    print(f"rows:                  {len(rows)}")
+    print(f"  curated studies:     {len(curated)}")
+    print(f"  processed, uncurated:{count('processed_not_curated')}")
+    print(f"curated samples:       {sum(int(r['n_samples']) for r in curated)}")
+    print(f"run accessions:        {len(run_rows)}")
+    print(f"BioProject resolved:   {sum(1 for r in rows if r['study_id'])}")
+    print(f"  processed:           {count('processed')}")
+    print(f"  partial:             {count('partial')}")
+    print(f"  not processed:       {count('not_processed')}")
+    print(f"  no run accessions:   {count('no_run_accessions')}")
+    print(f"not CI-validated:      "
+          f"{sum(1 for r in curated if r['ci_validated'] == 'FALSE')}")
+    print(f"processed samples attributed to a curated study: "
+          f"{sum(v['samples'] for v in attributed.values())}")
+    print(f"  ...of those, not listed in its curated table: {unlisted}")
+    print(f"processed samples with no curated study:         "
+          f"{sum(int(r['n_samples_processed']) for r in rows if r['curation_available'] == 'FALSE')}")
 
 
 if __name__ == "__main__":
