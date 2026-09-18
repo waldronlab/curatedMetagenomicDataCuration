@@ -34,6 +34,11 @@ pipeline has actually run, so a study where the pipeline is ahead of the curatio
 visible directly (the `notes` column calls these out as *"N processed sample(s) not
 listed in the curated table"*).
 
+BioProjects are resolved from the study's own `_sra_meta.tsv` where it has one, then
+from pipeline telemetry, then from NCBI using the run accessions in the curated table.
+The `study_id_source` column records which of the three answered, so a curated mapping
+stays distinguishable from an inferred one.
+
 + [studies_status.csv][studies_status] — one row per study
 + [studies_runs.tsv][studies_runs] — per-run detail: which run accessions belong to
   which study, the BioProject each resolves to, and whether the pipeline has seen it
