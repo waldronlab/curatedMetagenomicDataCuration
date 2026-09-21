@@ -2,8 +2,8 @@
   "status": "FAIL",
   "summary": {
     "total_files": 140,
-    "total_errors": 2,
-    "total_warnings": 67,
+    "total_errors": 1,
+    "total_warnings": 71,
     "files_with_issues": 12
   },
   "stats": {
@@ -38,11 +38,11 @@
           },
           {
             "name": "Not applicable",
-            "count": 1
+            "count": 7
           }
         ],
         "total_distinct": 7,
-        "total_count": 31537
+        "total_count": 31543
       },
       "body_site": {
         "top": [
@@ -132,7 +132,7 @@
           },
           {
             "name": "China",
-            "count": 2998
+            "count": 3166
           },
           {
             "name": "Netherlands",
@@ -163,7 +163,7 @@
             "count": 900
           }
         ],
-        "total_distinct": 74,
+        "total_distinct": 73,
         "total_count": 32792
       },
       "ancestry": {
@@ -200,7 +200,7 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 18117
+            "count": 18195
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -239,8 +239,8 @@
             "count": 606
           }
         ],
-        "total_distinct": 147,
-        "total_count": 37429
+        "total_distinct": 145,
+        "total_count": 37435
       },
       "sex": {
         "top": [
@@ -254,21 +254,21 @@
           },
           {
             "name": "Not applicable",
-            "count": 366
+            "count": 372
           }
         ],
         "total_distinct": 3,
-        "total_count": 29628
+        "total_count": 29634
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-09-18T22:41:02Z",
+    "timestamp": "2026-09-21T14:13:27Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "35402502576"
+    "run_id": "35610481682"
   },
   "studies_with_issues": [
     {
@@ -349,15 +349,18 @@
       "name": "WenC_2017",
       "file": "inst/curated//WenC_2017/WenC_2017_sample.tsv",
       "rows": 168,
-      "cols": 33,
+      "cols": 28,
       "errors": [
-        "Missing required fields: control, target_condition",
-        "Columns not covered by schema: study_condition, non_westernized, creatinine, albumine, hscrp, ESR, wbc, rbc, blood_platelet, hemoglobinometry, ast, alt, globulin, urea_nitrogen, ASO, anti_ccp_antibody, rheumatoid_factor"
+        "Columns not covered by schema: biomarker_ontology_term_id"
       ],
       "warnings": [
-        "Field 'disease': 'healthy' is not a recognized term for this ontology-backed field (78 rows).",
-        "Field 'disease': 'RA' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (90 rows).",
-        "Field 'country': 'CHN' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (168 rows)."
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
+        "Field 'biomarker_value' row 46 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 55 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 56 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 61 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 81 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 86 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*"
       ]
     },
     {
