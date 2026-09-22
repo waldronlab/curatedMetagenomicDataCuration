@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 140,
     "total_errors": 1,
-    "total_warnings": 71,
-    "files_with_issues": 12
+    "total_warnings": 61,
+    "files_with_issues": 7
   },
   "stats": {
     "total_studies": 140,
@@ -239,8 +239,8 @@
             "count": 606
           }
         ],
-        "total_distinct": 145,
-        "total_count": 37435
+        "total_distinct": 143,
+        "total_count": 37317
       },
       "sex": {
         "top": [
@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-21T14:13:27Z",
+    "timestamp": "2026-09-22T00:20:14Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "35610481682"
+    "run_id": "35671392185"
   },
   "studies_with_issues": [
     {
@@ -282,30 +282,6 @@
       ]
     },
     {
-      "name": "IaniroG_2022",
-      "file": "inst/curated//IaniroG_2022/IaniroG_2022_sample.tsv",
-      "rows": 165,
-      "cols": 30,
-      "errors": [],
-      "warnings": [
-        "Field 'subject_id' has 4 values not matching pattern:  [0-9a-zA-Z]\\S+",
-        "Field 'target_condition': 'Intestinal Flora' is not a recognized term for this ontology-backed field (165 rows).",
-        "Field 'disease': 'Donor' is not a recognized term for this ontology-backed field (9 rows).",
-        "Field 'disease': 'Fecal Microbiota Transplantation' is not a recognized term for this ontology-backed field (109 rows).",
-        "Field 'disease_details': 'Multidrug-resistant bacteria (organism)' is not a recognized term for this ontology-backed field (11 rows)."
-      ]
-    },
-    {
-      "name": "JoS_2022",
-      "file": "inst/curated//JoS_2022/JoS_2022_sample.tsv",
-      "rows": 156,
-      "cols": 20,
-      "errors": [],
-      "warnings": [
-        "Field 'subject_id' has 156 values not matching pattern:  [0-9a-zA-Z]\\S+"
-      ]
-    },
-    {
       "name": "KosticAD_2015",
       "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
@@ -313,26 +289,6 @@
       "errors": [],
       "warnings": [
         "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (15 rows)."
-      ]
-    },
-    {
-      "name": "McCullochJA_2022",
-      "file": "inst/curated//McCullochJA_2022/McCullochJA_2022_sample.tsv",
-      "rows": 94,
-      "cols": 29,
-      "errors": [],
-      "warnings": [
-        "Field 'treatment': 'Psychotropic Agent' is not a recognized term for this ontology-backed field (41 rows)."
-      ]
-    },
-    {
-      "name": "NagataN_2022",
-      "file": "inst/curated//NagataN_2022/NagataN_2022_sample.tsv",
-      "rows": 560,
-      "cols": 20,
-      "errors": [],
-      "warnings": [
-        "Field 'subject_id' has 90 values not matching pattern:  [0-9a-zA-Z]\\S+"
       ]
     },
     {
@@ -374,23 +330,12 @@
       ]
     },
     {
-      "name": "YeZ_2020",
-      "file": "inst/curated//YeZ_2020/YeZ_2020_sample.tsv",
-      "rows": 119,
-      "cols": 20,
-      "errors": [],
-      "warnings": [
-        "Field 'sequencing_platform' has 119 invalid values: Illumina TruSeq. Allowed values: IlluminaHiSeq, IlluminaMiSeq, IlluminaNextSeq, IlluminaNovaSeq, IonProton, BGISeq"
-      ]
-    },
-    {
       "name": "ZhangX_2015",
       "file": "inst/curated//ZhangX_2015/ZhangX_2015_sample.tsv",
       "rows": 232,
       "cols": 34,
       "errors": [],
       "warnings": [
-        "Field 'sample_id' has 232 values not matching pattern:  [0-9a-zA-Z]\\S+",
         "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
         "Field 'biomarker_value' row 105 has value '<25' not matching pattern: [0-9]+\\.?[0-9]*",
         "Field 'biomarker_value' row 106 has value '<25' not matching pattern: [0-9]+\\.?[0-9]*",
