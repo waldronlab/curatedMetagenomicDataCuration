@@ -16,5 +16,7 @@ List containing the loaded schema
 \description{
 Load a \code{*_data_dictionary.csv} from a package's
   \code{inst/extdata} and convert it to a validation schema via
-  \code{\link[OmicsMLRepoCuration]{table_to_yaml_schema}}.
+  \code{\link[OmicsMLRepoCuration]{table_to_yaml_schema}}. Derived
+  \code{*_ontology_term_id} columns are given a CURIE validation pattern
+  before conversion.
 }

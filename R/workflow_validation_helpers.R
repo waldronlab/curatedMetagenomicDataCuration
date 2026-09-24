@@ -1,7 +1,61 @@
+#' @title CURIE Pattern for Derived Ontology Term ID Columns
+#' @description Regex (unanchored, matching the convention already used by
+#'   other \code{corpus.type == "regexp"} dictionary rows, e.g. \code{age_max})
+#'   for a well-formed ontology CURIE such as \code{NCIT:C142703} or
+#'   \code{UBERON:0001988}. Namespace-agnostic by design: it accepts any
+#'   ontology prefix already used in this project's dictionary, and rejects
+#'   the underscore form (\code{NCIT_C142703}) reported in issue #162.
+#' @keywords internal
+#' @noRd
+ONTOLOGY_TERM_ID_PATTERN <- "[A-Za-z]+:[A-Za-z0-9]+"
+
+#' @title Add Ontology Term ID Rows to the Data Dictionary
+#' @description \code{table_to_yaml_schema()} only emits a schema entry for
+#'   columns that are literal rows in the data dictionary. The
+#'   \code{<field>_ontology_term_id} companion columns that
+#'   \code{add_ontology_columns()} derives from every ontology-backed field
+#'   (one with a \code{static.enum} or \code{dynamic.enum} mapping) have no
+#'   such row, so they were never validated and malformed CURIEs like
+#'   \code{NCIT_C142703} went undetected (issue #162). This synthesizes one
+#'   \code{corpus.type = "regexp"} row per ontology-backed field, mirroring
+#'   its \code{multiplevalues}/\code{delimiter}, so the existing regexp
+#'   validation path picks it up like any other field.
+#' @param dict Data dictionary data.frame (as read from
+#'   \code{cMD_data_dictionary.csv}).
+#' @return \code{dict} with the synthesized rows appended.
+#' @keywords internal
+#' @noRd
+.add_ontology_id_schema_rows <- function(dict) {
+  is_ontology_backed <- (!is.na(dict$static.enum) & nzchar(dict$static.enum)) |
+    (!is.na(dict$dynamic.enum) & nzchar(dict$dynamic.enum))
+  fields <- dict$col.name[is_ontology_backed]
+  oid_cols <- paste0(fields, "_ontology_term_id")
+  fields <- fields[!oid_cols %in% dict$col.name]
+  if (length(fields) == 0) return(dict)
+
+  src <- dict[match(fields, dict$col.name), , drop = FALSE]
+  new_rows <- dict[rep(NA_integer_, length(fields)), , drop = FALSE]
+  rownames(new_rows) <- NULL
+  new_rows$col.name <- paste0(fields, "_ontology_term_id")
+  new_rows$col.class <- "character"
+  new_rows$unique <- "non-unique"
+  new_rows$required <- "optional"
+  new_rows$multiplevalues <- src$multiplevalues
+  new_rows$description <- paste0("Ontology term ID(s) for '", fields,
+                                  "', derived by add_ontology_columns().")
+  new_rows$allowedvalues <- ONTOLOGY_TERM_ID_PATTERN
+  new_rows$delimiter <- src$delimiter
+  new_rows$corpus.type <- "regexp"
+
+  rbind(dict, new_rows)
+}
+
 #' @title Load Validation Schema
 #' @description Load a \code{*_data_dictionary.csv} from a package's
 #'   \code{inst/extdata} and convert it to a validation schema via
-#'   \code{\link[OmicsMLRepoCuration]{table_to_yaml_schema}}.
+#'   \code{\link[OmicsMLRepoCuration]{table_to_yaml_schema}}. Derived
+#'   \code{*_ontology_term_id} columns are given a CURIE validation pattern
+#'   before conversion.
 #' @param package Package whose \code{inst/extdata} contains the data
 #'   dictionary CSV.
 #' @return List containing the loaded schema
@@ -34,6 +88,7 @@ load_validation_schema <- function(package = "curatedMetagenomicDataCuration") {
          ncol(schema_table), " column(s) without a 'col.name' column. ",
          "The file is likely not comma-delimited — check its field separator.")
   }
+  schema_table <- .add_ontology_id_schema_rows(schema_table)
   OmicsMLRepoCuration::table_to_yaml_schema(schema_table)
 }
 
