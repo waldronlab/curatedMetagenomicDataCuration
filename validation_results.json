@@ -1,14 +1,14 @@
 {
   "status": "PASS",
   "summary": {
-    "total_files": 139,
+    "total_files": 140,
     "total_errors": 0,
-    "total_warnings": 54,
-    "files_with_issues": 6
+    "total_warnings": 60,
+    "files_with_issues": 7
   },
   "stats": {
-    "total_studies": 139,
-    "total_samples": 32839,
+    "total_studies": 140,
+    "total_samples": 33062,
     "distributions": {
       "age_group": {
         "top": [
@@ -48,7 +48,7 @@
         "top": [
           {
             "name": "feces",
-            "count": 30546
+            "count": 30769
           },
           {
             "name": "oral cavity",
@@ -72,13 +72,13 @@
           }
         ],
         "total_distinct": 6,
-        "total_count": 32839
+        "total_count": 33062
       },
       "published_year": {
         "top": [
           {
             "name": "2022",
-            "count": 6033
+            "count": 6256
           },
           {
             "name": "2016",
@@ -118,7 +118,7 @@
           }
         ],
         "total_distinct": 15,
-        "total_count": 28179
+        "total_count": 28402
       },
       "country": {
         "top": [
@@ -132,7 +132,7 @@
           },
           {
             "name": "China",
-            "count": 2998
+            "count": 3221
           },
           {
             "name": "Netherlands",
@@ -164,7 +164,7 @@
           }
         ],
         "total_distinct": 73,
-        "total_count": 32624
+        "total_count": 32847
       },
       "ancestry": {
         "top": [
@@ -200,7 +200,7 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 18117
+            "count": 18216
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -239,8 +239,8 @@
             "count": 606
           }
         ],
-        "total_distinct": 143,
-        "total_count": 37149
+        "total_distinct": 144,
+        "total_count": 37372
       },
       "sex": {
         "top": [
@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-30T13:20:07Z",
+    "timestamp": "2026-09-30T13:21:06Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "36720654276"
+    "run_id": "36720737624"
   },
   "studies_with_issues": [
     {
@@ -299,6 +299,21 @@
       "errors": [],
       "warnings": [
         "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (139 rows)."
+      ]
+    },
+    {
+      "name": "XuJ_2022",
+      "file": "inst/curated//XuJ_2022/XuJ_2022_sample.tsv",
+      "rows": 223,
+      "cols": 25,
+      "errors": [],
+      "warnings": [
+        "Field 'disease_details': 'Advanced Adenoma' is not a recognized term for this ontology-backed field (61 rows).",
+        "Field 'disease_details': 'high-grade dysplastic adenoma' is not a recognized term for this ontology-backed field (33 rows).",
+        "Field 'disease_details': 'Stage_I_II' is not a recognized term for this ontology-backed field (17 rows).",
+        "Field 'disease_details': 'Stage_III_IV' is not a recognized term for this ontology-backed field (13 rows).",
+        "Field 'tumor_staging_ajcc' has 61 invalid values: ND. Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB",
+        "Field 'subcohort' has 223 values not matching pattern:  [0-9a-zA-Z]\\S+"
       ]
     },
     {
