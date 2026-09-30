@@ -1,24 +1,24 @@
 {
-  "status": "FAIL",
+  "status": "PASS",
   "summary": {
-    "total_files": 140,
-    "total_errors": 1,
-    "total_warnings": 61,
-    "files_with_issues": 7
+    "total_files": 139,
+    "total_errors": 0,
+    "total_warnings": 54,
+    "files_with_issues": 6
   },
   "stats": {
-    "total_studies": 140,
-    "total_samples": 33007,
+    "total_studies": 139,
+    "total_samples": 32839,
     "distributions": {
       "age_group": {
         "top": [
           {
             "name": "Adult",
-            "count": 21246
+            "count": 21085
           },
           {
             "name": "Elderly",
-            "count": 4654
+            "count": 4653
           },
           {
             "name": "Newborn",
@@ -38,17 +38,17 @@
           },
           {
             "name": "Not applicable",
-            "count": 7
+            "count": 1
           }
         ],
         "total_distinct": 7,
-        "total_count": 31543
+        "total_count": 31375
       },
       "body_site": {
         "top": [
           {
             "name": "feces",
-            "count": 30714
+            "count": 30546
           },
           {
             "name": "oral cavity",
@@ -72,7 +72,7 @@
           }
         ],
         "total_distinct": 6,
-        "total_count": 33007
+        "total_count": 32839
       },
       "published_year": {
         "top": [
@@ -90,7 +90,7 @@
           },
           {
             "name": "2017",
-            "count": 2591
+            "count": 2423
           },
           {
             "name": "2018",
@@ -118,7 +118,7 @@
           }
         ],
         "total_distinct": 15,
-        "total_count": 28347
+        "total_count": 28179
       },
       "country": {
         "top": [
@@ -132,7 +132,7 @@
           },
           {
             "name": "China",
-            "count": 3166
+            "count": 2998
           },
           {
             "name": "Netherlands",
@@ -164,7 +164,7 @@
           }
         ],
         "total_distinct": 73,
-        "total_count": 32792
+        "total_count": 32624
       },
       "ancestry": {
         "top": [
@@ -200,7 +200,7 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 18195
+            "count": 18117
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -240,35 +240,35 @@
           }
         ],
         "total_distinct": 143,
-        "total_count": 37317
+        "total_count": 37149
       },
       "sex": {
         "top": [
           {
             "name": "Female",
-            "count": 14827
+            "count": 14705
           },
           {
             "name": "Male",
-            "count": 14435
+            "count": 14395
           },
           {
             "name": "Not applicable",
-            "count": 372
+            "count": 366
           }
         ],
         "total_distinct": 3,
-        "total_count": 29634
+        "total_count": 29466
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-09-28T09:21:24Z",
+    "timestamp": "2026-09-30T12:41:25Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "36402696590"
+    "run_id": "36716071668"
   },
   "studies_with_issues": [
     {
@@ -299,24 +299,6 @@
       "errors": [],
       "warnings": [
         "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (139 rows)."
-      ]
-    },
-    {
-      "name": "WenC_2017",
-      "file": "inst/curated//WenC_2017/WenC_2017_sample.tsv",
-      "rows": 168,
-      "cols": 28,
-      "errors": [
-        "Columns not covered by schema: biomarker_ontology_term_id"
-      ],
-      "warnings": [
-        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
-        "Field 'biomarker_value' row 46 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 55 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 56 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 61 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 81 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
-        "Field 'biomarker_value' row 86 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*"
       ]
     },
     {
