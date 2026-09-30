@@ -1,20 +1,20 @@
 {
   "status": "PASS",
   "summary": {
-    "total_files": 140,
+    "total_files": 139,
     "total_errors": 0,
     "total_warnings": 60,
     "files_with_issues": 7
   },
   "stats": {
-    "total_studies": 140,
-    "total_samples": 33062,
+    "total_studies": 139,
+    "total_samples": 32949,
     "distributions": {
       "age_group": {
         "top": [
           {
             "name": "Adult",
-            "count": 21085
+            "count": 20972
           },
           {
             "name": "Elderly",
@@ -42,7 +42,7 @@
           }
         ],
         "total_distinct": 7,
-        "total_count": 31375
+        "total_count": 31262
       },
       "body_site": {
         "top": [
@@ -52,7 +52,7 @@
           },
           {
             "name": "oral cavity",
-            "count": 1242
+            "count": 1129
           },
           {
             "name": "skin epidermis",
@@ -72,7 +72,7 @@
           }
         ],
         "total_distinct": 6,
-        "total_count": 33062
+        "total_count": 32949
       },
       "published_year": {
         "top": [
@@ -86,7 +86,7 @@
           },
           {
             "name": "2019",
-            "count": 2851
+            "count": 2738
           },
           {
             "name": "2017",
@@ -118,7 +118,7 @@
           }
         ],
         "total_distinct": 15,
-        "total_count": 28402
+        "total_count": 28289
       },
       "country": {
         "top": [
@@ -164,7 +164,7 @@
           }
         ],
         "total_distinct": 73,
-        "total_count": 32847
+        "total_count": 32734
       },
       "ancestry": {
         "top": [
@@ -200,7 +200,7 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 18216
+            "count": 18151
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -212,7 +212,7 @@
           },
           {
             "name": "Type 2 Diabetes Mellitus",
-            "count": 1289
+            "count": 1280
           },
           {
             "name": "Crohn Disease",
@@ -239,8 +239,8 @@
             "count": 606
           }
         ],
-        "total_distinct": 144,
-        "total_count": 37372
+        "total_distinct": 142,
+        "total_count": 37212
       },
       "sex": {
         "top": [
@@ -263,12 +263,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-09-30T13:21:06Z",
+    "timestamp": "2026-09-30T13:43:08Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "36720737624"
+    "run_id": "36723421281"
   },
   "studies_with_issues": [
     {
