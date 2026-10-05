@@ -1,24 +1,24 @@
 {
-  "status": "PASS",
+  "status": "FAIL",
   "summary": {
-    "total_files": 140,
-    "total_errors": 0,
-    "total_warnings": 60,
-    "files_with_issues": 7
+    "total_files": 150,
+    "total_errors": 9,
+    "total_warnings": 137,
+    "files_with_issues": 17
   },
   "stats": {
-    "total_studies": 140,
-    "total_samples": 33062,
+    "total_studies": 150,
+    "total_samples": 35220,
     "distributions": {
       "age_group": {
         "top": [
           {
             "name": "Adult",
-            "count": 21085
+            "count": 21987
           },
           {
             "name": "Elderly",
-            "count": 4653
+            "count": 5690
           },
           {
             "name": "Newborn",
@@ -42,13 +42,13 @@
           }
         ],
         "total_distinct": 7,
-        "total_count": 31375
+        "total_count": 33314
       },
       "body_site": {
         "top": [
           {
             "name": "feces",
-            "count": 30769
+            "count": 32711
           },
           {
             "name": "oral cavity",
@@ -63,6 +63,10 @@
             "count": 446
           },
           {
+            "name": "stool",
+            "count": 216
+          },
+          {
             "name": "nasal cavity",
             "count": 93
           },
@@ -71,8 +75,8 @@
             "count": 8
           }
         ],
-        "total_distinct": 6,
-        "total_count": 33062
+        "total_distinct": 7,
+        "total_count": 35220
       },
       "published_year": {
         "top": [
@@ -89,20 +93,20 @@
             "count": 2738
           },
           {
+            "name": "2018",
+            "count": 2675
+          },
+          {
             "name": "2017",
             "count": 2423
           },
           {
-            "name": "2018",
-            "count": 2400
+            "name": "2021",
+            "count": 2347
           },
           {
             "name": "2015",
             "count": 2264
-          },
-          {
-            "name": "2021",
-            "count": 2089
           },
           {
             "name": "2020",
@@ -118,13 +122,13 @@
           }
         ],
         "total_distinct": 15,
-        "total_count": 28402
+        "total_count": 28935
       },
       "country": {
         "top": [
           {
             "name": "United States",
-            "count": 7533
+            "count": 8430
           },
           {
             "name": "United Kingdom",
@@ -147,6 +151,10 @@
             "count": 1423
           },
           {
+            "name": "Italy",
+            "count": 1228
+          },
+          {
             "name": "Argentina",
             "count": 1117
           },
@@ -155,16 +163,12 @@
             "count": 1064
           },
           {
-            "name": "France",
-            "count": 915
-          },
-          {
             "name": "Israel",
-            "count": 900
+            "count": 942
           }
         ],
-        "total_distinct": 73,
-        "total_count": 32847
+        "total_distinct": 77,
+        "total_count": 35005
       },
       "ancestry": {
         "top": [
@@ -200,7 +204,7 @@
         "top": [
           {
             "name": "Healthy",
-            "count": 18216
+            "count": 18808
           },
           {
             "name": "Inflammatory Bowel Disease",
@@ -215,6 +219,10 @@
             "count": 1289
           },
           {
+            "name": "Colorectal Carcinoma",
+            "count": 1242
+          },
+          {
             "name": "Crohn Disease",
             "count": 1208
           },
@@ -223,8 +231,8 @@
             "count": 860
           },
           {
-            "name": "Colorectal Carcinoma",
-            "count": 701
+            "name": "Adenoma",
+            "count": 795
           },
           {
             "name": "Metabolic Syndrome",
@@ -233,44 +241,74 @@
           {
             "name": "Parkinson disease",
             "count": 648
-          },
-          {
-            "name": "Glucose Intolerance",
-            "count": 606
           }
         ],
-        "total_distinct": 144,
-        "total_count": 37372
+        "total_distinct": 147,
+        "total_count": 39700
       },
       "sex": {
         "top": [
           {
             "name": "Female",
-            "count": 14705
+            "count": 15982
           },
           {
             "name": "Male",
-            "count": 14395
+            "count": 14841
           },
           {
             "name": "Not applicable",
             "count": 366
+          },
+          {
+            "name": "male",
+            "count": 303
+          },
+          {
+            "name": "female",
+            "count": 132
           }
         ],
-        "total_distinct": 3,
-        "total_count": 29466
+        "total_distinct": 5,
+        "total_count": 31624
       }
     }
   },
   "metadata": {
-    "timestamp": "2026-10-01T17:44:33Z",
+    "timestamp": "2026-10-05T21:22:37Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "36898747724"
+    "run_id": "37375241591"
   },
   "studies_with_issues": [
+    {
+      "name": "BaruchEN_2021",
+      "file": "inst/curated//BaruchEN_2021/BaruchEN_2021_sample.tsv",
+      "rows": 42,
+      "cols": 24,
+      "errors": [],
+      "warnings": [
+        "Field 'fmt_role' has 40 invalid values: BaruchEN_2021__Donor1, BaruchEN_2021__Donor2. Allowed values: Recipient (after procedure), Recipient (before procedure), Donor"
+      ]
+    },
+    {
+      "name": "DavarD_2021",
+      "file": "inst/curated//DavarD_2021/DavarD_2021_sample.tsv",
+      "rows": 216,
+      "cols": 23,
+      "errors": [
+        "Missing required fields: host_species"
+      ],
+      "warnings": [
+        "Field 'body_site' has 216 invalid values: stool. Allowed values: feces, oral cavity, skin epidermis, vagina, nasal cavity, milk",
+        "Field 'disease': 'metastases_liver' is not a recognized term for this ontology-backed field (82 rows).",
+        "Field 'sex' has 216 invalid values: male, female. Allowed values: Female, Male",
+        "Field 'country': 'USA' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (216 rows).",
+        "Field 'treatment': 'pembrolizumab' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (216 rows)."
+      ]
+    },
     {
       "name": "FanY_2023",
       "file": "inst/curated//FanY_2023/FanY_2023_sample.tsv",
@@ -282,6 +320,79 @@
       ]
     },
     {
+      "name": "HoylesL_2018",
+      "file": "inst/curated//HoylesL_2018/HoylesL_2018_sample.tsv",
+      "rows": 56,
+      "cols": 49,
+      "errors": [],
+      "warnings": [
+        "Field 'antibiotics_current_use' has 56 invalid values: no. Allowed values: Yes, No",
+        "Field 'biomarker_value' expected type 'numeric' but found 'character' with values that cannot be coerced to numeric",
+        "Field 'biomarker_value' row 1 has value '1,4' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 2 has value '0,36' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 3 has value '1,73' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 4 has value '1,61' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 5 has value '0,92' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 6 has value '0,46' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 7 has value '0,45' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 8 has value '0,92' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 9 has value '9,5' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 10 has value '0,58' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 11 has value '1,29' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 12 has value '0,48' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 13 has value '1,75' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 14 has value '1,19' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 15 has value '0,62' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 16 has value '1,85' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 17 has value '0,79' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 18 has value '2,35' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 19 has value '2,86' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 20 has value '1,68' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 21 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 21 has value '1,76' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 22 has value '0,83' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 23 has value '0,46' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 24 has value '1,26' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 25 has value '0,62' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 26 has value '1,82' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 27 has value '0,61' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 28 has value '1,31' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 29 has value '1,58' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 30 has value '11,21' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 31 has value '1,15' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 32 has value '0,92' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 33 has value '0,24' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 34 has value '0,95' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 35 has value '0,64' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 36 has value '0,17' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 37 has value '0,23' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 38 has value '0,93' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 39 has value '0,58' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 40 has value '3,46' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 41 has value '1,4' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 42 has value '0,54' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 43 has value '0,92' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 44 has value '0,58' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 45 has value '1,37' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 46 has value '2,66' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 47 has value '0,47' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 48 has value '1,1' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 49 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 49 has value '0,73' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 50 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 50 has value '0,41' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 51 has value '1,23' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 52 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 52 has value '1,67' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 53 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 53 has value '0,99' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 54 has value 'NA' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 54 has value '0,27' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 55 has value '1,15' not matching pattern: [0-9]+\\.?[0-9]*",
+        "Field 'biomarker_value' row 56 has value '0,07' not matching pattern: [0-9]+\\.?[0-9]*"
+      ]
+    },
+    {
       "name": "KosticAD_2015",
       "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
@@ -289,6 +400,90 @@
       "errors": [],
       "warnings": [
         "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (15 rows)."
+      ]
+    },
+    {
+      "name": "PiccinnoG_2025_a",
+      "file": "inst/curated//PiccinnoG_2025_a/PiccinnoG_2025_a_sample.tsv",
+      "rows": 163,
+      "cols": 26,
+      "errors": [
+        "Missing required fields: subject_id"
+      ],
+      "warnings": []
+    },
+    {
+      "name": "PiccinnoG_2025_b",
+      "file": "inst/curated//PiccinnoG_2025_b/PiccinnoG_2025_b_sample.tsv",
+      "rows": 203,
+      "cols": 26,
+      "errors": [
+        "Missing required fields: subject_id"
+      ],
+      "warnings": [
+        "Field 'tumor_staging_ajcc' has 3 invalid values: , CRC_stage_unlabelled. Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB"
+      ]
+    },
+    {
+      "name": "PiccinnoG_2025_c",
+      "file": "inst/curated//PiccinnoG_2025_c/PiccinnoG_2025_c_sample.tsv",
+      "rows": 124,
+      "cols": 25,
+      "errors": [
+        "Missing required fields: subject_id"
+      ],
+      "warnings": [
+        "Field 'tumor_staging_ajcc' has 5 invalid values: CRC_stage_unlabelled. Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB"
+      ]
+    },
+    {
+      "name": "PiccinnoG_2025_d",
+      "file": "inst/curated//PiccinnoG_2025_d/PiccinnoG_2025_d_sample.tsv",
+      "rows": 181,
+      "cols": 26,
+      "errors": [
+        "Missing required fields: subject_id"
+      ],
+      "warnings": [
+        "Field 'tumor_staging_ajcc' has 8 invalid values: CRC_stage_unlabelled. Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB"
+      ]
+    },
+    {
+      "name": "PiccinnoG_2025_e",
+      "file": "inst/curated//PiccinnoG_2025_e/PiccinnoG_2025_e_sample.tsv",
+      "rows": 897,
+      "cols": 25,
+      "errors": [
+        "Missing required fields: subject_id"
+      ],
+      "warnings": [
+        "Field 'tumor_staging_ajcc' has 5 invalid values: CRC_stage_unlabelled. Allowed values: 0, I, II, III, IV, I/II, III/IV, IIIA, IIIB"
+      ]
+    },
+    {
+      "name": "PiccinnoG_2025_f",
+      "file": "inst/curated//PiccinnoG_2025_f/PiccinnoG_2025_f_sample.tsv",
+      "rows": 57,
+      "cols": 28,
+      "errors": [
+        "Missing required fields: subject_id"
+      ],
+      "warnings": [
+        "Field 'control' has 57 invalid values: NCIT:C115935, NCIT:C2955. Allowed values: Study Control, Case, Not Used"
+      ]
+    },
+    {
+      "name": "RoutyB_2018",
+      "file": "inst/curated//RoutyB_2018/RoutyB_2018_sample.tsv",
+      "rows": 219,
+      "cols": 22,
+      "errors": [
+        "Missing required fields: control, host_species, target_condition",
+        "Columns not covered by schema: study_condition, age_category, gender, non_westernized, PMID, NCBI_accession, anti_PD_1, RECIST, ORR, PFS03, PFS06"
+      ],
+      "warnings": [
+        "Field 'country': 'FRA' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (219 rows).",
+        "Field 'treatment': 'nivolumab' is not a recognized term for this ontology-backed field (219 rows)."
       ]
     },
     {
