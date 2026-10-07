@@ -10,8 +10,10 @@ nf_get_completed_run(limit = 250)
 \item{limit}{Integer. Maximum number of runs to retrieve. Default is 250.}
 }
 \value{
-A data frame containing the API response. There are four columns
-on 'run_id', 'run_name', 'utc_time', and 'sample_id'.
+A data frame with one row per completed run and columns
+including 'run_name', 'run_id', 'workflow_id', 'workflow_version', and
+'completed_at' (ISO 8601, UTC). The response does not list the samples
+in each run.
 }
 \description{
 This function makes an API request to the Nextflow telemetry service
