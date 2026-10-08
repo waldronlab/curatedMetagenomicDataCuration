@@ -3,8 +3,8 @@
   "summary": {
     "total_files": 150,
     "total_errors": 9,
-    "total_warnings": 137,
-    "files_with_issues": 17
+    "total_warnings": 179,
+    "files_with_issues": 23
   },
   "stats": {
     "total_studies": 150,
@@ -275,12 +275,12 @@
     }
   },
   "metadata": {
-    "timestamp": "2026-10-06T12:50:30Z",
+    "timestamp": "2026-10-08T20:04:44Z",
     "trigger": "push",
     "branch": "master",
     "schema_commit": "c5f2be08e8c8d482b9d74c3c74527cd591e24026",
     "schema_commit_short": "c5f2be0",
-    "run_id": "37466014490"
+    "run_id": "37836588377"
   },
   "studies_with_issues": [
     {
@@ -291,6 +291,17 @@
       "errors": [],
       "warnings": [
         "Field 'fmt_role' has 40 invalid values: BaruchEN_2021__Donor1, BaruchEN_2021__Donor2. Allowed values: Recipient (after procedure), Recipient (before procedure), Donor"
+      ]
+    },
+    {
+      "name": "Castro-NallarE_2015",
+      "file": "inst/curated//Castro-NallarE_2015/Castro-NallarE_2015_sample.tsv",
+      "rows": 32,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Field 'treatment_ontology_term_id' row 8 has value '48070003' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 24 has value '48070003' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+"
       ]
     },
     {
@@ -393,6 +404,26 @@
       ]
     },
     {
+      "name": "IjazUZ_2017",
+      "file": "inst/curated//IjazUZ_2017/IjazUZ_2017_sample.tsv",
+      "rows": 94,
+      "cols": 37,
+      "errors": [],
+      "warnings": [
+        "Field 'sex_ontology_term_id' has 83 values not matching pattern:  [A-Za-z]+:[A-Za-z0-9]+"
+      ]
+    },
+    {
+      "name": "JieZ_2017",
+      "file": "inst/curated//JieZ_2017/JieZ_2017_sample.tsv",
+      "rows": 385,
+      "cols": 35,
+      "errors": [],
+      "warnings": [
+        "Field 'sex_ontology_term_id' has 5 values not matching pattern:  [A-Za-z]+:[A-Za-z0-9]+"
+      ]
+    },
+    {
       "name": "KosticAD_2015",
       "file": "inst/curated//KosticAD_2015/KosticAD_2015_sample.tsv",
       "rows": 120,
@@ -400,6 +431,62 @@
       "errors": [],
       "warnings": [
         "Field 'hla': 'HLA-DQA1*02:01 protein complex' is not a recognized term for this ontology-backed field (15 rows)."
+      ]
+    },
+    {
+      "name": "LiJ_2014",
+      "file": "inst/curated//LiJ_2014/LiJ_2014_sample.tsv",
+      "rows": 260,
+      "cols": 32,
+      "errors": [],
+      "warnings": [
+        "Field 'sex_ontology_term_id' has 12 values not matching pattern:  [A-Za-z]+:[A-Za-z0-9]+"
+      ]
+    },
+    {
+      "name": "MetaCardis_2020_a",
+      "file": "inst/curated//MetaCardis_2020_a/MetaCardis_2020_a_sample.tsv",
+      "rows": 1831,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Field 'treatment_ontology_term_id' row 20 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 264 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 267 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 359 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 370 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 402 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 433 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 553 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 576 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 642 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 784 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 836 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 857 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 885 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 901 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 912 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 916 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 943 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 994 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1031 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1048 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1056 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1061 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1092 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1095 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1137 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1196 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1264 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1270 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1273 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1284 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1298 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1304 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1316 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1705 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1719 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+",
+        "Field 'treatment_ontology_term_id' row 1750 has value '372740001' not matching pattern: [A-Za-z]+:[A-Za-z0-9]+"
       ]
     },
     {
@@ -468,9 +555,7 @@
       "errors": [
         "Missing required fields: subject_id"
       ],
-      "warnings": [
-        "Field 'control' has 57 invalid values: NCIT:C115935, NCIT:C2955. Allowed values: Study Control, Case, Not Used"
-      ]
+      "warnings": []
     },
     {
       "name": "RoutyB_2018",
@@ -484,6 +569,16 @@
       "warnings": [
         "Field 'country': 'FRA' is a recognized ontology synonym, not the preferred label; replace it with the full preferred term (219 rows).",
         "Field 'treatment': 'nivolumab' is not a recognized term for this ontology-backed field (219 rows)."
+      ]
+    },
+    {
+      "name": "TeeMZ_2022",
+      "file": "inst/curated//TeeMZ_2022/TeeMZ_2022_sample.tsv",
+      "rows": 650,
+      "cols": 38,
+      "errors": [],
+      "warnings": [
+        "Field 'age_group_ontology_term_id' has 14 values not matching pattern:  [A-Za-z]+:[A-Za-z0-9]+"
       ]
     },
     {
