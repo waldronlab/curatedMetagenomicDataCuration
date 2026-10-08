@@ -180,9 +180,10 @@ test_that("leaves columns with no matching dictionary row untouched", {
 test_that("matches the real dictionary's mapping on real AsnicarF_2017 data", {
   # Compares against a mapping computed independently from the current
   # dictionary, not against the historical curated values in the TSV itself -
-  # some curated files predate later dictionary edits (e.g. "control" is
-  # recorded as "NCIT_C142703" in most studies, but the dictionary now
-  # declares "NCIT:C142703"), so the TSV is not reliable ground truth here.
+  # some curated files predate later dictionary edits (e.g. before issue
+  # #162's corpus fix, "control" was recorded as "NCIT_C142703" in most
+  # studies while the dictionary already declared "NCIT:C142703"), so the
+  # TSV is not reliable ground truth here.
   real_file <- "../../inst/curated/AsnicarF_2017/AsnicarF_2017_sample.tsv"
   dict_file <- "../../inst/extdata/cMD_data_dictionary.csv"
   skip_if_not(file.exists(real_file))
@@ -228,4 +229,20 @@ test_that("matches the real dictionary's mapping on real AsnicarF_2017 data", {
     }
     expect_equal(result[[paste0(field, "_ontology_term_id")]], expected, info = field)
   }
+})
+
+test_that("overwrite = TRUE on the corrected real corpus never reintroduces an underscore-form CURIE", {
+  real_file <- "../../inst/curated/AsnicarF_2017/AsnicarF_2017_sample.tsv"
+  dict_file <- "../../inst/extdata/cMD_data_dictionary.csv"
+  skip_if_not(file.exists(real_file))
+  skip_if_not(file.exists(dict_file))
+
+  real <- read.delim(real_file, stringsAsFactors = FALSE, check.names = FALSE)
+  dict <- read.csv(dict_file, stringsAsFactors = FALSE)
+
+  result <- suppressMessages(add_ontology_columns(real, dictionary = dict, overwrite = TRUE))
+
+  oid_cols <- grep("_ontology_term_id$", names(result), value = TRUE)
+  values <- unlist(lapply(result[oid_cols], as.character))
+  expect_false(any(grepl("^[A-Za-z]+_[A-Za-z]*[0-9]", stats::na.omit(values))))
 })
