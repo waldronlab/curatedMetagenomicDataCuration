@@ -22,8 +22,9 @@ query_ols <- function(ontology_ids, relationship = "children", size_threshold = 
     return(NULL)
   }
 
-  # Split multiple ontology IDs if semicolon-separated
-  ids <- strsplit(ontology_ids, ";")[[1]]
+  # Split multiple ontology IDs. Schema descriptor fields (allowedvalues,
+  # static.enum, dynamic.enum) are all "|"-separated in cMD_data_dictionary.csv.
+  ids <- trimws(strsplit(ontology_ids, "|", fixed = TRUE)[[1]])
   all_terms <- c()
 
   for (ontology_id in ids) {
@@ -253,7 +254,7 @@ generate_validation_lists <- function(
           validation_lists[[col_name]] <- values
         }
       }
-    } else if (corpus_type == "dynamic_enum;static_enum") {
+    } else if (corpus_type == "dynamic_enum|static_enum") {
       # Mixed: combine both OLS and static enum
       # First get static enum
       static_values <- c()
