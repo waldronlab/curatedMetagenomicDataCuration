@@ -38,7 +38,9 @@ MAPS <- list(
         "PowerSoilPro"          = "DNeasy PowerSoil Pro Kit",
         "PSP_Spin_Stool"        = "PSP Spin Stool DNA Plus Kit",
         "ZR_Fecal_DNA_MiniPrep" = "ZR Fecal DNA MiniPrep Kit",
-        "KAMA_Hyper_Prep"       = "KAPA HyperPrep Kit"          # KAMA was a typo
+        "KAMA_Hyper_Prep"       = "KAPA HyperPrep Kit",         # KAMA was a typo
+        "Gnome"                 = "GNOME DNA Isolation Kit",
+        "other"                 = "Others"                      # catch-all, recased
     ),
     sequencing_platform = c(
         "IlluminaHiSeq"   = "Illumina HiSeq",
@@ -53,7 +55,7 @@ MAPS <- list(
 ## Values deliberately NOT mapped, because the dictionary has no counterpart and
 ## picking one would be a curation decision, not a rename. The script reports
 ## these and leaves the data untouched.
-##   dna_extraction_kit: Gnome, Illuminakit, other
+##   dna_extraction_kit: Illuminakit
 ## A literal "NA" string also appears in dna_extraction_kit; that is a data
 ## defect (the cell should be empty) and is reported, not rewritten.
 
