@@ -83,7 +83,7 @@ check_root_not_obsolete <- function(root, field) {
 }
 message("Pre-flight: checking roots are not obsolete...")
 for (r in seq_len(nrow(dyn))) {
-    roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], ";", fixed = TRUE)[[1]])
+    roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], "|", fixed = TRUE)[[1]])
     for (root in roots[nzchar(roots)]) {
         check_root_not_obsolete(root, dyn[["col.name"]][r])
     }
@@ -152,7 +152,7 @@ collect_term <- function(id) {
 all_rows <- list()
 for (r in seq_len(nrow(dyn))) {
     field <- dyn[["col.name"]][r]
-    roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], ";", fixed = TRUE)[[1]])
+    roots <- trimws(strsplit(dyn[["dynamic.enum"]][r], "|", fixed = TRUE)[[1]])
     roots <- roots[nzchar(roots)]
     property <- dyn[["dynamic.enum.property"]][r]
     if (is.na(property)) property <- "descendant"
