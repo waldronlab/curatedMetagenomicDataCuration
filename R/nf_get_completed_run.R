@@ -8,8 +8,10 @@
 #'
 #' @param limit Integer. Maximum number of runs to retrieve. Default is 250.
 #' 
-#' @return A data frame containing the API response. There are four columns
-#' on 'run_id', 'run_name', 'utc_time', and 'sample_id'.
+#' @return A data frame with one row per completed run and columns
+#' including 'run_name', 'run_id', 'workflow_id', 'workflow_version', and
+#' 'completed_at' (ISO 8601, UTC). The response does not list the samples
+#' in each run.
 #'
 #' @examples
 #' # Get only 10 completed runs
@@ -19,8 +21,8 @@
 nf_get_completed_run <- function(limit = 250) {
     # Construct the API URL with the limit parameter
     api_url <- paste0(
-        "https://nf-telemetry-819875667022.us-central1.run.app/nextflow-telemetry/completed_runs",
-        "?limit=", limit
+        "https://nf-telemetry.seandavi.workers.dev/api/runs",
+        "?status=completed&limit=", limit
     )
     
     # Make the GET request
@@ -36,5 +38,5 @@ nf_get_completed_run <- function(limit = 250) {
     
     # Parse and return the JSON response
     parsed_response <- jsonlite::fromJSON(httr::content(response, "text", encoding = "UTF-8"))
-    return(parsed_response)
+    return(parsed_response$runs)
 }

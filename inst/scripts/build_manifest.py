@@ -5,6 +5,12 @@
 # MAINTENANCE GENERATOR for the study reconciliation manifest (run by a
 # maintainer from the repository root; commit the output).
 #
+# NOTE (2026-10): processing telemetry moved from the v1 server
+# (nf-telemetry.cancerdatasci.org, now retired) to the v2 Worker. v2 currently
+# holds only a demo set, so n_samples_processed is far lower than in manifests
+# built from v1 history. That is expected: the corpus is being re-registered
+# (nextflow_telemetry #196) and counts will climb back as it is.
+#
 # Answers the question raised in the 2026-09-18 cMD coordination meeting —
 # "what samples in curatedMetagenomicDataCuration have already been processed
 # through the Nextflow pipeline?" — by joining the curated corpus against the
@@ -32,8 +38,8 @@
 #
 # Sources, in descending order of authority for a study's BioProject:
 #   1. the study's checked-in <study>_sra_meta.tsv   (48 studies have one)
-#   2. the pipeline telemetry at https://nf-telemetry.cancerdatasci.org
-#      (public, no auth)
+#   2. the pipeline telemetry at https://nf-telemetry.seandavi.workers.dev
+#      (v2 Cloudflare Worker; public, no auth)
 #   3. NCBI E-utilities, resolving run accession -> BioProject for whatever
 #      the first two cannot answer. Results are reused from the manifest
 #      already on disk, so a scheduled run does not re-ask NCBI about
@@ -67,7 +73,9 @@ import urllib.request
 import uuid
 import collections
 
-TELEMETRY = "https://nf-telemetry.cancerdatasci.org"
+TELEMETRY = "https://nf-telemetry.seandavi.workers.dev"
+# Cloudflare answers 403 to urllib's default User-Agent.
+USER_AGENT = "curatedMetagenomicDataCuration-manifest/1"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 # E-utilities allows 3 requests/second without an API key. Batches are well
@@ -160,7 +168,8 @@ def fetch_telemetry_samples(offline):
     out, offset = [], 0
     while True:
         url = f"{TELEMETRY}/api/samples?limit=500&offset={offset}"
-        page = json.load(urllib.request.urlopen(url, timeout=60))
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        page = json.load(urllib.request.urlopen(req, timeout=60))
         items = page.get("items", [])
         out += items
         if not items or len(out) >= page.get("total", 0):
