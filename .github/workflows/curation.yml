@@ -44,32 +44,52 @@ jobs:
 
       - name: Get DOI
         id: get-doi
+        # Untrusted input: pass via env, never interpolate expressions into code.
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
           library(curatedMetagenomicDataCuration)
-          doi <- getPattern("${{ github.event.issue.body }}", "doi")
-          bioproject_id <- getPattern("${{ github.event.issue.body }}",
-                                      "bioproject")
+          body <- Sys.getenv("ISSUE_BODY")
+          doi <- getPattern(body, "doi")
+          if (is.na(doi) || !nzchar(doi)) {
+              message("No DOI found in issue body; nothing to do.")
+              quit(status = 0)
+          }
+          bioproject_id <- getPattern(body, "bioproject")
           crossref <- getCrossref(doi)
           pmid <- getPmid(doi)
 
-          system(paste0("echo DOI='https://doi.org/", doi, "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo AUTHOR='", crossref["author"], "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo TITLE='", crossref["title"], "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo JOURNAL='", crossref["journal"], "' >> $GITHUB_OUTPUT"))
-          system(paste0("echo YEAR=", crossref["year"], " >> $GITHUB_OUTPUT"))
-          system(paste0("echo PMID=", pmid, " >> $GITHUB_OUTPUT"))
-          system(paste0("echo BIOPROJECT_ID='", bioproject_id, "' >> $GITHUB_OUTPUT"))
+          # Write outputs directly (no shell) and flatten newlines so a
+          # value cannot inject extra output lines.
+          out <- function(key, value)
+              cat(key, "=", gsub("[\r\n]+", " ", value), "\n", sep = "",
+                  file = Sys.getenv("GITHUB_OUTPUT"), append = TRUE)
+          out("DOI", paste0("https://doi.org/", doi))
+          out("AUTHOR", crossref["author"])
+          out("TITLE", crossref["title"])
+          out("JOURNAL", crossref["journal"])
+          out("YEAR", crossref["year"])
+          out("PMID", pmid)
+          out("BIOPROJECT_ID", bioproject_id)
         shell: Rscript {0}
 
       - uses: actions/github-script@v7
         if: steps.get-doi.outputs.DOI != ''
+        env:
+          TITLE: ${{ steps.get-doi.outputs.TITLE }}
+          DOI: ${{ steps.get-doi.outputs.DOI }}
+          PMID: ${{ steps.get-doi.outputs.PMID }}
+          AUTHOR: ${{ steps.get-doi.outputs.AUTHOR }}
+          JOURNAL: ${{ steps.get-doi.outputs.JOURNAL }}
+          YEAR: ${{ steps.get-doi.outputs.YEAR }}
+          BIOPROJECT_ID: ${{ steps.get-doi.outputs.BIOPROJECT_ID }}
         with:
           script: |
             github.rest.issues.update({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: "[Study]: ${{ steps.get-doi.outputs.TITLE }}"
+              title: `[Study]: ${process.env.TITLE}`
             })
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -78,25 +98,25 @@ jobs:
               body: 
               `
               ### Title
-              ${{ steps.get-doi.outputs.TITLE }}
+              ${process.env.TITLE}
 
               ### DOI
-              ${{ steps.get-doi.outputs.DOI }}
+              ${process.env.DOI}
 
               ### PMID
-              ${{ steps.get-doi.outputs.PMID }}
+              ${process.env.PMID}
 
               ### Author
-              ${{ steps.get-doi.outputs.AUTHOR }}
+              ${process.env.AUTHOR}
 
               ### Journal
-              ${{ steps.get-doi.outputs.JOURNAL }}
+              ${process.env.JOURNAL}
 
               ### Year
-              ${{ steps.get-doi.outputs.YEAR }}
+              ${process.env.YEAR}
 
               ### BioProject ID
-              ${{ steps.get-doi.outputs.BIOPROJECT_ID }}
+              ${process.env.BIOPROJECT_ID}
 
               👋 Thanks for submitting! Attempting to generate templates (may take a few minutes).
               `
@@ -105,6 +125,7 @@ jobs:
   create-templates:
 
     needs: curation-comment
+    if: needs.curation-comment.outputs.author != ''
     
     permissions:
       issues: write
@@ -133,11 +154,16 @@ jobs:
 
       - name: Create templates
         id: create-templates
+        env:
+          AUTHOR: ${{ needs.curation-comment.outputs.author }}
+          YEAR: ${{ needs.curation-comment.outputs.year }}
         run: |
           library(curatedMetagenomicDataCuration)
-          BASE <- baseName("${{ needs.curation-comment.outputs.author }}",
-                           "${{ needs.curation-comment.outputs.year }}")
-          system(paste0("echo BASE=", BASE, " >> $GITHUB_OUTPUT"))
+          BASE <- baseName(Sys.getenv("AUTHOR"), Sys.getenv("YEAR"))
+          # BASE becomes a path and commit message; keep it filename-safe.
+          BASE <- gsub("[^A-Za-z0-9_.-]", "", BASE)
+          cat("BASE=", BASE, "\n", sep = "",
+              file = Sys.getenv("GITHUB_OUTPUT"), append = TRUE)
           path <- paste(Sys.getenv("GITHUB_WORKSPACE"), "inst/curated", sep = "/")
           template_exists <- createTemplate(BASE, path)
           if (template_exists) {
@@ -158,12 +184,18 @@ jobs:
       - name: Commit templates
         if: ${{ steps.create-templates.outputs.CREATED == 'true' }}
         id: commit-templates
+        env:
+          BASE: ${{ steps.create-templates.outputs.BASE }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          git add $GITHUB_WORKSPACE/inst/curated/${{ steps.create-templates.outputs.BASE }}/*.tsv
-          git commit -m "Add ${{ steps.create-templates.outputs.BASE }}"
-          git push origin ${{ github.event.repository.default_branch }}
+          git add "$GITHUB_WORKSPACE/inst/curated/$BASE/"*.tsv
+          git commit -m "Add $BASE"
+          git push origin "$DEFAULT_BRANCH"
  
       - uses: actions/github-script@v7
+        env:
+          MESSAGE: ${{ steps.create-templates.outputs.MESSAGE }}
+          BASE: ${{ steps.create-templates.outputs.BASE }}
         with:
           script: |
             github.rest.issues.createComment({
@@ -172,6 +204,6 @@ jobs:
               repo: context.repo.repo,
               body: 
               `
-              ${{ steps.create-templates.outputs.MESSAGE }} ${{ steps.create-templates.outputs.BASE }}
+              ${process.env.MESSAGE} ${process.env.BASE}
               `
             })
